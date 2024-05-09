@@ -4,76 +4,74 @@ import TheWelcome from '../components/TheWelcome.vue'
 
 <template>
   <div class="min-h-screen bg-base-200">
-    <main class="container mx-auto py-8">
-      <div class="hero bg-base-200">
+    <div class="carousel ">
+      <div class="carousel-item">
+        <img src="../assets/1.jpg" alt="Burger" />
+      </div> 
+      <div class="carousel-item">
+        <img src="../assets/pic1.jpg" alt="Burger" />
+      </div> 
+      <div class="carousel-item">
+        <img src="../assets/4.jpg" alt="Burger" />
+      </div> 
+      <div class="carousel-item">
+        <img src="../assets/ece1.jpg" alt="Burger" />
+      </div> 
+      <div class="carousel-item">
+        <img src="https://img.daisyui.com/images/stock/photo-1550258987-190a2d41a8ba.jpg" alt="Burger" />
+      </div> 
+      <div class="carousel-item">
+        <img src="https://img.daisyui.com/images/stock/photo-1559181567-c3190ca9959b.jpg" alt="Burger" />
+      </div> 
+      <div class="carousel-item">
+        <img src="https://img.daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.jpg" alt="Burger" />
+      </div>
+    </div>
+    <main class="flex flex-col gap-8">
+      <div class="hero bg-base-200 flex flex-col gap-4 lg:w-1/2 self-center">
         <div class="hero-content text-center">
           <div class="max-w-md">
             <h1 class="text-3xl font-bold">Counselling Code: 2025</h1>
           </div>
         </div>
       </div>
-      <div class="carousel rounded-box">
-        <div class="carousel-item">
-          <img src="https://img.daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.jpg" alt="Burger" />
-        </div> 
-        <div class="carousel-item">
-          <img src="https://img.daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.jpg" alt="Burger" />
-        </div> 
-        <div class="carousel-item">
-          <img src="https://img.daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.jpg" alt="Burger" />
-        </div> 
-        <div class="carousel-item">
-          <img src="https://img.daisyui.com/images/stock/photo-1494253109108-2e30c049369b.jpg" alt="Burger" />
-        </div> 
-        <div class="carousel-item">
-          <img src="https://img.daisyui.com/images/stock/photo-1550258987-190a2d41a8ba.jpg" alt="Burger" />
-        </div> 
-        <div class="carousel-item">
-          <img src="https://img.daisyui.com/images/stock/photo-1559181567-c3190ca9959b.jpg" alt="Burger" />
-        </div> 
-        <div class="carousel-item">
-          <img src="https://img.daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.jpg" alt="Burger" />
-        </div>
-      </div>
 
-      <div class="m-5">
+      <div class="flex flex-col gap-4 self-center justify-items-center items-center lg:w-1/2 p-9">
         <h2 class="text-3xl font-bold m-2">Welcome to AURCC: About the campus</h2>
         <p class="text-2xl ">
           The Regional Campus Coimbatore of Anna University was established during 2012. It offers higher education in Engineering and Technology. Located in an Arcadian environment and away from the hustle and bustle crowd of the city. The Regional Campus Coimbatore is equipped with excellent infrastructure and highly qualified members of faculty, who facilitate hands on experience to students to master their skills in various disciplines.
         </p>
       </div>
 
-      <h2 class="text-3xl font-bold mb-4">Upcoming Events</h2>
+      <h2 class="text-3xl font-bold mb-4 self-center">Upcoming Events</h2>
       <!-- Event section -->
-      <div class="events-section bg-base-300 overflow-hidden" @mouseenter="stopScrolling" @mouseleave="startScrolling">
-        <div class="events-content p-6" ref="eventsContent">
-          <div class="events-list" ref="eventsList">
-            <!-- Populate this with your upcoming events -->
-            <div v-for="event in upcomingEvents" :key="event.id" class="event">
-              <h3 class="font-bold">{{ event.title }}</h3>
-              <p>{{ event.date }}</p>
-              <p>{{ event.description }}</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="my-8">
-        <h2 class="text-3xl font-bold mb-4">Featured Programs</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          <div v-for="program in featuredPrograms" :key="program.id" class="card bg-base-100 shadow-xl">
-            <figure>
-              <img :src="program.imageUrl" :alt="program.title" />
-            </figure>
-            <div class="card-body">
-              <h2 class="card-title">{{ program.title }}</h2>
-              <p>{{ program.description }}</p>
-              <div class="card-actions">
-                <button class="btn btn-primary">Learn More</button>
+      <div class="flex gap-4 self-center justify-items-center items-center lg:w-1/2 p-9">
+          <div class="events-section bg-base-300 overflow-hidden" @mouseenter="stopScrolling" @mouseleave="startScrolling">
+            <div class="events-content p-6" ref="eventsContent">
+              <div class="events-list" ref="eventsList">
+                <!-- Populate this with your upcoming events -->
+                <div v-for="event in upcomingEvents" :key="event.id" class="event">
+                  <h3 class="font-bold">{{ event.title }}</h3>
+                  <p>{{ event.date }}</p>
+                  <p>{{ event.description }}</p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
+          <div class="events-section bg-base-300 overflow-hidden" @mouseenter="stopScrolling" @mouseleave="startScrolling">
+            <div class="news-content p-6" ref="newsContent">
+              <div class="events-list h-80" ref="eventsList">
+                <!-- Populate this with your upcoming events -->
+                <div v-for="event in upcomingEvents" :key="event.id" class="event">
+                  <p>Bello this is Newslet</p>
+                  <p>Yup this is newslet</p>
+                  <h3 class="font-bold">{{ event.title }}</h3>
+                  <p>{{ event.date }}</p>
+                  <p>{{ event.description }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
       </div>
     </main>
   </div>
@@ -154,7 +152,7 @@ export default {
 </script>
 
 <style>
-.events-content {
+.events-content,.news-content {
   animation: scrollAnimation 5s linear infinite; /* Change animation duration as needed */
 }
 
