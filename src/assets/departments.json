@@ -1,0 +1,15 @@
+[
+    {
+      "name": "Computer Science",
+      "description": "Learn about algorithms, data structures, and software development.",
+      "faculty": ["John Smith", "Jane Doe"],
+      "contact": "cs@example.com"
+    },
+    {
+      "name": "Mathematics",
+      "description": "Explore the beauty of numbers, equations, and proofs.",
+      "faculty": ["Alice Johnson", "Bob Brown"],
+      "contact": "math@example.com"
+    }
+]
+  
