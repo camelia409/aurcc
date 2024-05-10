@@ -6,25 +6,26 @@ import { RouterLink, RouterView } from 'vue-router'
   <header>
 
     <div class="wrapper">
-      <nav class="navbar bg-base-100 shadow-lg">
+      <nav class="navbar bg-gray-800 text-white shadow-lg">
         <div class="flex-1">
-          <a href="#" class="btn btn-ghost normal-case text-xl">Anna University Regional Campus <p class="hidden md:block text-xl font-semibold">Coimbatore</p></a>
+          <img src="./assets/logo.svg" alt="Logo" class="h-8 pe-4" />
+          <a href="#" class="btn btn-ghost normal-case text-xl font-bold">Anna University Regional Campus <p class="hidden md:block text-xl font-bold">Coimbatore</p></a>
           <p class="hidden md:block text-xl font-semibold">Counselling Code: 2025</p>
         </div>
         <div class="flex-none">
-          <div class="dropdown dropdown-end">
+          <div class="dropdown dropdown-end bg-gray-800">
             <label tabindex="0" class="btn btn-ghost lg:hidden">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
               </svg>
             </label>
-            <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+            <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-gray-800 rounded-box w-52">
               <li><a>Home</a></li>
               <li><a>About</a></li>
               <li>
                 <details>
                   <summary>Departments</summary>
-                  <ul class="p-2 bg-base-100 shadow-lg">
+                  <ul class="p-2 text-black shadow-lg ">
                     <li><a>Computer Science</a></li>
                     <li><a>Engineering</a></li>
                     <li><a>Business</a></li>
@@ -45,8 +46,8 @@ import { RouterLink, RouterView } from 'vue-router'
             <li>
               <details>
                 <summary>Departments</summary>
-                <ul class="p-2 bg-base-100 shadow-lg">
-                  <li><a>Computer Science</a></li>
+                <ul class="p-2 bg-base-100 shadow-lg text-black">
+                  <li class="hover:opacity-60" ><a>Computer Science</a></li>
                   <li><a>Engineering</a></li>
                   <li><a>Business</a></li>
                   <li><a>Arts & Humanities</a></li>
