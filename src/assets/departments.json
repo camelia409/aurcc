@@ -1,15 +1,265 @@
 [
-    {
-      "name": "Computer Science",
-      "description": "Learn about algorithms, data structures, and software development.",
-      "faculty": ["John Smith", "Jane Doe"],
-      "contact": "cs@example.com"
-    },
-    {
-      "name": "Mathematics",
-      "description": "Explore the beauty of numbers, equations, and proofs.",
-      "faculty": ["Alice Johnson", "Bob Brown"],
-      "contact": "math@example.com"
+    {   "address": "cse",
+        "image": "cse-girls-closeup.jpg",
+        "name": "Department of Computer Science and Engineering",
+        "description": "The Department of Computer Science and Engineering aims at producing technically competent professionals who can excel in today’s age of technology. Recognizing its role in engineering education, generation, and dissemination, the department is equipped with state-of-the-art facilities and relevant technologies. Computer Science or Computing Science is the scientific and mathematical approach to computation, specifically referring to the design of computing machines and processes.",
+        "vision": "To emerge as a world-class institution in engineering education and research, contributing to societal development and sustainable growth.",
+        "mission": [
+            "Impart quality education to produce competent engineers with a strong theoretical foundation and practical skills.",
+            "Promote research and innovation in collaboration with industries and academia.",
+            "Cultivate ethical values, leadership qualities, and a spirit of entrepreneurship among students.",
+            "Contribute to the socio-economic development of the region through technology transfer and community engagement."
+        ],
+        "events": [
+            {
+                "name": "TechFest 2024",
+                "description": "Annual technical festival showcasing projects, workshops, and competitions.",
+                "date": "March 15-17, 2024"
+            },
+            {
+                "name": "CodeWars",
+                "description": "Intercollegiate coding competition attracting participants from across the region.",
+                "date": "November 10, 2024"
+            }
+        ],
+        "placements": {
+            "companies_visited": ["TCS", "Infosys", "Wipro", "Cognizant", "Accenture"],
+            "average_salary": "Rs. 6,00,000 per annum",
+            "highest_salary": "Rs. 12,00,000 per annum",
+            "placement_percentage": "85%"
+        },
+        "achievements": [
+            {
+                "name": "Best Department Award",
+                "description": "Awarded by Anna University for outstanding academic performance and research contributions.",
+                "year": 2023
+            },
+            {
+                "name": "Innovation Award",
+                "description": "Received at the National Innovation Summit for a novel project developed by students.",
+                "year": 2022
+            }
+        ],
+        "research_and_publications": {
+            "total_research_papers": 85,
+            "international_journals": 65,
+            "international_conferences": 45,
+            "national_conferences": 20
+        },
+        "faculty": [
+            {
+                "name": "Dr. Manisekaran S V",
+                "position": "Assistant Professor",
+                "email": "manisekaran@aurcc.ac.in",
+                "education": [
+                    {
+                        "degree": "B.E. in Information Technology",
+                        "institution": "Bharathiar University",
+                        "year": 2003
+                    },
+                    {
+                        "degree": "M.E. in Computer Science and Engineering",
+                        "institution": "Anna University, Chennai",
+                        "year": 2005
+                    },
+                    {
+                        "degree": "Ph.D. in Information and Communication Engineering",
+                        "institution": "Anna University, Chennai",
+                        "year": 2015
+                    },
+                    {
+                        "degree": "PG Diploma in Career Guidance",
+                        "institution": "Bharathiar University"
+                    }
+                ],
+                "research_interests": ["Artificial Intelligence", "Wireless Sensor Networks", "Natural Language Processing"],
+                "teaching_experience": "19 years",
+                "contributions": [
+                    "Served as AICTE Coordination Committee Member for Smart India Hackathon",
+                    "Guided over 100 Post Graduate Scholars and currently supervising five Ph.D. Research Scholars",
+                    "Published research works in esteemed International Journals",
+                    "Served as Assistant Controller of Examinations at Anna University of Technology, Coimbatore",
+                    "Currently serving as Zonal Officer for Zone IX of Anna University, Chennai",
+                    "Wipro Certified Faculty in Java Full Stack",
+                    "Presented significant research articles in International Conferences",
+                    "Organized Tamil Nadu State Government funded Naan Mudhalvan skill training program",
+                    "Awarded 'Ezhuthoviyar' award from Thulimai Social forum for contribution to literary works",
+                    "Currently serving as the coordinator for Unnat Bhrath Abhiyan cell and National Service Scheme Unit at Anna University Regional Campus Coimbatore",
+                    "Coordinator of Career Guidance Cell and Kani Thamizh Peravai at Anna University Regional Campus Coimbatore"
+                ],
+                "links": {
+                    "Google Scholar Profile": "https://scholar.google.com/citations?user=BThdhEoAAAAJ&hl=en",
+                    "Email": "mailto:manisekaran@aurcc.ac.in",
+                    "Curriculum Vitae": "https://drive.google.com/open?id=1IR_iOiBDbeN1QZZ99qKZjmP3zPFF3sN7"
+                },
+                "previous_positions": [
+                    {
+                        "position": "Lecturer",
+                        "department": "IT Department",
+                        "institution": "PSG College of Technology, Coimbatore",
+                        "duration": "From 27.06.2005 to 11.08.2008"
+                    },
+                    {
+                        "position": "Assistant Professor",
+                        "department": "IT Department",
+                        "institution": "Anna University Regional Campus",
+                        "duration": "From 13.08.2008"
+                    }
+                ]
+            },
+            {
+                "name": "Dr. P. Marikkannu",
+                "position": "Assistant Professor (Senior Grade)",
+                "email": "pmarikkannu@gmail.com",
+                "education": [
+                    {
+                        "degree": "Ph.D. in Computer Science and Engineering",
+                        "institution": "Anna University, Chennai"
+                    },
+                    {
+                        "degree": "M.Tech. Information Technology",
+                        "institution": "College of Engineering Guindy, Anna University",
+                        "honors": ["With Distinction", "Gold Medalist"]
+                    }
+                ],
+                "research_interests":["nothing"],
+                "roles": ["Head-Incharge, Department of Computer Science and Engineering (July 2019 – March 2024)"],
+                "research_profiles": {
+                    "Google Scholar": "https://scholar.google.com/citations?user=Y9Ka_OwAAAAJ&hl=en",
+                    "Scopus": "https://www.scopus.com/authid/detail.uri?authorId=37079237000"
+                },
+                "publications": {
+                    "International Journals": 39,
+                    "International Conferences": 23,
+                    "National Conferences": 43
+                },
+                "abroad_visit": "Attended International Conference at Taylor’s University, Malaysia during 13-14, September 2023.",
+                "additional_links": {
+                    "Link to CV": "https://drive.google.com/open?id=1Pqy55ZCi_pmk706Fr5oILlZALWCrxYdS"
+                },
+                "clg-email": "marikkannu@aurcc.ac.in"
+            },
+            {
+                "name": "Dr. K. Seethappan",
+                "position": "Assistant Professor (Senior Grade)",
+                "email": "seethappan@gmail.com",
+                "experience": "Over 15 years",
+                "research_interests": ["Natural Language Processing", "Compiler Design", "Machine Learning"],
+                "professional_experience": [
+                    {
+                        "position": "Assistant Professor",
+                        "institution": "Shree Venkateshwara Hi-Tech Engineering College, Gobichettipalayam",
+                        "duration": "April 2010 - August 2010"
+                    },
+                    {
+                        "position": "Visiting Professor",
+                        "institution": "Anna University of Technology Ramanathapuram Campus",
+                        "duration": "September 2010 - December 2010"
+                    },
+                    {
+                        "position": "Assistant Professor",
+                        "institution": "University College of Engineering, Ramanathapuram",
+                        "duration": "December 2010 - December 2015"
+                    },
+                    {
+                        "position": "Assistant Professor (Senior Grade)",
+                        "institution": "University College of Engineering, Ramanathapuram",
+                        "duration": "December 2015 - August 2023"
+                    },
+                    {
+                        "position": "Assistant Professor (Senior Grade)",
+                        "institution": "Anna University Regional Campus, Coimbatore",
+                        "duration": "August 2023 - Present"
+                    }
+                ],
+                "academic_achievements": {
+                    "Google Scholar Profile": "https://scholar.google.com/citations?user=sSC7-lkAAAAJ&hl=en",
+                    "Email": "mailto:seethappan@aurcc.ac.in",
+                    "Research Papers": "8 papers published in International Journals and Conferences",
+                    "Additional Information": "Google Drive Profile: [Dr. K. Seethappan's Drive](https://drive.google.com/open?id=15Rtnotp6qdwgZOdQBvyE6G1ZxxKdMZZ8)"
+                }
+            },
+            {
+                "name": "Dr. Fareena N",
+                "position": "Assistant Professor",
+                "email": "fareena.aurcc@gmail.com",
+                "education": [
+                    {
+                        "degree": "Ph.D. in Computer Science and Engineering",
+                        "institution": "University College of Engineering, Anna University, Chennai",
+                        "year": 2021
+                    },
+                    {
+                        "degree": "M.E. Computer Science and Engineering",
+                        "institution": "PSG College of Technology, Coimbatore",
+                        "year": 2014
+                    },
+                    {
+                        "degree": "B.E. Computer Science and Engineering",
+                        "institution": "Sri Ramakrishna Engineering College, Coimbatore",
+                        "year": 2012
+                    }
+                ],
+                "research_interests": ["Natural Language Processing", "Machine Learning"],
+                "professional_experience": [
+                    {
+                        "position": "Assistant Professor",
+                        "institution": "Anna University Regional Campus, Coimbatore",
+                        "duration": "August 2023 - Present"
+                    }
+                ],
+                "achievements": [
+                    "Awarded Ph.D. for the thesis titled 'Novel Feature Selection Techniques for Enhancing Classification Accuracy in Text Mining' in 2021",
+                    "Published 6 papers in International Journals and 5 papers in National Conferences"
+                ],
+                "links": {
+                    "Google Scholar": "https://scholar.google.com/citations?user=pQVtZXYAAAAJ&hl=en",
+                    "Email": "mailto:fareena.aurcc@gmail.com",
+                    "LinkedIn": "https://www.linkedin.com/in/fareena-n-518502135/"
+                }
+            },
+            {
+                "name": "Dr. Preethi J",
+                "position": "Assistant Professor (Senior Grade)",
+                "departments": ["Department of Computer Science and Engineering", "Placement Cell", "DGATE Cell"],
+                "clg-email": "preethi@aurcc.ac.in",
+                "education": [
+                    {
+                        "degree": "Ph.D. in Computer Science and Engineering",
+                        "institution": "Anna University, Chennai",
+                        "year": 2020
+                    },
+                    {
+                        "degree": "M.E. Computer Science and Engineering",
+                        "institution": "PSG College of Technology, Coimbatore",
+                        "year": 2013
+                    },
+                    {
+                        "degree": "B.E. Computer Science and Engineering",
+                        "institution": "PSG College of Technology, Coimbatore",
+                        "year": 2009
+                    }
+                ],
+                "research_interests": ["Machine Learning", "Data Mining"],
+                "professional_experience": [
+                    {
+                        "position": "Assistant Professor",
+                        "institution": "Anna University Regional Campus, Coimbatore",
+                        "duration": "August 2023 - Present"
+                    }
+                ],
+                "achievements": [
+                    "Received the Best Paper Presentation Award at the International Conference on Computational Intelligence and Data Engineering 2019",
+                    "Published 4 papers in International Journals and 3 papers in International Conferences",
+                    "Organized and attended several Faculty Development Programs and Workshops"
+                ],
+                "links": {
+                    "Google Scholar": "https://scholar.google.com/citations?user=pG25xm4AAAAJ&hl=en",
+                    "Email": "mailto:preethi@aurcc.ac.in",
+                    "LinkedIn": "https://www.linkedin.com/in/preethi-j-88499a101/"
+                }
+            }
+        ],
+        "contact": "csedepartment@aurcc.ac.in"
     }
 ]
-  
