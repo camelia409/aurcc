@@ -56,20 +56,35 @@
                   <strong>{{ achievement.name }} ({{ achievement.year }}):</strong> {{ achievement.description }}
                 </li>
               </ul>
+              <ul class="list-disc pl-4">
+                <li v-for="ach in department.achievements.description" :key="ach">
+                  {{ ach }}
+                </li>
+
+              </ul>
+            </div>
+            <div v-else-if="currentSection === 'Research and Publications'">
+              <h2 class="text-2xl font-bold mb-4">Research and Publciations</h2>
+              <ul class="list-disc pl-4">
+                {{ department.research_and_publications }}
+                <!-- <li v-for="achievement in department.achievements" :key="achievement.name">
+                  <strong>{{ achievement.name }} ({{ achievement.year }}):</strong> {{ achievement.description }}
+                </li> -->
+              </ul>
             </div>
             <div v-else-if="currentSection === 'Faculty'">
               <h2 class="text-2xl font-bold mb-4">Faculty</h2>
               <div v-for="professor in department.faculty" :key="professor.name">
                 <h3 class="text-lg font-semibold">{{ professor.name }}</h3>
                 <p><strong>Position:</strong> {{ professor.position }}</p>
-                <p><strong>Email:</strong> <a :href="'mailto:' + professor.email">{{ professor.email }}</a></p>
+                <p v-if="professor.email"><strong>Email:</strong> <a :href="'mailto:' + professor.email">{{ professor.email }}</a></p>
                 <p><strong>Education:</strong></p>
-                <ul class="list-disc pl-4">
+                <ul v-if="professor.education" class="list-disc pl-4">
                   <li v-for="edu in professor.education" :key="edu.degree">
                     {{ edu.degree }}, {{ edu.institution }} ({{ edu.year ? edu.year : 'Year unknown' }})
                   </li>
                 </ul>
-                <p><strong>Research Interests:</strong> {{ professor.research_interests.join(', ') }}</p>
+                <p v-if="professor.research_interests"><strong>Research Interests:</strong> {{ professor.research_interests.join(', ') }}</p>
                 <p><strong>Teaching Experience:</strong> {{ professor.teaching_experience }}</p>
               </div>
             </div>
@@ -80,17 +95,6 @@
       <!-- Dynamic Content -->
       
     </main>
-    <footer class="bg-gray-800 text-white py-4 p-9">
-      <div class="container mx-auto flex justify-between items-center">
-        <div>&copy; {{ currentYear }} {{ department.name }}</div>
-        <div>
-          <ul class="flex space-x-4">
-            <li><a href="#" class="hover:text-gray-300">Terms of Use</a></li>
-            <li><a href="#" class="hover:text-gray-300">Privacy Policy</a></li>
-          </ul>
-        </div>
-      </div>
-    </footer>
   </div>
 </template>
 
@@ -104,6 +108,7 @@ export default {
         'Vision and mission',
         'Training and Placements',
         'Achievements',
+        'Research and Publications',
         'Faculty'
       ],
       currentSection: null
@@ -121,7 +126,7 @@ export default {
       try {
         const response = await fetch('http://192.168.72.231:5173/src/assets/departments.json');
         const departmentsData = await response.json();
-        this.department = departmentsData.find(dept => dept.address === 'cse');
+        this.department = departmentsData.find(dept => dept.address === this.$route.params.departmentName);
       } catch (error) {
         console.error('Error loading department:', error);
       }
