@@ -43,9 +43,11 @@ import TheWelcome from '../components/TheWelcome.vue'
         </p>
       </div>
 
-      <h2 class="text-3xl font-bold mb-4 self-center">Upcoming Events</h2>
+      
       <!-- Event section -->
       <div class="flex gap-4 self-center justify-items-center items-center lg:w-1/2 p-9">
+        <div>
+          <h2 class="text-xl font-bold mb-4 self-center">News/Admission</h2>
           <div class="events-section bg-base-300 overflow-hidden" @mouseenter="stopScrolling" @mouseleave="startScrolling">
             <div class="events-content p-6" ref="eventsContent">
               <div class="events-list" ref="eventsList">
@@ -58,6 +60,9 @@ import TheWelcome from '../components/TheWelcome.vue'
               </div>
             </div>
           </div>
+        </div>
+        <div>
+          <h2 class="text-xl font-bold mb-4 self-center">Events/Scholarship</h2>
           <div class="events-section bg-base-300 overflow-hidden" @mouseenter="stopScrolling" @mouseleave="startScrolling">
             <div class="news-content p-6" ref="newsContent">
               <div class="events-list h-80" ref="eventsList">
@@ -72,7 +77,48 @@ import TheWelcome from '../components/TheWelcome.vue'
               </div>
             </div>
           </div>
+        </div>
       </div>
+      <section class="flex flex-col gap-4">
+        <h2 class="text-4xl font-bold text-center">Innovating the Industries</h2>
+        <div class="grid grid-cols-3 gap-4 items-center justify-space-around"><a href="https://www.tcs.com"
+                    class="h-[12vh] p-4 flex flex-col items-center justify-center"
+                >
+              <figure><img alt="TCS" src="../assets/tcs.webp" class="w-[20vw] lg:w-[10vw]" /></figure>
+          </a><a href="https://www.avasoft.com"
+              class="h-[12vh] p-4 flex flex-col items-center justify-center"
+          >
+              <figure><img alt="Avasoft" src="../assets/avasoft.webp" class="w-[20vw] lg:w-[10vw]" /></figure>
+          </a><a href="https://www.guvi.in"
+              class="h-[12vh] p-4 flex flex-col items-center justify-center"
+          >
+              <figure><img alt="Guvi" src="../assets/guvi.webp" class="w-[20vw] lg:w-[10vw]" /></figure>
+          </a><a href="https://www.gighz.net"
+              class="h-[12vh] p-4 flex flex-col items-center justify-center"
+          >
+              <figure><img alt="GigHz" src="../assets/gighz.webp" class="w-[20vw] lg:w-[10vw]" /></figure>
+          </a><a href="https://www.saptanglabs.com"
+              class="h-[12vh] p-4 flex flex-col items-center justify-center"
+          >
+              <figure><img alt="Saptang Labs" src="../assets/saptan-labs.webp" class="w-[20vw] lg:w-[10vw]" /></figure>
+          </a><a href="https://home.barclays/"
+              class="h-[12vh] p-4 flex flex-col items-center justify-center"
+          >
+              <figure><img alt="Barclays" src="../assets/barclays.webp" class="w-[20vw] lg:w-[10vw]" /></figure>
+          </a><a href="https://www.e-consystems.com"
+              class="h-[12vh] p-4 flex flex-col items-center justify-center"
+          >
+              <figure><img alt="e-con Systems" src="../assets/e-con.webp" class="w-[20vw] lg:w-[10vw]" /></figure>
+          </a><a href="https://www.azentio.com"
+              class="h-[12vh] p-4 flex flex-col items-center justify-center"
+          >
+              <figure><img alt="Azentio" src="../assets/azentio.webp" class="w-[20vw] lg:w-[10vw]" /></figure>
+          </a><a href="https://www.dummy.com"
+              class="h-[12vh] p-4 flex flex-col items-center justify-center"
+          >
+              <figure><img alt="Dummy" src="../assets/texmo.webp" class="w-[20vw] lg:w-[10vw]" /></figure>
+          </a></div>
+        </section>
     </main>
   </div>
 </template>

@@ -131,7 +131,7 @@ import { RouterLink, RouterView } from 'vue-router'
           <p class="">Maruthamalai Main Road, Navavoor,</p>
           <p class="">Coimbatore(Dt), Tamil Nadu 641046, India.</p>
           <p class="">Phone: +91 44 7111 9111</p>
-          <p class="mb-4">Email: info@citchennai.net</p>
+          <p class="mb-4">Email: dummy@mail.com</p>
           <p class="text-xl font-bold">Important Links:</p>
           <div class="flex items-center p-2 gap-1">
             <a href="https://www.annauniv.edu/" class="rounded-full bg-gray-100 shadow-md overflow-hidden">
