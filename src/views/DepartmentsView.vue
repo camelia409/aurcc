@@ -74,18 +74,12 @@
             </div>
             <div v-else-if="currentSection === 'Faculty'">
               <h2 class="text-2xl font-bold mb-4">Faculty</h2>
-              <div v-for="professor in department.faculty" :key="professor.name">
-                <h3 class="text-lg font-semibold">{{ professor.name }}</h3>
-                <p><strong>Position:</strong> {{ professor.position }}</p>
-                <p v-if="professor.email"><strong>Email:</strong> <a :href="'mailto:' + professor.email">{{ professor.email }}</a></p>
-                <p><strong>Education:</strong></p>
-                <ul v-if="professor.education" class="list-disc pl-4">
-                  <li v-for="edu in professor.education" :key="edu.degree">
-                    {{ edu.degree }}, {{ edu.institution }} ({{ edu.year ? edu.year : 'Year unknown' }})
-                  </li>
-                </ul>
-                <p v-if="professor.research_interests"><strong>Research Interests:</strong> {{ professor.research_interests.join(', ') }}</p>
-                <p><strong>Teaching Experience:</strong> {{ professor.teaching_experience }}</p>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div v-for="staff in department.faculty" :key="staff.email" class="bg-white shadow-md rounded-md p-4">
+                  <h3 class="text-lg font-semibold">{{ staff.name }}</h3>
+                  <p>{{ staff.position }}</p>
+                  <p>{{ staff.email }}</p>
+                </div>
               </div>
             </div>
           </section>
