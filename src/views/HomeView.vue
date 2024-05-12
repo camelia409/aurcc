@@ -36,43 +36,29 @@ import TheWelcome from '../components/TheWelcome.vue'
         </div>
       </div>
 
-      <div class="flex flex-col gap-4 self-center justify-items-center items-center lg:w-1/2 p-9">
-        <h2 class="text-3xl font-bold m-2">Welcome to AURCC: About the campus</h2>
-        <p class="text-2xl ">
-          The Regional Campus Coimbatore of Anna University was established during 2012. It offers higher education in Engineering and Technology. Located in an Arcadian environment and away from the hustle and bustle crowd of the city. The Regional Campus Coimbatore is equipped with excellent infrastructure and highly qualified members of faculty, who facilitate hands on experience to students to master their skills in various disciplines.
-        </p>
-      </div>
-
       
-      <!-- Event section -->
-      <div class="flex gap-4 self-center justify-items-center items-center lg:w-1/2 p-9">
-        <div>
-          <h2 class="text-xl font-bold mb-4 self-center">News/Admission</h2>
-          <div class="events-section bg-base-300 overflow-hidden" @mouseenter="stopScrolling" @mouseleave="startScrolling">
-            <div class="events-content p-6" ref="eventsContent">
-              <div class="events-list" ref="eventsList">
-                <!-- Populate this with your upcoming events -->
-                <div v-for="event in upcomingEvents" :key="event.id" class="event">
-                  <h3 class="font-bold">{{ event.title }}</h3>
-                  <p>{{ event.date }}</p>
-                  <p>{{ event.description }}</p>
-                </div>
-              </div>
-            </div>
-          </div>
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 p-9 md:p-20">
+        <div class="col-span-3">
+          <h2 class="text-3xl font-bold m-2">Welcome to AURCC: About the campus</h2>
+          <p class="text-2xl ">
+            The Regional Campus Coimbatore of Anna University was established during 2012. It offers higher education in Engineering and Technology. Located in an Arcadian environment and away from the hustle and bustle crowd of the city. The Regional Campus Coimbatore is equipped with excellent infrastructure and highly qualified members of faculty, who facilitate hands on experience to students to master their skills in various disciplines.
+          </p>
         </div>
-        <div>
-          <h2 class="text-xl font-bold mb-4 self-center">Events/Scholarship</h2>
-          <div class="events-section bg-base-300 overflow-hidden" @mouseenter="stopScrolling" @mouseleave="startScrolling">
-            <div class="news-content p-6" ref="newsContent">
-              <div class="events-list h-80" ref="eventsList">
-                <!-- Populate this with your upcoming events -->
-                <div v-for="event in upcomingEvents" :key="event.id" class="event">
-                  <p>Bello this is Newslet</p>
-                  <p>Yup this is newslet</p>
-                  <h3 class="font-bold">{{ event.title }}</h3>
-                  <p>{{ event.date }}</p>
-                  <p>{{ event.description }}</p>
+
+        
+        <!-- Event section -->
+        <div class="flex flex-col gap-2">
+          <div>
+            <h2 class="text-xl font-bold mb-4 self-center">News/Admission</h2>
+            <div class="events-section bg-base-300 overflow-hidden" @mouseenter="stopScrolling" @mouseleave="startScrolling">
+              <div class="events-content p-6" ref="eventsContent">
+                <div class="events-list" ref="eventsList">
+                  <!-- Populate this with your upcoming events -->
+                  <div v-for="event in upcomingEvents" :key="event.id" class="event">
+                    <h3 class="font-bold">{{ event.title }}</h3>
+                    <p>{{ event.date }}</p>
+                    <p>{{ event.description }}</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -119,6 +105,20 @@ import TheWelcome from '../components/TheWelcome.vue'
               <figure><img alt="Dummy" src="../assets/texmo.webp" class="w-[20vw] lg:w-[10vw]" /></figure>
           </a></div>
         </section>
+             <!-- From the Dean's Desk section -->
+      <section class="bg-base-300 w-full py-12">
+        <div class="container mx-auto px-4">
+          <h2 class="text-4xl font-bold text-center mb-8">From the Dean's Desk</h2>
+          <p class="text-lg text-center mb-8">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi perspiciatis mollitia qui dolorum, rerum hic asperiores quibusdam repellendus sit repudiandae ipsa? Modi aliquam laboriosam mollitia laudantium nostrum, quae excepturi dolore voluptates. Qui dolorum voluptatum omnis itaque necessitatibus cum in, ea quae expedita beatae doloribus saepe. Provident velit pariatur eos! Aliquam distinctio dolorum, officia aut dolore modi nostrum excepturi? Totam maxime quis suscipit sunt earum corporis dolorum ipsa quidem saepe, nihil possimus consectetur corrupti atque molestias quam alias, nam quibusdam repudiandae quia magnam eligendi nemo aspernatur? Repudiandae, dolore unde architecto quisquam, voluptatem alias fuga perspiciatis velit provident dolor fugiat adipisci eaque.
+          </p>
+          <div class="flex justify-center">
+            <figure>
+              <img src="../assets/1.jpg" alt="Dean's Image" class="w-64 rounded-lg" />
+            </figure>
+          </div>
+        </div>
+      </section>
     </main>
   </div>
 </template>
