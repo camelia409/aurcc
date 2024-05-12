@@ -1,0 +1,99 @@
+{
+  "name": "Research Cell",
+  "description": "The Campus Research Co-ordination Cell (CRCC) was started in 2017 to carry out various activities related to research. It collects data on research activities, facilitates research proposals and PG projects, maintains records, and aims to enhance the research environment on campus. The CRCC communicates with the International Centre for Research Facilitation and Training (ICRFT) at Anna University Chennai to establish a Research Facilitation Centre (RFC) at the Regional Campus, Coimbatore. Both RFNC and RFC will provide a platform for accessing international databases, computing facilities, intellectual property protection, and manpower training.",
+  "supervisors": [
+    "Civil Engineering",
+    "Mechanical Engineering",
+    "Electrical and Electronics Engineering",
+    "Electronics and Communication Engineering",
+    "Computer Science and Engineering",
+    "Information Technology",
+    "Biotechnology",
+    "Nanotechnology",
+    "Management Studies",
+    "Computer Applications",
+    "Science and Humanities"
+  ],
+  "phd_scholars": {
+    "faculty_wise": "http://www.aurcc.ac.in/amenity/ResearchCell/faculty-wise.php",
+    "department_wise": "http://www.aurcc.ac.in/amenity/ResearchCell/dept-wise.php",
+    "total": 3595
+  },
+  "pg_projects": {
+    "departmentwise": {
+      "Civil Engineering": 384,
+      "Mechanical Engineering": 533,
+      "Electrical and Electronics Engineering": 550,
+      "Electronics and Communication Engineering": 440,
+      "Computer Science and Engineering": 686,
+      "Information Technology": 364,
+      "Nanotechnology": 63,
+      "Biotechnology": 72,
+      "MBA": 172,
+      "MCA": 331
+    },
+    "total": 3595
+  },
+  "stipend_details": [
+    {
+      "supervisor_name": "Dr. V. Bhanumathi",
+      "scholar_name": "R. Vishnuvarthan",
+      "full_time_or_part_time": "Full Time",
+      "batch": "Jan-17",
+      "funding_agency": "UGC",
+      "funding_scheme": "JRF",
+      "stipend_amount": "30,000 /-(Per month)",
+      "stipend_duration": "5 years"
+    },
+    {
+      "supervisor_name": "Dr. P. Renukadevi",
+      "scholar_name": "Dr. C. K. Venil",
+      "full_time_or_part_time": "Full Time",
+      "batch": "OCT-18",
+      "funding_agency": "UGC",
+      "funding_scheme": "Dr. D.S. Kothari Postdoctoral Fellowship",
+      "stipend_amount": "52000 /-(Per month)",
+      "stipend_duration": "3 years"
+    },
+    {
+      "supervisor_name": "Dr. P. Renukadevi",
+      "scholar_name": "Thasweer A. M",
+      "full_time_or_part_time": "Full Time",
+      "batch": "2019-2022",
+      "funding_agency": "CSIR",
+      "funding_scheme": "CSIR-JRF",
+      "stipend_amount": "31000 /-(Per month)",
+      "stipend_duration": "4 years"
+    },
+    {
+      "supervisor_name": "Dr. S. Marshal Anthoni",
+      "scholar_name": "S. Mohanapriya",
+      "full_time_or_part_time": "Full Time",
+      "batch": "JAN-15",
+      "funding_agency": "DST(Kiran Division)",
+      "funding_scheme": "Women Scientist Scheme A (WOS-A)",
+      "stipend_amount": "40,000 /-(Per month)",
+      "stipend_duration": "3 years"
+    },
+    {
+      "supervisor_name": "Dr. A. Leelamani",
+      "scholar_name": "Susana Ramya",
+      "full_time_or_part_time": "Full Time",
+      "batch": "Jul-15",
+      "funding_agency": "DST(Kiran Division)",
+      "funding_scheme": "Women Scientist Scheme A (WOS-A)",
+      "stipend_amount": "40,000 /-(Per month)",
+      "stipend_duration": "3 years"
+    },
+    {
+      "supervisor_name": "Dr. S. Marshal Anthoni",
+      "scholar_name": "V.N. Deiva Mani",
+      "full_time_or_part_time": "Full Time",
+      "batch": "Mar-19",
+      "funding_agency": "UGC - MHRO",
+      "funding_scheme": "DSKPDF",
+      "stipend_amount": "43,400 /-(Per month)",
+      "stipend_duration": "3 years"
+    }
+  ]
+}

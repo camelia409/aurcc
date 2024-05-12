@@ -1,15 +1,2738 @@
 [
-    {
-      "name": "Computer Science",
-      "description": "Learn about algorithms, data structures, and software development.",
-      "faculty": ["John Smith", "Jane Doe"],
-      "contact": "cs@example.com"
+    {   "address": "cse",
+        "image": "cse-girls-closeup.jpg",
+        "name": "Department of Computer Science and Engineering",
+        "description": "The Department of Computer Science and Engineering aims at producing technically competent professionals who can excel in today’s age of technology. Recognizing its role in engineering education, generation, and dissemination, the department is equipped with state-of-the-art facilities and relevant technologies. Computer Science or Computing Science is the scientific and mathematical approach to computation, specifically referring to the design of computing machines and processes.",
+        "vision": "To emerge as a world-class institution in engineering education and research, contributing to societal development and sustainable growth.",
+        "mission": [
+            "Impart quality education to produce competent engineers with a strong theoretical foundation and practical skills.",
+            "Promote research and innovation in collaboration with industries and academia.",
+            "Cultivate ethical values, leadership qualities, and a spirit of entrepreneurship among students.",
+            "Contribute to the socio-economic development of the region through technology transfer and community engagement."
+        ],
+        "events": [
+            {
+                "name": "TechFest 2024",
+                "description": "Annual technical festival showcasing projects, workshops, and competitions.",
+                "date": "March 15-17, 2024"
+            },
+            {
+                "name": "CodeWars",
+                "description": "Intercollegiate coding competition attracting participants from across the region.",
+                "date": "November 10, 2024"
+            }
+        ],
+        "placements": {
+            "companies_visited": ["TCS", "Infosys", "Wipro", "Cognizant", "Accenture"],
+            "average_salary": "Rs. 6,00,000 per annum",
+            "highest_salary": "Rs. 12,00,000 per annum",
+            "placement_percentage": "85%"
+        },
+        "achievements": [
+            {
+                "name": "Best Department Award",
+                "description": "Awarded by Anna University for outstanding academic performance and research contributions.",
+                "year": 2023
+            },
+            {
+                "name": "Innovation Award",
+                "description": "Received at the National Innovation Summit for a novel project developed by students.",
+                "year": 2022
+            }
+        ],
+        "research_and_publications": {
+            "total_research_papers": 85,
+            "international_journals": 65,
+            "international_conferences": 45,
+            "national_conferences": 20
+        },
+        "faculty": [
+            {
+                "name": "Dr. Manisekaran S V",
+                "position": "Assistant Professor",
+                "email": "manisekaran@aurcc.ac.in",
+                "education": [
+                    {
+                        "degree": "B.E. in Information Technology",
+                        "institution": "Bharathiar University",
+                        "year": 2003
+                    },
+                    {
+                        "degree": "M.E. in Computer Science and Engineering",
+                        "institution": "Anna University, Chennai",
+                        "year": 2005
+                    },
+                    {
+                        "degree": "Ph.D. in Information and Communication Engineering",
+                        "institution": "Anna University, Chennai",
+                        "year": 2015
+                    },
+                    {
+                        "degree": "PG Diploma in Career Guidance",
+                        "institution": "Bharathiar University"
+                    }
+                ],
+                "research_interests": ["Artificial Intelligence", "Wireless Sensor Networks", "Natural Language Processing"],
+                "teaching_experience": "19 years",
+                "contributions": [
+                    "Served as AICTE Coordination Committee Member for Smart India Hackathon",
+                    "Guided over 100 Post Graduate Scholars and currently supervising five Ph.D. Research Scholars",
+                    "Published research works in esteemed International Journals",
+                    "Served as Assistant Controller of Examinations at Anna University of Technology, Coimbatore",
+                    "Currently serving as Zonal Officer for Zone IX of Anna University, Chennai",
+                    "Wipro Certified Faculty in Java Full Stack",
+                    "Presented significant research articles in International Conferences",
+                    "Organized Tamil Nadu State Government funded Naan Mudhalvan skill training program",
+                    "Awarded 'Ezhuthoviyar' award from Thulimai Social forum for contribution to literary works",
+                    "Currently serving as the coordinator for Unnat Bhrath Abhiyan cell and National Service Scheme Unit at Anna University Regional Campus Coimbatore",
+                    "Coordinator of Career Guidance Cell and Kani Thamizh Peravai at Anna University Regional Campus Coimbatore"
+                ],
+                "links": {
+                    "Google Scholar Profile": "https://scholar.google.com/citations?user=BThdhEoAAAAJ&hl=en",
+                    "Email": "mailto:manisekaran@aurcc.ac.in",
+                    "Curriculum Vitae": "https://drive.google.com/open?id=1IR_iOiBDbeN1QZZ99qKZjmP3zPFF3sN7"
+                },
+                "previous_positions": [
+                    {
+                        "position": "Lecturer",
+                        "department": "IT Department",
+                        "institution": "PSG College of Technology, Coimbatore",
+                        "duration": "From 27.06.2005 to 11.08.2008"
+                    },
+                    {
+                        "position": "Assistant Professor",
+                        "department": "IT Department",
+                        "institution": "Anna University Regional Campus",
+                        "duration": "From 13.08.2008"
+                    }
+                ]
+            },
+            {
+                "name": "Dr. P. Marikkannu",
+                "position": "Assistant Professor (Senior Grade)",
+                "email": "pmarikkannu@gmail.com",
+                "education": [
+                    {
+                        "degree": "Ph.D. in Computer Science and Engineering",
+                        "institution": "Anna University, Chennai"
+                    },
+                    {
+                        "degree": "M.Tech. Information Technology",
+                        "institution": "College of Engineering Guindy, Anna University",
+                        "honors": ["With Distinction", "Gold Medalist"]
+                    }
+                ],
+                "research_interests":["nothing"],
+                "roles": ["Head-Incharge, Department of Computer Science and Engineering (July 2019 – March 2024)"],
+                "research_profiles": {
+                    "Google Scholar": "https://scholar.google.com/citations?user=Y9Ka_OwAAAAJ&hl=en",
+                    "Scopus": "https://www.scopus.com/authid/detail.uri?authorId=37079237000"
+                },
+                "publications": {
+                    "International Journals": 39,
+                    "International Conferences": 23,
+                    "National Conferences": 43
+                },
+                "abroad_visit": "Attended International Conference at Taylor’s University, Malaysia during 13-14, September 2023.",
+                "additional_links": {
+                    "Link to CV": "https://drive.google.com/open?id=1Pqy55ZCi_pmk706Fr5oILlZALWCrxYdS"
+                },
+                "clg-email": "marikkannu@aurcc.ac.in"
+            },
+            {
+                "name": "Dr. K. Seethappan",
+                "position": "Assistant Professor (Senior Grade)",
+                "email": "seethappan@gmail.com",
+                "experience": "Over 15 years",
+                "research_interests": ["Natural Language Processing", "Compiler Design", "Machine Learning"],
+                "professional_experience": [
+                    {
+                        "position": "Assistant Professor",
+                        "institution": "Shree Venkateshwara Hi-Tech Engineering College, Gobichettipalayam",
+                        "duration": "April 2010 - August 2010"
+                    },
+                    {
+                        "position": "Visiting Professor",
+                        "institution": "Anna University of Technology Ramanathapuram Campus",
+                        "duration": "September 2010 - December 2010"
+                    },
+                    {
+                        "position": "Assistant Professor",
+                        "institution": "University College of Engineering, Ramanathapuram",
+                        "duration": "December 2010 - December 2015"
+                    },
+                    {
+                        "position": "Assistant Professor (Senior Grade)",
+                        "institution": "University College of Engineering, Ramanathapuram",
+                        "duration": "December 2015 - August 2023"
+                    },
+                    {
+                        "position": "Assistant Professor (Senior Grade)",
+                        "institution": "Anna University Regional Campus, Coimbatore",
+                        "duration": "August 2023 - Present"
+                    }
+                ],
+                "academic_achievements": {
+                    "Google Scholar Profile": "https://scholar.google.com/citations?user=sSC7-lkAAAAJ&hl=en",
+                    "Email": "mailto:seethappan@aurcc.ac.in",
+                    "Research Papers": "8 papers published in International Journals and Conferences",
+                    "Additional Information": "Google Drive Profile: [Dr. K. Seethappan's Drive](https://drive.google.com/open?id=15Rtnotp6qdwgZOdQBvyE6G1ZxxKdMZZ8)"
+                }
+            },
+            {
+                "name": "Dr. Fareena N",
+                "position": "Assistant Professor",
+                "email": "fareena.aurcc@gmail.com",
+                "education": [
+                    {
+                        "degree": "Ph.D. in Computer Science and Engineering",
+                        "institution": "University College of Engineering, Anna University, Chennai",
+                        "year": 2021
+                    },
+                    {
+                        "degree": "M.E. Computer Science and Engineering",
+                        "institution": "PSG College of Technology, Coimbatore",
+                        "year": 2014
+                    },
+                    {
+                        "degree": "B.E. Computer Science and Engineering",
+                        "institution": "Sri Ramakrishna Engineering College, Coimbatore",
+                        "year": 2012
+                    }
+                ],
+                "research_interests": ["Natural Language Processing", "Machine Learning"],
+                "professional_experience": [
+                    {
+                        "position": "Assistant Professor",
+                        "institution": "Anna University Regional Campus, Coimbatore",
+                        "duration": "August 2023 - Present"
+                    }
+                ],
+                "achievements": [
+                    "Awarded Ph.D. for the thesis titled 'Novel Feature Selection Techniques for Enhancing Classification Accuracy in Text Mining' in 2021",
+                    "Published 6 papers in International Journals and 5 papers in National Conferences"
+                ],
+                "links": {
+                    "Google Scholar": "https://scholar.google.com/citations?user=pQVtZXYAAAAJ&hl=en",
+                    "Email": "mailto:fareena.aurcc@gmail.com",
+                    "LinkedIn": "https://www.linkedin.com/in/fareena-n-518502135/"
+                }
+            },
+            {
+                "name": "Dr. Preethi J",
+                "position": "Assistant Professor (Senior Grade)",
+                "departments": ["Department of Computer Science and Engineering", "Placement Cell", "DGATE Cell"],
+                "clg-email": "preethi@aurcc.ac.in",
+                "education": [
+                    {
+                        "degree": "Ph.D. in Computer Science and Engineering",
+                        "institution": "Anna University, Chennai",
+                        "year": 2020
+                    },
+                    {
+                        "degree": "M.E. Computer Science and Engineering",
+                        "institution": "PSG College of Technology, Coimbatore",
+                        "year": 2013
+                    },
+                    {
+                        "degree": "B.E. Computer Science and Engineering",
+                        "institution": "PSG College of Technology, Coimbatore",
+                        "year": 2009
+                    }
+                ],
+                "research_interests": ["Machine Learning", "Data Mining"],
+                "professional_experience": [
+                    {
+                        "position": "Assistant Professor",
+                        "institution": "Anna University Regional Campus, Coimbatore",
+                        "duration": "August 2023 - Present"
+                    }
+                ],
+                "achievements": [
+                    "Received the Best Paper Presentation Award at the International Conference on Computational Intelligence and Data Engineering 2019",
+                    "Published 4 papers in International Journals and 3 papers in International Conferences",
+                    "Organized and attended several Faculty Development Programs and Workshops"
+                ],
+                "links": {
+                    "Google Scholar": "https://scholar.google.com/citations?user=pG25xm4AAAAJ&hl=en",
+                    "Email": "mailto:preethi@aurcc.ac.in",
+                    "LinkedIn": "https://www.linkedin.com/in/preethi-j-88499a101/"
+                }
+            }
+        ],
+        "contact": "csedepartment@aurcc.ac.in"
     },
+	{	"address": "biotech",
+		"image": "",
+		"name": "Biotechnology",
+		"description": "Biotechnology is the Science for this century. With its advances, we are on the first part of a great journey. The Department of Biotechnology, Anna University, Regional Centre, Coimbatore was started in the year 2011. The Department of Biotechnology works with the start-up aim of developing high-quality infrastructure with the required support services to enhance the knowledge of the biotech student community and developing competent human resources at different levels in the field of biotechnology. The students of M.Tech. Biotechnology have undergone training & project works in several labs like CLRI, Micro labs, IGCAR, MKU, NIO, Anna University (Chennai), AMET University, Ramachandra Medical College, etc.",
+		"vision": "nil",
+		"mission": "nil",
+		"events": "nil",
+		"placements": "nil",
+		"achievements": "nil",
+		"research_and_publications": [
+		  "Formulation and evaluation of single-dose tetanus toxoid vaccine using chitosan and alginate: HPMC microspheres.",
+		  "Formulation and bioavailability studies of chitosan: PLGA encapsulated ferrous phosphate nanoparticle drug for iron deficiency anemia.",
+		  "Biodegradation study of polyoxymethylene polymer using CuO, MSN, and Y203 nanoparticles.",
+		  "Characterization of Syzygium cumini (L.) fruit peels anthocyanins and their in silico studies as candidate inhibitors for hBest1 and RP2.",
+		  "Synthesis of gold and silver nanoparticles encapsulated by active phytochemical fraction of Justicia gendarussa burm F P potential drug for arthritis."
+		],
+		"faculty": [
+			{
+				"name": "Dr. P. Renuka Devi",
+				"position": "Assistant Professor (Senior Grade)",
+				"email": "renukadevi@aurcc.ac.in",
+				"teaching_experience": [
+					{
+						"organization": "Kovai Kalaimagal College of Arts and Science, Coimbatore",
+						"role": "Lecturer",
+						"from": "Jan 1999",
+						"to": "Aug 2008"
+					},
+					{
+						"organization": "Anna University, Coimbatore",
+						"role": "Lecturer",
+						"from": "Aug 2008",
+						"to": "Dec 2009"
+					},
+					{
+						"organization": "Anna University of Technology, Coimbatore",
+						"role": "Director i/c Biotechnology Center",
+						"from": "Jan 2010",
+						"to": "Aug 2012"
+					},
+					{
+						"organization": "Anna University, Regional Campus, Coimbatore",
+						"role": "HoD i/c, Department of Biotechnology",
+						"from": "Aug 2011",
+						"to": "Nov 2022"
+					},
+					{
+						"organization": "Anna University, Regional Campus, Coimbatore",
+						"role": "Assistant Professor, Department of Science and Humanities",
+						"from": "Nov 2022",
+						"to": "Till Date"
+					}
+				],
+				"achievements": {
+					"years_of_experience": "25",
+					"number_of_research_papers": "45",
+					"number_of_phd_research_scholars_completed": "9",
+					"number_of_pdf_research_scholars_completed": "1",
+					"number_of_mtech_students_supervised": "40",
+					"areas_of_expertise": [
+						"Plant Biotechnology",
+						"Food Biotechnology",
+						"Nanobiotechnology"
+					]
+				},
+				"links": {
+					"google_scholar": "https://scholar.google.co.in/citations?user=B5BUeTsAAAAJ&hl=en",
+					"email": "renukadevi@aurcc.ac.in",
+					"drive_link": "https://drive.google.com/open?id=1jzWlxcSO4lrJ_XGU0HhZ6Uyf4Gi6k1uH"
+				}
+			}
+		],
+		"contact": "biotechdepartment@aurcc.ac.in"
+	},
+	{	"address":"nanotech",
+		"image": "",
+		"name": "Nanotechnology",
+		"description": "The Department of Nanoscience and technology staff's and students are actively doing research in the field of Energy materials, catalysis, and nanocomposites, fuel cells.",
+		"vision": null,
+		"mission": null,
+		"events": null,
+		"placements": null,
+		"achievements": null,
+		"research_and_publications": "The rated offer with for a our Departmentd wealth teaching Of constituent F of in higher Nanoscience expertise, colleges education and Nanotechnology Collaborators and Technology research in at at the, in Anna industries Anna Tamilnadu. University and University With other Regional Regional excellent research Campus Campus facilities organizations and Coimbatore Coimbatore services enjoy has is working with us on mutually beneficial projects: Department of Nanoscience and Technology's academics are at the forefront of developments in the higher education and research towards nanotechnology and many other subjects. At the forefront of nanotechnology research stretching across the boundaries of Science and Engineering; from controlled assembly of nanostructured materials to design of advanced materials. A new state-of -the-art research laboratories housing comprehensive suite of experimental facilities ranging from UV-Vis Spectroscopy, Raman Spectroscopy, Adsorption measurements and surface imaging tools have been well established. The department offers highly competitive two years/four semester M.Tech, programme in Nanoscience and Technology. The aim of this programme is to lead up students in cutting-edge nanotechnology. We are committed and ensure that the best candidates are able to start their own research towards social development.",
+		"faculty": [
+			{
+			"name": "Dr. Rajasekar Krishnan",
+			"position": "Assistant Professor",
+			"department": "Department of Chemistry (S&H)",
+			"email": "rajasekar@aurcc.ac.in",
+			"education": [
+			  {
+				"degree": "B.Sc. in Chemistry",
+				"institution": "Govt Arts College, Salem, University of Madras"
+			  },
+			  {
+				"degree": "M.Sc. in Chemistry",
+				"institution": "Govt Arts College, Salem, University of Madras"
+			  },
+			  {
+				"degree": "Ph.D. in Chemistry",
+				"institution": "Anna University Guindy Campus, Chennai",
+				"year": 2007
+			  }
+			],
+			"research_interest": null,
+			"professional_experience": [
+			  {
+				"position": "Post Doctoral Fellow",
+				"organization": "Department of Chemical Engineering, Massachusetts Institute of Technology (MIT), Cambridge, USA",
+				"duration": "June 2009 – June 2010"
+			  },
+			  {
+				"position": "Assistant Professor",
+				"organization": "Department of Nanotechnology, Anna University of Technology Coimbatore, Tamilnadu, INDIA",
+				"duration": "September 2008 – Till now"
+			  }
+			],
+			"achievements": [
+			  {
+				"title": "Eco-benign Synthesis, Characterization of CdS-QDs/Casein Bionanocomposite Towards Anti-microbial, Anti-hemolytic and Cytotoxicity in A549 & MCF-7 Cells",
+				"authors": ["A Srinivasan", "G Gayathri", "M Muthupandi", "K Rajasekar", "KB Ameen"],
+				"journal": "Journal of Cluster Science",
+				"pages": "1-16"
+			  },
+			  {
+				"title": "Investigation on Template Etching Process of SBA-15 Derived Ordered Mesoporous Carbon on Electrocatalytic Oxygen Reduction Reaction",
+				"authors": ["SMSK Velu Duraisamy", "Karuppiah Selvakumar", "Rajasekar Krishnan"],
+				"journal": "Chemistry select",
+				"volume": 4,
+				"pages": "2463"
+			  },
+			  {
+				"title": "Synthesis and electrochemical studies of Ta–Graphene nanocomposite film modified platinum electrode",
+				"authors": ["R Rajagopal", "A Ragunathan", "SK SM", "R Krishnan", "BA Kamaludeen"],
+				"journal": "Journal of Electroanalytical Chemistry",
+				"volume": 780,
+				"pages": "53-59"
+			  },
+			  {
+				"title": "Modified Synthesis of Edge ScrolledReduced GrapheneOxide with High Surface Area",
+				"authors": ["R Rajesh", "KB Ameen", "K Rajasekar"],
+				"journal": "EDUCATUM Journal of Science, Mathematics and Technology",
+				"volume": 3,
+				"issue": 1,
+				"pages": "1-5"
+			  },
+			  {
+				"title": "N-Doped Hollow Mesoporous Carbon Nanospheres for Oxygen Reduction Reaction in Alkaline Media.",
+				"authors": ["Velu Duraisamy", "Rajasekar Krishnan", "Sakkarapalayam Murugesan Senthil Kumar"],
+				"journal": "ACS Appl. Nano Mater.",
+				"year": 2020,
+				"volume": 3,
+				"issue": 9,
+				"pages": "8875–8887"
+			  },
+			  {
+				"title": "Hydrothermal assisted morphology designed MoS2 material as alternative cathode catalyst for PEM electrolyser application",
+				"authors": ["S.M. Senthil Kumar", "A. KarthigaiSelviNuriaNavascues", "K. Selvakumar", "S", "K. Rajasekar", "Ravichandran", "Silvia Irusta"],
+				"journal": "International Journal of Hydrogen Energy",
+				"volume": 41,
+				"year": 2016,
+				"pages": "13331-13340"
+			  }
+			],
+			"links": {
+			  "Google Scholar": "https://scholar.google.com/citations?user=hQG-NTcAAAAJ&hl=en",
+			  "Email": "mailto:rajasekar@aurcc.ac.in",
+			  "Resume": "https://drive.google.com/open?id=1Qqw5lD0RjvGhI_y6axNWEWegT36cifB0"
+			}
+		  },
+		  {
+			"name": "Dr. Sardhar Basha S J",
+			"position": "Assistant Professor (Senior Grade)",
+			"department": "Department of Science and Humanities (Chemistry)",
+			"email": "jsardhar@aurcc.ac.in",
+			"research_interests": null,
+			"professional_experience": [
+			  {
+				"position": "Junior Research Fellow and Senior Research Fellow",
+				"organization": "DRDO sponsored project, Anna University Chennai",
+				"duration": "2003-2006"
+			  },
+			  {
+				"position": "Post Doctoral Researcher",
+				"organization": "National Chung Cheng University, Taiwan",
+				"duration": "2006 - 2008"
+			  },
+			  {
+				"position": "Senior Lecturer",
+				"organization": "Sona College of Technology, Salem",
+				"duration": "2008 - 2009"
+			  },
+			  {
+				"position": "Assistant Professor",
+				"organization": "University College of Engineering Ramanathapuram",
+				"duration": "2009 - 2015"
+			  },
+			  {
+				"position": "Assistant Professor",
+				"organization": "Anna University Regional Campus Coimbatore",
+				"duration": "2015- Till date"
+			  }
+			],
+			"achievements": [
+			  {
+				"title": "Unraveling the Enhanced Electrochemical Performances of Nickel Aluminum Sulfide Lattices for Overall Water Splitting and as Counter Electrode Material for Dye-Sensitized Solar Cells",
+				"authors": ["T. saravanakumar", "S, Sathiya Bama", "Bhojanaa, Karuppanapillai", "A. Pandikumar", "S. J, Sardhar Basha", "T, Selvaraju"],
+				"journal": "J. Phys. Chem. C",
+				"year": 2023,
+				"volume": "127",
+				"issue": "25",
+				"pages": "11921-11931"
+			  },
+			  {
+				"title": "Revealing the Role of Brønsted Basicity by the Electrocatalytic Reaction via Li Insertion in the MgFe2O4 Lattice",
+				"authors": ["T. Saravanakumar", "S.J. Sardhar Basha", "S. Sathiya Bama", "Humayun Amir", "Viswanathan C", "T. Selvaraju"],
+				"journal": "J. Phys. Chem. C",
+				"year": 2022,
+				"volume": 126,
+				"pages": "11915−11926"
+			  },
+			  {
+				"title": "Hierarchical 2D/2D interface of nickel aluminum oxide and nickel aluminum layered double hydroxide nanoflowers: An efficient and robust electrocatalyt for overall water splitting",
+				"authors": ["T. Saravanakumar", "S. Sathiya Bama", "T. Selvaraju", "S.J. Sardhar Basha"],
+				"journal": "Electrochimica Acta",
+				"volume": 392,
+				"year": 2021,
+				"pages": "139029"
+			  },
+			  {
+				"title": "Hexacyanoferrate-Complex-Derived NiFe2O4/CoFe2O4 Heterostructure−MWCNTs for an Efficient Oxygen Evolution Reaction",
+				"authors": ["T. Saravanakumar", "S. Sathiya Bama", "T. Selvaraju", "S.J. Sardhar Basha"],
+				"journal": "Energy & Fuels",
+				"volume": 35,
+				"issue": 6,
+				"year": 2021,
+				"pages": "5372-5382"
+			  },
+			  {
+				"title": "Amperometric determination of hydrazine using a CuS-ordered mesoporous carbon electrode",
+				"authors": ["Srinidhi", "G", "Sudalaimani", "S", "Giribabu", "K", "Sardhar Basha", "S.J", "Suresh", "C"],
+				"journal": "Microchimica Acta",
+				"volume": 187,
+				"year": 2020,
+				"pages": "1-10"
+			  }
+			],
+			"links": {
+			  "Google Scholar": null,
+			  "Email": "mailto:jsardhar@aurcc.ac.in",
+			  "LinkedIn": null
+			},
+			"contact": "nanotechdepartment@aurcc.ac.in"
+			}
+		]
+	},
+	{	"address":"mech",
+		"image":"",
+		"name": "Mechanical Engineering",
+		"description": "The Department of Mechanical Engineering was established in the year 2007 with undergraduate (UG) programmes, followed by the introduction of postgraduate (PG) programmes. The team comprises potential faculty and administrative personnel dedicated to the conduct of programmes and the establishment of various laboratories to ensure smooth and efficient departmental operations. The main objective of the department is to create a highly skilled and dedicated workforce capable of facing global challenges.",
+		"vision": "The Department of Mechanical Engineering strives to be globally renowned for outstanding technical education and research leading to highly-qualified ethical engineers, who are innovative, entrepreneurial and successful in advanced fields of engineering and research.",
+		"mission": [
+		"Through professionalism in teaching, instill the spirit of commitment and problem-solving methodologies.",
+		"To bring up highly qualified ethical mechanical engineers and build leadership qualities.",
+		"Provide service to society through contribution of ideas for projects and carrying out research for the benefit and development of the community.",
+		"Foster freedom of opinion for sharing knowledge and information."
+		],
+		"events": {
+		"department_activities": {
+			"conferences_conducted": 1,
+			"workshops_conducted": 5,
+			"papers_presented_by_students": 225,
+			"papers_presented_publications_by_staff": 91
+		},
+		"programmes_conducted": [
+			{
+			"name": "Design for Manufacturing and Assembly (DFMA)",
+			"duration_event_date": "20.12.2012 - 21.12.2012",
+			"conference_workshop_type": "Workshop"
+			},
+			{
+			"name": "Innovative Developments in Mechanical Engineering",
+			"duration_event_date": "21.03.2014 - 22.03.2014",
+			"conference_workshop_type": "National Conference"
+			},
+			{
+			"name": "Advancements in Metal Forming",
+			"duration_event_date": "08.04.2014 - 09.04.2014",
+			"conference_workshop_type": "Workshop"
+			},
+			{
+			"name": "Industrial Safety Management and Regulations",
+			"duration_event_date": "11.08.2014 - 12.08.2014",
+			"conference_workshop_type": "Workshop"
+			},
+			{
+			"name": "Finite Element Methods and its Applications",
+			"duration_event_date": "13.03.2015",
+			"conference_workshop_type": "Workshop"
+			},
+			{
+			"name": "Agile Manufacturing",
+			"duration_event_date": "25.07.2015",
+			"conference_workshop_type": "Workshop"
+			}
+		]
+		},
+		"placements": "nil",
+		"achievements": "nil",
+		"research_and_publications": [
+		{
+			"programme": "INSPIRE Fellowship under Assured Opportunity for Research Career (AORC) - a component of INSPIRE program for students admitted for pursuing full-time doctoral (Ph.D) programme at Anna University, Regional Campus, Coimbatore - 641 046, TamilNadu.",
+			"title_of_the_project": "Inspire Fellow Code: IF 110324",
+			"total_estimated_fund_for_the_project": "7.3 Lakhs",
+			"principal_investigator": "Krishnaraj.R",
+			"co_principal_investigator_research_supervisor": "Dr. M. Sakthiv"
+		}
+		],
+		"faculty": [
+		  {
+			"name": "Dr. K. Soorya Prakash",
+			"email": "sooryaprakash.k@gmail.com",
+			"position": "Assistant Professor (Selection Grade)",
+			"teaching_experience": [
+			  {
+				"organization": "Krishna College of E&T, Kovaipudur, Cbe.",
+				"role": "Teaching",
+				"from": "24/06/2005",
+				"to": "07/06/2006"
+			  },
+			  {
+				"organization": "PSG College of Technology, Coimbatore",
+				"role": "Teaching",
+				"from": "07/06/2006",
+				"to": "09/08/2008"
+			  },
+			  {
+				"organization": "Anna University RC Coimbatore",
+				"role": "Teaching",
+				"from": "11/08/2008",
+				"to": "Till Date"
+			  }
+			],
+
+			"links": {
+			  "google_scholar": "https://scholar.google.com/schhp?hl=en",
+			  "email": "soorya@aurcc.ac.in",
+			  "linkedin": "nil"
+			}
+		  },
+		  {
+			"name": "Dr. M Sakthivel",
+			"email": "sakthi.tgode@gmail.com",
+			"position": "Associate Professor",
+			"teaching_experience": [
+			  {
+				"organization": "Anna University Regional Campus",
+				"role": "Associate Professor",
+				"from": "01.08.2012",
+				"to": "Till Date"
+			  },
+			  {
+				"organization": "Anna University Coimbatore",
+				"role": "Associate Professor",
+				"from": "13.08.2011",
+				"to": "31.07.2012"
+			  },
+			  {
+				"organization": "Anna University Coimbatore",
+				"role": "Assistant Professor",
+				"from": "13.08.2008",
+				"to": "12.08.2011"
+			  },
+			  {
+				"organization": "Government College of Technology Coimbatore",
+				"role": "Teaching Research Associate",
+				"from": "19.02.2003",
+				"to": "11.08.2008"
+			  },
+			  {
+				"organization": "Government College of Engineering Salem",
+				"role": "Teaching Research Associate",
+				"from": "19.04.2002",
+				"to": "18.02.2003"
+			  }
+			],
+			"links": {
+			  "google_scholar": "https://scholar.google.co.in/citations?hl=en&user=H7rEMNAAAAAJ&view_op=list_works&sortby=pubdate",
+			  "email": "sakthivel@aurcc.ac.in",
+			  "drive_link": "https://drive.google.com/open?id=1jYzyBO8OgZWLi0Q_Z-AhV7T8ZKZw1dev"
+			}
+		  },
+		  {
+			"name": "Dr. Kanthavel K",
+			"email": "kandavelkk@gmail.com",
+			"position": "Assistant Professor",
+			"teaching_experience": [
+			  {
+				"organization": "Anna University Regional Campus Coimbatore",
+				"role": "Assistant Professor",
+				"from": "07-08-2008",
+				"to": "Till Date"
+			  },
+			  {
+				"organization": "Anna University of Technology",
+				"role": "Lecturer",
+				"from": "01.09.2007",
+				"to": "06.08.2008"
+			  },
+			  {
+				"organization": "Hindusthan College of Engineering and Technology",
+				"role": "Assistant Professor",
+				"from": "01-06-2006",
+				"to": "13-08-2007"
+			  },
+			  {
+				"organization": "Hindusthan College of Engineering and Technology",
+				"role": "Lecturer",
+				"from": "01-06-2004",
+				"to": "31-05-2006"
+			  }
+			],
+			"links": {
+			  "google_scholar": "https://scholar.google.com/citations?user=yRxP8XIAAAAJ",
+			  "email": "kandavelkk@ccf.annauniv.edu",
+			  "drive_link": "https://drive.google.com/open?id=11I4xY-G_IdN6mUzi5GZNg9Sabf_RNeje"
+			}
+		  },
+		  {
+			"name": "Dr. Sathiya Moorthy R",
+			"email": "sathiya81@gmail.com",
+			"position": "Assistant Professor",
+			"teaching_experience": [
+			  {
+				"organization": "VIT University, Vellore",
+				"role": "Lecturer",
+				"from": "2007",
+				"to": "2008"
+			  },
+			  {
+				"organization": "Anna University Regional Campus Coimbatore",
+				"role": "Assistant Professor",
+				"from": "2008",
+				"to": "Till Date"
+			  }
+			],
+			"links": {
+			  "google_scholar": "https://scholar.google.com/citations?user=QSBDUCQAAAAJ&hl=en",
+			  "email": "sathiya@aurcc.ac.in",
+			  "drive_link": "https://drive.google.com/open?id=1U9z-1VT7NUjKG_ZxlJBNa51p45P1hWgL"
+			}
+		  },
+		  {
+			"name": "Dr. Balasubramanian M",
+			"email": "annaunivbala76@gmail.com",
+			"position": "Assistant Professor",
+			"teaching_experience": [
+			  {
+				"organization": "Sapthagiri College of Engineering Periyanahalli",
+				"role": "Lecturer",
+				"from": "1998",
+				"to": "2002"
+			  },
+			  {
+				"organization": "SRM Valliammai Engineering College",
+				"role": "Sr. lecturer",
+				"from": "2004",
+				"to": "2009"
+			  },
+			  {
+				"organization": "Anna University-University College of Engineering Ramanathapuram Campus",
+				"role": "Assistant Professor",
+				"from": "2009",
+				"to": "2023"
+			  },
+			  {
+				"organization": "Anna University-Regional Campus Coimbatore",
+				"role": "Assistant Professor",
+				"from": "2023",
+				"to": "Till Date"
+			  }
+			],
+			"links": {
+			  "google_scholar": "https://scholar.google.com/citations?user=JLZmMBYAAAAJ&hl=en",
+			  "email": "annaunivbala76@gmail.com",
+			  "drive_link": "https://drive.google.com/open?id=1hVAjAQwSddu9gWkM40lhPYF_c2A2ZyGb"
+			}
+		  },
+		  {
+			"name": "Mrs. Usha Rani T",
+			"email": "ushatheivendran@gmail.com",
+			"position": "Assistant Professor (Senior Grade)",
+			"teaching_experience": [
+			  {
+				"organization": "Anna University Regional Campus, Coimbatore",
+				"role": "Assistant Professor",
+				"from": "21.07.2023",
+				"to": "Till Date"
+			  },
+			  {
+				"organization": "University VOC College of Engineering, Thoothukudi",
+				"role": "Assistant Professor",
+				"from": "01-07-2011",
+				"to": "21-06-2023"
+			  },
+			  {
+				"organization": "Anna University of Technology, Regional Campus, Tirunelveli",
+				"role": "Assistant Professor",
+				"from": "24-08-2010",
+				"to": "30-06-2011"
+			  },
+			  {
+				"organization": "Price Shri Venkateswara Padmavathy Engineering College, Ponmar",
+				"role": "Lecturer",
+				"from": "02-06-2008",
+				"to": "17-08-2010"
+			  },
+			  {
+				"organization": "Jeya Engineering College, Thiruninravur",
+				"role": "Lecturer",
+				"from": "02-06-2007",
+				"to": "03-05-2008"
+			  }
+			],
+			"links": {
+			  "google_scholar": "https://scholar.google.com/citations?user=tFUawD8AAAAJ&hl=en",
+			  "email": "usharani@annaunivtut.in",
+			  "drive_link": "https://drive.google.com/open?id=17GllGUg-oZ6QKvrErHh6vOu9g0SZFMiG"
+			}
+		  }		  
+		],
+		"contact": "mechdepartment@aurcc.ac.in"
+	},
+	{	"address": "mba",
+		"image": "",
+		"name": "MBA - Masters of Business Administration",
+		"description": "The Department offers Master of Business Administration (MBA) course at Anna University Regional Campus Coimbatore as a four-semester regular programme spread over two academic years. The course structure is designed to impart knowledge in areas of specialization, viz. Marketing, Human Resource, Finance, Systems, and Production specializations. The department has two aims: to increase the understanding of the factors which influence the conduct of organizations and to offer students the tools and techniques which they may use to navigate organizational life.",
+		"vision": "The Department strives to provide a stimulating environment for learning, to maximize individual potential, and empower students to meet the challenges of their dynamic environment.",
+		"mission": "Our mission is to disseminate managerial expertise by developing human resources to meet the country's entrepreneurial and workforce needs with an adaptive approach to our cultural, ethical, and professional norms.",
+		"events": {
+			"conferences_workshops": 16,
+			"student_papers_presented": {
+				"state_level": 0,
+				"national_level": 17,
+				"international_level": 0
+			},
+			"faculty_papers_presented": {
+				"state_level": 0,
+				"national_level": 0,
+				"international_level": 600
+			}
+		},
+		"placements": {
+			"description": "The department strives to offer 100% placement and skill development training for self-employment. Thus, all the students were continuously trained on soft skills. The students who sought placements were offered support and were placed in TVS, ICICI, and such premier organizations."
+		},
+		"achievements": {
+			"passed_out_students": 1500,
+			"events_organized": ["Anna Bazaar"],
+			"grants_received": {
+				"DRDO_Delhi": 0.5,
+				"Central_Institute_of_Classical_Tamil": 1.5
+			},
+			"papers_presented_abroad": ["Dr.G.Barani presented papers in the University of Central Florida, USA during February, 2014"],
+			"faculty_publications": {
+				"books": 20,
+				"papers": 600
+			},
+			"completed_phd_students": 71
+		},
+		"research_and_publications": {
+			"faculty_publications": {
+				"books": 20,
+				"papers": 600
+			},
+			"completed_phd_students": 71,
+			"synopsis_submitted": 4
+		},
+		"faculty": [
+			{
+				"name": "Dr. Subha M V",
+				"email": "subhamv@aurcc.ac.in",
+				"position": "Associate Professor",
+				"department": "Department of Management Studies",
+				"experience": "26 years",
+				"research_interests": ["Stock Market Analysis and Prediction", "Econometric and Stochastic Model Building", "Corporate Finance", "Time Series Analysis"],
+				"education": ["Ph.D. in Finance"],
+				"current_position": "Associate Professor, Anna University Regional Campus Coimbatore (18.8.2011 to present)",
+				"previous_positions": [
+					"Assistant Professor SG, Anna University, Coimbatore (18.08.2008 to 17.08.2011)",
+					"Assistant Professor, Sri Krishna College of Engineering and Technology (22.08.2007 to 14.08.2008)",
+					"Senior Lecturer, Guruvayurappan Institute of Management (14.08.2002-21.08.2007)",
+					"Lecturer, Guruvayurappan Institute of Management (14.08.1998 to 13.08.2002)"
+				],
+				"scholar_profile": "https://scholar.google.com/citations?user=ze1WOaIAAAAJ&hl=en",
+				"additional_info": "https://drive.google.com/open?id=1G0HK15KlSlt-rhKJ7MlhSoFxWoTFCHzX"
+			},
+			{
+				"name": "Dr. S. Chandrakumarmangalam",
+				"email": "ckmaucbe@gmail.com",
+				"position": "Associate Professor",
+				"department": "Department of Management Studies",
+				"experience": "25 years",
+				"research_interests": ["Open-source software project management", "Rural entrepreneurship", "Economic development"],
+				"education": [],
+				"current_position": "Associate Professor, School of Management Studies, Anna University Regional Centre Coimbatore (11.08.2011 to present)",
+				"previous_positions": [],
+				"scholar_profile": "https://scholar.google.com/citations?user=9T0CchQAAAAJ&hl=en",
+				"additional_info": ""
+			},
+			{
+				"name": "Dr. PREMAPRIYA M.S",
+				"email": "premapriya@aurcc.ac.in",
+				"position": "Assistant Professor",
+				"department": "Department of Management Studies",
+				"experience": "21 years",
+				"research_interests": ["Marketing", "Systems", "Women empowerment", "Women studies"],
+				"education": ["Ph.D. in Management"],
+				"current_position": "Assistant Professor, Anna University Regional Campus Coimbatore (8 August 2008 to present)",
+				"previous_positions": ["Lecturer, SNR Sons College, Coimbatore (16 June 2003 to 7 August 2008)"],
+				"additional_info": "https://drive.google.com/open?id=1sZJsiwR5-qF2ADNPeOLUeneOjfCclZMM"
+			},
+			{
+				"name": "Dr. Srividhya S",
+				"email": "srividhya@aurcc.ac.in",
+				"position": "Assistant Professor",
+				"department": "Department of Management Studies",
+				"experience": "29 years",
+				"research_interests": ["Performance Management and Assessment"],
+				"education": ["Two Post Graduate Degrees in Commerce and Business Administration", "Ph.D."],
+				"current_position": "Assistant Professor, Anna University Regional Campus Coimbatore (2008 - present)",
+				"previous_positions": [
+					"Purchase Officer, ANP APPAREL, Tirupur (1995 to 2002)",
+					"Administrative Officer, M/s. KARTHIKEYAN ENGINEERING CONSULTANTS, Coimbatore (2002 to 2008)"
+				],
+				"scholar_profile": "https://scholar.google.co.in/citations",
+				"additional_info": "https://drive.google.com/open?id=10-MRxOAOtbhsa6mjZZN_ccjpL5T3bv3o"
+			},
+			{
+				"name": "Dr. Suganthalakshmi T",
+				"email": "sugi1971@rediffmail.com",
+				"position": "Assistant Professor",
+				"department": "Department of Management Studies",
+				"experience": "25 years",
+				"research_interests": ["Skill development activities for students"],
+				"education": [],
+				"current_position": "Assistant Professor, Anna University Regional campus Coimbatore (2008 to present)",
+				"previous_positions": [
+					"Lecturer in MCA at RVS College of Arts and Science (1999 to 2004)",
+					"Lecturer in MBA at RVSIMSR (2004 to 2008)"
+				],
+				"scholar_profile": "https://scholar.google.com/citations?user=uVpPQDAAAAAJ&hl=en",
+				"additional_info": "https://drive.google.com/open?id=1yfUS2vouzCRs1AWLfuQvlLtvduelqrV6"
+			}
+		],
+		"contact": "mbadepartment@aurcc.ac.in"
+		},
+	  
     {
-      "name": "Mathematics",
-      "description": "Explore the beauty of numbers, equations, and proofs.",
-      "faculty": ["Alice Johnson", "Bob Brown"],
-      "contact": "math@example.com"
-    }
+        "address":"eee",
+        "image":"ece2.jpg",
+        "name": "Department of Electrical and Electronics Engineering",
+        "description":"The Department aims to impart the Students a learning Experience in understanding the fundamental concepts of Electrical & Electronics Engineering built on the Foundation of Science, Mathematics, Computing and Technology by active learning process with dedicated faculty members and extensive laboratory facilities so as to prepare them for their Professional Careers. It also prepares the  students to meet the growing global challenges of Engineering Industries by educating them to become highly professional Electrical and Electronics Engineers of high ethics. The Department produces highly qualified Engineers not only to meet the Global environment but also to build a developed nation.",
+        "vision":
+                "To be a centre of excellence by imparting quality teaching, carrying out effective research and technology development in frontier areas of Electrical and Electronics Engineering.",
+        "mission":[
+            
+                " To empower students and professionals with state-of-art knowledge and technological skills in Electrical and Electronics Engineering.",
+                " To enrich the students to possess the ability and passion to work wisely, creatively, and effectively for the benefit of society.",
+                " To enable Industries to adopt effective solutions in thrust areas of electrical engineering through research and consultancy.",
+                " To be a place for innovation and technology development in growing areas of Electrical and Electronics Engineering."
+                ],
+        "events": {
+                      "conferences_workshops_fdp": {
+                        "total": 16,
+                        "papers_presented_students": {
+                          "state_level": 0,
+                          "national_level": 250,
+                          "international_level": 0
+                        },
+                        "papers_presented_staff": {
+                          "state_level": 0,
+                          "national_level": 180,
+                          "international_level": 0
+                        }
+                      },
+                      "programs_conducted": [
+                        {
+                          "name": "Two day workshop on 'Genetic Algorithm and PSO: Hands On Training Using MATLAB'",
+                          "duration_event_date": "27/09/12 & 28/09/12",
+                          "sponsoring_agency": "Registeration"
+                        },
+                        {
+                          "name": "Two day workshop on 'Genetic Algorithm and PSO: Hands On Training Using MATLAB'",
+                          "duration_event_date": "18/10/12 & 19/10/12",
+                          "sponsoring_agency": "Registeration"
+                        },
+                        {
+                          "name": "Two day workshop on 'PSO And Its Variants: Concepts And Basic Implementation In MATLAB'",
+                          "duration_event_date": "23/11/12 & 24/11/12",
+                          "sponsoring_agency": "Registeration"
+                        },
+                        {
+                          "name": "Two day workshop on 'MATLAB Based Training And Simulation On Supervised Learning Neural Networks And Differential Evolution Algorithm'",
+                          "duration_event_date": "20/12/12 & 21/12/12",
+                          "sponsoring_agency": "Registeration"
+                        },
+                        {
+                          "name": "Two day workshop on 'PSO And Its Variants: Concepts And Basic Implementation In MATLAB'",
+                          "duration_event_date": "21/02/13 & 22/02/13",
+                          "sponsoring_agency": "Registeration"
+                        },
+                        {
+                          "name": "FDP on 'Control System'",
+                          "duration_event_date": "17/12/13 to 23/12/13",
+                          "sponsoring_agency": "Centre for Faculty Development,Anna University Chennai."
+                        },
+                        {
+                          "name": "FDP on 'Special Electrical Machines'",
+                          "duration_event_date": "10/06/13 to 16/06/13",
+                          "sponsoring_agency": "Centre for Faculty Development,Anna University Chennai."
+                        },
+                        {
+                          "name": "National conference on 'Intelligent Computing And Control For Engineering Applications'",
+                          "duration_event_date": "27/03/13 & 28/03/13",
+                          "sponsoring_agency": "DRDO"
+                        },
+                        {
+                          "name": "National Seminar On 'Energy Conservation And Management'",
+                          "duration_event_date": "23/01/14",
+                          "sponsoring_agency": "PCRA,Govt of India"
+                        }
+                      ]
+                    }
+                  ,
+        "placements"  :  {
+                    "companies_visited": [
+                      "Tamilnadu Electricity Generation and Distribution Corporation",
+                      "Robert Bosch",
+                      "Suzion Energy Pvt. Ltd.",
+                      "Enercon Pvt. Ltd.",
+                      "ZF Wind Power Pvt. Ltd",
+                      "Lakshmi Machine Works Pvt. Ltd",
+                      "Pricol Industries",
+                      "Cognizant",
+                      "Tata Consultancy Services",
+                      "Infosys",
+                      "Wipro",
+                      "KGISL Pvt. Ltd.",
+                      "Salzer Electronics Pvt. Ltd.",
+                      "Reputed Engineering Colleges and Universities"
+                    ],
+					"average_salary": "",
+					"highest_salary": "",
+					"placement_percentage": "70%"
+                  },
+          "achievements" :   {
+                    "notable_achievements": {
+                      "phd_candidates": {
+                        "total": 15,
+                        "supervisors": 2,
+                        "duration": "8 years"
+                      },
+                      "faculty_development_programs": {
+                        "total": 4,
+                        "subjects": "undergraduate",
+                        "focus": "technical expertise enhancement"
+                      },
+                      "workshops": {
+                        "total": 12,
+                        "topic": "growing machine learning techniques",
+                        "beneficiaries": "research scholars"
+                      },
+                      "national_conferences": {
+                        "total": 3,
+                        "funding_sources": ["AICTE", "BRNS", "DRDO", "ISRO", "AERB"],
+                        "purpose": "facilitate research presentation and interactions with keynote speakers"
+                      },
+                      "industrial_projects": {
+                        "students": {
+                          "full_time": "numerous",
+                          "part_time": "numerous"
+                        }
+                      },
+                      "postgraduate_publications": {
+                        "journals": ["referred National", "International"]
+                      },
+                      "in_plant_training": {
+                        "locations": [
+                          "NLC thermal power plants",
+                          "Hydro Power Stations",
+                          "L&T Switchgear Training Centre",
+                          "Suzlon Pvt. Ltd.",
+                          "ZF Wind Power Pvt. Ltd."
+                        ],
+                        "students": "Postgraduate"
+                      }
+                    }
+                  },
+        "research_and_publications": [
+                      {
+                        "authors": ["Sivanandam, S. N.", "Deepa, S. N."],
+                        "title": "Introduction to genetic algorithms",
+                        "year": 2007,
+                        "publisher": "Springer Science & Business Media"
+                      },
+                      {
+                        "authors": ["Sivanandam, S. N.", "Sumathi, S.", "Deepa, S. N."],
+                        "title": "Introduction to fuzzy logic using MATLAB (Vol. 1)",
+                        "year": 2007,
+                        "publisher": "Springer"
+                      },
+                      {
+                        "authors": ["Deepa, S. N.", "Sumathi, S.", "Sivanandam, S. N."],
+                        "title": "Introduction to Neural Networks Using Matlab 6.0",
+                        "year": 2006
+                      },
+                      {
+                        "authors": ["Deepa, S. N."],
+                        "title": "Principles of Soft Computing",
+                        "year": 2007,
+                        "publisher": "Wiley",
+                        "isbn": "81-265"
+                      },
+                      {
+                        "authors": ["Sivanandam, S. N.", "Deepa, S. N."],
+                        "title": "Genetic algorithm optimization problems",
+                        "book": "Introduction to Genetic Algorithms",
+                        "year": 2008,
+                        "pages": "165-209",
+                        "publisher": "Springer Berlin Heidelberg"
+                      },
+                      {
+                        "authors": ["Sheela, K. Gnana", "Deepa, S. N."],
+                        "title": "Neural network based hybrid computing model for wind speed prediction",
+                        "journal": "Neurocomputing",
+                        "volume": 122,
+                        "year": 2013,
+                        "pages": "425-429"
+                      },
+                      {
+                        "authors": ["Deepa, S. N.", "Sugumaran, G."],
+                        "title": "Model order formulation of a multivariable discrete system using a modified particle swarm optimization approach",
+                        "journal": "Swarm and Evolutionary Computation",
+                        "volume": 1,
+                        "issue": 4,
+                        "year": 2011,
+                        "pages": "204-212"
+                      },
+                      {
+                        "authors": ["Sivanandam, S. N.", "Deepa, S. N."],
+                        "title": "Control System Engineering using MATLAB",
+                        "year": 2007
+                      },
+                      {
+                        "authors": ["Nachimuthu, Deepa Subramaniam", "Baladhandapani, Arunadevi"],
+                        "title": "Multidimensional Texture Characterization: On Analysis for Brain Tumor Tissues Using MRS and MRI",
+                        "journal": "Journal of digital imaging",
+                        "volume": 27,
+                        "issue": 4,
+                        "year": 2014,
+                        "pages": "496-506"
+                      },
+                      {
+                        "authors": ["Sheela, K. Gnana", "Deepa, S. N."],
+                        "title": "Performance analysis of modeling framework for prediction in wind farms employing artificial neural networks",
+                        "journal": "Soft Computing",
+                        "volume": 18,
+                        "issue": 3,
+                        "year": 2014,
+                        "pages": "607-615"
+                      },
+                      {
+                        "authors": ["Karthikeyan, Ramasamy", "Sainarayanan, Gopalakrishnan", "Deepa, Subramaniam Nachimuthu"],
+                        "title": "Perceptual video quality assessment in H. 264 video coding standard using objective modeling",
+                        "journal": "SpringerPlus",
+                        "volume": 3,
+                        "issue": 1,
+                        "year": 2014,
+                        "pages": "174"
+                      },
+                      {
+                        "authors": ["Sheela, K.", "Deepa, S."],
+                        "title": "A review on neural network models for wind speed prediction",
+                        "journal": "Wind Engineering",
+                        "volume": 37,
+                        "issue": 2,
+                        "year": 2013,
+                        "pages": "111-124"
+                      },
+                      {
+                        "authors": ["Arunadevi, B.", "Deepa, S. N."],
+                        "title": "Texture Analysis for 3D Classification of Brain Tumor Tissues",
+                        "journal": "Przeglad Elecktrotechniczny",
+                        "volume": 89,
+                        "issue": "4/2013",
+                        "year": 2013,
+                        "pages": "338-342"
+                      },
+                      {
+                        "authors": ["Arunadevi, B.", "Deepa, S. N."],
+                        "title": "Brain Tumor Tissue Categorization in 3D Magnetic Resonance Images using improved PSO for Extreme learning machine",
+                        "journal": "Progress in Electromagnetics Research B",
+                        "volume": 49,
+                        "year": 2013,
+                        "pages": "31-54"
+                      },
+                      {
+                        "authors": ["Gnana Sheela, K.", "Deepa, S. N."],
+                        "title": "A New Algorithm to find number of hidden neurons in Radial Basis Function Networks for wind speed prediction in Renewable Energy Systems",
+                        "journal": "Journal of Control Engineering and Applied Informatics",
+                        "volume": 15,
+                        "issue": 3,
+                        "year": 2013,
+                        "pages": "30-37",
+                        "issn": "1454-8658"
+                      },
+                      {
+                        "authors": ["Gnana Sheela, K.", "Deepa, S. N."],
+                        "title": "Review on methods to fix number of hidden neuron in Neural Networks wind speed prediction",
+                        "journal": "Mathematical Problems in Engineering",
+                        "volume": 2013,
+                        "year": 2013,
+                        "pages": "1-11",
+                        "issn": "1024-123X"
+                      },
+                      {
+                        "authors": ["Gnana Sheela, K.", "Deepa, S. N."],
+                        "title": "New criteria to fix number of hidden neuron in multilayer perceptron neural networks for wind speed prediction in renewable energy systems",
+                        "journal": "Journal of Scientific and Industrial Research",
+                        "year": 2014
+                      },
+                      {
+                        "authors": ["Gnana Sheela, K.", "Deepa, S. N."],
+                        "title": "Performance Analysis of Modeling Frame work for wind speed prediction in wind farms",
+                        "journal": "Scientific Research and Essays",
+                        "volume": 7,
+                        "issue": 48,
+                        "year": 2014,
+                        "pages": "4138-4145",
+                        "issn": "1992-2248"
+                      },
+                      {
+                        "authors": ["Gnana Sheela, K.", "Deepa, S. N."],
+                        "title": "An Intelligent Hybrid Neural Network Model in renewable energy systems",
+                        "journal": "ICTACT Journal on soft computing",
+                        "volume": 2,
+                        "issue": 4,
+                        "year": 2012,
+                        "pages": "361-364",
+                        "issn": "0976-6561"
+                      },
+                      {
+                        "authors": ["Deepa, SN", "Sudha, G"],
+                        "title": "Modeling and Approximation of STOL Aircraft Longitudinal Aerodynamic characteristics",
+                        "journal": "Journal of Aerospace Engineering",
+                        "publisher": "American Society of Civil Engineers",
+                        "issn": "0893-1321 1943-5525",
+                        "year": 2014
+                      },
+                      {
+                        "authors": ["Deepa, SN", "Sudha, G"],
+                        "title": "Longitudinal control of aircraft dynamics based on optimization of PID",
+                        "journal": "Thermo physics and Aeromechanics",
+                        "issn": "0869-8643",
+                        "year": 2014
+                      },
+                      {
+                        "authors": ["Rani, C.", "Deepa, S.N."],
+                        "title": "An Intelligent Operator for Genetic Fuzzy Rule Based System",
+                        "journal": "International Journal of Intelligent Information Technologies",
+                        "volume": 7,
+                        "issue": 3,
+                        "year": 2011,
+                        "pages": "28-40"
+                      },
+                      {
+                        "authors": ["Rani, C.", "Deepa, S.N."],
+                        "title": "Formation of Fuzzy If-Then rules and Membership function using Enhanced Particle Swarm Optimization",
+                        "journal": "International Journal of Uncertainty, Fuzziness and Knowledge based system",
+                        "volume": 21,
+                        "issue": 1,
+                        "year": 2013,
+                        "pages": "103"
+                      },
+                      {
+                        "authors": ["Sivanandam, S.N.", "Deepa, S.N."],
+                        "title": "A Novel approach for Root Distribution analysis of Linear Time-invariant systems using Routh and Fuller tables",
+                        "journal": "Asian Journal of control",
+                        "volume": 11,
+                        "issue": 2,
+                        "year": 2008
+                      },
+                      {
+                        "authors": ["Sivanandam, S.N.", "Deepa, S.N."],
+                        "title": "Stability analysis of a class of Artificial Neural Network Systems",
+                        "journal": "International Journal of Information Processing",
+                        "volume": 2,
+                        "issue": 1,
+                        "year": 2008
+                      },
+                      {
+                        "authors": ["Sivanandam, S.N.", "Deepa, S.N."],
+                        "title": "Linear System design using Routh Column Polynomials",
+                        "journal": "Songklanakarin Journal of Science and Technology (SJST)",
+                        "volume": 29,
+                        "issue": 6,
+                        "year": 2007,
+                        "pages": "1651-1659"
+                      }
+                    ,
+                      {
+                        "authors": ["Victoire, T. Aruldoss Albert", "Jeyakumar, A. Ebenezer"],
+                        "title": "Hybrid PSO-SQP for economic dispatch with valve-point effect",
+                        "journal": "Electric Power Systems Research",
+                        "volume": 71,
+                        "issue": 1,
+                        "year": 2004,
+                        "pages": "51-59"
+                      },
+                      {
+                        "authors": ["Victoire, T."],
+                        "title": "Reserve constrained dynamic dispatch of units with valve-point effects",
+                        "journal": "IEEE Transactions on Power Systems",
+                        "volume": 20,
+                        "issue": 3,
+                        "year": 2005,
+                        "pages": "1273-1282"
+                      },
+                      {
+                        "authors": ["Victoire, T. Aruldoss Albert", "Jeyakumar, A. Ebenezer"],
+                        "title": "A modified hybrid EP-SQP approach for dynamic dispatch with valve-point effect",
+                        "journal": "International Journal of Electrical Power & Energy Systems",
+                        "volume": 27,
+                        "issue": 8,
+                        "year": 2005,
+                        "pages": "594-601"
+                      },
+                      {
+                        "authors": ["Victoire, T. Aruldoss Albert", "Jeyakumar, A. Ebenezer"],
+                        "title": "Deterministically guided PSO for dynamic dispatch considering valve-point effect",
+                        "journal": "Electric Power Systems Research",
+                        "volume": 73,
+                        "issue": 3,
+                        "year": 2005,
+                        "pages": "313-322"
+                      },
+                      {
+                        "authors": ["Victoire, T."],
+                        "title": "Unit commitment by a tabu-search-based Generation, Transmission and Distribution",
+                        "journal": "IEE Proceedings-Generation, Transmission and Distribution",
+                        "volume": 152,
+                        "issue": 4,
+                        "year": 2005
+                      },
+                      {
+                        "authors": ["Victoire, T. Aruldoss Albert", "Jeyakumar, A. Ebenezer"],
+                        "title": "A tabu search based hybrid optimization approach for a fuzzy modelled unit commitment problem",
+                        "journal": "Electric Power Systems Research",
+                        "volume": 76,
+                        "issue": 6,
+                        "year": 2006,
+                        "pages": "413-425"
+                      },
+                      {
+                        "authors": ["Kumar, P. Ganesh", "et al."],
+                        "title": "Design of fuzzy expert system for microarray data classification using a novel Genetic Swarm Algorithm",
+                        "journal": "Expert Systems with Applications",
+                        "volume": 39,
+                        "issue": 2,
+                        "year": 2012,
+                        "pages": "1811-1821"
+                      },
+                      {
+                        "authors": ["Victoire, T. Aruldoss Albert"],
+                        "title": "An improved simulated annealing method for the combinatorial sub-problem of the profit-based unit commitment problem",
+                        "book": "Evolutionary Computation in Combinatorial Optimization",
+                        "year": 2005,
+                        "pages": "234-245",
+                        "publisher": "Springer Berlin Heidelberg"
+                      },
+                      {
+                        "authors": ["GaneshKumar, P.", "et al."],
+                        "title": "Hybrid ant bee algorithm for fuzzy expert system based sample classification",
+                        "journal": "IEEE/ACM Transactions on Computational Biology and Bioinformatics (TCBB)",
+                        "volume": 11,
+                        "issue": 2,
+                        "year": 2014,
+                        "pages": "347-360"
+                      },
+                      {
+                        "authors": ["Subathra, M. S. P.", "et al."],
+                        "title": "A hybrid with cross-entropy method and sequential quadratic programming to solve economic load dispatch problem"
+                      },
+                      {
+                        "authors": ["Viji, A. Jeraldine", "Victoire, T. Aruldoss Albert"],
+                        "title": "Enhanced PLL based SRF control method for UPQC with fault protection under unbalanced load conditions",
+                        "journal": "International Journal of Electrical Power & Energy Systems",
+                        "volume": 58,
+                        "year": 2014,
+                        "pages": "319-328"
+                      },
+                      {
+                        "authors": ["Albert Aruldoss", "Murali Krishnan"],
+                        "title": "A differential evolution algorithm for solving the multi-objective emission constrained economic power dispatch considering transmission network losses",
+                        "journal": "European Journal of Scientific Research",
+                        "volume": 67,
+                        "issue": 3,
+                        "year": 2012,
+                        "pages": "378-388"
+                      },
+                      {
+                        "authors": ["Ganesh kumar, p.", "and t. Aruldoss albert victoire"],
+                        "title": "Multistage Mutual Information for Informative Gene Selection",
+                        "journal": "Journal of Biological Systems",
+                        "volume": 19,
+                        "issue": "04",
+                        "year": 2011,
+                        "pages": "725-746"
+                      }
+                    ,
+                      {
+                        "authors": ["Jasper, J.", "Victoire, T. Aruldoss"],
+                        "title": "Dispatching a 19-Unit Indian Utility System Using a Refined Differential Evolution Algorithm",
+                        "journal": "Mathematical Problems in Engineering",
+                        "volume": 2014,
+                        "year": 2014,
+                        "pages": "1-7"
+                      },
+                      {
+                        "authors": ["Kumar, P. Ganesh", "Rathinaraja, J.", "Victoire, T. Aruldoss Albert"],
+                        "title": "A combined MI-AVR approach for informative gene selection",
+                        "year": 2011,
+                        "pages": "870-875"
+                      },
+                      {
+                        "authors": ["Victoire, Albert", "T. Aruldoss", "Jeyakumar, A. Ebenezer"],
+                        "title": "A simulated annealing based hybrid optimization approach for a fuzzy modelled unit commitment problem",
+                        "journal": "International Journal of Emerging Electric Power Systems",
+                        "volume": 3,
+                        "issue": 1,
+                        "year": 2005
+                      },
+                      {
+                        "authors": ["Ganesan, S.", "Victoire, T. Aruldoss Albert", "Vijayalakshmy, G."],
+                        "title": "Real-time estimation and detection of non-linearity in bio-signals using wireless brain-computer interface",
+                        "journal": "International journal of Bioinformatics research and applications",
+                        "volume": 10,
+                        "issue": 2,
+                        "year": 2014,
+                        "pages": "190-205"
+                      },
+                      {
+                        "authors": ["Paranthaman, J.", "Victoire"],
+                        "title": "genetic optimization for privacy preserving in datamining",
+                        "journal": "Journal of Theoretical & Applied Information Technology",
+                        "volume": 57,
+                        "issue": 3,
+                        "year": 2013
+                      },
+                      {
+                        "authors": ["Biju, A. C.", "Victoire, T.", "Mohanasundaram, Kumaresan"],
+                        "title": "An Improved Differential Evolution Solution for Software Project Scheduling Problem",
+                        "journal": "The Scientific World Journal",
+                        "year": 2015
+                      },
+                      {
+                        "authors": ["Sumithra, Subramanian", "Victoire, T. Aruldoss"],
+                        "title": "Differential Evolution Algorithm with Diversified Vicinity Operator for Optimal Routing and Clustering of Energy Efficient Wireless Sensor Networks",
+                        "journal": "The Scientific World Journal",
+                        "volume": 2015,
+                        "year": 2015,
+                        "pages": "1392-1398"
+                      },
+                      {
+                        "authors": ["Kumar, P. G.", "Rani, C.", "Mahibha, D.", "Victoire, T. A. A."],
+                        "title": "Fuzzy-rough-neural-based f-information for gene selection and sample classification",
+                        "journal": "International Journal of Data Mining and Bioinformatics",
+                        "volume": 11,
+                        "issue": 1,
+                        "year": 2014,
+                        "pages": "31-52"
+                      },
+                      {
+                        "authors": ["Viji, A. Jeraldine", "Victoire, T.", "Albert"],
+                        "title": "A comparative study of 3 Phi SAPF with Different reference current generation",
+                        "journal": "Control Engineering And Applied Informatics",
+                        "volume": 16,
+                        "issue": 4,
+                        "year": 2014,
+                        "pages": "99-106"
+                      },
+                      {
+                        "authors": ["Sumithra, Subramanian", "Victoire, T. Aruldoss"],
+                        "title": "An Efficient Energy Clustering by Dynamic Multi-Chain Model in WSN",
+                        "journal": "International Review on Computers and Software (IRECOS)",
+                        "volume": 9,
+                        "issue": 8,
+                        "year": 2014,
+                        "pages": "1392-1398"
+                      }
+                    ,
+                      {
+                        "authors": ["Jasper, J.", "Victoire, T. Aruldoss"],
+                        "title": "Variable neighborhood search guided differential evolution for non convex economic load dispatch",
+                        "book": "Advanced Computing, Networking and Security",
+                        "publisher": "Springer Berlin Heidelberg",
+                        "year": 2012,
+                        "pages": "253-262"
+                      },
+                      {
+                        "authors": ["Suresh Kumar, R.", "Divya, K.", "Saravana, S."],
+                        "title": "Comparison of DC-DC Converter in PV System Using Soft Computing Technique",
+                        "journal": "Applied Mechanics and Materials",
+                        "volume": 573,
+                        "year": 2014,
+                        "pages": "26-30"
+                      },
+                      {
+                        "authors": ["Suresh Kumar, R.", "Suganthi, J."],
+                        "title": "PID Controller Tuning Using Neuro Fuzzy Controller and Anti Windup Method for Improving the Boost Converter Performance",
+                        "journal": "Life Science Journal",
+                        "volume": 10,
+                        "issue": 2,
+                        "year": 2013,
+                        "pages": "1567-1574"
+                      },
+                      {
+                        "authors": ["Suresh Kumar, R.", "Suganthi, J."],
+                        "title": "Improving the boost Converter PID Controller performance using Particle swarm optimization",
+                        "journal": "European Journal of Scientific Research",
+                        "volume": 85,
+                        "number": 3,
+                        "year": 2012,
+                        "pages": "327-335"
+                      },
+                      {
+                        "authors": ["Suresh Kumar, R.", "Logeswari, A."],
+                        "title": "A new interleaved switched inductor boost converter for PV applications",
+                        "journal": "Global Journal of Engineering Science and Researches",
+                        "year": 2015,
+                        "pages": "82-87"
+                      },
+                      {
+                        "authors": ["Sureshkumar, R.", "M.Senthil Kumar"],
+                        "title": "An Interleave Isolated Boost Converter Connected in Three Phase Induction Motor (ASD) Control With Sine Pwm Technique In MATLAB",
+                        "journal": "Global Journal of Engineering Science and Researches",
+                        "year": 2015,
+                        "pages": "88-96"
+                      },
+                      {
+                        "authors": ["Suresh Kumar, R.", "John De Britto"],
+                        "title": "DESIGN OF SINGLE PHASE Z-SOURCE BUCK BOOST MATRIX CONVERTER",
+                        "journal": "Global Journal of Engineering Science and Researches",
+                        "year": 2015,
+                        "pages": "97-103"
+                      },
+                      {
+                        "authors": ["Suresh Kumar, R.", "R.Prasanth"],
+                        "title": "Direct Torque Control Of Induction Motor Drive By Current Reconstruction Method Through De Link Current",
+                        "journal": "Global Journal of Engineering Science and Researches",
+                        "year": 2015,
+                        "pages": "87-92"
+                      },
+                      {
+                        "authors": ["Suresh kumar", "Mr.R.Prasanth"],
+                        "title": "Efficient Wind Power Conversion Using Pr Control Method",
+                        "journal": "Global Journal of Engineering Science and Researches",
+                        "year": 2015,
+                        "pages": "93-100"
+                      },
+                      {
+                        "authors": ["Hari Krishnan, P.", "Kanimozhi T", "Tina Pavithra vx"],
+                        "title": "SIMULATION OF SPEED &TORQUE CONTROL OF THREE PHASE INDUCTION MOTOR USING DIRECT TORQUE CONTROL",
+                        "journal": "JAER",
+                        "volume": 10,
+                        "number": 9,
+                        "year": 2015,
+                        "special_issue": true,
+                        "pages": "7730-7735"
+                      }
+                    ,
+                      {
+                        "authors": ["Hari Krishnan, P.", "V A Vengatkumar"],
+                        "title": "SPEED CONTROL OF THREE PHASE INDUCTION MOTOR THROUGH AC VOLTAGE CONTROLLER USING MATLAB",
+                        "journal": "IJAER",
+                        "volume": 10,
+                        "number": 9,
+                        "year": 2015,
+                        "special_issue": true,
+                        "pages": "7457-7462"
+                      },
+                      {
+                        "authors": ["Hari Krishnan, P.", "R. Ragul kannan"],
+                        "title": "An Efficient Speed and Torque Controller for DC Motor through 12 Pulse Converters in Open Loop Mode",
+                        "journal": "IJAER",
+                        "volume": 10,
+                        "number": 55,
+                        "year": 2015,
+                        "special_issue": true,
+                        "pages": "3147-3153"
+                      },
+                      {
+                        "authors": ["Hari Krishnan, P.", "P. Jayapriya"],
+                        "title": "Efficient Boiler Flow Control Using Adaptive PID Controller",
+                        "journal": "IJAER",
+                        "volume": 10,
+                        "number": 55,
+                        "year": 2015,
+                        "special_issue": true,
+                        "pages": "3113-3118"
+                      },
+                      {
+                        "authors": ["A.Gayathri", "Hari Krishnan, P."],
+                        "title": "Implementation of neural based self tuning fuzzy logic controller in non linear system",
+                        "journal": "IJAER",
+                        "volume": 10,
+                        "number": 55,
+                        "year": 2015,
+                        "special_issue": true,
+                        "pages": "2239-2243"
+                      },
+                      {
+                        "authors": ["Hari Krishnan, P.", "Ragu. P. J"],
+                        "title": "Controlling power flow losses in UPFC system using Adaptive Neuro-fuzzy controller",
+                        "journal": "IJRET",
+                        "year": 2014,
+                        "e_ISSN": "2319-1163",
+                        "p_ISSN": "2321-7308"
+                      },
+                      {
+                        "authors": ["Hari Krishnan, P.", "Ramprasadh. V"],
+                        "title": "Controlling Power plant Boiler and Draft Fan using LabVIEW",
+                        "journal": "IJRET",
+                        "year": 2014,
+                        "e_ISSN": "2319-1163",
+                        "p_ISSN": "2321-7308"
+                      },
+                      {
+                        "authors": ["Hari Krishnan, P.", "Bala Murugan. N"],
+                        "title": "Model Reference based Adaptive controller for Conical tank level control system",
+                        "journal": "IJRET",
+                        "year": 2014,
+                        "e_ISSN": "2319-1163",
+                        "p_ISSN": "2321-7308"
+                      },
+                      {
+                        "authors": ["Hari Krishnan, P.", "Prathyusha, S"],
+                        "title": "Optimization of main boiler parameters using Soft computing techniques",
+                        "journal": "IJRET",
+                        "year": 2014,
+                        "e_ISSN": "2319-1163",
+                        "p_ISSN": "2321-7308"
+                      },
+                      {
+                        "authors": ["Hari Krishnan, P.", "Vaishnavi. C"],
+                        "title": "LabVIEW based Self tuning Fuzzy logic controller for Sterilizing equipments in Hospitals",
+                        "journal": "IJRET",
+                        "year": 2014,
+                        "e_ISSN": "2319-1163",
+                        "p_ISSN": "2321-7308"
+                      },
+                      {
+                        "authors": ["Yuvaraju, M.", "N. Devarajan"],
+                        "title": "Reduction of higher order time invariant SISO continuous systems to its lower order model employing improved water swirl algorithm",
+                        "journal": "Journal of Testing and Evaluation",
+                        "year": 2015
+                      }
+                    ,
+                      {
+                        "authors": ["Yuvaraju, M.", "S. R. Nivedita"],
+                        "title": "A Text Based Clustering Scheme With Genetic Programming To Eliminate Replicas",
+                        "journal": "International Journal of Engineering Research and Technology",
+                        "volume": 2,
+                        "issue": 6,
+                        "month": "June",
+                        "year": 2013,
+                        "publisher": "ESRSA Publications",
+                        "pages": "1-8"
+                      },
+                      {
+                        "authors": ["Yuvaraju, M.", "N. Devarajan"],
+                        "title": "An Improved Water Swirl Algorithm for lower order model formulation of Multivariable Linear Time invariant Continuous System",
+                        "journal": "Life Science Journal",
+                        "volume": 10,
+                        "issue": 2,
+                        "year": 2013,
+                        "pages": "1-8"
+                      }
+                    ]
+                  ,   
+          "faculty": [
+            {
+				"name": "Dr Gomathi R",
+				"position": "Assistant Professor (Senior Grade)",
+				"email": "gomathiucedgl@gmail.com",
+				"education": {
+					"B.E.": "Madurai Kamaraj University, 2002",
+					"M.E.": "Anna University, Chennai, 2004",
+					"Ph.D.": "Anna University, Chennai, 2014"
+				},
+				"research_interests": ["Digital Image Processing", "Neural Networks", "Cryptography Techniques", "Data Mining"],
+				"professional_experience": [
+					"Lecturer, PSNA CET, Dindigul (May 2004 - May 2009)",
+					"Senior Lecturer, PSNA CET, Dindigul (June 2009 - May 2010)",
+					"Assistant Professor, PSNA CET, Dindigul (June 2010 - Aug 2010)",
+					"Assistant Professor, UCE DGL, Dindigul (Dec 2010 - Dec 2014)",
+					"Assistant Professor (Sr. Grade), UCE DGL, Dindigul (Dec 2014 - Jul 2023)",
+					"Assistant Professor (Sr. Grade), AURCC, Coimbatore (Jul 2023 - Till Date)"
+				],
+				"links": {
+					"email": "gomathi@aurcc.ac.in",
+					"drive_link": "https://drive.google.com/open?id=1rKtEdahJWDFuqVh3YYrTbY0uLLXCpvVN"
+				},
+				"publications": "-"
+				},
+				{
+				"name": "Mrs. Thamaraiselvi L",
+				"position": "Executive Assistant",
+				"email": "thams.money@gmail.com",
+				"professional_experience": "Executive Assistant, Anna University Regional Campus Coimbatore (2008-2024)",
+				"description": "I am an executive assistant in Anna University Regional campus Coimbatore. Working 15 years experience  for various departments like Controller of Examinations, Research department, Hostel, Admissions both UG& PG ,Scholarship and university department works.",
+				"links": {
+					"email": "thams.money@gmail.com",
+					"drive_link": "https://drive.google.com/open?id=1mY3HR3_IAc_Wvt5YCKDPqDu2twyQqPNu"
+				},
+				"publications": "-"
+				},
+				{
+				"name": "Dr KIRUBADEVI S",
+				"position": "Assistant Professor (Senior Grade)",
+				"department": "ELECTRICAL AND ELECTRONICS ENGINEERING",
+				"designation": "PLACEMENT FACILITATOR",
+				"email": "kirubadevi@aurcc.ac.in",
+				"education": {
+					"B.E.": "Government College of Engineering,Salem, 2002",
+					"M.E.": "College of Engineering, Guindy, 2008",
+					"Ph.D.": "Anna University, 2022"
+				},
+				"research_interests": ["Renewable Energy Systems", "Smart Grid", "IoT"],
+				"professional_experience": [
+					"Lecturer, Arulmigu Kalasalingam Polytechnic College (June 2004 to Aug 2006)",
+					"Lecturer, Kalasalingam University (Dec-2008-Aug to 2010)",
+					"Assistant Professor, University VOC College of Engineering Thoothukudi (Aug-2010 to Aug 2015)",
+					"Assistant Professor, University College of Engineering Dindigul (Aug-2015 to July 2023)",
+					"Assistant Professor (Sr.Grade), Anna University Regional Campus Coimbatore (July 2023 to till date)"
+				],
+				"links": {
+					"email": "kirubadevi@aurcc.ac.in",
+					"drive_link": "https://drive.google.com/open?id=1eoLxYv77YWZxXr6B9oceHqKTho-W4OEv"
+				},
+				"publications": "-"
+				},
+				{
+				"name": "Dr Sumathi S",
+				"position": "Assistant Professor",
+				"department": "Department of Electrical and Electronics Engineering",
+				"email": "sumathi@aurcc.ac.in",
+				"education": {
+					"B.E.": "Anna University, Chennai, 2006",
+					"M.E.": "Anna University, Chennai, 2008",
+					"Ph.D.": "Anna University, Chennai, 2019"
+				},
+				"research_interests": ["High Voltage Engineering", "Power System", "Electrical Machines", "Soft Computing", "Control System"],
+				"professional_experience": [
+					"LECTURER, SVC COLLEGE OF ENGINEERING AND TECHNOLOGY, TIRUNELVELI (2008 -2010)",
+					"ASSISTANT PROFESSOR, UNIVERSITY VOC COLLEGE OF ENGINEERING THOOTHUKUDI (2010- 2016)",
+					"ASSISTANT PROFESSOR, ANNA UNIVERSITY REGIONAL CAMPUS, COIMBATORE (2016-till date)"
+				],
+				"links": {
+					"google_scholar": "https://scholar.google.com/citations?user=tQDx9GYAAAAJ&hl=en",
+					"orcid_id": "https://orcid.org/0000-0002-2254-4143",
+					"email": "sumathi@aurcc.ac.in",
+					"drive_link": "https://drive.google.com/open?id=1VPa4yufm-R-wm4x67jBVrvcI4KT6QINX"
+				},
+				"publications": [
+					{
+					"type": "Journal",
+					"title": "Critical Investigation of Minimum Field Conductor for Overhead Transmission Lines",
+					"journal": "Middle-East Journal of Scientific Research",
+					"date": "December 2016",
+					"volume": "24",
+					"issue": "12",
+					"pages": "3772-3779",
+					"issn": "1990-9233"
+					},
+					{
+					"type": "Journal",
+					"title": "Enhancement of Efficiency in Nanocoated Induction Motor",
+					"journal": "World Applied Sciences Journal",
+					"volume": "35",
+					"issue": "2",
+					"pages": "325-329",
+					"issn": "1818-4952"
+					},
+					{
+					"type": "Journal",
+					"title": "Performance Analysis of Nanomaterials based Transformer Oil",
+					"journal": "Asian Journal of Research in Social Sciences and Humanities",
+					"volume": "7",
+					"issue": "2",
+					"pages": "678",
+					"issn": "2249-7315"
+					},
+					{
+					"type": "Journal",
+					"title": "Performance of Three Phases Grid Connected Inverter for Low Voltage Weak Grid System Using Super Lift LUO",
+					"journal": "International Journal of Scientific Research and Development",
+					"date": "May 2020",
+					"volume": "8",
+					"issue": "3",
+					"pages": "16-26",
+					"issn": "2321-0613"
+					},
+					{
+					"type": "Journal",
+					"title": "Improvement on the characteristics of transformer oil using nanofluids",
+					"journal": "Current Science",
+					"volume": "118",
+					"issue": "1",
+					"pages": "29",
+					"issn": "00113891"
+					},
+					{
+					"type": "Journal",
+					"title": "Certain performance investigation on hybrid TiO2/Al2O3/MoS2 nanofiller coated 3∅ induction motor: a Taguchi and RSM based approach",
+					"journal": "Energy Reports",
+					"volume": "6",
+					"pages": "1638-1647",
+					"issn": "2352-4847"
+					},
+					{
+					"type": "Journal",
+					"title": "Transformer less Z-Source Inverter using Grid Connected PV System",
+					"journal": "International Journal for Research in Applied Science & Engineering Technology",
+					"volume": "8",
+					"issue": "5",
+					"pages": "45.98",
+					"issn": "2321-9653"
+					},
+					{
+					"type": "Journal",
+					"title": "Three-Port Integrated Topology to Interface Electric Vehicles and Renewables with the Electrical Grid",
+					"journal": "International Journal for Research in Applied Science and Engineering Technology",
+					"date": "May 2020",
+					"volume": "8",
+					"issue": "6",
+					"pages": "16-26",
+					"issn": "2321-9653"
+					},
+					{
+					"type": "Journal",
+					"title": "Investigation of dielectric strength of transformer oil based on hybrid TiO2/Al2O3/MoS2 Nanofluid using taguchi and response surface methodology",
+					"journal": "IETE Journal of Research",
+					"volume": "67",
+					"issue": "6",
+					"pages": "817-825",
+					"issn": "0974780X"
+					},
+					{
+					"type": "Journal",
+					"title": "Analysis of properties and statistical study on partial discharge inception voltage using normal and Weibull distributions for vegetable oil-based nanofluids",
+					"journal": "Biomass Conversion and Biorefinery",
+					"pages": "1-18"
+					},
+					{
+					"type": "Journal",
+					"title": "A study on electro-thermal-physical properties of mixed mineral oil and vegetable oil as an alternative for liquid insulation in power transformers",
+					"journal": "Energy Sources, Part A: Recovery, Utilization, and Environmental Effects",
+					"volume": "46",
+					"issue": "1",
+					"pages": "3601-3617"
+					},
+					{
+					"type": "Conference",
+					"title": "Enhancement of the Characteristics of Natural Ester in Transformer Oil Insulation using Nanofluids",
+					"conference": "Journal of Electronics and Informatics",
+					"volume": "5",
+					"issue": "2",
+					"pages": "124-139",
+					"doi": "10.36548/jei.2023.2.002",
+					"issn": "2582-3825"
+					},
+					{
+					"type": "Conference",
+					"title": "Enhancement of Induction Motor Efficiency using Nanocoated with Enamel",
+					"conference": "Journal of Electronics and Informatics",
+					"volume": "5",
+					"issue": "2",
+					"pages": "140-153",
+					"doi": "10.36548/jei.2023.2.003",
+					"issn": "2582-3825"
+					},
+					{
+					"type": "Conference",
+					"title": "SMART IRRIGATION SYSTEM USING ARDUINO",
+					"conference": "International Educational Scientific Research Journal",
+					"volume": "9",
+					"issue": "6",
+					"pages": "14-20",
+					"doi": "10.21276/2455-295X"
+					},
+					{
+					"type": "Conference",
+					"title": "SMART HOMECARE MACHINE",
+					"conference": "International Educational Scientific Research Journal",
+					"volume": "9",
+					"issue": "6",
+					"pages": "115-118",
+					"doi": "10.21276/2455-295X"
+					},
+					{
+					"type": "Conference",
+					"title": "A NOVEL HIGH GAIN CUK INTEGRATED SEPIC CONVERTER GWO APPROACH FOR DC MICROGRID APPLICATIONS",
+					"conference": "International Educational Scientific Research Journal",
+					"volume": "9",
+					"issue": "6",
+					"pages": "181-187",
+					"doi": "10.21276/2455-295X"
+					}
+				]
+				},
+				{
+				"name": "Dr L.Sheela",
+				"position": "Assistant Professor",
+				"department": "Department of Electrical and Electronics Engineering",
+				"email": "sheelal@aurcc.ac.in",
+				"research_interests": ["VLSI", "Embedded Systems"],
+				"professional_experience": [
+					"K.S.Rangasamy College of Technology (2003-2007)",
+					"P.S.R Engineering College (2007-2008)",
+					"Anna University Regional Campus Tirunelveli (2008-2016)",
+					"Anna University Regional Campus Madurai (2016-2024)",
+					"Anna University Regional Campus Coimbatore (2024- till date)"
+				],
+				"links": {
+					"email": "sheelal@aurcc.ac.in",
+					"drive_link": "https://drive.google.com/open?id=1d8Lp38-FsiiSQNxZq1yfq9UWOWVTmtVq"
+				},
+				"publications": "-"
+				},
+				{
+				"name": "Dr Saravanakumar S",
+				"position": "Assistant Professor",
+				"department": "Department of Electrical and Electronics Engineering",
+				"email": "ssk@aurcc.ac.in",
+				"education": {
+					"B.E.": "PSG College of Technology, Coimbatore",
+					"M.E.": "Government College of Technology, Coimbatore",
+					"Ph.D.": "Anna University, Chennai"
+				},
+				"research_interests": ["Electrical and Electronics Engineering"],
+				"professional_experience": [
+					"Manager Production, Elzone Electronics Pvt. Ltd., Coimbatore (1995-2001)",
+					"Lecturer, Vel Tech Engineering College, Chennai (2001 – 2003)",
+					"Manager Production and R&D,  Risabh Electronics, Coimbatore (2003-2007)",
+					"Lecturer, Anna University Coimbatore (2007-2008)",
+					"Assistant Professor, Anna University Regional Campus, Coimbatore (2008 – Till Date)"
+				],
+				"links": {
+					"google_scholar": "https://scholar.google.com/citations?hl=en&tzom=-330&user=2ON4fs0AAAAJ",
+					"scopus": "https://www.scopus.com/authid/detail.uri?authorId=57226457433",
+					"email": "ssk@aurcc.ac.in",
+					"drive_link": "https://drive.google.com/open?id=12zSXIXrAbk6tUrZzYwxOvKIHacCtUoq3"
+				},
+				"publications": {
+					"national_and_international_conferences": 78,
+					"national_and_international_journals": 17
+				},
+				"membership_in_professional_bodies": ["IEEE", "ISTE", "IAENG", "SDIWC"],
+				"additional_responsibilities": [
+					"IIC Innovation Ambassador - AURCC",
+					"IEEE Student Branch Counseller - AURCC",
+					"AISHE – Nodal Officer - AURCC",
+					"Member – Prevention of Caste based Discrimination Committee – AURCC"
+				]
+				}
+        ],       
+        "scope":[
+                "The Department aims to impart the Students a learning Experience in understanding the fundamental concepts of Electrical & Electronics Engineering built on the Foundation of Science, Mathematics, Computing and Technology by active learning process with dedicated faculty members and extensive laboratory facilities so as to prepare them for their Professional Careers.",
+                " It also prepares the students to meet the growing global challenges of Engineering Industries by educating them to become highly professional Electrical and Electronics Engineers of high ethics. The Department produces highly qualified Engineers not only to meet the Global environment but also to build a developed nation."
+                ],
+        "courses_offered": [
+                    {
+                      "name": "B.E. ELECTRICAL AND ELECTRONICS ENGINEERING",
+                      "type": "FULL TIME"
+                    },
+                    {
+                      "name": "M.E-POWER SYSTEM AND ENGINEERING",
+                      "type": "FULL TIME"
+                    }
+                  ],
+            
+        "facility":
+                [
+                " The Department of Electrical and Electronics Engineering established with an aim to spearhead the installation of world class technologically advanced and highly sophisticated laboratories like Electrical Machines laboratory, Power Electronics laboratory, Electric Circuits laboratory, Control Systems laboratory, Measurements and Instrumentations laboratory, Process Control laboratory, and Modeling and Simulation laboratory."
+                
+                ," The department provides software's like MATLAB R14, NI Lab VIEW, PSIM, NI Multi Sim, Active HDL, and Process Control Simulator to enrich the students in their modeling and simulation skills.",
+                
+                
+                " A Laboratory has been set up to utilize the free open source software (FOSS) posted which includes SCILAB and ESIM."
+                ]
+      ,       
+        "projects":[
+      
+                "1. Voltage tracking control using fuzzy Pi controller",
+                "2. Fault detection and isolation for PPC",
+                "3. An approach to plaque characterization using SVM classifier",
+                "4. Design and application of testing of electronic equipment on networked virtual instruments",
+                "5. Increase DG Insertion in electrical distribution systems by reducing line losses",
+                "6. Power quality improvement for grid connected wind energy system using PID tuned STATCOM",
+                "7. A fuzzy-optimization approach for generation scheduling with wind and solar energy systems",
+                "8. Direct Current Vector Control of PMSG based Wind Energy Conversion System",
+                "9. Analyzing the impact on insulated dipole antenna in human body tissues",
+                "10. Design of Bridgeless CUK converter for power factor correction",
+                "11. Mobile phone radiation analysis in human brain",
+                "12. Control of hybrid system using multi-input inverter and maximum power point tracking"
+                    ]
+      ,
+            
+        "specializations": [
+            "Power Systems Engineering",
+            "Power Electronics and Drives",
+            "Control and Instrumentation",
+            "Electrical Drives and Embedded Control",
+            "Embedded System Technologies",
+            "Core Electrical Engineering"
+          ],
+          "research_areas": [
+            "Soft Computing",
+            "Optimization approaches",
+            "Power Systems",
+            "Intellectual Property Rights",
+            "Control Systems",
+            "Modern Control Theory and its applications",
+            "Applications of ANN and Fuzzy Logic",
+            "EMTP applications",
+            "Application of Power Electronics to Power Quality Improvement and Industrial Drives",
+            "DSP Applications in Power Electronics",
+            "Simulation of Power Electronic Converters and Drives Systems",
+            "Control of Special Machines",
+            "Image Processing",
+            "Power Quality"
+          ],
+          "industry_interaction": "Strong industry interaction with involvement in state-of-the-art product development",
+          "faculty_encouragement": "Encouragement for faculties to take independent initiatives with collective responsibility in relevant academic and R&D dimensions."
+        
+    },
+	{
+		"address": "ece",
+		"image": "",
+		"name": "Department of Electronics and Communication Engineering",
+		"description": [
+		  " The Department of Electronics and Communication Engineering (ECE) was established in the year 2007. The department offers full-time two-year M.E. degree programs in Applied Electronics, Communication Systems, and VLSI Design, along with the same courses offered as three-year M.E. programs in part-time mode."
+		],
+		"vision": [
+		  "To create an educational environment in which students are prepared to meet the challenges of modern Industrial society by equipping them with:",
+		  "Up to date Technical Knowledge.",
+		  "Analytical and Practical skills.",
+		  "A creative and innovative approach to work."
+		],
+		"mission": {
+		  "description": "To develop a strong centre of excellence for education and research with excellent infrastructure.",
+		  "objectives": [
+			"To impart quality education and technical skills to enable the students to satisfy the industrial requirements.",
+			"To achieve cent percent placement."
+		  ]
+		},
+		"events": [
+		  {
+			"name": "One Week Faculty Development Programme on Wavelet and Multiresolution Processing",
+			"description": "",
+			"date": "14-20 Dec 2011"
+		  },
+		  {
+			"name": "Fourth National Conference of Signal Processing, Communication and VL51 Design (NCSCV 12)",
+			"description": "",
+			"date": "8-9 Jun 2012"
+		  },
+		  {
+			"name": "Two days Training Programme on Analog system Design using Texas Instruments Analog system Design Lab Kit (ASLK)",
+			"description": "",
+			"date": "19-20 Nov 2012"
+		  },
+		  {
+			"name": "Faculty Development Programme on VLSI Design",
+			"description": "",
+			"date": "12-18 Dec 2012"
+		  },
+		  {
+			"name": "Fifth National Conference of Signal Processing, Communication and VLSI Design (NCSCV13)",
+			"description": "",
+			"date": "10-11 May 2013"
+		  },
+		  {
+			"name": "Two Days Seminar & FDP on Advanced Digital Image Processing",
+			"description": "",
+			"date": "4-5 Apr 2014"
+		  },
+		  {
+			"name": "Sixth National Conference of Signal Processing, Communication and VLSI Design (NCSCV 14)",
+			"description": "",
+			"date": "9-10 May 2014"
+		  },
+		  {
+			"name": "One Week Faculty Development Programme on Digital Signal Processing",
+			"description": "",
+			"date": "11-17 Jun 2014"
+		  },
+		  {
+			"name": "Two Days Seminar on Research Issues in Signal Image Processing & Communications",
+			"description": "",
+			"date": "5-6 Sep 2014"
+		  },
+		  {
+			"name": "Two Days Faculty Development Programme on Solid State Devices Modelling and Simulation",
+			"description": "",
+			"date": "16-17 Oct 2014"
+		  },
+		  {
+			"name": "Two Day Seminar & FDF on Advanced Digital Image Processing",
+			"description": "",
+			"date": "17-18 Apr 2015"
+		  },
+		  {
+			"name": "Seventh National Conference on Signal Processing Communication and VLSI Design (NCSCV 15)",
+			"description": "",
+			"date": "24-25 Apr 2015"
+		  },
+		  {
+			"name": "Eight National Conference on Signal Processing Communication and VLSI Design (NCSCV 16)",
+			"description": "",
+			"date": "29-30 Apr 2016"
+		  },
+		  {
+			"name": "One Week Faculty Development Programme on Embedded and Real Time Systems",
+			"description": "",
+			"date": "23-29 May 2016"
+		  },
+		  {
+			"name": "One Week Faculty Development Programme on Communication Theory",
+			"description": "",
+			"date": "14-20 Dec 2016"
+		  },
+		  {
+			"name": "Two days National Workshop on Texas Instruments MSP430 Microcontrollers",
+			"description": "",
+			"date": "18-19 Aug 2011"
+		  },
+		  {
+			"name": "Two days National Workshop on CMOS Layout Design using Microwind",
+			"description": "",
+			"date": "23-24 Aug 2012"
+		  },
+		  {
+			"name": "Two days Training Programme on Analog system Design using Texas Instruments Analog system Design Lab Kit (ASLK)",
+			"description": "",
+			"date": "19-20 Nov 2012"
+		  },
+		  {
+			"name": "One Day Training Programme on MSP Low Power Microcontrolier",
+			"description": "",
+			"date": "27 Feb 2013"
+		  },
+		  {
+			"name": "Two Days Workshop on Image and Video Processing",
+			"description": "",
+			"date": "1-2 Mar 2013"
+		  },
+		  {
+			"name": "Two Days Hands-on Training Programme on IC Systern Design using Mentor Graphics EDA Tool",
+			"description": "",
+			"date": "18-19 Apr 2013"
+		  },
+		  {
+			"name": "Two Days Training Programme on MSP430 Ultra Low Power Microcontroller",
+			"description": "",
+			"date": "27-28 Sep 2013"
+		  },
+		  {
+			"name": "Two Day Hands-on Training Programme on FPGA Implementation of Digital Systems using ALTERA Quartus II",
+			"description": "",
+			"date": "27-28 Feb 2014"
+		  },
+		  {
+			"name": "One Day Workshop on PCB Design & Circuit Simulation Using Altium Designer",
+			"description": "",
+			"date": "28 Mar 2014"
+		  },
+		  {
+			"name": "Two Days Workshop on VLSI Design Flow Using Microwind Tool",
+			"description": "",
+			"date": "27-28 Aug 2014"
+		  },
+		  {
+			"name": "Two Days Training Programme on MSP430 Ultra Low Power Microcontroller",
+			"description": "",
+			"date": "25-26 Sep 2014"
+		  },
+		  {
+			"name": "Two Days Workshop on Analog System Design using II Analog System Lab Kit",
+			"description": "",
+			"date": "6-7 Nov 2014"
+		  },
+		  {
+			"name": "One day Workshop on TI BEAGLE BONE BOARD",
+			"description": "",
+			"date": "27 Feb 2015"
+		  },
+		  {
+			"name": "Two days workshop on Embadded System Design Flow using PIC Microcontroller",
+			"description": "",
+			"date": "21-22 Sep 2015"
+		  },
+		  {
+			"name": "Two days workshop on VLSI System Design Flow using ALTERA FPGA",
+			"description": "",
+			"date": "28-29 Sep 2015"
+		  },
+		  {
+			"name": "One Day Workshop on ARDUINO Microcontroller",
+			"description": "",
+			"date": "12 Oct 2015"
+		  },
+		  {
+			"name": "One Day Workshop on SCILAB An Open Source Tool Equivalent to MATLAB",
+			"description": "",
+			"date": "16 Oct 2015"
+		  },
+		  {
+			"name": "Two Days Workshop on CMOS Layout Design Flow using Microwind Tool",
+			"description": "",
+			"date": "29-30 Oct 2015"
+		  },
+		  {
+			"name": "Two Days Workshop on Antenna Design & Analysis using EST'S CEM Solution tool",
+			"description": "",
+			"date": "3-4 Dec 2015"
+		  },
+		  {
+			"name": "One Day Hands-on Training on Python",
+			"description": "",
+			"date": "18 Mar 2016"
+		  },
+		  {
+			"name": "Two Days wurkshop on lot using Raspberry Pi and MATLAB",
+			"description": "",
+			"date": "23-24 Mar 2016"
+		  },
+		  {
+			"name": "One Day Hands-on Training On Integration of MATLAB Simulink and Xilinx for Image Processing Applications",
+			"description": "",
+			"date": "29 Jul 2016"
+		  },
+		  {
+			"name": "One Day Hands-on Training on Integration of Kell and Proteus for Microcontroller Based Applications",
+			"description": "",
+			"date": "30 Aug 2016"
+		  }
+		],
+		"placements": {
+		  "companies_visited": [
+			"Robert Bosch",
+			"Pricol Coimbatore",
+			"LMW Coimbatore",
+			"Salzer Electronics",
+			"TCS",
+			"CTS",
+			"Keltron Kerala",
+			"Banking Sectors",
+			"Railways",
+			"PSG Tech, Coimbatore",
+			"CIT Coimbatore",
+			"BSNL",
+			"WIPRO",
+			"Intel",
+			"Suzlon Company",
+			"Techno Electronics",
+			"Ford Company",
+			"Accenture"
+		  ],
+		  "average_salary": "-",
+		  "highest_salary": "-",
+		  "placement_details": "Placed in Top Notch Engineering Colleges and Companies",
+		  "placement_percentage": ""
+		},
+		"achievements": {
+		  "description": [
+			"Memorandum of Understanding with ALTERA Corporation, USA to establish Altera FPGA Lab in the department of ECE, Anna University Coimbatore at the cost of Rs.12.00 Lakhs.",
+			"IEEE Student Branch has been inaugurated by the Department of ECE, Anna University Coimbatore.",
+			"Memorandum of Understanding with TEXAS Instruments, India to establish TI MSP430 Microcontroller lab in the department of ECE.",
+			"Memorandum of Understanding with TEXAS Instruments, India to establish Analog System Design Lab (ASLK) lab in the department of ECE.",
+			"Memorandum of Understanding with TEXAS Instruments, India to establish C2000 Microcontroller lab in the department of ECE.",
+			"The Department has conducted more than 45 workshops, 7 National Conferences, 15 Seminars, and 5 Faculty Development Programs."
+		  ]
+		},
+		"research_and_publications": {
+		  "total_research_papers": 66,
+		  "international_journals": 58,
+		  "international_conferences": 8,
+		  "national_conferences": 0
+		},
+		"faculty": [
+		  {
+			"name": "Dr Gomathi R",
+			"position": "Assistant Professor (Senior Grade)",
+			"email": "gomathiucedgl@gmail.com",
+			"education": [
+			  {
+				"degree": "B.E.",
+				"institution": "Madurai Kamaraj University",
+				"year": 2002
+			  },
+			  {
+				"degree": "M.E.",
+				"institution": "Anna University, Chennai",
+				"year": 2004
+			  },
+			  {
+				"degree": "Ph.D.",
+				"institution": "Anna University, Chennai",
+				"year": 2014
+			  }
+			],
+			"research_interests": [
+			  "Digital Image Processing",
+			  "Neural Networks",
+			  "Cryptography Techniques",
+			  "Data Mining"
+			],
+			"professional_experience": [
+			  "Lecturer, PSNA CET, Dindigul (May 2004 - May 2009)",
+			  "Senior Lecturer, PSNA CET, Dindigul (June 2009 - May 2010)",
+			  "Assistant Professor, PSNA CET, Dindigul (June 2010 - Aug 2010)",
+			  "Assistant Professor, UCE DGL, Dindigul (Dec 2010 - Dec 2014)",
+			  "Assistant Professor (Sr. Grade), UCE DGL, Dindigul (Dec 2014 - Jul 2023)",
+			  "Assistant Professor (Sr. Grade), AURCC, Coimbatore (Jul 2023 - Till Date)"
+			],
+			"links": {
+			  "email": "gomathi@aurcc.ac.in",
+			  "drive_link": "https://drive.google.com/open?id=1rKtEdahJWDFuqVh3YYrTbY0uLLXCpvVN"
+			}
+		  },
+		  {
+			"name": "Mrs. Thamaraiselvi L",
+			"position": "Executive Assistant",
+			"email": "thams.money@gmail.com",
+			"professional_experience": "Executive Assistant, Anna University Regional Campus Coimbatore (2008-2024)",
+			"description": "I am an executive assistant in Anna University Regional campus Coimbatore. Working 15 years experience  for various departments like Controller of Examinations, Research department, Hostel, Admissions both UG& PG ,Scholarship and university department works.",
+			"links": {
+			  "email": "thams.money@gmail.com",
+			  "drive_link": "https://drive.google.com/open?id=1mY3HR3_IAc_Wvt5YCKDPqDu2twyQqPNu"
+			}
+		  },
+		  {
+			"name": "Dr Kandasamy K",
+			"position": "Teaching Fellow",
+			"email": "kkandasamy.03@gmail.com",
+			"professional_experience": [
+			  "Teaching Fellow-Anna University College of Engineering Villupuram,(2013-2022)",
+			  "Teaching Fellow-Anna University Regional Campus Coimbatore,(2022-2024)"
+			],
+			"description": "I am Dr. K Kandasamy, and I work in the Department of Electronics and Communication Engineering at Anna University Regional Campus Coimbatore. I hail from Karvazhi, which is situated in the Karur district, and I completed my schooling at the Government High School in Karvazhi. I pursued my higher secondary education at SSV.Hr.Sec.School in Kodumudi. Later, I completed my Bachelor's degree in Electronics and Communication Engineering from Velalar College of Engineering and Technology. I also have a Master's degree in the same field, which I obtained from the Government College of Technology in Coimbatore. I consider myself a self-motivated individual and believe it to be my strength.",
+			"links": {
+			  "email": "kandasamy@aurcc.ac.in",
+			  "drive_link": "https://drive.google.com/open?id=12hclHktYW6ma3oODe608fAzEHo9q5nKL"
+			},
+			"publications": {
+			  "Book Chapter": 1,
+			  "International Journals": 10,
+			  "National Journals": 2,
+			  "International Conference": 6,
+			  "National Conference": 6
+			}
+		  },
+		  {
+			"name": "Dr. V. R. Vijaykumar",
+			"position": "Associate Professor",
+			"email": "vr.vijaykumar@gmail.com",
+			"education": [
+			  {
+				"degree": "B.E. Electronics and Communication Engineering",
+				"year": 1996,
+				"institution": "Government Institute of Technology Vellore"
+			  },
+			  {
+				"degree": "M.E. Communication Systems",
+				"year": 1997,
+				"institution": "Thiagarajar College of Engineering Madurai"
+			  },
+			  {
+				"degree": "Ph.D. Nonlinear Image Filtering",
+				"year": 2008,
+				"institution": "Anna University Chennai"
+			  }
+			],
+			"professional_experience": "25 years",
+			"research_interests": [
+			  "Image Processing",
+			  "Signal Processing",
+			  "VLSI Design"
+			],
+			"publications": "",
+			"links": [
+			  {
+				"link": "https://drive.google.com/open?id=1DUaJQyQFyOSgV3ArjKbHdtCErdhb65Gg",
+				"google_scholar": "https://scholar.google.co.in/citations?user=L-myNyoAAAAJ&hl=en"
+			  }
+			]
+		  },
+		  {
+			"name": "Dr. N. Kumaresan",
+			"position": "Assistant Professor",
+			"email": "kumaresan@aurcc.ac.in",
+			"professional_experience": "24.5 years",
+			"scopus_id": "57208651427",
+			"publications": {
+			  "International_Journal": 29,
+			  "National Conference": 2,
+			  "International Conference": 17,
+			  "NationalConference": 120
+			},
+			"links": [
+			  {
+				"link": "https://drive.google.com/open?id=15ACe-MDzVKLHU3gJrk6Fj_-ek_Xl9p5y",
+				"google_scholar": "https://scholar.google.com/citations?user=XMO7fFgAAAAJ&hl=en"
+			  }
+			]
+		  },
+		  {
+			"name": "Mr. ELAVARASAN K M",
+			"position": "LAB TECHNICIAN",
+			"email": "kmelavarasan@gmail.com",
+			"professional_experience": [
+			  "position : LAB TECHNICIAN",
+			  "institution: UCE RAMANATHAPURAM",
+			  "years : 2011 to 2018",
+			  "position: LAB TECHNICIAN",
+			  "institution: AURCC",
+			  "years: 2018 to till now"
+			],
+			"links": [
+			  {
+				"link": "https://drive.google.com/open?id=1fzo27Z87U8CHAje0J_hns7jQDMX60LV9"
+			  }
+			]
+		  }
+		],
+		"infrastructure": {
+		  "The department is equipped with excellent infrastructure and state-of-the-art equipment to tackle technological challenges in various areas including:": [
+			"Electronics",
+			"Digital Communication Systems",
+			"VLSI Design",
+			"Digital Signal Processing",
+			"Digital Image Processing",
+			"ASIC Design",
+			"RF and Wireless Communications"
+		  ]
+		},
+		"labs": {
+		  "applied_electronics": {
+			"equipment": [
+			  "MSP 430 Microcontroller",
+			  "Beagle bone black board",
+			  "MSP 430 F2013 starter kit",
+			  "TMS320C 6678 Multicore DSP Processor Kit",
+			  "Application boards",
+			  "Workbenches",
+			  "Desktop Computers"
+			],
+			"software": [
+			  "MultiSim",
+			  "Tina TI"
+			]
+		  },
+		  "communication_systems": {
+			"equipment": [
+			  "Optical Fiber kits",
+			  "Analog and Digital Communication kits",
+			  "TMS320C 6678 Multicore DSP Processor Kit",
+			  "Basic trainer Kits",
+			  "CAD FEKO software"
+			],
+			"software": [
+			  "Code Composer Studio",
+			  "FEKO"
+			]
+		  },
+		  "vlsi_design": {
+			"equipment": [
+			  "Desktop Computers",
+			  "ALTERA boards",
+			  "Logic analyzer"
+			],
+			"software": [
+			  "Micro wind",
+			  "Mentor Graphics",
+			  "Quartus-II",
+			  "Active HDL",
+			  "Keil",
+			  "MP lab",
+			  "IAR Workbench",
+			  "Modelsim"
+			]
+		  }
+		},
+		"scope": {
+		  "description": "To create a centre of Excellence in the area of RF and Wireless Communications, Advanced Digital Image Processing, VLSI Design, and Embedded System Design.",
+		  "objectives": [
+			"To establish world-class laboratories towards research activities.",
+			"To carry out socially relevant projects for the benefit of society.",
+			"To provide affordable technical education to the young generation.",
+			"To undertake collaborative projects with leading industries and institutions, which offer opportunities for long-term interaction, training, and placement for the benefit of students."
+		  ]
+		},
+		"courses offered": [
+		  " B.E. ELECTRONICS AND COMMUNICATION ENGINEERING (FULL TIME)",
+		  " M.E-COMMUNICATION SYSTEM (FULL TIME)",
+		  "M.E-VLSI DESIGN AND EMBEDDED SYSTEMS (FULL TIME)"
+		],
+		"facility": [
+		  "The Applied Electronics Lab is equipped with MSP 430 Microcontroller, Beagle bone black board, MSP 430 F2013 starter kit, TMS320C 6678 Multicore DSP Processor Kit and Application boards for implementing both basic and advanced experiments. In addition to that the Lab is equipped with state of equipments which include 20 Workbenches each consisting of inbuilt CRO, Function Generator, RPS, Ammeters and Voltmeters. Also 10 Desktop Computers have been interfaced with the Workbenches and they are loaded with EDA tool like MultiSim.",
+		  "The Communication Systems Lab equipped with Optical Fiber kits, Analog and Digital Communication kits. The DSP Lab equipped with Code Composer Studio Software and latest DSP Trainer Kits namely TMS320C5416 and TMS320C6713.",
+		  "The VLSI Design lab was developed with a motive of encouraging research activities of the Post Graduate Students. The lab consists of 20 Desktop Computers loaded with software's such as Micro wind, Quartus-II & Active HDL, Keil, MP lab, IAR Workbench and Modelsim.",
+		  "LCD Projectors available in all class rooms",
+		  "Exclusive Project Laboratory. Separate Library is maintained in the Department",
+		  "Exclusive Audio Visual facilities are available for conducting Seminars, Workshops and other technical activities."
+		],
+		"projects": [
+		  "Accurate Fall Accident Detection And Positioning System Using Smart Phone.",
+		  "Design And Implementation of Automatic Irrigation System Using Smart Phone In Agricultural-field.",
+		  "VLSI architecture for Efficient Weighted Average Filter for Image denoising.",
+		  "Design of Efficient Modified Booth Multiplier Using Non-Redundant Radix-4Signed Digit Encoding.",
+		  "Design of Efficient Modified Booth Multiplier Using Non-Redundant Radix-4Signed Digit Encoding.",
+		  "Efficient Mutual Authentication Protocol for RFID System Using Modulo Architecture.",
+		  "Design of Aging Aware F'IR Filter Using Adaptive Hold Logic.",
+		  "Recognition of Handwritten digits and Tamil Font Using Static and Dynamic Extraction.",
+		  "Face Recognition and Artists Style Identification in Ancient Portrait Arts.",
+		  "An Intelligent Vehicle Theft Deduction System and Tracking.",
+		  "An Implementation of Intelligent Passenger Safety and Monitoring the Driver Behaviour and Driving Condition On Call Taxi and Traveller Vehicle.",
+		  "A Novel two Fold State Skip logic Built-in-self Test Scheme For Digital Circuits.",
+		  "Real-Time Traffic Light Control Model for Reducing Vehicles CO2 Emission.",
+		  "Multiple Description Transform Coded Image Transmission Through MIMO-OFDM.",
+		  "Image Denoising and Resolution Enhancement for Medical Image Using DTCWT and SVD.",
+		  "Image Denoising and Resolution Enhancement for Medical Image Using DTCWT and SVD.",
+		  "True Vessels Reconfiguration from Segmentation Retinal Image Using Neuro Fuzzy Clustering.",
+		  "AN ASIC Implementation of High-Speed Scalable Architecture for Computation of 20-Discrite Wavelet Transform.",
+		  "Fall accident detection and position identification using smart phone.",
+		  "Smart phone-based drip irrigation system using wireless sensor networks."
+		]
+	},
+	{
+		"address": "s&h",
+		"image":"",
+		"name": "Department of Science and Humanities",
+		"description": "Comprises the faculty of Mathematics and English with rich academic and research experience.",
+		"vision": "To be recognized globally for establishing Research and Development programme in all the areas of Fundamental Sciences that support Engineering and Technology.",
+		"mission": [
+		  "To attain excellence in pedagogy, and provide potential skills in the areas of Humanities and Sciences.",
+		  "To impart flexible, responsive, and innovative educational opportunities and to cultivate interest in the young minds to pursue research in emerging areas of Science and Technology.",
+		  "To prepare professional leaders to face the emerging global challenges and to foster cultural enrichment.",
+		  "To create an atmosphere of learning to enable the students to develop sound cognitive and problem-solving skills."
+		],
+		"events": {
+		  "conferences_workshops_symposium_fdp": 86,
+		  "papers_presented_publications": {
+			"state_level": 0,
+			"national_level": 0,
+			"international_level": 86
+		  },
+		  "programs_conducted": [
+			{
+			  "name": "One day Seminar on 'Stochastic Processes and its Applications'",
+			  "venue": "ANNA UNIVERSITY, REGIONAL CAMPUS, COIMBATORE",
+			  "date": "04-05-2015"
+			},
+			{
+			  "name": "One day Workshop on 'Effective Public Speaking'",
+			  "venue": "ANNA UNIVERSITY, REGIONAL CAMPUS, COIMBATORE",
+			  "date": "29-09-2015"
+			}
+		  ]
+		},
+		"placements": "nil",
+		"achievements": "nil",
+		"research_and_publications": "nil",
+		"faculty": [
+		  {
+			"name": "Dr. Leelamani A",
+			"position": "Assistant Professor (Senior Grade)",
+			"department": "Department of Science and Humanities",
+			"email": "leelamani@aurcc.ac.in",
+			"education": [
+			    {
+					 "degree": "Ph.D.",
+			         "field": "Mathematics",
+			         "institution": "Bharathiar University, Coimbatore",
+			         "year": 2006
+			    }
+			],
+			"research_interests": ["Control Theory", "Differential Equations"],
+			"professional_experience": [
+			  {
+				"organization": "Bharathiar University",
+				"role": "Guest Lecture",
+				"duration": "2004-2006"
+			  },
+			  {
+				"organization": "Park College of Engineering and Technology",
+				"role": "Lecturer",
+				"duration": "2006-2008"
+			  },
+			  {
+				"organization": "Anna University Regional Campus, Coimbatore",
+				"role": "Assistant Professor",
+				"duration": "2008-present"
+			  }
+			],
+			"achievements": [
+			  "University second rank holder in M.Sc degree examination (2001)",
+			  "Guided 13 Ph.D. scholars"
+			],
+			"membership": "Life member in Industrial & Applied Mathematics",
+			"links": {
+			  "Google Scholar": "https://scholar.google.com/citations?user=pQVtZXYAAAAJ&hl=en",
+			  "Email": "mailto:leelamani@aurcc.ac.in",
+			  "Google Drive": "https://drive.google.com/open?id=1pEev3iwFB-aQZ8dTEZtqo-7GKdfS0BZm"
+			}
+		  },
+		  {
+			"name": "Dr. Vernold Vivin J",
+			"position": "Assistant Professor (Senior Grade)",
+			"department": "Department of Science & Humanities (Mathematics)",
+			"email": "jvvivin@gmail.com",
+			"education": [
+			     {  
+					 "degree": "Ph.D.",
+			         "field": "Mathematics",
+			         "institution": "Bharathiar University, Coimbatore"
+			     }
+			],
+			"research_interests": ["Graph Theory", "Graph Colorings"],
+			"professional_experience": [
+			  {
+				"organization": "Anna University Regional Campus-Coimbatore",
+				"role": "Assistant Professor",
+				"duration": "03/08/2023-present"
+			  },
+			  {
+				"organization": "University College of Engineering, Nagercoil",
+				"role": "Assistant Professor",
+				"duration": "20/08/2010-02/08/2023"
+			  },
+			  {
+				"organization": "Sri Shakthi Institute of Engineering and Technology, Coimbatore",
+				"role": "Assistant Professor",
+				"duration": "17/07/2007-19/08/2010"
+			  }
+			],
+			"achievements": [
+			  "Guided 05 Ph.D. candidates",
+			  "Published more than 75 research papers",
+			  "Delivered more than 10 invited Lectures"
+			],
+			"links": {
+			  "Google Scholar": "https://scholar.google.co.in/citations?user=-XgxYQoAAAAJ&hl=en",
+			  "Email": "mailto:jvvivin@gmail.com",
+			  "Google Drive": "https://drive.google.com/open?id=1wtLrakLXToiFlf5k36V_ys4XOh31rlj_"
+			}
+		  },
+		  {
+			"name": "Dr. Krishnakumar M",
+			"position": "Assistant Professor (Senior Grade)",
+			"department": "Department of Science and Humanities (Physics)",
+			"email": "drkrishnakumarmuthusamy@gmail.com",
+			"education": [
+			     {   
+					 "degree": "Ph.D.",
+			         "field": "Physics",
+			         "institution": "Anna University, Chennai"
+			     }
+			],
+			"research_interests": ["NLO materials", "Photonic single crystalline materials", "Materials Science"],
+			"professional_experience": [
+			  {
+				"organization": "Government College of Technology, Coimbatore",
+				"role": "Lecturer (Visiting)",
+				"duration": "2005-2007"
+			  },
+			  {
+				"organization": "National Geophysical Research Institute (NGRI), Hyderabad",
+				"role": "CSIR Research Intern",
+				"duration": "2007-2008"
+			  },
+			  {
+				"organization": "University College of Engineering, Ramanathapuram",
+				"role": "Lecturer",
+				"duration": "2008-2009"
+			  },
+			  {
+				"organization": "University College of Engineering, Ramanathapuram",
+				"role": "Assistant Professor",
+				"duration": "2009-2014"
+			  },
+			  {
+				"organization": "University College of Engineering, Dindigul",
+				"role": "Assistant Professor",
+				"duration": "2014-2015"
+			  },
+			  {
+				"organization": "Anna University Regional campus, Coimbatore",
+				"role": "Assistant Professor (Sr.Gr)",
+				"duration": "2023-present"
+			  }
+			],
+			"achievements": [
+			  "Published more than twenty research articles in peer-reviewed SCI journals",
+			  "Published three books for Information science, Electrical Engineering, and Electronics Engineering",
+			  "Received Kamarajar Endowment fellowship from Bharathiar University",
+			  "Received CSIR Diamond jubilee internship award from CSIR Hyderabad"
+			],
+			"links": {
+			  "Google Scholar": "https://scholar.google.com/citations?user=-FRYVoEAAAAJ&hl=en",
+			  "Email": "mailto:drkrishnakumarmuthusamy@gmail.com",
+			  "Google Drive": "https://drive.google.com/open?id=1iDqdurQldiD2zpn2VVjGUkv5mOpcjkhD"
+			}
+		  },
+		  {
+			"name": "Dr. Bapitha L",
+			"position": "Assistant Professor (Senior Grade)",
+			"department": "Department of Science and Humanities",
+			"email": "bapithaenglish@gmail.com",
+			"professional_experience": [
+			  {
+				"organization": "Anna University Regional Campus Coimbatore",
+				"role": "Assistant Professor",
+				"duration": "11/08/2023-present"
+			  },
+			  {
+				"organization": "UCER, Ramanathapuram",
+				"role": "Assistant Professor",
+				"duration": "21/07/2014-10/08/2023"
+			  },
+			  {
+				"organization": "UCE, Ariyalur",
+				"role": "Assistant Professor",
+				"duration": "19/11/2009-18/07/2014"
+			  },
+			  {
+				"organization": "Panimalar Institute of Technology, Chennai",
+				"role": "Lecturer",
+				"duration": "02/06/2009-17/11/2009"
+			  },
+			  {
+				"organization": "Syed Ammal Engineering College, Ramanathapuram",
+				"role": "Lecturer",
+				"duration": "19/07/2007-31/05/2008"
+			  },
+			  {
+				"organization": "Mount Zion College of Engineering, Pudukkottai",
+				"role": "Lecturer",
+				"duration": "01/06/2001-31/07/2006"
+			  }
+			],
+			"achievements": "15 national and International conferences attended",
+			"links": {
+			  "Email": "mailto:bapithaenglish@gmail.com",
+			  "Google Drive": "https://drive.google.com/open?id=1R3oqrPPxh4pkJGMNkcCTqmWkv2w7wdGC"
+			}
+		  }
+		],
+		"contact": "s&hdepartment@aurcc.ac.in"
+	}
 ]
-  
