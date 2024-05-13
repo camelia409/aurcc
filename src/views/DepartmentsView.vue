@@ -78,7 +78,7 @@
                 <div v-for="staff in department.faculty" :key="staff.email" class="bg-white shadow-md rounded-md p-4">
                   <h3 class="text-lg font-semibold">{{ staff.name }}</h3>
                   <p>{{ staff.position }}</p>
-                  <p>{{ staff.email }}</p>
+                  <p>{{ staff.email}}</p>
                 </div>
               </div>
             </div>

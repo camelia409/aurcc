@@ -174,13 +174,12 @@ import { RouterLink, RouterView } from 'vue-router'
             <li class="mb-1">B.Tech Artificial Intelligence and DataScience</li>
             <!-- Add more UG courses -->
           </ul>
-          <h2 class="text-lg font-bold mb-4">PG Courses</h2>
+          <h2 class="text-lg font-bold mb-1 mt-4">PG Courses</h2>
           <ul>
             <li class="mb-2">MBA</li>
-            <li class="mb-2">M.E. CAD/CAM</li>
-            <li class="mb-2">M.E. Computer Science and Engineering</li>
             <!-- Add more PG courses -->
           </ul>
+          <h2 class="text-lg font-bold mb-1 mt-4">Website Development Team</h2>
         </div>
       </div>
       <hr class="my-8 border-gray-700">
