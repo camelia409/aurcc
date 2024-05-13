@@ -42,6 +42,14 @@
                 <li v-for="mission in department.mission" :key="mission">{{ mission }}</li>
               </ul>
             </div>
+            <div v-else-if="currentSection === 'Events'">
+              <h2 class="text-2xl font-bold mb-4">Events</h2>
+              <ul class="list-disc pl-4">
+                <li v-for="event in department.events" :key="event.name">
+                  <strong>{{ event.name }} ({{ event.date }}):</strong> {{ event.description }}
+                </li>
+              </ul>
+            </div>
             <div v-else-if="currentSection === 'Training and Placements'">
               <h2 class="text-2xl font-bold mb-4">Training and Placements</h2>
               <p><strong>Companies Visited:</strong> {{ department.placements.companies_visited.join(', ') }}</p>
@@ -60,7 +68,6 @@
                 <li v-for="ach in department.achievements.description" :key="ach">
                   {{ ach }}
                 </li>
-
               </ul>
             </div>
             <div v-else-if="currentSection === 'Research and Publications'">
@@ -100,10 +107,11 @@ export default {
       sections: [
         'About Department',
         'Vision and mission',
+        'Events',
         'Training and Placements',
         'Achievements',
         'Research and Publications',
-        'Faculty'
+        'Faculty',
       ],
       currentSection: null
     };
@@ -118,7 +126,7 @@ export default {
   methods: {
     async loadDepartment() {
       try {
-        const response = await fetch('http://192.168.72.231:5173/src/assets/departments.json');
+        const response = await fetch('http://localhost:5173/src/assets/departments.json');
         const departmentsData = await response.json();
         this.department = departmentsData.find(dept => dept.address === this.$route.params.departmentName);
       } catch (error) {
