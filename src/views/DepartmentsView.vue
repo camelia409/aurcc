@@ -48,6 +48,15 @@
               <li v-for="mission in department.mission" :key="mission">{{ mission }}</li>
             </ul>
           </div>
+          <div id="events" class="mb-4">
+            <h2 class="text-2xl font-bold mb-4">Events</h2>
+            <ul class="list-disc pl-4">
+              <li v-for="event in department.events" :key="event.name">
+                <strong>{{ event.name }} ({{ event.date }}):</strong> {{ event.description }}
+              </li>
+            </ul>
+          </div>
+
           <div id="training-and-placements" class="mb-8">
             <h2 class="text-2xl font-bold mb-4">Training and Placements</h2>
             <p><strong>Companies Visited:</strong> {{ department.placements.companies_visited.join(', ') }}</p>
@@ -70,18 +79,46 @@
             </ul>
           </div>
           <div id="faculty" class="mb-8">
-            <h2 class="text-2xl font-bold mb-4">Faculty</h2>
+            <h2 class="text-2xl font-bold mb-4">Faculty</h2><br>
+            <p class="text-xl font-semibold">HOD DESK</p>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div
-                v-for="staff in department.faculty"
-                :key="staff.email"
-                class="bg-white shadow-md rounded-md p-4"
-              >
+              <div v-for="staff in department.faculty.hod_desk" :key="staff.email" class="bg-white shadow-md rounded-md p-4">
                 <h3 class="text-lg font-semibold">{{ staff.name }}</h3>
+                <img :src="'../assets/mani.jpg'" alt="" class="w-24 h-24">
                 <p>{{ staff.position }}</p>
-                <p>{{ staff.email }}</p>
+                <p>{{ staff.email}}</p>
+              </div><br>
+              <p class="text-xl font-semibold">ASSISTANT PROFESSORS</p><br>
+              <div v-for="staff in department.faculty.assistant_professors" :key="staff.email" class="bg-white shadow-md rounded-md p-4">
+                <h3 class="text-lg font-semibold">{{ staff.name }}</h3>
+                <img :src="'http:192.168.72.231:5173/src/assets/preethi.jpg'" alt="" class="w-24 h-24">
+                <p>{{ staff.position }}</p>
+                <p>{{ staff.email}}</p>
               </div>
             </div>
+          </div>
+          <div id="administration-and-technical-staff">
+            <h2 class="text-2xl font-bold mb-4">Administration and Technical Staff</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div v-for="staff in department.admin_staff" :key="staff.email" class="bg-white shadow-md rounded-md p-4">
+                <h3 class="text-lg font-semibold">{{ staff.name }}</h3>
+                <p>{{ staff.position }}</p>
+                <p>{{ staff.email}}</p>
+              </div>
+            </div>
+          </div>
+            <div id="facility">
+            <h2 class="text-2xl font-bold mb-4">Facility</h2>
+            <ul class="list-disc pl-4">
+              {{ department.facility }}
+            </ul>
+          </div>
+          <div id="proud-alumni">
+            <h2 class="text-2xl font-bold mb-4">Proud Alumni</h2>
+            <ul class="list-disc pl-4">
+              {{ department.proud_alumni }}
+            </ul>
+          </div>
         </div>
       </section>
     </main>
@@ -96,6 +133,7 @@ export default {
       sections: [
         'About Department',
         'Vision and mission',
+        'Events',
         'Training and Placements',
         'Achievements',
         'Research and Publications',
@@ -128,8 +166,13 @@ export default {
     scrollToSection(section) {
       const sectionId = section.toLowerCase().replace(/\s+/g, '-');
       const sectionElement = document.getElementById(sectionId);
+      const tabHeight = document.querySelector('.sticky').offsetHeight; // Get height of sticky tabs
       if (sectionElement) {
-        sectionElement.scrollIntoView({ behavior: 'smooth' });
+        const offset = sectionElement.offsetTop - tabHeight - 20; // Adjusted offset
+        window.scrollTo({
+          top: offset,
+          behavior: 'smooth'
+        });
         this.currentSection = section;
       }
     },
@@ -143,11 +186,17 @@ export default {
     handleScroll() {
       const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
       for (let i = 0; i < this.sectionOffsets.length; i++) {
-        if (scrollPosition >= this.sectionOffsets[i] - 100) {
+        const sectionOffset = this.sectionOffsets[i];
+        const nextSectionOffset = this.sectionOffsets[i + 1] || Infinity; // Next section's offset or infinity if last section
+        const tabHeight = document.querySelector('.sticky').offsetHeight; // Height of the sticky tabs
+        if (scrollPosition >= sectionOffset - tabHeight - 20 && scrollPosition < nextSectionOffset - tabHeight - 20) {
           this.currentSection = this.sections[i];
+          break;
         }
       }
     }
+
+
   },
   computed: {
     currentYear() {
