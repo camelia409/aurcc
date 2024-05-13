@@ -84,6 +84,7 @@
               <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div v-for="staff in department.faculty" :key="staff.email" class="bg-white shadow-md rounded-md p-4">
                   <h3 class="text-lg font-semibold">{{ staff.name }}</h3>
+                  <img :src="'../assets/mani.jpg'" alt="" class="w-24 h-24">
                   <p>{{ staff.position }}</p>
                   <p>{{ staff.email}}</p>
                 </div>
