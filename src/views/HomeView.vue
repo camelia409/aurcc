@@ -4,29 +4,6 @@ import TheWelcome from '../components/TheWelcome.vue'
 
 <template>
   <div class="min-h-screen bg-base-200">
-    <div class="carousel ">
-      <div class="carousel-item">
-        <img src="../assets/1.jpg" alt="Burger" />
-      </div> 
-      <div class="carousel-item">
-        <img src="../assets/pic1.jpg" alt="Burger" />
-      </div> 
-      <div class="carousel-item">
-        <img src="../assets/4.jpg" alt="Burger" />
-      </div> 
-      <div class="carousel-item">
-        <img src="../assets/ece1.jpg" alt="Burger" />
-      </div> 
-      <div class="carousel-item">
-        <img src="https://img.daisyui.com/images/stock/photo-1550258987-190a2d41a8ba.jpg" alt="Burger" />
-      </div> 
-      <div class="carousel-item">
-        <img src="https://img.daisyui.com/images/stock/photo-1559181567-c3190ca9959b.jpg" alt="Burger" />
-      </div> 
-      <div class="carousel-item">
-        <img src="https://img.daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.jpg" alt="Burger" />
-      </div>
-    </div>
     <main class="flex flex-col gap-8">
       <div class="hero bg-base-200 flex flex-col gap-4 lg:w-1/2 self-center">
         <div class="hero-content text-center">
@@ -35,7 +12,28 @@ import TheWelcome from '../components/TheWelcome.vue'
           </div>
         </div>
       </div>
-
+      <div class="bg-base-300">
+        <div class="container mx-auto">
+          <div class="flex items-center justify-between">
+            <div class="text-sm p-4 bg-gray-800 text-white z-10">Announcements</div>
+            <div class="text-sm breadcrumbs animate-marquee hover:animate-pause p-4">
+              <ul>
+                <li>
+                  <a href="#">Announcements</a>
+                </li>
+                <li>on Recent Innovations in Production Engineering(RIPE) 2024 at MIT Campus, Anna University.</li>
+                <li>
+                  <a href="#">Founders day, Alumni, Institute day live stream link</a>
+                </li>
+                <li>
+                  <a href="#">View more</a>
+                </li>
+              </ul>
+            </div>
+            <div class="text-sm p-4 bg-gray-800 text-white">View more</div>
+          </div>
+        </div>
+      </div>
       
       <div class="grid grid-cols-1 md:grid-cols-4 gap-8 p-9 md:p-20">
         <div class="col-span-3">
@@ -53,7 +51,7 @@ import TheWelcome from '../components/TheWelcome.vue'
             <div class="events-section bg-base-300 overflow-hidden" @mouseenter="stopScrolling" @mouseleave="startScrolling">
               <div class="events-content p-6" ref="eventsContent">
                 <div class="events-list" ref="eventsList">
-                  <!-- Populate this with your upcoming events -->
+
                   <div v-for="event in upcomingEvents" :key="event.id" class="event">
                     <h3 class="font-bold">{{ event.title }}</h3>
                     <p>{{ event.date }}</p>
@@ -65,6 +63,32 @@ import TheWelcome from '../components/TheWelcome.vue'
           </div>
         </div>
       </div>
+
+      <div class="bg-primary text-primary-content py-8">
+        <div class="container mx-auto px-4 flex justify-around">
+          <div class="text-center">
+            <div class="text-5xl font-bold">800</div>
+            <div>Under Graduates</div>
+          </div>
+          <div class="text-center">
+            <div class="text-5xl font-bold">216</div>
+            <div>Post Graduates</div>
+          </div>
+          <div class="text-center">
+            <div class="text-5xl font-bold">5</div>
+            <div>UG Programs</div>
+          </div>
+          <div class="text-center">
+            <div class="text-5xl font-bold">1</div>
+            <div>PG Programs</div>
+          </div>
+          <div class="text-center">
+            <div class="text-5xl font-bold">210/124</div>
+            <div>Faculty/Staff</div>
+          </div>
+        </div>
+      </div>
+
       <section class="flex flex-col gap-4">
         <h2 class="text-4xl font-bold text-center">Innovating the Industries</h2>
         <div class="grid grid-cols-3 gap-4 items-center justify-space-around"><a href="https://www.tcs.com"
@@ -198,6 +222,24 @@ export default {
 </script>
 
 <style>
+/* Tailwind CSS utility classes */
+.animate-marquee {
+  animation: marquee 20s linear infinite;
+}
+
+.animate-pause {
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
 .events-content,.news-content {
   animation: scrollAnimation 5s linear infinite; /* Change animation duration as needed */
 }
