@@ -43,6 +43,11 @@ const router = createRouter({
       path: '/research-cell/',
       name: 'research-cell',
       component: ()=> import('../views/Reseach.vue')
+    },
+    {
+      path: '/about/',
+      name: 'about',
+      component: ()=> import('../views/About.vue')
     }
   ]
 })

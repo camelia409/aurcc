@@ -71,7 +71,7 @@
                         "degree": "PG Diploma in Career Guidance",
                         "institution": "Bharathiar University"
                     }
-                ],
+					                ],
                 "research_interests": ["Artificial Intelligence", "Wireless Sensor Networks", "Natural Language Processing"],
                 "teaching_experience": "19 years",
                 "contributions": [
@@ -257,9 +257,94 @@
                     "Google Scholar": "https://scholar.google.com/citations?user=pG25xm4AAAAJ&hl=en",
                     "Email": "mailto:preethi@aurcc.ac.in",
                     "LinkedIn": "https://www.linkedin.com/in/preethi-j-88499a101/"
-                }
+        	        }
+            }	], 
+		"admin-staff":[
+				{
+                "name": "Dr.Thirunavukkarasu E S",
+                "position": "Executive Assistant ",
+                "email": "arasuannauniversity@gmail.com",
+                "education": [
+                    {
+                        "degree": " M.C.A., M.Phil., PGDCA, PGDBA, DPCS",
+                        "institution": " ",
+                        "year":"" 
+                    }
+						]
+            },
+			{
+                "name": "Mrs.Usha L",
+                "position": "Executive Assistant ",
+                "email": "cseaurcc@gmail.com",
+                "education": [
+                    {
+                        "degree": " M.sc.Biochemistry",
+                        "institution": " ",
+                        "year":"" 
+                    }
+						]
+            },
+			{
+                "name": "Mr Babu Magendra K S",
+                "position": "System Administrator",
+                "email": "babu@aurcc.ac.in",
+                "education": [
+                    {
+                        "degree": " ",
+                        "institution": " ",
+                        "year":"" 
+                    }
+						]
+            },
+			{
+                "name": "Mr Sasikumar T",
+                "position": " Professional Assistant III",
+                "email": "",
+                "education": [
+                    {
+                        "degree": " ",
+                        "institution": " ",
+                        "year":"" 
+                    }
+						]
+            },
+			{
+                "name": "Mrs Subashini P ",
+                "position": " Professional Assistant II",
+                "email": "",
+                "education": [
+                    {
+                        "degree": " ",
+                        "institution": " ",
+                        "year":"" 
+                    }
+						]
+            },
+			{
+                "name": "Mr Benedict S",
+                "position": " Professional Assistant I",
+                "email": "",
+                "education": [
+                    {
+                        "degree": " ",
+                        "institution": " ",
+                        "year":"" 
+                    }
+						]
+            },
+			{
+                "name": "Mr Ramkumar A",
+                "position": " Peon",
+                "email": "",
+                "education": [
+                    {
+                        "degree": " ",
+                        "institution": " ",
+                        "year":"" 
+                    }
+						]
             }
-        ],
+		   ],
         "contact": "csedepartment@aurcc.ac.in"
     },
 	{	"address": "biotech",

@@ -67,7 +67,7 @@ import { RouterLink, RouterView } from 'vue-router'
             <li>
               <details>
                 <summary>Academics</summary>
-                <ul class="p-2 bg-base-100 shadow-lg text-black">
+                <ul class="p-2 bg-base-100 shadow-lg text-black z-10">
                   <li><a href="/">Programs Offered</a></li>
                   <li><a href="/">Curriculum & Syllabus</a></li>
                   <li><a href="/">Regulations</a></li>
@@ -179,7 +179,7 @@ import { RouterLink, RouterView } from 'vue-router'
             <li class="mb-2">MBA</li>
             <!-- Add more PG courses -->
           </ul>
-          <h2 class="text-lg font-bold mb-1 mt-4">Website Development Team</h2>
+          <a href="/about" class="text-lg font-bold mb-1 mt-4">Website Development Team</a>
         </div>
       </div>
       <hr class="my-8 border-gray-700">
