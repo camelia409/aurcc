@@ -236,6 +236,7 @@
 			  },
 			  {
                 "name": "Dr. K. Seethappan",
+				"image": "seetha.jpg",
                 "position": "Assistant Professor (Senior Grade)",
                 "email": "seethappan@gmail.com",
                 "experience": "Over 15 years",
@@ -276,6 +277,7 @@
             },
             {
                 "name": "Dr. Fareena N",
+				"image": "prabhu.jpg",
                 "position": "Assistant Professor",
                 "email": "fareena.aurcc@gmail.com",
                 "education": [

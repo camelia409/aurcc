@@ -26,7 +26,7 @@
                 'bg-blue-500 text-white': currentSection === section,
                 'text-gray-600 hover:bg-gray-100': currentSection !== section
               }"
-              class="font-semibold py-2 px-4 rounded"
+              class="font-semibold py-2 px-4 rounded transition duration-300 ease-in-out"
             >
               {{ section }}
             </button>
@@ -35,7 +35,7 @@
       </div>
 
       <!-- Content sections -->
-      <section class="container mx-auto py-8 p-9 pt-20" @scroll="handleScroll">
+      <section class="container mx-auto py-8 p-9 pt-20 lg:w-4/6" @scroll="handleScroll">
         <div id="content-sections">
           <div id="about-department" class="mb-8">
             <h2 class="text-2xl font-bold mb-4">About Department</h2>
@@ -78,25 +78,59 @@
               {{ department.research_and_publications }}
             </ul>
           </div>
-          <div id="faculty" class="mb-8">
-            <h2 class="text-2xl font-bold mb-4">Faculty</h2><br>
-            <p class="text-xl font-semibold">HOD DESK</p>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div v-for="staff in department.faculty.hod_desk" :key="staff.email" class="bg-white shadow-md rounded-md p-4">
-                <h3 class="text-lg font-semibold">{{ staff.name }}</h3>
-                <img :src="'../assets/mani.jpg'" alt="" class="w-24 h-24">
-                <p>{{ staff.position }}</p>
-                <p>{{ staff.email}}</p>
-              </div><br>
-              <p class="text-xl font-semibold">ASSISTANT PROFESSORS</p><br>
-              <div v-for="staff in department.faculty.assistant_professors" :key="staff.email" class="bg-white shadow-md rounded-md p-4">
-                <h3 class="text-lg font-semibold">{{ staff.name }}</h3>
-                <img :src="'http:192.168.72.231:5173/src/assets/preethi.jpg'" alt="" class="w-24 h-24">
-                <p>{{ staff.position }}</p>
-                <p>{{ staff.email}}</p>
+          <div id="faculty" class="mb-8 relative">
+            <h2 class="text-2xl font-bold mb-4">Faculty</h2>
+
+            <!-- HOD Desk -->
+            <div class="mb-8">
+              <h3 class="text-xl font-semibold mb-2">HOD Desk</h3>
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div v-for="staff in department.faculty.hod_desk" :key="staff.email" class="p-4 border rounded-lg bg-blue-50">
+                  <div class="flex items-center mb-4">
+                    <img :src="'http://localhost:5173/src/assets/' + staff.image" alt="{{ staff.name }}" class="w-16 h-16 rounded-full mr-4">
+                    <div>
+                      <h4 class="text-lg font-semibold">{{ staff.name }}</h4>
+                      <p class="text-gray-600">{{ staff.position }}</p>
+                      <p class="text-gray-600">{{ staff.email }}</p>
+                      <button @click="showDetails(staff)" class="text-blue-500 hover:underline focus:outline-none">Show Details</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Assistant Professors -->
+            <div>
+              <h3 class="text-xl font-semibold mb-2">Assistant Professors</h3>
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div v-for="staff in department.faculty.assistant_professors" :key="staff.email" class="p-4 border rounded-lg">
+                  <div class="flex items-center mb-4">
+                    <img :src="'http://localhost:5173/src/assets/' + staff.image" alt="{{ staff.name }}" class="w-16 h-16 rounded-full mr-4">
+                    <div>
+                      <h4 class="text-lg font-semibold">{{ staff.name }}</h4>
+                      <p class="text-gray-600">{{ staff.position }}</p>
+                      <p class="text-gray-600">{{ staff.email }}</p>
+                      <button @click="showDetails(staff)" class=" focus:outline-none">Show Details</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Popover Component -->
+            <div v-if="showPopover" class="absolute inset-0 flex items-center justify-center z-50">
+              <div class="bg-white shadow-lg rounded-lg p-6 w-96">
+                <h2 class="text-lg font-semibold mb-4">{{ selectedStaff.name }} Details</h2>
+                <p><strong>Position:</strong> {{ selectedStaff.position }}</p>
+                <p><strong>Email:</strong> {{ selectedStaff.email }}</p>
+                <!-- Add more details here as needed -->
+                <button @click="showPopover = false" class="mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 focus:outline-none">Close</button>
               </div>
             </div>
           </div>
+
+
+
           <div id="administration-and-technical-staff">
             <h2 class="text-2xl font-bold mb-4">Administration and Technical Staff</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -143,7 +177,9 @@ export default {
         'Proud Alumni'
       ],
       currentSection: null,
-      sectionOffsets: []
+      sectionOffsets: [],
+      showPopover: false,
+      selectedStaff: null
     };
   },
   async created() {
@@ -194,6 +230,11 @@ export default {
           break;
         }
       }
+    },
+    showDetails(staff) {
+      this.selectedStaff = staff;
+      console.log(staff)
+      this.showPopover = true;
     }
 
 
