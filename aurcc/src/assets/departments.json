@@ -46,195 +46,100 @@
             "international_conferences": 45,
             "national_conferences": 20
         },
-		"faculty": {
-			"hod_desk": [
-			  {
-				"name": "Dr. Manisekaran S V",
-				"image": "mani.jpg",
-				"position": "Assistant Professor and Head(i/c)",
-				"email": "manisekaran@aurcc.ac.in",
-				"education": [
-				  {
-					"degree": "B.E. in Information Technology",
-					"institution": "Bharathiar University",
-					"year": 2003
-				  },
-				  {
-					"degree": "M.E. in Computer Science and Engineering",
-					"institution": "Anna University, Chennai",
-					"year": 2005
-				  },
-				  {
-					"degree": "Ph.D. in Information and Communication Engineering",
-					"institution": "Anna University, Chennai",
-					"year": 2015
-				  },
-				  {
-					"degree": "PG Diploma in Career Guidance",
-					"institution": "Bharathiar University"
-				  }
-				],
-				"research_interests": ["Artificial Intelligence", "Wireless Sensor Networks", "Natural Language Processing"],
-				"teaching_experience": "19 years",
-				"contributions": [
-				  "Served as AICTE Coordination Committee Member for Smart India Hackathon",
-				  "Guided over 100 Post Graduate Scholars and currently supervising five Ph.D. Research Scholars",
-				  "Published research works in esteemed International Journals",
-				  "Served as Assistant Controller of Examinations at Anna University of Technology, Coimbatore",
-				  "Currently serving as Zonal Officer for Zone IX of Anna University, Chennai",
-				  "Wipro Certified Faculty in Java Full Stack",
-				  "Presented significant research articles in International Conferences",
-				  "Organized Tamil Nadu State Government funded Naan Mudhalvan skill training program",
-				  "Awarded 'Ezhuthoviyar' award from Thulimai Social forum for contribution to literary works",
-				  "Currently serving as the coordinator for Unnat Bhrath Abhiyan cell and National Service Scheme Unit at Anna University Regional Campus Coimbatore",
-				  "Coordinator of Career Guidance Cell and Kani Thamizh Peravai at Anna University Regional Campus Coimbatore"
-				],
-				"links": {
-				  "Google Scholar Profile": "https://scholar.google.com/citations?user=BThdhEoAAAAJ&hl=en",
-				  "Email": "mailto:manisekaran@aurcc.ac.in",
-				  "Curriculum Vitae": "https://drive.google.com/open?id=1IR_iOiBDbeN1QZZ99qKZjmP3zPFF3sN7"
-				},
-				"previous_positions": [
-				  {
-					"position": "Lecturer",
-					"department": "IT Department",
-					"institution": "PSG College of Technology, Coimbatore",
-					"duration": "From 27.06.2005 to 11.08.2008"
-				  },
-				  {
-					"position": "Assistant Professor",
-					"department": "IT Department",
-					"institution": "Anna University Regional Campus",
-					"duration": "From 13.08.2008"
-				  }
-				]
-			  }
-			],
-			"assistant_professors": [
-			  {
-				"name": "Dr. Preethi J",
-				"image": "preethi.jpg",
-				"position": "Assistant Professor (Senior Grade)",
-				"departments": ["Department of Computer Science and Engineering", "Placement Cell", "DGATE Cell"],
-				"clg-email": "preethi@aurcc.ac.in",
-				"education": [
-				  {
-					"degree": "Ph.D. in Computer Science and Engineering",
-					"institution": "Anna University, Chennai",
-					"year": 2020
-				  },
-				  {
-					"degree": "M.E. Computer Science and Engineering",
-					"institution": "PSG College of Technology, Coimbatore",
-					"year": 2013
-				  },
-				  {
-					"degree": "B.E. Computer Science and Engineering",
-					"institution": "PSG College of Technology, Coimbatore",
-					"year": 2009
-				  }
-				],
-				"research_interests": ["Machine Learning", "Data Mining"],
-				"professional_experience": [
-				  {
-					"position": "Assistant Professor",
-					"institution": "Anna University Regional Campus, Coimbatore",
-					"duration": "August 2023 - Present"
-				  }
-				],
-				"achievements": [
-				  "Received the Best Paper Presentation Award at the International Conference on Computational Intelligence and Data Engineering 2019",
-				  "Published 4 papers in International Journals and 3 papers in International Conferences",
-				  "Organized and attended several Faculty Development Programs and Workshops"
-				],
-				"links": {
-				  "Google Scholar": "https://scholar.google.com/citations?user=pG25xm4AAAAJ&hl=en",
-				  "Email": "mailto:preethi@aurcc.ac.in",
-				  "LinkedIn": "https://www.linkedin.com/in/preethi-j-88499a101/"
-				}
-			  },
-			  {
-				"name": "Dr. P. Marikkannu",
-				"image": "prabhu.jpg",
-				"position": "Assistant Professor (Senior Grade)",
-				"email": "pmarikkannu@gmail.com",
-				"education": [
-				  {
-					"degree": "Ph.D. in Computer Science and Engineering",
-					"institution": "Anna University, Chennai"
-				  },
-				  {
-					"degree": "M.Tech. Information Technology",
-					"institution": "College of Engineering Guindy, Anna University",
-					"honors": ["With Distinction", "Gold Medalist"]
-				  }
-				],
-				"research_interests": ["nothing"],
-				"roles": ["Head-Incharge, Department of Computer Science and Engineering (July 2019 – March 2024)"],
-				"research_profiles": {
-				  "Google Scholar": "https://scholar.google.com/citations?user=Y9Ka_OwAAAAJ&hl=en",
-				  "Scopus": "https://www.scopus.com/authid/detail.uri?authorId=37079237000"
-				},
-				"publications": {
-				  "International Journals": 39,
-				  "International Conferences": 23,
-				  "National Conferences": 43
-				},
-				"abroad_visit": "Attended International Conference at Taylor’s University, Malaysia during 13-14, September 2023.",
-				"additional_links": {
-				  "Link to CV": "https://drive.google.com/open?id=1Pqy55ZCi_pmk706Fr5oILlZALWCrxYdS"
-				},
-				"clg-email": "marikkannu@aurcc.ac.in"
-			  },
-			  {
-				"name": "Mr. Prabhu D",
-				"image": "prabhu.jpg",
-				"position": "Assistant Professor (Senior Grade)",
-				"email": "prabhu2kraj@gmail.com",
-				"departments": ["Department of Computer Science and Engineering"],
-				"description": "I'm currently working as a Computer Science with a passion for inspiring students to explore the endless possibilities in technology. With a focus on interactive learning methodologies, I strive to make complex concepts accessible and engaging for my students.",
-				"education": [
-				  {
-					"degree": "Bachelor of Engineering",
-					"field": "Computer Science and Engineering",
-					"institution": "Anna University",
-					"year": 2005
-				  }
-				],
-				"professional_experience": [
-				  {
-					"position": "Assistant Professor",
-					"institution": "University college of Engineering Arni",
-					"duration": "07.09.2009 - 27.07.2023"
-				  },
-				  {
-					"position": "Assistant Professor",
-					"institution": "VIT University, Vellore",
-					"duration": "08.06.2009 - 05.09.2009"
-				  },
-				  {
-					"position": "Lecturer",
-					"institution": "Sri Krishna College of Engineering and Technology",
-					"duration": "30.06.2008 - 15.05.2009"
-				  },
-				  {
-					"position": "Hourly basis staff",
-					"institution": "Government college of Technology, Coimbatore",
-					"duration": "2006 - 2008"
-				  },
-				  {
-					"position": "Lecturer",
-					"institution": "Karpaga Vinayaga College of Engineering and Technology",
-					"duration": "23.02.2005 - 07.06.2006"
-				  }
-				],
-				"links": {
-				  "Google Scholar": "https://scholar.google.com/citations?hl=en&user=X2QiZxQAAAAJ",
-				  "Email": "mailto:prabhu@aurcc.ac.in",
-				  "Curriculum Vitae": "https://drive.google.com/open?id=1Y524OLRvh5MZrkie12t8H3urj89JI8bQ"
-				}
-			  },
-			  {
+        "faculty": [
+            {
+                "name": "Dr. Manisekaran S V",
+                "position": "Assistant Professor",
+                "email": "manisekaran@aurcc.ac.in",
+                "education": [
+                    {
+                        "degree": "B.E. in Information Technology",
+                        "institution": "Bharathiar University",
+                        "year": 2003
+                    },
+                    {
+                        "degree": "M.E. in Computer Science and Engineering",
+                        "institution": "Anna University, Chennai",
+                        "year": 2005
+                    },
+                    {
+                        "degree": "Ph.D. in Information and Communication Engineering",
+                        "institution": "Anna University, Chennai",
+                        "year": 2015
+                    },
+                    {
+                        "degree": "PG Diploma in Career Guidance",
+                        "institution": "Bharathiar University"
+                    }
+					                ],
+                "research_interests": ["Artificial Intelligence", "Wireless Sensor Networks", "Natural Language Processing"],
+                "teaching_experience": "19 years",
+                "contributions": [
+                    "Served as AICTE Coordination Committee Member for Smart India Hackathon",
+                    "Guided over 100 Post Graduate Scholars and currently supervising five Ph.D. Research Scholars",
+                    "Published research works in esteemed International Journals",
+                    "Served as Assistant Controller of Examinations at Anna University of Technology, Coimbatore",
+                    "Currently serving as Zonal Officer for Zone IX of Anna University, Chennai",
+                    "Wipro Certified Faculty in Java Full Stack",
+                    "Presented significant research articles in International Conferences",
+                    "Organized Tamil Nadu State Government funded Naan Mudhalvan skill training program",
+                    "Awarded 'Ezhuthoviyar' award from Thulimai Social forum for contribution to literary works",
+                    "Currently serving as the coordinator for Unnat Bhrath Abhiyan cell and National Service Scheme Unit at Anna University Regional Campus Coimbatore",
+                    "Coordinator of Career Guidance Cell and Kani Thamizh Peravai at Anna University Regional Campus Coimbatore"
+                ],
+                "links": {
+                    "Google Scholar Profile": "https://scholar.google.com/citations?user=BThdhEoAAAAJ&hl=en",
+                    "Email": "mailto:manisekaran@aurcc.ac.in",
+                    "Curriculum Vitae": "https://drive.google.com/open?id=1IR_iOiBDbeN1QZZ99qKZjmP3zPFF3sN7"
+                },
+                "previous_positions": [
+                    {
+                        "position": "Lecturer",
+                        "department": "IT Department",
+                        "institution": "PSG College of Technology, Coimbatore",
+                        "duration": "From 27.06.2005 to 11.08.2008"
+                    },
+                    {
+                        "position": "Assistant Professor",
+                        "department": "IT Department",
+                        "institution": "Anna University Regional Campus",
+                        "duration": "From 13.08.2008"
+                    }
+                ]
+            },
+            {
+                "name": "Dr. P. Marikkannu",
+                "position": "Assistant Professor (Senior Grade)",
+                "email": "pmarikkannu@gmail.com",
+                "education": [
+                    {
+                        "degree": "Ph.D. in Computer Science and Engineering",
+                        "institution": "Anna University, Chennai"
+                    },
+                    {
+                        "degree": "M.Tech. Information Technology",
+                        "institution": "College of Engineering Guindy, Anna University",
+                        "honors": ["With Distinction", "Gold Medalist"]
+                    }
+                ],
+                "research_interests":["nothing"],
+                "roles": ["Head-Incharge, Department of Computer Science and Engineering (July 2019 – March 2024)"],
+                "research_profiles": {
+                    "Google Scholar": "https://scholar.google.com/citations?user=Y9Ka_OwAAAAJ&hl=en",
+                    "Scopus": "https://www.scopus.com/authid/detail.uri?authorId=37079237000"
+                },
+                "publications": {
+                    "International Journals": 39,
+                    "International Conferences": 23,
+                    "National Conferences": 43
+                },
+                "abroad_visit": "Attended International Conference at Taylor’s University, Malaysia during 13-14, September 2023.",
+                "additional_links": {
+                    "Link to CV": "https://drive.google.com/open?id=1Pqy55ZCi_pmk706Fr5oILlZALWCrxYdS"
+                },
+                "clg-email": "marikkannu@aurcc.ac.in"
+            },
+            {
                 "name": "Dr. K. Seethappan",
                 "position": "Assistant Professor (Senior Grade)",
                 "email": "seethappan@gmail.com",
@@ -312,13 +217,52 @@
                     "Email": "mailto:fareena.aurcc@gmail.com",
                     "LinkedIn": "https://www.linkedin.com/in/fareena-n-518502135/"
                 }
-            }
-			]
-		  },		 
+            },
+            {
+                "name": "Dr. Preethi J",
+                "position": "Assistant Professor (Senior Grade)",
+                "departments": ["Department of Computer Science and Engineering", "Placement Cell", "DGATE Cell"],
+                "clg-email": "preethi@aurcc.ac.in",
+                "education": [
+                    {
+                        "degree": "Ph.D. in Computer Science and Engineering",
+                        "institution": "Anna University, Chennai",
+                        "year": 2020
+                    },
+                    {
+                        "degree": "M.E. Computer Science and Engineering",
+                        "institution": "PSG College of Technology, Coimbatore",
+                        "year": 2013
+                    },
+                    {
+                        "degree": "B.E. Computer Science and Engineering",
+                        "institution": "PSG College of Technology, Coimbatore",
+                        "year": 2009
+                    }
+                ],
+                "research_interests": ["Machine Learning", "Data Mining"],
+                "professional_experience": [
+                    {
+                        "position": "Assistant Professor",
+                        "institution": "Anna University Regional Campus, Coimbatore",
+                        "duration": "August 2023 - Present"
+                    }
+                ],
+                "achievements": [
+                    "Received the Best Paper Presentation Award at the International Conference on Computational Intelligence and Data Engineering 2019",
+                    "Published 4 papers in International Journals and 3 papers in International Conferences",
+                    "Organized and attended several Faculty Development Programs and Workshops"
+                ],
+                "links": {
+                    "Google Scholar": "https://scholar.google.com/citations?user=pG25xm4AAAAJ&hl=en",
+                    "Email": "mailto:preethi@aurcc.ac.in",
+                    "LinkedIn": "https://www.linkedin.com/in/preethi-j-88499a101/"
+        	        }
+            }	], 
 		"admin_staff":[
 				{
                 "name": "Dr.Thirunavukkarasu E S",
-                "position": "Executive Assistant ",
+                "position": "Executive Assistant",
                 "email": "arasuannauniversity@gmail.com",
                 "education": [
                     {
@@ -355,7 +299,7 @@
 			{
                 "name": "Mr Sasikumar T",
                 "position": " Professional Assistant III",
-                "email": "",
+                "email": "null",
                 "education": [
                     {
                         "degree": " ",
@@ -367,7 +311,7 @@
 			{
                 "name": "Mrs Subashini P ",
                 "position": " Professional Assistant II",
-                "email": "",
+                "email": "null",
                 "education": [
                     {
                         "degree": " ",
@@ -379,7 +323,7 @@
 			{
                 "name": "Mr Benedict S",
                 "position": " Professional Assistant I",
-                "email": "",
+                "email": "null",
                 "education": [
                     {
                         "degree": " ",
@@ -391,7 +335,7 @@
 			{
                 "name": "Mr Ramkumar A",
                 "position": " Peon",
-                "email": "",
+                "email": "null",
                 "education": [
                     {
                         "degree": " ",

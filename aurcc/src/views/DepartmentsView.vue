@@ -80,48 +80,26 @@
               </ul>
             </div>
             <div v-else-if="currentSection === 'Faculty'">
-              <h2 class="text-2xl font-bold mb-4">Faculty</h2><br>
-              <p class="text-xl font-semibold">HOD DESK</p>
+              <h2 class="text-2xl font-bold mb-4">Faculty</h2>
               <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div v-for="staff in department.faculty.hod_desk" :key="staff.email" class="bg-white shadow-md rounded-md p-4">
-                  <h3 class="text-lg font-semibold">{{ staff.name }}</h3>
-                  <img :src="'../assets/mani.jpg'" alt="" class="w-24 h-24">
-                  <p>{{ staff.position }}</p>
-                  <p>{{ staff.email}}</p>
-                </div><br>
-              <p class="text-xl font-semibold">ASSISTANT PROFESSORS</p><br>
-                <div v-for="staff in department.faculty.assistant_professors" :key="staff.email" class="bg-white shadow-md rounded-md p-4">
-                  <h3 class="text-lg font-semibold">{{ staff.name }}</h3>
-                  <img :src="'../assets/mani.jpg'" alt="" class="w-24 h-24">
-                  <p>{{ staff.position }}</p>
-                  <p>{{ staff.email}}</p>
-                </div>
-              </div>
-            </div>
-            <div v-else-if="currentSection === 'Administration and Technical Staff'">
-              <h2 class="text-2xl font-bold mb-4">Administration and Technical Staff</h2>
-              <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div v-for="staff in department.admin_staff" :key="staff.email" class="bg-white shadow-md rounded-md p-4">
+                <div v-for="staff in department.faculty" :key="staff.email" class="bg-white shadow-md rounded-md p-4">
                   <h3 class="text-lg font-semibold">{{ staff.name }}</h3>
                   <p>{{ staff.position }}</p>
                   <p>{{ staff.email}}</p>
                 </div>
               </div>
             </div>
-             <div v-else-if="currentSection === 'Facility'">
-              <h2 class="text-2xl font-bold mb-4">Facility</h2>
-              <ul class="list-disc pl-4">
-                {{ department.facility }}
-              </ul>
-            </div>
-            <div v-else-if="currentSection === 'Proud Alumni'">
-              <h2 class="text-2xl font-bold mb-4">Proud Alumni</h2>
-              <ul class="list-disc pl-4">
-                {{ department.proud_alumni }}
-              </ul>
+            <div v-else-if="currentSection === 'Administration and Technical staff'">
+              <h2 class="text-2xl font-bold mb-4">Administration and Technical staff</h2>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div v-for="staff in department.admin-staff" :key="staff.email" class="bg-white shadow-md rounded-md p-4">
+                  <h3 class="text-lg font-semibold">{{ staff.name }}</h3>
+                  <p>{{ staff.position }}</p>
+                </div>
+              </div>
             </div>
           </section>
-        </div> 
+        </div>
       </section>
 
       <!-- Dynamic Content -->
@@ -143,9 +121,7 @@ export default {
         'Achievements',
         'Research and Publications',
         'Faculty',
-        'Administration and Technical Staff',
-        'Facility',
-        'Proud Alumni'
+        'Administration and Technical staff'
       ],
       currentSection: null
     };
