@@ -82,7 +82,6 @@
                 <p>{{ staff.email }}</p>
               </div>
             </div>
-          </div>
         </div>
       </section>
     </main>
@@ -100,7 +99,10 @@ export default {
         'Training and Placements',
         'Achievements',
         'Research and Publications',
-        'Faculty'
+        'Faculty',
+        'Administration and Technical Staff',
+        'Facility',
+        'Proud Alumni'
       ],
       currentSection: null,
       sectionOffsets: []
