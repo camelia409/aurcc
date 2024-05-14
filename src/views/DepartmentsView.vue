@@ -35,20 +35,22 @@
       </div>
 
       <!-- Content sections -->
-      <section class="container mx-auto py-8 p-9 pt-20 lg:w-4/6" @scroll="handleScroll">
-        <div id="content-sections">
-          <div id="about-department" class="mb-8">
+      <section class="container mx-auto py-8 pt-20" @scroll="handleScroll">
+        <div id="content-sections" class="">
+          <div id="about-department" class="mb-8 lg:w-4/6 mx-auto">
             <h2 class="text-2xl font-bold mb-4">About Department</h2>
             <p>{{ department.description }}</p>
           </div>
-          <div id="vision-and-mission" class="mb-8">
-            <h2 class="text-2xl font-bold mb-4">Vision and Mission</h2>
-            <p>{{ department.vision }}</p>
-            <ul class="list-disc pl-4">
-              <li v-for="mission in department.mission" :key="mission">{{ mission }}</li>
-            </ul>
+          <div id="vision-and-mission" class="mb-8 w-full bg-base-300 p-3 py-16">
+            <div class="lg:w-4/6 mx-auto">
+              <h2 class="text-2xl font-bold mb-4">Vision and Mission</h2>
+              <p>{{ department.vision }}</p>
+              <ul class="list-disc pl-4">
+                <li v-for="mission in department.mission" :key="mission">{{ mission }}</li>
+              </ul>
+            </div>
           </div>
-          <div id="events" class="mb-4">
+          <div id="events" class="mb-4 lg:w-4/6 mx-auto">
             <h2 class="text-2xl font-bold mb-4">Events</h2>
             <ul class="list-disc pl-4">
               <li v-for="event in department.events" :key="event.name">
@@ -56,15 +58,42 @@
               </li>
             </ul>
           </div>
-
-          <div id="training-and-placements" class="mb-8">
+          <div id="training-and-placements" class="mb-8 lg:w-4/6 mx-auto">
             <h2 class="text-2xl font-bold mb-4">Training and Placements</h2>
-            <p><strong>Companies Visited:</strong> {{ department.placements.companies_visited.join(', ') }}</p>
             <p><strong>Average Salary:</strong> {{ department.placements.average_salary }}</p>
             <p><strong>Highest Salary:</strong> {{ department.placements.highest_salary }}</p>
             <p><strong>Placement Percentage:</strong> {{ department.placements.placement_percentage }}</p>
+            <section class="flex flex-col gap-4">
+              <h2 class="text-4xl font-bold text-center">Innovating the Industries</h2>
+              <div class="grid grid-cols-3 gap-4 items-center justify-space-around"><a href="https://www.tcs.com"
+                          class="h-[12vh] p-4 flex flex-col items-center justify-center"
+                      >
+                    <figure><img alt="TCS" src="../assets/tcs.webp" class="w-[20vw] lg:w-[10vw]" /></figure>
+                </a><a href="https://www.avasoft.com"
+                    class="h-[12vh] p-4 flex flex-col items-center justify-center"
+                >
+                    <figure><img alt="Avasoft" src="../assets/avasoft.webp" class="w-[20vw] lg:w-[10vw]" /></figure>
+                </a><a href="https://www.guvi.in"
+                    class="h-[12vh] p-4 flex flex-col items-center justify-center"
+                >
+                    <figure><img alt="Guvi" src="../assets/guvi.webp" class="w-[20vw] lg:w-[10vw]" /></figure>
+                </a><a href="https://www.gighz.net"
+                    class="h-[12vh] p-4 flex flex-col items-center justify-center"
+                >
+                    <figure><img alt="Saptang Labs" src="../assets/saptan-labs.webp" class="w-[20vw] lg:w-[10vw]" /></figure>
+                </a><a href="https://home.barclays/"
+                    class="h-[12vh] p-4 flex flex-col items-center justify-center"
+                >
+                    <figure><img alt="e-con Systems" src="../assets/e-con.webp" class="w-[20vw] lg:w-[10vw]" /></figure>
+                </a><a href="https://www.azentio.com"
+                    class="h-[12vh] p-4 flex flex-col items-center justify-center"
+                >
+                    <figure><img alt="Azentio" src="../assets/azentio.webp" class="w-[20vw] lg:w-[10vw]" /></figure>
+                </a>
+              </div>
+            </section>
           </div>
-          <div id="achievements" class="mb-8">
+          <div id="achievements" class="mb-8 lg:w-4/6 mx-auto">
             <h2 class="text-2xl font-bold mb-4">Achievements</h2>
             <ul class="list-disc pl-4">
               <li v-for="achievement in department.achievements" :key="achievement.name">
@@ -72,13 +101,13 @@
               </li>
             </ul>
           </div>
-          <div id="research-and-publications" class="mb-8">
+          <div id="research-and-publications" class="mb-8 lg:w-4/6 mx-auto">
             <h2 class="text-2xl font-bold mb-4">Research and Publications</h2>
             <ul class="list-disc pl-4">
               {{ department.research_and_publications }}
             </ul>
           </div>
-          <div id="faculty" class="mb-8 relative">
+          <div id="faculty" class="mb-8 lg:w-4/6 mx-auto relative">
             <h2 class="text-2xl font-bold mb-4">Faculty</h2>
 
             <!-- HOD Desk -->
@@ -131,7 +160,7 @@
 
 
 
-          <div id="administration-and-technical-staff">
+          <div id="administration-and-technical-staff" class="lg:w-4/6 mx-auto">
             <h2 class="text-2xl font-bold mb-4">Administration and Technical Staff</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div v-for="staff in department.admin_staff" :key="staff.email" class="bg-white shadow-md rounded-md p-4">
@@ -141,13 +170,13 @@
               </div>
             </div>
           </div>
-            <div id="facility">
+            <div id="facility" class="lg:w-4/6 mx-auto">
             <h2 class="text-2xl font-bold mb-4">Facility</h2>
             <ul class="list-disc pl-4">
               {{ department.facility }}
             </ul>
           </div>
-          <div id="proud-alumni">
+          <div id="proud-alumni" class="lg:w-4/6 mx-auto">
             <h2 class="text-2xl font-bold mb-4">Proud Alumni</h2>
             <ul class="list-disc pl-4">
               {{ department.proud_alumni }}
