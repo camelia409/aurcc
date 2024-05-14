@@ -9,7 +9,7 @@ import { RouterLink, RouterView } from 'vue-router'
       <nav class="navbar bg-gray-800 text-white shadow-lg">
         <div class="flex-1">
           <img src="./assets/logo.svg" alt="Logo" class="h-12 " />
-          <RouterLink to="/" class="btn btn-ghost normal-case text-xl font-bold ">Anna University Regional Campus <p class="hidden md:block text-xl font-bold">Coimbatore</p></RouterLink>
+          <RouterLink to="/" class="btn btn-ghost normal-case text-xl font-extrabold ">ANNA UNIVERSITY REGIONAL CAMPUS <p class="hidden md:block text-xl font-extrabold">COIMBATORE</p></RouterLink>
         </div>
         <div class="flex-none">
           <div class="dropdown dropdown-end bg-gray-800">
