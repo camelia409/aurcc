@@ -52,7 +52,7 @@
           </div>
           <div id="events" class="mb-4 lg:w-4/6 mx-auto py-20">
             <h2 class="text-2xl font-bold mb-4">Events</h2>
-            <ul class="list-disc pl-4">
+            <ul class="list-disc pl-4 h-52 overflow-auto">
               <li v-for="event in department.events" :key="event.name">
                 <strong>{{ event.name }} ({{ event.date }}):</strong> {{ event.description }}
               </li>
@@ -130,8 +130,10 @@
           </div>
           <div id="research-and-publications" class="mb-8 lg:w-4/6 mx-auto py-20">
             <h2 class="text-2xl font-bold mb-4">Research and Publications</h2>
-            <ul class="list-disc pl-4">
-              {{ department.research_and_publications }}
+            <ul class="list-disc pl-4 h-52 overflow-auto">
+              <li v-for="research in department.research_and_publications" :key="research">
+                <strong>{{ research }}:</strong> 
+              </li>
             </ul>
           </div>
           <div id="faculty" class="mb-8 lg:w-4/6 mx-auto relative py-20">
@@ -248,7 +250,7 @@ export default {
   methods: {
     async loadDepartment() {
       try {
-        const response = await fetch('http://192.168.72.231:5173/src/assets/departments.json');
+        const response = await fetch('http://localhost:5173/src/assets/departments.json');
         const departmentsData = await response.json();
         this.department = departmentsData.find(dept => dept.address === this.$route.params.departmentName);
       } catch (error) {

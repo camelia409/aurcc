@@ -10,18 +10,260 @@
             "Cultivate ethical values, leadership qualities, and a spirit of entrepreneurship among students.",
             "Contribute to the socio-economic development of the region through technology transfer and community engagement."
         ],
-        "events": [
-            {
-                "name": "TechFest 2024",
-                "description": "Annual technical festival showcasing projects, workshops, and competitions.",
-                "date": "March 15-17, 2024"
-            },
-            {
-                "name": "CodeWars",
-                "description": "Intercollegiate coding competition attracting participants from across the region.",
-                "date": "November 10, 2024"
-            }
-        ],
+        
+		"events": [
+				{
+					"name": "Two days National Workshop “High Performance Computing”",
+					"description": "Workshop",
+					"date": "March 20th and 21st 2009"
+				},
+				{
+					"name": "Two day National Level Technical Symposium on GENIO’09",
+					"description": "Symposium",
+					"date": "April 24th and 25th 2009"
+				},
+				{
+					"name": "Two day Faculty Development Programme on “J2EE and its Best Practices in Application Development” in association with ICT Academy of TamilNadu",
+					"description": "FDP",
+					"date": "November 5th and 6th 2009"
+				},
+				{
+					"name": "One day workshop on “FREE OPEN SOURCE SYSTEM”",
+					"description": "Workshop",
+					"date": "December 18TH 2009"
+				},
+				{
+					"name": "Three day Faculty Development Programme on “ Digital Signal Processing design using NI Labview”with ICT Academy of TamilNadu in association with National Instruments, Bangalore",
+					"description": "FDP",
+					"date": "January 27, 28 & 29 2010"
+				},
+				{
+					"name": "Two day Faculty Development Programme on “DOT NET and Best Practices in Application Development” in association with ICT Academy of TamilNadu",
+					"description": "FDP",
+					"date": "January 27 & 28 2010"
+				},
+				{
+					"name": "Two day Faculty Development Programme on “J2EE and Best Practices in Application Development” in association with ICT Academy of TamilNadu",
+					"description": "FDP",
+					"date": "March 30th & 31st 2010"
+				},
+				{
+					"name": "Two day Faculty Development Prgoramme on “DOT NET and Best Practices in Application Development” in association with ICT Academy of TamilNadu",
+					"description": "FDP",
+					"date": "April 5th & 6th 2010"
+				},
+				{
+					"name": "Two day National Level Technical Symposium on GENIO’10",
+					"description": "Symposium",
+					"date": "April 22nd and 23rd 2010"
+				},
+				{
+					"name": "Placement Training Programme for Final Year B.E Computer Science Students",
+					"description": "Placement",
+					"date": "April 5th and 6th 2010"
+				},
+				{
+					"name": "Two days national level workshop on “Network Simulation using NS2 (Hands on Training )”",
+					"description": "Workshop",
+					"date": "November 1st and 2nd 2012"
+				},
+				{
+					"name": "Seven days faculty development programme on “Theory of Computation”",
+					"description": "FDP",
+					"date": "December 5th to 11th 2012"
+				},
+				{
+					"name": "Placement Programme by Computer Associates Hyderabad",
+					"description": "Placement",
+					"date": "December 10th 2012"
+				},
+				{
+					"name": "Two days National workshop on “Computational Intelligence in Medical Imaging”",
+					"description": "Workshop",
+					"date": "October 17th and 18th 2013"
+				},
+				{
+					"name": "Two days National workshop on “Network simulation using NS2 (Hands-on Training)",
+					"description": "Workshop",
+					"date": "November 12th and 13th 2013"
+				},
+				{
+					"name": "Seven days Faculty Development Training programme on “Principles of Compiler Design”",
+					"description": "FDP",
+					"date": "December 12th to 18th 2013"
+				},
+				{
+					"name": "One day National Workshop on “Android based Mobile Application Development”",
+					"description": "Workshop",
+					"date": "March 12th 2014"
+				},
+				{
+					"name": "Two days 1st National Conference on “Advancements in Computing Methodologies” (ACM14)",
+					"description": "Conference",
+					"date": "March 27th and 28th 2014"
+				},
+				{
+					"name": "Two days 2nd National Conference on “Advancements in Computing Methodologies” (ACM14)",
+					"description": "Conference",
+					"date": "02.03.2015 - 03.03.2015"
+				},
+				{
+					"name": "Two days workshop on “Big Data Analysis”",
+					"description": "Workshop",
+					"date": "September 21 & 22, 2015"
+				},
+				{
+					"name": "One day Technical Seminar on “Cyber Security and career Opportunities”",
+					"description": "Seminar",
+					"date": "October 6th, 2015"
+				},
+				{
+					"name": "Two days workshop on “Android Mobile Application Development”",
+					"description": "Workshop",
+					"date": "October 30 & 31, 2015"
+				},
+				{
+					"name": "Faculty Development Training Programme on “Mobile Computing”",
+					"description": "FDP",
+					"date": "December 07th to 13th, 2015"
+				},
+				{
+					"name": "Guest Lecture on Problems in advance Datastructure",
+					"description": "Guest Lecture",
+					"date": "22.12.2015"
+				},
+				{
+					"name": "Two Days 3rd National Conference on “Advancements in computing Methodologies (NCACM’16)”",
+					"description": "Conference",
+					"date": "March 14 & 15, 2016"
+				},
+				{
+					"name": "Guest Lecture on Research Issues in Internet of Things",
+					"description": "Guest Lecture",
+					"date": "30.09.2016"
+				},
+				{
+					"name": "One Day Workshop on Big Data Analytics",
+					"description": "Workshop",
+					"date": "October 21st, 2016"
+				},
+				{
+					"name": "Guest Lecture on What IT Expects Today?",
+					"description": "Guest Lecture",
+					"date": "02.03.2017"
+				},
+				{
+					"name": "Two Days 4th National Conference on “Advancements in computing Methodologies (NCACM’17)”",
+					"description": "Conference",
+					"date": "March 23th & 24th, 2017"
+				},
+				{
+					"name": "Guest Lecture on Big Data Analytics and its application",
+					"description": "Guest Lecture",
+					"date": "17.04.2017"
+				},
+				{
+					"name": "Faculty Development Training Programme on “CS6402-DESIGN AND ANALYSIS OF ALGORITHMS”",
+					"description": "FDP",
+					"date": "December 13th to 19th, 2017"
+				},
+				{
+					"name": "Faculty Development Training Programme on “PROBLEM SOLVING AND PYTHON PROGRAMMING”",
+					"description": "FDP",
+					"date": "30th MAY – 5th JUNE, 2018"
+				},
+				{
+					"name": "Faculty Development Training Programme on “CS8451 – Design and Analysis of Algorithms”",
+					"description": "FDP",
+					"date": "December 10th to 21st, 2018"
+				},
+				{
+					"name": "Expert lecture on System Hardware",
+					"description": "Guest Lecture",
+					"date": "06.03.2019"
+				},
+				{
+					"name": "PACE Association Inauguration",
+					"description": "",
+					"date": "28.03.2019"
+				},
+				{
+					"name": "DATA SCIENCES - AICTE Training and Learning (ATAL) - AICTE FUNDED",
+					"description": "",
+					"date": "16.09.2019 to 20.09.2019"
+				},
+				{
+					"name": "PACE Association Inauguration",
+					"description": "",
+					"date": "01.10.2019"
+				},
+				{
+					"name": "Expert lecture on EC8395-Communication Engineering",
+					"description": "Guest Lecture",
+					"date": "21.10.2019"
+				},
+				{
+					"name": "Webinar An Academic Guidance for a Better Industry Career",
+					"description": "",
+					"date": "10.11.2020"
+				},
+				{
+					"name": "Webinar Psychology Education, Career & Life",
+					"description": "",
+					"date": "11.11.2020"
+				},
+				{
+					"name": "Webinar Industry Today",
+					"description": "",
+					"date": "12.11.2020"
+				},
+				{
+					"name": "Webinar Get Industry Ready",
+					"description": "",
+					"date": "18.11.2020"
+				},
+				{
+					"name": "Webinar Skill Acquisition for Computer Engineers",
+					"description": "",
+					"date": "19.11.2020"
+				},
+				{
+					"name": "Webinar Why Engineering is Fascinating than you think",
+					"description": "",
+					"date": "20.11.2020"
+				},
+				{
+					"name": "Expert lecture on NASSCOM SKILLS INITIATIVES",
+					"description": "Guest Lecture",
+					"date": "23.03.2022"
+				},
+				{
+					"name": "Third national level Symposium “Genio 2K22”",
+					"description": "Symposium",
+					"date": "09.06.2022"
+				},
+				{
+					"name": "Guest Lecture on Opportunities in the New Frontier: AI, ML and Data Science",
+					"description": "Guest Lecture",
+					"date": "01.11.2022"
+				},
+				{
+					"name": "Workshop on Data Science and Its Applications",
+					"description": "Workshop",
+					"date": "17.02.2023"
+				},
+				{
+					"name": "Fourth national level Symposium “Genio 2K23”",
+					"description": "Symposium",
+					"date": "31.10.2023"
+				},
+				{
+					"name": "Workshop on Personality Development Program your Neurons for Effective Learning",
+					"description": "Workshop",
+					"date": "16.04.2024"
+				}
+			]
+		,
         "placements": {
             "companies_visited": ["TCS", "Infosys", "Wipro", "Cognizant", "Accenture"],
             "average_salary": "Rs. 6,00,000 per annum",
@@ -40,12 +282,199 @@
                 "year": 2022
             }
         ],
-        "research_and_publications": {
-            "total_research_papers": 85,
-            "international_journals": 65,
-            "international_conferences": 45,
-            "national_conferences": 20
-        },
+        "research_and_publications":[
+		"J.Preethi & S.Palaniswami, 'An Intelligent Particle Swarm Optimization for Fuzzy based Heterogeneous Radio Access Technology (RAT) Selection in the International Journal of Intelligent Information Technologies (IJIIT) Vol.8, Issue по. 4, pp. 23-42, 2013. [SNIP: 0.072, SJR: 0.034].",
+
+		"J.Preethi, S.Palaniswami, 'A Hybrid Modified Particle Swarm Optimization for Heterogeneous Radio Access Technology (RAT) Selection' in the International Journal of Computer Applications (IJCA), Vol. 43, Issue no.9, April 2012. (Impact factor: 0.835) (ISSN.No: 0975-8887).",
+		
+		"-J Preethi, S.Palaniswami, 'A New Hybrid Approach for Heterogeneous Radio Access Technology Selection' in the Journal of Computer Science (JCS), Vol.8, Issue no.5, 2012 (ISSN No. 1549-3636).",
+		
+		"J.Preethi, S.Palaniswami, 'A Single Hidden Layered Fuzzy Back propagation Algorithm for Joint Radio Resource Management in Radio Access Systems in the international Journal on Computer Science and Engineering Vol. 02, No. 04, 2010. (ISSN 1332-1339).",
+		
+		"J. Preethi, A.Dhilipan, M.Sreeshakthy, V.Sangeetha, 'A Survey on Pattern Recognition Neural Networks with Temporal encoding and leaming', International Journal of Research in Advent Technology, Vol. 2, No. 11, November 2014. (ISSN 2321-9637).",
+		
+		"J.Preethi, V. Sangeetha, M.Sreeshakthy, 'A Survey on Medical data cluster analysis using Feature selection and Neural Networks', International Journal of Advanced Research in Computer Engineering and Technology, Vol. 3, No.11, pp. 3731-3738, November 2014. (ISSN No.2278-1323)",
+		
+		"J.Preethi, Aarthi.R.S, 'A Survey of semiautomatic white blood cell segmentation in Medical Image Analysis', International Journal of Innovations in Scientific and Engineering Research (IJISER), Vol. 1, No.10, November 2014. (ISSN No.: 2347-9728).",
+		
+		"J.Preethi, Renugadevi.P, Arifkhan S. 'An Extensive survey on Routing protocols of Wireless Sensor Networks', International Journal of Computer Science Information and Engineering Technologies (IJCSIET), Vol.3, No.4, November 2014. (ISSN No.: 2277-4408). J.Preethi, V. Vanitha, 'An Elaborate survey on identification of Wilson disease using Kayser Fleischer ring', International Journal of Research in Advent Technology, Vol. 2, No.11, pp-92-97, November 2014. (ISSN No. 2321-9637)." ,
+		
+		"J.Preethi, VG.Shanmuga Priya,' Survey on detection of Retinal Hemorrhage disease', International Journal of Research in Advent and Technology, Vol. 2, No. 11, pp-87-91, November 2014. (ISSN No. 2321-9637)",
+
+		"J.Preethi, Christa Mary I, 'A Survey on Computerized detection, Quantification and Classification of Lung Disease', International Journal of Research in Advanced Information and Communication Technology, Vol.1, No.7, November 2014. (ISSN.No.2348-9928).",
+		
+		"G.Maheswari and J.Preethi, 'Mine Adverse Drug Reaction from Patient Electronic Database using Particle Swarm Optimization', in the International Journal of Engineering And Computer Science, Vol. 3 Issue no. 5, pp. 5815-5818, May 2014. (ISSN No. 5815-5818)",
+		
+		"S.Dhanalakshmi and J.Preethi, 'Augmenting Security with Ticket Based Algorithm in proxy mobile IPV6 networks', in International Journal of Software and Hardware Research in Engineering, Vol.2, Issue no. 2, pp. 101-106, 2014. (ISSN No. 2347-4890).",
+		
+		"C. Zephyrin Sinnappar, C.V.Vidya prabha and Dr.J. Preethi, 'Intellectual Mobile data gathering mechanisms in Wireless sensor networks', International Journal of Computer Science Information and Engineering Technologies, Vol.1, Issue no. 4, pp. 1-4, 2014. (ISSN No. 2277-4408)",
+		
+		"V.Gobu, J.Preethi, 'Detection of Attacks and QoS Improvement using Heterogeneous Green Framework in Cognitive Radio Network', International Journal of Computer trends and Technology, Vol.13, Issue no. 3, Jul 2014. (ISSN: 2231- 2803).",
+		
+		"J.Preethi, M.Sreeshakthy, A. Dhilipan, 'A Survey on Emotion classification from EEG using various feature extraction techniques', International Journal of Science, Engineering and Technology Research, Vol.3, No.11, pp- 3113-3120, November 2014. (ISSN: 2278-7798).",
+		
+		"Preetha M Kurup, J. Preethi, 'Packet Reordering To Improve Data Center Network Using Near Optimal Traffic Engineering', International Journal of Software and Hardware Research in Engineering, Vol.2, No. 5, May 2014. (ISSN No.2347-4890)",
+		
+		"G.G.Udaya, J. Preethi, 'CAD System for Breast Microcalcification detection', International Journal of Modern Trends in Engineering and Science, Vol.01, No.06, June 2014. (ISSN No. 2348-3121).",
+		
+		"J.Preethi, Shalini Raju, Sowmiya Sekaran, 'A survey on lung tissue categorization', International Journal of Advanced Research in computer Engineering & Technology', Vol. 5, No.2, pp. 270-275,Feb 2016. E-ISSN. 2278-1323.",
+		
+		"Dr. M. Newlin Rajkumar, M.Nithya, P.HemaLatha 'Overview of VANET with its features and Security Attacks', International Research Journal of Engineering and Technology (IRJET), Vol 3, Issue 1, e-ISSN: 2395-0056, p-ISSN: 2395-0072, 2016.",
+		
+		"Dr. M. Newlin Rajkumar, P. Kayathri, V. Dhurka, 'Survey on Message Filtering Techniques for On-line Social Network",
+		
+		"World Scientific News, WSN 40 (2016) 163-174 EISSN 2392-2192, 2016. Dr. M. Newlin Rajkumar, V Dhurka, P.Kayathri, ' Survey on Secured Privacy Authentication with recovery', World Scientific News, WSN 37 (2016) 265-278 EISSN 2392-2192, 2016.",
+		
+		"Dr. M. Newlin Rajkumar, Dhurka 'A Secured Privacy Authentication with recovery', International Research Journal of Engineering and Technology (IJRET), Vol.2 Issue 8, ISSN 2395-0056, November-2015.",
+		
+		"Dr. M. Newlin Rajkumar, R.Suresh 'A Medical Image Retrieval System Using Hybrid Focs Framework', Intemational Journal of Computer Science and Mobile Computing (IJCSMC), Vol.4 Issue 11, pg. 256-266, ISSN 2320-088X, November-2015",
+		
+		"Dr. M. Newlin Rajkumar, M.Lavanya 'An Electronic Device to aid the Physically Challenged people using Brain Waves', International Journal of Engineering Techniques (IJET), Volume 1, Issue 5, ISSN 2395-1303, October 2015. Dr. M. Newlin Rajkumar, Dr. V Venkatesa Kumar, Brighty Batley C, Ancy George, Lakshmi Rekha 'Advanced Solution for The security of data in a Coud Database', International Journal of Modern Computer Science and Applications (IJMCSA), Volume 3, Issue 2, ISSN 2321-2632, April 2015.",
+		
+		"Dr.M.Newlin Rajkumar. Loganathan.P 'Opportunistic Data Forwarding in Manet', International Journal For Trends in Engineering & Technology (IJTET)-Volume 3 Issue 3-ISSN: 2349-9303, March 2015.",
+		
+		"Dr.M.Newlin Rajkumar, C.Chatrapathi, Dr. V.Venkatesa Kumar, 'Smart Accident Management Model: a collaboration of IOT and Body Area Network', International Journal on Applications in Information and Communication Engineering (IJAICE) - Volume 1 Issue 2, ISSN: 2394-6237, March 2015. Dr.M. Newlin Rajkumar. Mahadevan.T' Dynamic Load Balancing in Multimedia Cloud Computing with GA an immigrant scheme using Cloud analyst Tool', International Journal For Trends In Engineering & Technology (IJTET) - Volume 3 Issue 3-ISSN: 2349-9303, March 2015.",
+		
+		"Dr. M. Newlin Rajkumar, S.Balachandar, Dr. V Venkatesa Kumar, T.Mahadevan A Survey on Mapreduce in Cloud Computing, International Joumal of Computer Science and Mobile Applications, Vol.2, No. 12, E-ISSN: 2321-8363, p 47-52, December 2014.",
+		
+		"Dr. V. Venkatesa Kumar, R.Sathya Suruthy, Dr. M. Newlin Rajkumar, 'A Survey on Hierarchical Routing Protocols for Wireless Sensor Networks', International Journal of Research in Advent Technology (IJART), Vol.2, No.12, E-ISSN: 2321-9637, December 2014.",
+		
+		"Dr. V. Venkatesa Kumar, R. Revathi, Dr. M. Newlin Rajkumar, 'An Assessment on Various Load Balancing Techniques in Cloud Computing', International journal of advanced information and communication technology (IJAICT), Vol. 1, No. 7. E-ISSN: 2348-9928, December 2014",
+
+		"Dr. M. Newlin Rajkumar, K.Anbarasi, R.Gayathri, Dr. V Venkatesa Kumar, 'Intrusion Dedetction using Naïve bayes Classification with Feature Reducation', International Journal of Advances in Engineering and Emerging Technology (IJAEET), Volume 6, Issue 3, ISSN 2321-2452X, December 2014.",
+
+		"Dr. M. Newlin Rajkumar, R. Gayathri, K.Anbarasi, Dr. V Venkatesa Kumar, 'Application Aware Local Global Source Deduplication and Load Balancing for Cloud Backup Services of Personal Storage, International Journal of Advances in Engineering and Emerging Technology (IJAEET), Volume 6, Issue 3, ISSN 2321-2452X, December 2014.",
+
+		"Dr. V.Venkatesa Kumar, L.Linty, Dr. M. Newlin Rajkumar, 'A Survey on Scheduling Desciplines for Data Collection in sensor Networks with Mobile Elements', International Journal of Research in Advent Technology (IJART), Vol.2, No. 12, E-ISSN: 2321-9637, December 2014.",
+
+		"Dr. V.Venkatesa Kumar, Dr. M. Newlin Rajkumar, N. Venkatakrishnarı 'Cloud Computing Increasing Trustworthiness and Accuracy of Cloud Transactions', IRACST International Journal of Computer Science and Information Technology & Security (IJCSITS), Vol. 4, No.6, E-ISSN: 2249-9555, December 2014.",
+
+		"Dr. M. Newlin Rajkumar, Banu Priya P, Dr. V Venkatesa Kumar, 'Providing Flexible Security as a Service Model for Cloud Infrastructure', International Journal of Advanced Research in Computer Engineering & Technology (IJARCET), Vol.3, No.11, E-ISSN: 2278-1323, November 2014.",
+
+		"Dr. V Venkatesa Kumar, Sabeena S, Dr. M. Newlin Rajkumar, 'A survey on efficient dispatch of mobile sensor in Wireless Sensor Network', International journal of advanced information and communication technology (IJAICT), Vol.1, No.7, E-ISSN: 2348-9928, November 2014.",
+
+		"Dr. M. Newlin Rajkumar, Muhamed Sabir J, Dr. V Venkatesa Kumar, Bharathi S.P, 'A Comparative Analysis of Different Encryption Techniques Used In Mobile Cloud Computing', International Journal of Research in Advent Technology, International Journal of Research in Advent Technology, Vol.2, No. 11, E-ISSN: 2321-9637, November 2014.",
+
+		"Dr. M. Newlin Rajkumar, Brighty Batley, Dr. V.Venkatesa Kumar, Ancy George, 'Survey on the Concurrency Control Protocols for Encrypted Cloud Databases', International Journal of Research in Advent Technology, Vol.2, No.10, E- ISSN: 2321-9637, October 2014.",
+
+		"Dr. V. Venkatesa Kumar, P.Sujatha, M. Newlin Rajkumar, 'Assessment on various VM Scheduling Mechanisms in Cloud Computing, International Journal of Computer Science Information and Engineering Technologies (IJCSIET) Volume 3 Issue 4 Series 1, ISSN: 2277-4408, September 2014.",
+
+		"Dr. V.Venkatesa Kumar, A.Murugavel, M. Newlin Rajkumar, 'Analysis of Symmetric Block Cipher Algorithm and Security Issue on Cloud Encrypted Data', International Journal of Advanced Research in Computer Science and Software Engineering (IJARCSSE) - Volume 4 Issue 9 Series 1, ISSN: 2277-128X, September 2014.",
+
+		"Newlin Rajkumar.M, Ancy George, Brighty Batley, 'An Overview of Multi-Authority Attribute Encryption Techniques', International Journal I of Advanced Research in Computer and Communication Engineering (IJARCCE), Vol. 3, Issue 9, September 2014, ISSN (Online): 2278-1021 ISSN (Print): 2319-5940, September 2014.",
+
+		"Newlin Rajkumar M, Lakshmi Rekha.P. Dr. V. Venkatesa Kumar, Loganathan.P 'Decentralized Approaches for Key Revocation in Cloud Computing A Review', International Journal of Research in Advent Technology (IJRAT) Volume 1 Issue 4, ISSN: 2348-9928, September 2014.",
+
+        "Dr. V.Venkatesa Kumar, M.Nithya, Newlin Rajkumar.M, 'An assessment on Identity based Mechanisms in Cloud Computing', International Journal of Research in Advent Technology (IJRAT) Volume 1 Issue 4, ISSN: 2348-9928, September 2014.",
+
+		"Newlin Rajkumar. M, Dr. V. Venkatesa Kumar, P.Loganathan, 'An assessment on the applications of RFID in Cloud Computing', International Journal of Advanced Information and Communication Technology (IJAICT) Volume 1 Issue 4, ISSN: 2348-9928, August 2014.",
+
+		"Newlin Rajkumar.M, C. Chatrapathi, Dr. V.Venkatesa Kumar, 'Internet of Things: A vision, technical issues, applications and security', International Publisher for Advanced Scientific Journals International Journal of Computer Science (IIJCS)- Volume 2 Issue 8, ISSN: 2321-5992, Aug 2014",
+
+		"Newlin Rajkumar.M, Dr. V.Venkatesa Kumar, T.Mahadevan, C.Chatrapathi, 'Security measures in cloud computing: an extensive assessment', International Journal of Advanced Information and Communication Technology (IJAICT) Volume 1 Issue 4, ISSN: 2348-9928, Aug 2014.",
+
+		"Tamilselvan M., Newlin Rajkumar.M, 'Improved Authentication Scheme for Dynamic Groups in the Cloud', International Journal of Computer Trends and Technology (IJCTT) Volume 11 Issue 3, ISSN: 2231-5381, May 2014.",
+
+		"Devathi.C., Newlin Rajkumar.M, 'A Network Cloud Queuing Model for Capable Resources Mapping in Cloud Computing Environment', International Journal of Software and Hardware Research in Engineering, Volume II, Issue 5, ISSN 2347-4890, p29-33, May 2014.",
+
+		"Kalaiselvi.S., Newlin Rajkumar.M, 'Achieving Minimum Transferring And Storage Cost On Data Staging Algorithms For Shared Data Accesses In Clouds', International Journal of Software and Hardware Research in Engineering, Volume II Issue 5, ISSN 2347-4890, p50-55, May 2014.",
+
+		"Suresh kumar. S., Newlin Rajkumar.M, 'Secured Dynamic Auditing In Cloud Storage Using Fully Homomorphic Mechanism', International Journal of Software and Hardware Research in Engineering, Volume II, Issue 5, ISSN 2347- 4890, p207-211, May 2014.",
+
+		"Sujith kumar.S., Newlin Rajkumar.M, 'An Effective Approach For Execution Of Workloads In Clouds With Improving Scalability And Negotiation Strategy', International Journal of Software and Hardware Research in Engineering, Volume II, Issue 5, ISSN 2347-489, p239-243, May 2014.",
+
+		"M.Newlin Rajkumar, S.Palaniswami, V,Venkatesa Kumar, R. Vijayabhasker, 'An Analysis on the Characteristics of Cloud Computing', International Journal of Soft Computing, Volume IX, Issue 1 ISSN:1816-9503, p10-14, (Annexure - II). Referenced by Asian Science Citation Index (ASCI), ASCI Database, 308 Lasani Town, Sargodha Road, Faisalabad, Pakistan. February 2014.",
+
+		"Dr. M. Newlin Rajkumar, S.Balachandar, Dr. V Venkatesa Kumar, T.Mahadevan 'A Survey on Mapreduce in Cloud Computing', International Journal of Computer Science and Mobile Applications, Vol. 2, No. 12, E-ISSN: 2321-8363, p 47-52, December 2014.",
+
+		"M.Newlin Rajkumar & Betzy K.Thomas 'A Dynamic Public Auditing Security Scheme To Preserve Privacy In Cloud Storage', International Journal of Software and Hardware Research in Engineering, Volume 2, Issue 1, ISSN 2347- 4890, p93-97, January 2014.",
+
+		"Newlin Rajkumar.M, Merin Rexhia.A, Venkatesa Kumar.V, ' Raptor Code to Provide Security Services in Cloud ' International Journal of Software and Hardware Research in Engineering, Volume I, Issue 4, ISSN 2347-4890, p29- 33, December 2013.",
+
+		"Newlin Rajkumar.M, Berison mansingh.B.M, Venkatesa Kumar.V, 'An Efficient and secure storage using delegated access control in Multi-Cloud environment', International Journal of Software and Hardware Research in Engineering, Volume I, Issue 4, ISSN 2347-4890, p38-42, December 2013.",
+
+		"Newlin Rajkumar.M, Anju Achenkunju, Venkatesa Kumar. V, 'An Enhanced Authentication Scheme based on Attribute Based Encryption for Personal Record Sharing', International Journal of Software and Hardware Research in Engineering, Volume I, Issue 4, ISSN 2347-4890, p9396, December 2013",
+			
+
+					"Tamilselvan.M., Nanthini.G, Newlin Rajkumar.M, 'Security and Privacy Enhancing For Dynamic Groups in the Cloud Using Batch Auditing', International Journal of Advanced Research in Computer Science, Volume 4, No. 10, ISSN (Online): 0976-5697, September-October 2013.",
+
+					"Newlin Rajkumar.M, S. Palaniswami, V,Venkatesa Kumar, R. Vijayabhasker, 'Certain Investigations on Cloud Computing using Heterogeneous Pattern', Journal of Applied Sciences Research, Volume 9, Issue 9, ISSN 1819-544X, p5453- 5459, September 2013. (Annexure-II).",
+
+					"Palaniswami S, Vijayabhasker R, Venkatesa Kumar V & Newlin Rajkumar M, 'An Analysis of Interleaved Boost Converter with LC Coupled Enhanced Soft Switching', American Journal of Applied Sciences (AJAS), Vol. 10, No. 4, pp. 331-343, ISSN: 1546-9239, April 25, 2013 (Annexure-II).",
+
+					"Vijayabhasker R, Palaniswami S, Venkatesa Kumar V & Newlin Rajkumar M 'An Hightened Switching Technique For An Interleaved Boost Converter Operated In Lower Duty Cycle', Life Science Journal (LSJ), Vol. 10, No. 2, pp. 119-125, ISSN: 1097-8135, March 28, 2013 (Annexure-1).",
+
+					" Newlin Rajkumar, Muthupriya Krishnasamy, Tharani P. T. 'Consistent Network, Data Accessibility, Data Replication Scheme, Global Consistency, MANET', International Journal of Electronics Communication and Computer Engineering, Volume 4, Issue 2, ISSN (Online): 2249-071X, ISSN (Print): 2278-4209, March 2013.",
+
+					"Balamurugan, S.; Rajkumar, Newlin, Amarnath, R, 'Design and Implementation of Advanced Human Computer Interaction System at Reduced Desk-Space', Proceedings of world academy of science, engineering and technology, Vol. 44, p138 ISSN 2070-3740, Accession # 34449096, Aug2008.",
+
+					"Balamurugan, S.; Rajkumar, Newlin, Preethi, J. 'Design and Implementation of a New Model Web Crawler with Enhanced Reliability', Proceedings of world academy of science, engineering and technology, Vol. 44, p145 ISSN 2070-3740, Accession #: 3444909, Aug2008,",
+
+					"Y. L. Huang, P. H. Lu, M. Newlin Rajkumar, C. T. Hsu, Secure and Fast Authentication Protocol for Wireless Networks in Homecare Systems', in the proceeding of 2007 CACS Automatic Control Conference, Taiwan Nov. 9-10, 2007.",
+
+					"Y. L. Huang, M. Newlin Rajkumar, E. C. Hsia, 'A Hybrid Network and Software Architecture for Digital Home Care Systems', in the proceeding of 2006 CACS Automatic Control Conference, Taiwan Nov. 10-11, 2006. - Newlin Rajkumar.M, Merin Rexhia. A, Venkatesa Kumar.V, 'Raptor Code to Provide Security Services in Cloud ' International Journal of Software and Hardware Research in Engineering, Volume I, Issue 4, ISSN 2347-4890, p29-33, December 2013. ",
+					
+					"T. Parameswaran, Dr. C. Palanisamy, K.Jothimani An Extensive Survey On Attacks And Detection Mechanisms in MANET, International Journal of Advanced Research in Computer Engineering & Technology (IJCSIET), Vol 3, No 21,Issue 11, Nov 2014. - T. Parameswaran, Dr. C. Palanisamy, M.Karthigadevi, Comprehensive Study of Traffic Analysis in MANET, International Journal of Research in Advent Technology (IJRAT), Vol 2, No 28, Issue 10, Oct 2014.",
+
+					"T. Parameswaran, Dr. C. Palanisamy, T. Jasmine Sonia, Study of Detecting Malicious Nodes in MANET and Fault tolerance: A Survey, International Journal of Advanced Research in Computer Engineering & Technology (IJCSIET), Vol 3, No 20, Issue 10, Nov 2014.",
+
+					"T. Parameswaran, Dr. C. Palanisamy, A.Nithya, Performance Evaluation For CAH-Mac Using DSRC Vehicular Safety Communication, Vol 3, No 20, Issue 11, Nov 2014.",
+
+					"T.Parameswaran, Dr.C.Palanisamy, C. Maria Nancy, 'Network Life Time Prolonged Energy Efficient Routing in Adhoc Networks', International Journal of Science, Engineering and Technology Research (IJSETR), Vol 3, Issue 12, Dec 2014. T. Parameswaran, Dr.C. Palanisamy, A. Varalakshmi, 'QoS Guaranteed by Neighbor Node Selection Based on Packet Scheduling in Hybrid Wireless Networks', International Journal of Science, Engineering and Technology Research (IJSETR), Volume 3, Issue 12, December 2014.",
+
+					"S.Sathish, T.Parameswaran, 'CNR-Contemporary Node Recovery from a Failure in Wireless Sensor Actor Networks', Proceedings of 2nd International Conference on Science, Engineering and Management, Srinivasan Engineering college, TamilNadu, India, March 28-29,2014.",
+
+					"T. Parameswaran, Dr.C. Palanisamy K. Madheswarı, 'Topology Management based Energy balancing Model for IPS in MANET using MEC Clustering Algorithm', International Journal of Computer Applications (0975-8887) Volume 48- No.15, June 2012.",
+
+					"T.Parameswaran, K. Thamarai Selvi, Mani Deepak Choudhry, 'Link Stability and Energy Optimization by Excluding Self node for Mobile and Wireless Networks', International Journal of Advanced Research in Computer Engineering & Technology (IJARCET) Volume 2, Issue 2, February 2013.",
+
+					"T. Parameswaran, Dr. C. Palanisamy, M.Karthigadevi, 'Comprehensive Study of Traffic Analysis in MANET', International Journal of Research in Advent Technology, Vol.2, No.10, October 2014 E-ISSN: 2321-9637.",
+
+					"N.Sivabalasubramanian, T.Parameswaran, R.Ramkumar, 'Secured Hello Handshake Authentication (SHHA) in MANET', International Journal of Advanced Research in Computer Science & Technology (IJARCST 2014), Vol. 2 Issue 1 Ver 2, Jan-March 2014.",
+
+					"L. Saranya, T.Parameswaran, 'Secure On Demand Multicast Routing Protocol for Mobile Ad-Hoc Networks', 2012 International Journal of Scientific and Research Publications, Volume 2, Issue 8, August.",
+
+					"Mr. R. Vinoth Kumar, Mr. T. Parameswaran, 'Security Based Reliable Data Delivery For Dynamic Mobile Ad Hoc Networks', 'International Journal of software & Hardware research in Engineering, Vol 2, Issue 5, May 2014.",
+
+					"M. Yogesh Prabhu, T.Parameswaran, 'Co-Operative Communication Using Adaptive Oppurtunistic Routing In Mobile Ad-Hoc Network Research', Journal of Computer Systems Engineering-RJCSE Vol 04; Special Issue: June 2013. T. Parameswaran, Dr. C. Palanisamy, G.M. Rajasekar, 'Enhancing Security with Hybrid Cryptography and Wormhole Attack Detection in MANETs', International Journal of Applied Engineering Research, ISSN 0973-4562 Vol. 10 No.29 (2015)",
+
+					 "T. Parameswaran, Dr. C. Palanisamy, P. Kokila, 'Cluster Based Topology Control in Dynamic Mobile Ad Hoc Networks', International Journal of Engineering and Technology (IJET), Vol 6 No 2 Apr-May 2014. T. Parameswaran, C. Palanisamy, Anand Paul, and Seungmin Rho, 'A Topology Control Method with Prediction of Lossy Links in Cluster Based Mobile Ad-Hoc Networks', International Journal of Control and Automation Vol. 8, No. 12 (2015), pp.403-418",
+
+					"S.Lavanya, Dr. S. Palaniswami, 'Imbalanced Multiclass Data Classification Using Ant Colony Optimization Algorithm' International Joumal of Science, Engineering and Technology Research (IJSETR), Volume 4, Issue 12, December 2015.",
+					
+					"S.Lavanya, Dr. S. Palaniswami, G. Kavinraj, 'A Review Of Multiclass Problem And Solutions For Imbalanced Dataset' in International Journal of Contemporary Research in Computer Science and Technology (IJCRCST) e-ISSN: 2395-5325 Volume1, Issue 8 (November 2015)",
+					
+					"S.Lavanya, Dr. S. Palaniswami, Divya Bharathi.M 'Resampling Ensemble Algorithm For Class Imbalance Problem Using Optimization Algorithm' in International Journal of Applied Engineering Research ISSN 0973-4562 Volume 10, Number 13 (2015).",
+					
+					"S.Lavanya, Dr. S. Palaniswami, S. Sudha 'A Combined Method of Dec and Cbust for Multiclass Imbalance and High Class Overlapping Problems' in International Journal of Applied Engineering Research ISSN 0973-4562 Volume 10, Number 9 (2015).",
+					
+					"S.Lavanya, Dr. S. Palaniswami, S.Sudha 'Efficient Methods to Solve Class Imbalance and Class Overlap' in the International Journal of Science, Engineering and Technology Research (IJSETR), ISSN: 2278-7798, Volume 3, Issue 12 December 2014.,",
+					
+					"S.Lavanya, Dr. S. Palaniswami, Divya Bharathi.M 'A Survey on Imbalanced Distribution of Classes in the Datasets' in the International Journal of Computer Informatics & Technological Engineering Technology (IJCITE), ISSN (Online): 2348-8557, Volume 1, Issue 7, October 2014.",
+					
+					"S.Lavanya, Dr. S. Palaniswami 'Enhancing Efficiency and Accuracy of Imbalanced Datasets Using Fuzzy Neural Network' in the International Journal of Computer Science & Engineering Technology (IJCSET), ISSN 2229-3345, Volume 5, Issue 10, October 2014",
+					
+					"S.Lavanya, Dr. S. Palaniswami 'Enhancing the Performance of Multiclass CSMLP on Imbalanced Data Using AdaBoost. NC Algorithm' in the International Journal on Recent Technologies in Mechanical and Electrical Engineering (IJRMEE) ISSN: 2349-7947, Volume 1 Issues - (Sept 14 Volume 1 Issue 2) S.Lavanya, Dr. S. Palaniswami, 'Measuring Accuracy between Ensemble methods: AdaBoost.NC vs. SMOTE ENN in the International Journal of computer science information and Engineering Technologies (IJCSIET), ISSN:2277-4408, Issues 4-Volume 3-Series 1 (Sept-2014)",
+					
+					"Mrs. Lavanya. S, Kavipriya. R 'A Survey on Event in News Streams' in the International Journal of Computer Science Trends and Technology (IJCST)-ISSN: 2347-8578, Volume 2 Issue 5, Sep 2014.",
+					
+					"Published a paper titled 'Image Encryption for Separable Reversible Data Hiding in the International Journal of Advanced Research in Computer Science (IJARCS) ISSN No. 0976-5697 Volume 5, No. 5, May-June 2014. Published a paper titled 'Improving Feature Selection Algorithm And Support Multiclass Problem in Oligois' in International Journal of Software & Hardware Research in Engineering (IJSHRE) ISSN No:2347-4890 volume 2 Issue 5, May 2014. R.Nallakumar, K.S.Sruthipriya, 'A Survey on deadline constrained workflow Scheduling Algorithms in Cloud Environment', International Journal of Computer Science Trends and Technology (IJCST), Volume 2, Issue 5, Sep-Oct 2014 ISSN:2347-8578",
+					
+					"R.Nallakumar, S.Ayyasam, N.Nithya, 'An Assessment on Attribute Based Encryption Techniques in Cloud Computing', International Journal of Science, Engineering and Technology Research(IJSETR), Volume 3, Issue 10,October 2014 ISSN:2278-7789.",
+					"R.Nallakumar, Dr N. Sengottaiyan, K.S. Sruthipriya, 'A survey on Scheduling and the Attributes of Task Scheduling in the Cloud', International Journal of Advanced Research in Computing and Communication Engineering, Volume 3, Issue 10,October 2014 ISSN(online): 2278-1021,ISSN(print): 2319-5940.",
+					"R.Nallakumar, Dr N. Sengottaiyan, N.Nithya, 'A Survey of Task Scheduling Methods in Cloud Computing', Intemational journal of Computer Science and Engineering, Volume 2, Issue 10,October 2014 E-ISSN:2247-2693.",
+					"R.Nallakumar, Dr N.Sengottaiyan, Preethi, 'A Survey on Cloud Data Sharing and Training Mechanism for Data Cataloging', International Journey of Science Engineering and Technology Research (IJSETR), Volume 3, Issue 11, November 2014 E-ISSN:2278-7798.",
+					"R.Nallakumar, Dr N.Sengottalyan, M.Mohamed Arif, 'Cloud Computing and Methods for Privacy Preservation', International Journal of Advance Research in Computer Engineering and Technology, Volume 3, Issue 11, November 2014 ISSN:2278-1323.",
+					"R.Nallakumar, V.Dhinahari, 'A Literature Survey on Cost Efficient Reliable and Secret Data Sharing Scheme', International Journal of Advance Research in Computer Engineering and Technology, Volume 4, Issue 11, November 2015,pp.4241-4246 ISSN:2278-1323.",
+					"R.Nallakumar, Dr N.Sengottaiyan, S.ParthipaRaj, 'Secured Business Driven Application for (BOM) using Cloud Management framework', International Journal of Contemporary Research in Computer Science and Technology, Volume 1, Issue 8, November 2015 ISSN 2395-5325.",
+					"R.Nallakumar, Dr N.Sengottaiyan, R. Ramya Vinodini, 'A Survey on Policy Update Outsourcing for Big Data Access Control in the Cloud', International Journal of Contemporary Research in Computer Science and Technology, Volume 1,Issue 8, November 2015 ISSN:2395-5325.",
+					"R.Nallakumar, Dr N.Sengottalyan, L.S.Santhoshkumar, 'Optimized Search to Find Semantic Similarity among Words using Hybrid Approach', International Journal of Contemporary Research in Computer Science and Technology, Volume 1,Issue 8, November 2015 ISSN 2395-5325.",
+					"R.Nallakumar, Dr N.Sengottaiyan, N.Babu, 'Proxy Server for Custom Based Protocols in Cloud Computing', International Journal of Contemporary Research in Computer Science and Technology, Volume 1,Issue 8, November 2015 ISSN:2395-5325."
+
+									
+
+			] 
+        ,
 		"faculty": {
 			"hod_desk": [
 			  {
