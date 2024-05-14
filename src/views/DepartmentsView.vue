@@ -1,6 +1,6 @@
 <template>
   <div class="min-h-screen flex flex-col">
-    <main class="flex-grow">
+    <main>
       <!-- Hero section -->
       <section
         class="bg-cover bg-center relative -z-10"
@@ -16,7 +16,7 @@
 
       <!-- Horizontal Tabs -->
       <div class="sticky top-0 bg-white shadow-md z-10">
-        <div class="container mx-auto py-4 p-9">
+        <div class="flex justify-between py-4 p-9">
           <nav class="flex space-x-4">
             <button
               v-for="(section, index) in sections"
@@ -35,8 +35,8 @@
       </div>
 
       <!-- Content sections -->
-      <section class="container mx-auto py-8" @scroll="handleScroll">
-        <div id="content-sections" class="">
+      <section class="container-fluid py-8" @scroll="handleScroll">
+        <div id="content-sections" class="w-full">
           <div id="about-department" class="mb-8 lg:w-4/6 mx-auto py-20">
             <h2 class="text-2xl font-bold mb-4">About Department</h2>
             <p>{{ department.description }}</p>
