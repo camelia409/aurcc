@@ -50,14 +50,31 @@
               </ul>
             </div>
           </div>
-          <div id="events" class="mb-4 lg:w-4/6 mx-auto py-20">
-            <h2 class="text-2xl font-bold mb-4">Events</h2>
-            <ul class="list-disc pl-4 h-52 overflow-auto">
-              <li v-for="event in department.events" :key="event.name">
-                <strong>{{ event.name }} ({{ event.date }}):</strong> {{ event.description }}
-              </li>
-            </ul>
+          <div id="events" class="mb-8 lg:w-4/6 mx-auto p-3 py-16">
+          <h2 class="text-3xl font-extrabold text-gray-900">Events</h2>
+          <div v-if="currentEvent" class="flex justify-between items-center mt-4">
+            <button @click="showPreviousEvent" class="p-2 rounded-full bg-blue-500 text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-600">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+              </svg>
+            </button>
+            <div class="bg-white shadow-md rounded-lg overflow-hidden flex-grow mx-3">
+              <div class="p-6">
+                <h3 class="text-lg font-semibold">{{ currentEvent.name }}</h3>
+                <p class="text-sm text-gray-500">{{ currentEvent.description }}</p>
+                <p class="text-sm text-gray-500">Date: {{ currentEvent.date }}</p>
+              </div>
+            </div>
+            <button @click="showNextEvent" class="p-2 rounded-full bg-blue-500 text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-600">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
           </div>
+          <div v-else>
+            <p class="text-lg text-gray-700">No more events to show.</p>
+          </div>
+        </div>
           <div id="training-and-placements" class="bg-gray-200 py-12">
             <div class="container mx-auto flex lg:w-4/6 ">
               <div class="w-full  mb-8 lg:mb-0">
@@ -132,7 +149,7 @@
             <h2 class="text-2xl font-bold mb-4">Research and Publications</h2>
             <ul class="list-disc pl-4 h-52 overflow-auto">
               <li v-for="research in department.research_and_publications" :key="research">
-                <strong>{{ research }}:</strong> 
+                {{ research }} 
               </li>
             </ul>
           </div>
@@ -175,16 +192,59 @@
               </div>
             </div>
 
-            <!-- Popover Component -->
-            <div v-if="showPopover" class="absolute inset-0 flex items-center justify-center z-50">
-              <div class="bg-white shadow-lg rounded-lg p-6 w-96">
-                <h2 class="text-lg font-semibold mb-4">{{ selectedStaff.name }} Details</h2>
-                <p><strong>Position:</strong> {{ selectedStaff.position }}</p>
-                <p><strong>Email:</strong> {{ selectedStaff.email }}</p>
-                <!-- Add more details here as needed -->
-                <button @click="showPopover = false" class="mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 focus:outline-none">Close</button>
+              <!-- Popover Component -->
+              <div v-if="showPopover" class="fixed inset-0 flex items-center justify-center z-50 top-52">
+                <div class="bg-white shadow-lg rounded-lg p-6 w-full max-w-md overflow-y-auto">
+                  <!-- Image -->
+                  <img :src="'images/' + selectedStaff.image" alt="Profile Picture" class="w-24 h-24 mx-auto rounded-full mb-4">
+                  <h2 class="text-lg font-semibold mb-4">{{ selectedStaff.name }} Details</h2>
+                  <p><strong>Position:</strong> {{ selectedStaff.position }}</p>
+                  <p><strong>Email:</strong> {{ selectedStaff.email }}</p>
+                  <!-- Education -->
+                  <template v-if="selectedStaff.education">
+                    <h3 class="text-md font-semibold mt-4">Education</h3>
+                    <ul class="list-disc ml-6">
+                      <li v-for="edu in selectedStaff.education" :key="edu.degree">{{ edu.degree }}, {{ edu.institution }} ({{ edu.year }})</li>
+                    </ul>
+                  </template>
+                  <!-- Professional Experience -->
+                  <template v-if="selectedStaff.professional_experience">
+                    <h3 class="text-md font-semibold mt-4">Professional Experience</h3>
+                    <ul class="list-disc ml-6">
+                      <li v-for="exp in selectedStaff.professional_experience" :key="exp.position">{{ exp.position }}, {{ exp.institution }} ({{ exp.duration }})</li>
+                    </ul>
+                  </template>
+                  <!-- Research Interests -->
+                  <template v-if="selectedStaff.research_interests">
+                    <h3 class="text-md font-semibold mt-4">Research Interests</h3>
+                    <ul class="list-disc ml-6">
+                      <li v-for="interest in selectedStaff.research_interests" :key="interest">{{ interest }}</li>
+                    </ul>
+                  </template>
+                  <!-- Achievements -->
+                  <template v-if="selectedStaff.achievements">
+                    <h3 class="text-md font-semibold mt-4">Achievements</h3>
+                    <ul class="list-disc ml-6">
+                      <li v-for="achievement in selectedStaff.achievements" :key="achievement">{{ achievement }}</li>
+                    </ul>
+                  </template>
+                  <!-- Links -->
+                  <template v-if="selectedStaff.links">
+                    <h3 class="text-md font-semibold mt-4">Links</h3>
+                    <ul class="list-disc ml-6">
+                      <li v-for="(link, title) in selectedStaff.links" :key="title"><a :href="link" target="_blank">{{ title }}</a></li>
+                    </ul>
+                  </template>
+                  <!-- Additional Details -->
+                  <template v-if="selectedStaff.additional_details">
+                    <h3 class="text-md font-semibold mt-4">Additional Details</h3>
+                    <p>{{ selectedStaff.additional_details }}</p>
+                  </template>
+                  <!-- Close Button -->
+                  <button @click="showPopover = false" class="mt-8 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 focus:outline-none">Close</button>
+                </div>
               </div>
-            </div>
+
           </div>
 
 
@@ -234,6 +294,8 @@ export default {
         'Facility',
         'Proud Alumni'
       ],
+      events: null,
+      currentIndex: 0,
       currentSection: null,
       sectionOffsets: [],
       showPopover: false,
@@ -253,6 +315,7 @@ export default {
         const response = await fetch('http://localhost:5173/src/assets/departments.json');
         const departmentsData = await response.json();
         this.department = departmentsData.find(dept => dept.address === this.$route.params.departmentName);
+        this.events = this.department.events.reverse()
       } catch (error) {
         console.error('Error loading department:', error);
       }
@@ -293,13 +356,17 @@ export default {
       this.selectedStaff = staff;
       console.log(staff)
       this.showPopover = true;
+    },
+    showPreviousEvent() {
+      this.currentIndex = Math.max(0, this.currentIndex - 1);
+    },
+    showNextEvent() {
+      this.currentIndex = Math.min(this.events.length - 1, this.currentIndex + 1);
     }
-
-
   },
   computed: {
-    currentYear() {
-      return new Date().getFullYear();
+    currentEvent() {
+      return this.events[this.currentIndex];
     }
   },
   mounted() {
