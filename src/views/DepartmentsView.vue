@@ -35,9 +35,9 @@
       </div>
 
       <!-- Content sections -->
-      <section class="container mx-auto py-8 pt-20" @scroll="handleScroll">
+      <section class="container mx-auto py-8" @scroll="handleScroll">
         <div id="content-sections" class="">
-          <div id="about-department" class="mb-8 lg:w-4/6 mx-auto">
+          <div id="about-department" class="mb-8 lg:w-4/6 mx-auto py-20">
             <h2 class="text-2xl font-bold mb-4">About Department</h2>
             <p>{{ department.description }}</p>
           </div>
@@ -50,7 +50,7 @@
               </ul>
             </div>
           </div>
-          <div id="events" class="mb-4 lg:w-4/6 mx-auto">
+          <div id="events" class="mb-4 lg:w-4/6 mx-auto py-20">
             <h2 class="text-2xl font-bold mb-4">Events</h2>
             <ul class="list-disc pl-4">
               <li v-for="event in department.events" :key="event.name">
@@ -58,42 +58,69 @@
               </li>
             </ul>
           </div>
-          <div id="training-and-placements" class="mb-8 lg:w-4/6 mx-auto">
-            <h2 class="text-2xl font-bold mb-4">Training and Placements</h2>
-            <p><strong>Average Salary:</strong> {{ department.placements.average_salary }}</p>
-            <p><strong>Highest Salary:</strong> {{ department.placements.highest_salary }}</p>
-            <p><strong>Placement Percentage:</strong> {{ department.placements.placement_percentage }}</p>
-            <section class="flex flex-col gap-4">
-              <h2 class="text-4xl font-bold text-center">Innovating the Industries</h2>
-              <div class="grid grid-cols-3 gap-4 items-center justify-space-around"><a href="https://www.tcs.com"
+          <div id="training-and-placements" class="bg-gray-200 py-12">
+            <div class="container mx-auto flex lg:w-4/6 ">
+              <div class="w-full  mb-8 lg:mb-0">
+                <div class="  ">
+                  <h2 class="text-2xl font-bold mb-4">Training and Placements</h2>
+                  <div class="flex flex-wrap gap-4">
+                    <div class="w-full lg:w-1/3">
+                      <div class=" p-4 flex items-center justify-center">
+                        <p class="text-lg font-bold">Average Salary</p>
+                        <p class="text-xl ml-2">{{ department.placements.average_salary }}</p>
+                      </div>
+                    </div>
+                    <div class="w-full lg:w-1/3">
+                      <div class=" p-4 flex items-center justify-center">
+                        <p class="text-lg font-bold">Highest Salary</p>
+                        <p class="text-xl ml-2">{{ department.placements.highest_salary }}</p>
+                      </div>
+                    </div>
+                    <div class="w-full lg:w-1/3">
+                      <div class=" p-4 flex items-center justify-center">
+                        <p class="text-lg font-bold">Placement Percentage</p>
+                        <p class="text-xl ml-2">{{ department.placements.placement_percentage }}</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="w-full lg:pl-4">  
+                <div class="bg-white rounded-lg p-6">
+                  <h2 class="text-2xl font-bold mb-4">Innovating the Industries</h2>
+                  <div class="grid grid-cols-3 gap-4 items-center justify-center"><a href="https://www.tcs.com"
                           class="h-[12vh] p-4 flex flex-col items-center justify-center"
                       >
                     <figure><img alt="TCS" src="../assets/tcs.webp" class="w-[20vw] lg:w-[10vw]" /></figure>
-                </a><a href="https://www.avasoft.com"
-                    class="h-[12vh] p-4 flex flex-col items-center justify-center"
-                >
-                    <figure><img alt="Avasoft" src="../assets/avasoft.webp" class="w-[20vw] lg:w-[10vw]" /></figure>
-                </a><a href="https://www.guvi.in"
-                    class="h-[12vh] p-4 flex flex-col items-center justify-center"
-                >
-                    <figure><img alt="Guvi" src="../assets/guvi.webp" class="w-[20vw] lg:w-[10vw]" /></figure>
-                </a><a href="https://www.gighz.net"
-                    class="h-[12vh] p-4 flex flex-col items-center justify-center"
-                >
-                    <figure><img alt="Saptang Labs" src="../assets/saptan-labs.webp" class="w-[20vw] lg:w-[10vw]" /></figure>
-                </a><a href="https://home.barclays/"
-                    class="h-[12vh] p-4 flex flex-col items-center justify-center"
-                >
-                    <figure><img alt="e-con Systems" src="../assets/e-con.webp" class="w-[20vw] lg:w-[10vw]" /></figure>
-                </a><a href="https://www.azentio.com"
-                    class="h-[12vh] p-4 flex flex-col items-center justify-center"
-                >
-                    <figure><img alt="Azentio" src="../assets/azentio.webp" class="w-[20vw] lg:w-[10vw]" /></figure>
-                </a>
+                    </a><a href="https://www.avasoft.com"
+                        class="h-[12vh] p-4 flex flex-col items-center justify-center"
+                    >
+                        <figure><img alt="Avasoft" src="../assets/avasoft.webp" class="w-[20vw] lg:w-[10vw]" /></figure>
+                    </a><a href="https://www.guvi.in"
+                        class="h-[12vh] p-4 flex flex-col items-center justify-center"
+                    >
+                        <figure><img alt="Guvi" src="../assets/guvi.webp" class="w-[20vw] lg:w-[10vw]" /></figure>
+                    </a><a href="https://www.gighz.net"
+                        class="h-[12vh] p-4 flex flex-col items-center justify-center"
+                    >
+                        <figure><img alt="Saptang Labs" src="../assets/saptan-labs.webp" class="w-[20vw] lg:w-[10vw]" /></figure>
+                    </a><a href="https://home.barclays/"
+                        class="h-[12vh] p-4 flex flex-col items-center justify-center"
+                    >
+                        <figure><img alt="e-con Systems" src="../assets/e-con.webp" class="w-[20vw] lg:w-[10vw]" /></figure>
+                    </a><a href="https://www.azentio.com"
+                        class="h-[12vh] p-4 flex flex-col items-center justify-center"
+                    >
+                        <figure><img alt="Azentio" src="../assets/azentio.webp" class="w-[20vw] lg:w-[10vw]" /></figure>
+                    </a>
+                  </div>
+                </div>
               </div>
-            </section>
+            </div>
           </div>
-          <div id="achievements" class="mb-8 lg:w-4/6 mx-auto">
+
+
+          <div id="achievements" class="mb-8 lg:w-4/6 mx-auto py-20">
             <h2 class="text-2xl font-bold mb-4">Achievements</h2>
             <ul class="list-disc pl-4">
               <li v-for="achievement in department.achievements" :key="achievement.name">
@@ -101,13 +128,13 @@
               </li>
             </ul>
           </div>
-          <div id="research-and-publications" class="mb-8 lg:w-4/6 mx-auto">
+          <div id="research-and-publications" class="mb-8 lg:w-4/6 mx-auto py-20">
             <h2 class="text-2xl font-bold mb-4">Research and Publications</h2>
             <ul class="list-disc pl-4">
               {{ department.research_and_publications }}
             </ul>
           </div>
-          <div id="faculty" class="mb-8 lg:w-4/6 mx-auto relative">
+          <div id="faculty" class="mb-8 lg:w-4/6 mx-auto relative py-20">
             <h2 class="text-2xl font-bold mb-4">Faculty</h2>
 
             <!-- HOD Desk -->
