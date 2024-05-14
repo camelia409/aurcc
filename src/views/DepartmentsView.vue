@@ -65,20 +65,20 @@
                   <h2 class="text-2xl font-bold mb-4">Training and Placements</h2>
                   <div class="flex flex-wrap gap-4">
                     <div class="w-full lg:w-1/3">
-                      <div class=" p-4 flex items-center justify-center">
-                        <p class="text-lg font-bold">Average Salary</p>
-                        <p class="text-xl ml-2">{{ department.placements.average_salary }}</p>
+                      <div class="p-4 flex flex-col items-center justify-center">
+                        <p class="text-lg font-bold mb-2">Average Salary</p>
+                        <p class="text-xl">{{ department.placements.average_salary }} </p>
+                      </div>
+                    </div>
+                    <div class="w-full lg:w-1/3">
+                      <div class="p-4 flex flex-col items-center justify-center">
+                        <p class="text-lg font-bold mb-2">Highest Salary</p>
+                        <p class="text-xl">{{ department.placements.highest_salary }} </p>
                       </div>
                     </div>
                     <div class="w-full lg:w-1/3">
                       <div class=" p-4 flex items-center justify-center">
-                        <p class="text-lg font-bold">Highest Salary</p>
-                        <p class="text-xl ml-2">{{ department.placements.highest_salary }}</p>
-                      </div>
-                    </div>
-                    <div class="w-full lg:w-1/3">
-                      <div class=" p-4 flex items-center justify-center">
-                        <p class="text-lg font-bold">Placement Percentage</p>
+                        <p class="text-lg font-bold ml-3">Placement Percentage</p>
                         <p class="text-xl ml-2">{{ department.placements.placement_percentage }}</p>
                       </div>
                     </div>
@@ -87,7 +87,7 @@
               </div>
               <div class="w-full lg:pl-4">  
                 <div class="bg-white rounded-lg p-6">
-                  <h2 class="text-2xl font-bold mb-4">Innovating the Industries</h2>
+                  <h2 class="text-2xl font-bold mb-4">Company vsited</h2>
                   <div class="grid grid-cols-3 gap-4 items-center justify-center"><a href="https://www.tcs.com"
                           class="h-[12vh] p-4 flex flex-col items-center justify-center"
                       >
@@ -248,7 +248,7 @@ export default {
   methods: {
     async loadDepartment() {
       try {
-        const response = await fetch('http://192.168.72.231:5173/src/assets/departments.json');
+        const response = await fetch('http://localhost:5173/src/assets/departments.json');
         const departmentsData = await response.json();
         this.department = departmentsData.find(dept => dept.address === this.$route.params.departmentName);
       } catch (error) {
