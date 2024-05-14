@@ -127,8 +127,9 @@ import TheWelcome from '../components/TheWelcome.vue'
               class="h-[12vh] p-4 flex flex-col items-center justify-center"
           >
               <figure><img alt="Dummy" src="../assets/texmo.webp" class="w-[20vw] lg:w-[10vw]" /></figure>
-          </a></div>
-        </section>
+          </a>
+        </div>
+      </section>
              <!-- From the Dean's Desk section -->
       <section class="bg-base-300 w-full py-12">
         <div class="container mx-auto px-4">
