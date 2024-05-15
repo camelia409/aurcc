@@ -160,7 +160,7 @@
                 <div class="md:w-1/2 p-4 flex justify-center items-center">
                   <img :src="'http://localhost:5173/src/assets/' + facility.image" :alt="facility.name" class="w-full h-auto max-w-xs">
                 </div>
-              </div>
+              </div> 
             </div>
           </div>
 
