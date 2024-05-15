@@ -2099,9 +2099,9 @@
 		"address": "ece",
 		"image": "",
 		"name": "Department of Electronics and Communication Engineering",
-		"description": [
+		"description": 
 		  " The Department of Electronics and Communication Engineering (ECE) was established in the year 2007. The department offers full-time two-year M.E. degree programs in Applied Electronics, Communication Systems, and VLSI Design, along with the same courses offered as three-year M.E. programs in part-time mode."
-		],
+		,
 		"vision": [
 		  "To create an educational environment in which students are prepared to meet the challenges of modern Industrial society by equipping them with:",
 		  "Up to date Technical Knowledge.",
