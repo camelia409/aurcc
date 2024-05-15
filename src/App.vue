@@ -35,9 +35,9 @@ import { RouterLink, RouterView } from 'vue-router'
               </details>
               </li>
               <li><a>Hostel</a></li>
-              <li>
-                <details>
-                  <summary>Offices</summary>
+              <li class="relative">
+                <details class="text-black">
+                  <summary class="cursor-pointer">Offices</summary>
                   <ul class="p-2 bg-base-100 shadow-lg text-black">
                     <li><a href="/dgate">DGATE Cell</a></li>
                     <li><a href="/ed-cell">ED Cell</a></li>
