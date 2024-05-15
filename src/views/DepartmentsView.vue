@@ -145,6 +145,25 @@
               </li>
             </ul>
           </div>
+           <div id="facility" class="lg:w-4/6 mx-auto">
+            <h2 class="text-2xl font-bold mb-4">Facility</h2>
+            <div class="grid gap-8">
+              <div 
+                v-for="(facility, index) in department.facilities" 
+                :key="facility.name" 
+                :class="index % 2 === 0 ? 'bg-white shadow-md rounded-md p-4 flex flex-col md:flex-row' : 'bg-white shadow-md rounded-md p-4 flex flex-col md:flex-row-reverse'"
+              >
+                <div class="md:w-1/2 p-4">
+                  <h3 class="text-lg font-semibold">{{ facility.name }}</h3>
+                  <p>{{ facility.description }}</p>
+                </div>
+                <div class="md:w-1/2 p-4 flex justify-center items-center">
+                  <img :src="'http://localhost:5173/src/assets/' + facility.image" :alt="facility.name" class="w-full h-auto max-w-xs">
+                </div>
+              </div>
+            </div>
+          </div>
+
           <div id="research-and-publications" class="mb-8 lg:w-4/6 mx-auto py-20">
             <h2 class="text-2xl font-bold mb-4">Research and Publications</h2>
             <ul class="list-disc pl-4 h-52 overflow-auto">
@@ -259,12 +278,6 @@
               </div>
             </div>
           </div>
-            <div id="facility" class="lg:w-4/6 mx-auto">
-            <h2 class="text-2xl font-bold mb-4">Facility</h2>
-            <ul class="list-disc pl-4">
-              {{ department.facility }}
-            </ul>
-          </div>
           <div id="proud-alumni" class="lg:w-4/6 mx-auto">
             <h2 class="text-2xl font-bold mb-4">Proud Alumni</h2>
             <ul class="list-disc pl-4">
@@ -288,10 +301,10 @@ export default {
         'Events',
         'Training and Placements',
         'Achievements',
+        'Facility',
         'Research and Publications',
         'Faculty',
         'Administration and Technical Staff',
-        'Facility',
         'Proud Alumni'
       ],
       events: null,
