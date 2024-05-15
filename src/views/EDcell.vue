@@ -2,12 +2,11 @@
     <div class="min-h-screen flex flex-col">
       <main class="flex-grow">
         <!-- Hero section -->
-        <section class="bg-cover bg-center relative -z-10" :style="'background-image: url(http://192.168.72.231:5173/src/assets/ed-cell-hero.jpg)'">
-          <div class="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div>
+        <section class="bg-gradient-to-r from-custom-gradient-start to-custom-gradient-end text-white py-12">
           <div class="container mx-auto py-16 text-white p-9 relative z-10">
             <h1 class="text-4xl font-bold mb-4">{{ data.name }}</h1>
             <p class="text-xl mb-8">{{ data.description['ED cell'] }}</p>
-            <button class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded">Learn More</button>
+            <button class="bg-purple-500 hover:bg-purple-600 text-white py-2 px-4 rounded">Learn More</button>
           </div>
         </section>
   
