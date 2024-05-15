@@ -1,10 +1,6 @@
-<script setup>
-import TheWelcome from '../components/TheWelcome.vue'
-</script>
-
 <template>
   <div class="min-h-screen bg-base-200">
-    <main class="flex flex-col gap-8">
+    <main class="flex flex-col">
       <div class="hero bg-base-200 flex flex-col gap-4 lg:w-1/2 self-center">
         <div class="hero-content text-center">
           <div class="max-w-md">
@@ -13,9 +9,9 @@ import TheWelcome from '../components/TheWelcome.vue'
         </div>
       </div>
       <div class="bg-base-300">
-        <div class="container mx-auto">
+        <div class="mx-auto">
           <div class="flex items-center justify-between">
-            <div class="text-sm p-4 bg-gray-800 text-white z-10">Announcements</div>
+            <div class="text-sm p-4 bg-gray-800 text-white z-10 ">Announcements</div>
             <div class="text-sm breadcrumbs animate-marquee hover:animate-pause p-4">
               <ul>
                 <li>
@@ -34,6 +30,37 @@ import TheWelcome from '../components/TheWelcome.vue'
           </div>
         </div>
       </div>
+      <div class="carousel w-full max-w-screen-lg mx-auto overflow-hidden relative">
+        <div id="slide1" class="carousel-item relative w-full transition-transform duration-500 ease-in-out">
+          <img src="../assets/pic1.jpg" class="w-full h-64 object-cover" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide4" class="btn btn-circle">❮</a> 
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        <div id="slide2" class="carousel-item relative w-full transition-transform duration-500 ease-in-out">
+          <img src="../assets/1.jpg" class="w-full h-64 object-cover" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide1" class="btn btn-circle">❮</a> 
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        <div id="slide3" class="carousel-item relative w-full transition-transform duration-500 ease-in-out">
+          <img src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg" class="w-full h-64 object-cover" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide2" class="btn btn-circle">❮</a> 
+            <a href="#slide4" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        <div id="slide4" class="carousel-item relative w-full transition-transform duration-500 ease-in-out">
+          <img src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" class="w-full h-64 object-cover" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide3" class="btn btn-circle">❮</a> 
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+      </div>
+
       
       <div class="grid grid-cols-1 md:grid-cols-4 gap-8 p-9 md:p-20">
         <div class="col-span-3">
@@ -258,4 +285,12 @@ export default {
   margin-bottom: 10px;
   /* Style individual events */
 }
+
+.carousel-item {
+  display: none;
+}
+.carousel-item:target {
+  display: block;
+}
+
 </style>

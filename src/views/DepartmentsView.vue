@@ -163,15 +163,6 @@
                 </div>
               </div>
             </div>
-
-          <div id="research-and-publications" class="mb-8 lg:w-4/6 mx-auto py-20">
-            <h2 class="text-2xl font-bold mb-4">Research and Publications</h2>
-            <ul class="list-disc pl-4 h-52 overflow-auto">
-              <li v-for="research in department.research_and_publications" :key="research">
-                {{ research }} 
-              </li>
-            </ul>
-          </div>
           <div id="faculty" class="mb-8 lg:w-4/6 mx-auto relative py-20">
             <h2 class="text-2xl font-bold mb-4">Faculty</h2>
 
@@ -295,6 +286,14 @@
             </ul>
           </div>
         </div>
+        <div id="research-and-publications" class="mb-8 lg:w-4/6 mx-auto py-20">
+          <h2 class="text-2xl font-bold mb-4">Research and Publications</h2>
+          <ul class="list-disc pl-4 h-52 overflow-auto">
+            <li v-for="research in department.research_and_publications" :key="research">
+              {{ research }} 
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
   </div>
@@ -312,10 +311,10 @@ export default {
         'Training and Placements',
         'Achievements',
         'Facility',
-        'Research and Publications',
         'Faculty',
         'Administration and Technical Staff',
-        'Proud Alumni'
+        'Proud Alumni',
+        'Research and Publications',
       ],
       events: null,
       currentIndex: 0,
