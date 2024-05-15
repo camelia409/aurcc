@@ -53,6 +53,11 @@ const router = createRouter({
       path: '/academics/',
       name: 'academics',
       component: ()=> import('../views/Academics.vue')
+    },
+    }
+      path: '/exam-cell/',
+      name: 'examcell',
+      component: ()=> import('../views/Examcell.vue')
     }
   ]
 })

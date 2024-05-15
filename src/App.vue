@@ -43,6 +43,7 @@ import { RouterLink, RouterView } from 'vue-router'
                     <li><a href="/ed-cell">ED Cell</a></li>
                     <li><a href="/placement-cell">Placement Cell</a></li>
                     <li><a href="/research-cell">Research Cell</a></li>
+                    <li><a href="/exam-cell">Exam cell</a></li>
                   </ul>
                 </details>
               </li>
@@ -97,6 +98,7 @@ import { RouterLink, RouterView } from 'vue-router'
                   <li><a href="/ed-cell">ED Cell</a></li>
                   <li><a href="/placement-cell">Placement Cell</a></li>
                   <li><a href="/research-cell">Research Cell</a></li>
+                  <li><a href="/exam-cell">Exam cell</a></li>
                 </ul>
               </details>
             </li>
