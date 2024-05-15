@@ -304,36 +304,36 @@
 				],
 		"facilities": [
 					{
-					  "py_lab": {
+					   
 						"name": "Python Laboratory",
 						"description": "In a Python programming laboratory at a college, students learn to write, test, and debug Python programs. They explore conditionals, loops, and functions for structuring their code. Additionally, they gain proficiency in handling compound data using Python lists, tuples, and dictionaries, as well as reading and writing data from/to files. The lab aims to equip students with practical programming skills and a solid foundation in Python.",
 						"room no": "216",
 						"image": "py.jpg"
-					  }
+					  
 					},
 					{
-					  "db_lab": {
+				
 						"name": "Database Laboratory",
 						"description": "In a college database management laboratory, students gain foundational knowledge in database concepts, technology, and practice. They learn SQL programming through various database problems, develop applications using front-end tools, and work with back-end DBMS. The lab covers topics such as data definition languages (DDL), data manipulation language (DML) commands, high-level programming language extensions, front-end tools, forms, triggers, menu design, reports, and practical exercises using open-source software like MySQL.",
 						"room no": "217",
 						"image": "db.jpg"
-					  }
+					  
 					},
 					{
-					  "idea_lab": {
+					
 						"name": "IDEA Laboratory",
 						"description": "The AICTE-IDEA (Idea Development, Evaluation & Application) Lab is established in AICTE-approved institutions to encourage students to apply science, technology, engineering, and mathematics (STEM) fundamentals. This lab provides hands-on experience, fosters creativity, and trains students in critical thinking, problem-solving, and collaboration. The IDEA Lab aims to transform education by converting ideas into prototypes, promoting imaginative thinking, and preparing graduates for the 21st-century workplace.",
 						"room no": "202",
 						"image": "idea.jpg"
-					  }
+					  
 					},
 					{
-					  "cb_lab": {
+					  
 						"name": "Cybersecurity Laboratory",
 						"description": "A college cybersecurity lab is a hands-on learning environment equipped with simulated networks and security tools. Students practice ethical hacking techniques, analyze malware, and defend against cyberattacks in a safe space. These labs, often led by cybersecurity professors, prepare students for industry certifications and careers in information security.",
 						"room no": "222",
 						"image": "cb.jpg"
-					  }
+					  
 					}
 				  ],
         "research_and_publications":[
@@ -2579,18 +2579,7 @@
                       "name": "M.E-POWER SYSTEM AND ENGINEERING",
                       "type": "FULL TIME"
                     }
-                  ],
-            
-        "facility":
-                [
-                " The Department of Electrical and Electronics Engineering established with an aim to spearhead the installation of world class technologically advanced and highly sophisticated laboratories like Electrical Machines laboratory, Power Electronics laboratory, Electric Circuits laboratory, Control Systems laboratory, Measurements and Instrumentations laboratory, Process Control laboratory, and Modeling and Simulation laboratory."
-                
-                ," The department provides software's like MATLAB R14, NI Lab VIEW, PSIM, NI Multi Sim, Active HDL, and Process Control Simulator to enrich the students in their modeling and simulation skills.",
-                
-                
-                " A Laboratory has been set up to utilize the free open source software (FOSS) posted which includes SCILAB and ESIM."
-                ]
-      ,       
+                  ],      
         "projects":[
       
                 "1. Voltage tracking control using fuzzy Pi controller",
@@ -3107,14 +3096,6 @@
 		  " B.E. ELECTRONICS AND COMMUNICATION ENGINEERING (FULL TIME)",
 		  " M.E-COMMUNICATION SYSTEM (FULL TIME)",
 		  "M.E-VLSI DESIGN AND EMBEDDED SYSTEMS (FULL TIME)"
-		],
-		"facility": [
-		  "The Applied Electronics Lab is equipped with MSP 430 Microcontroller, Beagle bone black board, MSP 430 F2013 starter kit, TMS320C 6678 Multicore DSP Processor Kit and Application boards for implementing both basic and advanced experiments. In addition to that the Lab is equipped with state of equipments which include 20 Workbenches each consisting of inbuilt CRO, Function Generator, RPS, Ammeters and Voltmeters. Also 10 Desktop Computers have been interfaced with the Workbenches and they are loaded with EDA tool like MultiSim.",
-		  "The Communication Systems Lab equipped with Optical Fiber kits, Analog and Digital Communication kits. The DSP Lab equipped with Code Composer Studio Software and latest DSP Trainer Kits namely TMS320C5416 and TMS320C6713.",
-		  "The VLSI Design lab was developed with a motive of encouraging research activities of the Post Graduate Students. The lab consists of 20 Desktop Computers loaded with software's such as Micro wind, Quartus-II & Active HDL, Keil, MP lab, IAR Workbench and Modelsim.",
-		  "LCD Projectors available in all class rooms",
-		  "Exclusive Project Laboratory. Separate Library is maintained in the Department",
-		  "Exclusive Audio Visual facilities are available for conducting Seminars, Workshops and other technical activities."
 		],
 		"projects": [
 		  "Accurate Fall Accident Detection And Positioning System Using Smart Phone.",
