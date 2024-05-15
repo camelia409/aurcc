@@ -107,14 +107,14 @@ import { RouterLink, RouterView } from 'vue-router'
                 <summary>Life@aurcc</summary>
                 <ul class="p-2 bg-base-100 shadow-lg text-black">
                   <li><a href="/">Sports</a></li>
-                  <li><a href="/">NSS</a></li>
-                  <li><a href="/">Tamil Mandram</a></li>
+                  <li><a href="/nss">NSS</a></li>
+                  <li><a href="/tamilmandram">Tamil Mandram</a></li>
                   <li><a href="/">Fine Arts Club</a></li>
                   <li><a href="/">Alumni</a></li>
                 </ul>
               </details>
             </li>
-            <li><a>Hostel</a></li>
+            <li><a href="/hostel">Hostel</a></li>
             <li><a>Contact</a></li>
             <li><input type="checkbox" value="synthwave" class="toggle theme-controller"/></li>
           </ul>

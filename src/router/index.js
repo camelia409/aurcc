@@ -58,6 +58,21 @@ const router = createRouter({
       path: '/exam-cell/',
       name: 'examcell',
       component: ()=> import('../views/Examcell.vue')
+    },
+    {
+      path: '/hostel/',
+      name: 'hostel',
+      component: ()=> import('../views/Hostel.vue')
+    },
+    {
+      path: '/nss/',
+      name: 'nss',
+      component: ()=> import('../views/NSSview.vue')
+    },
+    {
+      path: '/tamilmandram/',
+      name: 'tamilmandram',
+      component: ()=> import('../views/Tamilmandram.vue')
     }
   ]
 })
