@@ -50,6 +50,11 @@ const router = createRouter({
       component: ()=> import('../views/About.vue')
     },
     {
+      path: '/academics/',
+      name: 'academics',
+      component: ()=> import('../views/Academics.vue')
+    },
+    {
       path: '/exam-cell/',
       name: 'examcell',
       component: ()=> import('../views/Examcell.vue')
