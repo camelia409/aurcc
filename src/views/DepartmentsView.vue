@@ -161,7 +161,7 @@
                     <img :src="'http://localhost:5173/src/assets/' + facility.image" :alt="facility.name" class="w-full h-auto max-w-xs">
                   </div>
                 </div>
-              </div>
+              </div> 
             </div>
 
           <div id="research-and-publications" class="mb-8 lg:w-4/6 mx-auto py-20">
