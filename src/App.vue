@@ -94,6 +94,7 @@ import { RouterLink, RouterView } from 'vue-router'
               <details>
                 <summary>Offices</summary>
                 <ul class="p-2 bg-base-100 shadow-lg text-black">
+                  <li><a href="/admission">Admission</a></li>
                   <li><a href="/dgate">DGATE Cell</a></li>
                   <li><a href="/ed-cell">ED Cell</a></li>
                   <li><a href="/placement-cell">Placement Cell</a></li>

@@ -2437,19 +2437,53 @@
 					"name": "Dr Saravanakumar S",
 					"position": "Head of the Department",
 					"email": "ssk@aurcc.ac.in",
-					"education": {
-						"B.E.": "PSG College of Technology, Coimbatore",
-						"M.E.": "Government College of Technology, Coimbatore",
-						"Ph.D.": "Anna University, Chennai"
-					},
+					"education":
+					[
+						{
+						  "degree": "B.E.",
+						  "institution": "PSG College of Technology, Coimbatore",
+						  "year": ""
+						},
+						{
+						  "degree": "M.E.",
+						  "institution": "Government College of Technology, Coimbatore",
+						  "year": ""
+						},
+						{
+						  "degree": "Ph.D.",
+						  "institution": "Anna University, Chennai",
+						  "year": ""
+						}
+					  ],
 					"research_interests": ["Electrical and Electronics Engineering"],
 					"professional_experience": [
-						"Manager Production, Elzone Electronics Pvt. Ltd., Coimbatore (1995-2001)",
-						"Lecturer, Vel Tech Engineering College, Chennai (2001 – 2003)",
-						"Manager Production and R&D, Risabh Electronics, Coimbatore (2003-2007)",
-						"Lecturer, Anna University Coimbatore (2007-2008)",
-						"Assistant Professor, Anna University Regional Campus, Coimbatore (2008 – Till Date)"
-					],
+						{
+						  "position": "Manager Production",
+						  "institution": "Elzone Electronics Pvt. Ltd. Coimbatore",
+						  "duration": "1995-2001"
+						},
+						{
+						  "position": "Lecturer",
+						  "institution": "Vel Tech Engineering College Chennai",
+						  "duration": "2001-2003"
+						},
+						{
+						  "position": "Manager Production and R&D",
+						  "institution": "Risabh Electronics Coimbatore",
+						  "duration": "2003-2007"
+						},
+						{
+						  "position": "Lecturer",
+						  "institution": "Anna University Coimbatore",
+						  "duration": "2007-2008"
+						},
+						{
+						  "position": "Assistant Professor",
+						  "institution": "Anna University Regional Campus Coimbatore",
+						  "duration": "2008 - Till Date"
+						}
+					  ],
+					  
 					"achievements": "Nil",
 					"links": {
 						"google_scholar": "https://scholar.google.com/citations?hl=en&tzom=-330&user=2ON4fs0AAAAJ",
@@ -2463,21 +2497,58 @@
 					"name": "Dr Gomathi R",
 					"position": "Assistant Professor (Senior Grade)",
 					"email": "gomathiucedgl@gmail.com",
-					"education": {
-						"B.E.": "Madurai Kamaraj University, 2002",
-						"M.E.": "Anna University, Chennai, 2004",
-						"Ph.D.": "Anna University, Chennai, 2014"
-					},
+					"education": 
+					[
+						{
+						  "degree": "B.E.",
+						  "institution": "Madurai Kamaraj University",
+						  "year": 2002
+						},
+						{
+						  "degree": "M.E.",
+						  "institution": "Anna University, Chennai",
+						  "year": 2004
+						},
+						{
+						  "degree": "Ph.D.",
+						  "institution": "Anna University, Chennai",
+						  "year": 2014
+						}
+					  ],
 					"research_interests": ["Digital Image Processing", "Neural Networks", "Cryptography Techniques", "Data Mining"],
 					"professional_experience": [
-						"Lecturer, PSNA CET, Dindigul (May 2004 - May 2009)",
-						"Senior Lecturer, PSNA CET, Dindigul (June 2009 - May 2010)",
-						"Assistant Professor, PSNA CET, Dindigul (June 2010 - Aug 2010)",
-						"Assistant Professor, UCE DGL, Dindigul (Dec 2010 - Dec 2014)",
-						"Assistant Professor (Sr. Grade), UCE DGL, Dindigul (Dec 2014 - Jul 2023)",
-						"Assistant Professor (Sr. Grade), AURCC, Coimbatore (Jul 2023 - Till Date)"
-					],
-					"achievements": "Nil",
+						{
+						  "position": "Lecturer",
+						  "institution": "PSNA CET, Dindigul",
+						  "duration": "May 2004 - May 2009"
+						},
+						{
+						  "position": "Senior Lecturer",
+						  "institution": "PSNA CET, Dindigul",
+						  "duration": "June 2009 - May 2010"
+						},
+						{
+						  "position": "Assistant Professor",
+						  "institution": "PSNA CET, Dindigul",
+						  "duration": "June 2010 - Aug 2010"
+						},
+						{
+						  "position": "Assistant Professor",
+						  "institution": "UCE DGL, Dindigul",
+						  "duration": "Dec 2010 - Dec 2014"
+						},
+						{
+						  "position": "Assistant Professor (Sr. Grade)",
+						  "institution": "UCE DGL, Dindigul",
+						  "duration": "Dec 2014 - Jul 2023"
+						},
+						{
+						  "position": "Assistant Professor (Sr. Grade)",
+						  "institution": "AURCC, Coimbatore",
+						  "duration": "Jul 2023 - Till Date"
+						}
+					  ]
+					  ,
 					"links": {
 						"email": "gomathi@aurcc.ac.in",
 						"drive_link": "https://drive.google.com/open?id=1rKtEdahJWDFuqVh3YYrTbY0uLLXCpvVN"
@@ -2487,20 +2558,53 @@
 					"name": "Dr KIRUBADEVI S",
 					"position": "Assistant Professor (Senior Grade)",
 					"email": "kirubadevi@aurcc.ac.in",
-					"education": {
-						"B.E.": "Government College of Engineering,Salem, 2002",
-						"M.E.": "College of Engineering, Guindy, 2008",
-						"Ph.D.": "Anna University, 2022"
-					},
+					"education":
+					[
+						{
+						  "degree": "B.E.",
+						  "institution": "Government College of Engineering, Salem",
+						  "year": 2002
+						},
+						{
+						  "degree": "M.E.",
+						  "institution": "College of Engineering, Guindy",
+						  "year": 2008
+						},
+						{
+						  "degree": "Ph.D.",
+						  "institution": "Anna University",
+						  "year": 2022
+						}
+					  ],
 					"research_interests": ["Renewable Energy Systems", "Smart Grid", "IoT"],
-					"professional_experience": [
-						"Lecturer, Arulmigu Kalasalingam Polytechnic College (June 2004 to Aug 2006)",
-						"Lecturer, Kalasalingam University (Dec-2008-Aug to 2010)",
-						"Assistant Professor, University VOC College of Engineering Thoothukudi (Aug-2010 to Aug 2015)",
-						"Assistant Professor, University College of Engineering Dindigul (Aug-2015 to July 2023)",
-						"Assistant Professor (Sr.Grade), Anna University Regional Campus Coimbatore (July 2023 to till date)"
-					],
-					"achievements": "Nil",
+					"professional_experience":[
+						{
+						  "position": "Lecturer",
+						  "institution": "Arulmigu Kalasalingam Polytechnic College",
+						  "duration": "June 2004 to Aug 2006"
+						},
+						{
+						  "position": "Lecturer",
+						  "institution": "Kalasalingam University",
+						  "duration": "Dec 2008 to Aug 2010"
+						},
+						{
+						  "position": "Assistant Professor",
+						  "institution": "University VOC College of Engineering Thoothukudi",
+						  "duration": "Aug 2010 to Aug 2015"
+						},
+						{
+						  "position": "Assistant Professor",
+						  "institution": "University College of Engineering Dindigul",
+						  "duration": "Aug 2015 to July 2023"
+						},
+						{
+						  "position": "Assistant Professor (Sr. Grade)",
+						  "institution": "Anna University Regional Campus Coimbatore",
+						  "duration": "July 2023 to till date"
+						}
+					  ]
+					  ,
 					"links": {
 						"drive_link": "https://drive.google.com/open?id=1eoLxYv77YWZxXr6B9oceHqKTho-W4OEv"
 					}
@@ -2509,18 +2613,43 @@
 					"name": "Dr Sumathi S",
 					"position": "Assistant Professor",
 					"email": "sumathi@aurcc.ac.in",
-					"education": {
-						"B.E.": "Anna University, Chennai, 2006",
-						"M.E.": "Anna University, Chennai, 2008",
-						"Ph.D.": "Anna University, Chennai, 2019"
-					},
-					"research_interests": ["High Voltage Engineering", "Power System", "Electrical Machines", "Soft Computing", "Control System"],
-					"professional_experience": [
-						"LECTURER, SVC COLLEGE OF ENGINEERING AND TECHNOLOGY, TIRUNELVELI (2008 -2010)",
-						"ASSISTANT PROFESSOR, UNIVERSITY VOC COLLEGE OF ENGINEERING THOOTHUKUDI (2010- 2016)",
-						"ASSISTANT PROFESSOR, ANNA UNIVERSITY REGIONAL CAMPUS, COIMBATORE (2016-till date)"
+					"education": 
+					[
+						{
+						  "degree": "B.E.",
+						  "institution": "Anna University, Chennai",
+						  "year": 2006
+						},
+						{
+						  "degree": "M.E.",
+						  "institution": "Anna University, Chennai",
+						  "year": 2008
+						},
+						{
+						  "degree": "Ph.D.",
+						  "institution": "Anna University, Chennai",
+						  "year": 2019
+						}
 					],
-					"achievements": "Nil",
+					"research_interests": ["High Voltage Engineering", "Power System", "Electrical Machines", "Soft Computing", "Control System"],
+					"professional_experience":  [
+						{
+						  "position": "LECTURER",
+						  "institution": "SVC COLLEGE OF ENGINEERING AND TECHNOLOGY, TIRUNELVELI",
+						  "duration": "2008 - 2010"
+						},
+						{
+						  "position": "ASSISTANT PROFESSOR",
+						  "institution": "UNIVERSITY VOC COLLEGE OF ENGINEERING THOOTHUKUDI",
+						  "duration": "2010 - 2016"
+						},
+						{
+						  "position": "ASSISTANT PROFESSOR",
+						  "institution": "ANNA UNIVERSITY REGIONAL CAMPUS, COIMBATORE",
+						  "duration": "2016 - till date"
+						}
+					  ]
+					  ,
 					"links": {
 						"google_scholar": "https://scholar.google.com/citations?user=tQDx9GYAAAAJ&hl=en",
 						"orcid_id": "https://orcid.org/0000-0002-2254-4143",
@@ -2534,17 +2663,83 @@
 					"education": "Nil",
 					"research_interests": ["VLSI", "Embedded Systems"],
 					"professional_experience": [
-						"K.S.Rangasamy College of Technology (2003-2007)",
-						"P.S.R Engineering College (2007-2008)",
-						"Anna University Regional Campus Tirunelveli (2008-2016)",
-						"Anna University Regional Campus Madurai (2016-2024)",
-						"Anna University Regional Campus Coimbatore (2024- till date)"
-					],
-					"achievements": "Nil",
+						{
+						  "institution": "K.S.Rangasamy College of Technology",
+						  "duration": "2003-2007"
+						},
+						{
+						  "institution": "P.S.R Engineering College",
+						  "duration": "2007-2008"
+						},
+						{
+						  "institution": "Anna University Regional Campus Tirunelveli",
+						  "duration": "2008-2016"
+						},
+						{
+						  "institution": "Anna University Regional Campus Madurai",
+						  "duration": "2016-2024"
+						},
+						{
+						  "institution": "Anna University Regional Campus Coimbatore",
+						  "duration": "2024- till date"
+						}
+					  ]
+					  ,
+					"achievements": "Had very rich experience in the field of Electronics.",
 					"links": {
 						"drive_link": "https://drive.google.com/open?id=1d8Lp38-FsiiSQNxZq1yfq9UWOWVTmtVq"
 					}
+				},
+				{
+					"name": "Dr T Aruldoss Albert Victoire",
+					"position": "Associate Professor",
+					"email": "albert@aurcc.ac.in",
+					"education": [
+						{
+							"degree": "B.Tech.",
+							"institution": "Pondicherry University",
+							"year": 1998
+						},
+						{
+							"degree": "M.E.",
+							"institution": "Madurai Kamaraj University",
+							"year": 2000
+						},
+						{
+							"degree": "Ph.D.",
+							"institution": "Anna University",
+							"year": 2005
+						}
+					],
+					"research_interests": ["Hybrid intelligent optimization algorithms", "Power system operation and control", "Data mining", "Microarray classification", "Scheduling problems"],
+					"professional_experience": [
+						{
+							"position": "Assistant Professor",
+							"institution": "Karunya University, Coimbatore",
+							"duration": "2000-2007"
+						},
+						{
+							"position": "Assistant Professor",
+							"institution": "Anna University of Technology, Coimbatore",
+							"duration": "2008-2012"
+						},
+						{
+							"position": "Assistant Professor",
+							"institution": "Anna University Regional Campus, Coimbatore",
+							"duration": "2012-present"
+						}
+					],
+					"links": {
+						"scholar": "https://scholar.google.com/citations?user=wFhRVKEAAAAJ&hl=en&oi=ao",
+						"orcid": "https://orcid.org/0000-0003-2274-1988",
+						"scopus": "https://www.scopus.com/authid/detail.uri?authorId=8537600900",
+						"vidwan": "https://vidwan.inflibnet.ac.in/profile/277398",
+						"webofscience": "https://www.webofscience.com/wos/author/rid/V-6247-2018"
+					},
+					"achievements": "Dr. Albert received the B.Tech. degree from Pondicherry University, Pondicherry, India, the M.E. degree from Madurai Kamaraj University, Madurai, India, and the Ph.D. degree from Anna University, Chennai, India, in 1998, 2000, and 2005, respectively, all in electrical engineering.",
+					"drive_link": "https://drive.google.com/open?id=1C8_wsKV2NZi_iH8l4btc9RTmUDo4z7dg"
 				}
+				
 			]
 		},       
         "scope":[
