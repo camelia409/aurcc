@@ -137,13 +137,21 @@
           </div>
 
 
-          <div id="achievements" class="mb-8 lg:w-4/6 mx-auto py-20">
-            <h2 class="text-2xl font-bold mb-4">Achievements</h2>
-            <ul class="list-disc pl-4">
-              <li v-for="achievement in department.achievements" :key="achievement.name">
-                <strong>{{ achievement.name }} ({{ achievement.year }}):</strong> {{ achievement.description }}
-              </li>
-            </ul>
+          <div id="achievements" class="mb-8 lg:w-4/6 mx-auto py-20 bg-gray-50 rounded-lg shadow-lg">
+            <h2 class="text-3xl font-extrabold mb-6 text-center text-gray-800">Achievements</h2>
+            <div class="list-disc pl-8 space-y-4">
+              <div v-for="achievement in department.achievements" :key="achievement.name" class="bg-white p-4 rounded-lg shadow-sm">
+                <div class="text-lg font-semibold text-gray-700">
+                  {{ achievement.event }} ({{ achievement.date }}):
+                </div>
+                <div class="text-gray-600">
+                  {{ achievement.organized_by }} - <span class="font-medium">{{ achievement.name }}</span>
+                </div>
+                <div class="font-bold text-blue-600 mt-1">
+                  {{ achievement.awards }}
+                </div>
+               </div>
+            </div>
           </div>
             <div id="facility" class="lg:w-4/6 mx-auto">
               <h2 class="text-2xl font-bold mb-4">Facility</h2>

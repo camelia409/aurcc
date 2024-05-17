@@ -271,71 +271,287 @@
             "placement_percentage": "85%"
         },
         "achievements": [
-				  {
-					"name": "Conferences Organised",
-					"description": "2"
-				  },
-				  {
-					"name": "Workshops Conducted",
-					"description": "6"
-				  },
-				  {
-					"name": "Papers presented by Students",
-					"description": "50 (State Level/ National level / International Level Conferences / Seminars/Journals)"
-				  },
-				  {
-					"name": "Papers presented/ Publications by Staff Members",
-					"description": "35 (State Level/ National level/ International Level Conferences)"
-				  },
-				  {
-					"name": "Symposium Organised",
-					"description": "2"
-				  },
-				  {
-					"name": "Faculty Development Programme Organized",
-					"description": "9"
-				  }
-				],
-				"notable_achievements": [
-				  {
-					"name": "Student Participation in ACM SAC 2014",
-					"description": "One of our students in the final year of the fourth semester, specializing in Computer Science and Engineering (Network Engineering), participated in ACM SAC 2014 in Korea. This international conference was organized by Microsoft, where he presented his project on Cloud Computing security and received appreciation. He was the only student from India among the 16 participants worldwide."
-				  }
-				],
-		"facilities": [
-					{
-					   
-						"name": "Python Laboratory",
-						"description": "In a Python programming laboratory at a college, students learn to write, test, and debug Python programs. They explore conditionals, loops, and functions for structuring their code. Additionally, they gain proficiency in handling compound data using Python lists, tuples, and dictionaries, as well as reading and writing data from/to files. The lab aims to equip students with practical programming skills and a solid foundation in Python.",
-						"room no": "216",
-						"image": "py.jpg"
-					  
-					},
-					{
-				
-						"name": "Database Laboratory",
-						"description": "In a college database management laboratory, students gain foundational knowledge in database concepts, technology, and practice. They learn SQL programming through various database problems, develop applications using front-end tools, and work with back-end DBMS. The lab covers topics such as data definition languages (DDL), data manipulation language (DML) commands, high-level programming language extensions, front-end tools, forms, triggers, menu design, reports, and practical exercises using open-source software like MySQL.",
-						"room no": "217",
-						"image": "db.jpg"
-					  
-					},
-					{
-					
-						"name": "IDEA Laboratory",
-						"description": "The AICTE-IDEA (Idea Development, Evaluation & Application) Lab is established in AICTE-approved institutions to encourage students to apply science, technology, engineering, and mathematics (STEM) fundamentals. This lab provides hands-on experience, fosters creativity, and trains students in critical thinking, problem-solving, and collaboration. The IDEA Lab aims to transform education by converting ideas into prototypes, promoting imaginative thinking, and preparing graduates for the 21st-century workplace.",
-						"room no": "202",
-						"image": "idea.jpg"
-					  
-					},
-					{
-					  
-						"name": "Cybersecurity Laboratory",
-						"description": "A college cybersecurity lab is a hands-on learning environment equipped with simulated networks and security tools. Students practice ethical hacking techniques, analyze malware, and defend against cyberattacks in a safe space. These labs, often led by cybersecurity professors, prepare students for industry certifications and careers in information security.",
-						"room no": "222",
-						"image": "cb.jpg"
-					  
-					}
-				  ],
+			{
+			"name": "ARUN MANI J",
+			"event": "SAFETYTHON (A Road Safety Hackathon)",
+			"organized_by": "UYIR Trust at Kumaraguru College of Technology, Coimbatore",
+			"date": "19.04.2023",
+			"awards": "First Prize Rs.12000 with certificate and medals"
+			},
+			{
+			"name": "ARUN MANI J",
+			"event": "IDEATHON 2023 (A Road Safety Hackathon)",
+			"organized_by": "KPR Institute of Technology, Coimbatore",
+			"date": "05.04.2023",
+			"awards": "First Prize with certificate and medals"
+			},
+			{
+			"name": "PREM KUMAR S",
+			"event": "INNOVATE’ 23",
+			"organized_by": "Dr. N.G.P. Institute of Technology, Coimbatore",
+			"date": "25.03.2023",
+			"awards": "First Prize Rs.10000 with certificate and medals"
+			},
+			{
+			"name": "YAZHINI M",
+			"event": "Code’ O Clock” (24 Hours Hackathon)",
+			"organized_by": "Coimbatore Institute of Technology, Coimbatore",
+			"date": "02.06.2023 & 03.06.2023",
+			"awards": "First Prize Rs.12500 with certificate"
+			},
+			{
+			"name": "SUGANILAVAN S",
+			"event": "Kalaignar Nootrandu Vizha (Speech Competition)",
+			"organized_by": "Shanmuganathan Engg College,Thirumayam",
+			"date": "25.09.2023",
+			"awards": "Second Prize Rs.5000 with certificate and shield"
+			},
+			{
+			"name": "NITHISHWARAN A",
+			"event": "21st Junior State Throwball Championship",
+			"organized_by": "VSI Group of Institutions, Salem",
+			"date": "06.10.2023-08.10.2023",
+			"awards": "Third Prize with certificate and medal"
+			},
+			{
+			"name": "SUGANILAVAN S",
+			"event": "Kalaignar Nootrandu Vizha (Speech Competition)",
+			"organized_by": "PPG Inst of Tech,Coimbatore",
+			"date": "13.10.2023",
+			"awards": "Second Prize Rs.5000 with certificate and shield"
+			},
+			{
+			"name": "SUGANILAVAN S",
+			"event": "Kalaignar Nootrandu Vizha (Speech Competition)",
+			"organized_by": "Anna University Regional Campus Coimbatore",
+			"date": "17.10.2023",
+			"awards": "First Prize Rs.10000 with certificate"
+			},
+			{
+			"name": "NARMATHA R",
+			"event": "Kalaignar Nootrandu Vizha (Writing Competition)",
+			"organized_by": "Anna University Regional Campus Coimbatore",
+			"date": "17.10.2023",
+			"awards": "Third Prize Rs.5000 with certificate"
+			},
+			{
+			"name": "SHRUTI S",
+			"event": "Anna University Zone XI Athletic Championship (100m & 200m)",
+			"organized_by": "Kumaraguru College of Technology,Coimbatore",
+			"date": "18.10.2023-20.10.2023",
+			"awards": "Second Prize with Silver medal and Certificate"
+			},
+			{
+			"name": "AMARNATHAN V",
+			"event": "Anna University Zone XI Athletic Championship (Decathlon event)",
+			"organized_by": "Kumaraguru College of Technology,Coimbatore",
+			"date": "18.10.2023-20.10.2023",
+			"awards": "First Prize with Gold medal and Certificate"
+			},
+			{
+			"name": "VARUN KUMAR S",
+			"event": "Anna University Zone XI Athletic Championship (10000m & 5000m)",
+			"organized_by": "Kumaraguru College of Technology,Coimbatore",
+			"date": "18.10.2023-20.10.2023",
+			"awards": "Second Prize with Silver medal and Certificate(10000m), Third Prize with Bronze medal and Certificate(5000m)"
+			},
+			{
+			"name": "SHRUTI S",
+			"event": "Anna University Zone XI Athletic Championship (4x400m Women's Relay)",
+			"organized_by": "Kumaraguru College of Technology,Coimbatore",
+			"date": "18.10.2023-20.10.2023",
+			"awards": "Second Prize with Silver medal and Certificate"
+			},
+			{
+			"name": "SUGANILAVAN S",
+			"event": "Kalaignar Nootrandu Vizha (Speech Competition)",
+			"organized_by": "Anna University Chennai",
+			"date": "31.10.2023",
+			"awards": "First Prize Rs.20000 with certificate and shield"
+			},
+			{
+			"name": "SUGANILAVAN S",
+			"event": "Kalaignar Nootrandu Vizha (Speech Competition)",
+			"organized_by": "Subhabharathi Arts and Science College,Pudukottai",
+			"date": "04.11.2023",
+			"awards": "First Prize Rs.10000 with certificate and shield"
+			},
+			{
+			"name": "SUGANILAVAN S",
+			"event": "Kalaignar Nootrandu Vizha (Speech Competition)",
+			"organized_by": "Anna University Regional Campus Coimbatore",
+			"date": "15.11.2023",
+			"awards": "First Prize Rs.3000"
+			},
+			{
+			"name": "SUGANILAVAN S",
+			"event": "Bharathi Mozhigalin Thiruvizha (Speech Competition)",
+			"organized_by": "Semmozhi Tamil Aivu Central Institute, Chennai and Anna University Regional Campus Coimbatore",
+			"date": "11.12.2023",
+			"awards": "First Prize Rs.5000 with certificate"
+			},
+			{
+			"name": "NITHISHWARAN A",
+			"event": "33rd Junior National Throwball Championship",
+			"organized_by": "TNGR Memorial Hr.Sec.School,Coimbatore",
+			"date": "27.12.2023 to 30.12.2023",
+			"awards": "Second Prize Silver medal and certificate"
+			},
+			{
+			"name": "AKILAN M",
+			"event": "Tech Connection event (XPLOSION 2K24 Symposium)",
+			"organized_by": "Sri Ramakrishna Institute of Technology,Coimbatore",
+			"date": "12.02.2024",
+			"awards": "First Prize Rs.500 with certificate"
+			},
+			{
+			"name": "HARSHITHA K M",
+			"event": "Technical Paper Presentation (VARNAM’24 Symposium)",
+			"organized_by": "Karpagam Institute of Technology,Coimbatore",
+			"date": "21.03.2024",
+			"awards": "Third Prize Certificate and medal"
+			},
+			{
+			"name": "ARUN MANI J",
+			"event": "SAFETYTHON (A Road Safety Hackathon)",
+			"organized_by": "UYIR Trust at Kumaraguru College of Technology, Coimbatore",
+			"date": "19.04.2023",
+			"awards": "First Prize Rs.12000 with certificate and medals"
+			},
+			{
+			"name": "ARUN MANI J",
+			"event": "IDEATHON 2023 (A Road Safety Hackathon)",
+			"organized_by": "KPR Institute of Technology, Coimbatore",
+			"date": "05.04.2023",
+			"awards": "First Prize with certificate and medals"
+			},
+			{
+			"name": "PREM KUMAR S",
+			"event": "INNOVATE’ 23",
+			"organized_by": "Dr. N.G.P. Institute of Technology, Coimbatore",
+			"date": "25.03.2023",
+			"awards": "First Prize Rs.10000 with certificate and medals"
+			},
+			{
+			"name": "YAZHINI M",
+			"event": "Code’ O Clock” (24 Hours Hackathon)",
+			"organized_by": "Coimbatore Institute of Technology, Coimbatore",
+			"date": "02.06.2023 & 03.06.2023",
+			"awards": "First Prize Rs.12500 with certificate"
+			},
+			{
+			"name": "SUGANILAVAN S",
+			"event": "Kalaignar Nootrandu Vizha (Speech Competition)",
+			"organized_by": "Shanmuganathan Engg College,Thirumayam",
+			"date": "25.09.2023",
+			"awards": "Second Prize Rs.5000 with certificate and shield"
+			},
+			{
+			"name": "NITHISHWARAN A",
+			"event": "21st Junior State Throwball Championship",
+			"organized_by": "VSI Group of Institutions, Salem",
+			"date": "06.10.2023-08.10.2023",
+			"awards": "Third Prize with certificate and medal"
+			},
+			{
+			"name": "SUGANILAVAN S",
+			"event": "Kalaignar Nootrandu Vizha (Speech Competition)",
+			"organized_by": "PPG Inst of Tech,Coimbatore",
+			"date": "13.10.2023",
+			"awards": "Second Prize Rs.5000 with certificate and shield"
+			},
+			{
+			"name": "SUGANILAVAN S",
+			"event": "Kalaignar Nootrandu Vizha (Speech Competition)",
+			"organized_by": "Anna University Regional Campus Coimbatore",
+			"date": "17.10.2023",
+			"awards": "First Prize Rs.10000 with certificate"
+			},
+			{
+			"name": "NARMATHA R",
+			"event": "Kalaignar Nootrandu Vizha (Writing Competition)",
+			"organized_by": "Anna University Regional Campus Coimbatore",
+			"date": "17.10.2023",
+			"awards": "Third Prize Rs.5000 with certificate"
+			},
+			{
+			"name": "SHRUTI S",
+			"event": "Anna University Zone XI Athletic Championship (100m & 200m)",
+			"organized_by": "Kumaraguru College of Technology,Coimbatore",
+			"date": "18.10.2023-20.10.2023",
+			"awards": "Second Prize with Silver medal and Certificate"
+			},
+			{
+			"name": "AMARNATHAN V",
+			"event": "Anna University Zone XI Athletic Championship (Decathlon event)",
+			"organized_by": "Kumaraguru College of Technology,Coimbatore",
+			"date": "18.10.2023-20.10.2023",
+			"awards": "First Prize with Gold medal and Certificate"
+			},
+			{
+			"name": "VARUN KUMAR S",
+			"event": "Anna University Zone XI Athletic Championship (10000m & 5000m)",
+			"organized_by": "Kumaraguru College of Technology,Coimbatore",
+			"date": "18.10.2023-20.10.2023",
+			"awards": "Second Prize with Silver medal and Certificate(10000m), Third Prize with Bronze medal and Certificate(5000m)"
+			},
+			{
+			"name": "SHRUTI S",
+			"event": "Anna University Zone XI Athletic Championship (4x400m Women's Relay)",
+			"organized_by": "Kumaraguru College of Technology,Coimbatore",
+			"date": "18.10.2023-20.10.2023",
+			"awards": "Second Prize with Silver medal and Certificate"
+			},
+			{
+			"name": "SUGANILAVAN S",
+			"event": "Kalaignar Nootrandu Vizha (Speech Competition)",
+			"organized_by": "Anna University Chennai",
+			"date": "31.10.2023",
+			"awards": "First Prize Rs.20000 with certificate and shield"
+			},
+			{
+			"name": "SUGANILAVAN S",
+			"event": "Kalaignar Nootrandu Vizha (Speech Competition)",
+			"organized_by": "Subhabharathi Arts and Science College,Pudukottai",
+			"date": "04.11.2023",
+			"awards": "First Prize Rs.10000 with certificate and shield"
+			},
+			{
+			"name": "SUGANILAVAN S",
+			"event": "Kalaignar Nootrandu Vizha (Speech Competition)",
+			"organized_by": "Anna University Regional Campus Coimbatore",
+			"date": "15.11.2023",
+			"awards": "First Prize Rs.3000"
+			},
+			{
+			"name": "SUGANILAVAN S",
+			"event": "Bharathi Mozhigalin Thiruvizha (Speech Competition)",
+			"organized_by": "Semmozhi Tamil Aivu Central Institute, Chennai and Anna University Regional Campus Coimbatore",
+			"date": "11.12.2023",
+			"awards": "First Prize Rs.5000 with certificate"
+			},
+			{
+			"name": "NITHISHWARAN A",
+			"event": "33rd Junior National Throwball Championship",
+			"organized_by": "TNGR Memorial Hr.Sec.School,Coimbatore",
+			"date": "27.12.2023 to 30.12.2023",
+			"awards": "Second Prize Silver medal and certificate"
+			},
+			{
+			"name": "AKILAN M",
+			"event": "Tech Connection event (XPLOSION 2K24 Symposium)",
+			"organized_by": "Sri Ramakrishna Institute of Technology,Coimbatore",
+			"date": "12.02.2024",
+			"awards": "First Prize Rs.500 with certificate"
+			},
+			{
+			"name": "HARSHITHA K M",
+			"event": "Technical Paper Presentation (VARNAM’24 Symposium)",
+			"organized_by": "Karpagam Institute of Technology,Coimbatore",
+			"date": "21.03.2024",
+			"awards": "Third Prize Certificate and medal"
+			}
+			],
         "research_and_publications":[
 		"J.Preethi & S.Palaniswami, 'An Intelligent Particle Swarm Optimization for Fuzzy based Heterogeneous Radio Access Technology (RAT) Selection in the International Journal of Intelligent Information Technologies (IJIIT) Vol.8, Issue по. 4, pp. 23-42, 2013. [SNIP: 0.072, SJR: 0.034].",
 
