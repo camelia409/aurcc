@@ -2381,293 +2381,122 @@
                       }
                     ]
                   ,   
-          "faculty": [
-            {
-				"name": "Dr Gomathi R",
-				"position": "Assistant Professor (Senior Grade)",
-				"email": "gomathiucedgl@gmail.com",
-				"education": {
-					"B.E.": "Madurai Kamaraj University, 2002",
-					"M.E.": "Anna University, Chennai, 2004",
-					"Ph.D.": "Anna University, Chennai, 2014"
-				},
-				"research_interests": ["Digital Image Processing", "Neural Networks", "Cryptography Techniques", "Data Mining"],
-				"professional_experience": [
-					"Lecturer, PSNA CET, Dindigul (May 2004 - May 2009)",
-					"Senior Lecturer, PSNA CET, Dindigul (June 2009 - May 2010)",
-					"Assistant Professor, PSNA CET, Dindigul (June 2010 - Aug 2010)",
-					"Assistant Professor, UCE DGL, Dindigul (Dec 2010 - Dec 2014)",
-					"Assistant Professor (Sr. Grade), UCE DGL, Dindigul (Dec 2014 - Jul 2023)",
-					"Assistant Professor (Sr. Grade), AURCC, Coimbatore (Jul 2023 - Till Date)"
-				],
-				"links": {
-					"email": "gomathi@aurcc.ac.in",
-					"drive_link": "https://drive.google.com/open?id=1rKtEdahJWDFuqVh3YYrTbY0uLLXCpvVN"
-				},
-				"publications": "-"
-				},
+          "faculty": {
+			"hod_desk": [
 				{
-				"name": "Mrs. Thamaraiselvi L",
-				"position": "Executive Assistant",
-				"email": "thams.money@gmail.com",
-				"professional_experience": "Executive Assistant, Anna University Regional Campus Coimbatore (2008-2024)",
-				"description": "I am an executive assistant in Anna University Regional campus Coimbatore. Working 15 years experience  for various departments like Controller of Examinations, Research department, Hostel, Admissions both UG& PG ,Scholarship and university department works.",
-				"links": {
-					"email": "thams.money@gmail.com",
-					"drive_link": "https://drive.google.com/open?id=1mY3HR3_IAc_Wvt5YCKDPqDu2twyQqPNu"
-				},
-				"publications": "-"
-				},
-				{
-				"name": "Dr KIRUBADEVI S",
-				"position": "Assistant Professor (Senior Grade)",
-				"department": "ELECTRICAL AND ELECTRONICS ENGINEERING",
-				"designation": "PLACEMENT FACILITATOR",
-				"email": "kirubadevi@aurcc.ac.in",
-				"education": {
-					"B.E.": "Government College of Engineering,Salem, 2002",
-					"M.E.": "College of Engineering, Guindy, 2008",
-					"Ph.D.": "Anna University, 2022"
-				},
-				"research_interests": ["Renewable Energy Systems", "Smart Grid", "IoT"],
-				"professional_experience": [
-					"Lecturer, Arulmigu Kalasalingam Polytechnic College (June 2004 to Aug 2006)",
-					"Lecturer, Kalasalingam University (Dec-2008-Aug to 2010)",
-					"Assistant Professor, University VOC College of Engineering Thoothukudi (Aug-2010 to Aug 2015)",
-					"Assistant Professor, University College of Engineering Dindigul (Aug-2015 to July 2023)",
-					"Assistant Professor (Sr.Grade), Anna University Regional Campus Coimbatore (July 2023 to till date)"
-				],
-				"links": {
-					"email": "kirubadevi@aurcc.ac.in",
-					"drive_link": "https://drive.google.com/open?id=1eoLxYv77YWZxXr6B9oceHqKTho-W4OEv"
-				},
-				"publications": "-"
-				},
-				{
-				"name": "Dr Sumathi S",
-				"position": "Assistant Professor",
-				"department": "Department of Electrical and Electronics Engineering",
-				"email": "sumathi@aurcc.ac.in",
-				"education": {
-					"B.E.": "Anna University, Chennai, 2006",
-					"M.E.": "Anna University, Chennai, 2008",
-					"Ph.D.": "Anna University, Chennai, 2019"
-				},
-				"research_interests": ["High Voltage Engineering", "Power System", "Electrical Machines", "Soft Computing", "Control System"],
-				"professional_experience": [
-					"LECTURER, SVC COLLEGE OF ENGINEERING AND TECHNOLOGY, TIRUNELVELI (2008 -2010)",
-					"ASSISTANT PROFESSOR, UNIVERSITY VOC COLLEGE OF ENGINEERING THOOTHUKUDI (2010- 2016)",
-					"ASSISTANT PROFESSOR, ANNA UNIVERSITY REGIONAL CAMPUS, COIMBATORE (2016-till date)"
-				],
-				"links": {
-					"google_scholar": "https://scholar.google.com/citations?user=tQDx9GYAAAAJ&hl=en",
-					"orcid_id": "https://orcid.org/0000-0002-2254-4143",
-					"email": "sumathi@aurcc.ac.in",
-					"drive_link": "https://drive.google.com/open?id=1VPa4yufm-R-wm4x67jBVrvcI4KT6QINX"
-				},
-				"publications": [
-					{
-					"type": "Journal",
-					"title": "Critical Investigation of Minimum Field Conductor for Overhead Transmission Lines",
-					"journal": "Middle-East Journal of Scientific Research",
-					"date": "December 2016",
-					"volume": "24",
-					"issue": "12",
-					"pages": "3772-3779",
-					"issn": "1990-9233"
-					},
-					{
-					"type": "Journal",
-					"title": "Enhancement of Efficiency in Nanocoated Induction Motor",
-					"journal": "World Applied Sciences Journal",
-					"volume": "35",
-					"issue": "2",
-					"pages": "325-329",
-					"issn": "1818-4952"
-					},
-					{
-					"type": "Journal",
-					"title": "Performance Analysis of Nanomaterials based Transformer Oil",
-					"journal": "Asian Journal of Research in Social Sciences and Humanities",
-					"volume": "7",
-					"issue": "2",
-					"pages": "678",
-					"issn": "2249-7315"
-					},
-					{
-					"type": "Journal",
-					"title": "Performance of Three Phases Grid Connected Inverter for Low Voltage Weak Grid System Using Super Lift LUO",
-					"journal": "International Journal of Scientific Research and Development",
-					"date": "May 2020",
-					"volume": "8",
-					"issue": "3",
-					"pages": "16-26",
-					"issn": "2321-0613"
-					},
-					{
-					"type": "Journal",
-					"title": "Improvement on the characteristics of transformer oil using nanofluids",
-					"journal": "Current Science",
-					"volume": "118",
-					"issue": "1",
-					"pages": "29",
-					"issn": "00113891"
-					},
-					{
-					"type": "Journal",
-					"title": "Certain performance investigation on hybrid TiO2/Al2O3/MoS2 nanofiller coated 3∅ induction motor: a Taguchi and RSM based approach",
-					"journal": "Energy Reports",
-					"volume": "6",
-					"pages": "1638-1647",
-					"issn": "2352-4847"
-					},
-					{
-					"type": "Journal",
-					"title": "Transformer less Z-Source Inverter using Grid Connected PV System",
-					"journal": "International Journal for Research in Applied Science & Engineering Technology",
-					"volume": "8",
-					"issue": "5",
-					"pages": "45.98",
-					"issn": "2321-9653"
-					},
-					{
-					"type": "Journal",
-					"title": "Three-Port Integrated Topology to Interface Electric Vehicles and Renewables with the Electrical Grid",
-					"journal": "International Journal for Research in Applied Science and Engineering Technology",
-					"date": "May 2020",
-					"volume": "8",
-					"issue": "6",
-					"pages": "16-26",
-					"issn": "2321-9653"
-					},
-					{
-					"type": "Journal",
-					"title": "Investigation of dielectric strength of transformer oil based on hybrid TiO2/Al2O3/MoS2 Nanofluid using taguchi and response surface methodology",
-					"journal": "IETE Journal of Research",
-					"volume": "67",
-					"issue": "6",
-					"pages": "817-825",
-					"issn": "0974780X"
-					},
-					{
-					"type": "Journal",
-					"title": "Analysis of properties and statistical study on partial discharge inception voltage using normal and Weibull distributions for vegetable oil-based nanofluids",
-					"journal": "Biomass Conversion and Biorefinery",
-					"pages": "1-18"
-					},
-					{
-					"type": "Journal",
-					"title": "A study on electro-thermal-physical properties of mixed mineral oil and vegetable oil as an alternative for liquid insulation in power transformers",
-					"journal": "Energy Sources, Part A: Recovery, Utilization, and Environmental Effects",
-					"volume": "46",
-					"issue": "1",
-					"pages": "3601-3617"
-					},
-					{
-					"type": "Conference",
-					"title": "Enhancement of the Characteristics of Natural Ester in Transformer Oil Insulation using Nanofluids",
-					"conference": "Journal of Electronics and Informatics",
-					"volume": "5",
-					"issue": "2",
-					"pages": "124-139",
-					"doi": "10.36548/jei.2023.2.002",
-					"issn": "2582-3825"
-					},
-					{
-					"type": "Conference",
-					"title": "Enhancement of Induction Motor Efficiency using Nanocoated with Enamel",
-					"conference": "Journal of Electronics and Informatics",
-					"volume": "5",
-					"issue": "2",
-					"pages": "140-153",
-					"doi": "10.36548/jei.2023.2.003",
-					"issn": "2582-3825"
-					},
-					{
-					"type": "Conference",
-					"title": "SMART IRRIGATION SYSTEM USING ARDUINO",
-					"conference": "International Educational Scientific Research Journal",
-					"volume": "9",
-					"issue": "6",
-					"pages": "14-20",
-					"doi": "10.21276/2455-295X"
-					},
-					{
-					"type": "Conference",
-					"title": "SMART HOMECARE MACHINE",
-					"conference": "International Educational Scientific Research Journal",
-					"volume": "9",
-					"issue": "6",
-					"pages": "115-118",
-					"doi": "10.21276/2455-295X"
-					},
-					{
-					"type": "Conference",
-					"title": "A NOVEL HIGH GAIN CUK INTEGRATED SEPIC CONVERTER GWO APPROACH FOR DC MICROGRID APPLICATIONS",
-					"conference": "International Educational Scientific Research Journal",
-					"volume": "9",
-					"issue": "6",
-					"pages": "181-187",
-					"doi": "10.21276/2455-295X"
-					}
-				]
-				},
-				{
-				"name": "Dr L.Sheela",
-				"position": "Assistant Professor",
-				"department": "Department of Electrical and Electronics Engineering",
-				"email": "sheelal@aurcc.ac.in",
-				"research_interests": ["VLSI", "Embedded Systems"],
-				"professional_experience": [
-					"K.S.Rangasamy College of Technology (2003-2007)",
-					"P.S.R Engineering College (2007-2008)",
-					"Anna University Regional Campus Tirunelveli (2008-2016)",
-					"Anna University Regional Campus Madurai (2016-2024)",
-					"Anna University Regional Campus Coimbatore (2024- till date)"
-				],
-				"links": {
-					"email": "sheelal@aurcc.ac.in",
-					"drive_link": "https://drive.google.com/open?id=1d8Lp38-FsiiSQNxZq1yfq9UWOWVTmtVq"
-				},
-				"publications": "-"
-				},
-				{
-				"name": "Dr Saravanakumar S",
-				"position": "Assistant Professor",
-				"department": "Department of Electrical and Electronics Engineering",
-				"email": "ssk@aurcc.ac.in",
-				"education": {
-					"B.E.": "PSG College of Technology, Coimbatore",
-					"M.E.": "Government College of Technology, Coimbatore",
-					"Ph.D.": "Anna University, Chennai"
-				},
-				"research_interests": ["Electrical and Electronics Engineering"],
-				"professional_experience": [
-					"Manager Production, Elzone Electronics Pvt. Ltd., Coimbatore (1995-2001)",
-					"Lecturer, Vel Tech Engineering College, Chennai (2001 – 2003)",
-					"Manager Production and R&D,  Risabh Electronics, Coimbatore (2003-2007)",
-					"Lecturer, Anna University Coimbatore (2007-2008)",
-					"Assistant Professor, Anna University Regional Campus, Coimbatore (2008 – Till Date)"
-				],
-				"links": {
-					"google_scholar": "https://scholar.google.com/citations?hl=en&tzom=-330&user=2ON4fs0AAAAJ",
-					"scopus": "https://www.scopus.com/authid/detail.uri?authorId=57226457433",
+					"name": "Dr Saravanakumar S",
+					"position": "Head of the Department",
 					"email": "ssk@aurcc.ac.in",
-					"drive_link": "https://drive.google.com/open?id=12zSXIXrAbk6tUrZzYwxOvKIHacCtUoq3"
-				},
-				"publications": {
-					"national_and_international_conferences": 78,
-					"national_and_international_journals": 17
-				},
-				"membership_in_professional_bodies": ["IEEE", "ISTE", "IAENG", "SDIWC"],
-				"additional_responsibilities": [
-					"IIC Innovation Ambassador - AURCC",
-					"IEEE Student Branch Counseller - AURCC",
-					"AISHE – Nodal Officer - AURCC",
-					"Member – Prevention of Caste based Discrimination Committee – AURCC"
-				]
+					"education": {
+						"B.E.": "PSG College of Technology, Coimbatore",
+						"M.E.": "Government College of Technology, Coimbatore",
+						"Ph.D.": "Anna University, Chennai"
+					},
+					"research_interests": ["Electrical and Electronics Engineering"],
+					"professional_experience": [
+						"Manager Production, Elzone Electronics Pvt. Ltd., Coimbatore (1995-2001)",
+						"Lecturer, Vel Tech Engineering College, Chennai (2001 – 2003)",
+						"Manager Production and R&D, Risabh Electronics, Coimbatore (2003-2007)",
+						"Lecturer, Anna University Coimbatore (2007-2008)",
+						"Assistant Professor, Anna University Regional Campus, Coimbatore (2008 – Till Date)"
+					],
+					"achievements": "Nil",
+					"links": {
+						"google_scholar": "https://scholar.google.com/citations?hl=en&tzom=-330&user=2ON4fs0AAAAJ",
+						"scopus": "https://www.scopus.com/authid/detail.uri?authorId=57226457433",
+						"drive_link": "https://drive.google.com/open?id=12zSXIXrAbk6tUrZzYwxOvKIHacCtUoq3"
+					}
 				}
-        ],       
+			],
+			"assistant_professors": [
+				{
+					"name": "Dr Gomathi R",
+					"position": "Assistant Professor (Senior Grade)",
+					"email": "gomathiucedgl@gmail.com",
+					"education": {
+						"B.E.": "Madurai Kamaraj University, 2002",
+						"M.E.": "Anna University, Chennai, 2004",
+						"Ph.D.": "Anna University, Chennai, 2014"
+					},
+					"research_interests": ["Digital Image Processing", "Neural Networks", "Cryptography Techniques", "Data Mining"],
+					"professional_experience": [
+						"Lecturer, PSNA CET, Dindigul (May 2004 - May 2009)",
+						"Senior Lecturer, PSNA CET, Dindigul (June 2009 - May 2010)",
+						"Assistant Professor, PSNA CET, Dindigul (June 2010 - Aug 2010)",
+						"Assistant Professor, UCE DGL, Dindigul (Dec 2010 - Dec 2014)",
+						"Assistant Professor (Sr. Grade), UCE DGL, Dindigul (Dec 2014 - Jul 2023)",
+						"Assistant Professor (Sr. Grade), AURCC, Coimbatore (Jul 2023 - Till Date)"
+					],
+					"achievements": "Nil",
+					"links": {
+						"email": "gomathi@aurcc.ac.in",
+						"drive_link": "https://drive.google.com/open?id=1rKtEdahJWDFuqVh3YYrTbY0uLLXCpvVN"
+					}
+				},
+				{
+					"name": "Dr KIRUBADEVI S",
+					"position": "Assistant Professor (Senior Grade)",
+					"email": "kirubadevi@aurcc.ac.in",
+					"education": {
+						"B.E.": "Government College of Engineering,Salem, 2002",
+						"M.E.": "College of Engineering, Guindy, 2008",
+						"Ph.D.": "Anna University, 2022"
+					},
+					"research_interests": ["Renewable Energy Systems", "Smart Grid", "IoT"],
+					"professional_experience": [
+						"Lecturer, Arulmigu Kalasalingam Polytechnic College (June 2004 to Aug 2006)",
+						"Lecturer, Kalasalingam University (Dec-2008-Aug to 2010)",
+						"Assistant Professor, University VOC College of Engineering Thoothukudi (Aug-2010 to Aug 2015)",
+						"Assistant Professor, University College of Engineering Dindigul (Aug-2015 to July 2023)",
+						"Assistant Professor (Sr.Grade), Anna University Regional Campus Coimbatore (July 2023 to till date)"
+					],
+					"achievements": "Nil",
+					"links": {
+						"drive_link": "https://drive.google.com/open?id=1eoLxYv77YWZxXr6B9oceHqKTho-W4OEv"
+					}
+				},
+				{
+					"name": "Dr Sumathi S",
+					"position": "Assistant Professor",
+					"email": "sumathi@aurcc.ac.in",
+					"education": {
+						"B.E.": "Anna University, Chennai, 2006",
+						"M.E.": "Anna University, Chennai, 2008",
+						"Ph.D.": "Anna University, Chennai, 2019"
+					},
+					"research_interests": ["High Voltage Engineering", "Power System", "Electrical Machines", "Soft Computing", "Control System"],
+					"professional_experience": [
+						"LECTURER, SVC COLLEGE OF ENGINEERING AND TECHNOLOGY, TIRUNELVELI (2008 -2010)",
+						"ASSISTANT PROFESSOR, UNIVERSITY VOC COLLEGE OF ENGINEERING THOOTHUKUDI (2010- 2016)",
+						"ASSISTANT PROFESSOR, ANNA UNIVERSITY REGIONAL CAMPUS, COIMBATORE (2016-till date)"
+					],
+					"achievements": "Nil",
+					"links": {
+						"google_scholar": "https://scholar.google.com/citations?user=tQDx9GYAAAAJ&hl=en",
+						"orcid_id": "https://orcid.org/0000-0002-2254-4143",
+						"drive_link": "https://drive.google.com/open?id=1VPa4yufm-R-wm4x67jBVrvcI4KT6QINX"
+					}
+				},
+				{
+					"name": "Dr L.Sheela",
+					"position": "Assistant Professor",
+					"email": "sheelal@aurcc.ac.in",
+					"education": "Nil",
+					"research_interests": ["VLSI", "Embedded Systems"],
+					"professional_experience": [
+						"K.S.Rangasamy College of Technology (2003-2007)",
+						"P.S.R Engineering College (2007-2008)",
+						"Anna University Regional Campus Tirunelveli (2008-2016)",
+						"Anna University Regional Campus Madurai (2016-2024)",
+						"Anna University Regional Campus Coimbatore (2024- till date)"
+					],
+					"achievements": "Nil",
+					"links": {
+						"drive_link": "https://drive.google.com/open?id=1d8Lp38-FsiiSQNxZq1yfq9UWOWVTmtVq"
+					}
+				}
+			]
+		},       
         "scope":[
                 "The Department aims to impart the Students a learning Experience in understanding the fundamental concepts of Electrical & Electronics Engineering built on the Foundation of Science, Mathematics, Computing and Technology by active learning process with dedicated faculty members and extensive laboratory facilities so as to prepare them for their Professional Careers.",
                 " It also prepares the students to meet the growing global challenges of Engineering Industries by educating them to become highly professional Electrical and Electronics Engineers of high ethics. The Department produces highly qualified Engineers not only to meet the Global environment but also to build a developed nation."
