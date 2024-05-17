@@ -16,7 +16,7 @@
 
       <!-- Horizontal Tabs -->
       <div class="sticky top-0 bg-white shadow-md z-10 hidden md:block">
-        <div class="flex justify-between  px-9">
+        <div class="flex justify-between  px-9 ">
           <nav role="tablist" class="tabs tabs-bordered">
             <button role="tab"
               v-for="(section, index) in sections"
@@ -26,7 +26,7 @@
                 'bg-gray-200 tab-active': currentSection === section,
                 'text-gray-600 hover:bg-gray-100': currentSection !== section
               }"
-              class="font-semibold p-4 h-full transition duration-300 ease-in-out tab"
+              class="font-semibold p-4 h-full transition duration-300 ease-in-out tab text-xl"
             >
               {{ section }}
             </button>
@@ -177,15 +177,14 @@
             <!-- HOD Desk -->
             <div class="mb-8">
               <h3 class="text-xl font-semibold mb-2">HOD Desk</h3>
-              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div v-for="staff in department.faculty.hod_desk" :key="staff.email" class="p-4 border rounded-lg bg-blue-50">
-                  <div class="flex items-center mb-4">
-                    <img :src="'http://localhost:5173/src/assets/' + staff.image" alt="{{ staff.name }}" class="w-16 h-16 rounded-full mr-4">
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 " >
+                <div v-for="staff in department.faculty.hod_desk" :key="staff.email" class="p-4 border rounded-lg hover:cursor-pointer" @click="showDetails(staff)">
+                  <div class="flex items-center">
+                    <img :src="'http://localhost:5173/src/assets/' + staff.image" :alt="staff.name " class="w-32 h-32 rounded-lg object-cover mr-4">
                     <div>
                       <h4 class="text-lg font-semibold">{{ staff.name }}</h4>
                       <p class="text-gray-600">{{ staff.position }}</p>
                       <p class="text-gray-600">{{ staff.email }}</p>
-                      <button @click="showDetails(staff)" class="text-blue-500 hover:underline focus:outline-none">Show Details</button>
                     </div>
                   </div>
                 </div>
@@ -196,89 +195,92 @@
             <div>
               <h3 class="text-xl font-semibold mb-2">Assistant Professors</h3>
               <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div v-for="staff in department.faculty.assistant_professors" :key="staff.email" class="p-4 border rounded-lg">
-                  <div class="flex items-center mb-4">
-                    <img :src="'http://localhost:5173/src/assets/' + staff.image" alt="{{ staff.name }}" class="w-16 h-16 rounded-full mr-4">
+                <div v-for="staff in department.faculty.assistant_professors" :key="staff.email" class="p-4 border rounded-lg hover:cursor-pointer" @click="showDetails(staff)">
+                  <div class="flex items-center">
+                    <img :src="'http://localhost:5173/src/assets/' + staff.image" :alt="staff.name " class="w-32 h-32 rounded-lg object-cover mr-4">
                     <div>
                       <h4 class="text-lg font-semibold">{{ staff.name }}</h4>
                       <p class="text-gray-600">{{ staff.position }}</p>
                       <p class="text-gray-600">{{ staff.email }}</p>
-                      <button @click="showDetails(staff)" class=" focus:outline-none">Show Details</button>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
 
+
+
             <div v-if="showPopover" class="modal modal-open">
-  <div class="modal-box relative max-h-[85vh] rounded-lg flex flex-col max-w-4xl p-6">
-    <!-- Close Button -->
-    <button @click="showPopover = false" class="btn btn-sm btn-circle absolute right-2 top-2">✕</button>
+              <div class="modal-box relative rounded-lg flex flex-col max-w-4xl p-6">
+                <!-- Close Button -->
+                <button @click="showPopover = false" class="btn btn-sm btn-circle absolute right-2 top-2">✕</button>
 
-    <!-- Heading -->
-    <h1 class="text-violet-600 font-bold text-2xl mb-4 text-center w-full">FACULTY DETAILS</h1>
+                <!-- Heading -->
+                <h1 class="font-bold text-3xl mb-10 text-center w-full">FACULTY DETAILS</h1>
 
-    <div class="flex flex-col md:flex-row">
-      <!-- Scrollable Details -->
-      <div class="overflow-auto flex-grow max-h-[75vh] pr-6 no-scrollbar shadow-inner">
-        <h3 class="text-xl font-semibold"><strong>Position:</strong> {{ selectedStaff.position }}</h3>
-        <h3 class="text-xl font-semibold"><strong>Email:</strong> {{ selectedStaff.email }}</h3>
+                <div class="flex flex-col md:flex-row">
+                  <!-- Fixed Image -->
+                  <div class="flex-shrink-0 text-center mt-4 md:mt-0 my-auto mr-8" >
+                    <img :src="'http://localhost:5173/src/assets/' + selectedStaff.image" alt="Profile Picture" class="h-96 w-72 rounded-lg shadow-lg object-cover">
+                    <h2 class="text-lg font-semibold mt-4">{{ selectedStaff.name }}</h2>
+                  </div>
 
-        <!-- Education -->
-        <template v-if="selectedStaff.education">
-          <h3 class="text-md font-semibold mt-4"><strong>Education</strong></h3>
-          <ul class="list-disc ml-6">
-            <li v-for="edu in selectedStaff.education" :key="edu.degree">{{ edu.degree }}, {{ edu.institution }} ({{ edu.year }})</li>
-          </ul>
-        </template>
+                  <!-- Scrollable Details -->
+                  <div class="md:overflow-auto flex-grow max-h-[50vh] pr-6  shadow-inner">
+                    <h3 class="text-xl font-semibold"><strong>Position:</strong> {{ selectedStaff.position }}</h3>
+                    <h3 class="text-xl font-semibold"><strong>Email:</strong> {{ selectedStaff.email }}</h3>
 
-        <!-- Professional Experience -->
-        <template v-if="selectedStaff.professional_experience">
-          <h3 class="text-md font-semibold mt-4"><strong>Professional Experience</strong></h3>
-          <ul class="list-disc ml-6">
-            <li v-for="exp in selectedStaff.professional_experience" :key="exp.position">{{ exp.position }}, {{ exp.institution }} ({{ exp.duration }})</li>
-          </ul>
-        </template>
+                    <!-- Education -->
+                    <template v-if="selectedStaff.education">
+                      <h3 class="text-md font-semibold mt-4"><strong>Education</strong></h3>
+                      <ul class="list-disc ml-6">
+                        <li v-for="edu in selectedStaff.education" :key="edu.degree">{{ edu.degree }}, {{ edu.institution }} ({{ edu.year }})</li>
+                      </ul>
+                    </template>
 
-        <!-- Research Interests -->
-        <template v-if="selectedStaff.research_interests">
-          <h3 class="text-md font-semibold mt-4"><strong>Research Interests</strong></h3>
-          <ul class="list-disc ml-6">
-            <li v-for="interest in selectedStaff.research_interests" :key="interest">{{ interest }}</li>
-          </ul>
-        </template>
+                    <!-- Professional Experience -->
+                    <template v-if="selectedStaff.professional_experience">
+                      <h3 class="text-md font-semibold mt-4"><strong>Professional Experience</strong></h3>
+                      <ul class="list-disc ml-6">
+                        <li v-for="exp in selectedStaff.professional_experience" :key="exp.position">{{ exp.position }}, {{ exp.institution }} ({{ exp.duration }})</li>
+                      </ul>
+                    </template>
 
-        <!-- Achievements -->
-        <template v-if="selectedStaff.achievements">
-          <h3 class="text-md font-semibold mt-4"><strong>Achievements</strong></h3>
-          <ul class="list-disc ml-6">
-            <li v-for="achievement in selectedStaff.achievements" :key="achievement">{{ achievement }}</li>
-          </ul>
-        </template>
+                    <!-- Research Interests -->
+                    <template v-if="selectedStaff.research_interests">
+                      <h3 class="text-md font-semibold mt-4"><strong>Research Interests</strong></h3>
+                      <ul class="list-disc ml-6">
+                        <li v-for="interest in selectedStaff.research_interests" :key="interest">{{ interest }}</li>
+                      </ul>
+                    </template>
 
-        <!-- Links -->
-        <template v-if="selectedStaff.links">
-          <h3 class="text-md font-semibold mt-4"><strong>Links</strong></h3>
-          <ul class="list-disc ml-6">
-            <li v-for="(link, title) in selectedStaff.links" :key="title"><a :href="link" target="_blank" class="text-violet-600 hover:underline">{{ title }}</a></li>
-          </ul>
-        </template>
+                    <!-- Achievements -->
+                    <template v-if="selectedStaff.achievements">
+                      <h3 class="text-md font-semibold mt-4"><strong>Achievements</strong></h3>
+                      <ul class="list-disc ml-6">
+                        <li v-for="achievement in selectedStaff.achievements" :key="achievement">{{ achievement }}</li>
+                      </ul>
+                    </template>
 
-        <!-- Additional Details -->
-        <template v-if="selectedStaff.additional_details">
-          <h3 class="text-md font-semibold mt-4">Additional Details</h3>
-          <p>{{ selectedStaff.additional_details }}</p>
-        </template>
-      </div>
+                    <!-- Links -->
+                    <template v-if="selectedStaff.links">
+                      <h3 class="text-md font-semibold mt-4"><strong>Links</strong></h3>
+                      <ul class="list-disc ml-6">
+                        <li v-for="(link, title) in selectedStaff.links" :key="title"><a :href="link" target="_blank" class="text-violet-600 hover:underline">{{ title }}</a></li>
+                      </ul>
+                    </template>
 
-      <!-- Fixed Image -->
-      <div class="flex-shrink-0 text-center mt-4 md:mt-0">
-        <img :src="'http://localhost:5173/src/assets/' + selectedStaff.image" alt="Profile Picture" class="h-96 w-72 rounded-lg shadow-lg object-cover">
-        <h2 class="text-lg font-semibold mt-4">{{ selectedStaff.name }}</h2>
-      </div>
-    </div>
-  </div>
-</div>
+                    <!-- Additional Details -->
+                    <template v-if="selectedStaff.additional_details">
+                      <h3 class="text-md font-semibold mt-4">Additional Details</h3>
+                      <p>{{ selectedStaff.additional_details }}</p>
+                    </template>
+                  </div>
+
+
+                </div>
+              </div>
+            </div>
 
 
           </div>
@@ -288,19 +290,19 @@
           <div id="administration-and-technical-staff" class="lg:w-4/6 mx-auto">
             <h2 class="text-2xl font-bold mb-4">Administration and Technical Staff</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div v-for="staff in department.admin_staff" :key="staff.email" class="bg-white shadow-md rounded-md p-4">
+              <div v-for="staff in department.admin_staff" :key="staff.email" class="bg-white border-2 border-gray-200 rounded-md p-4">
                 <h3 class="text-lg font-semibold">{{ staff.name }}</h3>
                 <p>{{ staff.position }}</p>
                 <p>{{ staff.email}}</p>
               </div>
             </div>
           </div>
-          <div id="proud-alumni" class="lg:w-4/6 mx-auto">
+          <!-- <div id="proud-alumni" class="lg:w-4/6 mx-auto">
             <h2 class="text-2xl font-bold mb-4">Proud Alumni</h2>
             <ul class="list-disc pl-4">
               {{ department.proud_alumni }}
             </ul>
-          </div>
+          </div> -->
         </div>
         <div id="research-and-publications" class="mb-8 lg:w-4/6 mx-auto py-20">
           <h2 class="text-2xl font-bold mb-4">Research and Publications</h2>
@@ -329,7 +331,7 @@ export default {
         'Facility',
         'Faculty',
         'Administration and Technical Staff',
-        'Proud Alumni',
+        // 'Proud Alumni',
         'Research and Publications',
       ],
       events: null,
