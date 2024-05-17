@@ -73,6 +73,11 @@ const router = createRouter({
       path: '/tamilmandram/',
       name: 'tamilmandram',
       component: ()=> import('../views/Tamilmandram.vue')
+    },
+    {
+      path: '/sports/',
+      name: 'sports',
+      component: ()=> import('../views/Sports.vue')
     }
   ]
 })
