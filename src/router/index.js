@@ -88,6 +88,11 @@ const router = createRouter({
       path: '/fine-arts/',
       name: 'fine-arts club',
       component: ()=> import('../views/FineArtsClub.vue')
+    },
+    {
+      path: '/admission/',
+      name: 'admission',
+      component: ()=> import('../views/AdmissionView.vue')
     }
   ]
 })
