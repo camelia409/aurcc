@@ -78,6 +78,11 @@ const router = createRouter({
       path: '/sports/',
       name: 'sports',
       component: ()=> import('../views/Sports.vue')
+    },
+    {
+      path: '/alumni/',
+      name: 'alumni',
+      component: ()=> import('../views/Alumni.vue')
     }
   ]
 })
