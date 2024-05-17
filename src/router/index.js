@@ -83,6 +83,11 @@ const router = createRouter({
       path: '/alumni/',
       name: 'alumni',
       component: ()=> import('../views/Alumni.vue')
+    },
+    {
+      path: '/fine-arts/',
+      name: 'fine-arts club',
+      component: ()=> import('../views/FineArtsClub.vue')
     }
   ]
 })
