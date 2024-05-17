@@ -116,7 +116,6 @@ import { RouterLink, RouterView } from 'vue-router'
             </li>
             <li><a href="/hostel">Hostel</a></li>
             <li><a>Contact</a></li>
-            <li><input type="checkbox" value="synthwave" class="toggle theme-controller"/></li>
           </ul>
         </div>
       </nav>
