@@ -153,24 +153,24 @@
                </div>
             </div>
           </div>
-            <div id="facility" class="lg:w-4/6 mx-auto">
-              <h2 class="text-2xl font-bold mb-4">Facility</h2>
+          <div id="facility" class="lg:w-4/6 mx-auto">
+            <h2 class="text-2xl font-bold mb-4">Facility</h2>
               <div class="grid gap-8">
                 <div 
-                  v-for="(facility, index) in department.facilities" 
+                  v-for="(facility, index) in department.facility" 
                   :key="facility.name" 
                   :class="index % 2 === 0 ? 'bg-white shadow-md rounded-md p-4 flex flex-col md:flex-row' : 'bg-white shadow-md rounded-md p-4 flex flex-col md:flex-row-reverse'"
                 >
-                  <div class="md:w-1/2 p-4">
+                <div class="md:w-1/2 p-4">
                     <h3 class="text-lg font-semibold">{{ facility.name }}</h3>
                     <p>{{ facility.description }}</p>
-                  </div>
-                  <div class="md:w-1/2 p-4 flex justify-center items-center">
-                    <img :src="'http://localhost:5173/src/assets/' + facility.image" :alt="facility.name" class="w-full h-auto max-w-xs">
-                  </div>
                 </div>
-              </div> 
-            </div>
+                <div class="md:w-1/2 p-4 flex justify-center items-center">
+                    <img :src="'http://localhost:5173/src/assets/' + facility.image" :alt="facility.name" class="w-full h-auto max-w-xs">
+                </div>
+              </div>
+            </div> 
+          </div>
           <div id="faculty" class="mb-8 lg:w-4/6 mx-auto relative py-20">
             <h2 class="text-2xl font-bold mb-4">Faculty</h2>
 
