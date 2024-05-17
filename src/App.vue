@@ -51,7 +51,7 @@ import { RouterLink, RouterView } from 'vue-router'
                 <details>
                   <summary>Life@aurcc</summary>
                   <ul class="p-2 bg-base-100 shadow-lg text-black">
-                    <li><a href="/">Sports</a></li>
+                    <li><a href="/sports">Sports</a></li>
                     <li><a href="/">NSS</a></li>
                     <li><a href="/">Tamil Mandram</a></li>
                     <li><a href="/">Fine Arts Club</a></li>
@@ -106,7 +106,7 @@ import { RouterLink, RouterView } from 'vue-router'
               <details>
                 <summary>Life@aurcc</summary>
                 <ul class="p-2 bg-base-100 shadow-lg text-black">
-                  <li><a href="/">Sports</a></li>
+                  <li><a href="/sports">Sports</a></li>
                   <li><a href="/nss">NSS</a></li>
                   <li><a href="/tamilmandram">Tamil Mandram</a></li>
                   <li><a href="/">Fine Arts Club</a></li>
