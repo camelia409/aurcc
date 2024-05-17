@@ -272,28 +272,28 @@
         },
         "achievements": [
 			{
-			"name": "ARUN MANI J",
+			"name": "ARUN MANI J, PRADEEPRAJ D, RAGUL R",
 			"event": "SAFETYTHON (A Road Safety Hackathon)",
 			"organized_by": "UYIR Trust at Kumaraguru College of Technology, Coimbatore",
 			"date": "19.04.2023",
 			"awards": "First Prize Rs.12000 with certificate and medals"
 			},
 			{
-			"name": "ARUN MANI J",
+			"name": "ARUN MANI J, PRADEEPRAJ D, RAGUL R",
 			"event": "IDEATHON 2023 (A Road Safety Hackathon)",
 			"organized_by": "KPR Institute of Technology, Coimbatore",
 			"date": "05.04.2023",
 			"awards": "First Prize with certificate and medals"
 			},
 			{
-			"name": "PREM KUMAR S",
+			"name": "PREM KUMAR S, PRADESSH S",
 			"event": "INNOVATE’ 23",
 			"organized_by": "Dr. N.G.P. Institute of Technology, Coimbatore",
 			"date": "25.03.2023",
 			"awards": "First Prize Rs.10000 with certificate and medals"
 			},
 			{
-			"name": "YAZHINI M",
+			"name": "YAZHINI M, RAKSHANA FATHIMA J, AGALYA P, SOWNTHARYA S",
 			"event": "Code’ O Clock” (24 Hours Hackathon)",
 			"organized_by": "Coimbatore Institute of Technology, Coimbatore",
 			"date": "02.06.2023 & 03.06.2023",
@@ -356,7 +356,7 @@
 			"awards": "Second Prize with Silver medal and Certificate(10000m), Third Prize with Bronze medal and Certificate(5000m)"
 			},
 			{
-			"name": "SHRUTI S",
+			"name":  "SHRUTI S, KAVYA PRABHA S, MADHESHWARI M",
 			"event": "Anna University Zone XI Athletic Championship (4x400m Women's Relay)",
 			"organized_by": "Kumaraguru College of Technology,Coimbatore",
 			"date": "18.10.2023-20.10.2023",
@@ -398,147 +398,7 @@
 			"awards": "Second Prize Silver medal and certificate"
 			},
 			{
-			"name": "AKILAN M",
-			"event": "Tech Connection event (XPLOSION 2K24 Symposium)",
-			"organized_by": "Sri Ramakrishna Institute of Technology,Coimbatore",
-			"date": "12.02.2024",
-			"awards": "First Prize Rs.500 with certificate"
-			},
-			{
-			"name": "HARSHITHA K M",
-			"event": "Technical Paper Presentation (VARNAM’24 Symposium)",
-			"organized_by": "Karpagam Institute of Technology,Coimbatore",
-			"date": "21.03.2024",
-			"awards": "Third Prize Certificate and medal"
-			},
-			{
-			"name": "ARUN MANI J",
-			"event": "SAFETYTHON (A Road Safety Hackathon)",
-			"organized_by": "UYIR Trust at Kumaraguru College of Technology, Coimbatore",
-			"date": "19.04.2023",
-			"awards": "First Prize Rs.12000 with certificate and medals"
-			},
-			{
-			"name": "ARUN MANI J",
-			"event": "IDEATHON 2023 (A Road Safety Hackathon)",
-			"organized_by": "KPR Institute of Technology, Coimbatore",
-			"date": "05.04.2023",
-			"awards": "First Prize with certificate and medals"
-			},
-			{
-			"name": "PREM KUMAR S",
-			"event": "INNOVATE’ 23",
-			"organized_by": "Dr. N.G.P. Institute of Technology, Coimbatore",
-			"date": "25.03.2023",
-			"awards": "First Prize Rs.10000 with certificate and medals"
-			},
-			{
-			"name": "YAZHINI M",
-			"event": "Code’ O Clock” (24 Hours Hackathon)",
-			"organized_by": "Coimbatore Institute of Technology, Coimbatore",
-			"date": "02.06.2023 & 03.06.2023",
-			"awards": "First Prize Rs.12500 with certificate"
-			},
-			{
-			"name": "SUGANILAVAN S",
-			"event": "Kalaignar Nootrandu Vizha (Speech Competition)",
-			"organized_by": "Shanmuganathan Engg College,Thirumayam",
-			"date": "25.09.2023",
-			"awards": "Second Prize Rs.5000 with certificate and shield"
-			},
-			{
-			"name": "NITHISHWARAN A",
-			"event": "21st Junior State Throwball Championship",
-			"organized_by": "VSI Group of Institutions, Salem",
-			"date": "06.10.2023-08.10.2023",
-			"awards": "Third Prize with certificate and medal"
-			},
-			{
-			"name": "SUGANILAVAN S",
-			"event": "Kalaignar Nootrandu Vizha (Speech Competition)",
-			"organized_by": "PPG Inst of Tech,Coimbatore",
-			"date": "13.10.2023",
-			"awards": "Second Prize Rs.5000 with certificate and shield"
-			},
-			{
-			"name": "SUGANILAVAN S",
-			"event": "Kalaignar Nootrandu Vizha (Speech Competition)",
-			"organized_by": "Anna University Regional Campus Coimbatore",
-			"date": "17.10.2023",
-			"awards": "First Prize Rs.10000 with certificate"
-			},
-			{
-			"name": "NARMATHA R",
-			"event": "Kalaignar Nootrandu Vizha (Writing Competition)",
-			"organized_by": "Anna University Regional Campus Coimbatore",
-			"date": "17.10.2023",
-			"awards": "Third Prize Rs.5000 with certificate"
-			},
-			{
-			"name": "SHRUTI S",
-			"event": "Anna University Zone XI Athletic Championship (100m & 200m)",
-			"organized_by": "Kumaraguru College of Technology,Coimbatore",
-			"date": "18.10.2023-20.10.2023",
-			"awards": "Second Prize with Silver medal and Certificate"
-			},
-			{
-			"name": "AMARNATHAN V",
-			"event": "Anna University Zone XI Athletic Championship (Decathlon event)",
-			"organized_by": "Kumaraguru College of Technology,Coimbatore",
-			"date": "18.10.2023-20.10.2023",
-			"awards": "First Prize with Gold medal and Certificate"
-			},
-			{
-			"name": "VARUN KUMAR S",
-			"event": "Anna University Zone XI Athletic Championship (10000m & 5000m)",
-			"organized_by": "Kumaraguru College of Technology,Coimbatore",
-			"date": "18.10.2023-20.10.2023",
-			"awards": "Second Prize with Silver medal and Certificate(10000m), Third Prize with Bronze medal and Certificate(5000m)"
-			},
-			{
-			"name": "SHRUTI S",
-			"event": "Anna University Zone XI Athletic Championship (4x400m Women's Relay)",
-			"organized_by": "Kumaraguru College of Technology,Coimbatore",
-			"date": "18.10.2023-20.10.2023",
-			"awards": "Second Prize with Silver medal and Certificate"
-			},
-			{
-			"name": "SUGANILAVAN S",
-			"event": "Kalaignar Nootrandu Vizha (Speech Competition)",
-			"organized_by": "Anna University Chennai",
-			"date": "31.10.2023",
-			"awards": "First Prize Rs.20000 with certificate and shield"
-			},
-			{
-			"name": "SUGANILAVAN S",
-			"event": "Kalaignar Nootrandu Vizha (Speech Competition)",
-			"organized_by": "Subhabharathi Arts and Science College,Pudukottai",
-			"date": "04.11.2023",
-			"awards": "First Prize Rs.10000 with certificate and shield"
-			},
-			{
-			"name": "SUGANILAVAN S",
-			"event": "Kalaignar Nootrandu Vizha (Speech Competition)",
-			"organized_by": "Anna University Regional Campus Coimbatore",
-			"date": "15.11.2023",
-			"awards": "First Prize Rs.3000"
-			},
-			{
-			"name": "SUGANILAVAN S",
-			"event": "Bharathi Mozhigalin Thiruvizha (Speech Competition)",
-			"organized_by": "Semmozhi Tamil Aivu Central Institute, Chennai and Anna University Regional Campus Coimbatore",
-			"date": "11.12.2023",
-			"awards": "First Prize Rs.5000 with certificate"
-			},
-			{
-			"name": "NITHISHWARAN A",
-			"event": "33rd Junior National Throwball Championship",
-			"organized_by": "TNGR Memorial Hr.Sec.School,Coimbatore",
-			"date": "27.12.2023 to 30.12.2023",
-			"awards": "Second Prize Silver medal and certificate"
-			},
-			{
-			"name": "AKILAN M",
+			"name": "AKILAN M, JAYASURYA R K, TAMILVANAN V M",
 			"event": "Tech Connection event (XPLOSION 2K24 Symposium)",
 			"organized_by": "Sri Ramakrishna Institute of Technology,Coimbatore",
 			"date": "12.02.2024",
