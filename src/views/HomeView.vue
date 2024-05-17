@@ -30,36 +30,7 @@
           </div>
         </div>
       </div>
-      <div class="carousel w-full max-w-screen-lg mx-auto overflow-hidden relative">
-        <div id="slide1" class="carousel-item relative w-full transition-transform duration-500 ease-in-out">
-          <img src="../assets/pic1.jpg" class="w-full h-64 object-cover" />
-          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide4" class="btn btn-circle">❮</a> 
-            <a href="#slide2" class="btn btn-circle">❯</a>
-          </div>
-        </div> 
-        <div id="slide2" class="carousel-item relative w-full transition-transform duration-500 ease-in-out">
-          <img src="../assets/1.jpg" class="w-full h-64 object-cover" />
-          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide1" class="btn btn-circle">❮</a> 
-            <a href="#slide3" class="btn btn-circle">❯</a>
-          </div>
-        </div> 
-        <div id="slide3" class="carousel-item relative w-full transition-transform duration-500 ease-in-out">
-          <img src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg" class="w-full h-64 object-cover" />
-          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide2" class="btn btn-circle">❮</a> 
-            <a href="#slide4" class="btn btn-circle">❯</a>
-          </div>
-        </div> 
-        <div id="slide4" class="carousel-item relative w-full transition-transform duration-500 ease-in-out">
-          <img src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" class="w-full h-64 object-cover" />
-          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide3" class="btn btn-circle">❮</a> 
-            <a href="#slide1" class="btn btn-circle">❯</a>
-          </div>
-        </div>
-      </div>
+
 
       
       <div class="grid grid-cols-1 md:grid-cols-4 gap-8 p-9 md:p-20">
@@ -179,7 +150,7 @@
 export default {
   data() {
     return {
-      scrollInterval: null,
+      activeSlide: 1,
       upcomingEvents: [
         {
           id: 1,
@@ -223,29 +194,22 @@ export default {
     }
   },
   methods: {
-    startScrolling() {
-      const eventsContent = this.$refs.eventsContent
-      eventsContent.addClasslist('events-content')
-      this.scrollInterval = setInterval(this.scrollEvents, 50) // Faster scroll speed
+    startAutoSlide() {
+      this.slideInterval = setInterval(() => {
+        this.nextSlide();
+      }, 5000); // Change slide every 5 seconds (5000 milliseconds)
     },
-    stopScrolling() {
-      // clearInterval(this.scrollInterval)
-      // this.scrollInterval = null
-      const eventsContent = this.$refs.eventsContent
-      eventsContent.removeClasslist('events-content')
-    },
-    // scrollEvents() {
-    //   const eventsContent = this.$refs.eventsContent
-    //   const eventsList = this.$refs.eventsList
-    //   eventsContent.scrollTop += 1
-    //   if (eventsContent.scrollTop + eventsContent.clientHeight >= eventsList.clientHeight) {
-    //     eventsContent.scrollTop = 0
-    //   }
-    // }
+    nextSlide() {
+      this.activeSlide = (this.activeSlide % this.slides.length) + 1;
+    }
   },
   mounted() {
     this.startScrolling()
-  }
+    this.startAutoSlide();
+  },
+  destroyed() {
+    clearInterval(this.slideInterval);
+  },
 }
 </script>
 
