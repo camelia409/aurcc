@@ -412,6 +412,32 @@
 			"awards": "Third Prize Certificate and medal"
 			}
 			],
+		"facility": [
+				{
+					"name": "Python Laboratory",
+					"description": "In a Python programming laboratory at a college, students learn to write, test, and debug Python programs. They explore conditionals, loops, and functions for structuring their code. Additionally, they gain proficiency in handling compound data using Python lists, tuples, and dictionaries, as well as reading and writing data from/to files. The lab aims to equip students with practical programming skills and a solid foundation in Python.",
+					"room no": "216",
+					"image": "py.jpg"
+				},
+				{
+					"name": "Database Laboratory",
+					"description": "In a college database management laboratory, students gain foundational knowledge in database concepts, technology, and practice. They learn SQL programming through various database problems, develop applications using front-end tools, and work with back-end DBMS. The lab covers topics such as data definition languages (DDL), data manipulation language (DML) commands, high-level programming language extensions, front-end tools, forms, triggers, menu design, reports, and practical exercises using open-source software like MySQL.",
+					"room no": "217",
+					"image": "db.jpg"
+				},
+				{
+					"name": "IDEA Laboratory",
+					"description": "The AICTE-IDEA (Idea Development, Evaluation & Application) Lab is established in AICTE-approved institutions to encourage students to apply science, technology, engineering, and mathematics (STEM) fundamentals. This lab provides hands-on experience, fosters creativity, and trains students in critical thinking, problem-solving, and collaboration. The IDEA Lab aims to transform education by converting ideas into prototypes, promoting imaginative thinking, and preparing graduates for the 21st-century workplace.",
+					"room no": "202",
+					"image": "idea.jpg"
+				},
+				{
+					"name": "Cybersecurity Laboratory",
+					"description": "A college cybersecurity lab is a hands-on learning environment equipped with simulated networks and security tools. Students practice ethical hacking techniques, analyze malware, and defend against cyberattacks in a safe space. These labs, often led by cybersecurity professors, prepare students for industry certifications and careers in information security.",
+					"room no": "222",
+					"image": "cb.jpg"
+				}
+			  ],
         "research_and_publications":[
 		"J.Preethi & S.Palaniswami, 'An Intelligent Particle Swarm Optimization for Fuzzy based Heterogeneous Radio Access Technology (RAT) Selection in the International Journal of Intelligent Information Technologies (IJIIT) Vol.8, Issue по. 4, pp. 23-42, 2013. [SNIP: 0.072, SJR: 0.034].",
 
