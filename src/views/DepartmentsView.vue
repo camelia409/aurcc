@@ -16,17 +16,17 @@
 
       <!-- Horizontal Tabs -->
       <div class="sticky top-0 bg-white shadow-md z-10 hidden md:block">
-        <div class="flex justify-between py-4 p-9">
-          <nav class="flex space-x-4">
-            <button
+        <div class="flex justify-between  px-9">
+          <nav role="tablist" class="tabs tabs-bordered">
+            <button role="tab"
               v-for="(section, index) in sections"
               :key="index"
               @click="scrollToSection(section)"
               :class="{
-                'bg-blue-500 text-white': currentSection === section,
+                'bg-gray-200 tab-active': currentSection === section,
                 'text-gray-600 hover:bg-gray-100': currentSection !== section
               }"
-              class="font-semibold py-2 px-4 rounded transition duration-300 ease-in-out"
+              class="font-semibold p-4 h-full transition duration-300 ease-in-out tab"
             >
               {{ section }}
             </button>
