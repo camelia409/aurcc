@@ -110,7 +110,7 @@ import { RouterLink, RouterView } from 'vue-router'
                   <li><a href="/nss">NSS</a></li>
                   <li><a href="/tamilmandram">Tamil Mandram</a></li>
                   <li><a href="/">Fine Arts Club</a></li>
-                  <li><a href="/">Alumni</a></li>
+                  <li><a href="/alumni">Alumni</a></li>
                 </ul>
               </details>
             </li>
