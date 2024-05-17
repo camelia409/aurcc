@@ -61,12 +61,7 @@
               <h2 class="text-2xl font-bold mb-4">Achievements</h2>
               <ul class="list-disc pl-4">
                 <li v-for="achievement in department.achievements" :key="achievement.name">
-                  <strong>{{ achievement.name }} ({{ achievement.year }}):</strong> {{ achievement.description }}
-                </li>
-              </ul>
-              <ul class="list-disc pl-4">
-                <li v-for="ach in department.achievements.description" :key="ach">
-                  {{ ach }}
+                  <strong>{{ achievement.name }} ({{ achievement.year }}):</strong> {{ achievement.event }} - {{ achievement.organized_by }} ({{ achievement.date }}): {{ achievement.awards }}
                 </li>
               </ul>
             </div>
