@@ -304,13 +304,21 @@
             </ul>
           </div> -->
         </div>
-        <div id="research-and-publications" class="mb-8 lg:w-4/6 mx-auto py-20">
-          <h2 class="text-2xl font-bold mb-4">Research and Publications</h2>
-          <ul class="list-disc pl-4 h-52 overflow-auto">
-            <li v-for="research in department.research_and_publications" :key="research">
-              {{ research }} 
-            </li>
-          </ul>
+        <div id="research-and-publications" class="mb-8 lg:w-4/6 mx-auto py-20 bg-gray-50">
+          <h2 class="text-3xl font-extrabold mb-6 text-gray-800">Research and Publications</h2>
+          <div class="list-disc pl-8 space-y-4 h-96 overflow-auto">
+            <div v-for="research in department.research_and_publications" :key="research.title" class="bg-white p-4 border-2 border-gray-200 rounded">
+              <div class="text-lg font-semibold text-gray-700">
+                {{ research.title }} ({{ research.year }}):
+              </div>
+              <div class="text-gray-600">
+                {{ research.authors }}
+              </div>
+              <div class="font-bold text-blue-600 mt-1">
+                {{ research.journal_or_conference }}
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
