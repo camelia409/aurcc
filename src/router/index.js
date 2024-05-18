@@ -103,6 +103,11 @@ const router = createRouter({
       path: '/office-affiliation/',
       name: 'office-affiliation',
       component: ()=> import('../views/OfficeOfAffiliation.vue')
+    },
+    {
+      path: '/zonal/',
+      name: 'zonal',
+      component: ()=> import('../views/Zonal.vue')
     }
   ]
 })
