@@ -93,6 +93,11 @@ const router = createRouter({
       path: '/admission/',
       name: 'admission',
       component: ()=> import('../views/AdmissionView.vue')
+    },
+    {
+      path: '/distance-education/',
+      name: 'distamce-education',
+      component: ()=> import('../views/DistanceEdu.vue')
     }
   ]
 })
