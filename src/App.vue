@@ -115,6 +115,7 @@ import { RouterLink, RouterView } from 'vue-router'
                 </ul>
               </details>
             </li>
+            <li><a href="/library">Library</a></li>
             <li><a href="/hostel">Hostel</a></li>
             <li><a>Contact</a></li>
           </ul>

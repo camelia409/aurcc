@@ -93,6 +93,11 @@ const router = createRouter({
       path: '/admission/',
       name: 'admission',
       component: ()=> import('../views/AdmissionView.vue')
+    },
+    {
+      path: '/library/',
+      name: 'library',
+      component: ()=> import('../views/Library.vue')
     }
   ]
 })
