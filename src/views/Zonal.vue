@@ -4,8 +4,8 @@
       <section class="bg-cover bg-center relative -z-10" :style="'background-image: url(http://192.168.72.231:5173/src/assets/dgate-hero.jpg)'">
         <div class="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div>
         <div class="container mx-auto py-16 text-white p-9 relative z-10">
-          <h1 class="text-4xl font-bold mb-4">{{ data.name }}</h1>
-          <p class="text-xl mb-8">{{ data.description.Overview }}</p>
+          <h1 class="text-4xl font-bold mb-4">Zonal Office</h1>
+          <p class="text-xl mb-8">Ensuring the seamless coordination between the University and Affiliated Colleges</p>
           <button class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded">Learn More</button>
         </div>
       </section>
@@ -30,25 +30,24 @@
             </div>
           </div>
           <section v-if="currentSection !== null" class="container mx-auto py-8 p-9 md:col-span-3">
-            <div v-if="currentSection === 'Overview'">
-              <h2 class="text-2xl font-bold mb-4">Overview</h2>
-              <p>{{ data.description['Admissions at our Regional Campus'] }}</p>
-            </div>
-            <div v-else-if="currentSection === 'Courses Offered'">
-              <h2 class="text-2xl font-bold mb-4">Courses Offered</h2>
-              <p>{{ data.courses_offered }}</p>
-            </div>
-            <div v-else-if="currentSection === 'Eligibility Criteria'">
-              <h2 class="text-2xl font-bold mb-4">Eligibility Criteria</h2>
+            <div v-if="currentSection === 'Description'">
+              <h2 class="text-2xl font-bold mb-4">Description</h2>
               <ul class="list-disc pl-4">
-                <li v-for="(criteria, category) in data.eligibility_criteria" :key="category">
-                  <strong>{{ category }}</strong>: {{ criteria }}
-                </li>
+                <li v-for="(desc, index) in data.description" :key="index">{{ desc }}</li>
               </ul>
             </div>
-            <div v-else-if="currentSection === 'Contact Us'">
-              <h2 class="text-2xl font-bold mb-4">Contact Us</h2>
-              <p>{{ data.contact_us['Admission Co-ordinator'] }}</p>
+            <div v-else-if="currentSection === 'Zone List of Colleges'">
+              <h2 class="text-2xl font-bold mb-4">Zone List of Colleges</h2>
+              <a :href="data['zone list of colleges']" class="text-blue-500 hover:underline">Download the list of colleges</a>
+            </div>
+            <div v-else-if="currentSection === 'Office Bearers'">
+              <h2 class="text-2xl font-bold mb-4">Office Bearers</h2>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div v-for="bearer in data['Office bearers']" :key="bearer.name" class="bg-white shadow-md rounded-md p-4">
+                  <h3 class="text-lg font-semibold">{{ bearer.name }}</h3>
+                  <p>{{ bearer.designation }}</p>
+                </div>
+              </div>
             </div>
           </section>
         </div>
@@ -57,17 +56,16 @@
   </template>
   
   <script>
-  import admissionData from '../assets/admission.json';
+  import data from '../assets/zonaloffice.json';
   
   export default {
     data() {
       return {
-        data: admissionData[0],
+        data: data[0],
         sections: [
-          'Overview',
-          'Courses Offered',
-          'Eligibility Criteria',
-          'Contact Us'
+          'Description',
+          'Zone List of Colleges',
+          'Office Bearers'
         ],
         currentSection: null
       };
@@ -80,4 +78,8 @@
     }
   };
   </script>
+  
+  <style scoped>
+  /* Add your custom styles here */
+  </style>
   
