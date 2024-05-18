@@ -188,31 +188,6 @@ import { RouterLink, RouterView } from 'vue-router'
         <div class="w-full md:w-auto mb-4 md:mb-0">
           <p>Copyright &copy; Anna University Regional campus Coimbatore 2024. All rights reserved.</p>
         </div>
-        <div class="w-full md:w-auto mt-4 md:mt-0">
-          <div class="flex items-center justify-center md:justify-start">
-            <a href="#" class="text-white hover:text-gray-400 mr-4">
-              <i class="fab fa-facebook fa-lg"></i>
-            </a>
-            <a href="#" class="text-white hover:text-gray-400 mr-4">
-              <i class="fab fa-twitter fa-lg"></i>
-            </a>
-            <a href="#" class="text-white hover:text-gray-400 mr-4">
-              <i class="fab fa-linkedin fa-lg"></i>
-            </a>
-            <a href="#" class="text-white hover:text-gray-400 mr-4">
-              <i class="fab fa-google-plus fa-lg"></i>
-            </a>
-            <a href="#" class="text-white hover:text-gray-400 mr-4">
-              <i class="fab fa-instagram fa-lg"></i>
-            </a>
-            <a href="#" class="text-white hover:text-gray-400 mr-4">
-              <i class="fab fa-youtube fa-lg"></i>
-            </a>
-            <a href="#" class="text-white hover:text-gray-400">
-              <i class="fab fa-whatsapp fa-lg"></i>
-            </a>
-          </div>
-        </div>
       </div>
     </div>
   </footer>
