@@ -1,18 +1,20 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
+import { RouterLink, RouterView } from 'vue-router';
 </script>
 
 <template>
   <header>
-
     <div class="wrapper">
-      <nav class="navbar bg-gray-800 text-white shadow-lg">
+      <nav class="navbar bg-gray-800 text-white shadow-lg relative z-20">
         <div class="flex-1">
-          <img src="./assets/logo.svg" alt="Logo" class="h-12 " />
-          <RouterLink to="/" class="btn btn-ghost normal-case text-xl font-extrabold ">ANNA UNIVERSITY REGIONAL CAMPUS <p class="hidden lg:block text-xl font-extrabold">COIMBATORE</p></RouterLink>
+          <img src="./assets/logo.svg" alt="Logo" class="h-12" />
+          <RouterLink to="/" class="btn btn-ghost normal-case text-xl font-extrabold">
+            ANNA UNIVERSITY REGIONAL CAMPUS 
+            <p class="hidden lg:block text-xl font-extrabold">COIMBATORE</p>
+          </RouterLink>
         </div>
         <div class="flex-none">
-          <div class="dropdown dropdown-end bg-gray-800">
+          <div class="dropdown dropdown-end bg-gray-800 relative z-30">
             <label tabindex="0" class="btn btn-ghost lg:hidden">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
@@ -21,20 +23,20 @@ import { RouterLink, RouterView } from 'vue-router'
             <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-gray-800 rounded-box w-52">
               <li>
                 <details>
-                <summary>Departments</summary>
-                <ul class="p-2 bg-base-100 shadow-lg rounded-md self-center text-black">
-                  <li ><a href="/departments/cse">Computer Science Engg</a></li>
-                  <li><a href="/departments/eee">Electrical and Electronics Engg</a></li>
-                  <li><a href="/departments/ece">Electronics and Communications Engg</a></li>
-                  <li><a href="/departments/mech">Mechanical Engg</a></li>
-                  <li><a href="/departments/mba">MBA</a></li>
-                  <li><a href="/departments/biotech">Bio-Technology</a></li>
-                  <li><a href="/departments/nanotech">Nano-Technology</a></li>
-                  <li><a href="/departments/s&h">Sceince & Humanities</a></li>
-                </ul>
-              </details>
+                  <summary>Departments</summary>
+                  <ul class="p-2 bg-base-100 shadow-lg rounded-md text-black">
+                    <li><a href="/departments/cse">Computer Science Engg</a></li>
+                    <li><a href="/departments/eee">Electrical and Electronics Engg</a></li>
+                    <li><a href="/departments/ece">Electronics and Communications Engg</a></li>
+                    <li><a href="/departments/mech">Mechanical Engg</a></li>
+                    <li><a href="/departments/mba">MBA</a></li>
+                    <li><a href="/departments/biotech">Bio-Technology</a></li>
+                    <li><a href="/departments/nanotech">Nano-Technology</a></li>
+                    <li><a href="/departments/s&h">Science & Humanities</a></li>
+                  </ul>
+                </details>
               </li>
-              <li><a>Hostel</a></li>
+              <li><a href="#">Hostel</a></li>
               <li class="relative">
                 <details class="text-black">
                   <summary class="cursor-pointer">Offices</summary>
@@ -59,26 +61,25 @@ import { RouterLink, RouterView } from 'vue-router'
                   </ul>
                 </details>
               </li>
-              
-              <li><a>Contact</a></li>
+              <li><a href="#">Contact</a></li>
             </ul>
           </div>
           <ul class="menu menu-horizontal p-0 hidden lg:flex">
             <li>
               <details>
-                <summary> Academics</summary>
-                <ul class="p-2 bg-base-100 shadow-lg text-black z-10">
-                  <li><a href="/">Programs Offered</a></li>
-                  <li><a href="/">Curriculum & Syllabus</a></li>
-                  <li><a href="/">Regulations</a></li>
-                  <li><a href="/">Student Affairs</a></li>
+                <summary>Academics</summary>
+                <ul class="p-2 bg-base-100 shadow-lg text-black z-30">
+                  <li><a href="#">Programs Offered</a></li>
+                  <li><a href="#">Curriculum & Syllabus</a></li>
+                  <li><a href="#">Regulations</a></li>
+                  <li><a href="#">Student Affairs</a></li>
                 </ul>
               </details>
             </li>
             <li>
               <details>
                 <summary>Departments</summary>
-                <ul class="p-2 bg-base-100 shadow-lg text-black">
+                <ul class="p-2 bg-base-100 shadow-lg text-black z-30">
                   <li><a href="/departments/cse">Computer Science Engg</a></li>
                   <li><a href="/departments/eee">Electrical and Electronics Engg</a></li>
                   <li><a href="/departments/ece">Electronics and Communications Engg</a></li>
@@ -86,14 +87,14 @@ import { RouterLink, RouterView } from 'vue-router'
                   <li><a href="/departments/mba">MBA</a></li>
                   <li><a href="/departments/biotech">Bio-Technology</a></li>
                   <li><a href="/departments/nanotech">Nano-Technology</a></li>
-                  <li><a href="/departments/s&h">Sceince & Humanities</a></li>
+                  <li><a href="/departments/s&h">Science & Humanities</a></li>
                 </ul>
               </details>
             </li>
             <li>
               <details>
                 <summary>Offices</summary>
-                <ul class="p-2 bg-base-100 shadow-lg text-black">
+                <ul class="p-2 bg-base-100 shadow-lg text-black z-30">
                   <li><a href="/admission">Admission</a></li>
                   <li><a href="/dgate">DGATE Cell</a></li>
                   <li><a href="/zonal">Zonal Office</a></li>
@@ -109,7 +110,7 @@ import { RouterLink, RouterView } from 'vue-router'
             <li>
               <details>
                 <summary>Life@aurcc</summary>
-                <ul class="p-2 bg-base-100 shadow-lg text-black">
+                <ul class="p-2 bg-base-100 shadow-lg text-black z-30">
                   <li><a href="/sports">Sports</a></li>
                   <li><a href="/nss">NSS</a></li>
                   <li><a href="/tamilmandram">Tamil Mandram</a></li>
@@ -120,22 +121,27 @@ import { RouterLink, RouterView } from 'vue-router'
             </li>
             <li><a href="/library">Library</a></li>
             <li><a href="/hostel">Hostel</a></li>
-            <li><a>Contact</a></li>
+            <li><a href="#">Contact</a></li>
           </ul>
         </div>
       </nav>
     </div>
+    <div class="notice absolute top-0 w-full text-center bg-white text-black z-10">
+      This is a running notice text...
+    </div>
   </header>
+
   <RouterView />
+
   <footer class="bg-gray-900 text-white py-8">
     <div class="container mx-auto px-4">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <div>
           <h2 class="text-2xl font-bold mb-2">Anna University Regional campus Coimbatore</h2>
-          <p class="">Campus Office:</p>
-          <p class="">Maruthamalai Main Road, Navavoor,</p>
-          <p class="">Coimbatore(Dt), Tamil Nadu 641046, India.</p>
-          <p class="">Phone: +91 44 7111 9111</p>
+          <p>Campus Office:</p>
+          <p>Maruthamalai Main Road, Navavoor,</p>
+          <p>Coimbatore(Dt), Tamil Nadu 641046, India.</p>
+          <p>Phone: +91 44 7111 9111</p>
           <p class="mb-4">Email: dummy@mail.com</p>
           <p class="text-xl font-bold">Important Links:</p>
           <div class="flex items-center p-2 gap-1">
@@ -143,26 +149,21 @@ import { RouterLink, RouterView } from 'vue-router'
               <img src="./assets/AN-logo.png" alt="an-logo" class="w-12 h-12" width="35" height="35">
             </a>
             <a href="https://www.tn.gov.in/" class="rounded-full bg-gray-100 shadow-md overflow-hidden">
-              <img src="./assets/2000px-TamilNadu_Logo.svg.png" alt="an-logo" class="w-12 h-12" width="35" height="35">
+              <img src="./assets/2000px-TamilNadu_Logo.svg.png" alt="tn-logo" class="w-12 h-12" width="35" height="35">
             </a>
             <a href="http://india.gov.in" class="rounded-full bg-gray-100 shadow-md overflow-hidden">
-              <img src="./assets/india.png" alt="an-logo" class="w-12 h-12 " width="35" height="35">
+              <img src="./assets/india.png" alt="india-logo" class="w-12 h-12" width="35" height="35">
             </a>
             <a href="#" class="rounded-full bg-gray-100 shadow-md overflow-hidden">
-              <img src="./assets/mhrd.png" alt="an-logo" class="w-12 h-12" width="35" height="35">
+              <img src="./assets/mhrd.png" alt="mhrd-logo" class="w-12 h-12" width="35" height="35">
             </a>
             <a href="https://www.aicte-india.org/" class="rounded-full bg-gray-100 shadow-md overflow-hidden">
-              <img src="./assets/aicte.png" alt="an-logo" class="w-12 h-12" width="35" height="35">
+              <img src="./assets/aicte.png" alt="aicte-logo" class="w-12 h-12" width="35" height="35">
             </a>
             <a href="https://www.ugc.gov.in/" class="rounded-full bg-gray-100 shadow-md overflow-hidden">
-              <img src="./assets/ugc.png" alt="an-logo" class="w-12 h-12" width="35" height="35">
+              <img src="./assets/ugc.png" alt="ugc-logo" class="w-12 h-12" width="35" height="35">
             </a>
           </div>
-
-
-
-
-
         </div>
         <div class="mb-8 md:mb-0">
           <div style="position:relative;text-align:center;">
@@ -176,7 +177,7 @@ import { RouterLink, RouterView } from 'vue-router'
             <li class="mb-1">B.E. Electrical and Electronics Engineering</li>
             <li class="mb-1">B.E. Electronics and Communications Engineering</li>
             <li class="mb-1">B.E. Mechanical Engineering</li>
-            <li class="mb-1">B.Tech Artificial Intelligence and DataScience</li>
+            <li class="mb-1">B.Tech Artificial Intelligence and Data Science</li>
             <!-- Add more UG courses -->
           </ul>
           <h2 class="text-lg font-bold mb-1 mt-4">PG Courses</h2>
@@ -190,7 +191,7 @@ import { RouterLink, RouterView } from 'vue-router'
       <hr class="my-8 border-gray-700">
       <div class="flex flex-wrap justify-between items-center">
         <div class="w-full md:w-auto mb-4 md:mb-0">
-          <p>Copyright &copy; Anna University Regional campus Coimbatore 2024. All rights reserved.</p>
+          <p>Copyright &copy; Anna University Regional campus Coimbatore {{ currentYear }}. All rights reserved.</p>
         </div>
       </div>
     </div>
@@ -199,11 +200,43 @@ import { RouterLink, RouterView } from 'vue-router'
 
 <script>
 export default {
-  data(){
+  data() {
     return {
       currentYear: new Date().getFullYear(),
-    }
-  }
-}
+    };
+  },
+};
 </script>
 
+<style>
+.navbar {
+  position: relative;
+  z-index: 20;
+}
+
+.dropdown-content {
+  position: absolute;
+  z-index: 30;
+}
+
+.notice {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #fff;
+  color: #000;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: scroll 10s linear infinite;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+</style>

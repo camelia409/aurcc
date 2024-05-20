@@ -8,29 +8,27 @@
           </div>
         </div>
       </div>
+      
+      <!-- Announcements Section -->
       <div class="bg-base-300">
-        <div class="mx-auto">
+        <div class="container mx-auto">
           <div class="flex items-center justify-between">
-            <div class="text-sm p-4 bg-gray-800 text-white z-10 ">Announcements</div>
-            <div class="text-sm breadcrumbs animate-marquee hover:animate-pause p-4">
-              <ul>
-                <li>
-                  <a href="#">Announcements</a>
-                </li>
-                <li>on Recent Innovations in Production Engineering(RIPE) 2024 at MIT Campus, Anna University.</li>
-                <li>
-                  <a href="#">Founders day, Alumni, Institute day live stream link</a>
-                </li>
-                <li>
-                  <a href="#">View more</a>
-                </li>
+            <div class="text-sm p-4 bg-gray-800 text-white">Announcements</div>
+            <div class="text-sm breadcrumbs animate-marquee hover:animate-pause p-4 flex-1 overflow-hidden">
+              <ul class="flex space-x-4">
+                <li><a href="#">Announcements</a></li>
+                <li>on Recent Innovations in Production Engineering (RIPE) 2024 at MIT Campus, Anna University.</li>
+                <li><a href="#">Founders day, Alumni, Institute day live stream link</a></li>
+                <li><a href="#">View more</a></li>
               </ul>
             </div>
-            <div class="text-sm p-4 bg-gray-800 text-white">View more</div>
+            <div class="text-sm p-4 bg-gray-800 text-white">
+              <a href="#">View more</a>
+            </div>
           </div>
         </div>
       </div>
-      
+
       <!-- Horizontal Scrollable Image Gallery Section -->
       <div class="scrollable-gallery-container py-8 bg-base-200">
         <h2 class="text-3xl font-bold text-center mb-4">Image Gallery</h2>
@@ -52,12 +50,11 @@
       <div class="grid grid-cols-1 md:grid-cols-4 gap-8 p-9 md:p-20">
         <div class="col-span-3">
           <h2 class="text-3xl font-bold m-2">Welcome to AURCC: About the campus</h2>
-          <p class="text-2xl ">
+          <p class="text-2xl">
             The Regional Campus Coimbatore of Anna University was established during 2012. It offers higher education in Engineering and Technology. Located in an Arcadian environment and away from the hustle and bustle crowd of the city. The Regional Campus Coimbatore is equipped with excellent infrastructure and highly qualified members of faculty, who facilitate hands on experience to students to master their skills in various disciplines.
           </p>
         </div>
 
-        
         <!-- Event section -->
         <div class="flex flex-col gap-2">
           <div>
@@ -65,7 +62,6 @@
             <div class="events-section bg-base-300 overflow-hidden" @mouseenter="stopScrolling" @mouseleave="startScrolling">
               <div class="events-content p-6" ref="eventsContent">
                 <div class="events-list" ref="eventsList">
-
                   <div v-for="event in upcomingEvents" :key="event.id" class="event">
                     <h3 class="font-bold">{{ event.title }}</h3>
                     <p>{{ event.date }}</p>
@@ -105,46 +101,38 @@
 
       <section class="flex flex-col gap-4">
         <h2 class="text-4xl font-bold text-center">Innovating the Industries</h2>
-        <div class="grid grid-cols-3 gap-4 items-center justify-space-around"><a href="https://www.tcs.com"
-                    class="h-[12vh] p-4 flex flex-col items-center justify-center"
-                >
-              <figure><img alt="TCS" src="../assets/tcs.webp" class="w-[20vw] lg:w-[10vw]" /></figure>
-          </a><a href="https://www.avasoft.com"
-              class="h-[12vh] p-4 flex flex-col items-center justify-center"
-          >
-              <figure><img alt="Avasoft" src="../assets/avasoft.webp" class="w-[20vw] lg:w-[10vw]" /></figure>
-          </a><a href="https://www.guvi.in"
-              class="h-[12vh] p-4 flex flex-col items-center justify-center"
-          >
-              <figure><img alt="Guvi" src="../assets/guvi.webp" class="w-[20vw] lg:w-[10vw]" /></figure>
-          </a><a href="https://www.gighz.net"
-              class="h-[12vh] p-4 flex flex-col items-center justify-center"
-          >
-              <figure><img alt="GigHz" src="../assets/gighz.webp" class="w-[20vw] lg:w-[10vw]" /></figure>
-          </a><a href="https://www.saptanglabs.com"
-              class="h-[12vh] p-4 flex flex-col items-center justify-center"
-          >
-              <figure><img alt="Saptang Labs" src="../assets/saptan-labs.webp" class="w-[20vw] lg:w-[10vw]" /></figure>
-          </a><a href="https://home.barclays/"
-              class="h-[12vh] p-4 flex flex-col items-center justify-center"
-          >
-              <figure><img alt="Barclays" src="../assets/barclays.webp" class="w-[20vw] lg:w-[10vw]" /></figure>
-          </a><a href="https://www.e-consystems.com"
-              class="h-[12vh] p-4 flex flex-col items-center justify-center"
-          >
-              <figure><img alt="e-con Systems" src="../assets/e-con.webp" class="w-[20vw] lg:w-[10vw]" /></figure>
-          </a><a href="https://www.azentio.com"
-              class="h-[12vh] p-4 flex flex-col items-center justify-center"
-          >
-              <figure><img alt="Azentio" src="../assets/azentio.webp" class="w-[20vw] lg:w-[10vw]" /></figure>
-          </a><a href="https://www.dummy.com"
-              class="h-[12vh] p-4 flex flex-col items-center justify-center"
-          >
-              <figure><img alt="Dummy" src="../assets/texmo.webp" class="w-[20vw] lg:w-[10vw]" /></figure>
+        <div class="grid grid-cols-3 gap-4 items-center justify-space-around">
+          <a href="https://www.tcs.com" class="h-[12vh] p-4 flex flex-col items-center justify-center">
+            <figure><img alt="TCS" src="../assets/tcs.webp" class="w-[20vw] lg:w-[10vw]" /></figure>
+          </a>
+          <a href="https://www.avasoft.com" class="h-[12vh] p-4 flex flex-col items-center justify-center">
+            <figure><img alt="Avasoft" src="../assets/avasoft.webp" class="w-[20vw] lg:w-[10vw]" /></figure>
+          </a>
+          <a href="https://www.guvi.in" class="h-[12vh] p-4 flex flex-col items-center justify-center">
+            <figure><img alt="Guvi" src="../assets/guvi.webp" class="w-[20vw] lg:w-[10vw]" /></figure>
+          </a>
+          <a href="https://www.gighz.net" class="h-[12vh] p-4 flex flex-col items-center justify-center">
+            <figure><img alt="GigHz" src="../assets/gighz.webp" class="w-[20vw] lg:w-[10vw]" /></figure>
+          </a>
+          <a href="https://www.saptanglabs.com" class="h-[12vh] p-4 flex flex-col items-center justify-center">
+            <figure><img alt="Saptang Labs" src="../assets/saptan-labs.webp" class="w-[20vw] lg:w-[10vw]" /></figure>
+          </a>
+          <a href="https://home.barclays/" class="h-[12vh] p-4 flex flex-col items-center justify-center">
+            <figure><img alt="Barclays" src="../assets/barclays.webp" class="w-[20vw] lg:w-[10vw]" /></figure>
+          </a>
+          <a href="https://www.e-consystems.com" class="h-[12vh] p-4 flex flex-col items-center justify-center">
+            <figure><img alt="e-con Systems" src="../assets/e-con.webp" class="w-[20vw] lg:w-[10vw]" /></figure>
+          </a>
+          <a href="https://www.azentio.com" class="h-[12vh] p-4 flex flex-col items-center justify-center">
+            <figure><img alt="Azentio" src="../assets/azentio.webp" class="w-[20vw] lg:w-[10vw]" /></figure>
+          </a>
+          <a href="https://www.dummy.com" class="h-[12vh] p-4 flex flex-col items-center justify-center">
+            <figure><img alt="Dummy" src="../assets/texmo.webp" class="w-[20vw] lg:w-[10vw]" /></figure>
           </a>
         </div>
       </section>
-             <!-- From the Dean's Desk section -->
+
+      <!-- From the Dean's Desk section -->
       <section class="bg-base-300 w-full py-12">
         <div class="container mx-auto px-4">
           <h2 class="text-4xl font-bold text-center mb-8">From the Dean's Desk</h2>
@@ -161,7 +149,6 @@
     </main>
   </div>
 </template>
-
 <script>
 export default {
   data() {
@@ -188,7 +175,7 @@ export default {
         }
       ],
       galleryImages: [
-      'http://localhost:5173/src/assets/mime_annualday.jpeg',
+        'http://localhost:5173/src/assets/mime_annualday.jpeg',
         'http://localhost:5173/src/assets/mime_annualday.jpeg',
         'http://localhost:5173/src/assets/mime_annualday.jpeg',
         'http://localhost:5173/src/assets/mime_annualday.jpeg',
@@ -207,6 +194,7 @@ export default {
     stopScrolling() {
       const eventsContent = this.$refs.eventsContent
       eventsContent.classList.remove('events-content')
+      clearInterval(this.scrollInterval)
     },
     scrollEvents() {
       const eventsContent = this.$refs.eventsContent
@@ -230,7 +218,6 @@ export default {
   }
 }
 </script>
-
 <style>
 /* Tailwind CSS utility classes */
 .animate-marquee {
@@ -250,7 +237,7 @@ export default {
   }
 }
 
-.events-content,.news-content {
+.events-content {
   animation: scrollAnimation 5s linear infinite; /* Change animation duration as needed */
 }
 
@@ -295,7 +282,7 @@ export default {
   height: auto;
   max-width: 600px;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   transition: transform 0.3s;
 }
 
