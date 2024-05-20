@@ -30,38 +30,25 @@
           </div>
         </div>
       </div>
-      <div class="carousel w-full max-w-screen-lg mx-auto overflow-hidden relative">
-        <div id="slide1" class="carousel-item relative w-full transition-transform duration-500 ease-in-out">
-          <img src="../assets/pic1.jpg" class="w-full h-64 object-cover" />
-          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide4" class="btn btn-circle">❮</a> 
-            <a href="#slide2" class="btn btn-circle">❯</a>
+      
+      <!-- Horizontal Scrollable Image Gallery Section -->
+      <div class="scrollable-gallery-container py-8 bg-base-200">
+        <h2 class="text-3xl font-bold text-center mb-4">Image Gallery</h2>
+        <div class="scrollable-gallery" ref="scrollableGallery">
+          <div v-for="(image, index) in galleryImages" :key="index" class="scrollable-gallery-item">
+            <img :src="image" alt="Gallery Image" class="rounded-lg shadow-lg" />
           </div>
-        </div> 
-        <div id="slide2" class="carousel-item relative w-full transition-transform duration-500 ease-in-out">
-          <img src="../assets/1.jpg" class="w-full h-64 object-cover" />
-          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide1" class="btn btn-circle">❮</a> 
-            <a href="#slide3" class="btn btn-circle">❯</a>
-          </div>
-        </div> 
-        <div id="slide3" class="carousel-item relative w-full transition-transform duration-500 ease-in-out">
-          <img src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg" class="w-full h-64 object-cover" />
-          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide2" class="btn btn-circle">❮</a> 
-            <a href="#slide4" class="btn btn-circle">❯</a>
-          </div>
-        </div> 
-        <div id="slide4" class="carousel-item relative w-full transition-transform duration-500 ease-in-out">
-          <img src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" class="w-full h-64 object-cover" />
-          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide3" class="btn btn-circle">❮</a> 
-            <a href="#slide1" class="btn btn-circle">❯</a>
-          </div>
+        </div>
+        <div class="flex justify-center mt-4">
+          <div
+            v-for="(image, index) in galleryImages"
+            :key="index"
+            :class="['dot', { 'dot-active': currentImageIndex === index }]"
+            @click="scrollToImage(index)"
+          ></div>
         </div>
       </div>
 
-      
       <div class="grid grid-cols-1 md:grid-cols-4 gap-8 p-9 md:p-20">
         <div class="col-span-3">
           <h2 class="text-3xl font-bold m-2">Welcome to AURCC: About the campus</h2>
@@ -162,7 +149,7 @@
         <div class="container mx-auto px-4">
           <h2 class="text-4xl font-bold text-center mb-8">From the Dean's Desk</h2>
           <p class="text-lg text-center mb-8">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi perspiciatis mollitia qui dolorum, rerum hic asperiores quibusdam repellendus sit repudiandae ipsa? Modi aliquam laboriosam mollitia laudantium nostrum, quae excepturi dolore voluptates. Qui dolorum voluptatum omnis itaque necessitatibus cum in, ea quae expedita beatae doloribus saepe. Provident velit pariatur eos! Aliquam distinctio dolorum, officia aut dolore modi nostrum excepturi? Totam maxime quis suscipit sunt earum corporis dolorum ipsa quidem saepe, nihil possimus consectetur corrupti atque molestias quam alias, nam quibusdam repudiandae quia magnam eligendi nemo aspernatur? Repudiandae, dolore unde architecto quisquam, voluptatem alias fuga perspiciatis velit provident dolor fugiat adipisci eaque.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi perspiciatis mollitia qui dolorum, rerum hic asperiores quibusdam repellendus sit repudiandae ipsa? Modi aliquam laboriosam mollitia laudantium nostrum, quae excepturi dolore voluptates. Qui dolorum voluptatum omnis itaque necessitatibus cum in, ea quae expedita beatae doloribus saepe. Provident velit pariatur eos! Aliquam distinctio dolorum, officia aut dolore modi nostrum excepturi? Totam maxime quis suscipit sunt earum corporis dolorum ipsa quidem saepe, nihil possimus consectetur corrupti atque molestias quam alias, nam quibusdam repudiandae quia magnam eligendi nemo aspernatur? Repudiandae, dolore unde architecto quisquam provident dolor fugiat adipisci eaque.
           </p>
           <div class="flex justify-center">
             <figure>
@@ -200,48 +187,43 @@ export default {
           description: 'Alumni reunions, football game, and campus celebrations.'
         }
       ],
-      featuredPrograms: [
-        {
-          id: 1,
-          title: 'Computer Science',
-          description: 'Prepare for careers in software development, cybersecurity, and more.',
-          imageUrl: 'https://placeimg.com/400/225/tech'
-        },
-        {
-          id: 2,
-          title: 'Business Administration',
-          description: 'Develop leadership and management skills for the corporate world.',
-          imageUrl: 'https://placeimg.com/400/225/business'
-        },
-        {
-          id: 3,
-          title: 'Environmental Studies',
-          description: 'Study the impact of human activities on the environment.',
-          imageUrl: 'https://placeimg.com/400/225/nature'
-        }
-      ]
+      galleryImages: [
+      'http://localhost:5173/src/assets/mime_annualday.jpeg',
+        'http://localhost:5173/src/assets/mime_annualday.jpeg',
+        'http://localhost:5173/src/assets/mime_annualday.jpeg',
+        'http://localhost:5173/src/assets/mime_annualday.jpeg',
+        'http://localhost:5173/src/assets/mime_annualday.jpeg',
+        'http://localhost:5173/src/assets/mime_annualday.jpeg'
+      ],
+      currentImageIndex: 0
     }
   },
   methods: {
     startScrolling() {
       const eventsContent = this.$refs.eventsContent
-      eventsContent.addClasslist('events-content')
+      eventsContent.classList.add('events-content')
       this.scrollInterval = setInterval(this.scrollEvents, 50) // Faster scroll speed
     },
     stopScrolling() {
-      // clearInterval(this.scrollInterval)
-      // this.scrollInterval = null
       const eventsContent = this.$refs.eventsContent
-      eventsContent.removeClasslist('events-content')
+      eventsContent.classList.remove('events-content')
     },
-    // scrollEvents() {
-    //   const eventsContent = this.$refs.eventsContent
-    //   const eventsList = this.$refs.eventsList
-    //   eventsContent.scrollTop += 1
-    //   if (eventsContent.scrollTop + eventsContent.clientHeight >= eventsList.clientHeight) {
-    //     eventsContent.scrollTop = 0
-    //   }
-    // }
+    scrollEvents() {
+      const eventsContent = this.$refs.eventsContent
+      const eventsList = this.$refs.eventsList
+      eventsContent.scrollTop += 1
+      if (eventsContent.scrollTop + eventsContent.clientHeight >= eventsList.clientHeight) {
+        eventsContent.scrollTop = 0
+      }
+    },
+    scrollToImage(index) {
+      this.currentImageIndex = index
+      const scrollableGallery = this.$refs.scrollableGallery
+      scrollableGallery.scrollTo({
+        left: index * scrollableGallery.clientWidth,
+        behavior: 'smooth'
+      })
+    }
   },
   mounted() {
     this.startScrolling()
@@ -286,11 +268,53 @@ export default {
   /* Style individual events */
 }
 
-.carousel-item {
-  display: none;
-}
-.carousel-item:target {
-  display: block;
+/* Scrollable Gallery Styles */
+.scrollable-gallery-container {
+  position: relative;
+  overflow: hidden;
 }
 
+.scrollable-gallery {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+.scrollable-gallery-item {
+  scroll-snap-align: start;
+  flex: 0 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.scrollable-gallery-item img {
+  width: 100%;
+  height: auto;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  transition: transform 0.3s;
+}
+
+.scrollable-gallery-item img:hover {
+  transform: scale(1.05);
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dot-active {
+  background-color: #717171;
+}
 </style>

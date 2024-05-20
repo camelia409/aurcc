@@ -98,6 +98,8 @@ const router = createRouter({
       path: '/library/',
       name: 'library',
       component: ()=> import('../views/Library.vue')
+    },
+    {
       path: '/distance-education/',
       name: 'distamce-education',
       component: ()=> import('../views/DistanceEdu.vue')
