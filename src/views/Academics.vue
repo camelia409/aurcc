@@ -64,10 +64,25 @@
             <h2 class="text-2xl font-bold mb-4">Student Affairs</h2>
             <div v-for="affair in studentAffairs" :key="affair.description" class="mb-6">
               <p v-for="desc in affair.description" :key="desc" class="mb-2">{{ desc }}</p>
+    
+              <div class="mb-4">
+                <h4 class="text-lg font-semibold">Contact Us</h4>
+                <p>{{ affair['contact us'] }}</p>
+              </div>
+            </div>
+          </div>
+          <div v-else-if="currentSection === 'Re-Admission'">
+            <h2 class="text-2xl font-bold mb-4">Re-Admission</h2>
+            <div v-for="affair in studentAffairs" :key="affair.description" class="mb-6">
               <div class="mb-4">
                 <h4 class="text-lg font-semibold">Re-Admission</h4>
                 <p>{{ affair['Re-Admission'] }}</p>
               </div>
+            </div>
+          </div>
+          <div v-else-if="currentSection === 'Scholarship'">
+            <h2 class="text-2xl font-bold mb-4">Scholorship</h2>
+            <div v-for="affair in studentAffairs" :key="affair.description" class="mb-6">
               <div class="mb-4">
                 <h4 class="text-lg font-semibold">Scholarship</h4>
                 <p>{{ affair.Scholarship.description }}</p>
@@ -77,6 +92,11 @@
                   </li>
                 </ul>
               </div>
+            </div>
+          </div>
+          <div v-else-if="currentSection === 'Office Bearers'">
+            <h2 class="text-2xl font-bold mb-4">Office Bearers</h2>
+            <div v-for="affair in studentAffairs" :key="affair.description" class="mb-6">
               <div class="mb-4">
                 <h4 class="text-lg font-semibold">Office Bearers</h4>
                 <ul class="list-disc list-inside">
@@ -84,10 +104,6 @@
                     {{ bearer['Name of the Staff'] }} - {{ bearer['Name of the Post'] }}
                   </li>
                 </ul>
-              </div>
-              <div class="mb-4">
-                <h4 class="text-lg font-semibold">Contact Us</h4>
-                <p>{{ affair['contact us'] }}</p>
               </div>
             </div>
           </div>
@@ -108,7 +124,10 @@ export default {
         'Curriculum & Syllabus',
         'Programs Offered',
         'Regulation',
-        'Student Affairs'
+        'Student Affairs',
+        'Re-Admission',
+        'Scholarship',
+        'Office Bearers'
       ],
       currentSection: null
     };
