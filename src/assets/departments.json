@@ -1056,62 +1056,53 @@
 		  "Characterization of Syzygium cumini (L.) fruit peels anthocyanins and their in silico studies as candidate inhibitors for hBest1 and RP2.",
 		  "Synthesis of gold and silver nanoparticles encapsulated by active phytochemical fraction of Justicia gendarussa burm F P potential drug for arthritis."
 		],
-		"faculty": [
-			{
-				"name": "Dr. P. Renuka Devi",
-				"position": "Assistant Professor (Senior Grade)",
-				"email": "renukadevi@aurcc.ac.in",
-				"teaching_experience": [
-					{
-						"organization": "Kovai Kalaimagal College of Arts and Science, Coimbatore",
-						"role": "Lecturer",
-						"from": "Jan 1999",
-						"to": "Aug 2008"
-					},
-					{
-						"organization": "Anna University, Coimbatore",
-						"role": "Lecturer",
-						"from": "Aug 2008",
-						"to": "Dec 2009"
-					},
-					{
-						"organization": "Anna University of Technology, Coimbatore",
-						"role": "Director i/c Biotechnology Center",
-						"from": "Jan 2010",
-						"to": "Aug 2012"
-					},
-					{
-						"organization": "Anna University, Regional Campus, Coimbatore",
-						"role": "HoD i/c, Department of Biotechnology",
-						"from": "Aug 2011",
-						"to": "Nov 2022"
-					},
-					{
-						"organization": "Anna University, Regional Campus, Coimbatore",
-						"role": "Assistant Professor, Department of Science and Humanities",
-						"from": "Nov 2022",
-						"to": "Till Date"
-					}
-				],
-				"achievements": {
-					"years_of_experience": "25",
-					"number_of_research_papers": "45",
-					"number_of_phd_research_scholars_completed": "9",
-					"number_of_pdf_research_scholars_completed": "1",
-					"number_of_mtech_students_supervised": "40",
-					"areas_of_expertise": [
-						"Plant Biotechnology",
-						"Food Biotechnology",
-						"Nanobiotechnology"
-					]
-				},
-				"links": {
-					"google_scholar": "https://scholar.google.co.in/citations?user=B5BUeTsAAAAJ&hl=en",
+		"faculty": {
+			"hod_desk": [
+				{
+					"name": "Dr. P. Renuka Devi",
 					"email": "renukadevi@aurcc.ac.in",
-					"drive_link": "https://drive.google.com/open?id=1jzWlxcSO4lrJ_XGU0HhZ6Uyf4Gi6k1uH"
+					"position": "Head of the Department",
+					"department": "Biotechnology",
+					"teaching_experience": [
+						{
+							"organization": "Kovai Kalaimagal College of Arts and Science, Coimbatore",
+							"role": "Lecturer",
+							"from": "Jan 1999",
+							"to": "Aug 2008"
+						},
+						{
+							"organization": "Anna University, Coimbatore",
+							"role": "Lecturer",
+							"from": "Aug 2008",
+							"to": "Dec 2009"
+						},
+						{
+							"organization": "Anna University of Technology, Coimbatore",
+							"role": "Director i/c Biotechnology Center",
+							"from": "Jan 2010",
+							"to": "Aug 2012"
+						},
+						{
+							"organization": "Anna University, Regional Campus, Coimbatore",
+							"role": "HoD i/c, Department of Biotechnology",
+							"from": "Aug 2011",
+							"to": "Nov 2022"
+						},
+						{
+							"organization": "Anna University, Regional Campus, Coimbatore",
+							"role": "Assistant Professor",
+							"from": "Nov 2022",
+							"to": "Till Date"
+						}
+					],
+					"links": {
+						"google_scholar": "https://scholar.google.co.in/citations?user=B5BUeTsAAAAJ&hl=en",
+						"email": "renukadevi@aurcc.ac.in",
+						"drive_link": "https://drive.google.com/open?id=1jzWlxcSO4lrJ_XGU0HhZ6Uyf4Gi6k1uH"
+					}
 				}
-			}
-		],
+			]
+		},
 		"contact": "biotechdepartment@aurcc.ac.in"
 	},
 	{	"address":"nanotech",
@@ -1124,179 +1115,169 @@
 		"placements": null,
 		"achievements": null,
 		"research_and_publications": "The rated offer with for a our Departmentd wealth teaching Of constituent F of in higher Nanoscience expertise, colleges education and Nanotechnology Collaborators and Technology research in at at the, in Anna industries Anna Tamilnadu. University and University With other Regional Regional excellent research Campus Campus facilities organizations and Coimbatore Coimbatore services enjoy has is working with us on mutually beneficial projects: Department of Nanoscience and Technology's academics are at the forefront of developments in the higher education and research towards nanotechnology and many other subjects. At the forefront of nanotechnology research stretching across the boundaries of Science and Engineering; from controlled assembly of nanostructured materials to design of advanced materials. A new state-of -the-art research laboratories housing comprehensive suite of experimental facilities ranging from UV-Vis Spectroscopy, Raman Spectroscopy, Adsorption measurements and surface imaging tools have been well established. The department offers highly competitive two years/four semester M.Tech, programme in Nanoscience and Technology. The aim of this programme is to lead up students in cutting-edge nanotechnology. We are committed and ensure that the best candidates are able to start their own research towards social development.",
-		"faculty": [
-			{
-			"name": "Dr. Rajasekar Krishnan",
-			"position": "Assistant Professor",
-			"department": "Department of Chemistry (S&H)",
-			"email": "rajasekar@aurcc.ac.in",
-			"education": [
-			  {
-				"degree": "B.Sc. in Chemistry",
-				"institution": "Govt Arts College, Salem, University of Madras"
-			  },
-			  {
-				"degree": "M.Sc. in Chemistry",
-				"institution": "Govt Arts College, Salem, University of Madras"
-			  },
-			  {
-				"degree": "Ph.D. in Chemistry",
-				"institution": "Anna University Guindy Campus, Chennai",
-				"year": 2007
-			  }
+		"faculty": {
+			"hod_desk": [
+				{
+					"name": "Dr. Rajasekar Krishnan",
+					"email": "rajasekar@aurcc.ac.in",
+					"position": "Head of the Department",
+					"department": "Chemistry",
+					"education": [
+					  {
+						"degree": "B.Sc. in Chemistry",
+						"institution": "Govt Arts College, Salem, University of Madras"
+					  },
+					  {
+						"degree": "M.Sc. in Chemistry",
+						"institution": "Govt Arts College, Salem, University of Madras"
+					  },
+					  {
+						"degree": "Ph.D. in Chemistry",
+						"institution": "Anna University Guindy Campus, Chennai",
+						"year": 2007
+					  }
+					],
+					"professional_experience": [
+					  {
+						"position": "Post Doctoral Fellow",
+						"organization": "Department of Chemical Engineering, Massachusetts Institute of Technology (MIT), Cambridge, USA",
+						"duration": "June 2009 - June 2010"
+					  },
+					  {
+						"position": "Assistant Professor",
+						"organization": "Department of Nanotechnology, Anna University of Technology Coimbatore, Tamilnadu, INDIA",
+						"duration": "September 2008 - Till now"
+					  }
+					],
+					"achievements": [
+					  {
+						"title": "Eco-benign Synthesis, Characterization of CdS-QDs/Casein Bionanocomposite Towards Anti-microbial, Anti-hemolytic and Cytotoxicity in A549 & MCF-7 Cells",
+						"journal": "Journal of Cluster Science",
+						"pages": "1-16"
+					  },
+					  {
+						"title": "Investigation on Template Etching Process of SBA-15 Derived Ordered Mesoporous Carbon on Electrocatalytic Oxygen Reduction Reaction",
+						"journal": "Chemistry select",
+						"volume": 4,
+						"pages": "2463"
+					  },
+					  {
+						"title": "Synthesis and electrochemical studies of Ta-Graphene nanocomposite film modified platinum electrode",
+						"journal": "Journal of Electroanalytical Chemistry",
+						"volume": 780,
+						"pages": "53-59"
+					  },
+					  {
+						"title": "Modified Synthesis of Edge ScrolledReduced GrapheneOxide with High Surface Area",
+						"journal": "EDUCATUM Journal of Science, Mathematics and Technology",
+						"volume": 3,
+						"issue": 1,
+						"pages": "1-5"
+					  },
+					  {
+						"title": "N-Doped Hollow Mesoporous Carbon Nanospheres for Oxygen Reduction Reaction in Alkaline Media.",
+						"journal": "ACS Appl. Nano Mater.",
+						"year": 2020,
+						"volume": 3,
+						"issue": 9,
+						"pages": "8875–8887"
+					  },
+					  {
+						"title": "Hydrothermal assisted morphology designed MoS2 material as alternative cathode catalyst for PEM electrolyser application",
+						"journal": "International Journal of Hydrogen Energy",
+						"volume": 41,
+						"year": 2016,
+						"pages": "13331-13340"
+					  }
+					],
+					"links": {
+					  "Google Scholar": "https://scholar.google.com/citations?user=hQG-NTcAAAAJ&hl=en",
+					  "Email": "mailto:rajasekar@aurcc.ac.in",
+					  "Resume": "https://drive.google.com/open?id=1Qqw5lD0RjvGhI_y6axNWEWegT36cifB0"
+					}
+				}
 			],
-			"research_interest": null,
-			"professional_experience": [
-			  {
-				"position": "Post Doctoral Fellow",
-				"organization": "Department of Chemical Engineering, Massachusetts Institute of Technology (MIT), Cambridge, USA",
-				"duration": "June 2009 – June 2010"
-			  },
-			  {
-				"position": "Assistant Professor",
-				"organization": "Department of Nanotechnology, Anna University of Technology Coimbatore, Tamilnadu, INDIA",
-				"duration": "September 2008 – Till now"
-			  }
-			],
-			"achievements": [
-			  {
-				"title": "Eco-benign Synthesis, Characterization of CdS-QDs/Casein Bionanocomposite Towards Anti-microbial, Anti-hemolytic and Cytotoxicity in A549 & MCF-7 Cells",
-				"authors": ["A Srinivasan", "G Gayathri", "M Muthupandi", "K Rajasekar", "KB Ameen"],
-				"journal": "Journal of Cluster Science",
-				"pages": "1-16"
-			  },
-			  {
-				"title": "Investigation on Template Etching Process of SBA-15 Derived Ordered Mesoporous Carbon on Electrocatalytic Oxygen Reduction Reaction",
-				"authors": ["SMSK Velu Duraisamy", "Karuppiah Selvakumar", "Rajasekar Krishnan"],
-				"journal": "Chemistry select",
-				"volume": 4,
-				"pages": "2463"
-			  },
-			  {
-				"title": "Synthesis and electrochemical studies of Ta–Graphene nanocomposite film modified platinum electrode",
-				"authors": ["R Rajagopal", "A Ragunathan", "SK SM", "R Krishnan", "BA Kamaludeen"],
-				"journal": "Journal of Electroanalytical Chemistry",
-				"volume": 780,
-				"pages": "53-59"
-			  },
-			  {
-				"title": "Modified Synthesis of Edge ScrolledReduced GrapheneOxide with High Surface Area",
-				"authors": ["R Rajesh", "KB Ameen", "K Rajasekar"],
-				"journal": "EDUCATUM Journal of Science, Mathematics and Technology",
-				"volume": 3,
-				"issue": 1,
-				"pages": "1-5"
-			  },
-			  {
-				"title": "N-Doped Hollow Mesoporous Carbon Nanospheres for Oxygen Reduction Reaction in Alkaline Media.",
-				"authors": ["Velu Duraisamy", "Rajasekar Krishnan", "Sakkarapalayam Murugesan Senthil Kumar"],
-				"journal": "ACS Appl. Nano Mater.",
-				"year": 2020,
-				"volume": 3,
-				"issue": 9,
-				"pages": "8875–8887"
-			  },
-			  {
-				"title": "Hydrothermal assisted morphology designed MoS2 material as alternative cathode catalyst for PEM electrolyser application",
-				"authors": ["S.M. Senthil Kumar", "A. KarthigaiSelviNuriaNavascues", "K. Selvakumar", "S", "K. Rajasekar", "Ravichandran", "Silvia Irusta"],
-				"journal": "International Journal of Hydrogen Energy",
-				"volume": 41,
-				"year": 2016,
-				"pages": "13331-13340"
-			  }
-			],
-			"links": {
-			  "Google Scholar": "https://scholar.google.com/citations?user=hQG-NTcAAAAJ&hl=en",
-			  "Email": "mailto:rajasekar@aurcc.ac.in",
-			  "Resume": "https://drive.google.com/open?id=1Qqw5lD0RjvGhI_y6axNWEWegT36cifB0"
-			}
-		  },
-		  {
-			"name": "Dr. Sardhar Basha S J",
-			"position": "Assistant Professor (Senior Grade)",
-			"department": "Department of Science and Humanities (Chemistry)",
-			"email": "jsardhar@aurcc.ac.in",
-			"research_interests": null,
-			"professional_experience": [
-			  {
-				"position": "Junior Research Fellow and Senior Research Fellow",
-				"organization": "DRDO sponsored project, Anna University Chennai",
-				"duration": "2003-2006"
-			  },
-			  {
-				"position": "Post Doctoral Researcher",
-				"organization": "National Chung Cheng University, Taiwan",
-				"duration": "2006 - 2008"
-			  },
-			  {
-				"position": "Senior Lecturer",
-				"organization": "Sona College of Technology, Salem",
-				"duration": "2008 - 2009"
-			  },
-			  {
-				"position": "Assistant Professor",
-				"organization": "University College of Engineering Ramanathapuram",
-				"duration": "2009 - 2015"
-			  },
-			  {
-				"position": "Assistant Professor",
-				"organization": "Anna University Regional Campus Coimbatore",
-				"duration": "2015- Till date"
-			  }
-			],
-			"achievements": [
-			  {
-				"title": "Unraveling the Enhanced Electrochemical Performances of Nickel Aluminum Sulfide Lattices for Overall Water Splitting and as Counter Electrode Material for Dye-Sensitized Solar Cells",
-				"authors": ["T. saravanakumar", "S, Sathiya Bama", "Bhojanaa, Karuppanapillai", "A. Pandikumar", "S. J, Sardhar Basha", "T, Selvaraju"],
-				"journal": "J. Phys. Chem. C",
-				"year": 2023,
-				"volume": "127",
-				"issue": "25",
-				"pages": "11921-11931"
-			  },
-			  {
-				"title": "Revealing the Role of Brønsted Basicity by the Electrocatalytic Reaction via Li Insertion in the MgFe2O4 Lattice",
-				"authors": ["T. Saravanakumar", "S.J. Sardhar Basha", "S. Sathiya Bama", "Humayun Amir", "Viswanathan C", "T. Selvaraju"],
-				"journal": "J. Phys. Chem. C",
-				"year": 2022,
-				"volume": 126,
-				"pages": "11915−11926"
-			  },
-			  {
-				"title": "Hierarchical 2D/2D interface of nickel aluminum oxide and nickel aluminum layered double hydroxide nanoflowers: An efficient and robust electrocatalyt for overall water splitting",
-				"authors": ["T. Saravanakumar", "S. Sathiya Bama", "T. Selvaraju", "S.J. Sardhar Basha"],
-				"journal": "Electrochimica Acta",
-				"volume": 392,
-				"year": 2021,
-				"pages": "139029"
-			  },
-			  {
-				"title": "Hexacyanoferrate-Complex-Derived NiFe2O4/CoFe2O4 Heterostructure−MWCNTs for an Efficient Oxygen Evolution Reaction",
-				"authors": ["T. Saravanakumar", "S. Sathiya Bama", "T. Selvaraju", "S.J. Sardhar Basha"],
-				"journal": "Energy & Fuels",
-				"volume": 35,
-				"issue": 6,
-				"year": 2021,
-				"pages": "5372-5382"
-			  },
-			  {
-				"title": "Amperometric determination of hydrazine using a CuS-ordered mesoporous carbon electrode",
-				"authors": ["Srinidhi", "G", "Sudalaimani", "S", "Giribabu", "K", "Sardhar Basha", "S.J", "Suresh", "C"],
-				"journal": "Microchimica Acta",
-				"volume": 187,
-				"year": 2020,
-				"pages": "1-10"
-			  }
-			],
-			"links": {
-			  "Google Scholar": null,
-			  "Email": "mailto:jsardhar@aurcc.ac.in",
-			  "LinkedIn": null
-			},
-			"contact": "nanotechdepartment@aurcc.ac.in"
-			}
-		]
-	},
+			"assistant_professors": [
+				{
+					"name": "Dr. Sardhar Basha S J",
+					"email": "jsardhar@aurcc.ac.in",
+					"position": "Assistant Professor (Senior Grade)",
+					"department": "Chemistry",
+					"professional_experience": [
+					{
+						"position": "Junior Research Fellow and Senior Research Fellow",
+						"organization": "DRDO sponsored project, Anna University Chennai",
+						"duration": "2003-2006"
+					},
+					{
+						"position": "Post Doctoral Researcher",
+						"organization": "National Chung Cheng University, Taiwan",
+						"duration": "2006 - 2008"
+					},
+					{
+						"position": "Senior Lecturer",
+						"organization": "Sona College of Technology, Salem",
+						"duration": "2008 - 2009"
+					},
+					{
+						"position": "Assistant Professor",
+						"organization": "University College of Engineering Ramanathapuram",
+						"duration": "2009 - 2015"
+					},
+					{
+						"position": "Assistant Professor",
+						"organization": "Anna University Regional Campus Coimbatore",
+						"duration": "2015- Till date"
+					}
+					],
+					"achievements": [
+					{
+						"title": "Unraveling the Enhanced Electrochemical Performances of Nickel Aluminum Sulfide Lattices for Overall Water Splitting and as Counter Electrode Material for Dye-Sensitized Solar Cells",
+						"journal": "J. Phys. Chem. C",
+						"year": 2023,
+						"volume": "127",
+						"issue": "25",
+						"pages": "11921-11931"
+					},
+					{
+						"title": "Revealing the Role of Brønsted Basicity by the Electrocatalytic Reaction via Li Insertion in the MgFe2O4 Lattice",
+						"journal": "J. Phys. Chem. C",
+						"year": 2022,
+						"volume": 126,
+						"pages": "11915-11926"
+					},
+					{
+						"title": "Hierarchical 2D/2D interface of nickel aluminum oxide and nickel aluminum layered double hydroxide nanoflowers: An efficient and robust electrocatalyt for overall water splitting",
+						"journal": "Electrochimica Acta",
+						"volume": 392,
+						"year": 2021,
+						"pages": "139029"
+					},
+					{
+						"title": "Hexacyanoferrate-Complex-Derived NiFe2O4/CoFe2O4 Heterostructure-MWCNTs for an Efficient Oxygen Evolution Reaction",
+						"journal": "Energy & Fuels",
+						"volume": 35,
+						"issue": 6,
+						"year": 2021,
+						"pages": "5372-5382"
+					},
+					{
+						"title": "Amperometric determination of hydrazine using a CuS-ordered mesoporous carbon electrode",
+						"journal": "Microchimica Acta",
+						"volume": 187,
+						"year": 2020,
+						"pages": "1-10"
+					}
+					],
+					"links": {
+					"Email": "mailto:jsardhar@aurcc.ac.in"
+					}
+					
+				}
+			]
+		},
+		"contact": "nanotechdepartment@aurcc.ac.in"
+	},		  
 	{	"address":"mech",
 		"image":"",
 		"name": "Mechanical Engineering",
@@ -1359,219 +1340,142 @@
 			"co_principal_investigator_research_supervisor": "Dr. M. Sakthiv"
 		}
 		],
-		"faculty": [
-		  {
-			"name": "Dr. K. Soorya Prakash",
-			"email": "sooryaprakash.k@gmail.com",
-			"position": "Assistant Professor (Selection Grade)",
-			"teaching_experience": [
+		"faculty": {
+			"hod_desk": [
 			  {
-				"organization": "Krishna College of E&T, Kovaipudur, Cbe.",
-				"role": "Teaching",
-				"from": "24/06/2005",
-				"to": "07/06/2006"
-			  },
-			  {
-				"organization": "PSG College of Technology, Coimbatore",
-				"role": "Teaching",
-				"from": "07/06/2006",
-				"to": "09/08/2008"
-			  },
-			  {
-				"organization": "Anna University RC Coimbatore",
-				"role": "Teaching",
-				"from": "11/08/2008",
-				"to": "Till Date"
+				"name": "Dr. K. Soorya Prakash",
+				"email": "sooryaprakash.k@gmail.com",
+				"position": "Assistant Professor (Selection Grade)",
+				"education": [],
+				"professional_experience": [],
+				"research_interests": [],
+				"publications": null,
+				"links": {
+				  "google_scholar": "https://scholar.google.com/schhp?hl=en",
+				  "email": "soorya@aurcc.ac.in",
+				  "linkedin": "nil"
+				}
 			  }
 			],
-
-			"links": {
-			  "google_scholar": "https://scholar.google.com/schhp?hl=en",
-			  "email": "soorya@aurcc.ac.in",
-			  "linkedin": "nil"
-			}
-		  },
-		  {
-			"name": "Dr. M Sakthivel",
-			"email": "sakthi.tgode@gmail.com",
-			"position": "Associate Professor",
-			"teaching_experience": [
-			  {
-				"organization": "Anna University Regional Campus",
-				"role": "Associate Professor",
-				"from": "01.08.2012",
-				"to": "Till Date"
-			  },
-			  {
-				"organization": "Anna University Coimbatore",
-				"role": "Associate Professor",
-				"from": "13.08.2011",
-				"to": "31.07.2012"
-			  },
-			  {
-				"organization": "Anna University Coimbatore",
-				"role": "Assistant Professor",
-				"from": "13.08.2008",
-				"to": "12.08.2011"
-			  },
-			  {
-				"organization": "Government College of Technology Coimbatore",
-				"role": "Teaching Research Associate",
-				"from": "19.02.2003",
-				"to": "11.08.2008"
-			  },
-			  {
-				"organization": "Government College of Engineering Salem",
-				"role": "Teaching Research Associate",
-				"from": "19.04.2002",
-				"to": "18.02.2003"
-			  }
-			],
-			"links": {
-			  "google_scholar": "https://scholar.google.co.in/citations?hl=en&user=H7rEMNAAAAAJ&view_op=list_works&sortby=pubdate",
-			  "email": "sakthivel@aurcc.ac.in",
-			  "drive_link": "https://drive.google.com/open?id=1jYzyBO8OgZWLi0Q_Z-AhV7T8ZKZw1dev"
-			}
-		  },
-		  {
-			"name": "Dr. Kanthavel K",
-			"email": "kandavelkk@gmail.com",
-			"position": "Assistant Professor",
-			"teaching_experience": [
-			  {
-				"organization": "Anna University Regional Campus Coimbatore",
-				"role": "Assistant Professor",
-				"from": "07-08-2008",
-				"to": "Till Date"
-			  },
-			  {
-				"organization": "Anna University of Technology",
-				"role": "Lecturer",
-				"from": "01.09.2007",
-				"to": "06.08.2008"
-			  },
-			  {
-				"organization": "Hindusthan College of Engineering and Technology",
-				"role": "Assistant Professor",
-				"from": "01-06-2006",
-				"to": "13-08-2007"
-			  },
-			  {
-				"organization": "Hindusthan College of Engineering and Technology",
-				"role": "Lecturer",
-				"from": "01-06-2004",
-				"to": "31-05-2006"
-			  }
-			],
-			"links": {
-			  "google_scholar": "https://scholar.google.com/citations?user=yRxP8XIAAAAJ",
-			  "email": "kandavelkk@ccf.annauniv.edu",
-			  "drive_link": "https://drive.google.com/open?id=11I4xY-G_IdN6mUzi5GZNg9Sabf_RNeje"
-			}
-		  },
-		  {
-			"name": "Dr. Sathiya Moorthy R",
-			"email": "sathiya81@gmail.com",
-			"position": "Assistant Professor",
-			"teaching_experience": [
-			  {
-				"organization": "VIT University, Vellore",
-				"role": "Lecturer",
-				"from": "2007",
-				"to": "2008"
-			  },
-			  {
-				"organization": "Anna University Regional Campus Coimbatore",
-				"role": "Assistant Professor",
-				"from": "2008",
-				"to": "Till Date"
-			  }
-			],
-			"links": {
-			  "google_scholar": "https://scholar.google.com/citations?user=QSBDUCQAAAAJ&hl=en",
-			  "email": "sathiya@aurcc.ac.in",
-			  "drive_link": "https://drive.google.com/open?id=1U9z-1VT7NUjKG_ZxlJBNa51p45P1hWgL"
-			}
-		  },
-		  {
-			"name": "Dr. Balasubramanian M",
-			"email": "annaunivbala76@gmail.com",
-			"position": "Assistant Professor",
-			"teaching_experience": [
-			  {
-				"organization": "Sapthagiri College of Engineering Periyanahalli",
-				"role": "Lecturer",
-				"from": "1998",
-				"to": "2002"
-			  },
-			  {
-				"organization": "SRM Valliammai Engineering College",
-				"role": "Sr. lecturer",
-				"from": "2004",
-				"to": "2009"
-			  },
-			  {
-				"organization": "Anna University-University College of Engineering Ramanathapuram Campus",
-				"role": "Assistant Professor",
-				"from": "2009",
-				"to": "2023"
-			  },
-			  {
-				"organization": "Anna University-Regional Campus Coimbatore",
-				"role": "Assistant Professor",
-				"from": "2023",
-				"to": "Till Date"
-			  }
-			],
-			"links": {
-			  "google_scholar": "https://scholar.google.com/citations?user=JLZmMBYAAAAJ&hl=en",
-			  "email": "annaunivbala76@gmail.com",
-			  "drive_link": "https://drive.google.com/open?id=1hVAjAQwSddu9gWkM40lhPYF_c2A2ZyGb"
-			}
-		  },
-		  {
-			"name": "Mrs. Usha Rani T",
-			"email": "ushatheivendran@gmail.com",
-			"position": "Assistant Professor (Senior Grade)",
-			"teaching_experience": [
-			  {
-				"organization": "Anna University Regional Campus, Coimbatore",
-				"role": "Assistant Professor",
-				"from": "21.07.2023",
-				"to": "Till Date"
-			  },
-			  {
-				"organization": "University VOC College of Engineering, Thoothukudi",
-				"role": "Assistant Professor",
-				"from": "01-07-2011",
-				"to": "21-06-2023"
-			  },
-			  {
-				"organization": "Anna University of Technology, Regional Campus, Tirunelveli",
-				"role": "Assistant Professor",
-				"from": "24-08-2010",
-				"to": "30-06-2011"
-			  },
-			  {
-				"organization": "Price Shri Venkateswara Padmavathy Engineering College, Ponmar",
-				"role": "Lecturer",
-				"from": "02-06-2008",
-				"to": "17-08-2010"
-			  },
-			  {
-				"organization": "Jeya Engineering College, Thiruninravur",
-				"role": "Lecturer",
-				"from": "02-06-2007",
-				"to": "03-05-2008"
-			  }
-			],
-			"links": {
-			  "google_scholar": "https://scholar.google.com/citations?user=tFUawD8AAAAJ&hl=en",
-			  "email": "usharani@annaunivtut.in",
-			  "drive_link": "https://drive.google.com/open?id=17GllGUg-oZ6QKvrErHh6vOu9g0SZFMiG"
-			}
-		  }		  
-		],
+			"assistant_professors": [
+				{
+				  "name": "Dr. Sakthivel M",
+				  "email": "sakthi.tgode@gmail.com",
+				  "position": "Assistant Professor",
+				  "education": [],
+				  "professional_experience": [],
+				  "research_interests": [],
+				  "publications": null,
+				  "links": {
+					"google_scholar": "https://scholar.google.co.in/citations?hl=en&user=H7rEMNAAAAAJ&view_op=list_works&sortby=pubdate",
+					"email": "sakthivel@aurcc.ac.in",
+					"drive_link": "https://drive.google.com/open?id=1jYzyBO8OgZWLi0Q_Z-AhV7T8ZKZw1dev"
+				  }
+				},
+				{
+				  "name": "Dr. Kanthavel K",
+				  "email": "kandavelkk@gmail.com",
+				  "position": "Assistant Professor",
+				  "education": [],
+				  "professional_experience": [],
+				  "research_interests": [],
+				  "publications": null,
+				  "links": {
+					"google_scholar": "https://scholar.google.com/citations?user=yRxP8XIAAAAJ",
+					"email": "kandavelkk@ccf.annauniv.edu",
+					"drive_link": "https://drive.google.com/open?id=11I4xY-G_IdN6mUzi5GZNg9Sabf_RNeje"
+				  }
+				},
+				{
+				  "name": "Dr. Sathyamoorthy R",
+				  "email": "sathiya81@gmail.com",
+				  "position": "Assistant Professor",
+				  "education": [],
+				  "professional_experience": [],
+				  "research_interests": [],
+				  "publications": null,
+				  "links": {
+					"google_scholar": "https://scholar.google.com/citations?user=QSBDUCQAAAAJ&hl=en",
+					"email": "sathiya@aurcc.ac.in",
+					"drive_link": "https://drive.google.com/open?id=1U9z-1VT7NUjKG_ZxlJBNa51p45P1hWgL"
+				  }
+				},
+				{
+				  "name": "Dr. Balasubramanian M",
+				  "email": "annaunivbala76@gmail.com",
+				  "position": "Assistant Professor",
+				  "education": [],
+				  "professional_experience": [],
+				  "research_interests": [],
+				  "publications": null,
+				  "links": {
+					"google_scholar": "https://scholar.google.com/citations?user=JLZmMBYAAAAJ&hl=en",
+					"email": "annaunivbala76@gmail.com",
+					"drive_link": "https://drive.google.com/open?id=1hVAjAQwSddu9gWkM40lhPYF_c2A2ZyGb"
+				  }
+				},
+				{
+					"name": "Dr. Bhagavathi Pushpa T",
+					"email": "tbhagavathi@aurcc.ac.in",
+					"position": "Assistant Professor",
+					"education": [
+					  {
+						"degree": "B.E. Civil Engineering",
+						"year": 2003,
+						"institution": "Madras University"
+					  },
+					  {
+						"degree": "M.E. Environmental Engineering",
+						"year": 2005,
+						"institution": "Anna University"
+					  },
+					  {
+						"degree": "Ph.D.",
+						"year": 2015,
+						"institution": "Anna University Chennai"
+					  }
+					],
+					"professional_experience": [
+					  "Lecturer, Shri Andal Alagar College of Engineering, Chengalpattu (2005 - 2006)",
+					  "Lecturer, Adhiparasakthi Engineering College, Melmaruvathur (2006 - 2009)",
+					  "Assistant Professor, University College of Engineering, Ramanathapuram (2009 - 2023)",
+					  "Assistant Professor, Anna University Regional Campus Coimbatore (2023 - Till Date)"
+					],
+					"research_interests": null,
+					"publications": {
+					  "Books Published": 3,
+					  "Book Chapter Published": 1,
+					  "International/ National Journals Published": 60,
+					  "International/ National Conferences Published/ Participated": 22,
+					  "Patent Filed": 4,
+					  "Award Received": 1,
+					  "Programmes Organized": 6,
+					  "Training Programmes Attended": 3,
+					  "FDP Programmes Attended": 23
+					},
+					"links": {
+					  "google_scholar": "https://scholar.google.com/citations?hl=en&user=RlB1rQkAAAAJ",
+					  "research_gate": "https://www.researchgate.net/profile/T_Pushpa",
+					  "email": "tbhagavathi@aurcc.ac.in",
+					  "drive_link": "https://drive.google.com/open?id=1nLapb4LVXnMVyIlxpIZrW_pgd2zYlHIS"
+					}
+				},
+				{
+				  "name": "Mrs. Usha Rani T",
+				  "email": "ushatheivendran@gmail.com",
+				  "position": "Assistant Professor (Senior Grade)",
+				  "education": [],
+				  "professional_experience": [],
+				  "research_interests": [],
+				  "publications": null,
+				  "links": {
+					"google_scholar": "https://scholar.google.com/citations?user=tFUawD8AAAAJ&hl=en",
+					"email": "usharani@annaunivtut.in",
+					"drive_link": "https://drive.google.com/open?id=17GllGUg-oZ6QKvrErHh6vOu9g0SZFMiG"
+				  }
+				}
+			  ]
+			},
 		"contact": "mechdepartment@aurcc.ac.in"
 	},
 	{	"address": "mba",
@@ -1618,83 +1522,102 @@
 			"completed_phd_students": 71,
 			"synopsis_submitted": 4
 		},
-		"faculty": [
-			{
+		"faculty": {
+			"hod_desk": [
+			  {
 				"name": "Dr. Subha M V",
 				"email": "subhamv@aurcc.ac.in",
 				"position": "Associate Professor",
 				"department": "Department of Management Studies",
 				"experience": "26 years",
-				"research_interests": ["Stock Market Analysis and Prediction", "Econometric and Stochastic Model Building", "Corporate Finance", "Time Series Analysis"],
+				"research_interests": [
+				  "Stock Market Analysis and Prediction",
+				  "Econometric and Stochastic Model Building",
+				  "Corporate Finance",
+				  "Time Series Analysis"
+				],
 				"education": ["Ph.D. in Finance"],
 				"current_position": "Associate Professor, Anna University Regional Campus Coimbatore (18.8.2011 to present)",
 				"previous_positions": [
-					"Assistant Professor SG, Anna University, Coimbatore (18.08.2008 to 17.08.2011)",
-					"Assistant Professor, Sri Krishna College of Engineering and Technology (22.08.2007 to 14.08.2008)",
-					"Senior Lecturer, Guruvayurappan Institute of Management (14.08.2002-21.08.2007)",
-					"Lecturer, Guruvayurappan Institute of Management (14.08.1998 to 13.08.2002)"
+				  "Assistant Professor SG, Anna University, Coimbatore (18.08.2008 to 17.08.2011)",
+				  "Assistant Professor, Sri Krishna College of Engineering and Technology (22.08.2007 to 14.08.2008)",
+				  "Senior Lecturer, Guruvayurappan Institute of Management (14.08.2002-21.08.2007)",
+				  "Lecturer, Guruvayurappan Institute of Management (14.08.1998 to 13.08.2002)"
 				],
-				"scholar_profile": "https://scholar.google.com/citations?user=ze1WOaIAAAAJ&hl=en",
-				"additional_info": "https://drive.google.com/open?id=1G0HK15KlSlt-rhKJ7MlhSoFxWoTFCHzX"
-			},
-			{
-				"name": "Dr. S. Chandrakumarmangalam",
-				"email": "ckmaucbe@gmail.com",
-				"position": "Associate Professor",
-				"department": "Department of Management Studies",
-				"experience": "25 years",
-				"research_interests": ["Open-source software project management", "Rural entrepreneurship", "Economic development"],
-				"education": [],
-				"current_position": "Associate Professor, School of Management Studies, Anna University Regional Centre Coimbatore (11.08.2011 to present)",
-				"previous_positions": [],
-				"scholar_profile": "https://scholar.google.com/citations?user=9T0CchQAAAAJ&hl=en",
-				"additional_info": ""
-			},
-			{
-				"name": "Dr. PREMAPRIYA M.S",
-				"email": "premapriya@aurcc.ac.in",
-				"position": "Assistant Professor",
-				"department": "Department of Management Studies",
-				"experience": "21 years",
-				"research_interests": ["Marketing", "Systems", "Women empowerment", "Women studies"],
-				"education": ["Ph.D. in Management"],
-				"current_position": "Assistant Professor, Anna University Regional Campus Coimbatore (8 August 2008 to present)",
-				"previous_positions": ["Lecturer, SNR Sons College, Coimbatore (16 June 2003 to 7 August 2008)"],
-				"additional_info": "https://drive.google.com/open?id=1sZJsiwR5-qF2ADNPeOLUeneOjfCclZMM"
-			},
-			{
-				"name": "Dr. Srividhya S",
-				"email": "srividhya@aurcc.ac.in",
-				"position": "Assistant Professor",
-				"department": "Department of Management Studies",
-				"experience": "29 years",
-				"research_interests": ["Performance Management and Assessment"],
-				"education": ["Two Post Graduate Degrees in Commerce and Business Administration", "Ph.D."],
-				"current_position": "Assistant Professor, Anna University Regional Campus Coimbatore (2008 - present)",
-				"previous_positions": [
-					"Purchase Officer, ANP APPAREL, Tirupur (1995 to 2002)",
-					"Administrative Officer, M/s. KARTHIKEYAN ENGINEERING CONSULTANTS, Coimbatore (2002 to 2008)"
-				],
-				"scholar_profile": "https://scholar.google.co.in/citations",
-				"additional_info": "https://drive.google.com/open?id=10-MRxOAOtbhsa6mjZZN_ccjpL5T3bv3o"
-			},
-			{
-				"name": "Dr. Suganthalakshmi T",
-				"email": "sugi1971@rediffmail.com",
-				"position": "Assistant Professor",
-				"department": "Department of Management Studies",
-				"experience": "25 years",
-				"research_interests": ["Skill development activities for students"],
-				"education": [],
-				"current_position": "Assistant Professor, Anna University Regional campus Coimbatore (2008 to present)",
-				"previous_positions": [
+				"links": {
+				  "scholar_profile": "https://scholar.google.com/citations?user=ze1WOaIAAAAJ&hl=en",
+				  "additional_info": "https://drive.google.com/open?id=1G0HK15KlSlt-rhKJ7MlhSoFxWoTFCHzX"
+				}
+			  }
+			],
+			"assistant_professors": [
+				{
+				  "name": "Dr. Suganthalakshmi T",
+				  "email": "sugi1971@rediffmail.com",
+				  "position": "Assistant Professor",
+				  "department": "Department of Management Studies",
+				  "experience": "25 years",
+				  "research_interests": ["Skill development activities for students"],
+				  "current_position": "Assistant Professor, Anna University Regional campus Coimbatore (2008 to present)",
+				  "previous_positions": [
 					"Lecturer in MCA at RVS College of Arts and Science (1999 to 2004)",
 					"Lecturer in MBA at RVSIMSR (2004 to 2008)"
-				],
-				"scholar_profile": "https://scholar.google.com/citations?user=uVpPQDAAAAAJ&hl=en",
-				"additional_info": "https://drive.google.com/open?id=1yfUS2vouzCRs1AWLfuQvlLtvduelqrV6"
-			}
-		],
+				  ],
+				  "links": {
+					"scholar_profile": "https://scholar.google.com/citations?user=uVpPQDAAAAAJ&hl=en",
+					"additional_info": "https://drive.google.com/open?id=1yfUS2vouzCRs1AWLfuQvlLtvduelqrV6"
+				  }
+				},
+				{
+				  "name": "Dr. PREMAPRIYA M.S",
+				  "email": "premapriya@aurcc.ac.in",
+				  "position": "Assistant Professor",
+				  "department": "Department of Management Studies",
+				  "experience": "21 years",
+				  "research_interests": ["Marketing", "Systems", "Women empowerment", "Women studies"],
+				  "education": ["Ph.D. in Management"],
+				  "current_position": "Assistant Professor, Anna University Regional Campus Coimbatore (8 August 2008 to present)",
+				  "previous_positions": ["Lecturer, SNR Sons College, Coimbatore (16 June 2003 to 7 August 2008)"],
+				  "links": {
+					"additional_info": "https://drive.google.com/open?id=1sZJsiwR5-qF2ADNPeOLUeneOjfCclZMM"
+				  }
+				},
+				{
+				  "name": "Dr. S. Chandrakumarmangalam",
+				  "email": "ckmaucbe@gmail.com",
+				  "position": "Assistant Professor",
+				  "department": "Department of Management Studies",
+				  "experience": "25 years",
+				  "research_interests": [
+					"Open-source software project management",
+					"Rural entrepreneurship",
+					"Economic development"
+				  ],
+				  "current_position": "Assistant Professor, School of Management Studies, Anna University Regional Centre Coimbatore (11.08.2011 to present)",
+				  "links": {
+					"scholar_profile": "https://scholar.google.com/citations?user=9T0CchQAAAAJ&hl=en"
+				  }
+				},
+				{
+				  "name": "Dr. Srividhya S",
+				  "email": "srividhya@aurcc.ac.in",
+				  "position": "Assistant Professor",
+				  "department": "Department of Management Studies",
+				  "experience": "29 years",
+				  "research_interests": ["Performance Management and Assessment"],
+				  "education": ["Two Post Graduate Degrees in Commerce and Business Administration", "Ph.D."],
+				  "current_position": "Assistant Professor, Anna University Regional Campus Coimbatore (2008 - present)",
+				  "previous_positions": [
+					"Purchase Officer, ANP APPAREL, Tirupur (1995 to 2002)",
+					"Administrative Officer, M/s. KARTHIKEYAN ENGINEERING CONSULTANTS, Coimbatore (2002 to 2008)"
+				  ],
+				  "links": {
+					"scholar_profile": "https://scholar.google.co.in/citations",
+					"additional_info": "https://drive.google.com/open?id=10-MRxOAOtbhsa6mjZZN_ccjpL5T3bv3o"
+				  }
+				}
+			  ]
+			},
 		"contact": "mbadepartment@aurcc.ac.in"
 		},
 	  
@@ -2492,68 +2415,7 @@
 					}
 				}
 			],
-			"assistant_professors": [
-				{
-					"name": "Dr Gomathi R",
-					"position": "Assistant Professor (Senior Grade)",
-					"email": "gomathiucedgl@gmail.com",
-					"education": 
-					[
-						{
-						  "degree": "B.E.",
-						  "institution": "Madurai Kamaraj University",
-						  "year": 2002
-						},
-						{
-						  "degree": "M.E.",
-						  "institution": "Anna University, Chennai",
-						  "year": 2004
-						},
-						{
-						  "degree": "Ph.D.",
-						  "institution": "Anna University, Chennai",
-						  "year": 2014
-						}
-					  ],
-					"research_interests": ["Digital Image Processing", "Neural Networks", "Cryptography Techniques", "Data Mining"],
-					"professional_experience": [
-						{
-						  "position": "Lecturer",
-						  "institution": "PSNA CET, Dindigul",
-						  "duration": "May 2004 - May 2009"
-						},
-						{
-						  "position": "Senior Lecturer",
-						  "institution": "PSNA CET, Dindigul",
-						  "duration": "June 2009 - May 2010"
-						},
-						{
-						  "position": "Assistant Professor",
-						  "institution": "PSNA CET, Dindigul",
-						  "duration": "June 2010 - Aug 2010"
-						},
-						{
-						  "position": "Assistant Professor",
-						  "institution": "UCE DGL, Dindigul",
-						  "duration": "Dec 2010 - Dec 2014"
-						},
-						{
-						  "position": "Assistant Professor (Sr. Grade)",
-						  "institution": "UCE DGL, Dindigul",
-						  "duration": "Dec 2014 - Jul 2023"
-						},
-						{
-						  "position": "Assistant Professor (Sr. Grade)",
-						  "institution": "AURCC, Coimbatore",
-						  "duration": "Jul 2023 - Till Date"
-						}
-					  ]
-					  ,
-					"links": {
-						"email": "gomathi@aurcc.ac.in",
-						"drive_link": "https://drive.google.com/open?id=1rKtEdahJWDFuqVh3YYrTbY0uLLXCpvVN"
-					}
-				},
+			"assistant_professors": [				
 				{
 					"name": "Dr KIRUBADEVI S",
 					"position": "Assistant Professor (Senior Grade)",
@@ -3055,152 +2917,265 @@
 		  "international_conferences": 8,
 		  "national_conferences": 0
 		},
-		"faculty": [
-		  {
-			"name": "Dr Gomathi R",
-			"position": "Assistant Professor (Senior Grade)",
-			"email": "gomathiucedgl@gmail.com",
-			"education": [
-			  {
-				"degree": "B.E.",
-				"institution": "Madurai Kamaraj University",
-				"year": 2002
-			  },
-			  {
-				"degree": "M.E.",
-				"institution": "Anna University, Chennai",
-				"year": 2004
-			  },
-			  {
-				"degree": "Ph.D.",
-				"institution": "Anna University, Chennai",
-				"year": 2014
-			  }
-			],
-			"research_interests": [
-			  "Digital Image Processing",
-			  "Neural Networks",
-			  "Cryptography Techniques",
-			  "Data Mining"
-			],
-			"professional_experience": [
-			  "Lecturer, PSNA CET, Dindigul (May 2004 - May 2009)",
-			  "Senior Lecturer, PSNA CET, Dindigul (June 2009 - May 2010)",
-			  "Assistant Professor, PSNA CET, Dindigul (June 2010 - Aug 2010)",
-			  "Assistant Professor, UCE DGL, Dindigul (Dec 2010 - Dec 2014)",
-			  "Assistant Professor (Sr. Grade), UCE DGL, Dindigul (Dec 2014 - Jul 2023)",
-			  "Assistant Professor (Sr. Grade), AURCC, Coimbatore (Jul 2023 - Till Date)"
-			],
-			"links": {
-			  "email": "gomathi@aurcc.ac.in",
-			  "drive_link": "https://drive.google.com/open?id=1rKtEdahJWDFuqVh3YYrTbY0uLLXCpvVN"
-			}
-		  },
-		  {
-			"name": "Mrs. Thamaraiselvi L",
-			"position": "Executive Assistant",
-			"email": "thams.money@gmail.com",
-			"professional_experience": "Executive Assistant, Anna University Regional Campus Coimbatore (2008-2024)",
-			"description": "I am an executive assistant in Anna University Regional campus Coimbatore. Working 15 years experience  for various departments like Controller of Examinations, Research department, Hostel, Admissions both UG& PG ,Scholarship and university department works.",
-			"links": {
-			  "email": "thams.money@gmail.com",
-			  "drive_link": "https://drive.google.com/open?id=1mY3HR3_IAc_Wvt5YCKDPqDu2twyQqPNu"
-			}
-		  },
-		  {
-			"name": "Dr Kandasamy K",
-			"position": "Teaching Fellow",
-			"email": "kkandasamy.03@gmail.com",
-			"professional_experience": [
-			  "Teaching Fellow-Anna University College of Engineering Villupuram,(2013-2022)",
-			  "Teaching Fellow-Anna University Regional Campus Coimbatore,(2022-2024)"
-			],
-			"description": "I am Dr. K Kandasamy, and I work in the Department of Electronics and Communication Engineering at Anna University Regional Campus Coimbatore. I hail from Karvazhi, which is situated in the Karur district, and I completed my schooling at the Government High School in Karvazhi. I pursued my higher secondary education at SSV.Hr.Sec.School in Kodumudi. Later, I completed my Bachelor's degree in Electronics and Communication Engineering from Velalar College of Engineering and Technology. I also have a Master's degree in the same field, which I obtained from the Government College of Technology in Coimbatore. I consider myself a self-motivated individual and believe it to be my strength.",
-			"links": {
-			  "email": "kandasamy@aurcc.ac.in",
-			  "drive_link": "https://drive.google.com/open?id=12hclHktYW6ma3oODe608fAzEHo9q5nKL"
-			},
-			"publications": {
-			  "Book Chapter": 1,
-			  "International Journals": 10,
-			  "National Journals": 2,
-			  "International Conference": 6,
-			  "National Conference": 6
-			}
-		  },
-		  {
-			"name": "Dr. V. R. Vijaykumar",
-			"position": "Associate Professor",
-			"email": "vr.vijaykumar@gmail.com",
-			"education": [
-			  {
-				"degree": "B.E. Electronics and Communication Engineering",
-				"year": 1996,
-				"institution": "Government Institute of Technology Vellore"
-			  },
-			  {
-				"degree": "M.E. Communication Systems",
-				"year": 1997,
-				"institution": "Thiagarajar College of Engineering Madurai"
-			  },
-			  {
-				"degree": "Ph.D. Nonlinear Image Filtering",
-				"year": 2008,
-				"institution": "Anna University Chennai"
-			  }
-			],
-			"professional_experience": "25 years",
-			"research_interests": [
-			  "Image Processing",
-			  "Signal Processing",
-			  "VLSI Design"
-			],
-			"publications": "",
-			"links": [
-			  {
-				"link": "https://drive.google.com/open?id=1DUaJQyQFyOSgV3ArjKbHdtCErdhb65Gg",
-				"google_scholar": "https://scholar.google.co.in/citations?user=L-myNyoAAAAJ&hl=en"
-			  }
-			]
-		  },
-		  {
-			"name": "Dr. N. Kumaresan",
-			"position": "Assistant Professor",
-			"email": "kumaresan@aurcc.ac.in",
-			"professional_experience": "24.5 years",
-			"scopus_id": "57208651427",
-			"publications": {
-			  "International_Journal": 29,
-			  "National Conference": 2,
-			  "International Conference": 17,
-			  "NationalConference": 120
-			},
-			"links": [
-			  {
-				"link": "https://drive.google.com/open?id=15ACe-MDzVKLHU3gJrk6Fj_-ek_Xl9p5y",
-				"google_scholar": "https://scholar.google.com/citations?user=XMO7fFgAAAAJ&hl=en"
-			  }
-			]
-		  },
-		  {
-			"name": "Mr. ELAVARASAN K M",
-			"position": "LAB TECHNICIAN",
-			"email": "kmelavarasan@gmail.com",
-			"professional_experience": [
-			  "position : LAB TECHNICIAN",
-			  "institution: UCE RAMANATHAPURAM",
-			  "years : 2011 to 2018",
-			  "position: LAB TECHNICIAN",
-			  "institution: AURCC",
-			  "years: 2018 to till now"
-			],
-			"links": [
-			  {
-				"link": "https://drive.google.com/open?id=1fzo27Z87U8CHAje0J_hns7jQDMX60LV9"
-			  }
-			]
-		  }
-		],
+			"faculty": {
+			  "hod_desk": [
+				{
+				  "name": "Dr. N. Kumaresan",
+				  "image": "kumaresan.jpg",
+				  "position": "Associate Professor",
+				  "email": "kumaresan@aurcc.ac.in",
+				  "education": [
+					{
+					  "degree": "B.E. Electronics and Communication Engineering",
+					  "year": 1996,
+					  "institution": "Government Institute of Technology Vellore"
+					},
+					{
+					  "degree": "M.E. Communication Systems",
+					  "year": 1997,
+					  "institution": "Thiagarajar College of Engineering Madurai"
+					},
+					{
+					  "degree": "Ph.D. Nonlinear Image Filtering",
+					  "year": 2008,
+					  "institution": "Anna University Chennai"
+					}
+				  ],
+				  "professional_experience": "25 years",
+				  "research_interests": [
+					"Image Processing",
+					"Signal Processing",
+					"VLSI Design"
+				  ],
+				  "publications": null,
+				  "links": [
+					{
+					  "link": "https://drive.google.com/open?id=1DUaJQyQFyOSgV3ArjKbHdtCErdhb65Gg",
+					  "google_scholar": "https://scholar.google.co.in/citations?user=L-myNyoAAAAJ&hl=en"
+					}
+				  ],
+				  "previous_positions": null
+				}
+			  ],
+			  "assistant_professors": [
+				{
+				  "name": "Dr. Gomathi R",
+				  "image": "gomathi.jpg",
+				  "position": "Assistant Professor (Senior Grade)",
+				  "email": "gomathiucedgl@gmail.com",
+				  "departments": ["Department of Electronics and Communication Engineering"],
+				  "clg-email": "gomathi@aurcc.ac.in",
+				  "education": [
+					{
+					  "degree": "B.E.",
+					  "institution": "Madurai Kamaraj University",
+					  "year": 2002
+					},
+					{
+					  "degree": "M.E.",
+					  "institution": "Anna University, Chennai",
+					  "year": 2004
+					},
+					{
+					  "degree": "Ph.D.",
+					  "institution": "Anna University, Chennai",
+					  "year": 2014
+					}
+				  ],
+				  "research_interests": [
+					"Digital Image Processing",
+					"Neural Networks",
+					"Cryptography Techniques",
+					"Data Mining"
+				  ],
+				  "professional_experience": [
+					"Lecturer, PSNA CET, Dindigul (May 2004 - May 2009)",
+					"Senior Lecturer, PSNA CET, Dindigul (June 2009 - May 2010)",
+					"Assistant Professor, PSNA CET, Dindigul (June 2010 - Aug 2010)",
+					"Assistant Professor, UCE DGL, Dindigul (Dec 2010 - Dec 2014)",
+					"Assistant Professor (Sr. Grade), UCE DGL, Dindigul (Dec 2014 - Jul 2023)",
+					"Assistant Professor (Sr. Grade), AURCC, Coimbatore (Jul 2023 - Till Date)"
+				  ],
+				  "description": null,
+				  "links": {
+					"email": "gomathi@aurcc.ac.in",
+					"drive_link": "https://drive.google.com/open?id=1rKtEdahJWDFuqVh3YYrTbY0uLLXCpvVN"
+				  }
+				},
+				{
+				  "name": "Dr. Kandasamy K",
+				  "image": "kandasamy.jpg",
+				  "position": "Teaching Fellow",
+				  "email": "kkandasamy.03@gmail.com",
+				  "departments": ["Department of Electronics and Communication Engineering"],
+				  "clg-email": "kandasamy@aurcc.ac.in",
+				  "education": [
+					{
+					  "degree": "B.E.",
+					  "institution": "Madurai Kamaraj University",
+					  "year": 2002
+					},
+					{
+					  "degree": "M.E.",
+					  "institution": "Anna University, Chennai",
+					  "year": 2004
+					},
+					{
+					  "degree": "Ph.D.",
+					  "institution": "Anna University, Chennai",
+					  "year": 2014
+					}
+				  ],
+				  "research_interests": [
+					"Digital Image Processing",
+					"Neural Networks",
+					"Cryptography Techniques",
+					"Data Mining"
+				  ],
+				  "professional_experience": [
+					"Teaching Fellow-Anna University College of Engineering Villupuram,(2013-2022)",
+					"Teaching Fellow-Anna University Regional Campus Coimbatore,(2022-2024)"
+				  ],
+				  "description": null,
+				  "links": {
+					"email": "kandasamy@aurcc.ac.in",
+					"drive_link": "https://drive.google.com/open?id=12hclHktYW6ma3oODe608fAzEHo9q5nKL"
+				  },
+				  "publications": {
+					"Book Chapter": 1,
+					"International Journals": 10,
+					"National Journals": 2,
+					"International Conference": 6,
+					"National Conference": 6
+				  }
+				},
+				{
+				  "name": "Dr. P. Seethalakshmi",
+				  "image": "seethalakshmi.jpg",
+				  "position": "Associate Professor",
+				  "email": "seethalakshmi.pandian.erode@gmail.com",
+				  "departments": ["Department of Electronics and Communication Engineering"],
+				  "clg-email": "seethalakshmi.pandian.erode@gmail.com",
+				  "education": [
+					{
+					  "degree": "B.E.",
+					  "institution": "Government Colleges of Engineering Erode"
+					},
+					{
+					  "degree": "Ph.D.",
+					  "institution": "CEG, Anna University Chennai",
+					  "year": 2004
+					}
+				  ],
+				  "research_interests": [
+					"Microwaves & Antennas",
+					"Communication"
+				  ],
+				  "professional_experience": [
+					"Kongu Engineering College (1995 - 2004)",
+					"SSN college of Engineering (2004 - 2006)",
+					"RMK Engineering College (2007 -2007)",
+					"Anna University Tiruchirappalli (2007-2011)",
+					"UCE-BIT Campus (2013- 2023)"
+				  ],
+				  "description": null,
+				  "links": null
+				},
+				{
+				  "name": "Dr. Jeevagan Navukarasu Lenin G",
+				  "image": null,
+				  "position": "Assistant Professor (Senior Grade)",
+				  "email": "gjeevagan@aurcc.ac.in",
+				  "departments": ["Department of Electronics and Communication Engineering"],
+				  "clg-email": "gjeevagan@aurcc.ac.in",
+				  "education": [
+					{
+					  "degree": "Ph.D. in Information & Communication Engineering"
+					}
+				  ],
+				  "research_interests": [
+					"Microwaves & Antennas",
+					"Wireless Communication"
+				  ],
+				  "professional_experience": [
+					"Lecturer, PGP College of Engineering & Technology, Namakkal (2005-2006)",
+					"Assistant Professor, Toc H Institute of Science & Technology, Ernakulam (2006-2008)",
+					"Lecturer, Chettinad College of Engineering & Technology, Karur (2008-2009)",
+					"Assistant Professor, University College of Engineering Ramanathapuram (2009-2023)",
+					"Assistant Professor, Anna University Regional Campus Coimbatore (2023 - Present)"
+				  ],
+				  "links": {
+					"scholar_profile": "https://scholar.google.com/citations?user=RB6TokIAAAAJ&hl=en",
+					"email": "gjeevagan@aurcc.ac.in",
+					"drive_link": "https://drive.google.com/open?id=1G8kfAh_7DRf6rJfackYZGBWLmTz9QViN"
+				  }
+				},
+				{
+				  "name": "Dr. Vijaykumar R",
+				  "image": null,
+				  "position": "Assistant Professor",
+				  "email": "vijaykumar@aurcc.ac.in",
+				  "departments": ["Department of Electronics and Communication Engineering"],
+				  "clg-email": "vijaykumar@aurcc.ac.in",
+				  "education": [
+					{
+					  "degree": "B.E.",
+					  "institution": "Anna University"
+					},
+					{
+					  "degree": "M.E.",
+					  "institution": "Anna University"
+					},
+					{
+					  "degree": "Ph.D.",
+					  "institution": "Anna University"
+					}
+				  ],
+				  "research_interests": [
+					"Embedded Systems",
+					"VLSI Design"
+				  ],
+				  "professional_experience": [
+					"Assistant Professor, Anna University Regional Campus Coimbatore (2012 - Present)"
+				  ],
+				  "links": {
+					"email": "vijaykumar@aurcc.ac.in"
+				  }
+				},
+				{
+				  "name": "Dr. Ellavarasan E",
+				  "image": null,
+				  "position": "Assistant Professor",
+				  "email": "ellavarasan@aurcc.ac.in",
+				  "departments": ["Department of Electronics and Communication Engineering"],
+				  "clg-email": "ellavarasan@aurcc.ac.in",
+				  "education": [
+					{
+					  "degree": "B.E.",
+					  "institution": "Anna University"
+					},
+					{
+					  "degree": "M.E.",
+					  "institution": "Anna University"
+					},
+					{
+					  "degree": "Ph.D.",
+					  "institution": "Anna University"
+					}
+				  ],
+				  "research_interests": [
+					"Wireless Communication",
+					"Signal Processing"
+				  ],
+				  "professional_experience": [
+					"Assistant Professor, Anna University Regional Campus Coimbatore (2015 - Present)"
+				  ],
+				  "links": {
+					"email": "ellavarasan@aurcc.ac.in"
+				  }
+				}
+			  ]
+			},		  
 		"infrastructure": {
 		  "The department is equipped with excellent infrastructure and state-of-the-art equipment to tackle technological challenges in various areas including:": [
 			"Electronics",
