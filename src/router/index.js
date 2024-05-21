@@ -113,6 +113,16 @@ const router = createRouter({
       path: '/zonal/',
       name: 'zonal',
       component: ()=> import('../views/Zonal.vue')
+    },
+    {
+      path: '/pace-cell/',
+      name: 'pace-cell',
+      component: ()=> import('../views/Pace.vue')
+    },
+    {
+      path: '/administration/',
+      name: 'administration',
+      component: ()=> import('../views/Admin.vue')
     }
   ]
 })
