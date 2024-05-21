@@ -1,6 +1,6 @@
 [
     {   "address": "cse",
-        "image": "cse-girls-closeup.jpg",
+        "image": "cse-girls-closeup.webp",
         "name": "Department of Computer Science and Engineering",
         "description": "The Department of Computer Science and Engineering aims at producing technically competent professionals who can excel in today’s age of technology. Recognizing its role in engineering education, generation, and dissemination, the department is equipped with state-of-the-art facilities and relevant technologies. Computer Science or Computing Science is the scientific and mathematical approach to computation, specifically referring to the design of computing machines and processes.",
         "vision": "To emerge as a world-class institution in engineering education and research, contributing to societal development and sustainable growth.",
@@ -2600,7 +2600,7 @@
     },
 	{
 		"address": "ece",
-		"image": "",
+		"image": "ece2.webp",
 		"name": "Department of Electronics and Communication Engineering",
 		"description": 
 		  " The Department of Electronics and Communication Engineering (ECE) was established in the year 2007. The department offers full-time two-year M.E. degree programs in Applied Electronics, Communication Systems, and VLSI Design, along with the same courses offered as three-year M.E. programs in part-time mode."
@@ -3310,7 +3310,7 @@
 			  "hod_desk": [
 				{
 				  "name": "Dr. N. Kumaresan",
-				  "image": "Kumaresan-N.jpg",
+				  "image": "Kumaresan-N.webp",
 				  "position": "Associate Professor",
 				  "email": "kumaresan@aurcc.ac.in",
 				  "education": [
@@ -3347,7 +3347,7 @@
 			  "assistant_professors": [
 				{
 				  "name": "Dr. Gomathi R",
-				  "image": "R.Gomathi.jpg",
+				  "image": "R.Gomathi.webp",
 				  "position": "Assistant Professor (Senior Grade)",
 				  "email": "gomathiucedgl@gmail.com",
 				  "departments": ["Department of Electronics and Communication Engineering"],
@@ -3415,7 +3415,7 @@
 				},
 				{
 				  "name": "Dr. Kandasamy K",
-				  "image": "kandasamy-Samy.jpg",
+				  "image": "kandasamy-Samy.webp",
 				  "position": "Teaching Fellow",
 				  "email": "kkandasamy.03@gmail.com",
 				  "departments": ["Department of Electronics and Communication Engineering"],
@@ -3470,7 +3470,7 @@
 				},
 				{
 				  "name": "Dr. P. Seethalakshmi",
-				  "image": "seethalakshmi.jpg",
+				  "image": "seethalakshmi.webp",
 				  "position": "Associate Professor",
 				  "email": "seethalakshmi.pandian.erode@gmail.com",
 				  "departments": ["Department of Electronics and Communication Engineering"],
@@ -3521,7 +3521,7 @@
 				},
 				{
 				  "name": "Dr. Jeevagan Navukarasu Lenin G",
-				  "image": "Jeevagan-Navukarasu.jpg",
+				  "image": "Jeevagan-Navukarasu.webp",
 				  "position": "Assistant Professor (Senior Grade)",
 				  "email": "gjeevagan@aurcc.ac.in",
 				  "departments": ["Department of Electronics and Communication Engineering"],
@@ -3571,7 +3571,7 @@
 				},
 				{
 				  "name": "Dr. Vijaykumar R",
-				  "image": "Vijaykumar.jpg" ,
+				  "image": "Vijaykumar.webp" ,
 				  "position": "Assistant Professor",
 				  "email": "vijaykumar@aurcc.ac.in",
 				  "departments": ["Department of Electronics and Communication Engineering"],
@@ -3608,7 +3608,7 @@
 				},
 				{
 				  "name": "Dr. Ellavarasan E",
-				  "image": "elavarasan.jpg",
+				  "image": "elavarasan.webp",
 				  "position": "Assistant Professor",
 				  "email": "ellavarasan@aurcc.ac.in",
 				  "departments": ["Department of Electronics and Communication Engineering"],
