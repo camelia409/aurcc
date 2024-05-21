@@ -30,7 +30,7 @@
       </div>
 
       <!-- Horizontal Scrollable Image Gallery Section -->
-      <div class="flex flex-col items-center bg-base-200">
+      <div class="flex flex-col md:overflow-hidden items-center bg-base-200">
         <div class="relative  w-full max-w-4xl">
           <div
             class="flex transition-transform duration-500"
@@ -168,10 +168,10 @@ export default {
   data() {
     return {
       galleryImages: [
-        'http://localhost:5173/src/assets/1.jpg',
-        'http://localhost:5173/src/assets/4.jpg',
         'http://localhost:5173/src/assets/mime_annualday.jpeg',
+        'http://localhost:5173/src/assets/1.webp',
         'http://localhost:5173/src/assets/mime_annualday.jpeg',
+        'http://localhost:5173/src/assets/4.webp',
         'http://localhost:5173/src/assets/mime_annualday.jpeg',
         'http://localhost:5173/src/assets/mime_annualday.jpeg'
       ],
