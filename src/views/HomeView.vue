@@ -30,29 +30,36 @@
       </div>
 
       <!-- Horizontal Scrollable Image Gallery Section -->
-      <div class="scrollable-gallery-container py-8 bg-base-200">
-  <h2 class="text-3xl font-bold text-center mb-4">Image Gallery</h2>
-  <div class="scrollable-gallery" ref="scrollableGallery">
-    <div
-      v-for="(image, index) in galleryImages"
-      :key="index"
-      class="scrollable-gallery-item"
-    >
-      <img :src="image" alt="Gallery Image" class="main-image rounded-lg shadow-lg" />
-    </div>
-  </div>
-  <div class="flex justify-center mt-4">
-    <div
-      v-for="(image, index) in galleryImages"
-      :key="index"
-      :class="['dot', { 'dot-active': currentImageIndex === index }]"
-      @click="scrollToImage(index)"
-    ></div>
-  </div>
-</div>
-
-
-
+      <div class="flex flex-col items-center bg-base-200">
+        <div class="relative  w-full max-w-4xl">
+          <div
+            class="flex transition-transform duration-500"
+            :style="{ transform: `translateX(-${currentImageIndex * 100}%)` }"
+            ref="slider"
+          >
+            <div
+              v-for="(image, index) in circularGalleryImages"
+              :key="index"
+              class="flex-none w-full"
+            >
+              <img
+                :src="image"
+                alt="Gallery Image"
+                class="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center mt-4">
+          <div
+            v-for="(image, index) in galleryImages"
+            :key="index"
+            :class="['dot', { 'dot-active': currentImageIndex === index }]"
+            @click="scrollToImage(index)"
+            class="w-3 h-3 bg-gray-400 rounded-full mx-1 cursor-pointer"
+          ></div>
+        </div>
+      </div>
 
       <div class="grid grid-cols-1 md:grid-cols-4 gap-8 p-9 md:p-20">
         <div class="col-span-3">
@@ -161,79 +168,58 @@ export default {
   data() {
     return {
       galleryImages: [
-        'http://localhost:5173/src/assets/mime_annualday.jpeg',
-        'http://localhost:5173/src/assets/mime_annualday.jpeg',
+        'http://localhost:5173/src/assets/1.jpg',
+        'http://localhost:5173/src/assets/4.jpg',
         'http://localhost:5173/src/assets/mime_annualday.jpeg',
         'http://localhost:5173/src/assets/mime_annualday.jpeg',
         'http://localhost:5173/src/assets/mime_annualday.jpeg',
         'http://localhost:5173/src/assets/mime_annualday.jpeg'
       ],
-      currentImageIndex: 0
-    }
+      currentImageIndex: 1,
+      circularGalleryImages: []
+    };
   },
   methods: {
+    startAutoScroll() {
+      this.scrollInterval = setInterval(this.nextImage, 3000);
+    },
+    stopAutoScroll() {
+      clearInterval(this.scrollInterval);
+    },
+    nextImage() {
+      if (this.currentImageIndex < this.galleryImages.length) {
+        this.currentImageIndex++;
+      } else {
+        this.currentImageIndex = 1;
+      }
+    },
     scrollToImage(index) {
-      this.currentImageIndex = index;
-      const scrollableGallery = this.$refs.scrollableGallery;
-      const imageWidth = scrollableGallery.clientWidth / 3;
-      scrollableGallery.scrollTo({
-        left: index * imageWidth,
-        behavior: 'smooth'
-      });
+      this.currentImageIndex = index + 1;
+    },
+    createCircularImages() {
+      this.circularGalleryImages = [
+        this.galleryImages[this.galleryImages.length - 1],
+        ...this.galleryImages,
+        this.galleryImages[0]
+      ];
     }
+  },
+  mounted() {
+    this.createCircularImages();
+    this.startAutoScroll();
+  },
+  beforeDestroy() {
+    this.stopAutoScroll();
   }
-}
+};
 
 </script>
 <style>
-.scrollable-gallery-container {
-  overflow: hidden;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-}
-
-.scrollable-gallery {
-  display: flex;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  width: 100%;
-}
-
-.scrollable-gallery-item {
-  scroll-snap-align: center;
-  flex: 0 0 33.33%; /* Adjusts the size to show three images in view */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: transform 0.3s;
-}
-
-.scrollable-gallery-item img {
-  width: 100%; /* Ensures the images take up the full width of their container */
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  transition: transform 0.3s;
-}
-
 .dot {
-  height: 12px;
-  width: 12px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  margin: 0 5px;
-  cursor: pointer;
   transition: background-color 0.3s;
 }
-
 .dot-active {
   background-color: #717171;
 }
-
 </style>
+
