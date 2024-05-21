@@ -1150,46 +1150,13 @@
 					  }
 					],
 					"achievements": [
-					  {
-						"title": "Eco-benign Synthesis, Characterization of CdS-QDs/Casein Bionanocomposite Towards Anti-microbial, Anti-hemolytic and Cytotoxicity in A549 & MCF-7 Cells",
-						"journal": "Journal of Cluster Science",
-						"pages": "1-16"
-					  },
-					  {
-						"title": "Investigation on Template Etching Process of SBA-15 Derived Ordered Mesoporous Carbon on Electrocatalytic Oxygen Reduction Reaction",
-						"journal": "Chemistry select",
-						"volume": 4,
-						"pages": "2463"
-					  },
-					  {
-						"title": "Synthesis and electrochemical studies of Ta-Graphene nanocomposite film modified platinum electrode",
-						"journal": "Journal of Electroanalytical Chemistry",
-						"volume": 780,
-						"pages": "53-59"
-					  },
-					  {
-						"title": "Modified Synthesis of Edge ScrolledReduced GrapheneOxide with High Surface Area",
-						"journal": "EDUCATUM Journal of Science, Mathematics and Technology",
-						"volume": 3,
-						"issue": 1,
-						"pages": "1-5"
-					  },
-					  {
-						"title": "N-Doped Hollow Mesoporous Carbon Nanospheres for Oxygen Reduction Reaction in Alkaline Media.",
-						"journal": "ACS Appl. Nano Mater.",
-						"year": 2020,
-						"volume": 3,
-						"issue": 9,
-						"pages": "8875–8887"
-					  },
-					  {
-						"title": "Hydrothermal assisted morphology designed MoS2 material as alternative cathode catalyst for PEM electrolyser application",
-						"journal": "International Journal of Hydrogen Energy",
-						"volume": 41,
-						"year": 2016,
-						"pages": "13331-13340"
-					  }
-					],
+						  "Eco-benign Synthesis, Characterization of CdS-QDs/Casein Bionanocomposite Towards Anti-microbial, Anti-hemolytic and Cytotoxicity in A549 & MCF-7 Cells, Journal of Cluster Science, 1-16.",
+						  "Investigation on Template Etching Process of SBA-15 Derived Ordered Mesoporous Carbon on Electrocatalytic Oxygen Reduction Reaction, Chemistry select, 4, 2463.",
+						  "Synthesis and Electrochemical Studies of Ta-Graphene Nanocomposite Film Modified Platinum Electrode, Journal of Electroanalytical Chemistry, 780, 53-59.",
+						  "Modified Synthesis of Edge Scrolled Reduced Graphene Oxide with High Surface Area, EDUCATUM Journal of Science, Mathematics and Technology, 3 (1), 1-5.",
+						  "N-Doped Hollow Mesoporous Carbon Nanospheres for Oxygen Reduction Reaction in Alkaline Media, ACS Appl. Nano Mater., 2020, 3 (9), 8875–8887.",
+						  "Hydrothermal Assisted Morphology Designed MoS2 Material as Alternative Cathode Catalyst for PEM Electrolyser Application, International Journal of Hydrogen Energy, 2016, 41, 13331-13340."
+						],
 					"links": {
 					  "Google Scholar": "https://scholar.google.com/citations?user=hQG-NTcAAAAJ&hl=en",
 					  "Email": "mailto:rajasekar@aurcc.ac.in",
@@ -1231,49 +1198,17 @@
 					}
 					],
 					"achievements": [
-					{
-						"title": "Unraveling the Enhanced Electrochemical Performances of Nickel Aluminum Sulfide Lattices for Overall Water Splitting and as Counter Electrode Material for Dye-Sensitized Solar Cells",
-						"journal": "J. Phys. Chem. C",
-						"year": 2023,
-						"volume": "127",
-						"issue": "25",
-						"pages": "11921-11931"
-					},
-					{
-						"title": "Revealing the Role of Brønsted Basicity by the Electrocatalytic Reaction via Li Insertion in the MgFe2O4 Lattice",
-						"journal": "J. Phys. Chem. C",
-						"year": 2022,
-						"volume": 126,
-						"pages": "11915-11926"
-					},
-					{
-						"title": "Hierarchical 2D/2D interface of nickel aluminum oxide and nickel aluminum layered double hydroxide nanoflowers: An efficient and robust electrocatalyt for overall water splitting",
-						"journal": "Electrochimica Acta",
-						"volume": 392,
-						"year": 2021,
-						"pages": "139029"
-					},
-					{
-						"title": "Hexacyanoferrate-Complex-Derived NiFe2O4/CoFe2O4 Heterostructure-MWCNTs for an Efficient Oxygen Evolution Reaction",
-						"journal": "Energy & Fuels",
-						"volume": 35,
-						"issue": 6,
-						"year": 2021,
-						"pages": "5372-5382"
-					},
-					{
-						"title": "Amperometric determination of hydrazine using a CuS-ordered mesoporous carbon electrode",
-						"journal": "Microchimica Acta",
-						"volume": 187,
-						"year": 2020,
-						"pages": "1-10"
-					}
-					],
+						  "Unraveling the Enhanced Electrochemical Performances of Nickel Aluminum Sulfide Lattices for Overall Water Splitting and as Counter Electrode Material for Dye-Sensitized Solar Cells, J. Phys. Chem. C, 2023, 127 (25), 11921-11931.",
+						  "Revealing the Role of Brønsted Basicity by the Electrocatalytic Reaction via Li Insertion in the MgFe2O4 Lattice, J. Phys. Chem. C, 2022, 126, 11915-11926.",
+						  "Hierarchical 2D/2D Interface of Nickel Aluminum Oxide and Nickel Aluminum Layered Double Hydroxide Nanoflowers: An Efficient and Robust Electrocatalyst for Overall Water Splitting, Electrochimica Acta, 2021, 392, 139029.",
+						  "Hexacyanoferrate-Complex-Derived NiFe2O4/CoFe2O4 Heterostructure-MWCNTs for an Efficient Oxygen Evolution Reaction, Energy & Fuels, 2021, 35 (6), 5372-5382.",
+						  "Amperometric Determination of Hydrazine Using a CuS-Ordered Mesoporous Carbon Electrode, Microchimica Acta, 2020, 187, 1-10."
+						],
 					"links": {
-					"Email": "mailto:jsardhar@aurcc.ac.in"
-					}
+						"Email": "mailto:jsardhar@aurcc.ac.in"
+							}
 					
-				}
+				} 
 			]
 		},
 		"contact": "nanotechdepartment@aurcc.ac.in"
@@ -1483,7 +1418,7 @@
 		"name": "MBA - Masters of Business Administration",
 		"description": "The Department offers Master of Business Administration (MBA) course at Anna University Regional Campus Coimbatore as a four-semester regular programme spread over two academic years. The course structure is designed to impart knowledge in areas of specialization, viz. Marketing, Human Resource, Finance, Systems, and Production specializations. The department has two aims: to increase the understanding of the factors which influence the conduct of organizations and to offer students the tools and techniques which they may use to navigate organizational life.",
 		"vision": "The Department strives to provide a stimulating environment for learning, to maximize individual potential, and empower students to meet the challenges of their dynamic environment.",
-		"mission": "Our mission is to disseminate managerial expertise by developing human resources to meet the country's entrepreneurial and workforce needs with an adaptive approach to our cultural, ethical, and professional norms.",
+		"mission": ["Our mission is to disseminate managerial expertise by developing human resources to meet the country's entrepreneurial and workforce needs with an adaptive approach to our cultural, ethical, and professional norms."],
 		"events": {
 			"conferences_workshops": 16,
 			"student_papers_presented": {
@@ -1764,31 +1699,31 @@
                   },
         "research_and_publications": [
                       {
-                        "authors": ["Sivanandam, S. N.", "Deepa, S. N."],
+                        "authors": "Sivanandam, S. N., Deepa, S. N.",
                         "title": "Introduction to genetic algorithms",
                         "year": 2007,
                         "publisher": "Springer Science & Business Media"
                       },
                       {
-                        "authors": ["Sivanandam, S. N.", "Sumathi, S.", "Deepa, S. N."],
+                        "authors": "Sivanandam, S. N., Sumathi, S., Deepa, S. N.",
                         "title": "Introduction to fuzzy logic using MATLAB (Vol. 1)",
                         "year": 2007,
                         "publisher": "Springer"
                       },
                       {
-                        "authors": ["Deepa, S. N.", "Sumathi, S.", "Sivanandam, S. N."],
+                        "authors": "Deepa, S. N., Sumathi, S., Sivanandam, S. N.",
                         "title": "Introduction to Neural Networks Using Matlab 6.0",
                         "year": 2006
                       },
                       {
-                        "authors": ["Deepa, S. N."],
+                        "authors": "Deepa, S. N.",
                         "title": "Principles of Soft Computing",
                         "year": 2007,
                         "publisher": "Wiley",
                         "isbn": "81-265"
                       },
                       {
-                        "authors": ["Sivanandam, S. N.", "Deepa, S. N."],
+                        "authors": "Sivanandam, S. N., Deepa, S. N.",
                         "title": "Genetic algorithm optimization problems",
                         "book": "Introduction to Genetic Algorithms",
                         "year": 2008,
@@ -1796,7 +1731,7 @@
                         "publisher": "Springer Berlin Heidelberg"
                       },
                       {
-                        "authors": ["Sheela, K. Gnana", "Deepa, S. N."],
+                        "authors": "Sheela, K. Gnana, Deepa, S. N.",
                         "title": "Neural network based hybrid computing model for wind speed prediction",
                         "journal": "Neurocomputing",
                         "volume": 122,
@@ -1804,7 +1739,7 @@
                         "pages": "425-429"
                       },
                       {
-                        "authors": ["Deepa, S. N.", "Sugumaran, G."],
+                        "authors": "Deepa, S. N., Sugumaran, G.",
                         "title": "Model order formulation of a multivariable discrete system using a modified particle swarm optimization approach",
                         "journal": "Swarm and Evolutionary Computation",
                         "volume": 1,
@@ -1813,12 +1748,12 @@
                         "pages": "204-212"
                       },
                       {
-                        "authors": ["Sivanandam, S. N.", "Deepa, S. N."],
+                        "authors": "Sivanandam, S. N.,Deepa, S. N.",
                         "title": "Control System Engineering using MATLAB",
                         "year": 2007
                       },
                       {
-                        "authors": ["Nachimuthu, Deepa Subramaniam", "Baladhandapani, Arunadevi"],
+                        "authors": "Nachimuthu, Deepa Subramaniam, Baladhandapani, Arunadevi",
                         "title": "Multidimensional Texture Characterization: On Analysis for Brain Tumor Tissues Using MRS and MRI",
                         "journal": "Journal of digital imaging",
                         "volume": 27,
@@ -1827,7 +1762,7 @@
                         "pages": "496-506"
                       },
                       {
-                        "authors": ["Sheela, K. Gnana", "Deepa, S. N."],
+                        "authors": "Sheela, K. Gnana, Deepa, S. N.",
                         "title": "Performance analysis of modeling framework for prediction in wind farms employing artificial neural networks",
                         "journal": "Soft Computing",
                         "volume": 18,
@@ -1836,7 +1771,7 @@
                         "pages": "607-615"
                       },
                       {
-                        "authors": ["Karthikeyan, Ramasamy", "Sainarayanan, Gopalakrishnan", "Deepa, Subramaniam Nachimuthu"],
+                        "authors": "Karthikeyan, Ramasamy,Sainarayanan, Gopalakrishnan, Deepa, Subramaniam Nachimuthu",
                         "title": "Perceptual video quality assessment in H. 264 video coding standard using objective modeling",
                         "journal": "SpringerPlus",
                         "volume": 3,
@@ -1845,7 +1780,7 @@
                         "pages": "174"
                       },
                       {
-                        "authors": ["Sheela, K.", "Deepa, S."],
+                        "authors": "Sheela, K., Deepa, S.",
                         "title": "A review on neural network models for wind speed prediction",
                         "journal": "Wind Engineering",
                         "volume": 37,
@@ -1854,7 +1789,7 @@
                         "pages": "111-124"
                       },
                       {
-                        "authors": ["Arunadevi, B.", "Deepa, S. N."],
+                        "authors": "Arunadevi, B., Deepa, S. N.",
                         "title": "Texture Analysis for 3D Classification of Brain Tumor Tissues",
                         "journal": "Przeglad Elecktrotechniczny",
                         "volume": 89,
@@ -1863,7 +1798,7 @@
                         "pages": "338-342"
                       },
                       {
-                        "authors": ["Arunadevi, B.", "Deepa, S. N."],
+                        "authors": "Arunadevi, B., Deepa, S. N.",
                         "title": "Brain Tumor Tissue Categorization in 3D Magnetic Resonance Images using improved PSO for Extreme learning machine",
                         "journal": "Progress in Electromagnetics Research B",
                         "volume": 49,
@@ -1871,7 +1806,7 @@
                         "pages": "31-54"
                       },
                       {
-                        "authors": ["Gnana Sheela, K.", "Deepa, S. N."],
+                        "authors": "Gnana Sheela, K., Deepa, S. N.",
                         "title": "A New Algorithm to find number of hidden neurons in Radial Basis Function Networks for wind speed prediction in Renewable Energy Systems",
                         "journal": "Journal of Control Engineering and Applied Informatics",
                         "volume": 15,
@@ -1881,7 +1816,7 @@
                         "issn": "1454-8658"
                       },
                       {
-                        "authors": ["Gnana Sheela, K.", "Deepa, S. N."],
+                        "authors": "Gnana Sheela, K., Deepa, S. N.",
                         "title": "Review on methods to fix number of hidden neuron in Neural Networks wind speed prediction",
                         "journal": "Mathematical Problems in Engineering",
                         "volume": 2013,
@@ -1890,13 +1825,13 @@
                         "issn": "1024-123X"
                       },
                       {
-                        "authors": ["Gnana Sheela, K.", "Deepa, S. N."],
+                        "authors": "Gnana Sheela, K., Deepa, S. N.",
                         "title": "New criteria to fix number of hidden neuron in multilayer perceptron neural networks for wind speed prediction in renewable energy systems",
                         "journal": "Journal of Scientific and Industrial Research",
                         "year": 2014
                       },
                       {
-                        "authors": ["Gnana Sheela, K.", "Deepa, S. N."],
+                        "authors": "Gnana Sheela, K., Deepa, S. N.",
                         "title": "Performance Analysis of Modeling Frame work for wind speed prediction in wind farms",
                         "journal": "Scientific Research and Essays",
                         "volume": 7,
@@ -1906,7 +1841,7 @@
                         "issn": "1992-2248"
                       },
                       {
-                        "authors": ["Gnana Sheela, K.", "Deepa, S. N."],
+                        "authors": "Gnana Sheela, K., Deepa, S. N.",
                         "title": "An Intelligent Hybrid Neural Network Model in renewable energy systems",
                         "journal": "ICTACT Journal on soft computing",
                         "volume": 2,
@@ -1916,7 +1851,7 @@
                         "issn": "0976-6561"
                       },
                       {
-                        "authors": ["Deepa, SN", "Sudha, G"],
+                        "authors": "Deepa, SN, Sudha, G",
                         "title": "Modeling and Approximation of STOL Aircraft Longitudinal Aerodynamic characteristics",
                         "journal": "Journal of Aerospace Engineering",
                         "publisher": "American Society of Civil Engineers",
@@ -1924,14 +1859,14 @@
                         "year": 2014
                       },
                       {
-                        "authors": ["Deepa, SN", "Sudha, G"],
+                        "authors": "Deepa, SN, Sudha, G",
                         "title": "Longitudinal control of aircraft dynamics based on optimization of PID",
                         "journal": "Thermo physics and Aeromechanics",
                         "issn": "0869-8643",
                         "year": 2014
                       },
                       {
-                        "authors": ["Rani, C.", "Deepa, S.N."],
+                        "authors": "Rani, C., Deepa, S.N.",
                         "title": "An Intelligent Operator for Genetic Fuzzy Rule Based System",
                         "journal": "International Journal of Intelligent Information Technologies",
                         "volume": 7,
@@ -1940,7 +1875,7 @@
                         "pages": "28-40"
                       },
                       {
-                        "authors": ["Rani, C.", "Deepa, S.N."],
+                        "authors": "Rani, C., Deepa, S.N.",
                         "title": "Formation of Fuzzy If-Then rules and Membership function using Enhanced Particle Swarm Optimization",
                         "journal": "International Journal of Uncertainty, Fuzziness and Knowledge based system",
                         "volume": 21,
@@ -1949,7 +1884,7 @@
                         "pages": "103"
                       },
                       {
-                        "authors": ["Sivanandam, S.N.", "Deepa, S.N."],
+                        "authors": "Sivanandam, S.N., Deepa, S.N.",
                         "title": "A Novel approach for Root Distribution analysis of Linear Time-invariant systems using Routh and Fuller tables",
                         "journal": "Asian Journal of control",
                         "volume": 11,
@@ -1957,7 +1892,7 @@
                         "year": 2008
                       },
                       {
-                        "authors": ["Sivanandam, S.N.", "Deepa, S.N."],
+                        "authors": "Sivanandam, S.N., Deepa, S.N.",
                         "title": "Stability analysis of a class of Artificial Neural Network Systems",
                         "journal": "International Journal of Information Processing",
                         "volume": 2,
@@ -1965,7 +1900,7 @@
                         "year": 2008
                       },
                       {
-                        "authors": ["Sivanandam, S.N.", "Deepa, S.N."],
+                        "authors": "Sivanandam, S.N., Deepa, S.N.",
                         "title": "Linear System design using Routh Column Polynomials",
                         "journal": "Songklanakarin Journal of Science and Technology (SJST)",
                         "volume": 29,
@@ -1975,7 +1910,7 @@
                       }
                     ,
                       {
-                        "authors": ["Victoire, T. Aruldoss Albert", "Jeyakumar, A. Ebenezer"],
+                        "authors": "Victoire, T. Aruldoss Albert, Jeyakumar, A. Ebenezer",
                         "title": "Hybrid PSO-SQP for economic dispatch with valve-point effect",
                         "journal": "Electric Power Systems Research",
                         "volume": 71,
@@ -1984,7 +1919,7 @@
                         "pages": "51-59"
                       },
                       {
-                        "authors": ["Victoire, T."],
+                        "authors": "Victoire, T.",
                         "title": "Reserve constrained dynamic dispatch of units with valve-point effects",
                         "journal": "IEEE Transactions on Power Systems",
                         "volume": 20,
@@ -1993,7 +1928,7 @@
                         "pages": "1273-1282"
                       },
                       {
-                        "authors": ["Victoire, T. Aruldoss Albert", "Jeyakumar, A. Ebenezer"],
+                        "authors": "Victoire, T. Aruldoss Albert, Jeyakumar, A. Ebenezer",
                         "title": "A modified hybrid EP-SQP approach for dynamic dispatch with valve-point effect",
                         "journal": "International Journal of Electrical Power & Energy Systems",
                         "volume": 27,
@@ -2002,7 +1937,7 @@
                         "pages": "594-601"
                       },
                       {
-                        "authors": ["Victoire, T. Aruldoss Albert", "Jeyakumar, A. Ebenezer"],
+                        "authors": "Victoire, T. Aruldoss Albert,Jeyakumar, A. Ebenezer",
                         "title": "Deterministically guided PSO for dynamic dispatch considering valve-point effect",
                         "journal": "Electric Power Systems Research",
                         "volume": 73,
@@ -2011,7 +1946,7 @@
                         "pages": "313-322"
                       },
                       {
-                        "authors": ["Victoire, T."],
+                        "authors": "Victoire, T.",
                         "title": "Unit commitment by a tabu-search-based Generation, Transmission and Distribution",
                         "journal": "IEE Proceedings-Generation, Transmission and Distribution",
                         "volume": 152,
@@ -2019,7 +1954,7 @@
                         "year": 2005
                       },
                       {
-                        "authors": ["Victoire, T. Aruldoss Albert", "Jeyakumar, A. Ebenezer"],
+                        "authors": "Victoire, T. Aruldoss Albert, Jeyakumar, A. Ebenezer",
                         "title": "A tabu search based hybrid optimization approach for a fuzzy modelled unit commitment problem",
                         "journal": "Electric Power Systems Research",
                         "volume": 76,
@@ -2028,7 +1963,7 @@
                         "pages": "413-425"
                       },
                       {
-                        "authors": ["Kumar, P. Ganesh", "et al."],
+                        "authors": "Kumar, P. Ganesh, et al.",
                         "title": "Design of fuzzy expert system for microarray data classification using a novel Genetic Swarm Algorithm",
                         "journal": "Expert Systems with Applications",
                         "volume": 39,
@@ -2037,7 +1972,7 @@
                         "pages": "1811-1821"
                       },
                       {
-                        "authors": ["Victoire, T. Aruldoss Albert"],
+                        "authors": "Victoire, T. Aruldoss Albert",
                         "title": "An improved simulated annealing method for the combinatorial sub-problem of the profit-based unit commitment problem",
                         "book": "Evolutionary Computation in Combinatorial Optimization",
                         "year": 2005,
@@ -2045,7 +1980,7 @@
                         "publisher": "Springer Berlin Heidelberg"
                       },
                       {
-                        "authors": ["GaneshKumar, P.", "et al."],
+                        "authors": "GaneshKumar, P., et al.",
                         "title": "Hybrid ant bee algorithm for fuzzy expert system based sample classification",
                         "journal": "IEEE/ACM Transactions on Computational Biology and Bioinformatics (TCBB)",
                         "volume": 11,
@@ -2054,11 +1989,11 @@
                         "pages": "347-360"
                       },
                       {
-                        "authors": ["Subathra, M. S. P.", "et al."],
+                        "authors": "Subathra, M. S. P., et al.",
                         "title": "A hybrid with cross-entropy method and sequential quadratic programming to solve economic load dispatch problem"
                       },
                       {
-                        "authors": ["Viji, A. Jeraldine", "Victoire, T. Aruldoss Albert"],
+                        "authors": "Viji, A. Jeraldine, Victoire, T. Aruldoss Albert",
                         "title": "Enhanced PLL based SRF control method for UPQC with fault protection under unbalanced load conditions",
                         "journal": "International Journal of Electrical Power & Energy Systems",
                         "volume": 58,
@@ -2066,7 +2001,7 @@
                         "pages": "319-328"
                       },
                       {
-                        "authors": ["Albert Aruldoss", "Murali Krishnan"],
+                        "authors": "Albert Aruldoss, Murali Krishnan",
                         "title": "A differential evolution algorithm for solving the multi-objective emission constrained economic power dispatch considering transmission network losses",
                         "journal": "European Journal of Scientific Research",
                         "volume": 67,
@@ -2075,7 +2010,7 @@
                         "pages": "378-388"
                       },
                       {
-                        "authors": ["Ganesh kumar, p.", "and t. Aruldoss albert victoire"],
+                        "authors": "Ganesh kumar, p., and t. Aruldoss albert victoire",
                         "title": "Multistage Mutual Information for Informative Gene Selection",
                         "journal": "Journal of Biological Systems",
                         "volume": 19,
@@ -2085,7 +2020,7 @@
                       }
                     ,
                       {
-                        "authors": ["Jasper, J.", "Victoire, T. Aruldoss"],
+                        "authors": "Jasper, J., Victoire, T. Aruldoss",
                         "title": "Dispatching a 19-Unit Indian Utility System Using a Refined Differential Evolution Algorithm",
                         "journal": "Mathematical Problems in Engineering",
                         "volume": 2014,
@@ -2093,13 +2028,13 @@
                         "pages": "1-7"
                       },
                       {
-                        "authors": ["Kumar, P. Ganesh", "Rathinaraja, J.", "Victoire, T. Aruldoss Albert"],
+                        "authors": "Kumar, P. Ganesh, Rathinaraja, J., Victoire, T. Aruldoss Albert",
                         "title": "A combined MI-AVR approach for informative gene selection",
                         "year": 2011,
                         "pages": "870-875"
                       },
                       {
-                        "authors": ["Victoire, Albert", "T. Aruldoss", "Jeyakumar, A. Ebenezer"],
+                        "authors": "Victoire, Albert, T. Aruldoss, Jeyakumar, A. Ebenezer",
                         "title": "A simulated annealing based hybrid optimization approach for a fuzzy modelled unit commitment problem",
                         "journal": "International Journal of Emerging Electric Power Systems",
                         "volume": 3,
@@ -2107,7 +2042,7 @@
                         "year": 2005
                       },
                       {
-                        "authors": ["Ganesan, S.", "Victoire, T. Aruldoss Albert", "Vijayalakshmy, G."],
+                        "authors": "Ganesan, S., Victoire, T. Aruldoss Albert, Vijayalakshmy, G.",
                         "title": "Real-time estimation and detection of non-linearity in bio-signals using wireless brain-computer interface",
                         "journal": "International journal of Bioinformatics research and applications",
                         "volume": 10,
@@ -2116,7 +2051,7 @@
                         "pages": "190-205"
                       },
                       {
-                        "authors": ["Paranthaman, J.", "Victoire"],
+                        "authors": "Paranthaman, J., Victoire",
                         "title": "genetic optimization for privacy preserving in datamining",
                         "journal": "Journal of Theoretical & Applied Information Technology",
                         "volume": 57,
@@ -2124,13 +2059,13 @@
                         "year": 2013
                       },
                       {
-                        "authors": ["Biju, A. C.", "Victoire, T.", "Mohanasundaram, Kumaresan"],
+                        "authors": "Biju, A. C., Victoire, T., Mohanasundaram, Kumaresan",
                         "title": "An Improved Differential Evolution Solution for Software Project Scheduling Problem",
                         "journal": "The Scientific World Journal",
                         "year": 2015
                       },
                       {
-                        "authors": ["Sumithra, Subramanian", "Victoire, T. Aruldoss"],
+                        "authors": "Sumithra, Subramanian, Victoire, T. Aruldoss",
                         "title": "Differential Evolution Algorithm with Diversified Vicinity Operator for Optimal Routing and Clustering of Energy Efficient Wireless Sensor Networks",
                         "journal": "The Scientific World Journal",
                         "volume": 2015,
@@ -2138,7 +2073,7 @@
                         "pages": "1392-1398"
                       },
                       {
-                        "authors": ["Kumar, P. G.", "Rani, C.", "Mahibha, D.", "Victoire, T. A. A."],
+                        "authors": "Kumar, P. G., Rani, C., Mahibha, D., Victoire, T. A. A.",
                         "title": "Fuzzy-rough-neural-based f-information for gene selection and sample classification",
                         "journal": "International Journal of Data Mining and Bioinformatics",
                         "volume": 11,
@@ -2147,7 +2082,7 @@
                         "pages": "31-52"
                       },
                       {
-                        "authors": ["Viji, A. Jeraldine", "Victoire, T.", "Albert"],
+                        "authors": "Viji, A. Jeraldine, Victoire, T., Albert",
                         "title": "A comparative study of 3 Phi SAPF with Different reference current generation",
                         "journal": "Control Engineering And Applied Informatics",
                         "volume": 16,
@@ -2156,7 +2091,7 @@
                         "pages": "99-106"
                       },
                       {
-                        "authors": ["Sumithra, Subramanian", "Victoire, T. Aruldoss"],
+                        "authors": "Sumithra, Subramanian, Victoire, T. Aruldoss",
                         "title": "An Efficient Energy Clustering by Dynamic Multi-Chain Model in WSN",
                         "journal": "International Review on Computers and Software (IRECOS)",
                         "volume": 9,
@@ -2166,7 +2101,7 @@
                       }
                     ,
                       {
-                        "authors": ["Jasper, J.", "Victoire, T. Aruldoss"],
+                        "authors": "Jasper, J., Victoire, T. Aruldoss",
                         "title": "Variable neighborhood search guided differential evolution for non convex economic load dispatch",
                         "book": "Advanced Computing, Networking and Security",
                         "publisher": "Springer Berlin Heidelberg",
@@ -2174,7 +2109,7 @@
                         "pages": "253-262"
                       },
                       {
-                        "authors": ["Suresh Kumar, R.", "Divya, K.", "Saravana, S."],
+                        "authors": "Suresh Kumar, R., Divya, K., Saravana, S.",
                         "title": "Comparison of DC-DC Converter in PV System Using Soft Computing Technique",
                         "journal": "Applied Mechanics and Materials",
                         "volume": 573,
@@ -2182,7 +2117,7 @@
                         "pages": "26-30"
                       },
                       {
-                        "authors": ["Suresh Kumar, R.", "Suganthi, J."],
+                        "authors": "Suresh Kumar, R., Suganthi, J.",
                         "title": "PID Controller Tuning Using Neuro Fuzzy Controller and Anti Windup Method for Improving the Boost Converter Performance",
                         "journal": "Life Science Journal",
                         "volume": 10,
@@ -2191,7 +2126,7 @@
                         "pages": "1567-1574"
                       },
                       {
-                        "authors": ["Suresh Kumar, R.", "Suganthi, J."],
+                        "authors": "Suresh Kumar, R., Suganthi, J.",
                         "title": "Improving the boost Converter PID Controller performance using Particle swarm optimization",
                         "journal": "European Journal of Scientific Research",
                         "volume": 85,
@@ -2200,42 +2135,42 @@
                         "pages": "327-335"
                       },
                       {
-                        "authors": ["Suresh Kumar, R.", "Logeswari, A."],
+                        "authors": "Suresh Kumar, R., Logeswari, A.",
                         "title": "A new interleaved switched inductor boost converter for PV applications",
                         "journal": "Global Journal of Engineering Science and Researches",
                         "year": 2015,
                         "pages": "82-87"
                       },
                       {
-                        "authors": ["Sureshkumar, R.", "M.Senthil Kumar"],
+                        "authors": "Sureshkumar, R., M.Senthil Kumar",
                         "title": "An Interleave Isolated Boost Converter Connected in Three Phase Induction Motor (ASD) Control With Sine Pwm Technique In MATLAB",
                         "journal": "Global Journal of Engineering Science and Researches",
                         "year": 2015,
                         "pages": "88-96"
                       },
                       {
-                        "authors": ["Suresh Kumar, R.", "John De Britto"],
+                        "authors": "Suresh Kumar, R., John De Britto",
                         "title": "DESIGN OF SINGLE PHASE Z-SOURCE BUCK BOOST MATRIX CONVERTER",
                         "journal": "Global Journal of Engineering Science and Researches",
                         "year": 2015,
                         "pages": "97-103"
                       },
                       {
-                        "authors": ["Suresh Kumar, R.", "R.Prasanth"],
+                        "authors": "Suresh Kumar, R., R.Prasanth",
                         "title": "Direct Torque Control Of Induction Motor Drive By Current Reconstruction Method Through De Link Current",
                         "journal": "Global Journal of Engineering Science and Researches",
                         "year": 2015,
                         "pages": "87-92"
                       },
                       {
-                        "authors": ["Suresh kumar", "Mr.R.Prasanth"],
+                        "authors": "Suresh kumar, Mr.R.Prasanth",
                         "title": "Efficient Wind Power Conversion Using Pr Control Method",
                         "journal": "Global Journal of Engineering Science and Researches",
                         "year": 2015,
                         "pages": "93-100"
                       },
                       {
-                        "authors": ["Hari Krishnan, P.", "Kanimozhi T", "Tina Pavithra vx"],
+                        "authors": "Hari Krishnan, P., Kanimozhi T, Tina Pavithra vx",
                         "title": "SIMULATION OF SPEED &TORQUE CONTROL OF THREE PHASE INDUCTION MOTOR USING DIRECT TORQUE CONTROL",
                         "journal": "JAER",
                         "volume": 10,
@@ -2246,7 +2181,7 @@
                       }
                     ,
                       {
-                        "authors": ["Hari Krishnan, P.", "V A Vengatkumar"],
+                        "authors": "Hari Krishnan, P., V A Vengatkumar",
                         "title": "SPEED CONTROL OF THREE PHASE INDUCTION MOTOR THROUGH AC VOLTAGE CONTROLLER USING MATLAB",
                         "journal": "IJAER",
                         "volume": 10,
@@ -2256,7 +2191,7 @@
                         "pages": "7457-7462"
                       },
                       {
-                        "authors": ["Hari Krishnan, P.", "R. Ragul kannan"],
+                        "authors": "Hari Krishnan, P., R. Ragul kannan",
                         "title": "An Efficient Speed and Torque Controller for DC Motor through 12 Pulse Converters in Open Loop Mode",
                         "journal": "IJAER",
                         "volume": 10,
@@ -2266,7 +2201,7 @@
                         "pages": "3147-3153"
                       },
                       {
-                        "authors": ["Hari Krishnan, P.", "P. Jayapriya"],
+                        "authors": "Hari Krishnan, P., P. Jayapriya",
                         "title": "Efficient Boiler Flow Control Using Adaptive PID Controller",
                         "journal": "IJAER",
                         "volume": 10,
@@ -2276,7 +2211,7 @@
                         "pages": "3113-3118"
                       },
                       {
-                        "authors": ["A.Gayathri", "Hari Krishnan, P."],
+                        "authors": "A.Gayathri, Hari Krishnan, P.",
                         "title": "Implementation of neural based self tuning fuzzy logic controller in non linear system",
                         "journal": "IJAER",
                         "volume": 10,
@@ -2286,7 +2221,7 @@
                         "pages": "2239-2243"
                       },
                       {
-                        "authors": ["Hari Krishnan, P.", "Ragu. P. J"],
+                        "authors": "Hari Krishnan, P., Ragu. P. J",
                         "title": "Controlling power flow losses in UPFC system using Adaptive Neuro-fuzzy controller",
                         "journal": "IJRET",
                         "year": 2014,
@@ -2294,7 +2229,7 @@
                         "p_ISSN": "2321-7308"
                       },
                       {
-                        "authors": ["Hari Krishnan, P.", "Ramprasadh. V"],
+                        "authors": "Hari Krishnan, P., Ramprasadh. V",
                         "title": "Controlling Power plant Boiler and Draft Fan using LabVIEW",
                         "journal": "IJRET",
                         "year": 2014,
@@ -2302,7 +2237,7 @@
                         "p_ISSN": "2321-7308"
                       },
                       {
-                        "authors": ["Hari Krishnan, P.", "Bala Murugan. N"],
+                        "authors": "Hari Krishnan, P., Bala Murugan. N",
                         "title": "Model Reference based Adaptive controller for Conical tank level control system",
                         "journal": "IJRET",
                         "year": 2014,
@@ -2310,7 +2245,7 @@
                         "p_ISSN": "2321-7308"
                       },
                       {
-                        "authors": ["Hari Krishnan, P.", "Prathyusha, S"],
+                        "authors": "Hari Krishnan, P., Prathyusha, S",
                         "title": "Optimization of main boiler parameters using Soft computing techniques",
                         "journal": "IJRET",
                         "year": 2014,
@@ -2318,7 +2253,7 @@
                         "p_ISSN": "2321-7308"
                       },
                       {
-                        "authors": ["Hari Krishnan, P.", "Vaishnavi. C"],
+                        "authors": "Hari Krishnan, P., Vaishnavi. C",
                         "title": "LabVIEW based Self tuning Fuzzy logic controller for Sterilizing equipments in Hospitals",
                         "journal": "IJRET",
                         "year": 2014,
@@ -2326,14 +2261,14 @@
                         "p_ISSN": "2321-7308"
                       },
                       {
-                        "authors": ["Yuvaraju, M.", "N. Devarajan"],
+                        "authors": "Yuvaraju, M., N. Devarajan",
                         "title": "Reduction of higher order time invariant SISO continuous systems to its lower order model employing improved water swirl algorithm",
                         "journal": "Journal of Testing and Evaluation",
                         "year": 2015
                       }
                     ,
                       {
-                        "authors": ["Yuvaraju, M.", "S. R. Nivedita"],
+                        "authors": "Yuvaraju, M., S. R. Nivedita",
                         "title": "A Text Based Clustering Scheme With Genetic Programming To Eliminate Replicas",
                         "journal": "International Journal of Engineering Research and Technology",
                         "volume": 2,
@@ -2344,7 +2279,7 @@
                         "pages": "1-8"
                       },
                       {
-                        "authors": ["Yuvaraju, M.", "N. Devarajan"],
+                        "authors": "Yuvaraju, M., N. Devarajan",
                         "title": "An Improved Water Swirl Algorithm for lower order model formulation of Multivariable Linear Time invariant Continuous System",
                         "journal": "Life Science Journal",
                         "volume": 10,
@@ -2667,22 +2602,18 @@
 		"address": "ece",
 		"image": "",
 		"name": "Department of Electronics and Communication Engineering",
-		"description": [
+		"description": 
 		  " The Department of Electronics and Communication Engineering (ECE) was established in the year 2007. The department offers full-time two-year M.E. degree programs in Applied Electronics, Communication Systems, and VLSI Design, along with the same courses offered as three-year M.E. programs in part-time mode."
-		],
-		"vision": [
-		  "To create an educational environment in which students are prepared to meet the challenges of modern Industrial society by equipping them with:",
-		  "Up to date Technical Knowledge.",
-		  "Analytical and Practical skills.",
-		  "A creative and innovative approach to work."
-		],
-		"mission": {
-		  "description": "To develop a strong centre of excellence for education and research with excellent infrastructure.",
-		  "objectives": [
+		,
+		"vision":
+		  "To create an educational environment in which students are prepared to meet the challenges of modern Industrial society by equipping them with:,Up to date Technical Knowledge.,Analytical and Practical skills.,A creative and innovative approach to work."
+		,
+		"mission": [
+		   "To develop a strong centre of excellence for education and research with excellent infrastructure.",
 			"To impart quality education and technical skills to enable the students to satisfy the industrial requirements.",
 			"To achieve cent percent placement."
 		  ]
-		},
+		,
 		"events": [
 		  {
 			"name": "One Week Faculty Development Programme on Wavelet and Multiresolution Processing",
@@ -2911,17 +2842,475 @@
 			"The Department has conducted more than 45 workshops, 7 National Conferences, 15 Seminars, and 5 Faculty Development Programs."
 		  ]
 		},
-		"research_and_publications": {
-		  "total_research_papers": 66,
-		  "international_journals": 58,
-		  "international_conferences": 8,
-		  "national_conferences": 0
-		},
+		"facility":[
+			{
+				"name":"Applied Electronics laboratory",
+				"description":"The Applied Electronics Lab is equipped with MSP 430 Microcontroller, Beagle bone black board, MSP 430 F2013 starter kit, TMS320C 6678 Multicore DSP Processor Kit and Application boards for implementing both basic and advanced experiments. In addition to that the Lab is equipped with state of equipments which include 20 Workbenches each consisting of inbuilt CRO, Function Generator, RPS, Ammeters and Voltmeters. Also 10 Desktop Computers have been interfaced with the Workbenches and they are loaded with EDA tool like MultiSim.",
+				"image":""
+
+			},
+			{
+				"name": "Communication Systems Laboratory",
+				"description":"The Communication Systems Lab equipped with Optical Fiber kits,Analog and Digital Communication kits. The DSP Lab equipped with Code Composer Studio Software and latest DSP Trainer Kits namely TMS320C5416 and TMS320C6713.",
+				"image":""
+			},
+			{
+				"name": "VLSI Design Laboratory",
+				"description":"The VLSI Design lab was developed with a motive of encouraging research activities of the Post Graduate Students. The lab consists of 20 Desktop Computers loaded with software's such as Micro wind, Quartus-II & Active HDL, Keil, MP lab, IAR Workbench and Modelsim.\n LCD Projectors available in all class rooms\n Exclusive Project Laboratory Separate Library is maintained in the Department\n Exclusive Audio Visual facilities are available for conducting Seminars, Workshops and other technical activities.",
+				"image":""
+			} 
+		], 
+		"research_and_publications": [
+			{
+				"authors": "Vijaykumar, V R, Vanathi P T, Kanagasapabathy P",
+				"year": 2007,
+				"title": "Modified Adaptive Filtering Algorithm for Noise Cancellation In Speech Signals",
+				"journal": "International Journal of Electronics & Electrical Engineering"
+			  },
+			  {
+				"authors": "Vijaykumar, V R, Vanathi, PT, Kanagasabapathy, P, Ebenezer, D",
+				"year": 2008,
+				"title": "High density impulse noise removal using robust estimation based filter",
+				"journal": "IAENG International journal of Computer Science"
+			  },
+			  {
+				"authors": "Vijaykumar, V R, Vanathi, P. T, Kanagasabapathy, P, Ebenezer, D",
+				"year": 2009,
+				"title": "Robust Statistics Based Algorithm to Remove Salt and Pepper Noise in Images",
+				"journal": "International journal of Signal Processing"
+			  },
+			  {
+				"authors": "Vijaykumar, V R, Vanathi, P. T, Kanagasabapathy, P",
+				"year": 2010,
+				"title": "Fast and efficient algorithm to remove gaussian noise in digital images",
+				"journal": "IAENG International journal of Computer Science"
+			  },
+			  {
+				"authors": "Vijaykumar, VR, Jothibasu, P",
+				"year": 2010,
+				"title": "Decision based adaptive median filter to remove blotches, scratches, streaks,stripes and impulse noise in images",
+				"Conference": "17th IEEE International Conference onimage Processing (ICIP)"
+			  },
+			  {
+				"authors": "Vijay Kumar, VR,Manikandan, S,Vanathi, PT,Kanagasabapathy, P,Ebenezer, D",
+				"year": 2008,
+				"title": "Adaptive window length recursive weighted median filter for removing Impulse noise in images with details preservation",
+				"journal": "ECTI Transactions on Electrical Eng., Electronics, and Communications"
+			  },
+			  {
+				"authors": "Vijay Kumar, VR, Manikandan, S, Ebenezer, D, Vanathi, PT, Kanagasabapathy, P",
+				"year": 2007,
+				"title": "High Density Impulse noise Removal in Color Images Using Median Controlled Adaptive Recursive Weighted Median Filter",
+				"journal": "IAENG International journal of Computer Science"
+			  },
+			  {
+				"authors": "Vijayakumar, V R, Vanathi, PT, Kanagasabapathy, P",
+				"year": 2005,
+				"title": "Modified AFA Algorithm for Noise Cancellation in Speech Signals",
+				"journal": "National journal of Technology"
+			  },
+			  {
+				"authors": "Somasundaram, D, Vijaykumar VR",
+				"year": 2014,
+				"title": "Separation of overlapped chromosomes and pairing of similar chromosomes for karyotyping analysis",
+				"journal": "Measurement"
+			  },
+			  {
+				"authors": "Vijaykumar, V R,Elango, S",
+				"year": 2014,
+				"title": "Hardware implementation of tag-reader mutual authentication protocol for RFID systems Integration",
+				"journal": "The VLSI journal"
+			  },
+			  {
+				"authors": "Somasundaram, Devaraj, Vijay Kumar, V R",
+				"year": 2014,
+				"title": "Straightening of highly curved human chromosome for cytogenetic analysis",
+				"journal": "Measurement"
+			  },
+			  {
+				"authors": "Devaraj, Somasundaram, Vijaykumar, V R, Soundrarajan, Godwin Raj, Sengottalyan, Narmada",
+				"year": 2013,
+				"title": "Leaf biometrics based karyotyping of G-Band chromosomes",
+				"journal": "Int J Hum Genet"
+			  },
+			  {
+				"authors": "Vijaykumar, VR,Mari, G, Santhana, Ebenezer, D",
+				"year": 2014,
+				"title": "Fast switching based medianäť mean filter for high density salt and pepper noise removal",
+				"journal": "AEU-International journal of Electronics and Communications"
+			  },
+			  {
+				"authors": "Vijaykumar V R, VaithiyamRengarajan, Santhanamari, Guru",
+				"year": 2014,
+				"title": "New decision-based trimmed median filter for high- density salt-and-pepper noise removal in Images",
+				"journal": "journal of Electronic Imaging"
+			  },
+			  {
+				"authors": "Vijaykumar, V R, Sangamithiral, S",
+				"year": 2015,
+				"title": "Rail defect detection using Gabor filters with texture analysis",
+				"Publisher": "IEEE Xplore"
+			  },
+			  {
+				"authors": "Saravanakumar, S, Ebenezer Jeyakumar, A &Vijeyakumar, KN",
+				"year": 2014,
+				"title": "Removal of High Density Impulse Noise using Morphological based Adaptive Unsymmetrical Trimmed Mid-point Filter",
+				"journal": "journal of Computer Science"
+			  },
+			  {
+				"authors": "Saravanakumar, S, Ebenezer Jeyakumar, A, Vijeyakumar, KN &Nelson Kingsley Joel",
+				"year": 2014,
+				"title": "An Adaptive Threshold Intensity Range Filter for Removal of Random Value Impulse Noise in Digital Images",
+				"journal": "journal of Theoretical and Applied Information Technology"
+			  },
+			  {
+				"authors": "Saravanakumar, S &Ebenezer Jeyakumar, A",
+				"year": 2013,
+				"title": "A Novel 'X' based Detection Filter for Removal of Random Valued Impulse Noise in Digital Images",
+				"journal": "International journal of Engineering Research & Technology"
+			  },
+			  {
+				"authors": "Sheena, S, &Saravanakumar, S",
+				"year": 2012,
+				"title": "Removal of Impulse Noise using Noise Adaptive Fuzzy Switching Median Filter",
+				"Conference": "International Conference on VLSI, Communications and Instrumentation (ICVCI)"
+			  },
+			  {
+				"authors": "Vijeyakumar, K N, Sumathy, V, Pramod, P &Saravanakumar, S",
+				"year": 2014,
+				"title": "Design of High Speed Low Power Counter using Pipelining",
+				"journal": "journal of Scientific and Industrial Research"
+			  },
+			  {
+				"authors": "Govindaraj, V, Saravanakumar, S,Gokuldurai. V",
+				"year": 2013,
+				"title": "Removal of Moire Pattern Noise in Images using Median and Gaussian Filter",
+				"journal": "International journal of Science, Engineering and Technology Research"
+			  },
+			  {
+				"authors": "Anbarasu, S, Balasubramani, P&Saravanakumar, S",
+				"year": 2014,
+				"title": "Optimization of Energy Efficient Communication to Improve the Lifetime of Sensor Networks",
+				"Conference": "International Conference on Global Innovations in Computing Technology"
+			  },
+			  {
+				"authors": "Vijayabhasker, R., Somasundaram, D., Palaniswami, S., Venkatesa Kumar,V.",
+				"year": 2014,
+				"title": "G-Band Chromosome Segmentation, Overlapped Chromosome Separation and Visible Band Calculation",
+				"journal": "International journal of Human Genetics( IJHG)"
+			  },
+			  {
+				"authors": "Vijayabhasker, R., Palaniswami, S., Venkatesa Kumar, V., Newlin|Rajkumar, M.",
+				"year": 2014,
+				"title": "An analysis on the characteristics of Cloud Computing",
+				"journal": "International journal of Soft Computing"
+			  },
+			  {
+				"authors": "Vijayabhasker, R., Palaniswami, S., Newlin Rajkumar, M.",
+				"year": 2013,
+				"title": "An Heightened Switching Technique for an Interleaved Boost Converter Operated in Lower Duty Cycle",
+				"journal": "Life Science journal"
+			  },
+			  {
+				"authors": "Vijayabhasker, R. and Palaniswami, S.",
+				"year": 2013,
+				"title": "A Survey on Soft Switching, Power Factor Correction and Applications on Interleaved Boost Converters",
+				"journal": "European journal of Scientific Research"
+			  },
+			  {
+				"authors": "Vijayabhasker, R., Palaniswami, S., Venkatesa Kumar, V., Newlin Rajkumar, M.",
+				"year": 2013,
+				"title": "An Analysis of Interleaved Boost Converter with LC Coupled Enhanced Soft Switching",
+				"journal": "American journal of Applied Sciences"
+			  },
+			  {
+				"authors": "Vijayabhasker, R., Palaniswami, S., Venkatesa Kumar, V., Newlin Rajkumar, M.",
+				"year": 2013,
+				"title": "Certain Investigations on Cloud Computing Using Heterogeneous pattern",
+				"journal": "journal of Applied Sciences Research"
+			  },
+			  {
+				"authors": "Vijayabhasker, R., Vijayasaro, V., Jeevitha V.S., Ramya Sanalkumar",
+				"year": 2012,
+				"title": "Embedded Network Security Using Pattern Matching Algorithm",
+				"journal": "Bonfring International journal of Man Machine Interface"
+			  },
+			  {
+				"authors": "Vijayabhasker, R. and Gemma benilda, C.",
+				"year": 2014,
+				"title": "Low power 12 cache architecture using partial tag bloom filter",
+				"journal": "International journal of Innovative Research in Science, Engineering and Technology (IJIRSET)"
+			  },
+			  {
+				"authors": "Vijayabhasker, R. and Kiruthika, G.",
+				"year": 2014,
+				"title": "Memory Accessed by Its Content Using Parity Bit",
+				"journal": "International journal of Innovative Research in Science, Engineering and Technology (IJIRSET)"
+			  },
+			  {
+				"authors": "Vijayabhasker, R. and Sri Nandhini, R.V.",
+				"year": 2014,
+				"title": "Implementation of Elliptic Curve Multiplication",
+				"journal": "International journal of Advanced Information Science and Technology (IJAIST)"
+			  },
+			  {
+				"authors": "Vijayabhasker, R. and Aishwarya, C.",
+				"year": 2014,
+				"title": "Enhanced pipelined architecture for adaptive FIR filter based on distributed arithmetic",
+				"journal": "International journal of Advanced Information Science and Technology (IJAIST)"
+			  },
+			  {
+				"authors": "Vijayabhasker, R. and Abinaya, T.",
+				"year": 2015,
+				"title": "Design Of Karatsuba-Ofman Pipelining To Cryptographic Application",
+				"journal": "International journal of Advanced Research Trends in Engineering and Technology (IJARTET)"
+			  },
+			  {
+				"authors": "Vijayabhasker, R. and Balasundaram.",
+				"year": 2015,
+				"title": "High Speed Multiplication Using BCD Codes For DSP Applications",
+				"journal": "International journal of Advanced Research Trends in Engineering and Technology (IJARTET)"
+			  },
+			  {
+				"authors": "Vijayabhasker, R. and Bala vigneshwari, M.",
+				"year": 2015,
+				"title": "Enhancement of Delay Resolution in All Digital Duty Cycle Corrector Using High Resolution NAND DCDL Method",
+				"journal": "International journal of Advanced Research Trends in Engineering and Technology (IJARTET)"
+			  },
+			  {
+				"authors": "Vijayabhasker, R. and Challa Vidya Tejaswini.",
+				"year": 2015,
+				"title": "A High Speed Partial Sum Network for Low Latency Successive Cancellation Polar Decoder",
+				"journal": "International journal of Advanced Research Trends in Engineering and Technology (IJARTET)"
+			  },
+			  {
+				"authors": "Vijayabhasker, R. and Kannadhasan, C.",
+				"year": 2015,
+				"title": "Area Efficient Fault Tolerant Model For Parallel FIR Filters",
+				"journal": "International journal of Advanced Research Trends in Engineering and Technology (IJARTET)"
+			  },
+			  {
+				"authors": "Vijayabhasker, R. and Poomima, P.",
+				"year": 2015,
+				"title": "An Efficient DLMS and NLMS Adaptive Filter with Low Adaptation Delay",
+				"journal": "International journal of Advanced Research Trends in Engineering and Technology (IJARTET)"
+			  },
+			  {
+				"authors": "Vijayabhasker, R. and Rhinose Fathima, J.",
+				"year": 2015,
+				"title": "Monitoring of Input Vector with Modified BIST",
+				"journal": "International journal of Advanced Research Trends in Engineering and Technology (IJARTET)"
+			  },
+			  {
+				"authors": "Vijayabhasker, R. and Sindhu, R.",
+				"year": 2015,
+				"title": "B-TCAM: An Efficient Bank Selection Based TCAM Architecture",
+				"journal": "International journal of Advanced Research Trends in Engineering and Technology (IJARTET)"
+			  },
+			  {
+				"authors": "V.Bhanumathi and G. Vijayalakshmi",
+				"year": 2011,
+				"title": "Effective energy utilization of MANET by Cache Pollution Avoidance",
+				"journal": "International journal of High Performance Communication Systems and Networking"
+			  },
+			  {
+				"authors": "S.Allwin Devaraj and V.Bhanumathi",
+				"year": 2011,
+				"title": "Performance Analysis of TCP Using Mobility Models in MANET",
+				"journal": "International journal of High Performance Communication Systems and Networking"
+			  },
+			  {
+				"authors": "V.Bhanumathi and R. Dhanasekaran",
+				"year": 2012,
+				"title": "Cross-Layer Design for Reducing the Energy Consumption based on Mobility Parameter in DSR for Mobile Ad-Hoc Network",
+				"journal": "journal of Computer Science"
+			  },
+			  {
+				"authors": "D. Sharmila, V. Bhanumathi, V. Femina and R. Dhanasekaran",
+				"year": 2012,
+				"title": "Energy Efficient Backoff Scheme with Adaptive Contention Window",
+				"Conference": "International Conference in Recent trends in Computational Methods, Communication and Controls (ICON3C)"
+			  },
+			  {
+				"authors": "S. Abirami, V. Bhanumathi and R. Dhanasekaran",
+				"year": 2012,
+				"title": "A Balanced Approach for Power Aware Routing in MANET using Fuzzy Logic",
+				"Conference": "International Conference in Recent trends in Computational Methods, Communication and Controls (ICON3C)"
+			  },
+			  {
+				"authors": "V.Bhanumathi and R. Dhanasekaran",
+				"year": 2012,
+				"title": "Energy Efficient Routing with Transmission Power Control based Biobjective Path Selection Model for Mobile Ad-hoc Networks",
+				"journal": "WSEAS Transactions on Computers"
+			  },
+			  {
+				"authors": "T.S.Ajitha and V.Bhanumathi",
+				"year": 2013,
+				"title": "Improving RFID Tag Efficiency by QAM Backscatter Modulation",
+				"journal": "International journal of Scientific and Engineering Research"
+			  },
+			  {
+				"authors": "V.Bhanumathi and R. Dhanasekaran",
+				"year": 2013,
+				"title": "Path discovery and selection for energy efficient routing with transmit power control in MANET",
+				"journal": "Malaysian journal of Computer Science"
+			  },
+			  {
+				"authors": "V.Bhanumathi and R. Dhanasekaran",
+				"year": 2014,
+				"title": "Residual Energy based Rebroadcast and Overhearing Reduction in Mobile Ad- hoc Networks",
+				"journal": "journal of Engineering and Technology"
+			  },
+			  {
+				"authors": "V.Bhanumathi and R. Dhanasekaran",
+				"year": 2015,
+				"title": "Efficient Data Transfer in Mobile Ad-hoc Networks using OPSM for Disaster Response Applications",
+				"journal": "journal of Applied Research and Technology"
+			  },
+			  {
+				"authors": "Swamynathan. S.M and V.Bhanumathi",
+				"year": 2015,
+				"title": "Power Efficient Fixed Width and Full Precision Pipelined Re-Configurable Multiplier",
+				"journal": "International journal of Appiled Engineering Research"
+			  },
+			  {
+				"authors": "Manivannan, M and Kumaresan,N",
+				"year": 2010,
+				"title": "Embedded Web Server & GPRS Based Advanced Industrial Automation Using LINUX RTOS",
+				"journal": "International journal of Engineering Science and Technology"
+			  },
+			  {
+				"authors": "Dr. Suganthi, Kumaresan, N and Anbarasi, K",
+				"year": 2012,
+				"title": "Design of Low Power Zigzag 8T SRAM array with Differential Write Back Scheme",
+				"journal": "International journal of Engineering and Advanced Technology"
+			  },
+			  {
+				"authors": "Dr. Suganthi, J, Kumaresan, N and Anbarasi, K",
+				"year": 2012,
+				"title": "Design of Power Efficient divide by 2/3 Counter using E-TSPC based Flip- Flops",
+				"journal": "International journal of Innovative Technology and Exploring Engineering"
+			  },
+			  {
+				"authors": "Kumaresan, N, Suganthi, J and ArunN, Prasath",
+				"year": 2012,
+				"title": "An Enhanced Wireless Data Acquisition for Real Time Health Monitoring System",
+				"journal": "International journal of Innovative Technology and Exploring Engineering"
+			  },
+			  {
+				"authors": "Kumaresan, N, Suganthi, J and Arun N, Prasath",
+				"year": 2012,
+				"title": "Design of energy Efficient GDI Based Full Adder",
+				"journal": "International journal of Engineering and Innovative Technology"
+			  },
+			  {
+				"authors": "Kumaresan, N, Suganthi, J and Arun N, Prasath",
+				"year": 2012,
+				"title": "A New Approach to design multi standard FIR Filter with GDI Technique",
+				"journal": "International journal of Engineering and Technology"
+			  },
+			  {
+				"authors": "Suganthi, J, Kumaresan, N and Anbarasi, K",
+				"year": 2012,
+				"title": "Design of energy efficient differential sense amplifier using GDI Technique for SRAM Applications",
+				"journal": "International journal of Engineering Science and Advanced Technology"
+			  },
+			  {
+				"authors": "Suganthi, J, Kumaresan, N and Anbarasi, K",
+				"year": 2012,
+				"title": "Design of low power and high speed SRAM using GDI Technique",
+				"journal": "International journal of Engineering and Advanced Technology"
+			  },
+			  {
+				"authors": "Kumaresan, N, Suganthi, J and Arun N, Prasath",
+				"year": 2013,
+				"title": "A Novel Architecture for the Design of Low Power Multiplexer using GDI Technique",
+				"journal": "International journal of Engineering and Technology"
+			  },
+			  {
+				"authors": "Suganthi, J, Kumaresan, N and Anbarasi, K",
+				"year": 2013,
+				"title": "Design of High Performance Low Power Ternary and Quaternary Comparator",
+				"journal": "International journal of Emerging Trends in Engineering and Development"
+			  },
+			  {
+				"authors": "Suganthi, J, Kumaresan, N and Anbarasi, K",
+				"year": 2013,
+				"title": "Design of high speed and low power 16x16 Multiplier using GDI Technique",
+				"journal": "International journal of Engineering Science and Technology"
+			  },
+			  {
+				"authors": "Suganthi, J, Kumaresan, N and Anbarasi, K",
+				"year": 2013,
+				"title": "Design of Efficient and Low Power 64-bit Multiplier using Modified Booth Encoding",
+				"journal": "International journal of VLSI and Embedded Systems"
+			  },
+			  {
+				"authors": "Kumaresan, N, Suganthi, J and Arun N, Prasath",
+				"year": 2013,
+				"title": "Design of energy efficient GDI Based 16X16 and 32X32 Bit Multiplier",
+				"journal": "International journal of Engineering Science and Technology"
+			  },
+			  {
+				"authors": "Suganthi, J, Kumaresan, N and Anbarasi, K",
+				"year": 2014,
+				"title": "Design of Energy Efficient and High Speed 64-bit Multiplier using GDI Technique",
+				"journal": "International journal of Electronics, Communication & Soft Computing Science and Engineering"
+			  },
+			  {
+				"authors": "Kumaresan, N, Suganthi, J and Arun N, Prasath",
+				"year": 2014,
+				"title": "Design of Efficient and Low Power Vedic Multiplier using GDI Technique",
+				"journal": "International journal of Engineering Science and Technology"
+			  },
+			  {
+				"authors": "Kumaresan, N, Suganthi, J and Arun N, Prasath",
+				"year": 2014,
+				"title": "An Efficient 32-bit Multiplier using Modified Booth Encoding with GDI Technique",
+				"journal": "International journal of Engineering Science and Technology"
+			  },
+			  {
+				"authors": "Kumaresan, N, Suganthi, J and Arun N, Prasath",
+				"year": 2014,
+				"title": "Design of Low Power and High Speed 4x4 Multiplier using GDI Technique",
+				"journal": "International journal of Emerging Trends in Engineering and Development"
+			  },
+			  {
+				"authors": "Suganthi, J, Kumaresan, N and Anbarasi, K",
+				"year": 2014,
+				"title": "Design of Energy Efficient and High Speed Ternary and Quaternary Comparator",
+				"journal": "International journal of Emerging Trends in Engineering and Development"
+			  },
+			  {
+				"authors": "Suganthi, J, Kumaresan, N and Anbarasi, K",
+				"year": 2014,
+				"title": "Design of Efficient and Low Power Carry Select Adder",
+				"journal": "International journal of Emerging Trends in Engineering and Development"
+			  },
+			  {
+				"authors": "Suganthi, J, Kumaresan, N and Anbarasi, K",
+				"year": 2014,
+				"title": "Design of Energy Efficient and High Speed Ternary and Quaternary Comparator",
+				"journal": "International journal of Emerging Trends in Engineering and Development"
+			  },
+			  {
+				"authors": "Kumaresan, N, Suganthi, J and Arun N, Prasath",
+				"year": 2015,
+				"title": "Design of Low Power and High Speed Wallace Tree Multiplier",
+				"journal": "International journal of Engineering Research and Technology"
+			  },
+			  {
+				"authors": "Suganthi, J, Kumaresan, N and Anbarasi, K",
+				"year": 2015,
+				"title": "Design of Energy Efficient and High Speed Modified Booth Encoding Multiplier",
+				"journal": "International Journal of Engineering Research and Technology"
+			  }
+			],
 			"faculty": {
 			  "hod_desk": [
 				{
 				  "name": "Dr. N. Kumaresan",
-				  "image": "kumaresan.jpg",
+				  "image": "Kumaresan-N.jpg",
 				  "position": "Associate Professor",
 				  "email": "kumaresan@aurcc.ac.in",
 				  "education": [
@@ -2941,26 +3330,24 @@
 					  "institution": "Anna University Chennai"
 					}
 				  ],
-				  "professional_experience": "25 years",
 				  "research_interests": [
 					"Image Processing",
 					"Signal Processing",
 					"VLSI Design"
 				  ],
-				  "publications": null,
-				  "links": [
+				  "links": 
 					{
 					  "link": "https://drive.google.com/open?id=1DUaJQyQFyOSgV3ArjKbHdtCErdhb65Gg",
 					  "google_scholar": "https://scholar.google.co.in/citations?user=L-myNyoAAAAJ&hl=en"
 					}
-				  ],
+				  ,
 				  "previous_positions": null
 				}
 			  ],
 			  "assistant_professors": [
 				{
 				  "name": "Dr. Gomathi R",
-				  "image": "gomathi.jpg",
+				  "image": "R.Gomathi.jpg",
 				  "position": "Assistant Professor (Senior Grade)",
 				  "email": "gomathiucedgl@gmail.com",
 				  "departments": ["Department of Electronics and Communication Engineering"],
@@ -2989,14 +3376,38 @@
 					"Data Mining"
 				  ],
 				  "professional_experience": [
-					"Lecturer, PSNA CET, Dindigul (May 2004 - May 2009)",
-					"Senior Lecturer, PSNA CET, Dindigul (June 2009 - May 2010)",
-					"Assistant Professor, PSNA CET, Dindigul (June 2010 - Aug 2010)",
-					"Assistant Professor, UCE DGL, Dindigul (Dec 2010 - Dec 2014)",
-					"Assistant Professor (Sr. Grade), UCE DGL, Dindigul (Dec 2014 - Jul 2023)",
-					"Assistant Professor (Sr. Grade), AURCC, Coimbatore (Jul 2023 - Till Date)"
-				  ],
-				  "description": null,
+					{
+						"position": "Lecturer",
+						"institution": "PSNA CET, Dindigul",
+						"duration": "May 2004 - May 2009"
+					},
+					{
+						"position": "Senior Lecturer",
+						"institution": "PSNA CET, Dindigul",
+						"duration": "June 2009 - May 2010"
+					},
+					{
+						"position": "Assistant Professor",
+						"institution": "PSNA CET, Dindigul",
+						"duration": "June 2010 - August 2010"
+					},
+					{
+						"position": "Assistant Professor",
+						"institution": "UCE DGL, Dindigul",
+						"duration": "December 2010 - December 2014"
+					},
+					{
+						"position": "Assistant Professor (Sr. Grade)",
+						"institution": "UCE DGL, Dindigul",
+						"duration": "December 2014 - July 2023"
+					},
+					{
+						"position": "Assistant Professor (Sr. Grade)",
+						"institution": "Anna University Regional Campus, Coimbatore",
+						"duration": "July 2023 - Present"
+					}
+				]
+				,
 				  "links": {
 					"email": "gomathi@aurcc.ac.in",
 					"drive_link": "https://drive.google.com/open?id=1rKtEdahJWDFuqVh3YYrTbY0uLLXCpvVN"
@@ -3004,7 +3415,7 @@
 				},
 				{
 				  "name": "Dr. Kandasamy K",
-				  "image": "kandasamy.jpg",
+				  "image": "kandasamy-Samy.jpg",
 				  "position": "Teaching Fellow",
 				  "email": "kkandasamy.03@gmail.com",
 				  "departments": ["Department of Electronics and Communication Engineering"],
@@ -3033,10 +3444,18 @@
 					"Data Mining"
 				  ],
 				  "professional_experience": [
-					"Teaching Fellow-Anna University College of Engineering Villupuram,(2013-2022)",
-					"Teaching Fellow-Anna University Regional Campus Coimbatore,(2022-2024)"
-				  ],
-				  "description": null,
+					{
+						"position": "Teaching Fellow",
+						"institution": "Anna University College of Engineering Villupuram",
+						"duration": "2013 - 2022"
+					},
+					{
+						"position": "Teaching Fellow",
+						"institution": "Anna University Regional Campus Coimbatore",
+						"duration": "2022 - 2024"
+					}
+				]
+				,
 				  "links": {
 					"email": "kandasamy@aurcc.ac.in",
 					"drive_link": "https://drive.google.com/open?id=12hclHktYW6ma3oODe608fAzEHo9q5nKL"
@@ -3072,18 +3491,37 @@
 					"Communication"
 				  ],
 				  "professional_experience": [
-					"Kongu Engineering College (1995 - 2004)",
-					"SSN college of Engineering (2004 - 2006)",
-					"RMK Engineering College (2007 -2007)",
-					"Anna University Tiruchirappalli (2007-2011)",
-					"UCE-BIT Campus (2013- 2023)"
-				  ],
-				  "description": null,
-				  "links": null
+					{
+						"position": "Faculty Member",
+						"institution": "Kongu Engineering College",
+						"duration": "1995 - 2004"
+					},
+					{
+						"position": "Faculty Member",
+						"institution": "SSN College of Engineering",
+						"duration": "2004 - 2006"
+					},
+					{
+						"position": "Faculty Member",
+						"institution": "RMK Engineering College",
+						"duration": "2007"
+					},
+					{
+						"position": "Faculty Member",
+						"institution": "Anna University Tiruchirappalli",
+						"duration": "2007 - 2011"
+					},
+					{
+						"position": "Faculty Member",
+						"institution": "UCE-BIT Campus",
+						"duration": "2013 - 2023"
+					}
+				]
+				
 				},
 				{
 				  "name": "Dr. Jeevagan Navukarasu Lenin G",
-				  "image": null,
+				  "image": "Jeevagan-Navukarasu.jpg",
 				  "position": "Assistant Professor (Senior Grade)",
 				  "email": "gjeevagan@aurcc.ac.in",
 				  "departments": ["Department of Electronics and Communication Engineering"],
@@ -3098,12 +3536,33 @@
 					"Wireless Communication"
 				  ],
 				  "professional_experience": [
-					"Lecturer, PGP College of Engineering & Technology, Namakkal (2005-2006)",
-					"Assistant Professor, Toc H Institute of Science & Technology, Ernakulam (2006-2008)",
-					"Lecturer, Chettinad College of Engineering & Technology, Karur (2008-2009)",
-					"Assistant Professor, University College of Engineering Ramanathapuram (2009-2023)",
-					"Assistant Professor, Anna University Regional Campus Coimbatore (2023 - Present)"
-				  ],
+					{
+						"position": "Lecturer",
+						"institution": "PGP College of Engineering & Technology, Namakkal",
+						"duration": "2005 - 2006"
+					},
+					{
+						"position": "Assistant Professor",
+						"institution": "Toc H Institute of Science & Technology, Ernakulam",
+						"duration": "2006 - 2008"
+					},
+					{
+						"position": "Lecturer",
+						"institution": "Chettinad College of Engineering & Technology, Karur",
+						"duration": "2008 - 2009"
+					},
+					{
+						"position": "Assistant Professor",
+						"institution": "University College of Engineering Ramanathapuram",
+						"duration": "2009 - 2023"
+					},
+					{
+						"position": "Assistant Professor",
+						"institution": "Anna University Regional Campus Coimbatore",
+						"duration": "2023 - Present"
+					}
+				]
+				,
 				  "links": {
 					"scholar_profile": "https://scholar.google.com/citations?user=RB6TokIAAAAJ&hl=en",
 					"email": "gjeevagan@aurcc.ac.in",
@@ -3112,7 +3571,7 @@
 				},
 				{
 				  "name": "Dr. Vijaykumar R",
-				  "image": null,
+				  "image": "Vijaykumar.jpg" ,
 				  "position": "Assistant Professor",
 				  "email": "vijaykumar@aurcc.ac.in",
 				  "departments": ["Department of Electronics and Communication Engineering"],
@@ -3136,15 +3595,20 @@
 					"VLSI Design"
 				  ],
 				  "professional_experience": [
-					"Assistant Professor, Anna University Regional Campus Coimbatore (2012 - Present)"
-				  ],
+					{
+						"position": "Assistant Professor",
+						"institution": "Anna University Regional Campus Coimbatore",
+						"duration": "2012 - Present"
+					}
+				]
+				,
 				  "links": {
 					"email": "vijaykumar@aurcc.ac.in"
 				  }
 				},
 				{
 				  "name": "Dr. Ellavarasan E",
-				  "image": null,
+				  "image": "elavarasan.jpg",
 				  "position": "Assistant Professor",
 				  "email": "ellavarasan@aurcc.ac.in",
 				  "departments": ["Department of Electronics and Communication Engineering"],
@@ -3168,14 +3632,80 @@
 					"Signal Processing"
 				  ],
 				  "professional_experience": [
-					"Assistant Professor, Anna University Regional Campus Coimbatore (2015 - Present)"
-				  ],
+					{
+						"position": "Assistant Professor",
+						"institution": "Anna University Regional Campus Coimbatore",
+						"duration": "2015 - Present"
+					}
+				]
+				,
 				  "links": {
 					"email": "ellavarasan@aurcc.ac.in"
 				  }
 				}
 			  ]
-			},		  
+			},
+			"admin_staff":[
+				{
+								"name": "Mrs. L. Thamaraiselvi L",
+								"position": "Executive Assistant ",
+								"email": "athams.money@gmail.com",
+								"education": [
+									{
+										"degree": " ",
+										"institution": " ",
+										"year":""
+									}
+									
+								]
+				
+							},
+				{
+								"name": "Mr. Elavarasan L",
+								"position": "Lab Technician ",
+								"email": "kmelavarasan@gmail.com",
+								"education": [
+									{
+										"degree": "B.E.",
+										"institution": "Anna University"
+									  },
+									  {
+										"degree": "M.E.",
+										"institution": "Anna University"
+									  },
+									  {
+										"degree": "Ph.D.",
+										"institution": "Anna University"
+									  }
+									
+								]
+							},
+				{
+								"name": "Mr. S. Boopathyrajasekar",
+								"position": "Professional Assistant - I",
+								"email": "",
+								"education": [
+									{
+										"degree": " ",
+										"institution": " ",
+										"year":""
+									}
+								]
+							},
+				{
+								"name": "Mr. Ravikumar S ",
+								"position": " Office Assistant",
+								"email": "",
+								"education": [
+									{
+										"degree": " ",
+										"institution": " ",
+										"year":""
+									}
+								]
+							}
+				  ],
+						  
 		"infrastructure": {
 		  "The department is equipped with excellent infrastructure and state-of-the-art equipment to tackle technological challenges in various areas including:": [
 			"Electronics",
@@ -3186,53 +3716,6 @@
 			"ASIC Design",
 			"RF and Wireless Communications"
 		  ]
-		},
-		"labs": {
-		  "applied_electronics": {
-			"equipment": [
-			  "MSP 430 Microcontroller",
-			  "Beagle bone black board",
-			  "MSP 430 F2013 starter kit",
-			  "TMS320C 6678 Multicore DSP Processor Kit",
-			  "Application boards",
-			  "Workbenches",
-			  "Desktop Computers"
-			],
-			"software": [
-			  "MultiSim",
-			  "Tina TI"
-			]
-		  },
-		  "communication_systems": {
-			"equipment": [
-			  "Optical Fiber kits",
-			  "Analog and Digital Communication kits",
-			  "TMS320C 6678 Multicore DSP Processor Kit",
-			  "Basic trainer Kits",
-			  "CAD FEKO software"
-			],
-			"software": [
-			  "Code Composer Studio",
-			  "FEKO"
-			]
-		  },
-		  "vlsi_design": {
-			"equipment": [
-			  "Desktop Computers",
-			  "ALTERA boards",
-			  "Logic analyzer"
-			],
-			"software": [
-			  "Micro wind",
-			  "Mentor Graphics",
-			  "Quartus-II",
-			  "Active HDL",
-			  "Keil",
-			  "MP lab",
-			  "IAR Workbench",
-			  "Modelsim"
-			]
-		  }
 		},
 		"scope": {
 		  "description": "To create a centre of Excellence in the area of RF and Wireless Communications, Advanced Digital Image Processing, VLSI Design, and Embedded System Design.",

@@ -314,8 +314,8 @@
               <div class="text-gray-600">
                 {{ research.authors }}
               </div>
-              <div class="font-bold text-blue-600 mt-1">
-                {{ research.journal_or_conference }}
+              <div class="font-bold ">
+                {{ research.journal }}
               </div>
             </div>
           </div>
