@@ -11,7 +11,7 @@
       
       <!-- Announcements Section -->
       <div class="bg-base-300">
-        <div class="container mx-auto">
+        <div class="container-fluid mx-auto">
           <div class="flex items-center justify-between">
             <div class="text-sm p-4 bg-gray-800 text-white">Announcements</div>
             <div class="text-sm breadcrumbs animate-marquee hover:animate-pause p-4 flex-1 overflow-hidden">
@@ -30,11 +30,24 @@
       </div>
 
       <!-- Horizontal Scrollable Image Gallery Section -->
-      <div class="scrollable-gallery-container py-8 bg-base-200">
-        <h2 class="text-3xl font-bold text-center mb-4">Image Gallery</h2>
-        <div class="scrollable-gallery" ref="scrollableGallery">
-          <div v-for="(image, index) in galleryImages" :key="index" class="scrollable-gallery-item">
-            <img :src="image" alt="Gallery Image" class="rounded-lg shadow-lg" />
+      <div class="flex flex-col md:overflow-hidden items-center bg-base-200">
+        <div class="relative  w-full max-w-4xl">
+          <div
+            class="flex transition-transform duration-500"
+            :style="{ transform: `translateX(-${currentImageIndex * 100}%)` }"
+            ref="slider"
+          >
+            <div
+              v-for="(image, index) in circularGalleryImages"
+              :key="index"
+              class="flex-none w-full"
+            >
+              <img
+                :src="image"
+                alt="Gallery Image"
+                class="w-full h-full object-cover"
+              />
+            </div>
           </div>
         </div>
         <div class="flex justify-center mt-4">
@@ -43,6 +56,7 @@
             :key="index"
             :class="['dot', { 'dot-active': currentImageIndex === index }]"
             @click="scrollToImage(index)"
+            class="w-3 h-3 bg-gray-400 rounded-full mx-1 cursor-pointer"
           ></div>
         </div>
       </div>
@@ -153,155 +167,59 @@
 export default {
   data() {
     return {
-      scrollInterval: null,
-      upcomingEvents: [
-        {
-          id: 1,
-          title: 'Orientation Day',
-          date: 'June 1, 2023',
-          description: 'Welcome event for new students and their families.'
-        },
-        {
-          id: 2,
-          title: 'Career Fair',
-          date: 'September 15, 2023',
-          description: 'Meet potential employers and explore career opportunities.'
-        },
-        {
-          id: 3,
-          title: 'Homecoming Weekend',
-          date: 'October 21-23, 2023',
-          description: 'Alumni reunions, football game, and campus celebrations.'
-        }
-      ],
       galleryImages: [
         'http://localhost:5173/src/assets/mime_annualday.jpeg',
+        'http://localhost:5173/src/assets/1.webp',
         'http://localhost:5173/src/assets/mime_annualday.jpeg',
-        'http://localhost:5173/src/assets/mime_annualday.jpeg',
-        'http://localhost:5173/src/assets/mime_annualday.jpeg',
+        'http://localhost:5173/src/assets/4.webp',
         'http://localhost:5173/src/assets/mime_annualday.jpeg',
         'http://localhost:5173/src/assets/mime_annualday.jpeg'
       ],
-      currentImageIndex: 0
-    }
+      currentImageIndex: 1,
+      circularGalleryImages: []
+    };
   },
   methods: {
-    startScrolling() {
-      const eventsContent = this.$refs.eventsContent
-      eventsContent.classList.add('events-content')
-      this.scrollInterval = setInterval(this.scrollEvents, 50) // Faster scroll speed
+    startAutoScroll() {
+      this.scrollInterval = setInterval(this.nextImage, 3000);
     },
-    stopScrolling() {
-      const eventsContent = this.$refs.eventsContent
-      eventsContent.classList.remove('events-content')
-      clearInterval(this.scrollInterval)
+    stopAutoScroll() {
+      clearInterval(this.scrollInterval);
     },
-    scrollEvents() {
-      const eventsContent = this.$refs.eventsContent
-      const eventsList = this.$refs.eventsList
-      eventsContent.scrollTop += 1
-      if (eventsContent.scrollTop + eventsContent.clientHeight >= eventsList.clientHeight) {
-        eventsContent.scrollTop = 0
+    nextImage() {
+      if (this.currentImageIndex < this.galleryImages.length) {
+        this.currentImageIndex++;
+      } else {
+        this.currentImageIndex = 1;
       }
     },
     scrollToImage(index) {
-      this.currentImageIndex = index
-      const scrollableGallery = this.$refs.scrollableGallery
-      scrollableGallery.scrollTo({
-        left: index * scrollableGallery.clientWidth,
-        behavior: 'smooth'
-      })
+      this.currentImageIndex = index + 1;
+    },
+    createCircularImages() {
+      this.circularGalleryImages = [
+        this.galleryImages[this.galleryImages.length - 1],
+        ...this.galleryImages,
+        this.galleryImages[0]
+      ];
     }
   },
   mounted() {
-    this.startScrolling()
+    this.createCircularImages();
+    this.startAutoScroll();
+  },
+  beforeDestroy() {
+    this.stopAutoScroll();
   }
-}
+};
+
 </script>
 <style>
-/* Tailwind CSS utility classes */
-.animate-marquee {
-  animation: marquee 20s linear infinite;
-}
-
-.animate-pause {
-  animation-play-state: paused;
-}
-
-@keyframes marquee {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
-.events-content {
-  animation: scrollAnimation 5s linear infinite; /* Change animation duration as needed */
-}
-
-@keyframes scrollAnimation {
-  from {
-    transform: translateY(0);
-  }
-  to {
-    transform: translateY(-100%);
-  }
-}
-
-.event {
-  margin-bottom: 10px;
-  /* Style individual events */
-}
-
-/* Scrollable Gallery Styles */
-.scrollable-gallery-container {
-  position: relative;
-  overflow: hidden;
-}
-
-.scrollable-gallery {
-  display: flex;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-}
-
-.scrollable-gallery-item {
-  scroll-snap-align: start;
-  flex: 0 0 auto;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  padding: 10px;
-}
-
-.scrollable-gallery-item img {
-  width: 100%;
-  height: auto;
-  max-width: 600px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  transition: transform 0.3s;
-}
-
-.scrollable-gallery-item img:hover {
-  transform: scale(1.05);
-}
-
 .dot {
-  height: 12px;
-  width: 12px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  margin: 0 5px;
-  cursor: pointer;
   transition: background-color 0.3s;
 }
-
 .dot-active {
   background-color: #717171;
 }
 </style>
+
