@@ -11,7 +11,7 @@
       
       <!-- Announcements Section -->
       <div class="bg-base-300">
-        <div class="container mx-auto">
+        <div class="container-fluid mx-auto">
           <div class="flex items-center justify-between">
             <div class="text-sm p-4 bg-gray-800 text-white">Announcements</div>
             <div class="text-sm breadcrumbs animate-marquee hover:animate-pause p-4 flex-1 overflow-hidden">
@@ -31,21 +31,28 @@
 
       <!-- Horizontal Scrollable Image Gallery Section -->
       <div class="scrollable-gallery-container py-8 bg-base-200">
-        <h2 class="text-3xl font-bold text-center mb-4">Image Gallery</h2>
-        <div class="scrollable-gallery" ref="scrollableGallery">
-          <div v-for="(image, index) in galleryImages" :key="index" class="scrollable-gallery-item">
-            <img :src="image" alt="Gallery Image" class="rounded-lg shadow-lg" />
-          </div>
-        </div>
-        <div class="flex justify-center mt-4">
-          <div
-            v-for="(image, index) in galleryImages"
-            :key="index"
-            :class="['dot', { 'dot-active': currentImageIndex === index }]"
-            @click="scrollToImage(index)"
-          ></div>
-        </div>
-      </div>
+  <h2 class="text-3xl font-bold text-center mb-4">Image Gallery</h2>
+  <div class="scrollable-gallery" ref="scrollableGallery">
+    <div
+      v-for="(image, index) in galleryImages"
+      :key="index"
+      class="scrollable-gallery-item"
+    >
+      <img :src="image" alt="Gallery Image" class="main-image rounded-lg shadow-lg" />
+    </div>
+  </div>
+  <div class="flex justify-center mt-4">
+    <div
+      v-for="(image, index) in galleryImages"
+      :key="index"
+      :class="['dot', { 'dot-active': currentImageIndex === index }]"
+      @click="scrollToImage(index)"
+    ></div>
+  </div>
+</div>
+
+
+
 
       <div class="grid grid-cols-1 md:grid-cols-4 gap-8 p-9 md:p-20">
         <div class="col-span-3">
@@ -153,27 +160,6 @@
 export default {
   data() {
     return {
-      scrollInterval: null,
-      upcomingEvents: [
-        {
-          id: 1,
-          title: 'Orientation Day',
-          date: 'June 1, 2023',
-          description: 'Welcome event for new students and their families.'
-        },
-        {
-          id: 2,
-          title: 'Career Fair',
-          date: 'September 15, 2023',
-          description: 'Meet potential employers and explore career opportunities.'
-        },
-        {
-          id: 3,
-          title: 'Homecoming Weekend',
-          date: 'October 21-23, 2023',
-          description: 'Alumni reunions, football game, and campus celebrations.'
-        }
-      ],
       galleryImages: [
         'http://localhost:5173/src/assets/mime_annualday.jpeg',
         'http://localhost:5173/src/assets/mime_annualday.jpeg',
@@ -186,108 +172,53 @@ export default {
     }
   },
   methods: {
-    startScrolling() {
-      const eventsContent = this.$refs.eventsContent
-      eventsContent.classList.add('events-content')
-      this.scrollInterval = setInterval(this.scrollEvents, 50) // Faster scroll speed
-    },
-    stopScrolling() {
-      const eventsContent = this.$refs.eventsContent
-      eventsContent.classList.remove('events-content')
-      clearInterval(this.scrollInterval)
-    },
-    scrollEvents() {
-      const eventsContent = this.$refs.eventsContent
-      const eventsList = this.$refs.eventsList
-      eventsContent.scrollTop += 1
-      if (eventsContent.scrollTop + eventsContent.clientHeight >= eventsList.clientHeight) {
-        eventsContent.scrollTop = 0
-      }
-    },
     scrollToImage(index) {
-      this.currentImageIndex = index
-      const scrollableGallery = this.$refs.scrollableGallery
+      this.currentImageIndex = index;
+      const scrollableGallery = this.$refs.scrollableGallery;
+      const imageWidth = scrollableGallery.clientWidth / 3;
       scrollableGallery.scrollTo({
-        left: index * scrollableGallery.clientWidth,
+        left: index * imageWidth,
         behavior: 'smooth'
-      })
+      });
     }
-  },
-  mounted() {
-    this.startScrolling()
   }
 }
+
 </script>
 <style>
-/* Tailwind CSS utility classes */
-.animate-marquee {
-  animation: marquee 20s linear infinite;
-}
-
-.animate-pause {
-  animation-play-state: paused;
-}
-
-@keyframes marquee {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
-.events-content {
-  animation: scrollAnimation 5s linear infinite; /* Change animation duration as needed */
-}
-
-@keyframes scrollAnimation {
-  from {
-    transform: translateY(0);
-  }
-  to {
-    transform: translateY(-100%);
-  }
-}
-
-.event {
-  margin-bottom: 10px;
-  /* Style individual events */
-}
-
-/* Scrollable Gallery Styles */
 .scrollable-gallery-container {
-  position: relative;
   overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 
 .scrollable-gallery {
   display: flex;
+  flex-wrap: nowrap;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
+  width: 100%;
 }
 
 .scrollable-gallery-item {
-  scroll-snap-align: start;
-  flex: 0 0 auto;
-  width: 100%;
+  scroll-snap-align: center;
+  flex: 0 0 33.33%; /* Adjusts the size to show three images in view */
   display: flex;
   justify-content: center;
-  padding: 10px;
-}
-
-.scrollable-gallery-item img {
-  width: 100%;
-  height: auto;
-  max-width: 600px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  align-items: center;
   transition: transform 0.3s;
 }
 
-.scrollable-gallery-item img:hover {
-  transform: scale(1.05);
+.scrollable-gallery-item img {
+  width: 100%; /* Ensures the images take up the full width of their container */
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s;
 }
 
 .dot {
@@ -304,4 +235,5 @@ export default {
 .dot-active {
   background-color: #717171;
 }
+
 </style>
