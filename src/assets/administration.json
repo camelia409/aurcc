@@ -1,0 +1,39 @@
+{
+    "administration": {
+      "administration_1": [
+        {
+          "Department": "General Administration I",
+          "Email": "sunvarma69@gmail.com",
+          "Responsibilities": "Establishment: Teaching, Non Teaching, Stationery, Affiliation, Income Tax filing & despatch, overall stock maintenance of campus",
+          "Head": "A. Sundararajan",
+          "Additional_Details": "Nil",
+          "Assistants": [
+            "C. Ramasamy EA Finance",
+            "R. Bharathi EA Administration",
+            "M.S. Murugesan EA Administration"
+          ],
+          "Other_Info": "Nil",
+          "Contact_Email": "deanciombatore@annauniv.edc",
+          "Contact_Number": "9443440910"
+        }
+      ],
+      "administration_2": [
+        {
+          "Department": "General Administration II",
+          "Email": "moorthy.aurc@gmail.com",
+          "Responsibilities": "Dealing all the finance related matters",
+          "Head": "Punniyamoorthy G",
+          "Additional_Details": "A",
+          "Assistants": [
+            "Murugavel S - Executive Assistant Admin",
+            "Bhuvaneswari S - Executive Assistant Admin",
+            "Sathiyapriya M - Executive Assistant Admin"
+          ],
+          "Other_Info": "",
+          "Contact_Email": "ga2aurcc@gmail.com",
+          "Contact_Number": "9790672797"
+        }
+      ]
+    }
+  }
+  
