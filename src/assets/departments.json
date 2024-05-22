@@ -790,7 +790,7 @@
 			  },
 			  {
 				"name": "Dr. P. Marikkannu",
-				"image": "prabhu.webp",
+				"image": "Maari.webp",
 				"position": "Assistant Professor (Senior Grade)",
 				"email": "pmarikkannu@gmail.com",
 				"education": [
@@ -912,7 +912,7 @@
             },
             {
                 "name": "Dr. Fareena N",
-				"image": "prabhu.webp",
+				"image": "Fareena.webp",
                 "position": "Assistant Professor",
                 "email": "fareena.aurcc@gmail.com",
                 "education": [
@@ -1322,7 +1322,7 @@
 				  }
 				},
 				{
-				  "name": "Dr. Sathyamoorthy R",
+				  "name": "Dr. Sathiyamoorthy R",
 				  "email": "sathiya81@gmail.com",
 				  "position": "Assistant Professor",
 				  "education": [],
@@ -1461,6 +1461,7 @@
 			"hod_desk": [
 			  {
 				"name": "Dr. Subha M V",
+				"image": "subha.webp",
 				"email": "subhamv@aurcc.ac.in",
 				"position": "Associate Professor",
 				"department": "Department of Management Studies",
@@ -1488,6 +1489,7 @@
 			"assistant_professors": [
 				{
 				  "name": "Dr. Suganthalakshmi T",
+				  "image": "suganthalakshmi.webp",
 				  "email": "sugi1971@rediffmail.com",
 				  "position": "Assistant Professor",
 				  "department": "Department of Management Studies",
@@ -1505,6 +1507,7 @@
 				},
 				{
 				  "name": "Dr. PREMAPRIYA M.S",
+				  "image": "prema.webp",
 				  "email": "premapriya@aurcc.ac.in",
 				  "position": "Assistant Professor",
 				  "department": "Department of Management Studies",
@@ -1519,6 +1522,7 @@
 				},
 				{
 				  "name": "Dr. S. Chandrakumarmangalam",
+				  "image": "chandra.webp",
 				  "email": "ckmaucbe@gmail.com",
 				  "position": "Assistant Professor",
 				  "department": "Department of Management Studies",
@@ -1535,6 +1539,7 @@
 				},
 				{
 				  "name": "Dr. Srividhya S",
+				  "image": "srividhya.webp",
 				  "email": "srividhya@aurcc.ac.in",
 				  "position": "Assistant Professor",
 				  "department": "Department of Management Studies",
@@ -3314,7 +3319,7 @@
 			  "hod_desk": [
 				{
 				  "name": "Dr. N. Kumaresan",
-				  "image": "Kumaresan-N.webp",
+				  "image": "Kumar.webp",
 				  "position": "Associate Professor",
 				  "email": "kumaresan@aurcc.ac.in",
 				  "education": [
@@ -3349,6 +3354,57 @@
 				}
 			  ],
 			  "assistant_professors": [
+				{
+					"name": "Dr. P. Seethalakshmi",
+					"image": "seethalakshmi.webp",
+					"position": "Associate Professor",
+					"email": "seethalakshmi.pandian.erode@gmail.com",
+					"departments": ["Department of Electronics and Communication Engineering"],
+					"clg-email": "seethalakshmi.pandian.erode@gmail.com",
+					"education": [
+					  {
+						"degree": "B.E.",
+						"institution": "Government Colleges of Engineering Erode"
+					  },
+					  {
+						"degree": "Ph.D.",
+						"institution": "CEG, Anna University Chennai",
+						"year": 2004
+					  }
+					],
+					"research_interests": [
+					  "Microwaves & Antennas",
+					  "Communication"
+					],
+					"professional_experience": [
+					  {
+						  "position": "Faculty Member",
+						  "institution": "Kongu Engineering College",
+						  "duration": "1995 - 2004"
+					  },
+					  {
+						  "position": "Faculty Member",
+						  "institution": "SSN College of Engineering",
+						  "duration": "2004 - 2006"
+					  },
+					  {
+						  "position": "Faculty Member",
+						  "institution": "RMK Engineering College",
+						  "duration": "2007"
+					  },
+					  {
+						  "position": "Faculty Member",
+						  "institution": "Anna University Tiruchirappalli",
+						  "duration": "2007 - 2011"
+					  },
+					  {
+						  "position": "Faculty Member",
+						  "institution": "UCE-BIT Campus",
+						  "duration": "2013 - 2023"
+					  }
+				  ]
+				  
+				},
 				{
 				  "name": "Dr. Gomathi R",
 				  "image": "R.Gomathi.webp",
@@ -3418,6 +3474,56 @@
 				  }
 				},
 				{
+					"name": "Dr. Jeevagan Navukarasu Lenin G",
+					"image": "Jeevagan-Navukarasu.webp",
+					"position": "Assistant Professor (Senior Grade)",
+					"email": "gjeevagan@aurcc.ac.in",
+					"departments": ["Department of Electronics and Communication Engineering"],
+					"clg-email": "gjeevagan@aurcc.ac.in",
+					"education": [
+					  {
+						"degree": "Ph.D. in Information & Communication Engineering"
+					  }
+					],
+					"research_interests": [
+					  "Microwaves & Antennas",
+					  "Wireless Communication"
+					],
+					"professional_experience": [
+					  {
+						  "position": "Lecturer",
+						  "institution": "PGP College of Engineering & Technology, Namakkal",
+						  "duration": "2005 - 2006"
+					  },
+					  {
+						  "position": "Assistant Professor",
+						  "institution": "Toc H Institute of Science & Technology, Ernakulam",
+						  "duration": "2006 - 2008"
+					  },
+					  {
+						  "position": "Lecturer",
+						  "institution": "Chettinad College of Engineering & Technology, Karur",
+						  "duration": "2008 - 2009"
+					  },
+					  {
+						  "position": "Assistant Professor",
+						  "institution": "University College of Engineering Ramanathapuram",
+						  "duration": "2009 - 2023"
+					  },
+					  {
+						  "position": "Assistant Professor",
+						  "institution": "Anna University Regional Campus Coimbatore",
+						  "duration": "2023 - Present"
+					  }
+				  ]
+				  ,
+					"links": {
+					  "scholar_profile": "https://scholar.google.com/citations?user=RB6TokIAAAAJ&hl=en",
+					  "email": "gjeevagan@aurcc.ac.in",
+					  "drive_link": "https://drive.google.com/open?id=1G8kfAh_7DRf6rJfackYZGBWLmTz9QViN"
+					}
+				},
+				{
 				  "name": "Dr. Kandasamy K",
 				  "image": "kandasamy-Samy.webp",
 				  "position": "Teaching Fellow",
@@ -3471,108 +3577,8 @@
 					"International Conference": 6,
 					"National Conference": 6
 				  }
-				},
-				{
-				  "name": "Dr. P. Seethalakshmi",
-				  "image": "seethalakshmi.webp",
-				  "position": "Associate Professor",
-				  "email": "seethalakshmi.pandian.erode@gmail.com",
-				  "departments": ["Department of Electronics and Communication Engineering"],
-				  "clg-email": "seethalakshmi.pandian.erode@gmail.com",
-				  "education": [
-					{
-					  "degree": "B.E.",
-					  "institution": "Government Colleges of Engineering Erode"
-					},
-					{
-					  "degree": "Ph.D.",
-					  "institution": "CEG, Anna University Chennai",
-					  "year": 2004
-					}
-				  ],
-				  "research_interests": [
-					"Microwaves & Antennas",
-					"Communication"
-				  ],
-				  "professional_experience": [
-					{
-						"position": "Faculty Member",
-						"institution": "Kongu Engineering College",
-						"duration": "1995 - 2004"
-					},
-					{
-						"position": "Faculty Member",
-						"institution": "SSN College of Engineering",
-						"duration": "2004 - 2006"
-					},
-					{
-						"position": "Faculty Member",
-						"institution": "RMK Engineering College",
-						"duration": "2007"
-					},
-					{
-						"position": "Faculty Member",
-						"institution": "Anna University Tiruchirappalli",
-						"duration": "2007 - 2011"
-					},
-					{
-						"position": "Faculty Member",
-						"institution": "UCE-BIT Campus",
-						"duration": "2013 - 2023"
-					}
-				]
-				
-				},
-				{
-				  "name": "Dr. Jeevagan Navukarasu Lenin G",
-				  "image": "Jeevagan-Navukarasu.webp",
-				  "position": "Assistant Professor (Senior Grade)",
-				  "email": "gjeevagan@aurcc.ac.in",
-				  "departments": ["Department of Electronics and Communication Engineering"],
-				  "clg-email": "gjeevagan@aurcc.ac.in",
-				  "education": [
-					{
-					  "degree": "Ph.D. in Information & Communication Engineering"
-					}
-				  ],
-				  "research_interests": [
-					"Microwaves & Antennas",
-					"Wireless Communication"
-				  ],
-				  "professional_experience": [
-					{
-						"position": "Lecturer",
-						"institution": "PGP College of Engineering & Technology, Namakkal",
-						"duration": "2005 - 2006"
-					},
-					{
-						"position": "Assistant Professor",
-						"institution": "Toc H Institute of Science & Technology, Ernakulam",
-						"duration": "2006 - 2008"
-					},
-					{
-						"position": "Lecturer",
-						"institution": "Chettinad College of Engineering & Technology, Karur",
-						"duration": "2008 - 2009"
-					},
-					{
-						"position": "Assistant Professor",
-						"institution": "University College of Engineering Ramanathapuram",
-						"duration": "2009 - 2023"
-					},
-					{
-						"position": "Assistant Professor",
-						"institution": "Anna University Regional Campus Coimbatore",
-						"duration": "2023 - Present"
-					}
-				]
-				,
-				  "links": {
-					"scholar_profile": "https://scholar.google.com/citations?user=RB6TokIAAAAJ&hl=en",
-					"email": "gjeevagan@aurcc.ac.in",
-					"drive_link": "https://drive.google.com/open?id=1G8kfAh_7DRf6rJfackYZGBWLmTz9QViN"
-				  }
 				}
+				
 			  ]
 			},
 			"admin_staff":[
