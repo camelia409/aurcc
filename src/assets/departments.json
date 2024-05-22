@@ -417,25 +417,25 @@
 					"name": "Python Laboratory",
 					"description": "In a Python programming laboratory at a college, students learn to write, test, and debug Python programs. They explore conditionals, loops, and functions for structuring their code. Additionally, they gain proficiency in handling compound data using Python lists, tuples, and dictionaries, as well as reading and writing data from/to files. The lab aims to equip students with practical programming skills and a solid foundation in Python.",
 					"room no": "216",
-					"image": "py.jpg"
+					"image": "py.webp"
 				},
 				{
 					"name": "Database Laboratory",
 					"description": "In a college database management laboratory, students gain foundational knowledge in database concepts, technology, and practice. They learn SQL programming through various database problems, develop applications using front-end tools, and work with back-end DBMS. The lab covers topics such as data definition languages (DDL), data manipulation language (DML) commands, high-level programming language extensions, front-end tools, forms, triggers, menu design, reports, and practical exercises using open-source software like MySQL.",
 					"room no": "217",
-					"image": "db.jpg"
+					"image": "db.webp"
 				},
 				{
 					"name": "IDEA Laboratory",
 					"description": "The AICTE-IDEA (Idea Development, Evaluation & Application) Lab is established in AICTE-approved institutions to encourage students to apply science, technology, engineering, and mathematics (STEM) fundamentals. This lab provides hands-on experience, fosters creativity, and trains students in critical thinking, problem-solving, and collaboration. The IDEA Lab aims to transform education by converting ideas into prototypes, promoting imaginative thinking, and preparing graduates for the 21st-century workplace.",
 					"room no": "202",
-					"image": "idea.jpg"
+					"image": "idea.webp"
 				},
 				{
 					"name": "Cybersecurity Laboratory",
 					"description": "A college cybersecurity lab is a hands-on learning environment equipped with simulated networks and security tools. Students practice ethical hacking techniques, analyze malware, and defend against cyberattacks in a safe space. These labs, often led by cybersecurity professors, prepare students for industry certifications and careers in information security.",
 					"room no": "222",
-					"image": "cb.jpg"
+					"image": "cb.webp"
 				}
 			  ],
         "research_and_publications": [
@@ -685,7 +685,7 @@
 			"hod_desk": [
 			  {
 				"name": "Dr. Manisekaran S V",
-				"image": "mani.jpg",
+				"image": "mani.webp",
 				"position": "Assistant Professor and Head(i/c)",
 				"email": "manisekaran@aurcc.ac.in",
 				"education": [
@@ -748,7 +748,7 @@
 			"assistant_professors": [
 			  {
 				"name": "Dr. Preethi J",
-				"image": "preethi.jpg",
+				"image": "preethi.webp",
 				"position": "Assistant Professor (Senior Grade)",
 				"departments": ["Department of Computer Science and Engineering", "Placement Cell", "DGATE Cell"],
 				"clg-email": "preethi@aurcc.ac.in",
@@ -790,7 +790,7 @@
 			  },
 			  {
 				"name": "Dr. P. Marikkannu",
-				"image": "prabhu.jpg",
+				"image": "prabhu.webp",
 				"position": "Assistant Professor (Senior Grade)",
 				"email": "pmarikkannu@gmail.com",
 				"education": [
@@ -823,7 +823,7 @@
 			  },
 			  {
 				"name": "Mr. Prabhu D",
-				"image": "prabhu.jpg",
+				"image": "prabhu.webp",
 				"position": "Assistant Professor (Senior Grade)",
 				"email": "prabhu2kraj@gmail.com",
 				"departments": ["Department of Computer Science and Engineering"],
@@ -871,7 +871,7 @@
 			  },
 			  {
                 "name": "Dr. K. Seethappan",
-				"image": "seetha.jpg",
+				"image": "seetha.webp",
                 "position": "Assistant Professor (Senior Grade)",
                 "email": "seethappan@gmail.com",
                 "experience": "Over 15 years",
@@ -912,7 +912,7 @@
             },
             {
                 "name": "Dr. Fareena N",
-				"image": "prabhu.jpg",
+				"image": "prabhu.webp",
                 "position": "Assistant Professor",
                 "email": "fareena.aurcc@gmail.com",
                 "education": [
@@ -1558,7 +1558,7 @@
 	  
     {
         "address":"eee",
-        "image":"ece2.jpg",
+        "image":"ece2.webp",
         "name": "Department of Electrical and Electronics Engineering",
         "description":"The Department aims to impart the Students a learning Experience in understanding the fundamental concepts of Electrical & Electronics Engineering built on the Foundation of Science, Mathematics, Computing and Technology by active learning process with dedicated faculty members and extensive laboratory facilities so as to prepare them for their Professional Careers. It also prepares the  students to meet the growing global challenges of Engineering Industries by educating them to become highly professional Electrical and Electronics Engineers of high ethics. The Department produces highly qualified Engineers not only to meet the Global environment but also to build a developed nation.",
         "vision":
@@ -2293,6 +2293,7 @@
 			"hod_desk": [
 				{
 					"name": "Dr Saravanakumar S",
+					"image": "saravanakumar-s.webp",
 					"position": "Head of the Department",
 					"email": "ssk@aurcc.ac.in",
 					"education":
@@ -2353,6 +2354,7 @@
 			"assistant_professors": [				
 				{
 					"name": "Dr KIRUBADEVI S",
+					"image":"kiruba-devi.webp",
 					"position": "Assistant Professor (Senior Grade)",
 					"email": "kirubadevi@aurcc.ac.in",
 					"education":
@@ -2408,6 +2410,7 @@
 				},
 				{
 					"name": "Dr Sumathi S",
+					"image":"SUMATHI-S.webp",
 					"position": "Assistant Professor",
 					"email": "sumathi@aurcc.ac.in",
 					"education": 
@@ -2482,13 +2485,14 @@
 						}
 					  ]
 					  ,
-					"achievements": "Had very rich experience in the field of Electronics.",
+					"achievements": ["Had very rich experience in the field of Electronics."],
 					"links": {
 						"drive_link": "https://drive.google.com/open?id=1d8Lp38-FsiiSQNxZq1yfq9UWOWVTmtVq"
 					}
 				},
 				{
 					"name": "Dr T Aruldoss Albert Victoire",
+					"image":"Aruldoss-Albert.webp",
 					"position": "Associate Professor",
 					"email": "albert@aurcc.ac.in",
 					"education": [
@@ -2533,7 +2537,7 @@
 						"vidwan": "https://vidwan.inflibnet.ac.in/profile/277398",
 						"webofscience": "https://www.webofscience.com/wos/author/rid/V-6247-2018"
 					},
-					"achievements": "Dr. Albert received the B.Tech. degree from Pondicherry University, Pondicherry, India, the M.E. degree from Madurai Kamaraj University, Madurai, India, and the Ph.D. degree from Anna University, Chennai, India, in 1998, 2000, and 2005, respectively, all in electrical engineering.",
+					"achievements": ["Dr. Albert received the B.Tech. degree from Pondicherry University, Pondicherry, India, the M.E. degree from Madurai Kamaraj University, Madurai, India, and the Ph.D. degree from Anna University, Chennai, India, in 1998, 2000, and 2005, respectively, all in electrical engineering."],
 					"drive_link": "https://drive.google.com/open?id=1C8_wsKV2NZi_iH8l4btc9RTmUDo4z7dg"
 				}
 				
@@ -3567,80 +3571,6 @@
 					"scholar_profile": "https://scholar.google.com/citations?user=RB6TokIAAAAJ&hl=en",
 					"email": "gjeevagan@aurcc.ac.in",
 					"drive_link": "https://drive.google.com/open?id=1G8kfAh_7DRf6rJfackYZGBWLmTz9QViN"
-				  }
-				},
-				{
-				  "name": "Dr. Vijaykumar R",
-				  "image": "Vijaykumar.webp" ,
-				  "position": "Assistant Professor",
-				  "email": "vijaykumar@aurcc.ac.in",
-				  "departments": ["Department of Electronics and Communication Engineering"],
-				  "clg-email": "vijaykumar@aurcc.ac.in",
-				  "education": [
-					{
-					  "degree": "B.E.",
-					  "institution": "Anna University"
-					},
-					{
-					  "degree": "M.E.",
-					  "institution": "Anna University"
-					},
-					{
-					  "degree": "Ph.D.",
-					  "institution": "Anna University"
-					}
-				  ],
-				  "research_interests": [
-					"Embedded Systems",
-					"VLSI Design"
-				  ],
-				  "professional_experience": [
-					{
-						"position": "Assistant Professor",
-						"institution": "Anna University Regional Campus Coimbatore",
-						"duration": "2012 - Present"
-					}
-				]
-				,
-				  "links": {
-					"email": "vijaykumar@aurcc.ac.in"
-				  }
-				},
-				{
-				  "name": "Dr. Ellavarasan E",
-				  "image": "elavarasan.webp",
-				  "position": "Assistant Professor",
-				  "email": "ellavarasan@aurcc.ac.in",
-				  "departments": ["Department of Electronics and Communication Engineering"],
-				  "clg-email": "ellavarasan@aurcc.ac.in",
-				  "education": [
-					{
-					  "degree": "B.E.",
-					  "institution": "Anna University"
-					},
-					{
-					  "degree": "M.E.",
-					  "institution": "Anna University"
-					},
-					{
-					  "degree": "Ph.D.",
-					  "institution": "Anna University"
-					}
-				  ],
-				  "research_interests": [
-					"Wireless Communication",
-					"Signal Processing"
-				  ],
-				  "professional_experience": [
-					{
-						"position": "Assistant Professor",
-						"institution": "Anna University Regional Campus Coimbatore",
-						"duration": "2015 - Present"
-					}
-				]
-				,
-				  "links": {
-					"email": "ellavarasan@aurcc.ac.in"
 				  }
 				}
 			  ]

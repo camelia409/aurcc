@@ -30,7 +30,7 @@
       </div>
 
       <!-- Horizontal Scrollable Image Gallery Section -->
-      <div class="flex flex-col md:overflow-hidden items-center bg-base-200">
+      <div class="flex flex-col overflow-hidden items-center bg-base-200">
         <div class="relative  w-full max-w-4xl">
           <div
             class="flex transition-transform duration-500"
