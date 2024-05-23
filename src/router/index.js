@@ -50,7 +50,7 @@ const router = createRouter({
       component: ()=> import('../views/About.vue')
     },
     {
-      path: '/academics/',
+      path: '/academics/:section',
       name: 'academics',
       component: ()=> import('../views/Academics.vue')
     },

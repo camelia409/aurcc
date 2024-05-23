@@ -30,7 +30,7 @@
           </div>
         </div>
         <section v-if="currentSection !== null" class="container mx-auto py-8 p-9 md:col-span-3">
-          <div v-if="currentSection === 'Curriculum & Syllabus'">
+          <div v-if="currentSection === 'Curriculum-&-Syllabus'">
             <h2 class="text-2xl font-bold mb-4">Curriculum & Syllabus</h2>
             <div v-for="(programme, index) in curriculamSyllabus" :key="index" class="mb-6">
               <h4 class="text-lg font-semibold">{{ Object.keys(programme)[0] }}</h4>
@@ -60,7 +60,7 @@
               </li>
             </ul>
           </div>
-          <div v-else-if="currentSection === 'Student Affairs'">
+          <div v-else-if="currentSection === 'Student-Affairs'">
             <h2 class="text-2xl font-bold mb-4">Student Affairs</h2>
             <div v-for="affair in studentAffairs" :key="affair.description" class="mb-6">
               <p v-for="desc in affair.description" :key="desc" class="mb-2">{{ desc }}</p>
@@ -121,10 +121,10 @@ export default {
     return {
       data: data,
       sections: [
-        'Curriculum & Syllabus',
-        'Programs Offered',
+        'Curriculum-&-Syllabus',
+        'Programs-Offered',
         'Regulation',
-        'Student Affairs',
+        'Student-Affairs',
         'Re-Admission',
         'Scholarship',
         'Office Bearers'
@@ -136,6 +136,8 @@ export default {
     // Default to first section
     if (this.sections.length > 0) {
       this.currentSection = this.sections[0];
+      this.currentSection = this.$route.params.section
+      console.log(this.currentSection)
     }
   },
   computed: {

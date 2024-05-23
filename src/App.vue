@@ -69,10 +69,10 @@ import { RouterLink, RouterView } from 'vue-router';
               <details>
                 <summary>Academics</summary>
                 <ul class="p-2 bg-base-100 shadow-lg text-black z-30">
-                  <li><a href="#">Programs Offered</a></li>
-                  <li><a href="#">Curriculum & Syllabus</a></li>
-                  <li><a href="#">Regulations</a></li>
-                  <li><a href="#">Student Affairs</a></li>
+                  <li><a href="/academics/Programs-Offered">Programs Offered</a></li>
+                  <li><a href="/academics/Curriculum-&-Syllabus">Curriculum & Syllabus</a></li>
+                  <li><a href="/academics/Regulation">Regulations</a></li>
+                  <li><a href="/academics/Student-Affairs">Student Affairs</a></li>
                 </ul>
               </details>
             </li>
