@@ -123,6 +123,11 @@ const router = createRouter({
       path: '/administration/',
       name: 'administration',
       component: ()=> import('../views/Admin.vue')
+    },
+    {
+      path: '/aicte&moe/',
+      name: 'aicte&moe',
+      component: ()=> import('../views/Aicte&moe.vue')
     }
   ]
 })
