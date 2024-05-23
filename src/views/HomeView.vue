@@ -67,12 +67,12 @@
 
       <div class="flex">
         <div class="bg-red-500 hover:bg-red-600 transition-colors duration-200 h-20 p-4 grow">
-          <span class="text-white ">
+          <a href="/aicte&moe" class="text-white ">
             <svg class="w-6 h-6 inline-block" viewBox="0 0 24 24">
               <!-- Icon SVG path goes here -->
             </svg>
             AICTE  and MOE Cell
-          </span>
+          </a>
         </div>
 
         <div class="bg-orange-400 hover:bg-orange-500 transition-colors duration-200 h-20 p-4 grow">
