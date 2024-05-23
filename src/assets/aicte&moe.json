@@ -7,11 +7,11 @@
             "To facilitate the staff and students to submit various proposals for funding related to academic research and institutional development."
         ],
         "Important Links": {
-            "AICTE Approval details": "URL for AICTE Approval details",
-            "Information about AICTE": "URL for Information about AICTE",
-            "Information related to Ministry of Education, Government of India": "URL for Information related to Ministry of Education, Government of India",
-            "Information related to UGC": "URL for Information related to UGC",
-            "Information related to Ministry of MHRD-Innovation Cell": "URL for Information related to Ministry of MHRD-Innovation Cell"
+            "AICTE Approval details": "https://facilities.aicte-india.org/dashboard/pages/angulardashboard.php#!/approved",
+            "Information about AICTE": "https://www.aicte-india.org/",
+            "Information related to Ministry of Education, Government of India": "https://www.mhrd.gov.in/",
+            "Information related to UGC": "https://www.ugc.gov.in/",
+            "Information related to Ministry of MHRD-Innovation Cell": "https://www.mic.gov.in/"
         }
     },
     "Circulars_Notifications": {
