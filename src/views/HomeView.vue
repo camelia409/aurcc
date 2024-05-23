@@ -30,8 +30,8 @@
       </div>
 
       <!-- Horizontal Scrollable Image Gallery Section -->
-      <div class="flex flex-col overflow-hidden items-center bg-base-200">
-        <div class="relative  w-full">
+      <div class="flex flex-col overflow-hidden items-center bg-base-200 relative">
+        <div class="relative w-full">
           <div
             class="flex transition-transform duration-500"
             :style="{ transform: `translateX(-${currentImageIndex * 100}%)` }"
@@ -50,20 +50,24 @@
             </div>
           </div>
         </div>
-        <div class="flex justify-center mt-4">
+        <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex justify-center space-x-2">
           <div
             v-for="(image, index) in galleryImages"
             :key="index"
-            :class="['dot', { 'dot-active': currentImageIndex === index }]"
+            :class="{
+              'bg-blue-500 border-white': currentImageIndex === index,
+              'bg-gray-400': currentImageIndex !== index,
+            }"
             @click="scrollToImage(index)"
-            class="w-3 h-3 bg-gray-400 rounded-full mx-1 cursor-pointer"
+            class="w-3 h-3 rounded-full border cursor-pointer"
           ></div>
         </div>
       </div>
 
+
       <div class="flex">
         <div class="bg-red-500 hover:bg-red-600 transition-colors duration-200 h-20 p-4 grow">
-          <span class="text-white">
+          <span class="text-white ">
             <svg class="w-6 h-6 inline-block" viewBox="0 0 24 24">
               <!-- Icon SVG path goes here -->
             </svg>
@@ -76,7 +80,7 @@
             <svg class="w-6 h-6 inline-block" viewBox="0 0 24 24">
               <!-- Icon SVG path goes here -->
             </svg>
-            International Affairs
+            Mandatary Disclosure
           </span>
         </div>
 
@@ -85,7 +89,7 @@
             <svg class="w-6 h-6 inline-block" viewBox="0 0 24 24">
               <!-- Icon SVG path goes here -->
             </svg>
-            Scholarship
+            Antiragging Cell
           </span>
         </div>
 
@@ -94,7 +98,7 @@
             <svg class="w-6 h-6 inline-block" viewBox="0 0 24 24">
               <!-- Icon SVG path goes here -->
             </svg>
-            Research
+            Anti Drugs
           </span>
         </div>
 
@@ -103,7 +107,7 @@
             <svg class="w-6 h-6 inline-block" viewBox="0 0 24 24">
               <!-- Icon SVG path goes here -->
             </svg>
-            Online Fee Payment
+            POSH Cell
           </span>
         </div>
 
@@ -112,15 +116,16 @@
             <svg class="w-6 h-6 inline-block" viewBox="0 0 24 24">
               <!-- Icon SVG path goes here -->
             </svg>
-            Alumni Desk
+            Differently Abled Persons Cell
           </span>
         </div>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-4 gap-8 p-9 md:p-20">
         <div class="col-span-3">
-          <div class="text-3xl font-bold m-2 flex align-baseline"><img src="../assets/logo.svg" alt="Logo" class="h-20" /> <p class="text-5xl ">Anna University:</p></div>
-          <p class="text-2xl">
+          <div class="text-3xl font-bold flex align-baseline"><img src="../assets/logo.svg" alt="Logo" class="h-20" /> <p class="text-6xl m-4 ">Anna University</p></div>
+          <p class="text-5xl font-semibold mb-10">Regional Campus Coimbatore</p>
+          <p class="text-2xl text-gray-500 ">
             The Regional Campus Coimbatore of Anna University was established during 2012. It offers higher education in Engineering and Technology. Located in an Arcadian environment and away from the hustle and bustle crowd of the city. The Regional Campus Coimbatore is equipped with excellent infrastructure and highly qualified members of faculty, who facilitate hands on experience to students to master their skills in various disciplines.
           </p>
         </div>
@@ -169,7 +174,7 @@
         </div>
       </div>
 
-      <section class="flex flex-col gap-4">
+      <section class="flex flex-col gap-4 py-8">
         <h2 class="text-4xl font-bold text-center">Innovating the Industries</h2>
         <div class="grid grid-cols-3 gap-4 items-center justify-space-around">
           <a href="https://www.tcs.com" class="h-[12vh] p-4 flex flex-col items-center justify-center">
