@@ -4,7 +4,7 @@
       <!-- Hero section -->
       <section
         class="bg-cover bg-center relative -z-10"
-        :style="'background-image: url(http://192.168.72.231:5173/src/assets/' + department.image + ')'"
+        :style="'background-image: url(http://localhost:5173/src/assets/' + department.image + ')'"
       >
         <div class="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div>
         <div class="container mx-auto py-16 text-white p-9 relative z-10">
