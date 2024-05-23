@@ -61,6 +61,62 @@
         </div>
       </div>
 
+      <div class="flex">
+        <div class="bg-red-500 hover:bg-red-600 transition-colors duration-200 h-20 p-4 grow">
+          <span class="text-white">
+            <svg class="w-6 h-6 inline-block" viewBox="0 0 24 24">
+              <!-- Icon SVG path goes here -->
+            </svg>
+            AICTE  and MOE Cell
+          </span>
+        </div>
+
+        <div class="bg-orange-400 hover:bg-orange-500 transition-colors duration-200 h-20 p-4 grow">
+          <span class="text-white">
+            <svg class="w-6 h-6 inline-block" viewBox="0 0 24 24">
+              <!-- Icon SVG path goes here -->
+            </svg>
+            International Affairs
+          </span>
+        </div>
+
+        <div class="bg-yellow-400 hover:bg-yellow-500 transition-colors duration-200 h-20 p-4 grow">
+          <span class="text-white">
+            <svg class="w-6 h-6 inline-block" viewBox="0 0 24 24">
+              <!-- Icon SVG path goes here -->
+            </svg>
+            Scholarship
+          </span>
+        </div>
+
+        <div class="bg-green-500 hover:bg-green-600 transition-colors duration-200 h-20 p-4 grow">
+          <span class="text-white">
+            <svg class="w-6 h-6 inline-block" viewBox="0 0 24 24">
+              <!-- Icon SVG path goes here -->
+            </svg>
+            Research
+          </span>
+        </div>
+
+        <div class="bg-blue-500 hover:bg-blue-600 transition-colors duration-200 h-20 p-4 grow">
+          <span class="text-white">
+            <svg class="w-6 h-6 inline-block" viewBox="0 0 24 24">
+              <!-- Icon SVG path goes here -->
+            </svg>
+            Online Fee Payment
+          </span>
+        </div>
+
+        <div class="bg-gray-500 hover:bg-gray-600 transition-colors duration-200 h-20 p-4 grow">
+          <span class="text-white">
+            <svg class="w-6 h-6 inline-block" viewBox="0 0 24 24">
+              <!-- Icon SVG path goes here -->
+            </svg>
+            Alumni Desk
+          </span>
+        </div>
+      </div>
+
       <div class="grid grid-cols-1 md:grid-cols-4 gap-8 p-9 md:p-20">
         <div class="col-span-3">
           <div class="text-3xl font-bold m-2 flex align-baseline"><img src="../assets/logo.svg" alt="Logo" class="h-20" /> <p class="text-5xl ">Anna University:</p></div>
