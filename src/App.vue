@@ -5,12 +5,12 @@ import { RouterLink, RouterView } from 'vue-router';
 <template>
   <header>
     <div class="wrapper">
-      <nav class="navbar bg-gray-800 text-white shadow-lg relative z-20">
-        <div class="flex-1">
-          <img src="./assets/logo.svg" alt="Logo" class="h-12" />
-          <RouterLink to="/" class="btn btn-ghost normal-case text-xl font-extrabold">
+      <nav class="navbar bg-gray-800 text-white shadow-lg relative z-20 px-0">
+        <div class="flex-1 mx-2">
+          <img src="./assets/logo.svg" alt="Logo" class="h-16" />
+          <RouterLink to="/" class="btn btn-ghost normal-case text-2xl font-bold">
             ANNA UNIVERSITY REGIONAL CAMPUS 
-            <p class="hidden lg:block text-xl font-extrabold">COIMBATORE</p>
+            <p class="hidden lg:block text-2xl font-bold">COIMBATORE</p>
           </RouterLink>
         </div>
         <div class="flex-none">
