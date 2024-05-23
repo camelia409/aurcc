@@ -169,7 +169,7 @@ export default {
     return {
       galleryImages: [
         'http://localhost:5173/src/assets/mime_annualday.jpeg',
-        'http://localhost:5173/src/assets/1.webp',
+        'http://localhost:5173/src/assets/homeview.webp',
         'http://localhost:5173/src/assets/mime_annualday.jpeg',
         'http://localhost:5173/src/assets/4.webp',
         'http://localhost:5173/src/assets/mime_annualday.jpeg',
@@ -181,7 +181,7 @@ export default {
   },
   methods: {
     startAutoScroll() {
-      this.scrollInterval = setInterval(this.nextImage, 3000);
+      this.scrollInterval = setInterval(this.nextImage, 5000);
     },
     stopAutoScroll() {
       clearInterval(this.scrollInterval);
