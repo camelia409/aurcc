@@ -31,7 +31,7 @@
 
       <!-- Horizontal Scrollable Image Gallery Section -->
       <div class="flex flex-col overflow-hidden items-center bg-base-200">
-        <div class="relative  w-full max-w-4xl">
+        <div class="relative  w-full">
           <div
             class="flex transition-transform duration-500"
             :style="{ transform: `translateX(-${currentImageIndex * 100}%)` }"
@@ -63,7 +63,7 @@
 
       <div class="grid grid-cols-1 md:grid-cols-4 gap-8 p-9 md:p-20">
         <div class="col-span-3">
-          <h2 class="text-3xl font-bold m-2">Welcome to AURCC: About the campus</h2>
+          <div class="text-3xl font-bold m-2 flex align-baseline"><img src="../assets/logo.svg" alt="Logo" class="h-20" /> <p class="text-5xl ">Anna University:</p></div>
           <p class="text-2xl">
             The Regional Campus Coimbatore of Anna University was established during 2012. It offers higher education in Engineering and Technology. Located in an Arcadian environment and away from the hustle and bustle crowd of the city. The Regional Campus Coimbatore is equipped with excellent infrastructure and highly qualified members of faculty, who facilitate hands on experience to students to master their skills in various disciplines.
           </p>
@@ -168,12 +168,12 @@ export default {
   data() {
     return {
       galleryImages: [
-        'http://localhost:5173/src/assets/mime_annualday.jpeg',
+        'http://localhost:5173/src/assets/pic1.webp ',
         'http://localhost:5173/src/assets/homeview.webp',
-        'http://localhost:5173/src/assets/mime_annualday.jpeg',
+        'http://localhost:5173/src/assets/1.webp',
         'http://localhost:5173/src/assets/4.webp',
-        'http://localhost:5173/src/assets/mime_annualday.jpeg',
-        'http://localhost:5173/src/assets/mime_annualday.jpeg'
+        'http://localhost:5173/src/assets/ece1.webp',
+        'http://localhost:5173/src/assets/homeview.webp'
       ],
       currentImageIndex: 1,
       circularGalleryImages: []
@@ -194,7 +194,7 @@ export default {
       }
     },
     scrollToImage(index) {
-      this.currentImageIndex = index + 1;
+      this.currentImageIndex = index;
     },
     createCircularImages() {
       this.circularGalleryImages = [
