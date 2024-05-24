@@ -67,6 +67,15 @@ import { RouterLink, RouterView } from 'vue-router';
           <ul class="menu menu-horizontal p-0 hidden lg:flex">
             <li>
               <details>
+                <summary>Administration</summary>
+                <ul class="p-2 bg-base-100 shadow-lg text-black z-30">
+                  <li><a href="/">Administrator</a></li>
+                  <li><a href="/administration">GA</a></li>
+                </ul>
+              </details>
+            </li>
+            <li>
+              <details>
                 <summary>Academics</summary>
                 <ul class="p-2 bg-base-100 shadow-lg text-black z-30">
                   <li><a href="/academics/Programs-Offered">Programs Offered</a></li>

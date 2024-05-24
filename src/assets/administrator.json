@@ -1,0 +1,28 @@
+{
+"administrator": [
+    {
+      "name": "Dr.R.Velraj",
+      "position": "Vice-Chancellor",
+      "university": "Anna University, Chennai",
+      "image": "velraj.webp"
+    },
+    {
+      "name": "Dr.J.Prakash",
+      "position": "Registrar",
+      "university": "Anna University, Chennai",
+      "image": "Prakash.webp"
+    },
+    {
+      "name": "Dr.P.Hariharan",
+      "position": "Director (CCC)",
+      "university": "Anna University, Chennai",
+      "image": "Hariharan.webp"
+    },
+    {
+      "name": "Dr.K.Linga Durai",
+      "position": "Dean",
+      "university": "Anna University Regional Campus, Madurai",
+      "image": "Lingadurai.webp"
+    }
+  ]
+}
