@@ -2841,16 +2841,25 @@
 		  "placement_details": "Placed in Top Notch Engineering Colleges and Companies",
 		  "placement_percentage": ""
 		},
-		"achievements": {
-		  "description": [
-			"Memorandum of Understanding with ALTERA Corporation, USA to establish Altera FPGA Lab in the department of ECE, Anna University Coimbatore at the cost of Rs.12.00 Lakhs.",
-			"IEEE Student Branch has been inaugurated by the Department of ECE, Anna University Coimbatore.",
-			"Memorandum of Understanding with TEXAS Instruments, India to establish TI MSP430 Microcontroller lab in the department of ECE.",
-			"Memorandum of Understanding with TEXAS Instruments, India to establish Analog System Design Lab (ASLK) lab in the department of ECE.",
-			"Memorandum of Understanding with TEXAS Instruments, India to establish C2000 Microcontroller lab in the department of ECE.",
-			"The Department has conducted more than 45 workshops, 7 National Conferences, 15 Seminars, and 5 Faculty Development Programs."
+		"achievements": [
+			{
+			"event":"Established Altera FPGA Lab in the Department of ECE by creating Memorandum of Understanding with ALTERA Corporation, USA at the cost of Rs.12.00 Lakhs.",
+			"awards":"Rs.12.00 Lakhs."
+			},
+			{
+			"event":"Established TI MSP430 Microcontroller Lab in the Department of ECE by creating Memorandum of Understanding with TEXAS Instruments, India at the cost of Rs.1.00 Lakh."	,
+			"awards":"Rs.1.00 Lakh."
+			},
+			{
+			"event":"Established Analog System Design Lab (ASLK) Lab in the Department of ECE by creating Memorandum of Understanding with TEXAS Instruments, India at the cost of Rs.1.00 Lakh.",
+			"awards":"Rs.1.00 Lakh."
+			},
+			{
+			"event":"Established C2000 Microcontroller Lab and set-up of ARM SITARA (AM 3359) and BEAGLE BONE kit in the Department of ECE by creating Memorandum of Understanding with TEXAS Instruments, India at the cost of Rs.2.00 Lakhs",
+			"awards":"Rs.2.00 Lakhs"
+			}
 		  ]
-		},
+		,
 		"facility":[
 			{
 				"name":"Applied Electronics laboratory",
@@ -3340,9 +3349,7 @@
 					}
 				  ],
 				  "research_interests": [
-					"Image Processing",
-					"Signal Processing",
-					"VLSI Design"
+					"Embedded System Design", "VLSI Design and Bio-Medical Engineering"
 				  ],
 				  "links": 
 					{
@@ -3356,7 +3363,7 @@
 			  "assistant_professors": [
 				{
 					"name": "Dr. P. Seethalakshmi",
-					"image": "seethalakshmi.webp",
+					"image": "Seethalakshmi.webp",
 					"position": "Associate Professor",
 					"email": "seethalakshmi.pandian.erode@gmail.com",
 					"departments": ["Department of Electronics and Communication Engineering"],
@@ -3373,8 +3380,7 @@
 					  }
 					],
 					"research_interests": [
-					  "Microwaves & Antennas",
-					  "Communication"
+						"Distributed Computing" ,"IOT" , " ML", "5G Communication"
 					],
 					"professional_experience": [
 					  {
@@ -3430,10 +3436,7 @@
 					}
 				  ],
 				  "research_interests": [
-					"Digital Image Processing",
-					"Neural Networks",
-					"Cryptography Techniques",
-					"Data Mining"
+					"Digital Image Processing", "Cryptography and Steganography", "Signal Processing", "Artificial Neural Networks"
 				  ],
 				  "professional_experience": [
 					{
