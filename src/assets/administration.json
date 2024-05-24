@@ -33,7 +33,28 @@
           "Contact_Email": "ga2aurcc@gmail.com",
           "Contact_Number": "9790672797"
         }
-      ]
+      ],
+      "administration_3":[
+      {
+        "Department": "General Administration III",
+        "Email": "win.rrv@gmail.com",
+        "Responsibilities": 
+          "'DEPUTY MANAGER (FINANCE): Academic, Research, Distance Education, Hostel, NSS & Sports ','COORDINATOR (Additionally Assigned): UG/PG Admission, Academic, Students Affairs, Scholarship",
+        "Head": "Dr. M. Rathinasamy",
+        "Assistants":[
+          "Sathyabama.N - Executive Assistant",
+          "USHA S - Executive Assistant",
+          "Mr.V.SURESHKUMAR - Executive Assistant",
+          "Dr Neelaveni C - Assistant "
+        ],
+        "position": "Deputy Manager",
+        "experience": [
+          "From 06.06.1998 to 15.08.2004 in the Academic Section officer, and superintendent at Vinayaka Missions University Salem",
+          "From 16.08.2004 to till 14.10.2008 served as Finance Coordinator in the Directorate of Distance Education, Vinayaka Missions University, Salem"
+        ],
+        "Contact_Email": "ugaurcc@gmail.com"
+      }
+    ]
     }
   }
   
