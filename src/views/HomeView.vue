@@ -92,6 +92,7 @@
             </svg>
             Antiragging cell
           </a>
+          </span>
         </div>
 
         <div class="bg-green-500 hover:bg-green-600 transition-colors duration-200 h-20 p-4  hover:cursor-pointer grow">
