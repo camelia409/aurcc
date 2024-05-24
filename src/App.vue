@@ -69,7 +69,7 @@ import { RouterLink, RouterView } from 'vue-router';
               <details>
                 <summary>Administration</summary>
                 <ul class="p-2 bg-base-100 shadow-lg text-black z-30">
-                  <li><a href="/">Administrator</a></li>
+                  <li><a href="/administrator">Administrator</a></li>
                   <li><a href="/administration">GA</a></li>
                 </ul>
               </details>
@@ -107,7 +107,6 @@ import { RouterLink, RouterView } from 'vue-router';
                   <li><a href="/admission">Admission</a></li>
                   <li><a href="/dgate">DGATE Cell</a></li>
                   <li><a href="/pace-cell">PACE Cell</a></li>
-                  <li><a href="/administration">Administration</a></li>
                   <li><a href="/zonal">Zonal Office</a></li>
                   <li><a href="/office-affiliation">Office of Affiliation</a></li>
                   <li><a href="/distance-education">Distance Education</a></li>
