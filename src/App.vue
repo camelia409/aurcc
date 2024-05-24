@@ -46,27 +46,27 @@ import { RouterLink, RouterView } from 'vue-router';
               </ul>
             </li>
             <li class="relative group">
-              <button class="px-4 py-2 rounded-md hover:bg-blue-700 focus:outline-none focus:bg-blue-700">
+              <button class="px-4 py-2 border-b-4 border-blue-900 hover:border-yellow-300 hover:bg-blue-700 focus:outline-none focus:bg-blue-700">
                 Offices
               </button>
               <ul
-                class="absolute left-0 mt-2 w-48 bg-blue-900 rounded-md shadow-lg p-2 transition-all duration-300 opacity-0 invisible group-hover:visible group-hover:opacity-100"
+                class="absolute left-0 mt-2 w-48 bg-white shadow-lg transition-all duration-300 opacity-0 invisible group-hover:visible group-hover:opacity-100"
               >
-                <li><a href="/admission" class="block px-4 py-2 hover:bg-blue-800 rounded-md text-white">Admission</a></li>
-                <li><a href="/dgate" class="block px-4 py-2 hover:bg-blue-800 rounded-md text-white">DGATE Cell</a></li>
-                <li><a href="/pace-cell" class="block px-4 py-2 hover:bg-blue-800 rounded-md text-white">PACE Cell</a></li>
-                <li><a href="/administration" class="block px-4 py-2 hover:bg-blue-800 rounded-md text-white">Administration</a></li>
-                <li><a href="/zonal" class="block px-4 py-2 hover:bg-blue-800 rounded-md text-white">Zonal Office</a></li>
-                <li><a href="/office-affiliation" class="block px-4 py-2 hover:bg-blue-800 rounded-md text-white">Office of Affiliation</a></li>
-                <li><a href="/distance-education" class="block px-4 py-2 hover:bg-blue-800 rounded-md text-white">Distance Education</a></li>
-                <li><a href="/ed-cell" class="block px-4 py-2 hover:bg-blue-800 rounded-md text-white">ED Cell</a></li>
-                <li><a href="/placement-cell" class="block px-4 py-2 hover:bg-blue-800 rounded-md text-white">Placement Cell</a></li>
-                <li><a href="/research-cell" class="block px-4 py-2 hover:bg-blue-800 rounded-md text-white">Research Cell</a></li>
-                <li><a href="/exam-cell" class="block px-4 py-2 hover:bg-blue-800 rounded-md text-white">Exam cell</a></li>
+                <li><a href="/admission" class="block px-4 py-2 hover:bg-blue-800 transition-all duration-300 ease-in-out text-black hover:text-white">Admission</a></li>
+                <li><a href="/dgate" class="block px-4 py-2 hover:bg-blue-800 transition-all duration-300 ease-in-out text-black hover:text-white">DGATE Cell</a></li>
+                <li><a href="/pace-cell" class="block px-4 py-2 hover:bg-blue-800 transition-all duration-300 ease-in-out text-black hover:text-white">PACE Cell</a></li>
+                <li><a href="/administration" class="block px-4 py-2 hover:bg-blue-800 transition-all duration-300 ease-in-out text-black hover:text-white">Administration</a></li>
+                <li><a href="/zonal" class="block px-4 py-2 hover:bg-blue-800 transition-all duration-300 ease-in-out text-black hover:text-white">Zonal Office</a></li>
+                <li><a href="/office-affiliation" class="block px-4 py-2 hover:bg-blue-800 transition-all duration-300 ease-in-out text-black hover:text-white">Office of Affiliation</a></li>
+                <li><a href="/distance-education" class="block px-4 py-2 hover:bg-blue-800 transition-all duration-300 ease-in-out text-black hover:text-white">Distance Education</a></li>
+                <li><a href="/ed-cell" class="block px-4 py-2 hover:bg-blue-800 transition-all duration-300 ease-in-out text-black hover:text-white">ED Cell</a></li>
+                <li><a href="/placement-cell" class="block px-4 py-2 hover:bg-blue-800 transition-all duration-300 ease-in-out text-black hover:text-white">Placement Cell</a></li>
+                <li><a href="/research-cell" class="block px-4 py-2 hover:bg-blue-800 transition-all duration-300 ease-in-out text-black hover:text-white">Research Cell</a></li>
+                <li><a href="/exam-cell" class="block px-4 py-2 hover:bg-blue-800 transition-all duration-300 ease-in-out text-black hover:text-white">Exam cell</a></li>
               </ul>
             </li>
             <li class="relative group">
-              <button class="px-4 py-2 rounded-md hover:bg-blue-700 focus:outline-none focus:bg-blue-700">
+              <button class="px-4 py-2 transition-all duration-300 ease-in-out hover:bg-blue-700 focus:outline-none focus:bg-blue-700">
                 Life@aurcc
               </button>
               <ul
