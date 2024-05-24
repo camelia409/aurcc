@@ -78,7 +78,7 @@
           <div v-else-if="currentSection === 'Rules and Regulations'">
             <h2 class="text-2xl font-bold mb-4">Rules and Regulations</h2>
             <!-- <p><a href="../assets/Rules.pdf" class="text-blue-500 underline">View Rules and Regulations</a></p> -->
-            <iframe src="http://localhost:5173/src/assets/Rules.pdf" width="100%" height="800"></iframe>
+            <iframe src="http://localhost:5173/src/assets/EOA Report 2024-2025.PDF" width="100%" height="800"></iframe>
           </div>
         </section>
       </div>

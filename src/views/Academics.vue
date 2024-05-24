@@ -41,7 +41,7 @@
               </ul>
             </div>
           </div>
-          <div v-else-if="currentSection === 'Programs Offered'">
+          <div v-else-if="currentSection === 'Programs-Offered'">
             <h2 class="text-2xl font-bold mb-4">Programs Offered</h2>
             <div v-for="(programme, index) in programsOffered" :key="index" class="mb-6">
               <h4 class="text-lg font-semibold">{{ programme.type }}</h4>

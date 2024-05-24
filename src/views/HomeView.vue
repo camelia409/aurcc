@@ -4,7 +4,7 @@
       <div class="hero bg-base-200 flex flex-col gap-4 lg:w-1/2 self-center">
         <div class="hero-content text-center">
           <div class="max-w-md">
-            <h1 class="text-3xl font-bold">Counselling Code: 2025</h1>
+            <h1 class="text-3xl font-bold ">Counselling Code: 2025</h1>
           </div>
         </div>
       </div>
@@ -30,7 +30,7 @@
       </div>
 
       <!-- Horizontal Scrollable Image Gallery Section -->
-      <div class="flex flex-col overflow-hidden items-center bg-base-200 relative">
+      <!-- <div class="flex flex-col overflow-hidden items-center bg-base-200 relative">
         <div class="relative w-full">
           <div
             class="flex transition-transform duration-500"
@@ -59,14 +59,14 @@
               'bg-gray-400': currentImageIndex !== index,
             }"
             @click="scrollToImage(index)"
-            class="w-3 h-3 rounded-full border cursor-pointer"
+            class="w-3 h-3 rounded-full border cursor-pointer grow"
           ></div>
         </div>
-      </div>
+      </div> -->
 
 
       <div class="flex">
-        <div class="bg-red-500 hover:bg-red-600 transition-colors duration-200 h-20 p-4 grow">
+        <div class="bg-red-500 hover:bg-red-600 transition-colors duration-200 h-20 p-4  hover:cursor-pointer">
           <a href="/aicte&moe" class="text-white ">
             <svg class="w-6 h-6 inline-block" viewBox="0 0 24 24">
               <!-- Icon SVG path goes here -->
@@ -75,16 +75,16 @@
           </a>
         </div>
 
-        <div class="bg-orange-400 hover:bg-orange-500 transition-colors duration-200 h-20 p-4 grow">
-          <span class="text-white">
+        <div class="bg-orange-400 hover:bg-orange-500 transition-colors duration-200 h-20 p-4  hover:cursor-pointer grow">
+          <a href="https://drive.google.com/file/d/1z8ioKdQN0-fvahtIfneCPJI6i7j-YaFz/view" class="text-white">
             <svg class="w-6 h-6 inline-block" viewBox="0 0 24 24">
               <!-- Icon SVG path goes here -->
             </svg>
             Mandatary Disclosure
-          </span>
+          </a >
         </div>
 
-        <div class="bg-yellow-400 hover:bg-yellow-500 transition-colors duration-200 h-20 p-4 grow">
+        <div class="bg-yellow-400 hover:bg-yellow-500 transition-colors duration-200 h-20 p-4  hover:cursor-pointer grow">
           <span class="text-white">
             <svg class="w-6 h-6 inline-block" viewBox="0 0 24 24">
               <!-- Icon SVG path goes here -->
@@ -93,7 +93,7 @@
           </span>
         </div>
 
-        <div class="bg-green-500 hover:bg-green-600 transition-colors duration-200 h-20 p-4 grow">
+        <div class="bg-green-500 hover:bg-green-600 transition-colors duration-200 h-20 p-4  hover:cursor-pointer grow">
           <span class="text-white">
             <svg class="w-6 h-6 inline-block" viewBox="0 0 24 24">
               <!-- Icon SVG path goes here -->
@@ -102,7 +102,7 @@
           </span>
         </div>
 
-        <div class="bg-blue-500 hover:bg-blue-600 transition-colors duration-200 h-20 p-4 grow">
+        <div class="bg-blue-500 hover:bg-blue-600 transition-colors duration-200 h-20 p-4  hover:cursor-pointer grow">
           <span class="text-white">
             <svg class="w-6 h-6 inline-block" viewBox="0 0 24 24">
               <!-- Icon SVG path goes here -->
@@ -111,7 +111,7 @@
           </span>
         </div>
 
-        <div class="bg-gray-500 hover:bg-gray-600 transition-colors duration-200 h-20 p-4 grow">
+        <div class="bg-gray-500 hover:bg-gray-600 transition-colors duration-200 h-20 p-4  hover:cursor-pointer grow">
           <span class="text-white">
             <svg class="w-6 h-6 inline-block" viewBox="0 0 24 24">
               <!-- Icon SVG path goes here -->
@@ -123,7 +123,7 @@
 
       <div class="grid grid-cols-1 md:grid-cols-4 gap-8 p-9 md:p-20">
         <div class="col-span-3">
-          <div class="text-3xl font-bold flex align-baseline"><img src="../assets/logo.svg" alt="Logo" class="h-20" /> <p class="text-6xl m-4 ">Anna University</p></div>
+          <div class="text-3xl font-extrabold flex align-baseline" ><img src="../assets/logo.svg" alt="Logo" class="h-20" /> <p class="text-6xl m-4 ">Anna University</p></div>
           <p class="text-5xl font-semibold mb-10">Regional Campus Coimbatore</p>
           <p class="text-2xl text-gray-500 ">
             The Regional Campus Coimbatore of Anna University was established during 2012. It offers higher education in Engineering and Technology. Located in an Arcadian environment and away from the hustle and bustle crowd of the city. The Regional Campus Coimbatore is equipped with excellent infrastructure and highly qualified members of faculty, who facilitate hands on experience to students to master their skills in various disciplines.
