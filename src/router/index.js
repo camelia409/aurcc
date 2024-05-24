@@ -128,6 +128,16 @@ const router = createRouter({
       path: '/aicte&moe/',
       name: 'aicte&moe',
       component: ()=> import('../views/Aicte&moe.vue')
+    },
+    {
+      path: '/antiragging/',
+      name: 'antiragging',
+      component: ()=> import('../views/Antiragging.vue')
+    },
+    {
+      path: '/administrator/',
+      name: 'administrator',
+      component: ()=> import('../views/Administrator.vue')
     }
   ]
 })
