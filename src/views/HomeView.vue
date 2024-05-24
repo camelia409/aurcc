@@ -1,33 +1,43 @@
 <template>
   <div class="min-h-screen bg-base-200">
     <main class="flex flex-col">
-      <div class="hero bg-base-200 flex flex-col gap-4 lg:w-1/2 self-center">
-        <div class="hero-content text-center">
-          <div class="max-w-md">
-            <h1 class="text-3xl font-bold ">Counselling Code: 2025</h1>
-          </div>
+      <div class=" flex flex-col gap-4 lg:w-1/2 self-center">
+        <div class="text-center">
+            <h1 class="text-3xl font-bold p-4" style="font-family: Clash Grotesk;">Counselling Code: 2025</h1>
         </div>
       </div>
       
       <!-- Announcements Section -->
-      <div class="bg-base-300">
-        <div class="container-fluid mx-auto">
-          <div class="flex items-center justify-between">
-            <div class="text-sm p-4 bg-gray-800 text-white">Announcements</div>
-            <div class="text-sm breadcrumbs animate-marquee hover:animate-pause p-4 flex-1 overflow-hidden">
-              <ul class="flex space-x-4">
-                <li><a href="#">Announcements</a></li>
-                <li>on Recent Innovations in Production Engineering (RIPE) 2024 at MIT Campus, Anna University.</li>
-                <li><a href="#">Founders day, Alumni, Institute day live stream link</a></li>
-                <li><a href="#">View more</a></li>
-              </ul>
-            </div>
-            <div class="text-sm p-4 bg-gray-800 text-white">
-              <a href="#">View more</a>
-            </div>
-          </div>
-        </div>
+      <div class="bg-gray-100">
+  <div class="container mx-auto">
+    <div class="flex items-center justify-between">
+      <div class="text-sm p-4 bg-yellow-500 text-black">
+        <svg class="w-4 h-4 inline-block mr-2" fill="currentColor" viewBox="0 0 20 20">
+          <path d="M2 5a2 2 0 012-2h12a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V5zm2-1v8h12V4H4z"/>
+          <path d="M4 11h2v2H4v-2zm4 0h2v2H8v-2zM8 7h2v2H8V7zm4 0h2v2h-2V7zm0 4h2v2h-2v-2z"/>
+        </svg>
+        Announcements
       </div>
+      <div class="text-sm breadcrumbs animate-marquee hover:animate-pause p-4 flex-1 overflow-hidden bg-blue-800 text-white">
+        <ul class="flex space-x-4">
+          <li><a href="#">Announcements</a></li>
+          <li>on Recent Innovations in Production Engineering (RIPE) 2024 at MIT Campus, Anna University.</li>
+          <li><a href="#">Founders day, Alumni, Institute day live stream link</a></li>
+          <li><a href="#">View more</a></li>
+        </ul>
+      </div>
+      <div class="text-sm p-4 bg-black text-white">
+        <a href="#">
+          <svg class="w-4 h-4 inline-block mr-2" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M2.003 5.884l7.071 7.07a1 1 0 001.415 0l7.07-7.07A8 8 0 112.003 5.884z"/>
+          </svg>
+          View more
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
 
       <!-- Horizontal Scrollable Image Gallery Section -->
       <!-- <div class="flex flex-col overflow-hidden items-center bg-base-200 relative">
@@ -65,21 +75,15 @@
       </div> -->
 
 
-      <div class="flex">
+      <!-- <div class="flex">
         <div class="bg-red-500 hover:bg-red-600 transition-colors duration-200 h-20 p-4  hover:cursor-pointer">
           <a href="/aicte&moe" class="text-white ">
-            <svg class="w-6 h-6 inline-block" viewBox="0 0 24 24">
-              <!-- Icon SVG path goes here -->
-            </svg>
             AICTE  and MOE Cell
           </a>
         </div>
 
         <div class="bg-orange-400 hover:bg-orange-500 transition-colors duration-200 h-20 p-4  hover:cursor-pointer grow">
           <a href="https://drive.google.com/file/d/1z8ioKdQN0-fvahtIfneCPJI6i7j-YaFz/view" class="text-white">
-            <svg class="w-6 h-6 inline-block" viewBox="0 0 24 24">
-              <!-- Icon SVG path goes here -->
-            </svg>
             Mandatary Disclosure
           </a >
         </div>
@@ -87,9 +91,6 @@
         <div class="bg-yellow-400 hover:bg-yellow-500 transition-colors duration-200 h-20 p-4  hover:cursor-pointer grow">
           <span class="text-white">
           <a href="/antiragging" class="text-white ">
-            <svg class="w-6 h-6 inline-block" viewBox="0 0 24 24">
-              <!-- Icon SVG path goes here -->
-            </svg>
             Antiragging cell
           </a>
           </span>
@@ -97,33 +98,24 @@
 
         <div class="bg-green-500 hover:bg-green-600 transition-colors duration-200 h-20 p-4  hover:cursor-pointer grow">
           <span class="text-white">
-            <svg class="w-6 h-6 inline-block" viewBox="0 0 24 24">
-              <!-- Icon SVG path goes here -->
-            </svg>
             Anti Drugs
           </span>
         </div>
 
         <div class="bg-blue-500 hover:bg-blue-600 transition-colors duration-200 h-20 p-4  hover:cursor-pointer grow">
           <span class="text-white">
-            <svg class="w-6 h-6 inline-block" viewBox="0 0 24 24">
-              <!-- Icon SVG path goes here -->
-            </svg>
             POSH Cell
           </span>
         </div>
 
         <div class="bg-gray-500 hover:bg-gray-600 transition-colors duration-200 h-20 p-4  hover:cursor-pointer grow">
           <span class="text-white">
-            <svg class="w-6 h-6 inline-block" viewBox="0 0 24 24">
-              <!-- Icon SVG path goes here -->
-            </svg>
             Differently Abled Persons Cell
           </span>
         </div>
-      </div>
+      </div> -->
 
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 p-9 md:p-20">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 p-9 md:p-20" style="font-family: Clash Grotesk;">
         <div class="col-span-3">
           <div class="text-3xl font-extrabold flex align-baseline" ><img src="../assets/logo.svg" alt="Logo" class="h-20" /> <p class="text-6xl m-4 ">Anna University</p></div>
           <p class="text-5xl font-semibold mb-10">Regional Campus Coimbatore</p>
@@ -150,31 +142,30 @@
           </div>
         </div>
       </div>
-
-      <div class="bg-primary text-primary-content py-8">
-        <div class="container mx-auto px-4 flex justify-around">
-          <div class="text-center">
-            <div class="text-5xl font-bold">800</div>
-            <div>Under Graduates</div>
-          </div>
-          <div class="text-center">
-            <div class="text-5xl font-bold">216</div>
-            <div>Post Graduates</div>
-          </div>
-          <div class="text-center">
-            <div class="text-5xl font-bold">5</div>
-            <div>UG Programs</div>
-          </div>
-          <div class="text-center">
-            <div class="text-5xl font-bold">1</div>
-            <div>PG Programs</div>
-          </div>
-          <div class="text-center">
-            <div class="text-5xl font-bold">210/124</div>
-            <div>Faculty/Staff</div>
-          </div>
-        </div>
+      <div class="bg-yellow-500 text-black py-8">
+    <div class="container mx-auto px-4 flex justify-around">
+      <div class="text-center animate-fade-in">
+        <div class="text-5xl font-bold">800</div>
+        <div>Under Graduates</div>
       </div>
+      <div class="text-center animate-fade-in">
+        <div class="text-5xl font-bold">216</div>
+        <div>Post Graduates</div>
+      </div>
+      <div class="text-center animate-fade-in">
+        <div class="text-5xl font-bold">5</div>
+        <div>UG Programs</div>
+      </div>
+      <div class="text-center animate-fade-in">
+        <div class="text-5xl font-bold">1</div>
+        <div>PG Programs</div>
+      </div>
+      <div class="text-center animate-fade-in">
+        <div class="text-5xl font-bold">210/124</div>
+        <div>Faculty/Staff</div>
+      </div>
+    </div>
+  </div>
 
       <section class="flex flex-col gap-4 py-8">
         <h2 class="text-4xl font-bold text-center">Innovating the Industries</h2>
@@ -209,20 +200,96 @@
         </div>
       </section>
 
-      <!-- From the Dean's Desk section -->
-      <section class="bg-base-300 w-full py-12">
+            <!-- Department Section -->
+            <section class="bg-white w-full py-12">
         <div class="container mx-auto px-4">
-          <h2 class="text-4xl font-bold text-center mb-8">From the Dean's Desk</h2>
-          <p class="text-lg text-center mb-8">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi perspiciatis mollitia qui dolorum, rerum hic asperiores quibusdam repellendus sit repudiandae ipsa? Modi aliquam laboriosam mollitia laudantium nostrum, quae excepturi dolore voluptates. Qui dolorum voluptatum omnis itaque necessitatibus cum in, ea quae expedita beatae doloribus saepe. Provident velit pariatur eos! Aliquam distinctio dolorum, officia aut dolore modi nostrum excepturi? Totam maxime quis suscipit sunt earum corporis dolorum ipsa quidem saepe, nihil possimus consectetur corrupti atque molestias quam alias, nam quibusdam repudiandae quia magnam eligendi nemo aspernatur? Repudiandae, dolore unde architecto quisquam provident dolor fugiat adipisci eaque.
-          </p>
-          <div class="flex justify-center">
-            <figure>
-              <img src="../assets/1.jpg" alt="Dean's Image" class="w-64 rounded-lg" />
-            </figure>
+          <h2 class="text-4xl font-bold text-center mb-8 text-blue-800 animate-fade-in-up">Departments</h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="text-lg bg-purple-100 p-4 rounded-lg flex items-center space-x-4">
+              <div class="bg-purple-500 p-2 rounded-full">
+                <svg class="w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 008 0H3zm0 0a4 4 0 008 0M5 3a2 2 0 100 4 2 2 0 000-4zM12 17a4 4 0 108 0h-8zm0 0a4 4 0 108 0M14 3a2 2 0 100 4 2 2 0 000-4z" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-bold">Aeronautical Engineering</h3>
+                <p class="text-sm text-gray-600">Established - 1949</p>
+              </div>
+            </div>
+
+            <div class="text-lg bg-purple-100 p-4 rounded-lg flex items-center space-x-4">
+              <div class="bg-purple-500 p-2 rounded-full">
+                <svg class="w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 008 0H3zm0 0a4 4 0 008 0M5 3a2 2 0 100 4 2 2 0 000-4zM12 17a4 4 0 108 0h-8zm0 0a4 4 0 108 0M14 3a2 2 0 100 4 2 2 0 000-4z" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-bold">Aeronautical Engineering</h3>
+                <p class="text-sm text-gray-600">Established - 1949</p>
+              </div>
+            </div>
+            <div class="text-lg bg-purple-100 p-4 rounded-lg flex items-center space-x-4">
+              <div class="bg-purple-500 p-2 rounded-full">
+                <svg class="w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 008 0H3zm0 0a4 4 0 008 0M5 3a2 2 0 100 4 2 2 0 000-4zM12 17a4 4 0 108 0h-8zm0 0a4 4 0 108 0M14 3a2 2 0 100 4 2 2 0 000-4z" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-bold">Aeronautical Engineering</h3>
+                <p class="text-sm text-gray-600">Established - 1949</p>
+              </div>
+            </div>
+            <div class="text-lg bg-purple-100 p-4 rounded-lg flex items-center space-x-4">
+              <div class="bg-purple-500 p-2 rounded-full">
+                <svg class="w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 008 0H3zm0 0a4 4 0 008 0M5 3a2 2 0 100 4 2 2 0 000-4zM12 17a4 4 0 108 0h-8zm0 0a4 4 0 108 0M14 3a2 2 0 100 4 2 2 0 000-4z" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-bold">Aeronautical Engineering</h3>
+                <p class="text-sm text-gray-600">Established - 1949</p>
+              </div>
+            </div>
+            <div class="text-lg bg-purple-100 p-4 rounded-lg flex items-center space-x-4">
+              <div class="bg-purple-500 p-2 rounded-full">
+                <svg class="w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 008 0H3zm0 0a4 4 0 008 0M5 3a2 2 0 100 4 2 2 0 000-4zM12 17a4 4 0 108 0h-8zm0 0a4 4 0 108 0M14 3a2 2 0 100 4 2 2 0 000-4z" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-bold">Aeronautical Engineering</h3>
+                <p class="text-sm text-gray-600">Established - 1949</p>
+              </div>
+            </div>
+            <div class="text-lg bg-purple-100 p-4 rounded-lg flex items-center space-x-4">
+              <div class="bg-purple-500 p-2 rounded-full">
+                <svg class="w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 008 0H3zm0 0a4 4 0 008 0M5 3a2 2 0 100 4 2 2 0 000-4zM12 17a4 4 0 108 0h-8zm0 0a4 4 0 108 0M14 3a2 2 0 100 4 2 2 0 000-4z" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-bold">Aeronautical Engineering</h3>
+                <p class="text-sm text-gray-600">Established - 1949</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
+
+  <!-- From the Dean's Desk section -->
+  <section class="bg-base-100 border-t-4 border-yellow-300 w-full py-12">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center mb-8 text-blue-800 animate-fade-in-up">From the Dean's Desk</h2>
+      <p class="text-lg text-center mb-8 text-black animate-fade-in-up">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi perspiciatis mollitia qui dolorum, rerum hic asperiores quibusdam repellendus sit repudiandae ipsa? Modi aliquam laboriosam mollitia laudantium nostrum, quae excepturi dolore voluptates. Qui dolorum voluptatum omnis itaque necessitatibus cum in, ea quae expedita beatae doloribus saepe. Provident velit pariatur eos! Aliquam distinctio dolorum, officia aut dolore modi nostrum excepturi? Totam maxime quis suscipit sunt earum corporis dolorum ipsa quidem saepe, nihil possimus consectetur corrupti atque molestias quam alias, nam quibusdam repudiandae quia magnam eligendi nemo aspernatur? Repudiandae, dolore unde architecto quisquam provident dolor fugiat adipisci eaque.
+      </p>
+      <div class="flex justify-center">
+        <figure class="animate-fade-in-up">
+          <img src="../assets/1.jpg" alt="Dean's Image" class="w-64 rounded-lg border border-black" />
+        </figure>
+      </div>
+    </div>
+  </section>
     </main>
   </div>
 </template>
@@ -277,12 +344,5 @@ export default {
 };
 
 </script>
-<style>
-.dot {
-  transition: background-color 0.3s;
-}
-.dot-active {
-  background-color: #717171;
-}
-</style>
+
 

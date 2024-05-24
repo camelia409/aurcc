@@ -5,7 +5,7 @@ import { RouterLink, RouterView } from 'vue-router';
 <template>
   <header class="bg-blue-900 text-white">
     <div class="container mx-auto px-4 py-4">
-      <nav class="flex items-center justify-between">
+      <nav class="flex items-center justify-between" style="font-family: 'Clash Grotesk', sans-serif;" >
         <div class="flex items-center">
           <img src="./assets/logo.svg" alt="Logo" class="h-10 mr-4" />
           <RouterLink to="/" class="text-2xl font-bold">
@@ -29,20 +29,20 @@ import { RouterLink, RouterView } from 'vue-router';
               </ul>
             </li>
             <li class="relative group">
-              <button class="px-4 py-2 rounded-md hover:bg-blue-700 focus:outline-none focus:bg-blue-700">
+              <button class=" px-4 py-2 border-b-4 border-blue-900 hover:border-yellow-300 hover:bg-blue-700 focus:outline-none focus:bg-blue-700">
                 Departments
               </button>
               <ul
-                class="absolute left-0 mt-2 w-48 bg-blue-900 rounded-md shadow-lg p-2 transition-all duration-300 opacity-0 invisible group-hover:visible group-hover:opacity-100"
+                class="absolute left-0 mt-2 w-48 bg-white text-black shadow-lg  opacity-0 invisible group-hover:visible group-hover:opacity-100"
               >
-                <li><a href="/departments/cse" class="block px-4 py-2 hover:bg-blue-800 rounded-md text-white">Computer Science Engg</a></li>
-                <li><a href="/departments/eee" class="block px-4 py-2 hover:bg-blue-800 rounded-md text-white">Electrical and Electronics Engg</a></li>
-                <li><a href="/departments/ece" class="block px-4 py-2 hover:bg-blue-800 rounded-md text-white">Electronics and Communications Engg</a></li>
-                <li><a href="/departments/mech" class="block px-4 py-2 hover:bg-blue-800 rounded-md text-white">Mechanical Engg</a></li>
-                <li><a href="/departments/mba" class="block px-4 py-2 hover:bg-blue-800 rounded-md text-white">MBA</a></li>
-                <li><a href="/departments/biotech" class="block px-4 py-2 hover:bg-blue-800 rounded-md text-white">Bio-Technology</a></li>
-                <li><a href="/departments/nanotech" class="block px-4 py-2 hover:bg-blue-800 rounded-md text-white">Nano-Technology</a></li>
-                <li><a href="/departments/s&h" class="block px-4 py-2 hover:bg-blue-800 rounded-md text-white">Science & Humanities</a></li>
+                <li><a href="/departments/cse" class="block px-4 py-2 hover:bg-blue-800  hover:text-white transition-all duration-300 ease-in-out">Computer Science Engg</a></li>
+                <li><a href="/departments/eee" class="block px-4 py-2 hover:bg-blue-800  hover:text-white transition-all duration-300 ease-in-out">Electrical and Electronics Engg</a></li>
+                <li><a href="/departments/ece" class="block px-4 py-2 hover:bg-blue-800  hover:text-white transition-all duration-300 ease-in-out">Electronics and Communications Engg</a></li>
+                <li><a href="/departments/mech" class="block px-4 py-2 hover:bg-blue-800  hover:text-white transition-all duration-300 ease-in-out">Mechanical Engg</a></li>
+                <li><a href="/departments/mba" class="block px-4 py-2 hover:bg-blue-800  hover:text-white transition-all duration-300 ease-in-out">MBA</a></li>
+                <li><a href="/departments/biotech" class="block px-4 py-2 hover:bg-blue-800  hover:text-white transition-all duration-300 ease-in-out">Bio-Technology</a></li>
+                <li><a href="/departments/nanotech" class="block px-4 py-2 hover:bg-blue-800  hover:text-white transition-all duration-300 ease-in-out">Nano-Technology</a></li>
+                <li><a href="/departments/s&h" class="block px-4 py-2 hover:bg-blue-800  hover:text-white transition-all duration-300 ease-in-out">Science & Humanities</a></li>
               </ul>
             </li>
             <li class="relative group">
@@ -79,9 +79,11 @@ import { RouterLink, RouterView } from 'vue-router';
                 <li><a href="/alumni" class="block px-4 py-2 hover:bg-blue-800 rounded-md text-white">Alumni</a></li>
               </ul>
             </li>
-            <li><a href="/library" class="px-4 py-2 rounded-md hover:bg-blue-700 text-white">Library</a></li>
-            <li><a href="/hostel" class="px-4 py-2 rounded-md hover:bg-blue-700 text-white">Hostel</a></li>
-            <li><a href="#" class="px-4 py-2 rounded-md hover:bg-blue-700 text-white">Contact</a></li>
+            <div class="flex items-center justify-between">
+              <li><a href="/library" class="px-4 py-2 rounded-md hover:bg-blue-700 text-white">Library</a></li>
+              <li><a href="/hostel" class="px-4 py-2 rounded-md hover:bg-blue-700 text-white">Hostel</a></li>
+              <li><a href="#" class="px-4 py-2 rounded-md hover:bg-blue-700 text-white">Contact</a></li>
+            </div>
           </ul>
         </div>
         <div class="lg:hidden">
@@ -103,10 +105,9 @@ import { RouterLink, RouterView } from 'vue-router';
         <div>
           <h2 class="text-2xl font-bold mb-4">Anna University Regional campus Coimbatore</h2>
           <p class="mb-2">Campus Office:</p>
-          <p class="mb-2">Maruthamalai Main Road, Navavoor,</p>
+          <p class="mb-2">Maruthamalai Main Road, somayampalayam,</p>
           <p class="mb-2">Coimbatore(Dt), Tamil Nadu 641046, India.</p>
-          <p class="mb-2">Phone: +91 44 7111 9111</p>
-          <p class="mb-4">Email: dummy@mail.com</p>
+          <p class="mb-4">Email: ucedean-kovai@gmail.com</p>
           <p class="text-xl font-bold mb-2">Important Links:</p>
           <div class="flex items-center space-x-2">
             <a href="https://www.annauniv.edu/" class="rounded-full bg-blue-500 shadow-md overflow-hidden">
