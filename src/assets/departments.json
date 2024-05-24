@@ -2612,10 +2612,10 @@
 		"image": "ece2.webp",
 		"name": "Department of Electronics and Communication Engineering",
 		"description": 
-		  " The Department of Electronics and Communication Engineering (ECE) was established in the year 2007. The department offers full-time two-year M.E. degree programs in Applied Electronics, Communication Systems, and VLSI Design, along with the same courses offered as three-year M.E. programs in part-time mode."
+		  "The Department of Electronics and Communication Engineering was established in the year 2007. The Department offers UG Programme and two year PG Programme. The Department is equipped with excellent infrastructure and state of the art equipment to explore the technological challenges in the areas of Electronics, Communication Networks, VLSI design, Signal Processing, Image Processing, ASIC Design, RF Design and Digital system design."
 		,
 		"vision":
-		  "To create an educational environment in which students are prepared to meet the challenges of modern Industrial society by equipping them with:,Up to date Technical Knowledge.,Analytical and Practical skills.,A creative and innovative approach to work."
+		  "To create an educational environment in which students are prepared to meet the challenges of modern Industrial society by equipping them with: Up to date Technical Knowledge. Analytical and Practical skills. A creative and innovative approach to work."
 		,
 		"mission": [
 		   "To develop a strong centre of excellence for education and research with excellent infrastructure.",
@@ -2624,196 +2624,333 @@
 		  ]
 		,
 		"events": [
+
 		  {
-			"name": "One Week Faculty Development Programme on Wavelet and Multiresolution Processing",
-			"description": "",
-			"date": "14-20 Dec 2011"
+			  "name": "04th National Conference of Signal Processing, Communication and VLSI Design (NCSCV’12)",
+			  "description": "Conference",
+			  "date": "8-9 Jun 2012"
 		  },
 		  {
-			"name": "Fourth National Conference of Signal Processing, Communication and VL51 Design (NCSCV 12)",
-			"description": "",
-			"date": "8-9 Jun 2012"
+			"name": "Two days National Workshop on CMOS Layout Design using Micro wind",
+			"description": "Workshop",
+			"date": "23-24 Aug 2012"
 		  },
 		  {
-			"name": "Two days Training Programme on Analog system Design using Texas Instruments Analog system Design Lab Kit (ASLK)",
-			"description": "",
+			"name": "Two days Training Programme on Analog system Design  using Texas Instruments Analog system Design  Lab Kit (ASLK)",
+			"description": "Training Programme",
 			"date": "19-20 Nov 2012"
 		  },
 		  {
 			"name": "Faculty Development Programme on VLSI Design",
-			"description": "",
+			"description": "FDP",
 			"date": "12-18 Dec 2012"
 		  },
 		  {
-			"name": "Fifth National Conference of Signal Processing, Communication and VLSI Design (NCSCV13)",
-			"description": "",
-			"date": "10-11 May 2013"
-		  },
-		  {
-			"name": "Two Days Seminar & FDP on Advanced Digital Image Processing",
-			"description": "",
-			"date": "4-5 Apr 2014"
-		  },
-		  {
-			"name": "Sixth National Conference of Signal Processing, Communication and VLSI Design (NCSCV 14)",
-			"description": "",
-			"date": "9-10 May 2014"
-		  },
-		  {
-			"name": "One Week Faculty Development Programme on Digital Signal Processing",
-			"description": "",
-			"date": "11-17 Jun 2014"
-		  },
-		  {
-			"name": "Two Days Seminar on Research Issues in Signal Image Processing & Communications",
-			"description": "",
-			"date": "5-6 Sep 2014"
-		  },
-		  {
-			"name": "Two Days Faculty Development Programme on Solid State Devices Modelling and Simulation",
-			"description": "",
-			"date": "16-17 Oct 2014"
-		  },
-		  {
-			"name": "Two Day Seminar & FDF on Advanced Digital Image Processing",
-			"description": "",
-			"date": "17-18 Apr 2015"
-		  },
-		  {
-			"name": "Seventh National Conference on Signal Processing Communication and VLSI Design (NCSCV 15)",
-			"description": "",
-			"date": "24-25 Apr 2015"
-		  },
-		  {
-			"name": "Eight National Conference on Signal Processing Communication and VLSI Design (NCSCV 16)",
-			"description": "",
-			"date": "29-30 Apr 2016"
-		  },
-		  {
-			"name": "One Week Faculty Development Programme on Embedded and Real Time Systems",
-			"description": "",
-			"date": "23-29 May 2016"
-		  },
-		  {
-			"name": "One Week Faculty Development Programme on Communication Theory",
-			"description": "",
-			"date": "14-20 Dec 2016"
-		  },
-		  {
-			"name": "Two days National Workshop on Texas Instruments MSP430 Microcontrollers",
-			"description": "",
-			"date": "18-19 Aug 2011"
-		  },
-		  {
-			"name": "Two days National Workshop on CMOS Layout Design using Microwind",
-			"description": "",
-			"date": "23-24 Aug 2012"
-		  },
-		  {
-			"name": "Two days Training Programme on Analog system Design using Texas Instruments Analog system Design Lab Kit (ASLK)",
-			"description": "",
-			"date": "19-20 Nov 2012"
-		  },
-		  {
-			"name": "One Day Training Programme on MSP Low Power Microcontrolier",
-			"description": "",
+			"name": "One Day Training Programme on MSP Low Power Microcontroller",
+			"description": "Training Programme",
 			"date": "27 Feb 2013"
 		  },
 		  {
 			"name": "Two Days Workshop on Image and Video Processing",
-			"description": "",
+			"description": "Workshop",
 			"date": "1-2 Mar 2013"
 		  },
 		  {
-			"name": "Two Days Hands-on Training Programme on IC Systern Design using Mentor Graphics EDA Tool",
-			"description": "",
+			"name": "Two Days Hands-on Training Programme on IC System Design using Mentor Graphics EDA Tool",
+			"description": "Training Programme",
 			"date": "18-19 Apr 2013"
 		  },
 		  {
+			"name": "05th National Conference of Signal Processing, Communication and VLSI Design (NCSCV’13)",
+			"description": "Conference",
+			"date": "10-11 May 2013"
+		  },
+		  {
 			"name": "Two Days Training Programme on MSP430 Ultra Low Power Microcontroller",
-			"description": "",
+			"description": "Training Programme",
 			"date": "27-28 Sep 2013"
 		  },
 		  {
 			"name": "Two Day Hands-on Training Programme on FPGA Implementation of Digital Systems using ALTERA Quartus II",
-			"description": "",
+			"description": "Training Programme",
 			"date": "27-28 Feb 2014"
 		  },
 		  {
-			"name": "One Day Workshop on PCB Design & Circuit Simulation Using Altium Designer",
-			"description": "",
+			"name": "One Day Workshop On PCB Design & Circuit Simulation Using Altium Designer",
+			"description": "Workshop",
 			"date": "28 Mar 2014"
 		  },
 		  {
-			"name": "Two Days Workshop on VLSI Design Flow Using Microwind Tool",
-			"description": "",
+			"name": "Two Days Seminar & FDP on Advanced Digital Image Processing",
+			"description": "Seminar",
+			"date": "4-5 Apr 2014"
+		  },
+		  {
+			"name": "06th National Conference of Signal Processing, Communication and VLSI Design (NCSCV’14)",
+			"description": "Conference",
+			"date": "9-10 May 2014"
+		  },
+		  {
+			"name": "One Week Faculty Development Programme on Digital Signal Processing",
+			"description": "FDP",
+			"date": "11-17 Jun 2014"
+		  },
+		  {
+			"name": "Two Days Workshop On VLSI Design Flow Using Microwind Tool",
+			"description": "Workshop",
 			"date": "27-28 Aug 2014"
 		  },
 		  {
+			"name": "Two Days Seminar on Research Issues in Signal/Image Processing & Communications",
+			"description": "Seminar",
+			"date": "5-6 Sep 2014"
+		  },
+		  {
 			"name": "Two Days Training Programme on MSP430 Ultra Low Power Microcontroller",
-			"description": "",
+			"description": "Training Programme",
 			"date": "25-26 Sep 2014"
 		  },
 		  {
-			"name": "Two Days Workshop on Analog System Design using II Analog System Lab Kit",
-			"description": "",
+			"name": "Two Days Faculty Development Programme on Solid State Devices Modelling and Simulation",
+			"description": "FDP",
+			"date": "16-17 Oct 2014"
+		  },
+		  {
+			"name": "Two Days Workshop on Analog System Design using TI Analog System Lab Kit",
+			"description": "Workshop",
 			"date": "6-7 Nov 2014"
 		  },
 		  {
 			"name": "One day Workshop on TI BEAGLE BONE BOARD",
-			"description": "",
+			"description": "Workshop",
 			"date": "27 Feb 2015"
 		  },
 		  {
-			"name": "Two days workshop on Embadded System Design Flow using PIC Microcontroller",
-			"description": "",
+			"name": "Two Day Seminar & FDP on Advanced Digital Image Processing",
+			"description": "Seminar",
+			"date": "17-18 Apr 2015"
+		  },
+		  {
+			"name": "07th National Conference on Signal Processing Communication  and VLSI  Design ( NCSCV’ 15)",
+			"description": "Conference",
+			"date": "24-25 Apr 2015"
+		  },
+		  {
+			"name": "Two Days Workshop on Embedded System Design Flow using PIC Microcontroller",
+			"description": "Workshop",
 			"date": "21-22 Sep 2015"
 		  },
 		  {
-			"name": "Two days workshop on VLSI System Design Flow using ALTERA FPGA",
-			"description": "",
+			"name": "Two Days Workshop on VLSI System Design Flow using ALTERA FPGA",
+			"description": "Workshop",
 			"date": "28-29 Sep 2015"
 		  },
 		  {
-			"name": "One Day Workshop on ARDUINO Microcontroller",
-			"description": "",
+			"name": "One Day Workshop on  ARDUINO Microcontroller",
+			"description": "Workshop",
 			"date": "12 Oct 2015"
 		  },
 		  {
 			"name": "One Day Workshop on SCILAB An Open Source Tool Equivalent to MATLAB",
-			"description": "",
+			"description": "Workshop",
 			"date": "16 Oct 2015"
 		  },
 		  {
 			"name": "Two Days Workshop on CMOS Layout Design Flow using Microwind Tool",
-			"description": "",
+			"description": "Workshop",
 			"date": "29-30 Oct 2015"
 		  },
 		  {
-			"name": "Two Days Workshop on Antenna Design & Analysis using EST'S CEM Solution tool",
-			"description": "",
+			"name": "Two Days Workshop on Antenna Design & Analysis using ESI’S CEM Solution tool",
+			"description": "Workshop",
 			"date": "3-4 Dec 2015"
 		  },
 		  {
-			"name": "One Day Hands-on Training on Python",
-			"description": "",
+			"name": "One Day  Hands-on Training  on Python",
+			"description": "Training Programme",
 			"date": "18 Mar 2016"
 		  },
 		  {
-			"name": "Two Days wurkshop on lot using Raspberry Pi and MATLAB",
-			"description": "",
+			"name": "Two Days workshop on IoT using Raspberry Pi and MATLAB",
+			"description": "Workshop",
 			"date": "23-24 Mar 2016"
 		  },
 		  {
-			"name": "One Day Hands-on Training On Integration of MATLAB Simulink and Xilinx for Image Processing Applications",
-			"description": "",
+			"name": "08th National Conference on Signal Processing Communication  and VLSI  Design ( NCSCV’ 16)",
+			"description": "Conference",
+			"date": "29-30 Apr 2016"
+		  },
+		  {
+			"name": "One Week Faculty Development Programme on Embedded and Real Time Systems",
+			"description": "FDP",
+			"date": "23-29 May 2016"
+		  },
+		  {
+			"name": "One Day Hands-on Training on Integration of MATLAB Simulink and Xilinx for Image Processing Applications",
+			"description": "Training Programme",
 			"date": "29 Jul 2016"
 		  },
 		  {
-			"name": "One Day Hands-on Training on Integration of Kell and Proteus for Microcontroller Based Applications",
-			"description": "",
+			"name": "One Day Hands-on Training on Integration of Keil and Proteus for Microcontroller Based Applications",
+			"description": "Training Programme",
 			"date": "30 Aug 2016"
+		  },
+		  {
+			"name": "One Week Faculty Development Programme on Communication Theory",
+			"description": "FDP",
+			"date": "14-20 Dec 2016"
+		  },
+		  {
+			"name": "Two Days Hands-on workshop on Image Processing using OpenCV",
+			"description": "Workshop",
+			"date": "3-4 Mar 2017"
+		  },
+		  {
+			"name": "09th National Conference on Signal Processing, Communication  and VLSI  Design ( NCSCV’ 17)",
+			"description": "Conference",
+			"date": "24-25 Mar 2017"
+		  },
+		  {
+			"name": "Two days Workshop on Optimization techniques using Image Processing applications",
+			"description": "Workshop",
+			"date": "22-23 Sep 2017"
+		  },
+		  {
+			"name": "10th National Conference on Signal Processing, Communication  and VLSI  Design ( NCSCV’ 18)",
+			"description": "Conference",
+			"date": "6-7 Apr 2018"
+		  },
+		  {
+			"name": "One Day Hands-on training on Circuit design using PCB",
+			"description": "Training Programme",
+			"date": "22 Mar 2019"
+		  },
+		  {
+			"name": "One Day Hands-on training on Embedded Systems",
+			"description": "Training Programme",
+			"date": "16 Mar 2019"
+		  },
+		  {
+			"name": "11th National Conference on Signal Processing, Communication  and VLSI  Design ( NCSCV’ 19)",
+			"description": "Conference",
+			"date": "4-5 Apr 2019"
+		  },
+		  {
+			"name": "Two days Workshop on FPGA Programming using VERILOG HDL",
+			"description": "Workshop",
+			"date": "27-28 Sep 2019"
+		  },
+		  {
+			"name": "One Day Hands-on training on Arduino-an open source hardware and software platform",
+			"description": "Training Programme",
+			"date": "12 Oct 2019"
+		  },
+		  {
+			"name": "One Day Hands-on training on Internet of Things using Arduino",
+			"description": "Training Programme",
+			"date": "25 Jan 2020"
+		  },
+		  {
+			"name": "12th National Conference on “Signal Processing, Communication and VLSI Design-NCSCV’20",
+			"description": "Conference",
+			"date": "12-13  Jun 2020"
+		  },
+		  {
+			"name": "13th National Conference on “Signal Processing, Communication and VLSI Design-NCSCV’21”",
+			"description": "Conference",
+			"date": "23-24 Dec 2021"
+		  },
+		  {
+			"name": "One Day Alumni talk on “ Expectation of Engineering Graduates from Industries”",
+			"description": "Alumni talk",
+			"date": "23 Apr 2022"
+		  },
+		  {
+			"name": "One Day Hands-on training programme on 8051 Microcontroller",
+			"description": "Training Programme",
+			"date": "30 Apr 2022"
+		  },
+		  {
+			"name": "Two Day Workshop o Analog Circuit Design using Discrete Components",
+			"description": "Workshop",
+			"date": "26-27 May 2022"
+		  },
+		  {
+			"name": "14th National Conference on “Signal Processing, Communication and VLSI Design-NCSCV’22”",
+			"description": "Conference",
+			"date": "9-10 Jun 2022"
+		  },
+		  {
+			"name": "One days National Workshop on Implementation of  Sensor Interface Using Embedded Controller",
+			"description": "Workshop",
+			"date": "29 Sep 2022"
+		  },
+		  {
+			"name": "Two days National Workshop on Implementation of Bio-Medical Signal Processing Algorithms using Arduino Programming",
+			"description": "Workshop",
+			"date": "5-6 Nov 2022"
+		  },
+		  {
+			"name": "Two Days Hands-on training programme on “Implementation of Bio-medical Signal Processing Algorithms using Arduino Programming",
+			"description": "Training Programme",
+			"date": "12-13 Nov 2022"
+		  },
+		  {
+			"name": "One day Guest Lecture on “Finite Word Length Effect”",
+			"description": "Guest Lecture",
+			"date": "25 Nov 2022"
+		  },
+		  {
+			"name": "One days Guest Lecture  on Implementation of Digital Signal Processing Algorithm in Python",
+			"description": "Guest Lecture",
+			"date": "17 Feb 2023"
+		  },
+		  {
+			"name": "A Guest Lecture on How to make into Core Electronic Companies",
+			"description": "Guest Lecture",
+			"date": "11 Apr 2023"
+		  },
+		  {
+			"name": "One day Inter college Technical Events – PRAGYA_2K23",
+			"description": "Technical Event",
+			"date": "28 Apr 2023"
+		  },
+		  {
+			"name": "Two days workshop on implementation of bio-medical signal processing algorithms using arduino programming",
+			"description": "Workshop",
+			"date": "29-30 Apr 2023"
+		  },
+		  {
+			"name": "15th National Conference on “Signal Processing, Communication and VLSI Design-NCSCV’23",
+			"description": "Conference",
+			"date": "11-12 May 2023"
+		  },
+		  {
+			"name": "Six Day Faculty Empowerment Programme on CCS338 - Computer Vision",
+			"description": "21-26 Aug 2023",
+			"date": ""
+		  },
+		  {
+			"name": "Two days workshop on PCB Design using open source EDA tools",
+			"description": "Workshop",
+			"date": "14-15 Oct 2023"
+		  },
+		  {
+			"name": "Two Days Hands - on workshop programme on “VLSI Design Flow And Functional Verification Using System Verilog”",
+			"description": "Workshop",
+			"date": "9-10 Feb 2024"
+		  },
+		  {
+			"name": "“16th National Conference on Signal Processing, Communication & VLSI Design - NCSCV’24 “",
+			"description": "Conference",
+			"date": "5-6 Apr 2024"
+		  },
+		  {
+			"name": "One day Guest Lecture on “Recent Trends in Electronics Eco System”",
+			"description": "Guest Lecture",
+			"date": "18 May 2024"
 		  }
+		  
 		],
 		"placements": {
 		  "companies_visited": [
