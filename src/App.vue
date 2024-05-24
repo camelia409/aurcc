@@ -27,6 +27,77 @@ import { RouterLink, RouterView } from 'vue-router';
                 <li><a href="/academics/Regulation" class="block px-4 py-2 hover:bg-blue-800  hover:text-white transition-all duration-300 ease-in-out ">Regulations</a></li>
                 <li><a href="/academics/Student-Affairs" class="block px-4 py-2 hover:bg-blue-800  hover:text-white transition-all duration-300 ease-in-out ">Student Affairs</a></li>
               </ul>
+        <div class="flex-none">
+          <div class="dropdown dropdown-end bg-gray-800 relative z-30">
+            <label tabindex="0" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </label>
+            <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-gray-800 rounded-box w-52">
+              <li>
+                <details>
+                  <summary>Departments</summary>
+                  <ul class="p-2 bg-base-100 shadow-lg rounded-md text-black">
+                    <li><a href="/departments/cse">Computer Science Engg</a></li>
+                    <li><a href="/departments/eee">Electrical and Electronics Engg</a></li>
+                    <li><a href="/departments/ece">Electronics and Communications Engg</a></li>
+                    <li><a href="/departments/mech">Mechanical Engg</a></li>
+                    <li><a href="/departments/mba">MBA</a></li>
+                    <li><a href="/departments/biotech">Bio-Technology</a></li>
+                    <li><a href="/departments/nanotech">Nano-Technology</a></li>
+                    <li><a href="/departments/s&h">Science & Humanities</a></li>
+                  </ul>
+                </details>
+              </li>
+              <li><a href="#">Hostel</a></li>
+              <li class="relative">
+                <details class="text-black">
+                  <summary class="cursor-pointer">Offices</summary>
+                  <ul class="p-2 bg-base-100 shadow-lg text-black">
+                    <li><a href="/dgate">DGATE Cell</a></li>
+                    <li><a href="/ed-cell">ED Cell</a></li>
+                    <li><a href="/placement-cell">Placement Cell</a></li>
+                    <li><a href="/research-cell">Research Cell</a></li>
+                    <li><a href="/exam-cell">Exam cell</a></li>
+                  </ul>
+                </details>
+              </li>
+              <li>
+                <details>
+                  <summary>Life@aurcc</summary>
+                  <ul class="p-2 bg-base-100 shadow-lg text-black">
+                    <li><a href="/sports">Sports</a></li>
+                    <li><a href="/">NSS</a></li>
+                    <li><a href="/">Tamil Mandram</a></li>
+                    <li><a href="/">Fine Arts Club</a></li>
+                    <li><a href="/">Alumni</a></li>
+                  </ul>
+                </details>
+              </li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <ul class="menu menu-horizontal p-0 hidden lg:flex">
+            <li>
+              <details>
+                <summary>Administration</summary>
+                <ul class="p-2 bg-base-100 shadow-lg text-black z-30">
+                  <li><a href="/administrator">Administrator</a></li>
+                  <li><a href="/administration">GA</a></li>
+                </ul>
+              </details>
+            </li>
+            <li>
+              <details>
+                <summary>Academics</summary>
+                <ul class="p-2 bg-base-100 shadow-lg text-black z-30">
+                  <li><a href="/academics/Programs-Offered">Programs Offered</a></li>
+                  <li><a href="/academics/Curriculum-&-Syllabus">Curriculum & Syllabus</a></li>
+                  <li><a href="/academics/Regulation">Regulations</a></li>
+                  <li><a href="/academics/Student-Affairs">Student Affairs</a></li>
+                </ul>
+              </details>
             </li>
             <li class="relative group">
               <button class="px-4 py-2  hover:bg-blue-700 focus:outline-none focus:bg-blue-700">

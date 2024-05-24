@@ -86,11 +86,12 @@
 
         <div class="bg-yellow-400 hover:bg-yellow-500 transition-colors duration-200 h-20 p-4  hover:cursor-pointer grow">
           <span class="text-white">
+          <a href="/antiragging" class="text-white ">
             <svg class="w-6 h-6 inline-block" viewBox="0 0 24 24">
               <!-- Icon SVG path goes here -->
             </svg>
-            Antiragging Cell
-          </span>
+            Antiragging cell
+          </a>
         </div>
 
         <div class="bg-green-500 hover:bg-green-600 transition-colors duration-200 h-20 p-4  hover:cursor-pointer grow">
