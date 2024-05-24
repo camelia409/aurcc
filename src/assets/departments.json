@@ -415,25 +415,25 @@
 		"facility": [
 				{
 					"name": "Python Laboratory",
-					"description": "In a Python programming laboratory at a college, students learn to write, test, and debug Python programs. They explore conditionals, loops, and functions for structuring their code. Additionally, they gain proficiency in handling compound data using Python lists, tuples, and dictionaries, as well as reading and writing data from/to files. The lab aims to equip students with practical programming skills and a solid foundation in Python.",
+					"description": ["In a Python programming laboratory at a college, students learn to write, test, and debug Python programs."," They explore conditionals, loops, and functions for structuring their code.", "Additionally, they gain proficiency in handling compound data using Python lists, tuples, and dictionaries, as well as reading and writing data from/to files."," The lab aims to equip students with practical programming skills and a solid foundation in Python."],
 					"room no": "216",
 					"image": "py.webp"
 				},
 				{
 					"name": "Database Laboratory",
-					"description": "In a college database management laboratory, students gain foundational knowledge in database concepts, technology, and practice. They learn SQL programming through various database problems, develop applications using front-end tools, and work with back-end DBMS. The lab covers topics such as data definition languages (DDL), data manipulation language (DML) commands, high-level programming language extensions, front-end tools, forms, triggers, menu design, reports, and practical exercises using open-source software like MySQL.",
+					"description": ["In a college database management laboratory, students gain foundational knowledge in database concepts, technology, and practice.", "They learn SQL programming through various database problems, develop applications using front-end tools, and work with back-end DBMS.","The lab covers topics such as data definition languages (DDL), data manipulation language (DML) commands, high-level programming language extensions, front-end tools, forms, triggers, menu design, reports, and practical exercises using open-source software like MySQL."],
 					"room no": "217",
 					"image": "db.webp"
 				},
 				{
 					"name": "IDEA Laboratory",
-					"description": "The AICTE-IDEA (Idea Development, Evaluation & Application) Lab is established in AICTE-approved institutions to encourage students to apply science, technology, engineering, and mathematics (STEM) fundamentals. This lab provides hands-on experience, fosters creativity, and trains students in critical thinking, problem-solving, and collaboration. The IDEA Lab aims to transform education by converting ideas into prototypes, promoting imaginative thinking, and preparing graduates for the 21st-century workplace.",
+					"description": ["The AICTE-IDEA (Idea Development, Evaluation & Application) Lab is established in AICTE-approved institutions to encourage students to apply science, technology, engineering, and mathematics (STEM) fundamentals. This lab provides hands-on experience, fosters creativity, and trains students in critical thinking, problem-solving, and collaboration.", "The IDEA Lab aims to transform education by converting ideas into prototypes, promoting imaginative thinking, and preparing graduates for the 21st-century workplace."],
 					"room no": "202",
 					"image": "idea.webp"
 				},
 				{
 					"name": "Cybersecurity Laboratory",
-					"description": "A college cybersecurity lab is a hands-on learning environment equipped with simulated networks and security tools. Students practice ethical hacking techniques, analyze malware, and defend against cyberattacks in a safe space. These labs, often led by cybersecurity professors, prepare students for industry certifications and careers in information security.",
+					"description": ["A college cybersecurity lab is a hands-on learning environment equipped with simulated networks and security tools.", "Students practice ethical hacking techniques, analyze malware, and defend against cyberattacks in a safe space.", "These labs, often led by cybersecurity professors, prepare students for industry certifications and careers in information security."],
 					"room no": "222",
 					"image": "cb.webp"
 				}
@@ -3000,21 +3000,138 @@
 		"facility":[
 			{
 				"name":"Applied Electronics laboratory",
-				"description":"The Applied Electronics Lab is equipped with MSP 430 Microcontroller, Beagle bone black board, MSP 430 F2013 starter kit, TMS320C 6678 Multicore DSP Processor Kit and Application boards for implementing both basic and advanced experiments. In addition to that the Lab is equipped with state of equipments which include 20 Workbenches each consisting of inbuilt CRO, Function Generator, RPS, Ammeters and Voltmeters. Also 10 Desktop Computers have been interfaced with the Workbenches and they are loaded with EDA tool like MultiSim.",
+				"description":["The Applied Electronics Lab is equipped with MSP 430 Microcontroller, Beagle bone black board, MSP 430 F2013 starter kit, TMS320C 6678 Multicore DSP Processor Kit and Application boards for implementing both basic and advanced experiments. In addition to that the Lab is equipped with state of equipments which include 20 Workbenches each consisting of inbuilt CRO, Function Generator, RPS, Ammeters and Voltmeters. Also 10 Desktop Computers have been interfaced with the Workbenches and they are loaded with EDA tool like MultiSim.",""],
 				"image":""
 
 			},
 			{
-				"name": "Communication Systems Laboratory",
-				"description":"The Communication Systems Lab equipped with Optical Fiber kits,Analog and Digital Communication kits. The DSP Lab equipped with Code Composer Studio Software and latest DSP Trainer Kits namely TMS320C5416 and TMS320C6713.",
+				"name":"Digital Signal Processing Laboratory",
+				"description":["DSP TMS 320C5416 Kit",
+				"DSP Trainer Kit:TMS320 C6713 Kit",
+				"DSP Trainer Kit:TMS320 MICRO 50LC Kit",
+				"DSP Processor TMDSEVM6678L Kit",
+				"TMS 320 DSPS Code Composer Studio IDE"],
 				"image":""
 			},
 			{
-				"name": "VLSI Design Laboratory",
-				"description":"The VLSI Design lab was developed with a motive of encouraging research activities of the Post Graduate Students. The lab consists of 20 Desktop Computers loaded with software's such as Micro wind, Quartus-II & Active HDL, Keil, MP lab, IAR Workbench and Modelsim.\n LCD Projectors available in all class rooms\n Exclusive Project Laboratory Separate Library is maintained in the Department\n Exclusive Audio Visual facilities are available for conducting Seminars, Workshops and other technical activities.",
+				"name":"Communication Systems Laboratory",
+				"description":["PAM,PPM,PWM Modulation and Demodulation",
+				"Delta Modulation and Demodulation",
+				"Amplitude Modulation and Demodulation",
+				"Automatic Gain Control Modulation and Demodulation",
+				"Data Formatting and Carrier Modulation and Demodulation",
+				"Frequency Shift Keying Modulation and Demodulation",
+				"Pre-Emphasis and De-Emphasis Modulation Demodulation",
+				"Frequency Modulation &amp; Demodulation",
+				"Line Coding Schemes",
+				"Time Division Multiplexing Modulation Demodulation",
+				"Pulse Code Modulation and Demodulation",
+				"FEKO 6.1 Antenna Design Software"],
 				"image":""
-			} 
-		], 
+			},
+			{
+				"name":"Communication Network Laboratory",
+				"description":["Standalone LAN Trainer Kits",
+				"Desktop Computer Systems"],
+				"image":""
+			},
+			{
+				"name":"Microprocessors and Microcontrollers Laboratory",
+				"description":["8085 Microprocessor Kit",
+				"8086 Microprocessor Kit",
+				"8051 Microcontroller Kit",
+				"8051 CPU Card",
+				"8255 Study Card",
+				"8251/8253 Study Card",
+				"Keyboard Interface Kit 8279 Study Card",
+				"Stepper Motor Interface Kit",
+				"Traffic Light Interface Kit",
+				"Dual DAC Interface Kit",
+				"8- BIT ADC Interface Kit",
+				"Stepper Motor",
+				"DC Motor Interfacing Kit"],
+				"image":""
+			},
+			{
+				"name":"VLSI Design Laboratory",
+				"description":["IC Design / Custom IC Design DA /IC",
+				"Microwind Package",
+				"Altera DE0 FPGA Board (DE0-Cyclone III)",
+				"PSOC KIT-CY3210,PSOC EVAL 1",
+				"Altera DE2 FPGA Board (DE2- Cyclone- II)",
+				"Altera DE2–70 Advanced FPGA Board (Cyclone II )",
+				"Basic I/O Interface Card",
+				"ADC / DAC Interface Card",
+				"Versatile Interface Card",
+				"NIOS-II Embedded Evaluation Kit (Cyclone III)",
+				"DE3-150 STRATIX III",
+				"Logic Analyser",
+				"Altera DE2 -115 Advanced FPGA Board ( DE2 -115 -Cyclone IV )",
+				"Universal FPGA/CPLD Trainer Kit (VVSM 14 and Spartan-3E)",
+				"Universal FPGA/CPLD Trainer Kit Cool Runner II Piggy Back Board"],
+				"image":""
+			},
+			{
+				"name":"Advanced Communication Systems Laboratory",
+				"description":["89600 Vector Signal Analyzer",
+				"E3631a Programmable Triple O/P Dc Power Supply",
+				"34401a Digit Precision Digital Multimeter",
+				"82357b GPIB-USB interface adaptor",
+				"U3000 electronic training kit",
+				"W1141A VEE s/w",
+				"MSO 6012 a Mixed Signal Oscilloscope",
+				"33220a-20MHZ Function Generator",
+				"PF LED Module Benchmark",
+				"Optical Fiber and Digital Communication Trainer-Benchmark OFT V 3.0",
+				"Fiber optic video link with audio channel",
+				"Single Mode Fiber Characteristics Setup",
+				"FM Detector",
+				"Phase Locked Loop"],
+				"image":""
+			},
+			{
+				"name":"Embedded Laboratory",
+				"description":["Keil - MDK ARM FOR ARM Family (MDK ARM CD)",
+				"Keil-RL-ARM RTOS (RL- ARM CD)",
+				"Keil U-LINK2 DEBUGGER",
+				"ZIGBEE WIRELESS MODULE",
+				"ARM 7 LPC2148 (Experimental Board)",
+				"ARM 7 Evaluation Board Vi ARM-LPC2148",
+				"Keil ARM7 Board with UC LINUX &amp; Keil Support-LPC 2478-32",
+				"ARM9 Single Evaluation Board-LPC 3250",
+				"MSP430 Starter Kit REV 2.0",
+				"Embedded Workbench For ARM Processor-EWARM 511A-442A / Beagle Bone"],
+				"image":""
+			},
+			{
+				"name":"Internet of Things (IoT) Laboratory",
+				"description":["Arduino UNO Board",
+				"Raspberry PI Complete Kit (V3 Model B)",
+				"LORA Long Range Embedded Wireless Communication Starter Kit With Multi Channel LORAWAN Gateway",
+				"Wireless Development Module for Wi-Fi,Bluetooth, Classic, BLE Ver 4.2, LORA, LORAWAN",
+				"RP2040 PICO Development Board",
+				"Arduino Due Development Board With USB Cable",
+				"37-IN One Sensor Kit Package",
+				"Node MCU ESP8266 Wifi Development Board With USB Cable",
+				"Ultrasonic Distance Sensor Module, 5V 4 Channel Relay Card, Gas Sensor, PIR Sensor etc"],
+				"image":""
+			},
+			{
+				"name":"",
+				"description":["Keil - MDK ARM FOR ARM Family (MDK ARM CD)",
+				"Keil-RL-ARM RTOS (RL- ARM CD)",
+				"Keil U-LINK2 DEBUGGER",
+				"ZIGBEE WIRELESS MODULE",
+				"ARM 7 LPC2148 (Experimental Board)",
+				"ARM 7 Evaluation Board Vi ARM-LPC2148",
+				"Keil ARM7 Board with UC LINUX &amp; Keil Support-LPC 2478-32",
+				"ARM9 Single Evaluation Board-LPC 3250",
+				"MSP430 Starter Kit REV 2.0",
+				"Embedded Workbench For ARM Processor-EWARM 511A-442A / Beagle Bone"],
+				"image":""
+			}
+			
+		],
 		"research_and_publications": [
 			{
 				"authors": "Vijaykumar, V R, Vanathi P T, Kanagasapabathy P",
