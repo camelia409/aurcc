@@ -7,36 +7,6 @@
         </div>
       </div>
       
-      <!-- Announcements Section -->
-      <div class="bg-gray-100">
-        <div class="container-fluid mx-auto">
-          <div class="flex items-center justify-between">
-            <div class="text-sm p-4 bg-yellow-500 text-black">
-              <svg class="w-4 h-4 inline-block mr-2" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M2 5a2 2 0 012-2h12a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V5zm2-1v8h12V4H4z"/>
-                <path d="M4 11h2v2H4v-2zm4 0h2v2H8v-2zM8 7h2v2H8V7zm4 0h2v2h-2V7zm0 4h2v2h-2v-2z"/>
-              </svg>
-              Announcements
-            </div>
-            <div class="text-sm breadcrumbs animate-marquee hover:animate-pause p-4 flex-1 overflow-hidden bg-blue-800 text-white">
-              <ul class="flex space-x-4">
-                <li><a href="#">Announcements</a></li>
-                <li>on Recent Innovations in Production Engineering (RIPE) 2024 at MIT Campus, Anna University.</li>
-                <li><a href="#">Founders day, Alumni, Institute day live stream link</a></li>
-                <li><a href="#">View more</a></li>
-              </ul>
-            </div>
-            <div class="text-sm p-4 bg-black text-white">
-              <a href="#">
-                <svg class="w-4 h-4 inline-block mr-2" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M2.003 5.884l7.071 7.07a1 1 0 001.415 0l7.07-7.07A8 8 0 112.003 5.884z"/>
-                </svg>
-                View more
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
 
 
       <!-- Horizontal Scrollable Image Gallery Section -->
@@ -116,13 +86,18 @@
       </div> -->
 
       <div class="grid grid-cols-1 md:grid-cols-4 gap-8 p-9 md:p-20" style="font-family: Clash Grotesk;">
-        <div class="col-span-3">
+        <div class="col-span-2">
           <div class="text-3xl font-extrabold flex align-baseline" ><img src="../assets/logo.svg" alt="Logo" class="h-20" /> <p class="text-6xl m-4 ">Anna University</p></div>
           <p class="text-5xl font-semibold mb-10">Regional Campus Coimbatore</p>
           <p class="text-2xl text-gray-500 ">
             The Regional Campus Coimbatore of Anna University was established during 2012. It offers higher education in Engineering and Technology. Located in an Arcadian environment and away from the hustle and bustle crowd of the city. The Regional Campus Coimbatore is equipped with excellent infrastructure and highly qualified members of faculty, who facilitate hands on experience to students to master their skills in various disciplines.
           </p>
         </div>
+
+        <section class="lg:w-[40vw]x">
+          <iframe class="lg:w-[40vw] h-[50vh] w-full shadow-xl rounded-xl" src="https://www.youtube.com/embed/gwseTsTb_jE" title="Aerial View of Anna University Regional Campus Coimbatore">
+          </iframe>
+        </section>
 
         <!-- Event section -->
         <div class="flex flex-col gap-2">
@@ -167,41 +142,8 @@
         </div>
       </div>
 
-      <section class="flex flex-col gap-4 py-8">
-        <h2 class="text-4xl font-bold text-center">Innovating the Industries</h2>
-        <div class="grid grid-cols-3 gap-4 items-center justify-space-around">
-          <a href="https://www.tcs.com" class="h-[12vh] p-4 flex flex-col items-center justify-center">
-            <figure><img alt="TCS" src="../assets/tcs.webp" class="w-[20vw] lg:w-[10vw]" /></figure>
-          </a>
-          <a href="https://www.avasoft.com" class="h-[12vh] p-4 flex flex-col items-center justify-center">
-            <figure><img alt="Avasoft" src="../assets/avasoft.webp" class="w-[20vw] lg:w-[10vw]" /></figure>
-          </a>
-          <a href="https://www.guvi.in" class="h-[12vh] p-4 flex flex-col items-center justify-center">
-            <figure><img alt="Guvi" src="../assets/guvi.webp" class="w-[20vw] lg:w-[10vw]" /></figure>
-          </a>
-          <a href="https://www.gighz.net" class="h-[12vh] p-4 flex flex-col items-center justify-center">
-            <figure><img alt="GigHz" src="../assets/gighz.webp" class="w-[20vw] lg:w-[10vw]" /></figure>
-          </a>
-          <a href="https://www.saptanglabs.com" class="h-[12vh] p-4 flex flex-col items-center justify-center">
-            <figure><img alt="Saptang Labs" src="../assets/saptan-labs.webp" class="w-[20vw] lg:w-[10vw]" /></figure>
-          </a>
-          <a href="https://home.barclays/" class="h-[12vh] p-4 flex flex-col items-center justify-center">
-            <figure><img alt="Barclays" src="../assets/barclays.webp" class="w-[20vw] lg:w-[10vw]" /></figure>
-          </a>
-          <a href="https://www.e-consystems.com" class="h-[12vh] p-4 flex flex-col items-center justify-center">
-            <figure><img alt="e-con Systems" src="../assets/e-con.webp" class="w-[20vw] lg:w-[10vw]" /></figure>
-          </a>
-          <a href="https://www.azentio.com" class="h-[12vh] p-4 flex flex-col items-center justify-center">
-            <figure><img alt="Azentio" src="../assets/azentio.webp" class="w-[20vw] lg:w-[10vw]" /></figure>
-          </a>
-          <a href="https://www.dummy.com" class="h-[12vh] p-4 flex flex-col items-center justify-center">
-            <figure><img alt="Dummy" src="../assets/texmo.webp" class="w-[20vw] lg:w-[10vw]" /></figure>
-          </a>
-        </div>
-      </section>
-
-      <!-- Department Section -->
-      <section class="bg-[#f1f1f1] w-full py-12">
+            <!-- Department Section -->
+            <section class="bg-[#f1f1f1] w-full py-12">
         <div class="container mx-auto px-4">
           <h2 class="text-4xl font-bold text-center mb-8 text-[#21209c] animate-fade-in-up">Programs Offered</h2>
           <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -280,23 +222,56 @@
         </div>
       </section>
 
-      <div class="flex">
-        <div class="bg-[#f1f1f1] p-6 rounded-lg w-full max-w-md mx-auto shadow-lg">
-          <h2 class="text-center text-[#23120b] font-extrabold text-xl mb-6">News/Admissiono:</h2>
-          <div class="overflow-hidden relative h-80">
-    <div class="absolute top-0 left-0 right-0 animate-move-vertically hover:pause-animation space-y-4">
-      <div
-        v-for="(event, index) in events"
-        :key="index"
-        class="p-4 border-2 border-[#21209c] text-[#21209c] bg-white rounded-lg shadow-sm transition-transform transform hover:scale-105 "
-      >
-        <h3 class="font-bold text-lg">{{ event.title }}</h3>
-        <p class="text-sm">{{ event.date }}</p>
-      </div>
-    </div>
-  </div>
+      <section class="flex flex-col gap-4 py-8">
+        <h2 class="text-4xl font-bold text-center">Innovating the Industries</h2>
+        <div class="grid grid-cols-3 gap-4 items-center justify-space-around">
+          <a href="https://www.tcs.com" class="h-[12vh] p-4 flex flex-col items-center justify-center">
+            <figure><img alt="TCS" src="../assets/tcs.webp" class="w-[20vw] lg:w-[10vw]" /></figure>
+          </a>
+          <a href="https://www.avasoft.com" class="h-[12vh] p-4 flex flex-col items-center justify-center">
+            <figure><img alt="Avasoft" src="../assets/avasoft.webp" class="w-[20vw] lg:w-[10vw]" /></figure>
+          </a>
+          <a href="https://www.guvi.in" class="h-[12vh] p-4 flex flex-col items-center justify-center">
+            <figure><img alt="Guvi" src="../assets/guvi.webp" class="w-[20vw] lg:w-[10vw]" /></figure>
+          </a>
+          <a href="https://www.gighz.net" class="h-[12vh] p-4 flex flex-col items-center justify-center">
+            <figure><img alt="GigHz" src="../assets/gighz.webp" class="w-[20vw] lg:w-[10vw]" /></figure>
+          </a>
+          <a href="https://www.saptanglabs.com" class="h-[12vh] p-4 flex flex-col items-center justify-center">
+            <figure><img alt="Saptang Labs" src="../assets/saptan-labs.webp" class="w-[20vw] lg:w-[10vw]" /></figure>
+          </a>
+          <a href="https://home.barclays/" class="h-[12vh] p-4 flex flex-col items-center justify-center">
+            <figure><img alt="Barclays" src="../assets/barclays.webp" class="w-[20vw] lg:w-[10vw]" /></figure>
+          </a>
+          <a href="https://www.e-consystems.com" class="h-[12vh] p-4 flex flex-col items-center justify-center">
+            <figure><img alt="e-con Systems" src="../assets/e-con.webp" class="w-[20vw] lg:w-[10vw]" /></figure>
+          </a>
+          <a href="https://www.azentio.com" class="h-[12vh] p-4 flex flex-col items-center justify-center">
+            <figure><img alt="Azentio" src="../assets/azentio.webp" class="w-[20vw] lg:w-[10vw]" /></figure>
+          </a>
+          <a href="https://www.dummy.com" class="h-[12vh] p-4 flex flex-col items-center justify-center">
+            <figure><img alt="Dummy" src="../assets/texmo.webp" class="w-[20vw] lg:w-[10vw]" /></figure>
+          </a>
         </div>
-        <div class="bg-[#f1f1f1] p-6 rounded-lg w-full max-w-md mx-auto shadow-lg">
+      </section>
+
+      <div class="grid grid-cols-2">
+        <div class="bg-[#f1f1f1] p-6  w-full m-5 ">
+          <h2 class="text-center text-[#23120b] font-extrabold text-xl mb-6">News/Admissions:</h2>
+          <div class="overflow-hidden relative h-80">
+            <div class="absolute top-0 left-0 right-0 animate-move-vertically hover:pause-animation space-y-4">
+              <div
+                v-for="(event, index) in events"
+                :key="index"
+                class="p-4 border-2 border-[#21209c] text-[#21209c] bg-white rounded-lg shadow-sm transition-transform transform hover:scale-105 "
+              >
+                <h3 class="font-bold text-lg">{{ event.title }}</h3>
+                <p class="text-sm">{{ event.date }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bg-[#f1f1f1] p-6 rounded-lg w-full m-5 col-span-1">
           <h2 class="text-center text-[#23120b] font-extrabold text-xl mb-6">Events/Scholarship</h2>
           <div class="overflow-hidden relative h-80">
             <div class="absolute top-0 left-0 right-0 animate-move-vertically hover:pause-animation space-y-4">
