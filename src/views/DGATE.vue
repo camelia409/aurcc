@@ -20,7 +20,7 @@
               </svg>
               Sections
             </h2>
-            <div class="flex flex-col">
+            <div class="flex flex-col border-2 border-[#fdb827]">
               <button v-for="(section, index) in sections" :key="index" @click="currentSection = section" :class="{'bg-blue-600 text-white': currentSection === section, 'bg-white hover:bg-gray-100 text-gray-800': currentSection !== section}" class="font-semibold py-2 px-4 border-x border-gray-400  shadow flex items-center">
                 <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>

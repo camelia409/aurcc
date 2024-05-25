@@ -9,7 +9,7 @@
       
       <!-- Announcements Section -->
       <div class="bg-gray-100">
-        <div class="container mx-auto">
+        <div class="container-fluid mx-auto">
           <div class="flex items-center justify-between">
             <div class="text-sm p-4 bg-yellow-500 text-black">
               <svg class="w-4 h-4 inline-block mr-2" fill="currentColor" viewBox="0 0 20 20">
@@ -205,7 +205,7 @@
         <div class="container mx-auto px-4">
           <h2 class="text-4xl font-bold text-center mb-8 text-[#21209c] animate-fade-in-up">Programs Offered</h2>
           <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="text-lg bg-[#21209c] p-4 rounded-lg flex items-center space-x-4 transition-transform transform hover:scale-105">
+            <router-link to="/departments/cse" class="text-lg bg-[#21209c] p-4 rounded-lg flex items-center space-x-4 transition-transform transform hover:scale-105">
               <div class="bg-[#fdb827] p-2 rounded-full">
                 <svg class="w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 008 0H3zm0 0a4 4 0 008 0M5 3a2 2 0 100 4 2 2 0 000-4zM12 17a4 4 0 108 0h-8zm0 0a4 4 0 108 0M14 3a2 2 0 100 4 2 2 0 000-4z" />
@@ -215,7 +215,7 @@
                 <h3 class="font-bold text-white">B.E. Computer Science Engg</h3>
                 <p class="text-sm text-gray-300">CSE Department</p>
               </div>
-            </div>
+            </router-link>
 
             <div class="text-lg bg-[#21209c] p-4 rounded-lg flex items-center space-x-4 transition-transform transform hover:scale-105">
               <div class="bg-[#fdb827] p-2 rounded-full">
@@ -280,6 +280,40 @@
         </div>
       </section>
 
+      <div class="flex">
+        <div class="bg-[#f1f1f1] p-6 rounded-lg w-full max-w-md mx-auto shadow-lg">
+          <h2 class="text-center text-[#23120b] font-extrabold text-xl mb-6">News/Admissiono:</h2>
+          <div class="overflow-hidden relative h-80">
+    <div class="absolute top-0 left-0 right-0 animate-move-vertically hover:pause-animation space-y-4">
+      <div
+        v-for="(event, index) in events"
+        :key="index"
+        class="p-4 border-2 border-[#21209c] text-[#21209c] bg-white rounded-lg shadow-sm transition-transform transform hover:scale-105 "
+      >
+        <h3 class="font-bold text-lg">{{ event.title }}</h3>
+        <p class="text-sm">{{ event.date }}</p>
+      </div>
+    </div>
+  </div>
+        </div>
+        <div class="bg-[#f1f1f1] p-6 rounded-lg w-full max-w-md mx-auto shadow-lg">
+          <h2 class="text-center text-[#23120b] font-extrabold text-xl mb-6">Events/Scholarship</h2>
+          <div class="overflow-hidden relative h-80">
+            <div class="absolute top-0 left-0 right-0 animate-move-vertically hover:pause-animation space-y-4">
+              <div
+                v-for="(event, index) in events"
+                :key="index"
+                class="p-4 bg-white bg-opacity-30 backdrop-blur-md border border-gray-200 rounded-lg shadow-lg transition-transform transform hover:scale-105"
+              >
+                <h3 class="font-bold text-lg text-[#21209c]">{{ event.title }}</h3>
+                <p class="text-sm text-[#23120b]">{{ event.date }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
       <!-- From the Dean's Desk section -->
       <section class="bg-base-100 border-t-4 border-yellow-300 w-full py-12">
         <div class="container mx-auto px-4">
@@ -310,7 +344,13 @@ export default {
         'http://localhost:5173/src/assets/homeview.webp'
       ],
       currentImageIndex: 1,
-      circularGalleryImages: []
+      circularGalleryImages: [],
+      events: [
+        { title: 'Event 1', date: '2024-05-25' },
+        { title: 'Event 2', date: '2024-06-10' },
+        { title: 'Event 3', date: '2024-07-04' },
+        // Add more events as needed
+      ],
     };
   },
   methods: {
@@ -348,5 +388,22 @@ export default {
 };
 
 </script>
+
+<style scoped>
+@keyframes move-vertically {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+.animate-move-vertically {
+  animation: move-vertically 10s linear infinite;
+}
+.hover\:pause-animation:hover {
+  animation-play-state: paused;
+}
+</style>
 
 

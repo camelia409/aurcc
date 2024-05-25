@@ -3,8 +3,8 @@ import { RouterLink, RouterView } from 'vue-router';
 </script>
 
 <template>
-  <header class="bg-blue-900 text-white">
-    <div class="container mx-auto px-4 py-4">
+  <header class="bg-[#21209c] text-white">
+    <div class="container-fluid mx-auto px-4 py-4">
       <nav class="flex items-center justify-between" style="font-family: 'Clash Grotesk', sans-serif;" >
         <div class="flex items-center">
           <img src="./assets/logo.svg" alt="Logo" class="h-10 mr-4" />
@@ -16,7 +16,7 @@ import { RouterLink, RouterView } from 'vue-router';
         <div class="hidden lg:flex">
           <ul class="flex space-x-4">
             <li class="relative group">
-              <button class="px-4 py-2  hover:bg-blue-700 focus:outline-none focus:bg-blue-700 border-b-4 border-blue-900 hover:border-yellow-400">
+              <button class="px-4 py-2  hover:bg-blue-700 focus:outline-none focus:bg-blue-700 border-b-4 border-[#21209c] hover:border-[#fdb827]">
                 Academics
               </button>
               <ul
@@ -29,7 +29,7 @@ import { RouterLink, RouterView } from 'vue-router';
               </ul>
             </li>
             <li class="relative group">
-              <button class=" px-4 py-2 border-b-4 border-blue-900 hover:border-yellow-300 hover:bg-blue-700 focus:outline-none focus:bg-blue-700">
+            <button class=" px-4 py-2 border-b-4 border-[#21209c] hover:border-[#fdb827] hover:bg-blue-700 focus:outline-none focus:bg-blue-700">
                 Departments
               </button>
               <ul
@@ -46,7 +46,7 @@ import { RouterLink, RouterView } from 'vue-router';
               </ul>
             </li>
             <li class="relative group">
-              <button class="px-4 py-2 border-b-4 border-blue-900 hover:border-yellow-300 hover:bg-blue-700 focus:outline-none focus:bg-blue-700">
+              <button class="px-4 py-2 border-b-4 border-blue-900 hover:border-[#fdb827] hover:bg-blue-700 focus:outline-none focus:bg-blue-700">
                 Offices
               </button>
               <ul
@@ -128,11 +128,6 @@ import { RouterLink, RouterView } from 'vue-router';
             <a href="https://www.ugc.gov.in/" class="rounded-full bg-blue-500 shadow-md overflow-hidden">
               <img src="./assets/ugc.png" alt="ugc-logo" class="w-10 h-10" width="35" height="35">
             </a>
-          </div>
-        </div>
-        <div class="mb-8 md:mb-0">
-          <div class="relative text-center">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3915.9484517524475!2d76.88349077443925!3d11.04249178912289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba85910327ab1e3%3A0x9f7a2b4ef20fe07!2sAnna%20University%20RC%20Coimbatore!5e0!3m2!1sen!2sin!4v1715493035058!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
         <div>
