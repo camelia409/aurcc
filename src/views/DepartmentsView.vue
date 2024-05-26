@@ -179,7 +179,7 @@
               <h3 class="text-xl font-semibold mb-2">HOD Desk</h3>
               <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 " >
                 <div v-for="staff in department.faculty.hod_desk" :key="staff.email" class="p-4 border rounded-lg hover:cursor-pointer" @click="showDetails(staff)">
-                  <div class="flex items-center">
+                  <div class="flex items-center overflow-auto">
                     <img :src="'http://localhost:5173/src/assets/' + staff.image" :alt="staff.name " class="w-32 h-32 rounded-lg object-cover mr-4">
                     <div>
                       <h4 class="text-lg font-semibold">{{ staff.name }}</h4>
@@ -196,7 +196,7 @@
               <h3 class="text-xl font-semibold mb-2">Assistant Professors</h3>
               <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div v-for="staff in department.faculty.assistant_professors" :key="staff.email" class="p-4 border rounded-lg hover:cursor-pointer" @click="showDetails(staff)">
-                  <div class="flex items-center">
+                  <div class="flex items-center overflow-auto">
                     <img :src="'http://localhost:5173/src/assets/' + staff.image" :alt="staff.name " class="w-32 h-32 rounded-lg object-cover mr-4">
                     <div>
                       <h4 class="text-lg font-semibold">{{ staff.name }}</h4>

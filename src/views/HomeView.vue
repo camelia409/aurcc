@@ -98,24 +98,6 @@
           <iframe class="lg:w-[40vw] h-[50vh] w-full shadow-xl rounded-xl" src="https://www.youtube.com/embed/gwseTsTb_jE" title="Aerial View of Anna University Regional Campus Coimbatore">
           </iframe>
         </section>
-
-        <!-- Event section -->
-        <div class="flex flex-col gap-2">
-          <div>
-            <h2 class="text-xl font-bold mb-4 self-center">News/Admission</h2>
-            <div class="events-section bg-base-300 overflow-hidden" @mouseenter="stopScrolling" @mouseleave="startScrolling">
-              <div class="events-content p-6" ref="eventsContent">
-                <div class="events-list" ref="eventsList">
-                  <div v-for="event in upcomingEvents" :key="event.id" class="event">
-                    <h3 class="font-bold">{{ event.title }}</h3>
-                    <p>{{ event.date }}</p>
-                    <p>{{ event.description }}</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
       <div class="bg-yellow-500 text-black py-8">
         <div class="container mx-auto px-4 flex justify-around">
