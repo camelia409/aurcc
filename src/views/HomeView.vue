@@ -238,17 +238,16 @@
       </section>
 
       <div class="grid grid-cols-2">
-        <div class="bg-[#f1f1f1] p-6  w-full m-5 ">
+        <div class="bg-[#f1f1f1] p-6 rounded-lg w-full m-5 col-span-1 ">
           <h2 class="text-center text-[#23120b] font-extrabold text-xl mb-6">News/Admissions:</h2>
           <div class="overflow-hidden relative h-80">
             <div class="absolute top-0 left-0 right-0 animate-move-vertically hover:pause-animation space-y-4">
               <div
                 v-for="(event, index) in events"
                 :key="index"
-                class="p-4 border-2 border-[#21209c] text-[#21209c] bg-white rounded-lg shadow-sm transition-transform transform hover:scale-105 "
-              >
-                <h3 class="font-bold text-lg">{{ event.title }}</h3>
-                <p class="text-sm">{{ event.date }}</p>
+                class="p-4 bg-white bg-opacity-30 backdrop-blur-md border border-gray-200 rounded-lg shadow-lg transition-transform transform hover:scale-105">
+                <h3 class="font-bold text-lg text-[#21209c]">{{ event.title }}</h3>
+                <p class="text-sm text-[#23120b]">{{ event.date }}</p>
               </div>
             </div>
           </div>

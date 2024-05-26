@@ -46,7 +46,7 @@ import { RouterLink, RouterView } from 'vue-router';
               </ul>
             </li>
             <li class="relative group">
-              <button class="px-4 py-2 border-b-4 border-blue-900 hover:border-[#fdb827] hover:bg-blue-700 focus:outline-none focus:bg-blue-700">
+              <button class="px-4 py-2 border-b-4 border-[#21209c] hover:border-[#fdb827] hover:bg-blue-700 focus:outline-none focus:bg-blue-700">
                 Offices
               </button>
               <ul
@@ -66,7 +66,7 @@ import { RouterLink, RouterView } from 'vue-router';
               </ul>
             </li>
             <li class="relative group">
-              <button class="px-4 py-2 border-b-4 border-blue-900 hover:border-yellow-300 hover:bg-blue-700 focus:outline-none focus:bg-blue-700">
+              <button class="px-4 py-2 border-b-4 border-[#21209c] hover:border-yellow-300 hover:bg-blue-700 focus:outline-none focus:bg-blue-700">
                 Life@aurcc
               </button>
               <ul
@@ -80,9 +80,9 @@ import { RouterLink, RouterView } from 'vue-router';
               </ul>
             </li>
             <div class="flex items-center justify-between">
-              <li><a href="/library" class="px-4 py-2 border-b-4 border-blue-900 hover:border-yellow-300 hover:bg-blue-700 text-white">Library</a></li>
-              <li><a href="/hostel" class="px-4 py-2 border-b-4 border-blue-900 hover:border-yellow-300 hover:bg-blue-700 text-white">Hostel</a></li>
-              <li><a href="#" class="px-4 py-2 border-b-4 border-blue-900 hover:border-yellow-300 hover:bg-blue-700 text-white">Contact</a></li>
+              <li><a href="/library" class="px-4 py-2 border-b-4 border-[#21209c] hover:border-yellow-300 hover:bg-blue-700 text-white">Library</a></li>
+              <li><a href="/hostel" class="px-4 py-2 border-b-4 border-[#21209c] hover:border-yellow-300 hover:bg-blue-700 text-white">Hostel</a></li>
+              <li><a href="#" class="px-4 py-2 border-b-4 border-[#21209c] hover:border-yellow-300 hover:bg-blue-700 text-white">Contact</a></li>
             </div>
           </ul>
         </div>
@@ -100,14 +100,16 @@ import { RouterLink, RouterView } from 'vue-router';
   <RouterView />
 
   <footer class="bg-blue-900 text-white py-8">
-    <div class="container mx-auto px-4">
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div>
+    <div class="flex justify-center gap-60">
+      <div class="mx-6">
+        <div class="">
           <h2 class="text-2xl font-bold mb-4">Anna University Regional campus Coimbatore</h2>
           <p class="mb-2">Campus Office:</p>
           <p class="mb-2">Maruthamalai Main Road, somayampalayam,</p>
           <p class="mb-2">Coimbatore(Dt), Tamil Nadu 641046, India.</p>
           <p class="mb-4">Email: ucedean-kovai@gmail.com</p>
+        </div>
+        <div class="">
           <p class="text-xl font-bold mb-2">Important Links:</p>
           <div class="flex items-center space-x-2">
             <a href="https://www.annauniv.edu/" class="rounded-full bg-blue-500 shadow-md overflow-hidden">
@@ -130,17 +132,22 @@ import { RouterLink, RouterView } from 'vue-router';
             </a>
           </div>
         </div>
+      </div>
+      <div class="px-16">  
+        <div>
+          <p>some image</p>
+        </div>
         <div>
           <a href="/about" class="text-lg font-bold mt-4 block text-blue-300">Website Development Team</a>
         </div>
       </div>
+    </div>
       <hr class="my-8 border-blue-700">
       <div class="flex flex-wrap justify-between items-center">
         <div class="w-full md:w-auto mb-4 md:mb-0">
           <p>Copyright &copy; Anna University Regional campus Coimbatore {{ currentYear }}. All rights reserved.</p>
         </div>
       </div>
-    </div>
   </footer>
 </template>
 
