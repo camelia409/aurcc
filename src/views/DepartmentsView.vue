@@ -15,7 +15,7 @@
       </section>
 
       <!-- Horizontal Tabs -->
-      <div class="sticky top-0 bg-white shadow-md z-10 hidden xl:block">
+      <div class="sticky top-0 bg-[#fdb827] shadow-md z-10 hidden xl:block">
         <div class="flex justify-between  px-9 ">
           <nav role="tablist" class="tabs">
             <button role="tab"
@@ -23,10 +23,10 @@
               :key="index"
               @click="scrollToSection(section)"
               :class="{
-                'bg-gray-200  border-[#21209C]': currentSection === section,
-                'text-gray-600 hover:bg-gray-100': currentSection !== section
+                'bg-[#21209C] text-white ': currentSection === section,
+                'text-black hover:bg-blue-700 hover:text-white ': currentSection !== section
               }"
-              class="font-semibold p-4 h-full transition duration-300 ease-in-out tab text-xl border-b-4"
+              class="font-semibold p-4 h-full transition duration-300 ease-in-out tab text-xl "
             >
               {{ section }}
             </button>
