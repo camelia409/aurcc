@@ -41,7 +41,7 @@
             <h2 class="text-2xl font-bold mb-4">About Department</h2>
             <p>{{ department.description }}</p>
           </div>
-          <div id="vision-and-mission" class="mb-8 w-full bg-base-300 p-3 py-16">
+          <div id="vision-and-mission" class="mb-8 w-full bg-gray-100 p-3 py-16">
             <div class="lg:w-4/6 mx-auto">
               <h2 class="text-2xl font-bold mb-4">Vision and Mission</h2>
               <p>{{ department.vision }}</p>
@@ -75,7 +75,7 @@
             <p class="text-lg text-gray-700">No more events to show.</p>
           </div>
         </div>
-          <div id="training-and-placements" class="bg-gray-200 py-12">
+          <div id="training-and-placements" class="bg-gray-100 py-12">
             <div class="container mx-auto flex lg:w-4/6 ">
               <div class="w-full  mb-8 lg:mb-0">
                 <div class="  ">
@@ -179,7 +179,7 @@
               <h3 class="text-xl font-semibold mb-2">HOD Desk</h3>
               <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 " >
                 <div v-for="staff in department.faculty.hod_desk" :key="staff.email" class="p-4 border rounded-lg hover:cursor-pointer" @click="showDetails(staff)">
-                  <div class="flex items-center">
+                  <div class="flex items-center overflow-auto">
                     <img :src="'http://localhost:5173/src/assets/' + staff.image" :alt="staff.name " class="w-32 h-32 rounded-lg object-cover mr-4">
                     <div>
                       <h4 class="text-lg font-semibold">{{ staff.name }}</h4>
@@ -196,7 +196,7 @@
               <h3 class="text-xl font-semibold mb-2">Assistant Professors</h3>
               <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div v-for="staff in department.faculty.assistant_professors" :key="staff.email" class="p-4 border rounded-lg hover:cursor-pointer" @click="showDetails(staff)">
-                  <div class="flex items-center">
+                  <div class="flex items-center overflow-auto">
                     <img :src="'http://localhost:5173/src/assets/' + staff.image" :alt="staff.name " class="w-32 h-32 rounded-lg object-cover mr-4">
                     <div>
                       <h4 class="text-lg font-semibold">{{ staff.name }}</h4>
@@ -207,9 +207,7 @@
                 </div>
               </div>
             </div>
-
-
-
+            
             <div v-if="showPopover" class="modal modal-open">
               <div class="modal-box relative rounded-lg flex flex-col max-w-4xl p-6">
                 <!-- Close Button -->
