@@ -257,7 +257,7 @@
 
       <div class="grid grid-cols-2">
         <div class="bg-[#f1f1f1] p-6 rounded-lg w-full m-5 col-span-1 ">
-          <h2 class="text-center text-[#23120b] font-extrabold text-xl mb-6">News/Admissions:</h2>
+          <h2 class="font-bold text-center text-[#23120b] font-extrabold text-xl mb-6">NOTIFICATIONS:</h2>
           <div class="overflow-hidden relative h-80">
             <div class="absolute top-0 left-0 right-0 animate-move-vertically hover:pause-animation space-y-4">
               <div
@@ -271,7 +271,7 @@
           </div>
         </div>
         <div class="bg-[#f1f1f1] p-6 rounded-lg w-full m-5 col-span-1">
-          <h2 class="text-center text-[#23120b] font-extrabold text-xl mb-6">Events/Scholarship</h2>
+          <h2 class="font-bold text-center text-[#23120b] font-extrabold text-xl mb-6">ANNOUNCEMENTS:</h2>
           <div class="overflow-hidden relative h-80">
             <div class="absolute top-0 left-0 right-0 animate-move-vertically hover:pause-animation space-y-4">
               <div
