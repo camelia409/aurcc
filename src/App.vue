@@ -8,7 +8,7 @@ import { RouterLink, RouterView } from 'vue-router';
       <nav class="flex items-center justify-between" style="font-family: 'Clash Grotesk', sans-serif;" >
         <div class="flex items-center">
           <img src="./assets/logo.svg" alt="Logo" class="h-10 mr-4" />
-          <RouterLink to="/" class="text-2xl font-bold">
+          <RouterLink to="/" class="text-2xl font-bold" activeClass="border-yellow-600">
             ANNA UNIVERSITY REGIONAL CAMPUS
             <span class="hidden lg:inline text-2xl font-bold">COIMBATORE</span>
           </RouterLink>

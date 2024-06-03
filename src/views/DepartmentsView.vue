@@ -41,7 +41,7 @@
             <h2 class="text-2xl font-bold mb-4">About Department</h2>
             <p>{{ department.description }}</p>
           </div>
-          <div id="vision-and-mission" class="mb-8 w-full bg-base-300 p-3 py-16">
+          <div id="vision-and-mission" class="mb-8 w-full bg-gray-100 p-3 py-16">
             <div class="lg:w-4/6 mx-auto">
               <h2 class="text-2xl font-bold mb-4">Vision and Mission</h2>
               <p>{{ department.vision }}</p>
@@ -75,7 +75,7 @@
             <p class="text-lg text-gray-700">No more events to show.</p>
           </div>
         </div>
-          <div id="training-and-placements" class="bg-gray-200 py-12">
+          <div id="training-and-placements" class="bg-gray-100 py-12">
             <div class="container mx-auto flex lg:w-4/6 ">
               <div class="w-full  mb-8 lg:mb-0">
                 <div class="  ">
@@ -207,9 +207,7 @@
                 </div>
               </div>
             </div>
-
-
-
+            
             <div v-if="showPopover" class="modal modal-open">
               <div class="modal-box relative rounded-lg flex flex-col max-w-4xl p-6">
                 <!-- Close Button -->
