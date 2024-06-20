@@ -5,22 +5,44 @@ import { RouterLink, RouterView } from 'vue-router';
 <template>
   <header class="bg-[#21209c] text-white">
     <div class=" bg-rose-600">
-      <div  class="container mx-auto px-4 py-2  font-semibold">
-        Counselling Code: <strong>2025</strong> 
+      <div  class="container mx-auto px-4 text-sm" style="font-family: 'Clash Grotesk', sans-serif;">
+        <div class="flex items-center justify-between">
+          <p class="">Counselling Code: <strong>2025</strong> </p>
+          <ul class="flex items-center justify-between">
+            <li class="relative group">
+              <button class="px-4 py-2">
+                Life@aurcc
+              </button>
+              <ul
+                class="absolute left-0 mt-2 w-48 bg-white shadow-lg transition-all duration-300 opacity-0 invisible group-hover:visible group-hover:opacity-100"
+              >
+                <li><a href="/sports" class="block px-4 py-2 transition-all duration-300 ease-in-out text-black hover:text-white">Sports</a></li>
+                <li><a href="/nss" class="block px-4 py-2 transition-all duration-300 ease-in-out text-black hover:text-white">NSS</a></li>
+                <li><a href="/tamilmandram" class="block px-4 py-2 transition-all duration-300 ease-in-out text-black hover:text-white">Tamil Mandram</a></li>
+                <li><a href="/fine-arts" class="block px-4 py-2 transition-all duration-300 ease-in-out text-black hover:text-white">Fine Arts Club</a></li>
+                <li><a href="/alumni" class="block px-4 py-2 transition-all duration-300 ease-in-out text-black hover:text-white">Alumni</a></li>
+              </ul>
+            </li>
+            <li><a href="/library" class="px-4 py-2  text-white">Library</a></li>
+            <li><a href="/hostel" class="px-4 py-2  text-white">Hostel</a></li>
+            <li><a href="#" class="px-4 py-2  text-white">Contact</a></li>
+          </ul>
+        </div>
+
       </div>
-      
+
     </div>
     <div class="container mx-auto px-4 py-4">
       <nav class="flex items-center justify-between" style="font-family: 'Clash Grotesk', sans-serif;" >
         <div class="flex items-center">
           <img src="./assets/logo.svg" alt="Logo" class="h-10 mr-4" />
-          <RouterLink to="/" class="text-2xl font-bold" activeClass="border-yellow-600">
+          <RouterLink to="/" class="text-3xl font-bold" activeClass="border-yellow-600">
             ANNA UNIVERSITY REGIONAL CAMPUS
             <span class="hidden lg:inline text-2xl font-bold">COIMBATORE</span>
           </RouterLink>
         </div>
         <div class="hidden lg:flex">
-          <ul class="flex space-x-4">
+          <ul class="flex space-x-2">
             <li class="relative group">
               <button class="px-4 py-2  hover:bg-blue-700 focus:outline-none focus:bg-blue-700 border-b-4 border-[#21209c] hover:border-[#fdb827]">
                 Administration
@@ -82,25 +104,8 @@ import { RouterLink, RouterView } from 'vue-router';
                 <li><a href="/exam-cell" class="block px-4 py-2 hover:bg-blue-800 transition-all duration-300 ease-in-out text-black hover:text-white">Exam cell</a></li>
               </ul>
             </li>
-            <li class="relative group">
-              <button class="px-4 py-2 border-b-4 border-[#21209c] hover:border-yellow-300 hover:bg-blue-700 focus:outline-none focus:bg-blue-700">
-                Life@aurcc
-              </button>
-              <ul
-                class="absolute left-0 mt-2 w-48 bg-white shadow-lg transition-all duration-300 opacity-0 invisible group-hover:visible group-hover:opacity-100"
-              >
-                <li><a href="/sports" class="block px-4 py-2 hover:bg-blue-800 transition-all duration-300 ease-in-out text-black hover:text-white">Sports</a></li>
-                <li><a href="/nss" class="block px-4 py-2 hover:bg-blue-800 transition-all duration-300 ease-in-out text-black hover:text-white">NSS</a></li>
-                <li><a href="/tamilmandram" class="block px-4 py-2 hover:bg-blue-800 transition-all duration-300 ease-in-out text-black hover:text-white">Tamil Mandram</a></li>
-                <li><a href="/fine-arts" class="block px-4 py-2 hover:bg-blue-800 transition-all duration-300 ease-in-out text-black hover:text-white">Fine Arts Club</a></li>
-                <li><a href="/alumni" class="block px-4 py-2 hover:bg-blue-800 transition-all duration-300 ease-in-out text-black hover:text-white">Alumni</a></li>
-              </ul>
-            </li>
-            <div class="flex items-center justify-between">
-              <li><a href="/library" class="px-4 py-2 border-b-4 border-[#21209c] hover:border-yellow-300 hover:bg-blue-700 text-white">Library</a></li>
-              <li><a href="/hostel" class="px-4 py-2 border-b-4 border-[#21209c] hover:border-yellow-300 hover:bg-blue-700 text-white">Hostel</a></li>
-              <li><a href="#" class="px-4 py-2 border-b-4 border-[#21209c] hover:border-yellow-300 hover:bg-blue-700 text-white">Contact</a></li>
-            </div>
+
+
           </ul>
         </div>
         <div class="lg:hidden">
