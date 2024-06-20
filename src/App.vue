@@ -4,7 +4,13 @@ import { RouterLink, RouterView } from 'vue-router';
 
 <template>
   <header class="bg-[#21209c] text-white">
-    <div class="container-fluid mx-auto px-4 py-4">
+    <div class=" bg-rose-600">
+      <div  class="container mx-auto px-4 py-2  font-semibold">
+        Counselling Code: <strong>2025</strong> 
+      </div>
+      
+    </div>
+    <div class="container mx-auto px-4 py-4">
       <nav class="flex items-center justify-between" style="font-family: 'Clash Grotesk', sans-serif;" >
         <div class="flex items-center">
           <img src="./assets/logo.svg" alt="Logo" class="h-10 mr-4" />
