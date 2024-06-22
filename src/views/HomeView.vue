@@ -2,11 +2,11 @@
   <div class="min-h-screen bg-base-200">
     <main class="flex flex-col">
 
-      <div class=" flex flex-col gap-4 lg:w-1/2 self-center">
+      <!-- <div class=" flex flex-col gap-4 lg:w-1/2 self-center">
         <div class="text-center">
             <h1 class="text-3xl font-bold p-4" style="font-family: Clash Grotesk;">Counselling Code: 2025</h1>
         </div>
-      </div>
+      </div> -->
       
 
 
