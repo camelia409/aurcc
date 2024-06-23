@@ -5,18 +5,28 @@
     </div>
 
     <main>
-      <!-- Hero Section -->
-      <section class="relative h-screen flex items-center justify-center overflow-hidden">
-        <video autoplay loop muted class="absolute w-auto min-w-full min-h-full max-w-none">
-          <source src="../assets/campus-video.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-        <div class="relative z-10 text-center text-white">
-          <h1 class="text-5xl md:text-7xl font-bold mb-4">Welcome to Anna University</h1>
-          <p class="text-xl md:text-2xl mb-8">Empowering Minds, Shaping Futures</p>
-          <a href="#about" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full transition-colors">Learn More</a>
-        </div>
-      </section>
+      <section class="hero min-h-screen relative overflow-hidden">
+    <video 
+      autoplay 
+      loop 
+      muted 
+      playsinline
+      class="absolute inset-0 w-full h-full object-cover"
+    >
+      <source src="../assets/videoplayback.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <div class="hero-overlay bg-black bg-opacity-75 z-10" ></div>
+
+    <div class="relative z-10 text-center text-white">
+      <h1 class="text-5xl md:text-7xl font-bold mb-4">Welcome to Anna University</h1>
+      <p class="text-xl md:text-2xl mb-8">Empowering Minds, Shaping Futures</p>
+      <a href="#about" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full transition-colors">Learn More</a>
+    </div>
+  </section>
+
+
 
       <!-- About Section -->
       <section id="about" class="py-16 bg-white">
@@ -91,9 +101,6 @@
             <div class="md:w-1/2 md:pl-8">
               <h3 class="text-xl font-bold mb-4">Our Location</h3>
               <p class="mb-4">1234 University Drive, Coimbatore, Tamil Nadu 641046, India</p>
-              <div class="aspect-w-16 aspect-h-9">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.1854558563456!2d76.95476661444427!3d11.019280292152904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba859af2f971cb5%3A0x2fc1c81e183ed282!2sAnna%20University%20Regional%20Campus%20-%20Coimbatore!5e0!3m2!1sen!2sin!4v1656596133370!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-              </div>
             </div>
           </div>
         </div>
@@ -147,6 +154,12 @@ export default {
 
 body {
   font-family: 'Poppins', sans-serif;
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+  width: 100%;
 }
 
 .aspect-w-16 {
