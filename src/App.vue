@@ -35,10 +35,10 @@ import { RouterLink, RouterView } from 'vue-router';
     <div class="container mx-auto px-4 py-4">
       <nav class="flex items-center justify-between" style="font-family: 'Clash Grotesk', sans-serif;" >
         <div class="flex items-center">
-          <img src="./assets/logo.svg" alt="Logo" class="h-10 mr-4" />
-          <RouterLink to="/" class="text-3xl font-bold" activeClass="border-yellow-600">
-            ANNA UNIVERSITY REGIONAL CAMPUS
-            <span class="hidden lg:inline text-2xl font-bold">COIMBATORE</span>
+          <img src="./assets/logo.svg" alt="Logo" class="h-20 mr-4" />
+          <RouterLink to="/" class="" activeClass="border-yellow-600">
+            <p class="text-5xl font-bold">ANNA UNIVERSITY</p>
+            <span class="hidden lg:inline text-2xl font-bold"> REGIONAL CAMPUS COIMBATORE</span>
           </RouterLink>
         </div>
         <div class="hidden lg:flex">
@@ -184,6 +184,10 @@ export default {
 </script>
 
 <style>
+[v-cloak] {
+  display: none;
+}
+
 .notice {
   animation: scroll 10s linear infinite;
 }

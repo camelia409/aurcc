@@ -1,366 +1,179 @@
 <template>
-  <div class="min-h-screen bg-base-200">
-    <main class="flex flex-col">
+  <div class="min-h-screen bg-gradient-to-b from-blue-100 to-white">
+    <div v-if="mobileMenuOpen" class="md:hidden bg-white shadow-md p-4 absolute top-16 left-0 right-0 z-40">
+      <a v-for="item in menuItems" :key="item" :href="'#' + item.toLowerCase()" class="block py-2 text-blue-800 hover:text-blue-600 transition-colors">{{ item }}</a>
+    </div>
 
-      <!-- <div class=" flex flex-col gap-4 lg:w-1/2 self-center">
-        <div class="text-center">
-            <h1 class="text-3xl font-bold p-4" style="font-family: Clash Grotesk;">Counselling Code: 2025</h1>
-        </div>
-      </div> -->
-      
+    <main>
+      <section class="hero min-h-screen relative overflow-hidden">
+    <video 
+      autoplay 
+      loop 
+      muted 
+      playsinline
+      class="absolute inset-0 w-full h-full object-cover"
+    >
+      <source src="../assets/videoplayback.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <div class="hero-overlay bg-black bg-opacity-75 z-10" ></div>
+
+    <div class="relative z-10 text-center text-white">
+      <h1 class="text-5xl md:text-7xl font-bold mb-4">Welcome to Anna University</h1>
+      <p class="text-xl md:text-2xl mb-8">Empowering Minds, Shaping Futures</p>
+      <a href="#about" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full transition-colors">Learn More</a>
+    </div>
+  </section>
 
 
-      <!-- Horizontal Scrollable Image Gallery Section -->
-      <!-- <div class="flex flex-col overflow-hidden items-center bg-base-200 relative">
-        <div class="relative w-full">
-          <div
-            class="flex transition-transform duration-500"
-            :style="{ transform: `translateX(-${currentImageIndex * 100}%)` }"
-            ref="slider"
-          >
-            <div
-              v-for="(image, index) in circularGalleryImages"
-              :key="index"
-              class="flex-none w-full"
-            >
-              <img
-                :src="image"
-                alt="Gallery Image"
-                class="w-full h-full object-cover"
-              />
+
+      <!-- About Section -->
+      <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+          <h2 class="text-3xl font-bold text-center mb-8">About Our Campus</h2>
+          <div class="flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-8 md:mb-0">
+              <img src="../assets/campus.jpg" alt="Campus" class="rounded-lg shadow-lg" />
+            </div>
+            <div class="md:w-1/2 md:pl-8">
+              <p class="text-lg mb-4">
+                The Regional Campus Coimbatore of Anna University, established in 2012, offers world-class education in Engineering and Technology. Nestled in a serene environment away from the city's hustle, our campus boasts state-of-the-art infrastructure and a team of highly qualified faculty members.
+              </p>
+              <p class="text-lg">
+                We are committed to providing hands-on experience to our students, enabling them to master their skills in various disciplines and prepare for the challenges of the future.
+              </p>
             </div>
           </div>
         </div>
-        <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex justify-center space-x-2">
-          <div
-            v-for="(image, index) in galleryImages"
-            :key="index"
-            :class="{
-              'bg-blue-500 border-white': currentImageIndex === index,
-              'bg-gray-400': currentImageIndex !== index,
-            }"
-            @click="scrollToImage(index)"
-            class="w-3 h-3 rounded-full border cursor-pointer grow"
-          ></div>
-        </div>
-      </div> -->
+      </section>
 
-
-      <!-- <div class="flex">
-        <div class="bg-red-500 hover:bg-red-600 transition-colors duration-200 h-20 p-4  hover:cursor-pointer">
-          <a href="/aicte&moe" class="text-white ">
-            AICTE  and MOE Cell
-          </a>
-        </div>
-
-        <div class="bg-orange-400 hover:bg-orange-500 transition-colors duration-200 h-20 p-4  hover:cursor-pointer grow">
-          <a href="https://drive.google.com/file/d/1z8ioKdQN0-fvahtIfneCPJI6i7j-YaFz/view" class="text-white">
-            Mandatary Disclosure
-          </a >
-        </div>
-
-        <div class="bg-yellow-400 hover:bg-yellow-500 transition-colors duration-200 h-20 p-4  hover:cursor-pointer grow">
-          <span class="text-white">
-          <a href="/antiragging" class="text-white ">
-            Antiragging cell
-          </a>
-          </span>
-        </div>
-
-        <div class="bg-green-500 hover:bg-green-600 transition-colors duration-200 h-20 p-4  hover:cursor-pointer grow">
-          <span class="text-white">
-            Anti Drugs
-          </span>
-        </div>
-
-        <div class="bg-blue-500 hover:bg-blue-600 transition-colors duration-200 h-20 p-4  hover:cursor-pointer grow">
-          <span class="text-white">
-            POSH Cell
-          </span>
-        </div>
-
-        <div class="bg-gray-500 hover:bg-gray-600 transition-colors duration-200 h-20 p-4  hover:cursor-pointer grow">
-          <span class="text-white">
-            Differently Abled Persons Cell
-          </span>
-        </div>
-      </div> -->
-
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 p-9 md:p-20" style="font-family: Clash Grotesk;">
-        <div class="col-span-2">
-          <div class="text-3xl font-extrabold flex align-baseline" ><img src="../assets/logo.svg" alt="Logo" class="h-20" /> <p class="text-6xl m-4 ">Anna University</p></div>
-          <p class="text-5xl font-semibold mb-10">Regional Campus Coimbatore</p>
-          <p class="text-2xl text-gray-500 ">
-            The Regional Campus Coimbatore of Anna University was established during 2012. It offers higher education in Engineering and Technology. Located in an Arcadian environment and away from the hustle and bustle crowd of the city. The Regional Campus Coimbatore is equipped with excellent infrastructure and highly qualified members of faculty, who facilitate hands on experience to students to master their skills in various disciplines.
-          </p>
-        </div>
-
-        <section class="lg:w-[40vw]x">
-          <iframe class="lg:w-[40vw] h-[50vh] w-full shadow-xl rounded-xl" src="https://www.youtube.com/embed/gwseTsTb_jE" title="Aerial View of Anna University Regional Campus Coimbatore">
-          </iframe>
-        </section>
-      </div>
-      <div class="bg-yellow-500 text-black py-8">
-        <div class="container mx-auto px-4 flex justify-around">
-          <div class="text-center animate-fade-in">
-            <div class="text-5xl font-bold">800</div>
-            <div>Under Graduates</div>
-          </div>
-          <div class="text-center animate-fade-in">
-            <div class="text-5xl font-bold">216</div>
-            <div>Post Graduates</div>
-          </div>
-          <div class="text-center animate-fade-in">
-            <div class="text-5xl font-bold">5</div>
-            <div>UG Programs</div>
-          </div>
-          <div class="text-center animate-fade-in">
-            <div class="text-5xl font-bold">1</div>
-            <div>PG Programs</div>
-          </div>
-          <div class="text-center animate-fade-in">
-            <div class="text-5xl font-bold">210/124</div>
-            <div>Faculty/Staff</div>
-          </div>
-        </div>
-      </div>
-
-            <!-- Department Section -->
-            <section class="bg-[#f1f1f1] w-full py-12">
+      <!-- Programs Section -->
+      <section id="programs" class="py-16 bg-gray-100">
         <div class="container mx-auto px-4">
-          <h2 class="text-4xl font-bold text-center mb-8 text-[#21209c] animate-fade-in-up">Programs Offered</h2>
+          <h2 class="text-3xl font-bold text-center mb-8">Our Programs</h2>
           <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <router-link to="/departments/cse" class="text-lg bg-[#21209c] p-4 rounded-lg flex items-center space-x-4 transition-transform transform hover:scale-105">
-              <div class="bg-[#fdb827] p-2 rounded-full">
-                <svg class="w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 008 0H3zm0 0a4 4 0 008 0M5 3a2 2 0 100 4 2 2 0 000-4zM12 17a4 4 0 108 0h-8zm0 0a4 4 0 108 0M14 3a2 2 0 100 4 2 2 0 000-4z" />
-                </svg>
-              </div>
-              <div>
-                <h3 class="font-bold text-white">B.E. Computer Science Engg</h3>
-                <p class="text-sm text-gray-300">CSE Department</p>
-              </div>
-            </router-link>
-
-            <div class="text-lg bg-[#21209c] p-4 rounded-lg flex items-center space-x-4 transition-transform transform hover:scale-105">
-              <div class="bg-[#fdb827] p-2 rounded-full">
-                <svg class="w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 008 0H3zm0 0a4 4 0 008 0M5 3a2 2 0 100 4 2 2 0 000-4zM12 17a4 4 0 108 0h-8zm0 0a4 4 0 108 0M14 3a2 2 0 100 4 2 2 0 000-4z" />
-                </svg>
-              </div>
-              <div>
-                <h3 class="font-bold text-white">B.Tech Artificial Intelligence and DataScience</h3>
-                <p class="text-sm text-gray-300">CSE Department</p>
-              </div>
-            </div>
-
-            <div class="text-lg bg-[#21209c] p-4 rounded-lg flex items-center space-x-4 transition-transform transform hover:scale-105">
-              <div class="bg-[#fdb827] p-2 rounded-full">
-                <svg class="w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 008 0H3zm0 0a4 4 0 008 0M5 3a2 2 0 100 4 2 2 0 000-4zM12 17a4 4 0 108 0h-8zm0 0a4 4 0 108 0M14 3a2 2 0 100 4 2 2 0 000-4z" />
-                </svg>
-              </div>
-              <div>
-                <h3 class="font-bold text-white">B.E. Electrical and Electrical Engg</h3>
-                <p class="text-sm text-gray-300">EEE Department</p>
-              </div>
-            </div>
-
-            <div class="text-lg bg-[#21209c] p-4 rounded-lg flex items-center space-x-4 transition-transform transform hover:scale-105">
-              <div class="bg-[#fdb827] p-2 rounded-full">
-                <svg class="w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 008 0H3zm0 0a4 4 0 008 0M5 3a2 2 0 100 4 2 2 0 000-4zM12 17a4 4 0 108 0h-8zm0 0a4 4 0 108 0M14 3a2 2 0 100 4 2 2 0 000-4z" />
-                </svg>
-              </div>
-              <div>
-                <h3 class="font-bold text-white">B.E. Electrical and Electronics Engg</h3>
-                <p class="text-sm text-gray-300">ECE Department</p>
-              </div>
-            </div>
-
-            <div class="text-lg bg-[#21209c] p-4 rounded-lg flex items-center space-x-4 transition-transform transform hover:scale-105">
-              <div class="bg-[#fdb827] p-2 rounded-full">
-                <svg class="w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 008 0H3zm0 0a4 4 0 008 0M5 3a2 2 0 100 4 2 2 0 000-4zM12 17a4 4 0 108 0h-8zm0 0a4 4 0 108 0M14 3a2 2 0 100 4 2 2 0 000-4z" />
-                </svg>
-              </div>
-              <div>
-                <h3 class="font-bold text-white">B.E. Mechanical Engg</h3>
-                <p class="text-sm text-gray-300">Mechanical Department</p>
-              </div>
-            </div>
-
-            <div class="text-lg bg-[#fdb827] p-4 rounded-lg flex items-center space-x-4 transition-transform transform hover:scale-105">
-              <div class="bg-[#21209c] p-2 rounded-full">
-                <svg class="w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 008 0H3zm0 0a4 4 0 008 0M5 3a2 2 0 100 4 2 2 0 000-4zM12 17a4 4 0 108 0h-8zm0 0a4 4 0 108 0M14 3a2 2 0 100 4 2 2 0 000-4z" />
-                </svg>
-              </div>
-              <div>
-                <h3 class="font-bold text-[#23120b]">MBA</h3>
-                <p class="text-sm text-gray-700">Masters</p>
+            <div v-for="program in programs" :key="program.name" class="bg-white rounded-lg shadow-md overflow-hidden transition-transform transform hover:scale-105">
+              <img :src="program.image" :alt="program.name" class="w-full h-48 object-cover" />
+              <div class="p-6">
+                <h3 class="text-xl font-bold mb-2">{{ program.name }}</h3>
+                <p class="text-gray-600">{{ program.description }}</p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="flex flex-col gap-4 py-8">
-        <h2 class="text-4xl font-bold text-center">Innovating the Industries</h2>
-        <div class="grid grid-cols-3 gap-4 items-center justify-space-around">
-          <a href="https://www.tcs.com" class="h-[12vh] p-4 flex flex-col items-center justify-center">
-            <figure><img alt="TCS" src="../assets/tcs.webp" class="w-[20vw] lg:w-[10vw]" /></figure>
-          </a>
-          <a href="https://www.avasoft.com" class="h-[12vh] p-4 flex flex-col items-center justify-center">
-            <figure><img alt="Avasoft" src="../assets/avasoft.webp" class="w-[20vw] lg:w-[10vw]" /></figure>
-          </a>
-          <a href="https://www.guvi.in" class="h-[12vh] p-4 flex flex-col items-center justify-center">
-            <figure><img alt="Guvi" src="../assets/guvi.webp" class="w-[20vw] lg:w-[10vw]" /></figure>
-          </a>
-          <a href="https://www.gighz.net" class="h-[12vh] p-4 flex flex-col items-center justify-center">
-            <figure><img alt="GigHz" src="../assets/gighz.webp" class="w-[20vw] lg:w-[10vw]" /></figure>
-          </a>
-          <a href="https://www.saptanglabs.com" class="h-[12vh] p-4 flex flex-col items-center justify-center">
-            <figure><img alt="Saptang Labs" src="../assets/saptan-labs.webp" class="w-[20vw] lg:w-[10vw]" /></figure>
-          </a>
-          <a href="https://home.barclays/" class="h-[12vh] p-4 flex flex-col items-center justify-center">
-            <figure><img alt="Barclays" src="../assets/barclays.webp" class="w-[20vw] lg:w-[10vw]" /></figure>
-          </a>
-          <a href="https://www.e-consystems.com" class="h-[12vh] p-4 flex flex-col items-center justify-center">
-            <figure><img alt="e-con Systems" src="../assets/e-con.webp" class="w-[20vw] lg:w-[10vw]" /></figure>
-          </a>
-          <a href="https://www.azentio.com" class="h-[12vh] p-4 flex flex-col items-center justify-center">
-            <figure><img alt="Azentio" src="../assets/azentio.webp" class="w-[20vw] lg:w-[10vw]" /></figure>
-          </a>
-          <a href="https://www.dummy.com" class="h-[12vh] p-4 flex flex-col items-center justify-center">
-            <figure><img alt="Dummy" src="../assets/texmo.webp" class="w-[20vw] lg:w-[10vw]" /></figure>
-          </a>
-        </div>
-      </section>
-
-      <div class="grid grid-cols-2">
-        <div class="bg-[#f1f1f1] p-6 rounded-lg w-full m-5 col-span-1 ">
-          <h2 class="font-bold text-center text-[#23120b] font-extrabold text-xl mb-6">NOTIFICATIONS:</h2>
-          <div class="overflow-hidden relative h-80">
-            <div class="absolute top-0 left-0 right-0 animate-move-vertically hover:pause-animation space-y-4 ">
-              <div
-                v-for="(event, index) in events"
-                :key="index"
-                class="p-4 bg-white  backdrop-blur-md border border-gray-200 rounded-lg shadow-lg transition-transform transform hover:scale-105">
-                <h3 class="font-bold text-lg text-[#21209c]">{{ event.title }}</h3>
-                <p class="text-sm text-[#23120b]">{{ event.date }}</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="bg-[#f1f1f1] p-6 rounded-lg w-full m-5 col-span-1">
-          <h2 class="font-bold text-center text-[#23120b] font-extrabold text-xl mb-6">ANNOUNCEMENTS:</h2>
-          <div class="overflow-hidden relative h-80">
-            <div class="absolute top-0 left-0 right-0 animate-move-vertically hover:pause-animation space-y-4 ">
-              <div
-                v-for="(event, index) in events"
-                :key="index"
-                class="p-4 bg-white  backdrop-blur-md border border-gray-200 rounded-lg shadow-lg transition-transform transform hover:scale-105">
-                <h3 class="font-bold text-lg text-[#21209c]">{{ event.title }}</h3>
-                <p class="text-sm text-[#23120b]">{{ event.date }}</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-      
-
-      <!-- From the Dean's Desk section -->
-      <section class="bg-base-100 border-t-4 border-yellow-300 w-full py-12">
+      <!-- Testimonials Section -->
+      <section id="testimonials" class="py-16 bg-blue-800 text-white">
         <div class="container mx-auto px-4">
-          <h2 class="text-4xl font-bold text-center mb-8 text-blue-800 animate-fade-in-up">From the Dean's Desk</h2>
-          <p class="text-lg text-center mb-8 text-black animate-fade-in-up">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi perspiciatis mollitia qui dolorum, rerum hic asperiores quibusdam repellendus sit repudiandae ipsa? Modi aliquam laboriosam mollitia laudantium nostrum, quae excepturi dolore voluptates. Qui dolorum voluptatum omnis itaque necessitatibus cum in, ea quae expedita beatae doloribus saepe. Provident velit pariatur eos! Aliquam distinctio dolorum, officia aut dolore modi nostrum excepturi? Totam maxime quis suscipit sunt earum corporis dolorum ipsa quidem saepe, nihil possimus consectetur corrupti atque molestias quam alias, nam quibusdam repudiandae quia magnam eligendi nemo aspernatur? Repudiandae, dolore unde architecto quisquam provident dolor fugiat adipisci eaque.
-          </p>
-          <div class="flex justify-center">
-            <figure class="animate-fade-in-up">
-              <img src="../assets/1.jpg" alt="Dean's Image" class="w-64 rounded-lg border border-black" />
-            </figure>
+          <h2 class="text-3xl font-bold text-center mb-8">Student Testimonials</h2>
+          <div class="flex flex-wrap justify-center">
+            <div v-for="testimonial in testimonials" :key="testimonial.name" class="w-full md:w-1/3 p-4">
+              <div class="bg-white text-blue-800 rounded-lg p-6 h-full flex flex-col">
+                <p class="text-lg italic mb-4">"{{ testimonial.quote }}"</p>
+                <div class="mt-auto flex items-center">
+                  <img :src="testimonial.avatar" :alt="testimonial.name" class="w-12 h-12 rounded-full mr-4" />
+                  <div>
+                    <p class="font-bold">{{ testimonial.name }}</p>
+                    <p class="text-sm text-blue-600">{{ testimonial.program }}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+          <h2 class="text-3xl font-bold text-center mb-8">Contact Us</h2>
+          <div class="flex flex-col md:flex-row justify-between">
+            <div class="md:w-1/2 mb-8 md:mb-0">
+              <form @submit.prevent="submitForm" class="space-y-4">
+                <input v-model="form.name" type="text" placeholder="Your Name" class="w-full p-2 border rounded" required>
+                <input v-model="form.email" type="email" placeholder="Your Email" class="w-full p-2 border rounded" required>
+                <textarea v-model="form.message" placeholder="Your Message" class="w-full p-2 border rounded" rows="4" required></textarea>
+                <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition-colors">Send Message</button>
+              </form>
+            </div>
+            <div class="md:w-1/2 md:pl-8">
+              <h3 class="text-xl font-bold mb-4">Our Location</h3>
+              <p class="mb-4">1234 University Drive, Coimbatore, Tamil Nadu 641046, India</p>
+            </div>
           </div>
         </div>
       </section>
     </main>
+
+
   </div>
 </template>
+
 <script>
 export default {
   data() {
     return {
-      galleryImages: [
-        'http://localhost:5173/src/assets/pic1.webp ',
-        'http://localhost:5173/src/assets/homeview.webp',
-        'http://localhost:5173/src/assets/1.webp',
-        'http://localhost:5173/src/assets/4.webp',
-        'http://localhost:5173/src/assets/ece1.webp',
-        'http://localhost:5173/src/assets/homeview.webp'
+      menuItems: ['About', 'Programs', 'Testimonials', 'Contact'],
+      mobileMenuOpen: false,
+      programs: [
+        { name: 'Computer Science Engineering', image: '../assets/cse.jpg', description: 'Learn cutting-edge technologies and software development.' },
+        { name: 'Electrical Engineering', image: '../assets/ee.jpg', description: 'Explore power systems, control, and electrical machines.' },
+        { name: 'Mechanical Engineering', image: '../assets/me.jpg', description: 'Study mechanics, thermodynamics, and manufacturing processes.' },
       ],
-      currentImageIndex: 1,
-      circularGalleryImages: [],
-      events: [
-        { title: 'Event 1', date: '2024-05-25' },
-        { title: 'Event 2', date: '2024-06-10' },
-        { title: 'Event 3', date: '2024-07-04' },
-        // Add more events as needed
+      testimonials: [
+        { name: 'John Doe', avatar: '../assets/student1.jpg', quote: 'My experience at Anna University has been transformative. The faculty and resources here are world-class.', program: 'CSE - 2022' },
+        { name: 'Jane Smith', avatar: '../assets/student2.jpg', quote: 'The practical approach to learning at Anna University prepared me well for my career in the industry.', program: 'EE - 2021' },
+        { name: 'Mike Johnson', avatar: '../assets/student3.jpg', quote: 'The collaborative environment and state-of-the-art facilities make Anna University a great place to study.', program: 'ME - 2023' },
       ],
+      form: {
+        name: '',
+        email: '',
+        message: '',
+      },
     };
   },
   methods: {
-    startAutoScroll() {
-      this.scrollInterval = setInterval(this.nextImage, 5000);
+    toggleMobileMenu() {
+      this.mobileMenuOpen = !this.mobileMenuOpen;
     },
-    stopAutoScroll() {
-      clearInterval(this.scrollInterval);
+    submitForm() {
+      // Handle form submission logic here
+      console.log('Form submitted:', this.form);
+      // Reset form fields
+      this.form = { name: '', email: '', message: '' };
+      // Show a success message or perform other actions
     },
-    nextImage() {
-      if (this.currentImageIndex < this.galleryImages.length) {
-        this.currentImageIndex++;
-      } else {
-        this.currentImageIndex = 1;
-      }
-    },
-    scrollToImage(index) {
-      this.currentImageIndex = index;
-    },
-    createCircularImages() {
-      this.circularGalleryImages = [
-        this.galleryImages[this.galleryImages.length - 1],
-        ...this.galleryImages,
-        this.galleryImages[0]
-      ];
-    }
   },
-  mounted() {
-    this.createCircularImages();
-    this.startAutoScroll();
-  },
-  beforeDestroy() {
-    this.stopAutoScroll();
-  }
 };
-
 </script>
 
 <style scoped>
-@keyframes move-vertically {
-  0% {
-    transform: translateY(100%);
-  }
-  100% {
-    transform: translateY(-100%);
-  }
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
 }
-.animate-move-vertically {
-  animation: move-vertically 10s linear infinite;
+
+.hero {
+  position: relative;
+  height: 100vh;
+  width: 100%;
 }
-.hover\:pause-animation:hover {
-  animation-play-state: paused;
+
+.aspect-w-16 {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
 }
+
+.aspect-h-9 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+/* Add any additional custom styles here */
 </style>
-
-
