@@ -1558,6 +1558,20 @@
 				}
 			  ]
 			},
+			"admin_staff":[
+				{
+                "name": "Dr Gobalakrishnan V",
+                "position": "Executive Assistant ",
+                "email": "gobalakrishnanannauniversity@gmail.com",
+                "education": [
+                    {
+                        "degree": " ",
+                        "institution": " ",
+                        "year":"" 
+                    }
+						]
+                }
+			],
 		"contact": "mbadepartment@aurcc.ac.in"
 		},
 	  
@@ -1575,69 +1589,59 @@
                 " To enable Industries to adopt effective solutions in thrust areas of electrical engineering through research and consultancy.",
                 " To be a place for innovation and technology development in growing areas of Electrical and Electronics Engineering."
                 ],
-        "events": {
-                      "conferences_workshops_fdp": {
-                        "total": 16,
-                        "papers_presented_students": {
-                          "state_level": 0,
-                          "national_level": 250,
-                          "international_level": 0
-                        },
-                        "papers_presented_staff": {
-                          "state_level": 0,
-                          "national_level": 180,
-                          "international_level": 0
-                        }
-                      },
-                      "programs_conducted": [
-                        {
-                          "name": "Two day workshop on 'Genetic Algorithm and PSO: Hands On Training Using MATLAB'",
-                          "duration_event_date": "27/09/12 & 28/09/12",
-                          "sponsoring_agency": "Registeration"
-                        },
-                        {
-                          "name": "Two day workshop on 'Genetic Algorithm and PSO: Hands On Training Using MATLAB'",
-                          "duration_event_date": "18/10/12 & 19/10/12",
-                          "sponsoring_agency": "Registeration"
-                        },
-                        {
-                          "name": "Two day workshop on 'PSO And Its Variants: Concepts And Basic Implementation In MATLAB'",
-                          "duration_event_date": "23/11/12 & 24/11/12",
-                          "sponsoring_agency": "Registeration"
-                        },
-                        {
-                          "name": "Two day workshop on 'MATLAB Based Training And Simulation On Supervised Learning Neural Networks And Differential Evolution Algorithm'",
-                          "duration_event_date": "20/12/12 & 21/12/12",
-                          "sponsoring_agency": "Registeration"
-                        },
-                        {
-                          "name": "Two day workshop on 'PSO And Its Variants: Concepts And Basic Implementation In MATLAB'",
-                          "duration_event_date": "21/02/13 & 22/02/13",
-                          "sponsoring_agency": "Registeration"
-                        },
-                        {
-                          "name": "FDP on 'Control System'",
-                          "duration_event_date": "17/12/13 to 23/12/13",
-                          "sponsoring_agency": "Centre for Faculty Development,Anna University Chennai."
-                        },
-                        {
-                          "name": "FDP on 'Special Electrical Machines'",
-                          "duration_event_date": "10/06/13 to 16/06/13",
-                          "sponsoring_agency": "Centre for Faculty Development,Anna University Chennai."
-                        },
-                        {
-                          "name": "National conference on 'Intelligent Computing And Control For Engineering Applications'",
-                          "duration_event_date": "27/03/13 & 28/03/13",
-                          "sponsoring_agency": "DRDO"
-                        },
-                        {
-                          "name": "National Seminar On 'Energy Conservation And Management'",
-                          "duration_event_date": "23/01/14",
-                          "sponsoring_agency": "PCRA,Govt of India"
-                        }
-                      ]
-                    }
-                  ,
+        "events": [
+			{
+			  "name": "One Day Workshop on “Machine Learning Neural Network Models for Data Science and Analytics”",
+			  "description": "Workshop",
+			  "date": "September 30, 2019"
+			},
+			{
+			  "name": "Embedded System in industrial Automation",
+			  "description": "Guest Lecture",
+			  "date": "September 13, 2022"
+			},
+			{
+			  "name": "Electricity Generation, Transmission & Distribution, Smart Grid, Power System Protection, AT& C Losses & Motivation",
+			  "description": "Guest Lecture",
+			  "date": "October 28, 2022"
+			},
+			{
+			  "name": "“EKNA'22 National Level Techno Cultural Fest”",
+			  "description": "Symposium",
+			  "date": "November 4, 2022"
+			},
+			{
+			  "name": "Design Thinking for Engineering Students",
+			  "description": "Guest Lecture",
+			  "date": "April 24, 2023"
+			},
+			{
+			  "name": "Transmission and Distribution for IInd Year",
+			  "description": "Guest Lecture",
+			  "date": "May 15, 2023"
+			},
+			{
+			  "name": "Advancements in Computing Methodologies - NCACM'23",
+			  "description": "Conference",
+			  "date": "May 22, 2023"
+			},
+			{
+			  "name": "Hands on Training in Control Systems Design using MATLAB",
+			  "description": "Hands on Training",
+			  "date": "August 31 - September 01, 2023"
+			},
+			{
+			  "name": "GUEST LECTURE ON “ROLE OF ELECTRICAL ENGINEERS - GLOBAL PRESPECTIVE”",
+			  "description": "Guest Lecture",
+			  "date": "August 22, 2023"
+			},
+			{
+			  "name": "National level Symposium ”EKNA’23",
+			  "description": "Symposium",
+			  "date": "November 7, 2023"
+			}
+		  ]
+         ,
         "placements"  :  {
                     "companies_visited": [
                       "Tamilnadu Electricity Generation and Distribution Corporation",
@@ -2547,7 +2551,58 @@
 				}
 				
 			]
-		},       
+		},
+		"admin_staff": [
+			{
+				"name": "Mrs. L. Thamaraiselvi",
+				"position": "Executive Assistant",
+				"email": "not provided",
+				"education": [
+					{
+						"degree": "not provided",
+						"institution": "not provided",
+						"year": "not provided"
+					}
+				]
+			},
+			{
+				"name": "Mr. K. M. Elavarasan",
+				"position": "Lab Technician",
+				"email": "not provided",
+				"education": [
+					{
+						"degree": "not provided",
+						"institution": "not provided",
+						"year": "not provided"
+					}
+				]
+			},
+			{
+				"name": "Mr. S. Boopathyrajasekar",
+				"position": "Professional Assistant ",
+				"email": "not provided",
+				"education": [
+					{
+						"degree": "not provided",
+						"institution": "not provided",
+						"year": "not provided"
+					}
+				]
+			},
+			{
+				"name": "Mr. S. Ravikumar",
+				"position": "Office Assistant",
+				"email": "not provided",
+				"education": [
+					{
+						"degree": "not provided",
+						"institution": "not provided",
+						"year": "not provided"
+					}
+				]
+			}
+		],
+			 
         "scope":[
                 "The Department aims to impart the Students a learning Experience in understanding the fundamental concepts of Electrical & Electronics Engineering built on the Foundation of Science, Mathematics, Computing and Technology by active learning process with dedicated faculty members and extensive laboratory facilities so as to prepare them for their Professional Careers.",
                 " It also prepares the students to meet the growing global challenges of Engineering Industries by educating them to become highly professional Electrical and Electronics Engineers of high ethics. The Department produces highly qualified Engineers not only to meet the Global environment but also to build a developed nation."
