@@ -84,27 +84,6 @@
           </div>
         </div>
       </section>
-
-      <!-- Contact Section -->
-      <section id="contact" class="py-16 bg-white">
-        <div class="container mx-auto px-4">
-          <h2 class="text-3xl font-bold text-center mb-8">Contact Us</h2>
-          <div class="flex flex-col md:flex-row justify-between">
-            <div class="md:w-1/2 mb-8 md:mb-0">
-              <form @submit.prevent="submitForm" class="space-y-4">
-                <input v-model="form.name" type="text" placeholder="Your Name" class="w-full p-2 border rounded" required>
-                <input v-model="form.email" type="email" placeholder="Your Email" class="w-full p-2 border rounded" required>
-                <textarea v-model="form.message" placeholder="Your Message" class="w-full p-2 border rounded" rows="4" required></textarea>
-                <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition-colors">Send Message</button>
-              </form>
-            </div>
-            <div class="md:w-1/2 md:pl-8">
-              <h3 class="text-xl font-bold mb-4">Our Location</h3>
-              <p class="mb-4">1234 University Drive, Coimbatore, Tamil Nadu 641046, India</p>
-            </div>
-          </div>
-        </div>
-      </section>
     </main>
 
 
