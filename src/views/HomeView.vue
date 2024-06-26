@@ -65,7 +65,29 @@
       </section>
 
       <!-- Testimonials Section -->
-      <section id="testimonials" class="py-16 bg-blue-800 text-white">
+      <div class="max-w-4xl mx-auto p-8">
+    <div class="carousel w-full rounded-box shadow-lg">
+      <div v-for="(testimonial, index) in testimonials" :key="index" class="carousel-item w-full" :class="{'hidden': currentIndex !== index}">
+        <div class="card bg-white shadow-xl">
+          <div class="card-body">
+            <div class="flex flex-col md:flex-row items-center">
+              <img :src="testimonial.image" alt="Student Image" class="w-24 h-24 rounded-full object-cover mr-4">
+              <div>
+                <h2 class="card-title text-xl">{{ testimonial.name }}</h2>
+                <p class="text-gray-600">{{ testimonial.branch }}, {{ testimonial.batch }}</p>
+                <p class="text-gray-600">{{ testimonial.company }}</p>
+                <p class="mt-2">{{ testimonial.message }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex justify-center mt-4">
+      <button class="btn btn-xs btn-circle mx-1" v-for="(dot, index) in testimonials.length" :key="index" :class="{'btn-active': index === currentIndex}" @click="goToSlide(index)"></button>
+    </div>
+  </div>
+      <!-- <section id="testimonials" class="py-16 bg-blue-800 text-white">
         <div class="container mx-auto px-4">
           <h2 class="text-3xl font-bold text-center mb-8">Student Testimonials</h2>
           <div class="flex flex-wrap justify-center">
@@ -83,7 +105,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
     </main>
 
 
@@ -111,19 +133,35 @@ export default {
         email: '',
         message: '',
       },
+      testimonials: [
+        {
+          name: 'Adithya M',
+          branch: 'EEE',
+          batch: '2015 Batch',
+          company: 'SIEMENS',
+          message: 'I am truly proud to have graduated from Sri Eshwar, where I was provided with exceptional opportunities that enabled me to excel in every aspect, including my salary, leading to my employment at Siemens, Bangalore.',
+          image: "../assests/pic1.webp", // add your image in assets folder
+        },
+        {
+          name: 'Pathi',
+          branch: 'EEE',
+          batch: '2015 Batch',
+          company: 'SIEMENS',
+          message: 'I am truly proud to have graduated from Sri Eshwar, where I was provided with exceptional opportunities that enabled me to excel in every aspect, including my salary, leading to my employment at Siemens, Bangalore.',
+          image: "../assests/pic1.webp", // add your image in assets folder
+        },
+        // Add more testimonials as needed
+      ],
+      currentIndex: 0,
     };
   },
   methods: {
     toggleMobileMenu() {
       this.mobileMenuOpen = !this.mobileMenuOpen;
     },
-    submitForm() {
-      // Handle form submission logic here
-      console.log('Form submitted:', this.form);
-      // Reset form fields
-      this.form = { name: '', email: '', message: '' };
-      // Show a success message or perform other actions
-    },
+    goToSlide(index) {
+      this.currentIndex = index;
+    }
   },
 };
 </script>
