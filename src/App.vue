@@ -3,7 +3,7 @@ import { RouterLink, RouterView } from 'vue-router';
 </script>
 
 <template>
-  <header class="bg-[#21209c] text-white">
+  <header class="bg-[#21209c] text-white ">
     <div class=" bg-rose-600">
       <div  class="container mx-auto px-4 text-sm" style="font-family: 'Clash Grotesk', sans-serif;">
         <div class="flex items-center justify-between">
@@ -14,7 +14,7 @@ import { RouterLink, RouterView } from 'vue-router';
                 Life@aurcc
               </button>
               <ul
-                class="absolute left-0 mt-2 w-48 bg-white shadow-lg transition-all duration-300 opacity-0 invisible group-hover:visible group-hover:opacity-100"
+                class="absolute z-20 left-0 mt-2 w-48 bg-white shadow-lg transition-all duration-300 opacity-0 invisible group-hover:visible group-hover:opacity-100"
               >
                 <li><a href="/sports" class="block px-4 py-2 transition-all duration-300 ease-in-out text-black hover:text-white">Sports</a></li>
                 <li><a href="/nss" class="block px-4 py-2 transition-all duration-300 ease-in-out text-black hover:text-white">NSS</a></li>
@@ -32,6 +32,7 @@ import { RouterLink, RouterView } from 'vue-router';
       </div>
 
     </div>
+    
     <div class="sticky top-0 container mx-auto px-4 py-4">
       <nav class="flex items-center justify-between" style="font-family: 'Clash Grotesk', sans-serif;" >
         <div class="flex items-center">
@@ -48,7 +49,7 @@ import { RouterLink, RouterView } from 'vue-router';
                 Administration
               </button>
               <ul
-                class="absolute left-0 mt-2 w-48 bg-white  shadow-lg  p-0 transition-all duration-300 opacity-0 invisible group-hover:visible group-hover:opacity-100 text-black"
+                class="absolute z-20 left-0 mt-2 w-48 bg-white  shadow-lg  p-0 transition-all duration-300 opacity-0 invisible group-hover:visible group-hover:opacity-100 text-black"
               >
                 <li><a href="" class="block px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-300 ease-in-out">Regional campus</a></li>
                 <li><a href="" class="block px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-300 ease-in-out">Administrative staff</a></li>
@@ -60,7 +61,7 @@ import { RouterLink, RouterView } from 'vue-router';
                 Academics
               </button>
               <ul
-                class="absolute left-0 mt-2 w-48 bg-white  shadow-lg  p-0 transition-all duration-300 opacity-0 invisible group-hover:visible group-hover:opacity-100 text-black"
+                class="absolute z-20 left-0 mt-2 w-48 bg-white  shadow-lg  p-0 transition-all duration-300 opacity-0 invisible group-hover:visible group-hover:opacity-100 text-black"
               >
                 <li><a href="/academics/Programs-Offered" class="block px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-300 ease-in-out">Programs Offered</a></li>
                 <li><a href="/academics/Curriculum-&-Syllabus" class="block px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-300 ease-in-out">Curriculum & Syllabus</a></li>
@@ -73,7 +74,7 @@ import { RouterLink, RouterView } from 'vue-router';
                 Departments
               </button>
               <ul
-                class="absolute left-0 mt-2 w-48 bg-white text-black shadow-lg  opacity-0 invisible group-hover:visible group-hover:opacity-100"
+                class="absolute z-20 left-0 mt-2 w-48 bg-white text-black shadow-lg  opacity-0 invisible group-hover:visible group-hover:opacity-100"
               >
                 <li><a href="/departments/cse" class="block px-4 py-2 hover:bg-blue-800  hover:text-white transition-all duration-300 ease-in-out">Computer Science Engg</a></li>
                 <li><a href="/departments/eee" class="block px-4 py-2 hover:bg-blue-800  hover:text-white transition-all duration-300 ease-in-out">Electrical and Electronics Engg</a></li>
@@ -90,7 +91,7 @@ import { RouterLink, RouterView } from 'vue-router';
                 Offices
               </button>
               <ul
-                class="absolute left-0 mt-2 w-48 bg-white shadow-lg transition-all duration-300 opacity-0 invisible group-hover:visible group-hover:opacity-100"
+                class="absolute z-20 left-0 mt-2 w-48 bg-white shadow-lg transition-all duration-300 opacity-0 invisible group-hover:visible group-hover:opacity-100"
               >
                 <li><a href="/admission" class="block px-4 py-2 hover:bg-blue-800 transition-all duration-300 ease-in-out text-black hover:text-white">Admission</a></li>
                 <li><a href="/dgate" class="block px-4 py-2 hover:bg-blue-800 transition-all duration-300 ease-in-out text-black hover:text-white">DGATE Cell</a></li>
