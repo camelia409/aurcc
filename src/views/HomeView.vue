@@ -100,7 +100,7 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
               </svg>
             </div>
-            <div class="flex">
+            <div class=" flex gap-8">
               <div v-for="(image, index) in galleryImages" :key="index" class="flex-shrink-0 w-full transition-transform transform" :style="{ transform: `translateX(-${currentImageIndex * 100}%)` }">
                 <div class="relative group">
                   <img :src="image.src" :alt="image.alt" class="w-full h-48 object-cover rounded-lg shadow-md" />
