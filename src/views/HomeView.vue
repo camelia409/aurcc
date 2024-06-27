@@ -48,6 +48,31 @@
         </div>
       </section>
 
+            <!-- Dean's Message Section -->
+            <section id="deans-message" class="py-24 bg-gradient-to-r from-indigo-500 to-purple-600 text-white">
+        <div class="container mx-auto px-6">
+          <h2 class="text-4xl font-bold text-center mb-12">Message from the Dean</h2>
+          <div class="flex flex-col md:flex-row items-center bg-white bg-opacity-10 rounded-lg shadow-xl overflow-hidden backdrop-filter backdrop-blur-lg">
+            <div class="md:w-1/3">
+              <img src="../assets/dean.jpg" alt="Dean's Photo" class="w-full h-full object-cover" />
+            </div>
+            <div class="md:w-2/3 p-8">
+              <h3 class="text-2xl font-semibold mb-4">Prof. Samantha Johnson</h3>
+              <p class="text-indigo-200 mb-6 italic">"Empowering the next generation of innovators and leaders."</p>
+              <p class="mb-4">
+                Welcome to Anna University! Our institution stands at the forefront of technological education and research. We are committed to nurturing not just skilled professionals, but visionary leaders who will shape the future of our society.
+              </p>
+              <p class="mb-4">
+                Our world-class faculty, cutting-edge facilities, and industry partnerships provide an unparalleled learning environment. We encourage our students to push boundaries, think critically, and innovate fearlessly.
+              </p>
+              <p>
+                Join us in this exciting journey of discovery and growth. Together, let's build a brighter, more sustainable future through the power of education and technology.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- Programs Section -->
       <section id="programs" class="py-16 bg-gray-100">
         <div class="container mx-auto px-4">
@@ -64,56 +89,63 @@
         </div>
       </section>
 
-      <!-- Testimonials Section -->
-      <div class="max-w-4xl mx-auto p-8">
-    <div class="relative w-full rounded-box shadow-lg overflow-hidden">
-      <div class="carousel w-full flex transition-transform duration-500" :style="{ transform: `translateX(-${currentIndex * 100}%)` }">
-        <div v-for="(testimonial, index) in testimonials" :key="index" class="carousel-item w-full flex-shrink-0">
-          <div class="card bg-white shadow-xl">
-            <div class="card-body">
-              <div class="flex flex-col md:flex-row items-center">
-                <img :src="testimonial.image" alt="Student Image" class="w-24 h-24 rounded-full object-cover mr-4">
-                <div>
-                  <h2 class="card-title text-xl">{{ testimonial.name }}</h2>
-                  <p class="text-gray-600">{{ testimonial.branch }}, {{ testimonial.batch }}</p>
-                  <p class="text-gray-600">{{ testimonial.company }}</p>
-                  <p class="mt-2">{{ testimonial.message }}</p>
-                </div>
+      <!-- Gallery Section -->
+      <section id="gallery" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+          <h2 class="text-3xl font-bold text-center mb-8 text-[#21209c]">Gallery of Memories IG</h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div v-for="image in galleryImages" :key="image.src" class="relative group">
+              <img :src="image.src" :alt="image.alt" class="w-full h-48 object-cover rounded-lg shadow-md transition-transform transform group-hover:scale-105" />
+              <div class="absolute inset-0 bg-rose-600 bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                <p class="text-white text-center px-4">{{ image.description }}</p>
               </div>
+              <button class="absolute left-2 top-1/2 transform -translate-y-1/2 bg-[#21209c] text-white p-2 rounded-full focus:outline-none transition-colors group-hover:bg-[#fdb827]">&lt;</button>
+              <button class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-[#21209c] text-white p-2 rounded-full focus:outline-none transition-colors group-hover:bg-[#fdb827]">&gt;</button>
             </div>
           </div>
         </div>
-      </div>
-      <button @click="prevSlide" class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-600 bg-opacity-50 text-white p-2 rounded-full focus:outline-none">
-        &lt;
-      </button>
-      <button @click="nextSlide" class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-600 bg-opacity-50 text-white p-2 rounded-full focus:outline-none">
-        &gt;
-      </button>
-    </div>
-    <div class="flex justify-center mt-4">
-      <button class="btn btn-xs btn-circle mx-1" v-for="(dot, index) in testimonials.length" :key="index" :class="{'btn-active': index === currentIndex}" @click="goToSlide(index)"></button>
-    </div>
-  </div>
-      <!-- <section id="testimonials" class="py-16 bg-blue-800 text-white">
-        <div class="container mx-auto px-4">
-          <h2 class="text-3xl font-bold text-center mb-8">Student Testimonials</h2>
-          <div class="flex flex-wrap justify-center">
-            <div v-for="testimonial in testimonials" :key="testimonial.name" class="w-full md:w-1/3 p-4">
-              <div class="bg-white text-blue-800 rounded-lg p-6 h-full flex flex-col">
-                <p class="text-lg italic mb-4">"{{ testimonial.quote }}"</p>
-                <div class="mt-auto flex items-center">
-                  <img :src="testimonial.avatar" :alt="testimonial.name" class="w-12 h-12 rounded-full mr-4" />
-                  <div>
-                    <p class="font-bold">{{ testimonial.name }}</p>
-                    <p class="text-sm text-blue-600">{{ testimonial.program }}</p>
+      </section>
+
+      <!-- Testimonials Section -->
+      <section id="testimonials" class="py-24 bg-indigo-100">
+        <div class="container mx-auto px-6">
+          <h2 class="text-4xl font-bold text-center mb-12 text-indigo-800">Voices of Success</h2>
+          <div class="relative">
+            <div class="overflow-hidden">
+              <div class="flex transition-transform duration-500 ease-in-out" :style="{ transform: `translateX(-${currentIndex * 100}%)` }">
+                <div v-for="(testimonial, index) in testimonials" :key="index" class="w-full flex-shrink-0 px-4">
+                  <div class="bg-white text-gray-800 rounded-lg p-8 shadow-xl">
+                    <p class="text-xl italic mb-6">"{{ testimonial.message }}"</p>
+                    <div class="flex items-center">
+                      <img :src="testimonial.image" :alt="testimonial.name" class="w-16 h-16 rounded-full object-cover mr-4" />
+                      <div>
+                        <p class="font-bold text-lg">{{ testimonial.name }}</p>
+                        <p class="text-indigo-600">{{ testimonial.branch }}, {{ testimonial.batch }}</p>
+                        <p class="text-sm text-gray-600">{{ testimonial.company }}</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
+            <button @click="prevSlide" class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-indigo-600 text-white p-3 rounded-full focus:outline-none hover:bg-indigo-700 transition-colors">
+              &lt;
+            </button>
+            <button @click="nextSlide" class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-indigo-600 text-white p-3 rounded-full focus:outline-none hover:bg-indigo-700 transition-colors">
+              &gt;
+            </button>
+          </div>
+          <div class="flex justify-center mt-8">
+            <button 
+              v-for="(dot, index) in testimonials.length" 
+              :key="index" 
+              @click="goToSlide(index)" 
+              class="w-3 h-3 rounded-full mx-1 focus:outline-none transition-colors"
+              :class="index === currentIndex ? 'bg-indigo-600' : 'bg-indigo-300'"
+            ></button>
           </div>
         </div>
-      </section> -->
+      </section>
     </main>
 
 
@@ -131,11 +163,6 @@ export default {
         { name: 'Electrical Engineering', image: '../assets/ee.jpg', description: 'Explore power systems, control, and electrical machines.' },
         { name: 'Mechanical Engineering', image: '../assets/me.jpg', description: 'Study mechanics, thermodynamics, and manufacturing processes.' },
       ],
-      testimonials: [
-        { name: 'John Doe', avatar: '../assets/student1.jpg', quote: 'My experience at Anna University has been transformative. The faculty and resources here are world-class.', program: 'CSE - 2022' },
-        { name: 'Jane Smith', avatar: '../assets/student2.jpg', quote: 'The practical approach to learning at Anna University prepared me well for my career in the industry.', program: 'EE - 2021' },
-        { name: 'Mike Johnson', avatar: '../assets/student3.jpg', quote: 'The collaborative environment and state-of-the-art facilities make Anna University a great place to study.', program: 'ME - 2023' },
-      ],
       form: {
         name: '',
         email: '',
@@ -147,20 +174,32 @@ export default {
           branch: 'EEE',
           batch: '2015 Batch',
           company: 'SIEMENS',
-          message: 'I am truly proud to have graduated from Sri Eshwar, where I was provided with exceptional opportunities that enabled me to excel in every aspect, including my salary, leading to my employment at Siemens, Bangalore.',
-          image: "../assests/pic1.webp", // add your image in assets folder
+          message: 'I am truly proud to have graduated from Anna University. The exceptional opportunities provided here enabled me to excel in every aspect, leading to my employment at Siemens, Bangalore.',
+          image: "../assets/pic1.webp",
         },
         {
-          name: 'Pathi',
-          branch: 'EEE',
-          batch: '2015 Batch',
-          company: 'SIEMENS',
-          message: 'I am truly proud to have graduated from Sri Eshwar, where I was provided with exceptional opportunities that enabled me to excel in every aspect, including my salary, leading to my employment at Siemens, Bangalore.',
-          image: "../assests/pic1.webp", // add your image in assets folder
+          name: 'Pathi R',
+          branch: 'CSE',
+          batch: '2016 Batch',
+          company: 'Google',
+          message: 'My journey at Anna University was transformative. The rigorous curriculum and supportive faculty prepared me well for the challenges in the tech industry.',
+          image: "../assets/pic2.webp",
         },
-        // Add more testimonials as needed
+        {
+          name: 'Priya S',
+          branch: 'Mechanical',
+          batch: '2017 Batch',
+          company: 'Tesla',
+          message: 'The hands-on experience and industry exposure at Anna University were invaluable. It gave me the confidence to pursue my dreams and land a job at Tesla.',
+          image: "../assets/pic3.webp",
+        },
       ],
       currentIndex: 0,
+      galleryImages: [
+        { src: '../assets/gallery1.jpg', alt: 'Gallery Image 1', description: 'This is a dummy event description, lykky means like you know you know' },
+        { src: '../assets/gallery2.jpg', alt: 'Gallery Image 2', description: 'This is a dummy event description, lykky means like you know you know' },
+        { src: '../assets/gallery3.jpg', alt: 'Gallery Image 3', description: 'This is a dummy event description, lykky means like you know you know' },
+      ],
     };
   },
   methods: {
