@@ -100,7 +100,7 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
               </svg>
             </div>
-            <div class="flex overflow-hidden">
+            <div class="flex">
               <div v-for="(image, index) in galleryImages" :key="index" class="flex-shrink-0 w-full transition-transform transform" :style="{ transform: `translateX(-${currentImageIndex * 100}%)` }">
                 <div class="relative group">
                   <img :src="image.src" :alt="image.alt" class="w-full h-48 object-cover rounded-lg shadow-md" />
@@ -108,6 +108,10 @@
                     <p class="text-white text-center px-4">{{ image.description }}</p>
                   </div>
                 </div>
+              </div>
+              <div class="hidden ">
+                <img :src="prevImageSrc" alt="Previous Image" class="w-1/3 h-48 object-cover opacity-50 transform -translate-x-full" />
+                <img :src="nextImageSrc" alt="Next Image" class="w-1/3 h-48 object-cover opacity-50 transform translate-x-full" />
               </div>
             </div>
             <div @click="nextImage" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full cursor-pointer hover:bg-opacity-75">
@@ -214,8 +218,20 @@ export default {
         { src: 'src/assets/4.jpg', alt: 'Gallery Image 2', description: 'This is a dummy event description, lykky means like you know you know' },
         { src: 'src/assets/computer-lab.webp', alt: 'Gallery Image 3', description: 'This is a dummy event description, lykky means like you know you know' },
       ],
+      currentImageIndex: 1,
     };
   },
+  computed: {
+    prevImageSrc() {
+      const prevIndex = (this.currentImageIndex - 1 + this.galleryImages.length) % this.galleryImages.length;
+      return this.galleryImages[prevIndex].src;
+    },
+    nextImageSrc() {
+      const nextIndex = (this.currentImageIndex + 1) % this.galleryImages.length;
+      return this.galleryImages[nextIndex].src;
+    }
+  },
+
   methods: {
     toggleMobileMenu() {
       this.mobileMenuOpen = !this.mobileMenuOpen;
