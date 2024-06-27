@@ -89,22 +89,36 @@
         </div>
       </section>
 
+
       <!-- Gallery Section -->
       <section id="gallery" class="py-16 bg-white">
         <div class="container mx-auto px-4">
           <h2 class="text-3xl font-bold text-center mb-8 text-[#21209c]">Gallery of Memories IG</h2>
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div v-for="image in galleryImages" :key="image.src" class="relative group">
-              <img :src="image.src" :alt="image.alt" class="w-full h-48 object-cover rounded-lg shadow-md transition-transform transform group-hover:scale-105" />
-              <div class="absolute inset-0 bg-rose-600 bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                <p class="text-white text-center px-4">{{ image.description }}</p>
+          <div class="relative flex items-center justify-center">
+            <div @click="prevImage" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full cursor-pointer hover:bg-opacity-75">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+              </svg>
+            </div>
+            <div class="flex overflow-hidden">
+              <div v-for="(image, index) in galleryImages" :key="index" class="flex-shrink-0 w-full transition-transform transform" :style="{ transform: `translateX(-${currentImageIndex * 100}%)` }">
+                <div class="relative group">
+                  <img :src="image.src" :alt="image.alt" class="w-full h-48 object-cover rounded-lg shadow-md" />
+                  <div class="absolute inset-0 bg-gray-800 bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                    <p class="text-white text-center px-4">{{ image.description }}</p>
+                  </div>
+                </div>
               </div>
-              <button class="absolute left-2 top-1/2 transform -translate-y-1/2 bg-[#21209c] text-white p-2 rounded-full focus:outline-none transition-colors group-hover:bg-[#fdb827]">&lt;</button>
-              <button class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-[#21209c] text-white p-2 rounded-full focus:outline-none transition-colors group-hover:bg-[#fdb827]">&gt;</button>
+            </div>
+            <div @click="nextImage" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full cursor-pointer hover:bg-opacity-75">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
             </div>
           </div>
         </div>
       </section>
+
 
       <!-- Testimonials Section -->
       <section id="testimonials" class="py-24 bg-indigo-100">
@@ -196,9 +210,9 @@ export default {
       ],
       currentIndex: 0,
       galleryImages: [
-        { src: '../assets/gallery1.jpg', alt: 'Gallery Image 1', description: 'This is a dummy event description, lykky means like you know you know' },
-        { src: '../assets/gallery2.jpg', alt: 'Gallery Image 2', description: 'This is a dummy event description, lykky means like you know you know' },
-        { src: '../assets/gallery3.jpg', alt: 'Gallery Image 3', description: 'This is a dummy event description, lykky means like you know you know' },
+        { src: 'src/assets/1.webp', alt: 'Gallery Image 1', description: 'This is a dummy event description, lykky means like you know you know' },
+        { src: 'src/assets/4.jpg', alt: 'Gallery Image 2', description: 'This is a dummy event description, lykky means like you know you know' },
+        { src: 'src/assets/computer-lab.webp', alt: 'Gallery Image 3', description: 'This is a dummy event description, lykky means like you know you know' },
       ],
     };
   },
@@ -214,6 +228,12 @@ export default {
     },
     nextSlide() {
       this.currentIndex = (this.currentIndex === this.testimonials.length - 1) ? 0 : this.currentIndex + 1;
+    },
+    prevImage() {
+      this.currentImageIndex = (this.currentImageIndex - 1 + this.galleryImages.length) % this.galleryImages.length;
+    },
+    nextImage() {
+      this.currentImageIndex = (this.currentImageIndex + 1) % this.galleryImages.length;
     }
   },
 };
