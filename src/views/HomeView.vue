@@ -94,13 +94,15 @@
       <section id="gallery" class="py-16 bg-white">
         <div class="container mx-auto px-4">
           <h2 class="text-3xl font-bold text-center mb-8 text-[#21209c]">Gallery of Memories IG</h2>
-          <div class="relative flex items-center justify-center">
-            <div @click="prevImage" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full cursor-pointer hover:bg-opacity-75">
+          <div class="relative flex items-center justify-center gap-8">
+            
+            <div @click="prevImage" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-[#21209c] bg-opacity-75 text-white p-2 rounded-full cursor-pointer hover:bg-opacity-75 z-30">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
               </svg>
             </div>
-            <div class="flex">
+            <img :src="prevImageSrc" alt="Previous Image" class="w-1/3 h-48 object-cover opacity-75  ease-in-out transition-transform "  />
+            <div class=" overflow-hidden flex  w-1/3">
               <div v-for="(image, index) in galleryImages" :key="index" class="flex-shrink-0 w-full transition-transform transform" :style="{ transform: `translateX(-${currentImageIndex * 100}%)` }">
                 <div class="relative group">
                   <img :src="image.src" :alt="image.alt" class="w-full h-48 object-cover rounded-lg shadow-md" />
@@ -109,16 +111,23 @@
                   </div>
                 </div>
               </div>
-              <div class="hidden ">
-                <img :src="prevImageSrc" alt="Previous Image" class="w-1/3 h-48 object-cover opacity-50 transform -translate-x-full" />
-                <img :src="nextImageSrc" alt="Next Image" class="w-1/3 h-48 object-cover opacity-50 transform translate-x-full" />
-              </div>
+              
             </div>
-            <div @click="nextImage" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full cursor-pointer hover:bg-opacity-75">
+            <img :src="nextImageSrc" alt="Next Image" class="w-1/3 h-48 object-cover opacity-75 " />
+            <div @click="nextImage" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-[#21209c] bg-opacity-75 text-white p-2 rounded-full cursor-pointer hover:bg-opacity-75">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
               </svg>
             </div>
+          </div>
+          <div class="flex justify-center mt-8">
+            <button 
+              v-for="(image, index) in galleryImages" 
+              :key="index" 
+              @click="goToSlide(index)" 
+              class="w-3 h-3 rounded-full mx-1 focus:outline-none transition-colors"
+              :class="index === currentImageIndex ? 'bg-indigo-600' : 'bg-indigo-300'"
+            ></button>
           </div>
         </div>
       </section>
@@ -217,6 +226,7 @@ export default {
         { src: 'src/assets/1.webp', alt: 'Gallery Image 1', description: 'This is a dummy event description, lykky means like you know you know' },
         { src: 'src/assets/4.jpg', alt: 'Gallery Image 2', description: 'This is a dummy event description, lykky means like you know you know' },
         { src: 'src/assets/computer-lab.webp', alt: 'Gallery Image 3', description: 'This is a dummy event description, lykky means like you know you know' },
+        { src: 'src/assets/cse-girls-closeup.jpg', alt: 'Gallery Image 2', description: 'This is a dummy event description, lykky means like you know you know' },
       ],
       currentImageIndex: 1,
     };
