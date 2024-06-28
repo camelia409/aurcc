@@ -224,9 +224,9 @@ export default {
       currentIndex: 0,
       galleryImages: [
         { src: 'src/assets/1.webp', alt: 'Gallery Image 1', description: 'This is a dummy event description, lykky means like you know you know' },
-        { src: 'src/assets/4.jpg', alt: 'Gallery Image 2', description: 'This is a dummy event description, lykky means like you know you know' },
+        { src: 'src/assets/4.webp', alt: 'Gallery Image 2', description: 'This is a dummy event description, lykky means like you know you know' },
         { src: 'src/assets/computer-lab.webp', alt: 'Gallery Image 3', description: 'This is a dummy event description, lykky means like you know you know' },
-        { src: 'src/assets/cse-girls-closeup.jpg', alt: 'Gallery Image 2', description: 'This is a dummy event description, lykky means like you know you know' },
+        { src: 'src/assets/cse-girls-closeup.webp', alt: 'Gallery Image 2', description: 'This is a dummy event description, lykky means like you know you know' },
       ],
       currentImageIndex: 1,
     };
