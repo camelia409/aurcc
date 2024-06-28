@@ -100,8 +100,8 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
               </svg>
             </div>
-            <div class=" flex gap-8">
-              <div v-for="(image, index) in galleryImages" :key="index" class="flex-shrink-0 w-full transition-transform transform" :style="{ transform: `translateX(-${currentImageIndex * 100}%)` }">
+            <div class=" flex gap-8 w-1/2">
+              <div v-for="(image, index) in galleryImages" :key="index" class="flex-shrink-0 w-2/3 transition-transform transform" :style="{ transform: `translateX(-${currentImageIndex * 100}%)` }">
                 <div class="relative group">
                   <img :src="image.src" :alt="image.alt" class="w-full h-48 object-cover rounded-lg shadow-md" />
                   <div class="absolute inset-0 bg-gray-800 bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
@@ -119,6 +119,15 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
               </svg>
             </div>
+          </div>
+          <div class="flex justify-center mt-8">
+            <button 
+              v-for="(image, index) in galleryImages" 
+              :key="index" 
+              @click="goToSlide(index)" 
+              class="w-3 h-3 rounded-full mx-1 focus:outline-none transition-colors"
+              :class="index === currentImageIndex ? 'bg-indigo-600' : 'bg-indigo-300'"
+            ></button>
           </div>
         </div>
       </section>
@@ -217,6 +226,7 @@ export default {
         { src: 'src/assets/1.webp', alt: 'Gallery Image 1', description: 'This is a dummy event description, lykky means like you know you know' },
         { src: 'src/assets/4.jpg', alt: 'Gallery Image 2', description: 'This is a dummy event description, lykky means like you know you know' },
         { src: 'src/assets/computer-lab.webp', alt: 'Gallery Image 3', description: 'This is a dummy event description, lykky means like you know you know' },
+        { src: 'src/assets/cse-girls-closeup.jpg', alt: 'Gallery Image 2', description: 'This is a dummy event description, lykky means like you know you know' },
       ],
       currentImageIndex: 1,
     };
