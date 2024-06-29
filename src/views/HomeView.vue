@@ -96,25 +96,25 @@
       <h2 class="text-3xl font-bold text-center mb-8 text-[#21209c]">Gallery of Memories IG</h2>
       <div class="relative flex items-center justify-center gap-8">
         <div @click="prevImage" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-[#21209c]  text-white p-2 rounded-full cursor-pointer hover:bg-opacity-75 z-30">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-10 h-10">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M15 19l-7-7 7-7" />
           </svg>
         </div>
-        <img :src="prevImageSrc" alt="Previous Image" class="w-1/3 h-48 object-cover opacity-75 transition-opacity duration-500 ease-in-out" />
-        <div class=" flex w-1/3">
-          <div v-for="(image, index) in galleryImages" :key="index" class="flex-shrink-0 w-full transition-transform transform duration-500 ease-in-out px-8" :style="{ transform: `translateX(-${currentImageIndex * 100}%)` }">
+        <!-- <img :src="prevImageSrc" alt="Previous Image" class="w-1/3 h-48 object-cover opacity-75 transition-opacity duration-500 ease-in-out" /> -->
+        <div class=" flex w-1/2">
+          <div v-for="(image, index) in galleryImages" :key="index" class="flex-shrink-0 w-full transition-transform transform duration-500 ease-in-out px-6" :style="{ transform: `translateX(-${currentImageIndex * 100}%)` }">
             <div class="relative group">
-              <img :src="image.src" :alt="image.alt" class="w-full h-48 object-cover rounded-lg shadow-md" />
-              <div class="absolute inset-0 bg-gray-800 bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out">
+              <img :src="image.src" :alt="image.alt" class="w-full h-72  object-cover rounded-lg shadow-md" />
+              <div class="absolute bottom-0 h-2/5 w-full bg-gray-800 bg-opacity-75 rounded-b-md flex items-center justify-center">
                 <p class="text-white text-center px-4">{{ image.description }}</p>
               </div>
             </div>
           </div>
         </div>
-        <img :src="nextImageSrc" alt="Next Image" class="w-1/3 h-48 object-cover opacity-75 transition-opacity duration-500 ease-in-out" />
+        <!-- <img :src="nextImageSrc" alt="Next Image" class="w-1/3 h-48 object-cover opacity-75 transition-opacity duration-500 ease-in-out" /> -->
         <div @click="nextImage" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-[#21209c]  text-white p-2 rounded-full cursor-pointer hover:bg-opacity-75">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-10 h-10">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M9 5l7 7-7 7" />
           </svg>
         </div>
       </div>
