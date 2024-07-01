@@ -48,6 +48,66 @@
         </div>
       </section>
 
+
+      <!-- college stats -->
+      <div class="flex flex-wrap bg-gray-900 text-white p-8 ">
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
+          <!-- 15 years of delivering quality education -->
+          <div class="flex flex-col items-center p-4">
+            <svg class="text-yellow-500 mb-2 w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+              <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+            </svg>
+            <p class="text-2xl font-bold text-yellow-500">15 years</p>
+            <p class="text-sm text-gray-300 text-center">of delivering quality education</p>
+          </div>
+
+          <!-- 7th rank in Coimbatore for TNEA 2023 -->
+          <div class="flex flex-col items-center p-4">
+            <svg class="text-yellow-500 mb-2 w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path>
+              <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path>
+              <path d="M4 22h16"></path>
+              <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path>
+              <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path>
+              <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path>
+            </svg>
+            <p class="text-2xl font-bold text-yellow-500">7th rank</p>
+            <p class="text-sm text-gray-300 text-center">in Coimbatore for TNEA 2023</p>
+          </div>
+
+          <!-- 100% admission rate -->
+          <div class="flex flex-col items-center p-4">
+            <svg class="text-yellow-500 mb-2 w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+            </svg>
+            <p class="text-2xl font-bold text-yellow-500">100%</p>
+            <p class="text-sm text-gray-300 text-center">admission rate</p>
+          </div>
+
+          <!-- 19th out of 450+ engineering institutions in TN -->
+          <div class="flex flex-col items-center p-4">
+            <svg class="text-yellow-500 mb-2 w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+              <polyline points="17 6 23 6 23 12"></polyline>
+            </svg>
+            <p class="text-2xl font-bold text-yellow-500">19th</p>
+            <p class="text-sm text-gray-300 text-center">out of 450+ engineering institutions in TN</p>
+          </div>
+
+          <!-- An Autonomous Institution -->
+          <div class="flex flex-col items-center p-4">
+            <svg class="text-yellow-500 mb-2 w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="8" r="7"></circle>
+              <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+            </svg>
+            <p class="text-2xl font-bold text-yellow-500">An Autonomous</p>
+            <p class="text-sm text-gray-300 text-center">Institution</p>
+          </div>
+        </div>
+      </div>
+
+
       <!-- Dean's Message Section -->
       <section id="deans-message" class="py-24 bg-gradient-to-r from-[#21209c] to-indigo-500 text-white">
         <div class="container mx-auto px-6">
@@ -145,8 +205,8 @@
                 </svg>
               </div>
               <div>
-                <h3 class="font-bold text-[#23120b]">Aeronautical Engineering</h3>
-                <p class="text-sm text-gray-700">Established - 1949</p>
+                <h3 class="font-bold text-[#23120b]">MBA</h3>
+                <p class="text-sm text-gray-700">MBA Department</p>
               </div>
             </div>
           </div>
@@ -293,6 +353,7 @@ export default {
         { src: 'src/assets/cse-girls-closeup.webp', alt: 'Gallery Image 2', description: 'This is a dummy event description, lykky means like you know you know' },
       ],
       currentImageIndex: 1,
+      
     };
   },
   computed: {
