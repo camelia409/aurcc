@@ -74,15 +74,79 @@
       </section>
 
       <!-- Programs Section -->
-      <section id="programs" class="py-16 bg-gray-100">
+      <section class="bg-[#f1f1f1] w-full py-12">
         <div class="container mx-auto px-4">
-          <h2 class="text-3xl font-bold text-center mb-8">Our Programs</h2>
+          <h2 class="text-4xl font-bold text-center mb-8 text-[#21209c] animate-fade-in-up">Programs Offered</h2>
           <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div v-for="program in programs" :key="program.name" class="bg-white rounded-lg shadow-md overflow-hidden transition-transform transform hover:scale-105">
-              <img :src="program.image" :alt="program.name" class="w-full h-48 object-cover" />
-              <div class="p-6">
-                <h3 class="text-xl font-bold mb-2">{{ program.name }}</h3>
-                <p class="text-gray-600">{{ program.description }}</p>
+            <div class="text-lg bg-[#21209c] p-4 rounded-lg flex items-center space-x-4 transition-transform transform hover:scale-105">
+              <div class="bg-[#fdb827] p-2 rounded-full">
+                <svg class="w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 008 0H3zm0 0a4 4 0 008 0M5 3a2 2 0 100 4 2 2 0 000-4zM12 17a4 4 0 108 0h-8zm0 0a4 4 0 108 0M14 3a2 2 0 100 4 2 2 0 000-4z" />
+                </svg>
+              </div>
+              <router-link to='/departments/cse'>
+                <h3 class="font-bold text-white">B.E. Computer Science Engg</h3>
+                <p class="text-sm text-gray-300">CSE Department</p>
+              </router-link>
+            </div>
+
+            <div class="text-lg bg-[#21209c] p-4 rounded-lg flex items-center space-x-4 transition-transform transform hover:scale-105">
+              <div class="bg-[#fdb827] p-2 rounded-full">
+                <svg class="w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 008 0H3zm0 0a4 4 0 008 0M5 3a2 2 0 100 4 2 2 0 000-4zM12 17a4 4 0 108 0h-8zm0 0a4 4 0 108 0M14 3a2 2 0 100 4 2 2 0 000-4z" />
+                </svg>
+              </div>
+              <router-link to='/departments/cse'>
+                <h3 class="font-bold text-white">B.Tech Artificial Intelligence and DataScience</h3>
+                <p class="text-sm text-gray-300">CSE Department</p>
+              </router-link >
+            </div>
+
+            <div class="text-lg bg-[#21209c] p-4 rounded-lg flex items-center space-x-4 transition-transform transform hover:scale-105">
+              <div class="bg-[#fdb827] p-2 rounded-full">
+                <svg class="w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 008 0H3zm0 0a4 4 0 008 0M5 3a2 2 0 100 4 2 2 0 000-4zM12 17a4 4 0 108 0h-8zm0 0a4 4 0 108 0M14 3a2 2 0 100 4 2 2 0 000-4z" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-bold text-white">B.E. Electrical and Electrical Engg</h3>
+                <p class="text-sm text-gray-300">EEE Department</p>
+              </div>
+            </div>
+
+            <div class="text-lg bg-[#21209c] p-4 rounded-lg flex items-center space-x-4 transition-transform transform hover:scale-105">
+              <div class="bg-[#fdb827] p-2 rounded-full">
+                <svg class="w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 008 0H3zm0 0a4 4 0 008 0M5 3a2 2 0 100 4 2 2 0 000-4zM12 17a4 4 0 108 0h-8zm0 0a4 4 0 108 0M14 3a2 2 0 100 4 2 2 0 000-4z" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-bold text-white">B.E. Electrical and Electronics Engg</h3>
+                <p class="text-sm text-gray-300">ECE Department</p>
+              </div>
+            </div>
+
+            <div class="text-lg bg-[#21209c] p-4 rounded-lg flex items-center space-x-4 transition-transform transform hover:scale-105">
+              <div class="bg-[#fdb827] p-2 rounded-full">
+                <svg class="w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 008 0H3zm0 0a4 4 0 008 0M5 3a2 2 0 100 4 2 2 0 000-4zM12 17a4 4 0 108 0h-8zm0 0a4 4 0 108 0M14 3a2 2 0 100 4 2 2 0 000-4z" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-bold text-white">B.E. Mechanical Engg</h3>
+                <p class="text-sm text-gray-300">Mechanical Department</p>
+              </div>
+            </div>
+
+            <div class="text-lg bg-[#fdb827] p-4 rounded-lg flex items-center space-x-4 transition-transform transform hover:scale-105">
+              <div class="bg-[#21209c] p-2 rounded-full">
+                <svg class="w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 008 0H3zm0 0a4 4 0 008 0M5 3a2 2 0 100 4 2 2 0 000-4zM12 17a4 4 0 108 0h-8zm0 0a4 4 0 108 0M14 3a2 2 0 100 4 2 2 0 000-4z" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-bold text-[#23120b]">Aeronautical Engineering</h3>
+                <p class="text-sm text-gray-700">Established - 1949</p>
               </div>
             </div>
           </div>
@@ -96,25 +160,25 @@
       <h2 class="text-3xl font-bold text-center mb-8 text-[#21209c]">Gallery of Memories IG</h2>
       <div class="relative flex items-center justify-center gap-8">
         <div @click="prevImage" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-[#21209c]  text-white p-2 rounded-full cursor-pointer hover:bg-opacity-75 z-30">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-10 h-10">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M15 19l-7-7 7-7" />
           </svg>
         </div>
-        <img :src="prevImageSrc" alt="Previous Image" class="w-1/3 h-48 object-cover opacity-75 transition-opacity duration-500 ease-in-out" />
-        <div class=" flex w-1/3">
-          <div v-for="(image, index) in galleryImages" :key="index" class="flex-shrink-0 w-full transition-transform transform duration-500 ease-in-out px-8" :style="{ transform: `translateX(-${currentImageIndex * 100}%)` }">
+        <!-- <img :src="prevImageSrc" alt="Previous Image" class="w-1/3 h-48 object-cover opacity-75 transition-opacity duration-500 ease-in-out" /> -->
+        <div class=" flex w-1/2">
+          <div v-for="(image, index) in galleryImages" :key="index" class="flex-shrink-0 w-full transition-transform transform duration-500 ease-in-out px-6" :style="{ transform: `translateX(-${currentImageIndex * 100}%)` }">
             <div class="relative group">
-              <img :src="image.src" :alt="image.alt" class="w-full h-48 object-cover rounded-lg shadow-md" />
-              <div class="absolute inset-0 bg-gray-800 bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out">
+              <img :src="image.src" :alt="image.alt" class="w-full h-72  object-cover rounded-lg shadow-md" />
+              <div class="absolute bottom-0 h-2/5 w-full bg-gray-800 bg-opacity-75 rounded-b-md flex items-center justify-center">
                 <p class="text-white text-center px-4">{{ image.description }}</p>
               </div>
             </div>
           </div>
         </div>
-        <img :src="nextImageSrc" alt="Next Image" class="w-1/3 h-48 object-cover opacity-75 transition-opacity duration-500 ease-in-out" />
+        <!-- <img :src="nextImageSrc" alt="Next Image" class="w-1/3 h-48 object-cover opacity-75 transition-opacity duration-500 ease-in-out" /> -->
         <div @click="nextImage" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-[#21209c]  text-white p-2 rounded-full cursor-pointer hover:bg-opacity-75">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-10 h-10">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M9 5l7 7-7 7" />
           </svg>
         </div>
       </div>
@@ -153,8 +217,10 @@
                 </div>
               </div>
             </div>
-            <button @click="prevSlide" class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-indigo-600 text-white p-3 rounded-full focus:outline-none hover:bg-indigo-700 transition-colors">
-              &lt;
+            <button @click="prevSlide" class="absolute top-1/2 left-0 transform -translate-y-1/2 -translate-x-4 bg-[#21209c]  text-white p-2 rounded-full cursor-pointer">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-10 h-10">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M15 19l-7-7 7-7" />
+              </svg>
             </button>
             <button @click="nextSlide" class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-indigo-600 text-white p-3 rounded-full focus:outline-none hover:bg-indigo-700 transition-colors">
               &gt;
