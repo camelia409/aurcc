@@ -153,8 +153,10 @@
                 </div>
               </div>
             </div>
-            <button @click="prevSlide" class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-indigo-600 text-white p-3 rounded-full focus:outline-none hover:bg-indigo-700 transition-colors">
-              &lt;
+            <button @click="prevSlide" class="absolute top-1/2 left-0 transform -translate-y-1/2 -translate-x-4 bg-[#21209c]  text-white p-2 rounded-full cursor-pointer">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-10 h-10">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M15 19l-7-7 7-7" />
+              </svg>
             </button>
             <button @click="nextSlide" class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-indigo-600 text-white p-3 rounded-full focus:outline-none hover:bg-indigo-700 transition-colors">
               &gt;
