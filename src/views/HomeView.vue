@@ -48,16 +48,16 @@
         <div class="bg-white rounded-lg shadow-lg overflow-hidden hover-shadow">
           <h3 class="text-2xl font-semibold bg-blue-600 text-white p-4 hover-brighten">News & Admissions</h3>
           <div class="overflow-hidden relative" style="max-height: 300px;">
-            <ul class="news-scroll w-full">
-              <li v-for="(str, index) in news" :key="index" class="p-4 border-b border-gray-200 hover-highlight">{{str}}</li>
+            <ul class="news-scroll w-full animated-list">
+              <li v-for="(str, index) in news" :key="index" class="py-3 px-4 hover-highlight">{{str}}</li>
             </ul>
           </div>
         </div>
         <div class="bg-white rounded-lg shadow-lg overflow-hidden hover-shadow">
           <h3 class="text-2xl font-semibold bg-blue-600 text-white p-4 hover-brighten">Events & Scholarships</h3>
           <div class="overflow-hidden relative" style="max-height: 300px;">
-            <ul class="events-scroll w-full">
-              <li v-for="(str, index) in events" :key="index" class="p-4 border-b border-gray-200 hover-highlight">{{str}}</li>
+            <ul class="events-scroll w-full animated-list">
+              <li v-for="(str, index) in events" :key="index" class="py-3 px-4 hover-highlight">{{str}}</li>
             </ul>
           </div>
         </div>
@@ -425,30 +425,48 @@ export default {
 
 <style>
 @keyframes scroll {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(calc(-100% + 300px)); /* Adjust based on max-height */
-  }
+  0% { transform: translateY(0); }
+  100% { transform: translateY(calc(-100% + 300px)); }
 }
 
-.news-scroll,
-.events-scroll {
+.news-scroll, .events-scroll {
   animation: scroll 20s linear infinite;
+  padding-bottom: 300px;
 }
 
-.news-scroll:hover,
-.events-scroll:hover {
+.news-scroll:hover, .events-scroll:hover {
   animation-play-state: paused;
 }
 
-.news-scroll,
-.events-scroll {
-  padding-bottom: 300px; /* Match the max-height */
+/* Animated List Styling */
+.animated-list {
+  list-style: none;
+  padding-left: 0;
 }
 
-/* Hover Effects */
+.animated-list li {
+  position: relative;
+  padding-left: 20px;
+  transition: all 0.3s ease;
+}
+
+.animated-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3px;
+  height: 0;
+  background-color: #3B82F6;
+  transition: height 0.3s ease;
+}
+
+.animated-list li:hover::before {
+  height: 80%;
+}
+
+/* Existing Hover Effects */
 .hover-underline:hover {
   text-decoration: underline;
   text-decoration-thickness: 2px;
@@ -471,7 +489,7 @@ export default {
 }
 
 .hover-highlight:hover {
-  background-color: rgba(59, 130, 246, 0.1); /* Light blue background */
+  background-color: rgba(59, 130, 246, 0.1);
   transition: background-color 0.3s ease;
 }
 </style>
