@@ -28,43 +28,43 @@
 
 
 
-      <!-- About Section -->
-      <section id="about" class=" py-16 bg-white">
-        <div class="container mx-auto">
-          <div class="grid grid-cols-1 md:grid-cols-2 mx-auto px-4 ">
-            <div class="flex flex-col justify-center col-span-1">
-              <h2 class="text-3xl font-bold text-center mb-8">About Our Campus</h2>
-              <div class="">
-                <p class="text-lg mb-4">
-                  The Regional Campus Coimbatore of Anna University, established in 2012, offers world-class education in Engineering and Technology. Nestled in a serene environment away from the city's hustle, our campus boasts state-of-the-art infrastructure and a team of highly qualified faculty members.
-                </p>
-                <p class="text-lg">
-                  We are committed to providing hands-on experience to our students, enabling them to master their skills in various disciplines and prepare for the challenges of the future.
-                </p>
-              </div>
-            </div>
-            <div class="col-span-1 gap-2">
-              <div class="bg-[#21209c] p-2 rounded-md h-1/2">
-                <p class="text-2xl text-white p-2">News/admission</p>
-                <div class="bg-gray-50 rounded-sm p-2 h-3/4 overflow-hidden"> 
-                  <div v-for='(str, index) in news' :key="index" class="border-b-2 py-1">
-                    {{  str }}
-                  </div>
-                </div>
-              </div>
-              <div class="bg-[#21209c] p-2 rounded-md h-1/2">
-                <p class="text-2xl text-white p-2">Events/Scholarship</p>
-                <div class="bg-gray-50 rounded-sm p-2 h-3/4 overflow-hidden"> 
-                  <div v-for='(str, index) in events' :key="index" class="border-b-2 py-1">
-                    {{  str }}
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
+<!-- About Section -->
+<section id="about" class="py-20 bg-gradient-to-b from-white to-gray-100">
+  <div class="container mx-auto px-4">
+    <h2 class="text-4xl font-bold text-center mb-12 text-gray-800 hover-underline">About Our Campus</h2>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
+      <div class="flex flex-col justify-between">
+        <div class="space-y-6">
+          <p class="text-lg text-gray-700 leading-relaxed hover-brighten">
+            The Regional Campus Coimbatore of Anna University, established in 2012, offers world-class education in Engineering and Technology. Nestled in a serene environment away from the city's hustle, our campus boasts state-of-the-art infrastructure and a team of highly qualified faculty members.
+          </p>
+          <p class="text-lg text-gray-700 leading-relaxed hover-brighten">
+            We are committed to providing hands-on experience to our students, enabling them to master their skills in various disciplines and prepare for the challenges of the future.
+          </p>
         </div>
-      </section>
+        <a href="#" class="inline-block mt-6 px-6 py-3 bg-blue-600 text-white font-semibold rounded-full hover:bg-blue-700 transition duration-300 text-center hover-scale">Learn More</a>
+      </div>
+      <div class="grid grid-cols-1 gap-6">
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden hover-shadow">
+          <h3 class="text-2xl font-semibold bg-blue-600 text-white p-4 hover-brighten">News & Admissions</h3>
+          <div class="overflow-hidden relative" style="max-height: 300px;">
+            <ul class="news-scroll w-full animated-list">
+              <li v-for="(str, index) in news" :key="index" class="py-3 px-4 hover-highlight">{{str}}</li>
+            </ul>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden hover-shadow">
+          <h3 class="text-2xl font-semibold bg-blue-600 text-white p-4 hover-brighten">Events & Scholarships</h3>
+          <div class="overflow-hidden relative" style="max-height: 300px;">
+            <ul class="events-scroll w-full animated-list">
+              <li v-for="(str, index) in events" :key="index" class="py-3 px-4 hover-highlight">{{str}}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 
       <!-- college stats -->
@@ -422,35 +422,74 @@ export default {
 };
 </script>
 
-<style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
-body {
-  font-family: 'Poppins', sans-serif;
+<style>
+@keyframes scroll {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(calc(-100% + 300px)); }
 }
 
-.hero {
+.news-scroll, .events-scroll {
+  animation: scroll 20s linear infinite;
+  padding-bottom: 300px;
+}
+
+.news-scroll:hover, .events-scroll:hover {
+  animation-play-state: paused;
+}
+
+/* Animated List Styling */
+.animated-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.animated-list li {
   position: relative;
-  height: 100vh;
-  width: 100%;
+  padding-left: 20px;
+  transition: all 0.3s ease;
 }
 
-.aspect-w-16 {
-  position: relative;
-  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
-}
-
-.aspect-h-9 {
+.animated-list li::before {
+  content: '';
   position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
   left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3px;
+  height: 0;
+  background-color: #3B82F6;
+  transition: height 0.3s ease;
 }
 
-.carousel-item {
-  transition: transform 0.5s ease-in-out;
+.animated-list li:hover::before {
+  height: 80%;
 }
 
-/* Add any additional custom styles here */
+/* Existing Hover Effects */
+.hover-underline:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+
+.hover-brighten:hover {
+  filter: brightness(1.1);
+  transition: filter 0.3s ease;
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease;
+}
+
+.hover-highlight:hover {
+  background-color: rgba(59, 130, 246, 0.1);
+  transition: background-color 0.3s ease;
+}
 </style>
