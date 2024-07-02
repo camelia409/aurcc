@@ -45,27 +45,19 @@
         <a href="#" class="inline-block mt-6 px-6 py-3 bg-blue-600 text-white font-semibold rounded-full hover:bg-blue-700 transition duration-300 text-center hover-scale">Learn More</a>
       </div>
       <div class="grid grid-cols-1 gap-6">
-        <div class="bg-white rounded-lg shadow-lg overflow-hidden h-[250px] hover-shadow">
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden hover-shadow">
           <h3 class="text-2xl font-semibold bg-blue-600 text-white p-4 hover-brighten">News & Admissions</h3>
-          <div class="h-[190px] overflow-hidden relative">
-            <ul class="news-scroll absolute w-full">
-              <li class="p-4 border-b border-gray-200 hover-highlight">Admissions open for 2024-2025 academic year</li>
-              <li class="p-4 border-b border-gray-200 hover-highlight">New Computer Science curriculum announced</li>
-              <li class="p-4 border-b border-gray-200 hover-highlight">Campus recruitment drive scheduled for next month</li>
-              <li class="p-4 border-b border-gray-200 hover-highlight">Research paper presentation workshop next week</li>
-              <li class="p-4 border-b border-gray-200 hover-highlight">University ranks in top 10 for engineering programs</li>
+          <div class="overflow-hidden relative" style="max-height: 300px;">
+            <ul class="news-scroll w-full">
+              <li v-for="(str, index) in news" :key="index" class="p-4 border-b border-gray-200 hover-highlight">{{str}}</li>
             </ul>
           </div>
         </div>
-        <div class="bg-white rounded-lg shadow-lg overflow-hidden h-[250px] hover-shadow">
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden hover-shadow">
           <h3 class="text-2xl font-semibold bg-blue-600 text-white p-4 hover-brighten">Events & Scholarships</h3>
-          <div class="h-[190px] overflow-hidden relative">
-            <ul class="events-scroll absolute w-full">
-              <li class="p-4 border-b border-gray-200 hover-highlight">Annual Tech Fest: InnovateTech 2024</li>
-              <li class="p-4 border-b border-gray-200 hover-highlight">Scholarship applications due by end of month</li>
-              <li class="p-4 border-b border-gray-200 hover-highlight">Guest lecture series: AI in Modern Industry</li>
-              <li class="p-4 border-b border-gray-200 hover-highlight">Inter-college sports meet registration open</li>
-              <li class="p-4 border-b border-gray-200 hover-highlight">Career guidance seminar for final year students</li>
+          <div class="overflow-hidden relative" style="max-height: 300px;">
+            <ul class="events-scroll w-full">
+              <li v-for="(str, index) in events" :key="index" class="p-4 border-b border-gray-200 hover-highlight">{{str}}</li>
             </ul>
           </div>
         </div>
@@ -429,13 +421,15 @@ export default {
   },
 };
 </script>
+
+
 <style>
 @keyframes scroll {
   0% {
     transform: translateY(0);
   }
   100% {
-    transform: translateY(-100%);
+    transform: translateY(calc(-100% + 300px)); /* Adjust based on max-height */
   }
 }
 
@@ -449,25 +443,27 @@ export default {
   animation-play-state: paused;
 }
 
-.news-scroll li,
-.events-scroll li {
-  height: 58px; /* Adjust based on your content */
-}
-
-.news-scroll::after,
-.events-scroll::after {
-  content: "";
-  display: flex;
-  height: 100%;
+.news-scroll,
+.events-scroll {
+  padding-bottom: 300px; /* Match the max-height */
 }
 
 /* Hover Effects */
+.hover-underline:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
 
 .hover-brighten:hover {
   filter: brightness(1.1);
   transition: filter 0.3s ease;
 }
 
+.hover-scale:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
 
 .hover-shadow:hover {
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
