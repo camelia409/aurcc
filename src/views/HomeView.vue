@@ -29,20 +29,19 @@
 
 
       <!-- About Section -->
-      <section id="about" class="py-16 bg-white">
-        <div class="container mx-auto px-4">
-          <h2 class="text-3xl font-bold text-center mb-8">About Our Campus</h2>
-          <div class="flex flex-col md:flex-row items-center">
-            <div class="md:w-1/2 mb-8 md:mb-0">
-              <img src="../assets/campus.jpg" alt="Campus" class="rounded-lg shadow-lg" />
-            </div>
-            <div class="md:w-1/2 md:pl-8">
-              <p class="text-lg mb-4">
-                The Regional Campus Coimbatore of Anna University, established in 2012, offers world-class education in Engineering and Technology. Nestled in a serene environment away from the city's hustle, our campus boasts state-of-the-art infrastructure and a team of highly qualified faculty members.
-              </p>
-              <p class="text-lg">
-                We are committed to providing hands-on experience to our students, enabling them to master their skills in various disciplines and prepare for the challenges of the future.
-              </p>
+      <section id="about" class=" py-16 bg-white">
+        <div class="container mx-auto">
+          <div class="grid grid-cols-1 md:grid-cols-2 mx-auto px-4 ">
+            <div class="flex flex-col justify-center col-span-1">
+              <h2 class="text-3xl font-bold text-center mb-8">About Our Campus</h2>
+              <div class="">
+                <p class="text-lg mb-4">
+                  The Regional Campus Coimbatore of Anna University, established in 2012, offers world-class education in Engineering and Technology. Nestled in a serene environment away from the city's hustle, our campus boasts state-of-the-art infrastructure and a team of highly qualified faculty members.
+                </p>
+                <p class="text-lg">
+                  We are committed to providing hands-on experience to our students, enabling them to master their skills in various disciplines and prepare for the challenges of the future.
+                </p>
+              </div>
             </div>
           </div>
         </div>
