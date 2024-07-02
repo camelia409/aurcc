@@ -46,14 +46,18 @@
             <div class="col-span-1 gap-2">
               <div class="bg-[#21209c] p-2 rounded-md h-1/2">
                 <p class="text-2xl text-white p-2">News/admission</p>
-                <div class="bg-gray-50 rounded-sm p-2 "> 
-                  bello
+                <div class="bg-gray-50 rounded-sm p-2 h-3/4 overflow-hidden"> 
+                  <div v-for='(str, index) in news' :key="index" class="border-b-2 py-1">
+                    {{  str }}
+                  </div>
                 </div>
               </div>
               <div class="bg-[#21209c] p-2 rounded-md h-1/2">
                 <p class="text-2xl text-white p-2">Events/Scholarship</p>
-                <div class="bg-gray-50 rounded-sm p-2"> 
-                  bello
+                <div class="bg-gray-50 rounded-sm p-2 h-3/4 overflow-hidden"> 
+                  <div v-for='(str, index) in events' :key="index" class="border-b-2 py-1">
+                    {{  str }}
+                  </div>
                 </div>
               </div>
             </div>
@@ -368,7 +372,20 @@ export default {
         { src: 'src/assets/cse-girls-closeup.webp', alt: 'Gallery Image 2', description: 'This is a dummy event description, lykky means like you know you know' },
       ],
       currentImageIndex: 1,
-      
+      news:[
+        "this is news one just made testing purpose, and this has to be reasonably long you right and i thing this is enough",
+        "Annd I will younk this a lot of times and then i will consider this is as a absolute win for me and you as well, but who are u btw.",
+        "this is news one just made testing purpose, and this has to be reasonably long you right and i thing this is enough",
+        "this is news one just made testing purpose, and this has to be reasonably long you right and i thing this is enough",
+        "this is news one just made testing purpose, and this has to be reasonably long you right and i thing this is enough",
+      ],
+      events: [
+        "this is events one just made testing purpose, and this has to be reasonably long you right and i thing this is enough",
+        "Annd I will younk this a lot of times and then i will consider this is as a absolute win for me and you as well, but who are u btw.",
+        "this is events one just made testing purpose, and this has to be reasonably long you right and i thing this is enough",
+        "this is events one just made testing purpose, and this has to be reasonably long you right and i thing this is enough",
+        "this is events one just made testing purpose, and this has to be reasonably long you right and i thing this is enough",
+      ]
     };
   },
   computed: {
