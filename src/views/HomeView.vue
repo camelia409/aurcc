@@ -43,7 +43,22 @@
                 </p>
               </div>
             </div>
+            <div class="col-span-1 gap-2">
+              <div class="bg-[#21209c] p-2 rounded-md h-1/2">
+                <p class="text-2xl text-white p-2">News/admission</p>
+                <div class="bg-gray-50 rounded-sm p-2 "> 
+                  bello
+                </div>
+              </div>
+              <div class="bg-[#21209c] p-2 rounded-md h-1/2">
+                <p class="text-2xl text-white p-2">Events/Scholarship</p>
+                <div class="bg-gray-50 rounded-sm p-2"> 
+                  bello
+                </div>
+              </div>
+            </div>
           </div>
+
         </div>
       </section>
 
