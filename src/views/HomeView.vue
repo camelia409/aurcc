@@ -31,41 +31,41 @@
 <!-- About Section -->
 <section id="about" class="py-20 bg-gradient-to-b from-white to-gray-100">
   <div class="container mx-auto px-4">
-    <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">About Our Campus</h2>
+    <h2 class="text-4xl font-bold text-center mb-12 text-gray-800 hover-underline">About Our Campus</h2>
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
       <div class="flex flex-col justify-between">
         <div class="space-y-6">
-          <p class="text-lg text-gray-700 leading-relaxed">
+          <p class="text-lg text-gray-700 leading-relaxed hover-brighten">
             The Regional Campus Coimbatore of Anna University, established in 2012, offers world-class education in Engineering and Technology. Nestled in a serene environment away from the city's hustle, our campus boasts state-of-the-art infrastructure and a team of highly qualified faculty members.
           </p>
-          <p class="text-lg text-gray-700 leading-relaxed">
+          <p class="text-lg text-gray-700 leading-relaxed hover-brighten">
             We are committed to providing hands-on experience to our students, enabling them to master their skills in various disciplines and prepare for the challenges of the future.
           </p>
         </div>
-        <a href="#" class="inline-block mt-6 px-6 py-3 bg-blue-600 text-white font-semibold rounded-full hover:bg-blue-700 transition duration-300 text-center">Learn More</a>
+        <a href="#" class="inline-block mt-6 px-6 py-3 bg-blue-600 text-white font-semibold rounded-full hover:bg-blue-700 transition duration-300 text-center hover-scale">Learn More</a>
       </div>
       <div class="grid grid-cols-1 gap-6">
-        <div class="bg-white rounded-lg shadow-lg overflow-hidden h-[250px]">
-          <h3 class="text-2xl font-semibold bg-blue-600 text-white p-4">News & Admissions</h3>
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden h-[250px] hover-shadow">
+          <h3 class="text-2xl font-semibold bg-blue-600 text-white p-4 hover-brighten">News & Admissions</h3>
           <div class="h-[190px] overflow-hidden relative">
             <ul class="news-scroll absolute w-full">
-              <li class="p-4 border-b border-gray-200">Admissions open for 2024-2025 academic year</li>
-              <li class="p-4 border-b border-gray-200">New Computer Science curriculum announced</li>
-              <li class="p-4 border-b border-gray-200">Campus recruitment drive scheduled for next month</li>
-              <li class="p-4 border-b border-gray-200">Research paper presentation workshop next week</li>
-              <li class="p-4 border-b border-gray-200">University ranks in top 10 for engineering programs</li>
+              <li class="p-4 border-b border-gray-200 hover-highlight">Admissions open for 2024-2025 academic year</li>
+              <li class="p-4 border-b border-gray-200 hover-highlight">New Computer Science curriculum announced</li>
+              <li class="p-4 border-b border-gray-200 hover-highlight">Campus recruitment drive scheduled for next month</li>
+              <li class="p-4 border-b border-gray-200 hover-highlight">Research paper presentation workshop next week</li>
+              <li class="p-4 border-b border-gray-200 hover-highlight">University ranks in top 10 for engineering programs</li>
             </ul>
           </div>
         </div>
-        <div class="bg-white rounded-lg shadow-lg overflow-hidden h-[250px]">
-          <h3 class="text-2xl font-semibold bg-blue-600 text-white p-4">Events & Scholarships</h3>
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden h-[250px] hover-shadow">
+          <h3 class="text-2xl font-semibold bg-blue-600 text-white p-4 hover-brighten">Events & Scholarships</h3>
           <div class="h-[190px] overflow-hidden relative">
             <ul class="events-scroll absolute w-full">
-              <li class="p-4 border-b border-gray-200">Annual Tech Fest: InnovateTech 2024</li>
-              <li class="p-4 border-b border-gray-200">Scholarship applications due by end of month</li>
-              <li class="p-4 border-b border-gray-200">Guest lecture series: AI in Modern Industry</li>
-              <li class="p-4 border-b border-gray-200">Inter-college sports meet registration open</li>
-              <li class="p-4 border-b border-gray-200">Career guidance seminar for final year students</li>
+              <li class="p-4 border-b border-gray-200 hover-highlight">Annual Tech Fest: InnovateTech 2024</li>
+              <li class="p-4 border-b border-gray-200 hover-highlight">Scholarship applications due by end of month</li>
+              <li class="p-4 border-b border-gray-200 hover-highlight">Guest lecture series: AI in Modern Industry</li>
+              <li class="p-4 border-b border-gray-200 hover-highlight">Inter-college sports meet registration open</li>
+              <li class="p-4 border-b border-gray-200 hover-highlight">Career guidance seminar for final year students</li>
             </ul>
           </div>
         </div>
@@ -459,5 +459,23 @@ export default {
   content: "";
   display: flex;
   height: 100%;
+}
+
+/* Hover Effects */
+
+.hover-brighten:hover {
+  filter: brightness(1.1);
+  transition: filter 0.3s ease;
+}
+
+
+.hover-shadow:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease;
+}
+
+.hover-highlight:hover {
+  background-color: rgba(59, 130, 246, 0.1); /* Light blue background */
+  transition: background-color 0.3s ease;
 }
 </style>
