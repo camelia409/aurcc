@@ -124,7 +124,7 @@
       </div>
 
       <!-- Programs Section -->
-      <section class="bg-[#f1f1f1] w-full py-12">
+      <section class="bg-[#f1f1f1] w-full py-24">
         <div class="container mx-auto px-4">
           <h2 class="text-4xl font-bold text-center mb-8 text-[#21209c] animate-fade-in-up">Programs Offered</h2>
           <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -214,7 +214,7 @@
               <img src="../assets/dean.jpg" alt="Dean's Photo" class="w-full h-full object-cover" />
             </div>
             <div class="md:w-2/3 p-8">
-              <h3 class="text-2xl font-semibold mb-4">Prof. Samantha Johnson</h3>
+              <h3 class="text-2xl font-semibold mb-4">Dr. Saravanan Kumar</h3>
               <p class="text-indigo-200 mb-6 italic">"Empowering the next generation of innovators and leaders."</p>
               <p class="mb-4">
                 Welcome to Anna University! Our institution stands at the forefront of technological education and research. We are committed to nurturing not just skilled professionals, but visionary leaders who will shape the future of our society.
