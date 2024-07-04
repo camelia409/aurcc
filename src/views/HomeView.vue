@@ -22,7 +22,7 @@
     <div class="relative z-10 text-center text-white">
       <h1 class="text-5xl md:text-7xl font-bold mb-4">Welcome to Anna University</h1>
       <p class="text-xl md:text-2xl mb-8">Empowering Minds, Shaping Futures</p>
-      <a href="#about" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full transition-colors">Learn More</a>
+      <!-- <a href="#about" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full transition-colors">Learn More</a> -->
     </div>
   </section>
 
@@ -31,22 +31,22 @@
 <!-- About Section -->
 <section id="about" class="py-20 bg-gradient-to-b from-white to-gray-100">
   <div class="container mx-auto px-4">
-    <h2 class="text-4xl font-bold text-center mb-12 text-gray-800 hover-underline">About Our Campus</h2>
+    
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
-      <div class="flex flex-col justify-between">
+      <div class="flex flex-col ">
+        <h2 class="text-5xl font-bold text-center mb-12 text-gray-800 hover-underline" style="font-family: 'Clash Grotesk', sans-serif;">ABOUT OUR CAMPUS</h2>
         <div class="space-y-6">
           <p class="text-lg text-gray-700 leading-relaxed hover-brighten">
-            The Regional Campus Coimbatore of Anna University, established in 2012, offers world-class education in Engineering and Technology. Nestled in a serene environment away from the city's hustle, our campus boasts state-of-the-art infrastructure and a team of highly qualified faculty members.
+            The Regional Campus Coimbatore of Anna University, established in 2012, offers world-class education in Engineering and Technology. Nestled in a serene environment away from the city's hustle, our campus boasts state-of-the-art infrastructure and a team of highly qualified faculty members. As usual this is the text for this sub para, i don’t know why thiz suddenly looks a shit lot more shorter than it used be, do you feel the same way as me The Department of Computer Science and Engineering aims at producing technically competent professionals who can excel in today’s age of technology. Recognizing its role in engineering education, generation, and dissemination, the department is equipped with state-of-the-art facilities and relevant technologies. Computer Science or Computing Science is the scientific and mathematical approach to computation, specifically referring to the design of computing machines and processes.
           </p>
           <p class="text-lg text-gray-700 leading-relaxed hover-brighten">
             We are committed to providing hands-on experience to our students, enabling them to master their skills in various disciplines and prepare for the challenges of the future.
           </p>
         </div>
-        <a href="#" class="inline-block mt-6 px-6 py-3 bg-blue-600 text-white font-semibold rounded-full hover:bg-blue-700 transition duration-300 text-center hover-scale">Learn More</a>
       </div>
       <div class="grid grid-cols-1 gap-6">
         <div class="bg-white rounded-lg shadow-lg overflow-hidden hover-shadow">
-          <h3 class="text-2xl font-semibold bg-blue-600 text-white p-4 hover-brighten">News & Admissions</h3>
+          <h3 class="text-2xl font-semibold bg-gradient-to-r from-[#21209c] to-indigo-500 text-white p-4 hover-brighten" style="font-family: 'Clash Grotesk', sans-serif;">News / Admissions</h3>
           <div class="overflow-hidden relative" style="max-height: 300px;">
             <ul class="news-scroll w-full animated-list">
               <li v-for="(str, index) in news" :key="index" class="py-3 px-4 hover-highlight">{{str}}</li>
@@ -54,7 +54,7 @@
           </div>
         </div>
         <div class="bg-white rounded-lg shadow-lg overflow-hidden hover-shadow">
-          <h3 class="text-2xl font-semibold bg-blue-600 text-white p-4 hover-brighten">Events & Scholarships</h3>
+          <h3 class="text-2xl font-semibold bg-gradient-to-r from-[#21209c] to-indigo-500 text-white p-4 hover-brighten" style="font-family: 'Clash Grotesk', sans-serif;">Events / Scholarships</h3>
           <div class="overflow-hidden relative" style="max-height: 300px;">
             <ul class="events-scroll w-full animated-list">
               <li v-for="(str, index) in events" :key="index" class="py-3 px-4 hover-highlight">{{str}}</li>
@@ -467,22 +467,6 @@ export default {
 }
 
 /* Existing Hover Effects */
-.hover-underline:hover {
-  text-decoration: underline;
-  text-decoration-thickness: 2px;
-  text-underline-offset: 4px;
-}
-
-.hover-brighten:hover {
-  filter: brightness(1.1);
-  transition: filter 0.3s ease;
-}
-
-.hover-scale:hover {
-  transform: scale(1.05);
-  transition: transform 0.3s ease;
-}
-
 .hover-shadow:hover {
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
   transition: box-shadow 0.3s ease;
