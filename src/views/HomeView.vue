@@ -6,65 +6,63 @@
 
     <main>
       <section class="hero min-h-screen relative overflow-hidden">
-    <video 
-      autoplay 
-      loop 
-      muted 
-      playsinline
-      class="absolute inset-0 w-full h-full object-cover"
-    >
-      <source src="../assets/videoplayback.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
+        <video 
+          autoplay 
+          loop 
+          muted 
+          playsinline
+          class="absolute inset-0 w-full h-full object-cover"
+        >
+          <source src="../assets/videoplayback.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
 
-    <div class="hero-overlay bg-black bg-opacity-75 z-10" ></div>
+        <div class="hero-overlay bg-black bg-opacity-75 z-10" ></div>
 
-    <div class="relative z-10 text-center text-white">
-      <h1 class="text-5xl md:text-7xl font-bold mb-4">Welcome to Anna University</h1>
-      <p class="text-xl md:text-2xl mb-8">Empowering Minds, Shaping Futures</p>
-      <!-- <a href="#about" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full transition-colors">Learn More</a> -->
-    </div>
-  </section>
-
-
-
-<!-- About Section -->
-<section id="about" class="py-20 bg-gradient-to-b from-white to-gray-100">
-  <div class="container mx-auto px-4">
-    
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
-      <div class="flex flex-col ">
-        <h2 class="text-5xl font-bold text-center mb-12 text-gray-800 hover-underline" style="font-family: 'Clash Grotesk', sans-serif;">ABOUT OUR CAMPUS</h2>
-        <div class="space-y-6">
-          <p class="text-lg text-gray-700 leading-relaxed hover-brighten">
-            The Regional Campus Coimbatore of Anna University, established in 2012, offers world-class education in Engineering and Technology. Nestled in a serene environment away from the city's hustle, our campus boasts state-of-the-art infrastructure and a team of highly qualified faculty members. As usual this is the text for this sub para, i don’t know why thiz suddenly looks a shit lot more shorter than it used be, do you feel the same way as me The Department of Computer Science and Engineering aims at producing technically competent professionals who can excel in today’s age of technology. Recognizing its role in engineering education, generation, and dissemination, the department is equipped with state-of-the-art facilities and relevant technologies. Computer Science or Computing Science is the scientific and mathematical approach to computation, specifically referring to the design of computing machines and processes.
-          </p>
-          <p class="text-lg text-gray-700 leading-relaxed hover-brighten">
-            We are committed to providing hands-on experience to our students, enabling them to master their skills in various disciplines and prepare for the challenges of the future.
-          </p>
+        <div class="relative z-10 text-center text-white">
+          <h1 class="text-5xl md:text-7xl font-bold mb-4">Welcome to Anna University</h1>
+          <p class="text-xl md:text-2xl mb-8">Empowering Minds, Shaping Futures</p>
+          <!-- <a href="#about" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full transition-colors">Learn More</a> -->
         </div>
-      </div>
-      <div class="grid grid-cols-1 gap-6">
-        <div class="bg-white rounded-lg shadow-lg overflow-hidden hover-shadow">
-          <h3 class="text-2xl font-semibold bg-gradient-to-r from-[#21209c] to-indigo-500 text-white p-4 hover-brighten" style="font-family: 'Clash Grotesk', sans-serif;">News / Admissions</h3>
-          <div class="overflow-hidden relative" style="max-height: 300px;">
-            <ul class="news-scroll w-full animated-list">
-              <li v-for="(str, index) in news" :key="index" class="py-3 px-4 hover-highlight">{{str}}</li>
-            </ul>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="py-20 bg-gradient-to-b from-white to-gray-100">
+        <div class="container mx-auto px-4">
+          
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
+            <div class="flex flex-col ">
+              <h2 class="text-5xl font-bold text-center mb-12 text-gray-800 hover-underline" style="font-family: 'Clash Grotesk', sans-serif;">ABOUT OUR CAMPUS</h2>
+              <div class="space-y-6">
+                <p class="text-lg text-gray-700 leading-relaxed hover-brighten">
+                  The Regional Campus Coimbatore of Anna University, established in 2012, offers world-class education in Engineering and Technology. Nestled in a serene environment away from the city's hustle, our campus boasts state-of-the-art infrastructure and a team of highly qualified faculty members. As usual this is the text for this sub para, i don’t know why thiz suddenly looks a shit lot more shorter than it used be, do you feel the same way as me The Department of Computer Science and Engineering aims at producing technically competent professionals who can excel in today’s age of technology. Recognizing its role in engineering education, generation, and dissemination, the department is equipped with state-of-the-art facilities and relevant technologies. Computer Science or Computing Science is the scientific and mathematical approach to computation, specifically referring to the design of computing machines and processes.
+                </p>
+                <p class="text-lg text-gray-700 leading-relaxed hover-brighten">
+                  We are committed to providing hands-on experience to our students, enabling them to master their skills in various disciplines and prepare for the challenges of the future.
+                </p>
+              </div>
+            </div>
+            <div class="grid grid-cols-1 gap-6">
+              <div class="bg-white rounded-lg shadow-lg overflow-hidden hover-shadow">
+                <h3 class="text-2xl font-semibold bg-gradient-to-r from-[#21209c] to-indigo-500 text-white p-4 hover-brighten" style="font-family: 'Clash Grotesk', sans-serif;">News / Admissions</h3>
+                <div class="overflow-hidden relative" style="max-height: 300px;">
+                  <ul class="news-scroll w-full animated-list">
+                    <li v-for="(str, index) in news" :key="index" class="py-3 px-4 hover-highlight">{{str}}</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="bg-white rounded-lg shadow-lg overflow-hidden hover-shadow">
+                <h3 class="text-2xl font-semibold bg-gradient-to-r from-[#21209c] to-indigo-500 text-white p-4 hover-brighten" style="font-family: 'Clash Grotesk', sans-serif;">Events / Scholarships</h3>
+                <div class="overflow-hidden relative" style="max-height: 300px;">
+                  <ul class="events-scroll w-full animated-list">
+                    <li v-for="(str, index) in events" :key="index" class="py-3 px-4 hover-highlight">{{str}}</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="bg-white rounded-lg shadow-lg overflow-hidden hover-shadow">
-          <h3 class="text-2xl font-semibold bg-gradient-to-r from-[#21209c] to-indigo-500 text-white p-4 hover-brighten" style="font-family: 'Clash Grotesk', sans-serif;">Events / Scholarships</h3>
-          <div class="overflow-hidden relative" style="max-height: 300px;">
-            <ul class="events-scroll w-full animated-list">
-              <li v-for="(str, index) in events" :key="index" class="py-3 px-4 hover-highlight">{{str}}</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+      </section>
 
 
       <!-- college stats -->
@@ -153,125 +151,125 @@
 
       <!-- Programs Section -->
       <section class="bg-[#f1f1f1] w-full py-12">
-  <div class="container mx-auto px-4">
-    <h2 class="text-4xl font-bold text-center mb-8 text-[#21209c] animate-fade-in-up">Programs Offered</h2>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-      <div class="text-lg bg-[#21209c] p-4 rounded-lg flex items-center space-x-4 transition-transform transform hover:scale-105">
-        <div class="bg-[#fdb827] p-2 rounded-full">
-          <svg class="w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-          </svg>
-        </div>
-        <router-link to='/departments/cse'>
-          <h3 class="font-bold text-white">B.E. Computer Science Engg</h3>
-          <p class="text-sm text-gray-300">CSE Department</p>
-        </router-link>
-      </div>
+        <div class="container mx-auto px-4">
+          <h2 class="text-4xl font-bold text-center mb-8 text-[#21209c] animate-fade-in-up">Programs Offered</h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="text-lg bg-[#21209c] p-4 rounded-lg flex items-center space-x-4 transition-transform transform hover:scale-105">
+              <div class="bg-[#fdb827] p-2 rounded-full">
+                <svg class="w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+              </div>
+              <router-link to='/departments/cse'>
+                <h3 class="font-bold text-white">B.E. Computer Science Engg</h3>
+                <p class="text-sm text-gray-300">CSE Department</p>
+              </router-link>
+            </div>
 
-      <div class="text-lg bg-[#21209c] p-4 rounded-lg flex items-center space-x-4 transition-transform transform hover:scale-105">
-        <div class="bg-[#fdb827] p-2 rounded-full">
-          <svg class="w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
-          </svg>
-        </div>
-        <router-link to='/departments/cse'>
-          <h3 class="font-bold text-white">B.Tech Artificial Intelligence and DataScience</h3>
-          <p class="text-sm text-gray-300">CSE Department</p>
-        </router-link>
-      </div>
+            <div class="text-lg bg-[#21209c] p-4 rounded-lg flex items-center space-x-4 transition-transform transform hover:scale-105">
+              <div class="bg-[#fdb827] p-2 rounded-full">
+                <svg class="w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
+                </svg>
+              </div>
+              <router-link to='/departments/cse'>
+                <h3 class="font-bold text-white">B.Tech Artificial Intelligence and DataScience</h3>
+                <p class="text-sm text-gray-300">CSE Department</p>
+              </router-link>
+            </div>
 
-      <div class="text-lg bg-[#21209c] p-4 rounded-lg flex items-center space-x-4 transition-transform transform hover:scale-105">
-        <div class="bg-[#fdb827] p-2 rounded-full">
-          <svg class="w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
-          </svg>
-        </div>
-        <div>
-          <h3 class="font-bold text-white">B.E. Electrical and Electrical Engg</h3>
-          <p class="text-sm text-gray-300">EEE Department</p>
-        </div>
-      </div>
+            <div class="text-lg bg-[#21209c] p-4 rounded-lg flex items-center space-x-4 transition-transform transform hover:scale-105">
+              <div class="bg-[#fdb827] p-2 rounded-full">
+                <svg class="w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-bold text-white">B.E. Electrical and Electrical Engg</h3>
+                <p class="text-sm text-gray-300">EEE Department</p>
+              </div>
+            </div>
 
-      <div class="text-lg bg-[#21209c] p-4 rounded-lg flex items-center space-x-4 transition-transform transform hover:scale-105">
-        <div class="bg-[#fdb827] p-2 rounded-full">
-          <svg class="w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
-          </svg>
-        </div>
-        <div>
-          <h3 class="font-bold text-white">B.E. Electrical and Electronics Engg</h3>
-          <p class="text-sm text-gray-300">ECE Department</p>
-        </div>
-      </div>
+            <div class="text-lg bg-[#21209c] p-4 rounded-lg flex items-center space-x-4 transition-transform transform hover:scale-105">
+              <div class="bg-[#fdb827] p-2 rounded-full">
+                <svg class="w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-bold text-white">B.E. Electrical and Electronics Engg</h3>
+                <p class="text-sm text-gray-300">ECE Department</p>
+              </div>
+            </div>
 
-      <div class="text-lg bg-[#21209c] p-4 rounded-lg flex items-center space-x-4 transition-transform transform hover:scale-105">
-        <div class="bg-[#fdb827] p-2 rounded-full">
-          <svg class="w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-          </svg>
-        </div>
-        <div>
-          <h3 class="font-bold text-white">B.E. Mechanical Engg</h3>
-          <p class="text-sm text-gray-300">Mechanical Department</p>
-        </div>
-      </div>
+            <div class="text-lg bg-[#21209c] p-4 rounded-lg flex items-center space-x-4 transition-transform transform hover:scale-105">
+              <div class="bg-[#fdb827] p-2 rounded-full">
+                <svg class="w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-bold text-white">B.E. Mechanical Engg</h3>
+                <p class="text-sm text-gray-300">Mechanical Department</p>
+              </div>
+            </div>
 
-      <div class="text-lg bg-[#fdb827] p-4 rounded-lg flex items-center space-x-4 transition-transform transform hover:scale-105">
-        <div class="bg-[#21209c] p-2 rounded-full">
-          <svg class="w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-          </svg>
-        </div>
-        <div>
-          <h3 class="font-bold text-[#23120b]">MBA</h3>
-          <p class="text-sm text-gray-700">MBA Department</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-  <!-- Gallery Section -->
-  <section id="gallery" class="py-16 bg-white">
-    <div class="container mx-auto px-4">
-      <h2 class="text-3xl font-bold text-center mb-8 text-[#21209c]">Gallery of Memories IG</h2>
-      <div class="relative flex items-center justify-center gap-8">
-        <div @click="prevImage" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-[#21209c]  text-white p-2 rounded-full cursor-pointer hover:bg-opacity-75 z-30">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-10 h-10">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M15 19l-7-7 7-7" />
-          </svg>
-        </div>
-        <!-- <img :src="prevImageSrc" alt="Previous Image" class="w-1/3 h-48 object-cover opacity-75 transition-opacity duration-500 ease-in-out" /> -->
-        <div class=" flex w-1/2">
-          <div v-for="(image, index) in galleryImages" :key="index" class="flex-shrink-0 w-full transition-transform transform duration-500 ease-in-out px-6" :style="{ transform: `translateX(-${currentImageIndex * 100}%)` }">
-            <div class="relative group">
-              <img :src="image.src" :alt="image.alt" class="w-full h-72  object-cover rounded-lg shadow-md" />
-              <div class="absolute bottom-0 h-2/5 w-full bg-gray-800 bg-opacity-75 rounded-b-md flex items-center justify-center">
-                <p class="text-white text-center px-4">{{ image.description }}</p>
+            <div class="text-lg bg-[#fdb827] p-4 rounded-lg flex items-center space-x-4 transition-transform transform hover:scale-105">
+              <div class="bg-[#21209c] p-2 rounded-full">
+                <svg class="w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-bold text-[#23120b]">MBA</h3>
+                <p class="text-sm text-gray-700">MBA Department</p>
               </div>
             </div>
           </div>
         </div>
-        <!-- <img :src="nextImageSrc" alt="Next Image" class="w-1/3 h-48 object-cover opacity-75 transition-opacity duration-500 ease-in-out" /> -->
-        <div @click="nextImage" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-[#21209c]  text-white p-2 rounded-full cursor-pointer hover:bg-opacity-75">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-10 h-10">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M9 5l7 7-7 7" />
-          </svg>
+      </section>
+
+
+      <!-- Gallery Section -->
+      <section id="gallery" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+          <h2 class="text-3xl font-bold text-center mb-8 text-[#21209c]">Gallery of Memories IG</h2>
+          <div class="relative flex items-center justify-center gap-8">
+            <div @click="prevImage" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-[#21209c]  text-white p-2 rounded-full cursor-pointer hover:bg-opacity-75 z-30">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-10 h-10">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M15 19l-7-7 7-7" />
+              </svg>
+            </div>
+            <!-- <img :src="prevImageSrc" alt="Previous Image" class="w-1/3 h-48 object-cover opacity-75 transition-opacity duration-500 ease-in-out" /> -->
+            <div class=" flex w-1/2">
+              <div v-for="(image, index) in galleryImages" :key="index" class="flex-shrink-0 w-full transition-transform transform duration-500 ease-in-out px-6" :style="{ transform: `translateX(-${currentImageIndex * 100}%)` }">
+                <div class="relative group">
+                  <img :src="image.src" :alt="image.alt" class="w-full h-72  object-cover rounded-lg shadow-md" />
+                  <div class="absolute bottom-0 h-2/5 w-full bg-gray-800 bg-opacity-75 rounded-b-md flex items-center justify-center">
+                    <p class="text-white text-center px-4">{{ image.description }}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- <img :src="nextImageSrc" alt="Next Image" class="w-1/3 h-48 object-cover opacity-75 transition-opacity duration-500 ease-in-out" /> -->
+            <div @click="nextImage" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-[#21209c]  text-white p-2 rounded-full cursor-pointer hover:bg-opacity-75">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-10 h-10">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M9 5l7 7-7 7" />
+              </svg>
+            </div>
+          </div>
+          <div class="flex justify-center mt-8">
+            <button 
+              v-for="(image, index) in galleryImages" 
+              :key="index" 
+              @click="goToSlide(index)" 
+              class="w-3 h-3 rounded-full mx-1 focus:outline-none transition-colors"
+              :class="index === currentImageIndex ? 'bg-indigo-600' : 'bg-indigo-300'"
+            ></button>
+          </div>
         </div>
-      </div>
-      <div class="flex justify-center mt-8">
-        <button 
-          v-for="(image, index) in galleryImages" 
-          :key="index" 
-          @click="goToSlide(index)" 
-          class="w-3 h-3 rounded-full mx-1 focus:outline-none transition-colors"
-          :class="index === currentImageIndex ? 'bg-indigo-600' : 'bg-indigo-300'"
-        ></button>
-      </div>
-    </div>
-  </section>
+      </section>
 
 
       <!-- Testimonials Section -->
@@ -317,8 +315,6 @@
         </div>
       </section>
     </main>
-
-
   </div>
 </template>
 
