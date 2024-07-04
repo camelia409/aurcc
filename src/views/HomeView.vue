@@ -33,11 +33,11 @@
   <div class="container mx-auto px-4">
     
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
-      <div class="flex flex-col">
-        <h2 class="text-4xl font-bold text-center mb-12 text-gray-800 hover-underline">About Our Campus</h2>
+      <div class="flex flex-col ">
+        <h2 class="text-5xl font-bold text-center mb-12 text-gray-800 hover-underline" style="font-family: 'Clash Grotesk', sans-serif;">ABOUT OUR CAMPUS</h2>
         <div class="space-y-6">
           <p class="text-lg text-gray-700 leading-relaxed hover-brighten">
-            The Regional Campus Coimbatore of Anna University, established in 2012, offers world-class education in Engineering and Technology. Nestled in a serene environment away from the city's hustle, our campus boasts state-of-the-art infrastructure and a team of highly qualified faculty members.
+            The Regional Campus Coimbatore of Anna University, established in 2012, offers world-class education in Engineering and Technology. Nestled in a serene environment away from the city's hustle, our campus boasts state-of-the-art infrastructure and a team of highly qualified faculty members. As usual this is the text for this sub para, i don’t know why thiz suddenly looks a shit lot more shorter than it used be, do you feel the same way as me The Department of Computer Science and Engineering aims at producing technically competent professionals who can excel in today’s age of technology. Recognizing its role in engineering education, generation, and dissemination, the department is equipped with state-of-the-art facilities and relevant technologies. Computer Science or Computing Science is the scientific and mathematical approach to computation, specifically referring to the design of computing machines and processes.
           </p>
           <p class="text-lg text-gray-700 leading-relaxed hover-brighten">
             We are committed to providing hands-on experience to our students, enabling them to master their skills in various disciplines and prepare for the challenges of the future.
