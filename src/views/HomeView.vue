@@ -123,32 +123,6 @@
         </div>
       </div>
 
-
-      <!-- Dean's Message Section -->
-      <section id="deans-message" class="py-24 bg-gradient-to-r from-[#21209c] to-indigo-500 text-white">
-        <div class="container mx-auto px-6">
-          <h2 class="text-4xl font-bold text-center mb-12">From the Dean's Desk</h2>
-          <div class="flex flex-col md:flex-row items-center bg-white bg-opacity-10 rounded-lg shadow-xl overflow-hidden backdrop-filter backdrop-blur-lg">
-            <div class="md:w-1/3">
-              <img src="../assets/dean.jpg" alt="Dean's Photo" class="w-full h-full object-cover" />
-            </div>
-            <div class="md:w-2/3 p-8">
-              <h3 class="text-2xl font-semibold mb-4">Prof. Samantha Johnson</h3>
-              <p class="text-indigo-200 mb-6 italic">"Empowering the next generation of innovators and leaders."</p>
-              <p class="mb-4">
-                Welcome to Anna University! Our institution stands at the forefront of technological education and research. We are committed to nurturing not just skilled professionals, but visionary leaders who will shape the future of our society.
-              </p>
-              <p class="mb-4">
-                Our world-class faculty, cutting-edge facilities, and industry partnerships provide an unparalleled learning environment. We encourage our students to push boundaries, think critically, and innovate fearlessly.
-              </p>
-              <p>
-                Join us in this exciting journey of discovery and growth. Together, let's build a brighter, more sustainable future through the power of education and technology.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <!-- Programs Section -->
       <section class="bg-[#f1f1f1] w-full py-12">
         <div class="container mx-auto px-4">
@@ -230,6 +204,31 @@
         </div>
       </section>
 
+
+            <!-- Dean's Message Section -->
+            <section id="deans-message" class="py-24 bg-gradient-to-r from-[#21209c] to-indigo-500 text-white">
+        <div class="container mx-auto px-6">
+          <h2 class="text-4xl font-bold text-center mb-12">From the Dean's Desk</h2>
+          <div class="flex flex-col md:flex-row items-center bg-white bg-opacity-10 rounded-lg shadow-xl overflow-hidden backdrop-filter backdrop-blur-lg">
+            <div class="md:w-1/3">
+              <img src="../assets/dean.jpg" alt="Dean's Photo" class="w-full h-full object-cover" />
+            </div>
+            <div class="md:w-2/3 p-8">
+              <h3 class="text-2xl font-semibold mb-4">Prof. Samantha Johnson</h3>
+              <p class="text-indigo-200 mb-6 italic">"Empowering the next generation of innovators and leaders."</p>
+              <p class="mb-4">
+                Welcome to Anna University! Our institution stands at the forefront of technological education and research. We are committed to nurturing not just skilled professionals, but visionary leaders who will shape the future of our society.
+              </p>
+              <p class="mb-4">
+                Our world-class faculty, cutting-edge facilities, and industry partnerships provide an unparalleled learning environment. We encourage our students to push boundaries, think critically, and innovate fearlessly.
+              </p>
+              <p>
+                Join us in this exciting journey of discovery and growth. Together, let's build a brighter, more sustainable future through the power of education and technology.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <!-- Gallery Section -->
       <section id="gallery" class="py-16 bg-white">
