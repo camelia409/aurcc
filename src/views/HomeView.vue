@@ -31,9 +31,10 @@
 <!-- About Section -->
 <section id="about" class="py-20 bg-gradient-to-b from-white to-gray-100">
   <div class="container mx-auto px-4">
-    <h2 class="text-4xl font-bold text-center mb-12 text-gray-800 hover-underline">About Our Campus</h2>
+    
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
-      <div class="flex flex-col justify-between">
+      <div class="flex flex-col">
+        <h2 class="text-4xl font-bold text-center mb-12 text-gray-800 hover-underline">About Our Campus</h2>
         <div class="space-y-6">
           <p class="text-lg text-gray-700 leading-relaxed hover-brighten">
             The Regional Campus Coimbatore of Anna University, established in 2012, offers world-class education in Engineering and Technology. Nestled in a serene environment away from the city's hustle, our campus boasts state-of-the-art infrastructure and a team of highly qualified faculty members.
@@ -42,7 +43,6 @@
             We are committed to providing hands-on experience to our students, enabling them to master their skills in various disciplines and prepare for the challenges of the future.
           </p>
         </div>
-        <a href="#" class="inline-block mt-6 px-6 py-3 bg-blue-600 text-white font-semibold rounded-full hover:bg-blue-700 transition duration-300 text-center hover-scale">Learn More</a>
       </div>
       <div class="grid grid-cols-1 gap-6">
         <div class="bg-white rounded-lg shadow-lg overflow-hidden hover-shadow">
@@ -467,22 +467,6 @@ export default {
 }
 
 /* Existing Hover Effects */
-.hover-underline:hover {
-  text-decoration: underline;
-  text-decoration-thickness: 2px;
-  text-underline-offset: 4px;
-}
-
-.hover-brighten:hover {
-  filter: brightness(1.1);
-  transition: filter 0.3s ease;
-}
-
-.hover-scale:hover {
-  transform: scale(1.05);
-  transition: transform 0.3s ease;
-}
-
 .hover-shadow:hover {
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
   transition: box-shadow 0.3s ease;
