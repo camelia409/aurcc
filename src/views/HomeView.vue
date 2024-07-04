@@ -22,7 +22,7 @@
     <div class="relative z-10 text-center text-white">
       <h1 class="text-5xl md:text-7xl font-bold mb-4">Welcome to Anna University</h1>
       <p class="text-xl md:text-2xl mb-8">Empowering Minds, Shaping Futures</p>
-      <a href="#about" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full transition-colors">Learn More</a>
+      <!-- <a href="#about" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full transition-colors">Learn More</a> -->
     </div>
   </section>
 
@@ -46,7 +46,7 @@
       </div>
       <div class="grid grid-cols-1 gap-6">
         <div class="bg-white rounded-lg shadow-lg overflow-hidden hover-shadow">
-          <h3 class="text-2xl font-semibold bg-blue-600 text-white p-4 hover-brighten">News & Admissions</h3>
+          <h3 class="text-2xl  bg-[#3030ea] text-white p-4 hover-brighten" style="font-family: 'Clash Grotesk', sans-serif;">News / Admissions</h3>
           <div class="overflow-hidden relative" style="max-height: 300px;">
             <ul class="news-scroll w-full animated-list">
               <li v-for="(str, index) in news" :key="index" class="py-3 px-4 hover-highlight">{{str}}</li>
@@ -54,7 +54,7 @@
           </div>
         </div>
         <div class="bg-white rounded-lg shadow-lg overflow-hidden hover-shadow">
-          <h3 class="text-2xl font-semibold bg-blue-600 text-white p-4 hover-brighten">Events & Scholarships</h3>
+          <h3 class="text-2xl font-semibold bg-[#3030ea] text-white p-4 hover-brighten" style="font-family: 'Clash Grotesk', sans-serif;">Events / Scholarships</h3>
           <div class="overflow-hidden relative" style="max-height: 300px;">
             <ul class="events-scroll w-full animated-list">
               <li v-for="(str, index) in events" :key="index" class="py-3 px-4 hover-highlight">{{str}}</li>
