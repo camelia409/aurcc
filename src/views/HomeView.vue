@@ -30,9 +30,9 @@
       <section id="about" class="py-20 bg-gradient-to-b from-white to-gray-100">
         <div class="container mx-auto px-4">
           
-          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch" >
             <div class="flex flex-col ">
-              <h2 class="text-5xl font-bold text-center mb-12 text-gray-800 hover-underline" style="font-family: 'Clash Grotesk', sans-serif;">ABOUT OUR CAMPUS</h2>
+              <h2 class="text-5xl font-bold text-center mb-12 text-gray-800 hover-underline" >ABOUT OUR CAMPUS</h2>
               <div class="space-y-6">
                 <p class="text-lg text-gray-700 leading-relaxed hover-brighten">
                   The Regional Campus Coimbatore of Anna University, established in 2012, offers world-class education in Engineering and Technology. Nestled in a serene environment away from the city's hustle, our campus boasts state-of-the-art infrastructure and a team of highly qualified faculty members. As usual this is the text for this sub para, i don’t know why thiz suddenly looks a shit lot more shorter than it used be, do you feel the same way as me The Department of Computer Science and Engineering aims at producing technically competent professionals who can excel in today’s age of technology. Recognizing its role in engineering education, generation, and dissemination, the department is equipped with state-of-the-art facilities and relevant technologies. Computer Science or Computing Science is the scientific and mathematical approach to computation, specifically referring to the design of computing machines and processes.
@@ -42,7 +42,7 @@
                 </p>
               </div>
             </div>
-            <div class="grid grid-cols-1 gap-6">
+            <div class="grid grid-cols-1 gap-6" style="font-family: 'Clash Grotesk', sans-serif;">
               <div class="bg-white rounded-lg shadow-lg overflow-hidden hover-shadow">
                 <h3 class="text-2xl font-semibold bg-gradient-to-r from-[#21209c] to-indigo-500 text-white p-4 hover-brighten" style="font-family: 'Clash Grotesk', sans-serif;">News / Admissions</h3>
                 <div class="overflow-hidden relative" style="max-height: 300px;">
@@ -124,7 +124,7 @@
       </div>
 
       <!-- Programs Section -->
-      <section class="bg-[#f1f1f1] w-full py-12">
+      <section class="bg-[#f1f1f1] w-full py-24">
         <div class="container mx-auto px-4">
           <h2 class="text-4xl font-bold text-center mb-8 text-[#21209c] animate-fade-in-up">Programs Offered</h2>
           <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -214,7 +214,7 @@
               <img src="../assets/dean.jpg" alt="Dean's Photo" class="w-full h-full object-cover" />
             </div>
             <div class="md:w-2/3 p-8">
-              <h3 class="text-2xl font-semibold mb-4">Prof. Samantha Johnson</h3>
+              <h3 class="text-2xl font-semibold mb-4">Dr. Saravanan Kumar</h3>
               <p class="text-indigo-200 mb-6 italic">"Empowering the next generation of innovators and leaders."</p>
               <p class="mb-4">
                 Welcome to Anna University! Our institution stands at the forefront of technological education and research. We are committed to nurturing not just skilled professionals, but visionary leaders who will shape the future of our society.
