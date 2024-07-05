@@ -48,6 +48,7 @@
                 <div class="overflow-hidden relative" style="max-height: 300px;">
                   <ul class="news-scroll w-full animated-list">
                     <li v-for="(str, index) in news" :key="index" class="py-3 px-4 hover-highlight">{{str}}</li>
+                    <li><strong>View More +</strong></li>
                   </ul>
                 </div>
               </div>
@@ -56,6 +57,7 @@
                 <div class="overflow-hidden relative" style="max-height: 300px;">
                   <ul class="events-scroll w-full animated-list">
                     <li v-for="(str, index) in events" :key="index" class="py-3 px-4 hover-highlight">{{str}}</li>
+                    <li><strong>View More +</strong></li>
                   </ul>
                 </div>
               </div>
