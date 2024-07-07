@@ -300,8 +300,10 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M15 19l-7-7 7-7" />
               </svg>
             </button>
-            <button @click="nextSlide" class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-indigo-600 text-white p-3 rounded-full focus:outline-none hover:bg-indigo-700 transition-colors">
-              &gt;
+            <button @click="nextSlide" class="absolute top-1/2 right-0 transform -translate-y-1/2 translate-x-4 bg-[#21209c] text-white p-2 rounded-full focus:outline-none hover:bg-indigo-700 transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-10 h-10">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M9 5l7 7-7 7" />
+              </svg>
             </button>
           </div>
           <div class="flex justify-center mt-8">
