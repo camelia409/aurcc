@@ -1,23 +1,20 @@
 <template>
-  <div class="min-h-screen bg-gradient-to-b from-blue-100 to-white">
-    <div v-if="mobileMenuOpen" class="md:hidden bg-white shadow-md p-4 absolute top-16 left-0 right-0 z-40">
-      <a v-for="item in menuItems" :key="item" :href="'#' + item.toLowerCase()" class="block py-2 text-blue-800 hover:text-blue-600 transition-colors">{{ item }}</a>
-    </div>
-
+  <div class="">
     <main>
-      <section class="hero min-h-screen relative overflow-hidden">
+      <section class="hero min-h-screen overflow-hidden">
+        <!-- <div class=" w-full h-full bg-black bg-opacity-50 z-10" ></div> -->
         <video 
           autoplay 
           loop 
           muted 
           playsinline
-          class="absolute inset-0 w-full h-full object-cover"
+          class=" w-full h-full object-cover -z-10"
         >
           <source src="../assets/videoplayback.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
 
-        <div class="hero-overlay bg-black bg-opacity-75 z-10" ></div>
+        
 
         <div class="relative z-10 text-center text-white">
           <h1 class="text-5xl md:text-7xl font-bold mb-4">Welcome to Anna University</h1>
