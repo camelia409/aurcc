@@ -65,7 +65,7 @@
 
 
       <!-- college stats -->
-      <div class="flex flex-wrap bg-gray-900 text-white p-8 ">
+      <div class="flex items-center justify-center bg-gray-900 text-white p-8 " style="font-family: 'Clash Grotesk', sans-serif;" >
           <!-- 15 years of delivering quality education -->
           <div class="flex flex-col items-center  p-4">
             <svg class="text-yellow-500 mb-2 w-16 h-16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -126,8 +126,8 @@
           <h2 class="text-4xl font-bold text-center mb-8 text-[#21209c] animate-fade-in-up">Programs Offered</h2>
           <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div class="text-lg bg-[#21209c] p-4 rounded-lg flex items-center space-x-4 transition-transform transform hover:scale-105">
-              <div class="bg-[#fdb827] p-2 rounded-full">
-                <svg class="w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <div class="bg-[#fdb827] p-4 rounded-full">
+                <svg class="w-12 h-12 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
               </div>
@@ -202,8 +202,8 @@
       </section>
 
 
-            <!-- Dean's Message Section -->
-            <section id="deans-message" class="py-24 bg-gradient-to-r from-[#21209c] to-indigo-500 text-white">
+      <!-- Dean's Message Section -->
+      <section id="deans-message" class="py-24 bg-gradient-to-r from-[#21209c] to-indigo-500 text-white">
         <div class="container mx-auto px-6">
           <h2 class="text-4xl font-bold text-center mb-12">From the Dean's Desk</h2>
           <div class="flex flex-col md:flex-row items-center bg-white bg-opacity-10 rounded-lg shadow-xl overflow-hidden backdrop-filter backdrop-blur-lg">
@@ -237,7 +237,6 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M15 19l-7-7 7-7" />
               </svg>
             </div>
-            <!-- <img :src="prevImageSrc" alt="Previous Image" class="w-1/3 h-48 object-cover opacity-75 transition-opacity duration-500 ease-in-out" /> -->
             <div class=" flex w-1/2">
               <div v-for="(image, index) in galleryImages" :key="index" class="flex-shrink-0 w-full transition-transform transform duration-500 ease-in-out px-6" :style="{ transform: `translateX(-${currentImageIndex * 100}%)` }">
                 <div class="relative group">
@@ -248,7 +247,6 @@
                 </div>
               </div>
             </div>
-            <!-- <img :src="nextImageSrc" alt="Next Image" class="w-1/3 h-48 object-cover opacity-75 transition-opacity duration-500 ease-in-out" /> -->
             <div @click="nextImage" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-[#21209c]  text-white p-2 rounded-full cursor-pointer hover:bg-opacity-75">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-10 h-10">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M9 5l7 7-7 7" />
