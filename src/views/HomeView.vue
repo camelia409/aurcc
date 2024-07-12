@@ -230,7 +230,7 @@
       </section>
 
       <!-- Gallery Section -->
-      <section id="gallery" class="py-16 bg-white">
+      <section id="gallery" class="py-16 bg-white overflow-hidden w-screen">
         <div class="container mx-auto px-4">
           <h2 class="text-3xl font-bold text-center mb-8 text-[#21209c]">Gallery of Memories IG</h2>
           <div class="relative flex items-center justify-center gap-8">
