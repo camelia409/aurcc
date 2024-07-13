@@ -119,7 +119,6 @@ import { RouterLink, RouterView } from 'vue-router';
       </nav>
     </div>
   </header>
-
   <RouterView />
 
   <footer class="bg-blue-900 text-white py-8">

@@ -1,7 +1,7 @@
 <template>
   <div class="">
     <main>
-      <section class="hero min-h-screen overflow-hidden bg-cover bg-center relative">
+      <section class="hero min-h-screen overflow-hidden relative -z-10 ">
         <!-- <div class="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div> -->
         <img src="/src/assets/Drone_shot.jpg" alt="">
         <!-- <video 
@@ -74,7 +74,7 @@
               <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
               <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
             </svg>
-            <p class="text-2xl font-bold text-yellow-500">15 years</p>
+            <p class="text-4xl font-bold text-yellow-500">15 years</p>
             <p class="text-sm text-gray-300 text-center">of delivering quality education</p>
           </div>
 
@@ -88,7 +88,7 @@
               <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path>
               <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path>
             </svg>
-            <p class="text-2xl font-bold text-yellow-500">7th rank</p>
+            <p class="text-4xl font-bold text-yellow-500">7th rank</p>
             <p class="text-sm text-gray-300 text-center">in Coimbatore for TNEA 2023</p>
           </div>
 
@@ -97,7 +97,7 @@
             <svg class="text-yellow-500 mb-2 w-16 h-16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
             </svg>
-            <p class="text-3xl font-bold text-yellow-500">100%</p>
+            <p class="text-4xl font-bold text-yellow-500">100%</p>
             <p class="text-sm text-gray-300 text-center">admission rate</p>
           </div>
 
@@ -107,7 +107,7 @@
               <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
               <polyline points="17 6 23 6 23 12"></polyline>
             </svg>
-            <p class="text-2xl font-bold text-yellow-500">19th</p>
+            <p class="text-4xl font-bold text-yellow-500">19th</p>
             <p class="text-sm text-gray-300 text-center">out of 450+ engineering institutions in TN</p>
           </div>
 
