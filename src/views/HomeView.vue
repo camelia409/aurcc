@@ -74,7 +74,7 @@
               <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
               <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
             </svg>
-            <p class="text-4dxl font-bold text-yellow-500">15 years</p>
+            <p class="text-4xl font-bold text-yellow-500">15 years</p>
             <p class="text-sm text-gray-300 text-center">of delivering quality education</p>
           </div>
 
