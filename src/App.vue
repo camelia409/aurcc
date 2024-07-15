@@ -119,7 +119,7 @@ import { RouterLink, RouterView } from 'vue-router';
       </nav>
     </div>
   </header>
-  <RouterView />
+  <RouterView style="font-family: 'Clash Grotesk', sans-serif;" />
 
   <footer class="bg-blue-900 text-white py-8">
     <div class="flex justify-center gap-60">

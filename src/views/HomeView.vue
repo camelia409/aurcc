@@ -205,12 +205,12 @@
 
 
       <!-- Dean's Message Section -->
-      <section id="deans-message" class="py-24 bg-gradient-to-r from-[#21209c] to-indigo-500 text-white">
+      <section id="deans-message" class="py-24 bg-[#21209c] text-white">
         <div class="container mx-auto px-6">
           <h2 class="text-4xl font-bold text-center mb-12">From the Dean's Desk</h2>
           <div class="flex flex-col md:flex-row items-center bg-white bg-opacity-10 rounded-lg shadow-xl overflow-hidden backdrop-filter backdrop-blur-lg">
             <div class="md:w-1/3">
-              <img src="../assets/dean.jpg" alt="Dean's Photo" class="w-full h-full object-cover" />
+              <img src="../assets/steve_jobs.webp" alt="Dean's Photo" class="w-full h-full object-cover" />
             </div>
             <div class="md:w-2/3 p-8">
               <h3 class="text-2xl font-semibold mb-4">Dr. Saravanan Kumar</h3>
