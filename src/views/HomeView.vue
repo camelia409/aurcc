@@ -74,7 +74,7 @@
               <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
               <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
             </svg>
-            <p class="text-4dxl font-bold text-yellow-500">15 years</p>
+            <p class="text-4xl font-bold text-yellow-500">15 years</p>
             <p class="text-sm text-gray-300 text-center">of delivering quality education</p>
           </div>
 
@@ -205,12 +205,12 @@
 
 
       <!-- Dean's Message Section -->
-      <section id="deans-message" class="py-24 bg-gradient-to-r from-[#21209c] to-indigo-500 text-white">
+      <section id="deans-message" class="py-24 bg-[#21209c] text-white">
         <div class="container mx-auto px-6">
           <h2 class="text-4xl font-bold text-center mb-12">From the Dean's Desk</h2>
           <div class="flex flex-col md:flex-row items-center bg-white bg-opacity-10 rounded-lg shadow-xl overflow-hidden backdrop-filter backdrop-blur-lg">
             <div class="md:w-1/3">
-              <img src="../assets/dean.jpg" alt="Dean's Photo" class="w-full h-full object-cover" />
+              <img src="../assets/steve_jobs.webp" alt="Dean's Photo" class="w-full h-full object-cover" />
             </div>
             <div class="md:w-2/3 p-8">
               <h3 class="text-2xl font-semibold mb-4">Dr. Saravanan Kumar</h3>
