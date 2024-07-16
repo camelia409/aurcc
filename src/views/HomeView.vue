@@ -213,7 +213,7 @@
               <img src="../assets/steve_jobs.webp" alt="Dean's Photo" class="w-full h-full object-cover" />
             </div>
             <div class="md:w-2/3 p-8">
-              <h3 class="text-2xl font-semibold mb-4">Dr. Saravanan Kumar</h3>
+              <h3 class="text-3xl font-semibold mb-4">Dr. Saravanan Kumar</h3>
               <p class="text-indigo-200 mb-6 italic">"Empowering the next generation of innovators and leaders."</p>
               <p class="mb-4">
                 Welcome to Anna University! Our institution stands at the forefront of technological education and research. We are committed to nurturing not just skilled professionals, but visionary leaders who will shape the future of our society.
@@ -269,14 +269,14 @@
 
 
       <!-- Testimonials Section -->
-      <section id="testimonials" class="py-24 bg-indigo-100">
+      <section id="testimonials" class="py-20 bg-indigo-100">
         <div class="container mx-auto px-6">
-          <h2 class="text-4xl font-bold text-center mb-12 text-indigo-800">Voices of Success</h2>
-          <div class="relative">
+          <h2 class="text-4xl font-bold text-center mb-12 text-indigo-800 pb-10">Voices of Success</h2>
+          <div class="relative w-4/5 mx-auto">
             <div class="overflow-hidden">
               <div class="flex transition-transform duration-500 ease-in-out" :style="{ transform: `translateX(-${currentIndex * 100}%)` }">
                 <div v-for="(testimonial, index) in testimonials" :key="index" class="w-full flex-shrink-0 px-4">
-                  <div class="bg-white text-gray-800 rounded-lg p-8 shadow-xl">
+                  <div class="bg-white text-gray-800 rounded-lg p-8 shadow-xl ">
                     <p class="text-xl italic mb-6">"{{ testimonial.message }}"</p>
                     <div class="flex items-center">
                       <img :src="testimonial.image" :alt="testimonial.name" class="w-16 h-16 rounded-full object-cover mr-4" />
