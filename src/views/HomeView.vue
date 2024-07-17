@@ -232,7 +232,7 @@
       <!-- Gallery Section -->
       <section id="gallery" class="py-16 bg-white overflow-hidden w-screen">
         <div class="container mx-auto px-4">
-          <h2 class="text-3xl font-bold text-center mb-8 text-[#21209c]">Gallery of Memories IG</h2>
+          <h2 class="text-4xl font-bold text-center mb-20 text-[#21209c]">Gallery of Memories IG</h2>
           <div class="relative flex items-center justify-center gap-8">
             <div @click="prevImage" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-[#21209c]  text-white p-2 rounded-full cursor-pointer hover:bg-opacity-75 z-30">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-10 h-10">
