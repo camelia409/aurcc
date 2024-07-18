@@ -67,7 +67,7 @@
 
 
       <!-- college stats -->
-      <div class="flex items-center justify-center bg-gray-900 text-white p-8 " style="font-family: 'Clash Grotesk', sans-serif;" >
+      <div class="flex items-center justify-center gap-4 bg-[#0a0a34] text-white p-14 " style="font-family: 'Clash Grotesk', sans-serif;" >
           <!-- 15 years of delivering quality education -->
           <div class="flex flex-col items-center  p-4">
             <svg class="text-yellow-500 mb-2 w-16 h-16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -108,7 +108,7 @@
               <polyline points="17 6 23 6 23 12"></polyline>
             </svg>
             <p class="text-4xl font-bold text-yellow-500">19th</p>
-            <p class="text-sm text-gray-300 text-center">out of 450+ engineering institutions in TN</p>
+            <p class="text-sm text-gray-300 text-center">out of 450+  institutions in TN</p>
           </div>
 
           <!-- An Autonomous Institution -->
@@ -125,7 +125,7 @@
       <!-- Programs Section -->
       <section class="bg-[#f1f1f1] w-full py-24">
         <div class="container mx-auto px-4">
-          <h2 class="text-4xl font-bold text-center mb-8 text-[#21209c] animate-fade-in-up">Programs Offered</h2>
+          <h2 class="text-4xl font-bold text-center mb-20 text-[#21209c] animate-fade-in-up">Programs Offered</h2>
           <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div class="text-lg bg-[#21209c] p-4 rounded-lg flex items-center space-x-4 transition-transform transform hover:scale-105">
               <div class="bg-[#fdb827] p-4 rounded-full">
