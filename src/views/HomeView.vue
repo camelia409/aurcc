@@ -268,50 +268,51 @@
       </section>
 
 
-      <!-- Testimonials Section -->
-      <section id="testimonials" class="py-20 bg-indigo-100">
-        <div class="container mx-auto px-6">
-          <h2 class="text-4xl font-bold text-center mb-12 text-indigo-800 pb-10">Voices of Success</h2>
-          <div class="relative w-4/5 mx-auto">
-            <div class="overflow-hidden">
-              <div class="flex transition-transform duration-500 ease-in-out" :style="{ transform: `translateX(-${currentIndex * 100}%)` }">
-                <div v-for="(testimonial, index) in testimonials" :key="index" class="w-full flex-shrink-0 px-4">
-                  <div class="bg-white text-gray-800 rounded-lg p-8 shadow-xl ">
-                    <p class="text-xl italic mb-6">"{{ testimonial.message }}"</p>
-                    <div class="flex items-center">
-                      <img :src="testimonial.image" :alt="testimonial.name" class="w-16 h-16 rounded-full object-cover mr-4" />
-                      <div>
-                        <p class="font-bold text-lg">{{ testimonial.name }}</p>
-                        <p class="text-indigo-600">{{ testimonial.branch }}, {{ testimonial.batch }}</p>
-                        <p class="text-sm text-gray-600">{{ testimonial.company }}</p>
-                      </div>
-                    </div>
-                  </div>
+<!-- Testimonials Section -->
+<section id="testimonials" class="py-20 bg-indigo-100">
+  <div class="container mx-auto px-6">
+    <h2 class="text-4xl font-bold text-center mb-12 text-indigo-800 pb-10">Voices of Success</h2>
+    <div class="relative w-4/5 mx-auto">
+      <div class="overflow-hidden">
+        <div class="flex transition-transform duration-500 ease-in-out" :style="{ transform: `translateX(-${currentIndex * 100}%)` }">
+          <div v-for="(testimonial, index) in testimonials" :key="index" class="w-full flex-shrink-0 px-4">
+            <div class="bg-white text-gray-800 rounded-lg p-8 shadow-xl">
+              <p class="text-xl italic mb-6">"{{ testimonial.message }}"</p>
+              <div class="flex items-center">
+                <img :src="testimonial.image" :alt="testimonial.name" class="w-16 h-16 rounded-full object-cover mr-4" />
+                <div>
+                  <p class="font-bold text-lg">{{ testimonial.name }}</p>
+                  <p class="text-indigo-600">{{ testimonial.branch }}, {{ testimonial.batch }}</p>
+                  <p class="text-sm text-gray-600">{{ testimonial.company }}</p>
                 </div>
               </div>
             </div>
-            <button @click="prevSlide" class="absolute top-1/2 left-0 transform -translate-y-1/2 -translate-x-4 bg-[#21209c]  text-white p-2 rounded-full cursor-pointer">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-10 h-10">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M15 19l-7-7 7-7" />
-              </svg>
-            </button>
-            <button @click="nextSlide" class="absolute top-1/2 right-0 transform -translate-y-1/2 translate-x-4 bg-[#21209c] text-white p-2 rounded-full focus:outline-none hover:bg-indigo-700 transition-colors">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-10 h-10">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M9 5l7 7-7 7" />
-              </svg>
-            </button>
-          </div>
-          <div class="flex justify-center mt-8">
-            <button 
-              v-for="(dot, index) in testimonials.length" 
-              :key="index" 
-              @click="goToSlide(index)" 
-              class="w-3 h-3 rounded-full mx-1 focus:outline-none transition-colors"
-              :class="index === currentIndex ? 'bg-indigo-600' : 'bg-indigo-300'"
-            ></button>
           </div>
         </div>
-      </section>
+      </div>
+      <button @click="prevSlide" class="absolute top-1/2 left-0 transform -translate-y-1/2 -translate-x-4 bg-[#21209c] text-white p-2 rounded-full cursor-pointer">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-10 h-10">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M15 19l-7-7 7-7" />
+        </svg>
+      </button>
+      <button @click="nextSlide" class="absolute top-1/2 right-0 transform -translate-y-1/2 translate-x-4 bg-[#21209c] text-white p-2 rounded-full focus:outline-none hover:bg-indigo-700 transition-colors">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-10 h-10">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M9 5l7 7-7 7" />
+        </svg>
+      </button>
+    </div>
+    <div class="flex justify-center mt-8">
+      <button 
+        v-for="(dot, index) in testimonials.length" 
+        :key="index" 
+        @click="goToSlide(index)" 
+        class="h-2 w-8 mx-1 focus:outline-none transition-colors rounded-full shadow-sm hover:shadow-md transform hover:scale-105 transition-transform duration-300"
+        :class="index === currentIndex ? 'bg-indigo-600' : 'bg-indigo-300'"
+      ></button>
+    </div>
+  </div>
+</section>
+
     </main>
   </div>
 </template>
