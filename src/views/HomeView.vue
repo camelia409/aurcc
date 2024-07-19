@@ -236,7 +236,7 @@
           <div class="relative flex items-center justify-center gap-8">
             <div @click="prevImage" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-[#21209c]  text-white p-2 rounded-full cursor-pointer hover:bg-opacity-75 z-30">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-10 h-10">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M15 19l-7-7 7-7" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
               </svg>
             </div>
             <div class=" flex w-1/2">
@@ -251,7 +251,7 @@
             </div>
             <div @click="nextImage" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-[#21209c]  text-white p-2 rounded-full cursor-pointer hover:bg-opacity-75">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-10 h-10">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M9 5l7 7-7 7" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
               </svg>
             </div>
           </div>
@@ -259,8 +259,8 @@
             <button 
               v-for="(dot, index) in galleryImages" 
               :key="index" 
-              @click="goToSlide(index)" 
-              class="h-2 w-8 mx-1 focus:outline-none transition-colors rounded-full shadow-sm hover:shadow-md transform hover:scale-105 duration-300"
+              @click="goToImage(index)" 
+              class="h-1 w-8 mx-1 focus:outline-none transition-colors rounded-full shadow-sm hover:shadow-md transform hover:scale-105 duration-300"
               :class="index === currentImageIndex ? 'bg-indigo-600' : 'bg-indigo-300'"
             ></button>
           </div>
@@ -306,8 +306,8 @@
                 v-for="(dot, index) in testimonials.length" 
                 :key="index" 
                 @click="goToSlide(index)" 
-                class="h-2 w-8 mx-1 focus:outline-none transition-colors rounded-full shadow-sm hover:shadow-md transform hover:scale-105 duration-300"
-                :class="index === currentIndex ? 'bg-indigo-600' : 'bg-indigo-300'"
+                class="h-1 w-8 mx-1 focus:outline-none transition-colors rounded-full shadow-sm hover:shadow-md transform hover:scale-105 duration-300"
+                :class="index === currentIndex ? 'bg-[#fdb827]' : 'bg-[#0a0a34]'"
               ></button>
             </div>
           </div>
@@ -400,6 +400,9 @@ export default {
     },
     goToSlide(index) {
       this.currentIndex = index;
+    },
+    goToImage(index){
+      this.currentImageIndex = index;
     },
     prevSlide() {
       this.currentIndex = (this.currentIndex === 0) ? this.testimonials.length - 1 : this.currentIndex - 1;
