@@ -42,38 +42,45 @@
               </div>
             </div>
             <div class="grid grid-cols-1 gap-6" style="font-family: 'Clash Grotesk', sans-serif;">
-  <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-duration-300">
-    <h3 class="text-2xl font-semibold bg-gradient-to-r from-[#21209c] to-indigo-500 text-white p-4 hover:brightness-110 transition-all duration-300" style="font-family: 'Clash Grotesk', sans-serif;">
-      News / Admissions
-    </h3>
-    <div class="overflow-hidden relative" style="max-height: 300px;">
-      <ul class="w-full">
-        <li v-for="(item, index) in news" :key="index" class="flex items-center py-3 px-4 border-b hover:bg-gray-50 transition-colors duration-200 group">
-          <div class="mr-3 flex-shrink-0 w-6 h-6 relative">
-            <div class="absolute inset-0 bg-indigo-200 rounded-full transform scale-0 group-hover:scale-100 transition-transform duration-300 ease-out"></div>
-            <div class="absolute inset-0 flex items-center justify-center">
-              <div class="w-1 h-1 bg-indigo-500 rounded-full transform group-hover:scale-0 transition-transform duration-300 ease-out"></div>
-            </div>
-          </div>
-          <span class="transform translate-x-0 group-hover:translate-x-1 transition-transform duration-300 ease-out">{{ item }}</span>
-        </li>
-        <li class="flex items-center py-3 px-4 hover:bg-gray-50 transition-colors duration-200 cursor-pointer group">
-          <strong class="flex items-center transform translate-x-0 group-hover:translate-x-1 transition-transform duration-300 ease-out">
-            View More 
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1 transform group-hover:translate-x-1 transition-transform duration-300 ease-out" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-            </svg>
-          </strong>
-        </li>
-      </ul>
-    </div>
-  </div>
+              <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-duration-300">
+                <h3 class="text-2xl font-semibold bg-gradient-to-r from-[#21209c] to-indigo-500 text-white p-4 hover:brightness-110 transition-all duration-300" style="font-family: 'Clash Grotesk', sans-serif;">
+                  News / Admissions
+                </h3>
+                <div class="overflow-hidden relative" style="max-height: 300px;">
+                  <ul class="events-scroll w-full">
+                    <li v-for="(item, index) in news" :key="index" class="flex items-center hover-highlight cursor-pointer font-semibold py-3 px-4 border-b hover:bg-gray-50 transition-colors duration-200 group">
+                      <div class="mr-3 flex-shrink-0 w-6 h-6 relative">
+                        <div class="absolute inset-0 bg-indigo-500 rounded-full transform scale-0 group-hover:scale-100 transition-transform duration-300 ease-out"></div>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                          <div class="w-1 h-1 bg-indigo-500 rounded-full transform group-hover:scale-0 transition-transform duration-300 ease-out"></div>
+                        </div>
+                      </div>
+                      <span class="transform translate-x-0 group-hover:translate-x-1 transition-transform duration-300 ease-out">{{ item }}</span>
+                    </li>
+                    <li class="flex items-center animated py-3 px-4 hover:bg-gray-50 transition-colors duration-200 cursor-pointer group">
+                      <strong class="flex items-center transform translate-x-0 group-hover:translate-x-1 transition-transform duration-300 ease-out">
+                        View More 
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1 transform group-hover:translate-x-1 transition-transform duration-300 ease-out" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                      </strong>
+                    </li>
+                  </ul>
+                </div>
+              </div>
               <div class="bg-white rounded-lg shadow-lg overflow-hidden hover-shadow">
                 <h3 class="text-2xl font-semibold bg-gradient-to-r from-[#21209c] to-indigo-500 text-white p-4 hover-brighten" style="font-family: 'Clash Grotesk', sans-serif;">Events / Scholarships</h3>
                 <div class="overflow-hidden relative" style="max-height: 300px;">
                   <ul class="events-scroll w-full animated-list">
-                    <li v-for="(str, index) in events" :key="index" class="py-3 px-4 border-b hover-highlight">{{str}}</li>
-                    <li><strong>View More +</strong></li>
+                    <li v-for="(str, index) in events" :key="index" class="py-3 px-4 border-b hover-highlight ">{{str}}</li>
+                    <li class="flex items-center py-3 px-4 hover:bg-gray-50 transition-colors duration-200 cursor-pointer group">
+                      <strong class="flex items-center transform translate-x-0 group-hover:translate-x-1 transition-transform duration-300 ease-out">
+                        View More 
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1 transform group-hover:translate-x-1 transition-transform duration-300 ease-out" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                      </strong>
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -385,18 +392,18 @@ export default {
       ],
       currentImageIndex: 1,
       news:[
-        "this is news one just made testing purpose, and this has to be reasonably long you right and i thing this is enough",
+        "This is news one just made testing purpose, and this has to be reasonably long you right and i thing this is enough",
         "Annd I will younk this a lot of times and then i will consider this is as a absolute win for me and you as well, but who are u btw.",
-        "this is news one just made testing purpose, and this has to be reasonably long you right and i thing this is enough",
-        "this is news one just made testing purpose, and this has to be reasonably long you right and i thing this is enough",
-        "this is news one just made testing purpose, and this has to be reasonably long you right and i thing this is enough",
+        "This is news one just made testing purpose, and this has to be reasonably long you right and i thing this is enough",
+        "This is news one just made testing purpose, and this has to be reasonably long you right and i thing this is enough",
+        "This is news one just made testing purpose, and this has to be reasonably long you right and i thing this is enough",
       ],
       events: [
-        "this is events one just made testing purpose, and this has to be reasonably long you right and i thing this is enough",
+        "This is events one just made testing purpose, and this has to be reasonably long you right and i thing this is enough",
         "Annd I will younk this a lot of times and then i will consider this is as a absolute win for me and you as well, but who are u btw.",
-        "this is events one just made testing purpose, and this has to be reasonably long you right and i thing this is enough",
-        "this is events one just made testing purpose, and this has to be reasonably long you right and i thing this is enough",
-        "this is events one just made testing purpose, and this has to be reasonably long you right and i thing this is enough",
+        "This is events one just made testing purpose, and this has to be reasonably long you right and i thing this is enough",
+        "This is events one just made testing purpose, and this has to be reasonably long you right and i thing this is enough",
+        "This is events one just made testing purpose, and this has to be reasonably long you right and i thing this is enough",
       ]
     };
   },
