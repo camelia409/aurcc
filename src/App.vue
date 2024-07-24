@@ -135,24 +135,45 @@ import { RouterLink, RouterView } from 'vue-router';
       
       <div class="space-y-4 py-6 md:py-0 md:px-6">
         <h3 class="text-2xl font-bold mb-4">Important Links</h3>
-        <div class="flex flex-wrap gap-4">
+        <div class="flex flex-wrap gap-2">
           <a href="https://www.annauniv.edu/" class="transition-transform hover:scale-110">
-            <img src="./assets/AN-logo.png" alt="AN logo" class="w-10 h-10 rounded-full bg-white p-1">
+            <img src="./assets/AN-logo.png" alt="AN logo" class="w-11 h-11 rounded-full bg-white p-1">
           </a>
           <a href="https://www.tn.gov.in/" class="transition-transform hover:scale-110">
-            <img src="./assets/2000px-TamilNadu_Logo.svg.png" alt="TN logo" class="w-12 h-12 rounded-full bg-white p-1">
+            <img src="./assets/2000px-TamilNadu_Logo.svg.png" alt="TN logo" class="w-11 h-11 rounded-full bg-white p-1">
           </a>
           <a href="http://india.gov.in" class="transition-transform hover:scale-110">
-            <img src="./assets/india.png" alt="India logo" class="w-12 h-12 rounded-full bg-white p-1">
+            <img src="./assets/india.png" alt="India logo" class="w-11 h-11 rounded-full bg-white p-1">
           </a>
           <a href="#" class="transition-transform hover:scale-110">
-            <img src="./assets/mhrd.png" alt="MHRD logo" class="w-12 h-12 rounded-full bg-white p-1">
+            <img src="./assets/mhrd.png" alt="MHRD logo" class="w-11 h-11 rounded-full bg-white p-1">
           </a>
           <a href="https://www.aicte-india.org/" class="transition-transform hover:scale-110">
-            <img src="./assets/aicte.png" alt="AICTE logo" class="w-12 h-12 rounded-full bg-white p-1">
+            <img src="./assets/aicte.png" alt="AICTE logo" class="w-11 h-11 rounded-full bg-white p-1">
           </a>
           <a href="https://www.ugc.gov.in/" class="transition-transform hover:scale-110">
-            <img src="./assets/ugc.png" alt="UGC logo" class="w-12 h-12 rounded-full bg-white p-1">
+            <img src="./assets/ugc.png" alt="UGC logo" class="w-11 h-11 rounded-full bg-white p-1">
+          </a>
+        </div>
+        <h3 class="text-2xl font-bold mb-4">Social media</h3>
+        <div class="flex flex-wrap gap-2">
+          <a href="https://www.annauniv.edu/" class="transition-transform hover:scale-110">
+            <img src="./assets/AN-logo.png" alt="AN logo" class="w-11 h-11 rounded-full bg-white p-1">
+          </a>
+          <a href="https://www.tn.gov.in/" class="transition-transform hover:scale-110">
+            <img src="./assets/2000px-TamilNadu_Logo.svg.png" alt="TN logo" class="w-11 h-11 rounded-full bg-white p-1">
+          </a>
+          <a href="http://india.gov.in" class="transition-transform hover:scale-110">
+            <img src="./assets/india.png" alt="India logo" class="w-11 h-11 rounded-full bg-white p-1">
+          </a>
+          <a href="#" class="transition-transform hover:scale-110">
+            <img src="./assets/mhrd.png" alt="MHRD logo" class="w-11 h-11 rounded-full bg-white p-1">
+          </a>
+          <a href="https://www.aicte-india.org/" class="transition-transform hover:scale-110">
+            <img src="./assets/aicte.png" alt="AICTE logo" class="w-11 h-11 rounded-full bg-white p-1">
+          </a>
+          <a href="https://www.ugc.gov.in/" class="transition-transform hover:scale-110">
+            <img src="./assets/ugc.png" alt="UGC logo" class="w-11 h-11 rounded-full bg-white p-1">
           </a>
         </div>
       </div>
@@ -166,6 +187,7 @@ import { RouterLink, RouterView } from 'vue-router';
             <li>Electrical and Electronics Engineering</li>
             <li>Electronics and Communication Engineering</li>
             <li>Mechanical Engineering</li>
+            <li>Artificial Intelligence and Data Science</li>
           </ul>
         </div>
         <div class="border-t border-blue-700 pt-4">
@@ -173,22 +195,19 @@ import { RouterLink, RouterView } from 'vue-router';
           <ul class="list-disc list-inside space-y-1">
             <li>Computer Science Engineering</li>
             <li>Artificial Intelligence and Data Science</li>
+            <li>Artificial Intelligence and Data Science</li>
           </ul>
-        </div>
-        <div class="border-t border-blue-700 pt-4">
-          <a href="/about" class="text-xl font-bold text-blue-300 hover:text-blue-100 transition-colors">Website Development Team</a>
         </div>
       </div>
     </div>
     
     <hr class="my-8 border-blue-700">
     
-    <div class="flex justify-centergap-4 items-center">
-      <div class="py-2 md:py-0 md:pr-4">
-      </div>
-      <div class="py-2 md:py-0 md:px-4 text-center">
+    <div class="flex justify-between items-center">
+      <div class="py-2 text-center">
         <p class="text-lg">&copy; {{new Date().getFullYear()}} Anna University Regional Campus Coimbatore. All rights reserved.</p>
       </div>
+      <a href="/about" class="text-xl font-bold text-blue-300 hover:text-blue-100 transition-colors">Website Development Team</a> 
     </div>
   </div>
 </footer>
