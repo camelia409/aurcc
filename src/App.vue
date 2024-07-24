@@ -166,15 +166,6 @@ import { RouterLink, RouterView } from 'vue-router';
           <a href="http://india.gov.in" class="transition-transform hover:scale-110">
             <img src="./assets/india.png" alt="India logo" class="w-11 h-11 rounded-full bg-white p-1">
           </a>
-          <a href="#" class="transition-transform hover:scale-110">
-            <img src="./assets/mhrd.png" alt="MHRD logo" class="w-11 h-11 rounded-full bg-white p-1">
-          </a>
-          <a href="https://www.aicte-india.org/" class="transition-transform hover:scale-110">
-            <img src="./assets/aicte.png" alt="AICTE logo" class="w-11 h-11 rounded-full bg-white p-1">
-          </a>
-          <a href="https://www.ugc.gov.in/" class="transition-transform hover:scale-110">
-            <img src="./assets/ugc.png" alt="UGC logo" class="w-11 h-11 rounded-full bg-white p-1">
-          </a>
         </div>
       </div>
       
