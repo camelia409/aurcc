@@ -43,7 +43,7 @@
             </div>
             <div class="grid grid-cols-1 gap-6" style="font-family: 'Clash Grotesk', sans-serif;">
               <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-duration-300">
-                <h3 class="text-2xl font-semibold bg-gradient-to-r from-[#21209c] to-indigo-500 text-white p-4 hover:brightness-110 transition-all duration-300" style="font-family: 'Clash Grotesk', sans-serif;">
+                <h3 class="text-3xl font-semibold bg-gradient-to-r from-[#21209c] to-indigo-500 text-white p-4 hover:brightness-110 transition-all duration-300" style="font-family: 'Clash Grotesk', sans-serif;">
                   News / Admissions
                 </h3>
                 <div class="overflow-hidden relative" style="max-height: 300px;">
