@@ -131,7 +131,26 @@ import { RouterLink, RouterView } from 'vue-router';
           Coimbatore(Dt), Tamil Nadu 641046, India
         </p>
         <p class="text-lg font-semibold">Email: ucedean-kovai@gmail.com</p>
+        <h3 class="text-2xl font-bold mb-4">Social media</h3>
+        <div class="flex flex-wrap gap-2">
+          <a href="https://www.annauniv.edu/" class="transition-transform hover:scale-110">
+            <img src="./assets/AN-logo.png" alt="AN logo" class="w-10 h-10 rounded-full bg-white p-1">
+          </a>
+          <a href="https://www.tn.gov.in/" class="transition-transform hover:scale-110">
+            <img src="./assets/2000px-TamilNadu_Logo.svg.png" alt="TN logo" class="w-10 h-10 rounded-full bg-white p-1">
+          </a>
+          <a href="http://india.gov.in" class="transition-transform hover:scale-110">
+            <img src="./assets/india.png" alt="India logo" class="w-10 h-10 rounded-full bg-white p-1">
+          </a>
+          <a href="https://www.annauniv.edu/" class="transition-transform hover:scale-110">
+            <img src="./assets/AN-logo.png" alt="AN logo" class="w-10 h-10 rounded-full bg-white p-1">
+          </a>
+          <a href="https://www.tn.gov.in/" class="transition-transform hover:scale-110">
+            <img src="./assets/2000px-TamilNadu_Logo.svg.png" alt="TN logo" class="w-10 h-10 rounded-full bg-white p-1">
+          </a>
+        </div>
       </div>
+      
       
       <div class="space-y-4 py-6 md:py-0 md:px-6">
         <h3 class="text-2xl font-bold mb-4">Important Links</h3>
@@ -155,18 +174,7 @@ import { RouterLink, RouterView } from 'vue-router';
             <img src="./assets/ugc.png" alt="UGC logo" class="w-11 h-11 rounded-full bg-white p-1">
           </a>
         </div>
-        <h3 class="text-2xl font-bold mb-4">Social media</h3>
-        <div class="flex flex-wrap gap-2">
-          <a href="https://www.annauniv.edu/" class="transition-transform hover:scale-110">
-            <img src="./assets/AN-logo.png" alt="AN logo" class="w-11 h-11 rounded-full bg-white p-1">
-          </a>
-          <a href="https://www.tn.gov.in/" class="transition-transform hover:scale-110">
-            <img src="./assets/2000px-TamilNadu_Logo.svg.png" alt="TN logo" class="w-11 h-11 rounded-full bg-white p-1">
-          </a>
-          <a href="http://india.gov.in" class="transition-transform hover:scale-110">
-            <img src="./assets/india.png" alt="India logo" class="w-11 h-11 rounded-full bg-white p-1">
-          </a>
-        </div>
+
       </div>
       
       <div class="space-y-6 pt-6 md:pt-0 md:pl-6">
