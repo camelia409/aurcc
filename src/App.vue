@@ -157,7 +157,21 @@ import { RouterLink, RouterView } from 'vue-router';
       </div>
       <div class="px-16">  
         <div>
-          <p>some image</p>
+          <p class="text-2xl font-semibold pt-3">UG Courses</p> 
+          <ul>
+            <li>Computer Science Engg</li>
+            <li>Aritificial Intellgence and data sicence </li>
+            <li>Electrical and Electronics Engg</li>
+            <li>Electronics and Communication Engg</li>
+            <li>Mechanical Engg</li>
+          </ul>
+        </div>
+        <div>
+          <p class="text-2xl font-semibold pt-3">MBA Courses</p>
+          <ul>
+            <li>Computer Science Engg</li>
+            <li>Aritificial Intellgence and data sicence </li>
+          </ul>
         </div>
         <div>
           <a href="/about" class="text-lg font-bold mt-4 block text-blue-300">Website Development Team</a>
