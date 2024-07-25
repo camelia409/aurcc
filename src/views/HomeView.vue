@@ -48,7 +48,7 @@
                 </h3>
                 <div class="overflow-hidden relative" style="max-height: 300px;">
                   <ul class="events-scroll w-full">
-                    <li v-for="(item, index) in news" :key="index" class="flex items-center hover-highlight cursor-pointer font-semibold py-3 px-4 border-b hover:bg-gray-50 transition-colors duration-200 group">
+                    <li v-for="(item, index) in news" :key="index" class="flex items-center font-semibold hover-highlight cursor-pointer py-3 px-4 border-b hover:bg-gray-50 transition-colors duration-200 group">
                       <div class="mr-3 flex-shrink-0 w-6 h-6 relative">
                         <div class="absolute inset-0 bg-indigo-500 rounded-full transform scale-0 group-hover:scale-100 transition-transform duration-300 ease-out"></div>
                         <div class="absolute inset-0 flex items-center justify-center">
@@ -393,10 +393,10 @@ export default {
       currentImageIndex: 1,
       news:[
         "This is news one just made testing purpose, and this has to be reasonably long you right and i thing this is enough",
-        "Annd I will younk this a lot of times and then i will consider this is as a absolute win for me and you as well, but who are u btw.",
-        "This is news one just made testing purpose, and this has to be reasonably long you right and i thing this is enough",
-        "This is news one just made testing purpose, and this has to be reasonably long you right and i thing this is enough",
-        "This is news one just made testing purpose, and this has to be reasonably long you right and i thing this is enough",
+        "List of the Selected Students under AICTE-Pragati Scholarship Scheme(Degree) - 2020-21",
+        "Fees payment procedures for Admission - 2023",
+        "Campus Placement Drive (2021 - 2025) - Batch Students - 'E-CON SYSTEMS'",
+        "AICTE – SAKSHAM SCHOLARSHIP SCHEME FOR SPECIALLY-ABLED STUDENT (DEGREE) - 2020-21",
       ],
       events: [
         "This is events one just made testing purpose, and this has to be reasonably long you right and i thing this is enough",
