@@ -13,7 +13,6 @@
           <button class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded">Learn More</button>
         </div>
       </section>
-
       <!-- Horizontal Tabs -->
       <div class="sticky top-0 bg-[#fdb827] shadow-md z-10 hidden xl:block">
         <div class="flex justify-between  px-9 ">
@@ -33,7 +32,6 @@
           </nav>
         </div>
       </div>
-
       <!-- Content sections -->
       <section class="container-fluid py-8" @scroll="handleScroll">
         <div id="content-sections" class="w-full">
@@ -135,8 +133,6 @@
               </div>
             </div>
           </div>
-
-
           <div id="achievements" class="mb-8 lg:w-4/6 mx-auto py-20 bg-gray-50 ">
             <h2 class="text-3xl font-extrabold mb-6 text-gray-800">Achievements</h2>
             <div class="list-disc pl-8 space-y-4 h-96 overflow-auto ">
@@ -173,7 +169,6 @@
           </div>
           <div id="faculty" class="mb-8 lg:w-4/6 mx-auto relative py-20">
             <h2 class="text-2xl font-bold mb-4">Faculty</h2>
-
             <!-- HOD Desk -->
             <div class="mb-8">
               <h3 class="text-xl font-semibold mb-2">HOD Desk</h3>
@@ -190,7 +185,6 @@
                 </div>
               </div>
             </div>
-
             <!-- Assistant Professors -->
             <div>
               <h3 class="text-xl font-semibold mb-2">Assistant Professors</h3>
@@ -207,27 +201,22 @@
                 </div>
               </div>
             </div>
-            
             <div v-if="showPopover" class="modal modal-open">
               <div class="modal-box relative rounded-lg flex flex-col max-w-4xl p-6">
                 <!-- Close Button -->
                 <button @click="showPopover = false" class="btn btn-sm btn-circle absolute right-2 top-2">✕</button>
-
                 <!-- Heading -->
                 <h1 class="font-bold text-3xl mb-10 text-center w-full">FACULTY DETAILS</h1>
-
                 <div class="flex flex-col md:flex-row">
                   <!-- Fixed Image -->
                   <div class="flex-shrink-0 text-center mt-4 md:mt-0 my-auto mr-8" >
                     <img :src="'http://localhost:5173/src/assets/' + selectedStaff.image" alt="Profile Picture" class="h-96 w-72 rounded-lg shadow-lg object-cover">
                     <h2 class="text-lg font-semibold mt-4">{{ selectedStaff.name }}</h2>
                   </div>
-
                   <!-- Scrollable Details -->
                   <div class="md:overflow-auto flex-grow max-h-[50vh] pr-6  shadow-inner">
                     <h3 class="text-xl font-semibold"><strong>Position:</strong> {{ selectedStaff.position }}</h3>
                     <h3 class="text-xl font-semibold"><strong>Email:</strong> {{ selectedStaff.email }}</h3>
-
                     <!-- Education -->
                     <template v-if="selectedStaff.education">
                       <h3 class="text-md font-semibold mt-4"><strong>Education</strong></h3>
@@ -235,7 +224,6 @@
                         <li v-for="edu in selectedStaff.education" :key="edu.degree">{{ edu.degree }}, {{ edu.institution }} ({{ edu.year }})</li>
                       </ul>
                     </template>
-
                     <!-- Professional Experience -->
                     <template v-if="selectedStaff.professional_experience">
                       <h3 class="text-md font-semibold mt-4"><strong>Professional Experience</strong></h3>
@@ -243,7 +231,6 @@
                         <li v-for="exp in selectedStaff.professional_experience" :key="exp.position">{{ exp.position }}, {{ exp.institution }} ({{ exp.duration }})</li>
                       </ul>
                     </template>
-
                     <!-- Research Interests -->
                     <template v-if="selectedStaff.research_interests">
                       <h3 class="text-md font-semibold mt-4"><strong>Research Interests</strong></h3>
@@ -251,7 +238,6 @@
                         <li v-for="interest in selectedStaff.research_interests" :key="interest">{{ interest }}</li>
                       </ul>
                     </template>
-
                     <!-- Achievements -->
                     <template v-if="selectedStaff.achievements">
                       <h3 class="text-md font-semibold mt-4"><strong>Achievements</strong></h3>
@@ -259,7 +245,6 @@
                         <li v-for="achievement in selectedStaff.achievements" :key="achievement">{{ achievement }}</li>
                       </ul>
                     </template>
-
                     <!-- Links -->
                     <template v-if="selectedStaff.links">
                       <h3 class="text-md font-semibold mt-4"><strong>Links</strong></h3>
@@ -267,24 +252,16 @@
                         <li v-for="(link, title) in selectedStaff.links" :key="title"><a :href="link" target="_blank" class="text-violet-600 hover:underline">{{ title }}</a></li>
                       </ul>
                     </template>
-
                     <!-- Additional Details -->
                     <template v-if="selectedStaff.additional_details">
                       <h3 class="text-md font-semibold mt-4">Additional Details</h3>
                       <p>{{ selectedStaff.additional_details }}</p>
                     </template>
                   </div>
-
-
                 </div>
               </div>
             </div>
-
-
           </div>
-
-
-
           <div id="administration-and-technical-staff" class="lg:w-4/6 mx-auto">
             <h2 class="text-2xl font-bold mb-4">Administration and Technical Staff</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">

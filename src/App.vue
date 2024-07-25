@@ -18,7 +18,7 @@ import { RouterLink, RouterView } from 'vue-router';
               >
                 <li><a href="/sports" class="block px-4 py-2 transition-all duration-300 ease-in-out text-black hover:text-white">Sports</a></li>
                 <li><a href="/nss" class="block px-4 py-2 transition-all duration-300 ease-in-out text-black hover:text-white">NSS</a></li>
-                <li><a href="/tamilmandram" class="block px-4 py-2 transition-all duration-300 ease-in-out text-black hover:text-white">Tamil Mandram</a></li>
+                <li><a href="/tamilmandram" class="block px-4 py-2 transition-all duration-300 ease-in-out text-black hover:text-white">kani thamizh paravai</a></li>
                 <li><a href="/fine-arts" class="block px-4 py-2 transition-all duration-300 ease-in-out text-black hover:text-white">Fine Arts Club</a></li>
                 <li><a href="/alumni" class="block px-4 py-2 transition-all duration-300 ease-in-out text-black hover:text-white">Alumni</a></li>
               </ul>
@@ -51,8 +51,8 @@ import { RouterLink, RouterView } from 'vue-router';
               <ul
                 class="absolute z-20 left-0 mt-2 w-48 bg-white  shadow-lg  p-0 transition-all duration-300 opacity-0 invisible group-hover:visible group-hover:opacity-100 text-black"
               >
-                <li><a href="" class="block px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-300 ease-in-out">Regional campus</a></li>
-                <li><a href="" class="block px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-300 ease-in-out">Administrative staff</a></li>
+                <li><a href="/administrator" class="block px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-300 ease-in-out">Regional campus</a></li>
+                <li><a href="administration" class="block px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-300 ease-in-out">Administrative staff</a></li>
                 <li><a href="" class="block px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-300 ease-in-out">Dean</a></li>
               </ul>
             </li>
