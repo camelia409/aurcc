@@ -135,9 +135,29 @@ const router = createRouter({
       component: ()=> import('../views/Antiragging.vue')
     },
     {
+      path: '/VC/',
+      name: 'VC',
+      component: ()=> import('../views/VC.vue')
+    },
+    {
+      path: '/Registrar/',
+      name: 'Registrar',
+      component: ()=> import('../views/Registrar.vue')
+    },
+    {
+      path: '/HOD/',
+      name: 'HOD',
+      component: ()=> import('../views/HOD.vue')
+    },
+    {
+      path: '/COD/',
+      name: 'COD',
+      component: ()=> import('../views/COD.vue')
+    },
+    {
       path: '/administrator/',
       name: 'administrator',
-      component: ()=> import('../views/Administrator.vue')
+      component: ()=> import('../views/Registrar.vue')
     }
   ]
 })
