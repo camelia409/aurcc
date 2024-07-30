@@ -252,37 +252,30 @@
           </div>
         </div>
       </section>
-
-            <!-- college stats -->
-            <div class="flex items-center justify-center gap-4 bg-[#0a0a34] text-white p-14 " style="font-family: 'Clash Grotesk', sans-serif;" >
-          <!-- 15 years of delivering quality education -->
+      <div class="flex flex-wrap gap-4 bg-[#0a0a34] text-white p-14 " style="font-family: 'Clash Grotesk', sans-serif;" >
           <div class="flex flex-col items-center  p-4">
-            <p class="text-4xl font-bold text-yellow-500">15 years</p>
-            <p class="text-sm text-gray-300 text-center">of delivering quality education</p>
+            <p class="text-4xl font-bold text-yellow-500">AICTE & MOE CELL</p>
           </div>
-
-          <!-- 7th rank in Coimbatore for TNEA 2023 -->
           <div class="flex flex-col items-center  p-4">
-            <p class="text-4xl font-bold text-yellow-500">7th rank</p>
-            <p class="text-sm text-gray-300 text-center">in Coimbatore for TNEA 2023</p>
+            <p class="text-4xl font-bold text-yellow-500">Mandatory Disclosure</p>
           </div>
-
-          <!-- 100% admission rate -->
           <div class="flex flex-col items-center  p-4">
-            <p class="text-4xl font-bold text-yellow-500">100%</p>
-            <p class="text-sm text-gray-300 text-center">admission rate</p>
+            <p class="text-4xl font-bold text-yellow-500">Anti Ragging Cell</p>
           </div>
-
-          <!-- 19th out of 450+ engineering institutions in TN -->
           <div class="flex flex-col items-center  p-4">
-            <p class="text-4xl font-bold text-yellow-500">19th</p>
-            <p class="text-sm text-gray-300 text-center">out of 450+  institutions in TN</p>
+            <p class="text-4xl font-bold text-yellow-500">POSH CELL</p>
           </div>
-
-          <!-- An Autonomous Institution -->
           <div class="flex flex-col items-center  p-4">
-            <p class="text-4xl font-bold text-yellow-500">An Autonomous</p>
-            <p class="text-sm text-gray-300 text-center">Institution</p>
+            <p class="text-4xl font-bold text-yellow-500">Differently Abled Cell</p>
+          </div>
+          <div class="flex flex-col items-center  p-4">
+            <p class="text-4xl font-bold text-yellow-500">Prevention of Caste</p>
+          </div>
+          <div class="flex flex-col items-center  p-4">
+            <p class="text-4xl font-bold text-yellow-500">Anti-Drugs</p>
+          </div>
+          <div class="flex flex-col items-center  p-4">
+            <p class="text-4xl font-bold text-yellow-500">Online Grievence Redressal Cell</p>
           </div>
       </div>
 
