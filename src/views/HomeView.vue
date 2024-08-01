@@ -252,30 +252,30 @@
           </div>
         </div>
       </section>
-      <div class="flex flex-wrap gap-4 bg-[#0a0a34] text-white p-14 " style="font-family: 'Clash Grotesk', sans-serif;" >
+      <div class="flex flex-wrap bg-[#0a0a34] text-white p-14 " style="font-family: 'Clash Grotesk', sans-serif;" >
           <div class="flex flex-col items-center  p-4">
-            <p class="text-4xl font-bold text-yellow-500">AICTE & MOE CELL</p>
+            <p class="text-2xl font-bold text-yellow-500 hover:opacity-75 hover:cursor-pointer bg-blue-950 p-5 rounded-md">AICTE & MOE CELL</p>
           </div>
           <div class="flex flex-col items-center  p-4">
-            <p class="text-4xl font-bold text-yellow-500">Mandatory Disclosure</p>
+            <p class="text-2xl font-bold text-yellow-500 hover:opacity-75 hover:cursor-pointer bg-blue-950 p-5 rounded-md">Mandatory Disclosure</p>
           </div>
           <div class="flex flex-col items-center  p-4">
-            <p class="text-4xl font-bold text-yellow-500">Anti Ragging Cell</p>
+            <p class="text-2xl font-bold text-yellow-500 hover:opacity-75 hover:cursor-pointer bg-blue-950 p-5 rounded-md">Anti Ragging Cell</p>
           </div>
           <div class="flex flex-col items-center  p-4">
-            <p class="text-4xl font-bold text-yellow-500">POSH CELL</p>
+            <p class="text-2xl font-bold text-yellow-500 hover:opacity-75 hover:cursor-pointer bg-blue-950 p-5 rounded-md">POSH CELL</p>
           </div>
           <div class="flex flex-col items-center  p-4">
-            <p class="text-4xl font-bold text-yellow-500">Differently Abled Cell</p>
+            <p class="text-2xl font-bold text-yellow-500 hover:opacity-75 hover:cursor-pointer bg-blue-950 p-5 rounded-md">Differently Abled Cell</p>
           </div>
           <div class="flex flex-col items-center  p-4">
-            <p class="text-4xl font-bold text-yellow-500">Prevention of Caste</p>
+            <p class="text-2xl font-bold text-yellow-500 hover:opacity-75 hover:cursor-pointer bg-blue-950 p-5 rounded-md">Prevention of Caste</p>
           </div>
           <div class="flex flex-col items-center  p-4">
-            <p class="text-4xl font-bold text-yellow-500">Anti-Drugs</p>
+            <p class="text-2xl font-bold text-yellow-500 hover:opacity-75 hover:cursor-pointer bg-blue-950 p-5 rounded-md">Anti-Drugs</p>
           </div>
           <div class="flex flex-col items-center  p-4">
-            <p class="text-4xl font-bold text-yellow-500">Online Grievence Redressal Cell</p>
+            <p class="text-2xl font-bold text-yellow-500 hover:opacity-75 hover:cursor-pointer bg-blue-950 p-5 rounded-md">Online Grievence Redressal Cell</p>
           </div>
       </div>
 
