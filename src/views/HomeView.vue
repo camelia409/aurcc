@@ -252,7 +252,8 @@
           </div>
         </div>
       </section>
-      <div class="flex flex-wrap bg-[#0a0a34] text-white p-14 " style="font-family: 'Clash Grotesk', sans-serif;" >
+
+      <div class="flex flex-wrap bg-[#0b0b43] text-white p-14 " style="font-family: 'Clash Grotesk', sans-serif;" >
           <div class="flex flex-col items-center  p-4">
             <p class="text-2xl font-bold text-yellow-500 hover:opacity-75 hover:cursor-pointer bg-blue-950 p-5 rounded-md">AICTE & MOE CELL</p>
           </div>
