@@ -14,7 +14,7 @@
         </div>
       </section>
       <!-- Horizontal Tabs -->
-      <div class="sticky top-0 bg-[#fdb827] shadow-md z-10 hidden xl:block">
+      <div class="sticky top-0 bg-[white] shadow-md z-10 hidden xl:block">
         <div class="flex justify-between  px-9 ">
           <nav role="tablist" class="tabs">
             <button role="tab"
@@ -33,22 +33,37 @@
         </div>
       </div>
       <!-- Content sections -->
-      <section class="container-fluid py-8" @scroll="handleScroll">
+      <section class="container-fluid py-8 " @scroll="handleScroll">
         <div id="content-sections" class="w-full">
-          <div id="about-department" class="mb-8 lg:w-4/6 mx-auto py-20">
-            <h2 class="text-2xl font-bold mb-4">About Department</h2>
-            <p>{{ department.description }}</p>
-          </div>
-          <div id="vision-and-mission" class="mb-8 w-full bg-gray-100 p-3 py-16">
-            <div class="lg:w-4/6 mx-auto">
-              <h2 class="text-2xl font-bold mb-4">Vision and Mission</h2>
-              <p>{{ department.vision }}</p>
-              <ul class="list-disc pl-4">
-                <li v-for="mission in department.mission" :key="mission">{{ mission }}</li>
-              </ul>
+          <div class="container mx-auto px-4 ">
+          
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
+              <div class="flex flex-col">
+                <div class="size-full p-10 max-h-full bg-white rounded-lg shadow-lg overflow-hidden transition-shadow duration-300">
+                  <h2 class="text-3xl font-extrabold mb-6 text-gray-900 ">About Department</h2>
+                  <p class="text-gray-700 leading-relaxed">{{ department.description }}</p>
+                </div>
+              </div>
+              <div class="grid grid-cols-1 gap-6" style="font-family: 'Clash Grotesk', sans-serif;">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-shadow duration-300 ">
+                  <h3 class="text-2xl font-semibold text-gray-800 mt-4 ml-5">Vision</h3>
+                  <div class="p-5 overflow-hidden relative" style="max-height: 300px;">
+                    <p class="text-gray-700 leading-relaxed">{{ department.vision }}</p>
+                  </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-shadow duration-300 ">
+                  <h3 class="text-2xl font-semibold text-gray-800 mt-4 ml-5">Mission</h3>
+                  <div class="p-5 overflow-hidden relative" style="max-height: 300px;">
+                    <ul class="list-disc pl-5 text-gray-700 space-y-2">
+                      <li v-for="mission in department.mission" :key="mission">{{ mission }}</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-          <div id="events" class="mb-8 lg:w-4/6 mx-auto p-3 py-16">
+
+        </div>
+        <div id="events" class="mb-8 lg:w-4/6 mx-auto p-3 py-16">
           <h2 class="text-3xl font-extrabold text-gray-900">Events</h2>
           <div v-if="currentEvent" class="flex justify-between items-center mt-4">
             <button @click="showPreviousEvent" class="p-2 rounded-full bg-blue-500 text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-600">
@@ -57,7 +72,7 @@
               </svg>
             </button>
             <div class="bg-white shadow-md rounded-lg overflow-hidden flex-grow mx-3">
-              <div class="p-6">
+              <div class="p-10">
                 <h3 class="text-lg font-semibold">{{ currentEvent.name }}</h3>
                 <p class="text-sm text-gray-500">{{ currentEvent.description }}</p>
                 <p class="text-sm text-gray-500">Date: {{ currentEvent.date }}</p>
@@ -73,7 +88,7 @@
             <p class="text-lg text-gray-700">No more events to show.</p>
           </div>
         </div>
-          <div id="training-and-placements" class="bg-gray-100 py-12">
+  <!--    <div id="training-and-placements" class="bg-gray-100 py-12">
             <div class="container mx-auto flex lg:w-4/6 ">
               <div class="w-full  mb-8 lg:mb-0">
                 <div class="  ">
@@ -132,7 +147,7 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div>     -->
           <div id="achievements" class="mb-8 lg:w-4/6 mx-auto py-20 bg-gray-50 ">
             <h2 class="text-3xl font-extrabold mb-6 text-gray-800">Achievements</h2>
             <div class="list-disc pl-8 space-y-4 h-96 overflow-auto ">
@@ -149,58 +164,75 @@
                </div>
             </div>
           </div>
-          <div id="facility" class="lg:w-4/6 mx-auto">
-            <h2 class="text-2xl font-bold mb-4">Facility</h2>
-              <div class="grid gap-8">
-                <div 
-                  v-for="(facility, index) in department.facility" 
-                  :key="facility.name" 
-                  :class="index % 2 === 0 ? 'bg-white shadow-md rounded-md p-4 flex flex-col md:flex-row' : 'bg-white shadow-md rounded-md p-4 flex flex-col md:flex-row-reverse'"
-                >
-                <div class="md:w-1/2 p-4">
-                    <h3 class="text-lg font-semibold">{{ facility.name }}</h3>
-                    <p>{{ facility.description }}</p>
-                </div>
-                <div class="md:w-1/2 p-4 flex justify-center items-center">
-                    <img :src="'http://localhost:5173/src/assets/' + facility.image" :alt="facility.name" class="w-full h-auto max-w-xs">
-                </div>
-              </div>
-            </div> 
+      <div id="facility" class="w-full mx-auto px-4" >
+        <h2 class="text-2xl font-bold mb-4">Facility</h2>
+        <div class="grid gap-8">
+          <div 
+            v-for="(facility, index) in department.facility" 
+            :key="facility.name" 
+            :class="index % 2 === 0 ? 'flex flex-col md:flex-row items-center' : 'flex flex-col md:flex-row-reverse items-center'"
+          >
+            <div class="md:w-1/2 p-4 flex justify-center items-center">
+              <img :src="'http://localhost:5173/src/assets/' + facility.image" :alt="facility.name" class="w-full h-auto object-cover md:max-h-[300px]">
+            </div>
+            <div class="md:w-1/2 p-4">
+              <h3 class="text-lg font-semibold">{{ facility.name }}</h3>
+              <p class="text-gray-700">{{ facility.description }}</p>
+            </div>
           </div>
+        </div>
+      </div>
+
           <div id="faculty" class="mb-8 lg:w-4/6 mx-auto relative py-20">
             <h2 class="text-2xl font-bold mb-4">Faculty</h2>
             <!-- HOD Desk -->
-            <div class="mb-8">
+           <div class="mb-8">
               <h3 class="text-xl font-semibold mb-2">HOD Desk</h3>
-              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 " >
-                <div v-for="staff in department.faculty.hod_desk" :key="staff.email" class="p-4 border rounded-lg hover:cursor-pointer" @click="showDetails(staff)">
-                  <div class="flex items-center overflow-auto">
-                    <img :src="'http://localhost:5173/src/assets/' + staff.image" :alt="staff.name " class="w-32 h-32 rounded-lg object-cover mr-4">
-                    <div>
-                      <h4 class="text-lg font-semibold">{{ staff.name }}</h4>
-                      <p class="text-gray-600">{{ staff.position }}</p>
-                      <p class="text-gray-600">{{ staff.email }}</p>
-                    </div>
+              <div class="flex justify-center">
+                <div 
+                  v-for="staff in department.faculty.hod_desk" 
+                  :key="staff.email" 
+                  class="admin-member bg-white rounded-lg shadow-lg overflow-hidden flex flex-col items-center cursor-pointer transition-transform duration-300 ease-in-out hover:-translate-y-1"
+                  @click="showDetails(staff)"
+                >
+                <div class="w-max overflow-hidden border-4 border-gray-200 ">
+                  <img :src="'http://localhost:5173/src/assets/' + staff.image" :alt="staff.name" class="w-full h-auto object-cover"/>
+                </div>
+                  <div class="flex-grow flex flex-col justify-center p-4 bg-gray-100 text-center w-full">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-2">{{ staff.name }}</h2>
+                    <p class="text-lg text-gray-800">{{ staff.position }}</p>
+                    <p class="text-md text-gray-600">{{ staff.email }}</p>
                   </div>
                 </div>
-              </div>
             </div>
+          </div>
+
+
             <!-- Assistant Professors -->
-            <div>
+           <div>
               <h3 class="text-xl font-semibold mb-2">Assistant Professors</h3>
-              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div v-for="staff in department.faculty.assistant_professors" :key="staff.email" class="p-4 border rounded-lg hover:cursor-pointer" @click="showDetails(staff)">
-                  <div class="flex items-center overflow-auto">
-                    <img :src="'http://localhost:5173/src/assets/' + staff.image" :alt="staff.name " class="w-32 h-32 rounded-lg object-cover mr-4">
-                    <div>
-                      <h4 class="text-lg font-semibold">{{ staff.name }}</h4>
-                      <p class="text-gray-600">{{ staff.position }}</p>
-                      <p class="text-gray-600">{{ staff.email }}</p>
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div 
+                  v-for="staff in department.faculty.assistant_professors" 
+                  :key="staff.email" 
+                  class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col items-center cursor-pointer transition-transform duration-300 ease-in-out hover:-translate-y-1" 
+                  @click="showDetails(staff)"
+                >
+                  <div class="w-full flex justify-center">
+                    <div class="w-full max-w-xs aspect-[1/1] overflow-hidden border-4 border-gray-200 ">
+                      <img :src="'http://localhost:5173/src/assets/' + staff.image" :alt="staff.name" class="object-cover "/>
                     </div>
+                  </div>
+                  <div class="flex-grow flex flex-col justify-center p-4 bg-gray-100 text-center w-full">
+                    <h2 class="text-2xl font-bold text-gray-800">{{ staff.name }}</h2>
+                    <p class="text-lg text-gray-800">{{ staff.position }}</p>
+                    <p class="text-md text-gray-600">{{ staff.email }}</p>
                   </div>
                 </div>
               </div>
             </div>
+
+
             <div v-if="showPopover" class="modal modal-open">
               <div class="modal-box relative rounded-lg flex flex-col max-w-4xl p-6">
                 <!-- Close Button -->
@@ -264,14 +296,26 @@
           </div>
           <div id="administration-and-technical-staff" class="lg:w-4/6 mx-auto">
             <h2 class="text-2xl font-bold mb-4">Administration and Technical Staff</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div v-for="staff in department.admin_staff" :key="staff.email" class="bg-white border-2 border-gray-200 rounded-md p-4">
-                <h3 class="text-lg font-semibold">{{ staff.name }}</h3>
-                <p>{{ staff.position }}</p>
-                <p>{{ staff.email}}</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+              <div
+                v-for="staff in department.admin_staff"
+                :key="staff.email"
+                class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col items-center cursor-pointer transition-transform duration-300 ease-in-out hover:-translate-y-1"
+              >
+                <div class="w-full flex justify-center">
+                  <div class="w-full max-w-xs aspect-[1/1] overflow-hidden  border-gray-200 ">
+                    <img :src="'http://localhost:5173/src/assets/' + staff.image" :alt="staff.name" class="w-full h-full object-contain" />
+                  </div>
+                </div>
+                <div class="flex-grow flex flex-col justify-center p-4 bg-gray-100 text-center w-full">
+                  <h2 class="text-2xl font-bold text-gray-800">{{ staff.name }}</h2>
+                  <p class="text-lg text-gray-800">{{ staff.position }}</p>
+                  <p class="text-md text-gray-600">{{ staff.email }}</p>
+                </div>
               </div>
             </div>
           </div>
+
           <!-- <div id="proud-alumni" class="lg:w-4/6 mx-auto">
             <h2 class="text-2xl font-bold mb-4">Proud Alumni</h2>
             <ul class="list-disc pl-4">
