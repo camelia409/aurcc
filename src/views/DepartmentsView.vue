@@ -164,7 +164,7 @@
                </div>
             </div>
           </div>
-      <div id="facility" class="w-full mx-auto px-4" >
+      <div id="facility" class="container mx-auto px-4" >
         <h2 class="text-2xl font-bold mb-4">Facility</h2>
         <div class="grid gap-8">
           <div 
@@ -351,14 +351,11 @@ export default {
       department: null,
       sections: [
         'About Department',
-        'Vision and mission',
         'Events',
-        'Training and Placements',
         'Achievements',
         'Facility',
         'Faculty',
         'Administration and Technical Staff',
-        // 'Proud Alumni',
         'Research and Publications',
       ],
       events: null,
