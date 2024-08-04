@@ -162,7 +162,6 @@
                 <p class="text-sm text-gray-300">CSE Department</p>
               </router-link>
             </div>
-
             <div class="text-lg bg-[#21209c] p-4 rounded-lg flex items-center space-x-4 transition-transform transform hover:scale-105">
               <div class="bg-[#fdb827] p-2 rounded-full">
                 <svg class="w-12 h-12 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -174,7 +173,6 @@
                 <p class="text-sm text-gray-300">CSE Department</p>
               </router-link>
             </div>
-
             <div class="text-lg bg-[#21209c] p-4 rounded-lg flex items-center space-x-4 transition-transform transform hover:scale-105">
               <div class="bg-[#fdb827] p-2 rounded-full">
                 <svg class="w-12 h-12 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -186,7 +184,6 @@
                 <p class="text-sm text-gray-300">EEE Department</p>
               </div>
             </div>
-
             <div class="text-lg bg-[#21209c] p-4 rounded-lg flex items-center space-x-4 transition-transform transform hover:scale-105">
               <div class="bg-[#fdb827] p-2 rounded-full">
                 <svg class="w-12 h-12 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -198,7 +195,6 @@
                 <p class="text-sm text-gray-300">ECE Department</p>
               </div>
             </div>
-
             <div class="text-lg bg-[#21209c] p-4 rounded-lg flex items-center space-x-4 transition-transform transform hover:scale-105">
               <div class="bg-[#fdb827] p-2 rounded-full">
                 <svg class="w-12 h-12 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -211,7 +207,6 @@
                 <p class="text-sm text-gray-300">Mechanical Department</p>
               </div>
             </div>
-
             <div class="text-lg bg-[#fdb827] p-4 rounded-lg flex items-center space-x-4 transition-transform transform hover:scale-105">
               <div class="bg-[#21209c] p-2 rounded-full">
                 <svg class="w-12 h-12 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -226,7 +221,6 @@
           </div>
         </div>
       </section>
-
 
       <!-- Dean's Message Section -->
       <section id="deans-message" class="py-24 bg-[#21209c] text-white">
