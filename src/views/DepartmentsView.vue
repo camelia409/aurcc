@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen flex flex-col">
+  <div class="min-h-screen flex flex-col ">
     <main>
       <!-- Hero section -->
       <section
@@ -33,28 +33,28 @@
         </div>
       </div>
       <!-- Content sections -->
-      <section class="container-fluid py-8 " @scroll="handleScroll">
-        <div id="content-sections" class="w-full">
-          <div class="container mx-auto px-4 ">
+      <section class="container-fluid py-8" @scroll="handleScroll">
+        <div id="content-sections" class="w-full ">
+          <div class="container mx-auto px-4  bg-gray-100">
           
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
               <div class="flex flex-col">
-                <div class="size-full p-10 max-h-full bg-white rounded-lg shadow-lg overflow-hidden transition-shadow duration-300">
-                  <h2 class="text-3xl font-extrabold mb-6 text-gray-900 ">About Department</h2>
-                  <p class="text-gray-700 leading-relaxed">{{ department.description }}</p>
+                <div class="size-full max-h-full bg-white rounded-lg shadow-lg overflow-hidden transition-shadow duration-300">
+                  <h2 class="text-4xl p-4 bg-gradient-to-r from-blue-500 to-cyan-300 text-center font-semibold mb-6 text-black ">About Department</h2>
+                  <p class="text-xl text-gray-700 p-6 leading-relaxed">{{ department.description }}</p>
                 </div>
               </div>
               <div class="grid grid-cols-1 gap-6" style="font-family: 'Clash Grotesk', sans-serif;">
                 <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-shadow duration-300 ">
-                  <h3 class="text-2xl font-semibold text-gray-800 mt-4 ml-5">Vision</h3>
+                  <h3 class="text-4xl p-4 bg-gradient-to-r from-blue-500 to-cyan-300 text-center font-semibold text-black ">Vision</h3>
                   <div class="p-5 overflow-hidden relative" style="max-height: 300px;">
-                    <p class="text-gray-700 leading-relaxed">{{ department.vision }}</p>
+                    <p class="text-xl text-gray-700 leading-relaxed">{{ department.vision }}</p>
                   </div>
                 </div>
                 <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-shadow duration-300 ">
-                  <h3 class="text-2xl font-semibold text-gray-800 mt-4 ml-5">Mission</h3>
+                  <h3 class="text-4xl p-4 bg-gradient-to-r from-blue-500 to-cyan-300 text-center font-semibold text-black ">Mission</h3>
                   <div class="p-5 overflow-hidden relative" style="max-height: 300px;">
-                    <ul class="list-disc pl-5 text-gray-700 space-y-2">
+                    <ul class="text-xl list-disc pl-5 text-gray-700 space-y-2">
                       <li v-for="mission in department.mission" :key="mission">{{ mission }}</li>
                     </ul>
                   </div>
@@ -63,8 +63,8 @@
             </div>
 
         </div>
-        <div id="events" class="mb-8 lg:w-4/6 mx-auto p-3 py-16">
-          <h2 class="text-3xl font-extrabold text-gray-900">Events</h2>
+        <div id="events" class="mb-8 lg:w-4/6 bg-gray-100 mx-auto p-3 py-16">
+          <h2 class="text-4xl text-center p-4 font-extrabold bg-gradient-to-r from-blue-500 to-cyan-300  text-gray-900">Events</h2>
           <div v-if="currentEvent" class="flex justify-between items-center mt-4">
             <button @click="showPreviousEvent" class="p-2 rounded-full bg-blue-500 text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-600">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -148,8 +148,8 @@
               </div>
             </div>
           </div>     -->
-          <div id="achievements" class="mb-8 lg:w-4/6 mx-auto py-20 bg-gray-50 ">
-            <h2 class="text-3xl font-extrabold mb-6 text-gray-800">Achievements</h2>
+          <div id="achievements" class="mb-8 lg:w-4/6 bg-gray-100 mx-auto ">
+            <h2 class="text-4xl bg-gradient-to-r from-blue-500 to-cyan-300 p-4 text-center font-extrabold mb-6 text-gray-800">Achievements</h2>
             <div class="list-disc pl-8 space-y-4 h-96 overflow-auto ">
               <div v-for="achievement in department.achievements" :key="achievement.name" class="bg-white p-4 border-2 border-gray-200 rounded">
                 <div class="text-lg font-semibold text-gray-700">
@@ -164,30 +164,30 @@
                </div>
             </div>
           </div>
-      <div id="facility" class="container mx-auto px-4" >
-        <h2 class="text-2xl font-bold mb-4">Facility</h2>
-        <div class="grid gap-8">
+      <div id="facility" class="container mx-auto" >
+        <h2 class="text-5xl bg-[#0a0a34] text-center text-[#fdb827] font-extrabold p-10">Facility</h2>
+        <div class="grid gap-8 bg-blue-100">
           <div 
             v-for="(facility, index) in department.facility" 
             :key="facility.name" 
             :class="index % 2 === 0 ? 'flex flex-col md:flex-row items-center' : 'flex flex-col md:flex-row-reverse items-center'"
           >
             <div class="md:w-1/2 p-4 flex justify-center items-center">
-              <img :src="'http://localhost:5173/src/assets/' + facility.image" :alt="facility.name" class="w-full h-auto object-cover md:max-h-[300px]">
+              <img :src="'http://localhost:5173/src/assets/' + facility.image" :alt="facility.name" class="w-full h-auto object-cover md:max-h-[300px] rounded-lg">
             </div>
             <div class="md:w-1/2 p-4">
-              <h3 class="text-lg font-semibold">{{ facility.name }}</h3>
-              <p class="text-gray-700">{{ facility.description }}</p>
+              <h3 class="text-xl text-lg text-center font-semibold">{{ facility.name }}</h3>
+              <p class="text-xl text-gray-700">{{ facility.description }}</p>
             </div>
           </div>
         </div>
       </div>
 
-          <div id="faculty" class="mb-8 lg:w-4/6 mx-auto relative py-20">
-            <h2 class="text-2xl font-bold mb-4">Faculty</h2>
+          <div id="faculty" class="lg:w-4/6 mx-auto relative ">
+            <h2 class="text-5xl bg-[#3c2813] text-center text-white font-bold p-8">Faculty</h2>
             <!-- HOD Desk -->
-           <div class="mb-8">
-              <h3 class="text-xl font-semibold mb-2">HOD Desk</h3>
+           <div class=" bg-gradient-to-r from-yellow-200 " >
+              <h3 class="text-3xl text-center font-semibold p-10">HOD Desk</h3>
               <div class="flex justify-center">
                 <div 
                   v-for="staff in department.faculty.hod_desk" 
@@ -195,8 +195,8 @@
                   class="admin-member bg-white rounded-lg shadow-lg overflow-hidden flex flex-col items-center cursor-pointer transition-transform duration-300 ease-in-out hover:-translate-y-1"
                   @click="showDetails(staff)"
                 >
-                <div class="w-max overflow-hidden border-4 border-gray-200 ">
-                  <img :src="'http://localhost:5173/src/assets/' + staff.image" :alt="staff.name" class="w-full h-auto object-cover"/>
+                <div class="w-full max-w-xs aspect-[1/1] overflow-hidden border-4 border-gray-200 ">
+                  <img :src="'http://localhost:5173/src/assets/' + staff.image" :alt="staff.name" class="object-cover"/>
                 </div>
                   <div class="flex-grow flex flex-col justify-center p-4 bg-gray-100 text-center w-full">
                     <h2 class="text-2xl font-bold text-gray-800 mb-2">{{ staff.name }}</h2>
@@ -210,8 +210,8 @@
 
             <!-- Assistant Professors -->
            <div>
-              <h3 class="text-xl font-semibold mb-2">Assistant Professors</h3>
-              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+              <h3 class="text-3xl text-center font-semibold p-14 bg-gradient-to-r from-yellow-200">Assistant Professors</h3>
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 bg-gradient-to-r from-yellow-200">
                 <div 
                   v-for="staff in department.faculty.assistant_professors" 
                   :key="staff.email" 
@@ -294,20 +294,18 @@
               </div>
             </div>
           </div>
-          <div id="administration-and-technical-staff" class="lg:w-4/6 mx-auto">
-            <h2 class="text-2xl font-bold mb-4">Administration and Technical Staff</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div id="administration-and-technical-staff" class="lg:w-4/6 mx-auto pb-8">
+            <h2 class="text-3xl text-center font-semibold p-10 bg-gradient-to-r from-yellow-200">Administration and Technical Staff</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 bg-gradient-to-r from-yellow-200">
               <div
                 v-for="staff in department.admin_staff"
                 :key="staff.email"
-                class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col items-center cursor-pointer transition-transform duration-300 ease-in-out hover:-translate-y-1"
+                class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col items-center "
               >
-                <div class="w-full flex justify-center">
+                <div class="flex-grow flex flex-col justify-center p-4 bg-gray-100 text-center w-full">
                   <div class="w-full max-w-xs aspect-[1/1] overflow-hidden  border-gray-200 ">
                     <img :src="'http://localhost:5173/src/assets/' + staff.image" :alt="staff.name" class="w-full h-full object-contain" />
                   </div>
-                </div>
-                <div class="flex-grow flex flex-col justify-center p-4 bg-gray-100 text-center w-full">
                   <h2 class="text-2xl font-bold text-gray-800">{{ staff.name }}</h2>
                   <p class="text-lg text-gray-800">{{ staff.position }}</p>
                   <p class="text-md text-gray-600">{{ staff.email }}</p>
@@ -323,9 +321,9 @@
             </ul>
           </div> -->
         </div>
-        <div id="research-and-publications" class="mb-8 lg:w-4/6 mx-auto py-20 bg-gray-50">
-          <h2 class="text-3xl font-extrabold mb-6 text-gray-800">Research and Publications</h2>
-          <div class="list-disc pl-8 space-y-4 h-96 overflow-auto">
+        <div id="research-and-publications" class=" lg:w-4/6 mx-auto bg-indigo-900">
+          <h2 class="text-3xl text-center text-white font-extrabold p-8 ">Research and Publications</h2>
+          <div class="list-disc pl-8 space-y-4 h-96 overflow-auto bg-indigo-100">
             <div v-for="research in department.research_and_publications" :key="research.title" class="bg-white p-4 border-2 border-gray-200 rounded">
               <div class="text-lg font-semibold text-gray-700">
                 {{ research.title }} ({{ research.year }}):

@@ -957,6 +957,7 @@
                 "name": "Dr.Thirunavukkarasu E S",
                 "position": "Executive Assistant ",
                 "email": "arasuannauniversity@gmail.com",
+				"image":"thiru.webp",
                 "education": [
                     {
                         "degree": " M.C.A., M.Phil., PGDCA, PGDBA, DPCS",
@@ -969,6 +970,7 @@
                 "name": "Mrs.Usha L",
                 "position": "Executive Assistant ",
                 "email": "cseaurcc@gmail.com",
+				"image":"usha.webp",
                 "education": [
                     {
                         "degree": " M.sc.Biochemistry",
@@ -981,6 +983,7 @@
                 "name": "Mr Babu Magendra K S",
                 "position": "System Administrator",
                 "email": "babu@aurcc.ac.in",
+				"image":"babhu.webp",
                 "education": [
                     {
                         "degree": " ",
@@ -2467,6 +2470,7 @@
 				},
 				{
 					"name": "Dr L.Sheela",
+					"image":"sheela.webp",
 					"position": "Assistant Professor",
 					"email": "sheelal@aurcc.ac.in",
 					"education": "Nil",
@@ -3898,6 +3902,7 @@
 								"name": "Mrs. L. Thamaraiselvi L",
 								"position": "Executive Assistant ",
 								"email": "athams.money@gmail.com",
+								"image":"thamarai.webp",
 								"education": [
 									{
 										"degree": " ",
@@ -3912,6 +3917,7 @@
 								"name": "Mr. Elavarasan L",
 								"position": "Lab Technician ",
 								"email": "kmelavarasan@gmail.com",
+								"image":"elavarasan.webp",
 								"education": [
 									{
 										"degree": "B.E.",
@@ -3932,6 +3938,7 @@
 								"name": "Mr. S. Boopathyrajasekar",
 								"position": "Professional Assistant - I",
 								"email": "",
+								"image":"boopathy.webp",
 								"education": [
 									{
 										"degree": " ",
@@ -3944,6 +3951,7 @@
 								"name": "Mr. Ravikumar S ",
 								"position": " Office Assistant",
 								"email": "",
+								"image":"ravikumar.webp",
 								"education": [
 									{
 										"degree": " ",
