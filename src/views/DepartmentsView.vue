@@ -1,6 +1,6 @@
 <template>
   <div class="min-h-screen flex flex-col ">
-    <main>
+    <main class="">
       <!-- Hero section -->
       <section
         class="bg-cover bg-center relative -z-10"
@@ -33,7 +33,7 @@
         </div>
       </div>
       <!-- Content sections -->
-      <section class="container-fluid py-8" @scroll="handleScroll">
+      <section class=" mx-auto py-8" @scroll="handleScroll">
         <div id="content-sections" class="w-full ">
           <div class="container mx-auto px-4  bg-gray-100">
           
@@ -63,7 +63,7 @@
             </div>
 
         </div>
-        <div id="events" class="mb-8 lg:w-4/6 bg-gray-100 mx-auto p-3 py-16">
+        <div id="events" class="mb-8 bg-gray-100 mx-auto p-3 py-16">
           <h2 class="text-4xl text-center p-4 font-extrabold bg-gradient-to-r from-blue-500 to-cyan-300  text-gray-900">Events</h2>
           <div v-if="currentEvent" class="flex justify-between items-center mt-4">
             <button @click="showPreviousEvent" class="p-2 rounded-full bg-blue-500 text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-600">
@@ -148,7 +148,7 @@
               </div>
             </div>
           </div>     -->
-          <div id="achievements" class="mb-8 lg:w-4/6 bg-gray-100 mx-auto ">
+          <div id="achievements" class="mb-8 bg-gray-100 mx-auto ">
             <h2 class="text-4xl bg-gradient-to-r from-blue-500 to-cyan-300 p-4 text-center font-extrabold mb-6 text-gray-800">Achievements</h2>
             <div class="list-disc pl-8 space-y-4 h-96 overflow-auto ">
               <div v-for="achievement in department.achievements" :key="achievement.name" class="bg-white p-4 border-2 border-gray-200 rounded">
@@ -164,7 +164,7 @@
                </div>
             </div>
           </div>
-      <div id="facility" class="container mx-auto" >
+      <div id="facility" class=" mx-auto" >
         <h2 class="text-5xl bg-[#0a0a34] text-center text-[#fdb827] font-extrabold p-10">Facility</h2>
         <div class="grid gap-8 bg-blue-100">
           <div 
@@ -183,7 +183,7 @@
         </div>
       </div>
 
-          <div id="faculty" class="lg:w-4/6 mx-auto relative ">
+          <div id="faculty" class=" mx-auto relative ">
             <h2 class="text-5xl bg-[#3c2813] text-center text-white font-bold p-8">Faculty</h2>
             <!-- HOD Desk -->
            <div class=" bg-gradient-to-r from-yellow-200 " >
@@ -294,7 +294,7 @@
               </div>
             </div>
           </div>
-          <div id="administration-and-technical-staff" class="lg:w-4/6 mx-auto pb-8">
+          <div id="administration-and-technical-staff" class=" mx-auto pb-8">
             <h2 class="text-3xl text-center font-semibold p-10 bg-gradient-to-r from-yellow-200">Administration and Technical Staff</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 bg-gradient-to-r from-yellow-200">
               <div
@@ -321,7 +321,7 @@
             </ul>
           </div> -->
         </div>
-        <div id="research-and-publications" class=" lg:w-4/6 mx-auto bg-indigo-900">
+        <div id="research-and-publications" class=" mx-auto bg-indigo-900">
           <h2 class="text-3xl text-center text-white font-extrabold p-8 ">Research and Publications</h2>
           <div class="list-disc pl-8 space-y-4 h-96 overflow-auto bg-indigo-100">
             <div v-for="research in department.research_and_publications" :key="research.title" class="bg-white p-4 border-2 border-gray-200 rounded">
