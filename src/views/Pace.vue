@@ -16,14 +16,14 @@
     </section>
 
     <!-- Horizontal Tabs -->
-    <div class="sticky top-0 bg-[#fdb827] shadow-md z-10 hidden xl:block">
-      <div class="flex justify-between px-9">
+    <div class="sticky top-0 bg-[] shadow-md z-10 hidden xl:block">
+      <div class="flex justify-around px-9">
         <nav role="tablist" class="tabs">
           <button
             role="tab"
             v-for="(section, index) in sections"
             :key="index"
-            @click="currentSection = section"
+            @click="scrollToSection(section)"
             :class="{
               'bg-[#21209C] text-white': currentSection === section,
               'text-black hover:bg-blue-700 hover:text-white': currentSection !== section
@@ -37,33 +37,34 @@
     </div>
 
     <!-- Content sections -->
-    <div class="container mx-auto py-8 p-9">
-      <section v-if="currentSection !== null" class="py-8">
-        <div v-if="currentSection === 'Description'">
-          <h2 class="text-2xl font-bold mb-4">Description</h2>
-          <p>{{ paceData.description }}</p>
+    <div class="bg-indigo-100 mx-auto py-8 ">
+      <section class="py-8  p-10">
+        <div class="bg-white rounded-lg ">
+          <h2 class="text-3xl text-center font-bold p-3 rounded-lg bg-gradient-to-r from-blue-500 to-cyan-300">Description</h2>
+          <p class="font-medium text-xl p-4">{{ paceData.description }}</p>
         </div>
-        <div v-else-if="currentSection === 'Coordinators'">
-          <h2 class="text-2xl font-bold mb-4">Coordinators</h2>
+        <div class="bg-white">
+          <h2 class="text-3xl text-center mt-8 mb-6 rounded-lg font-bold p-4 bg-gradient-to-r from-blue-500 to-cyan-300">Coordinators</h2>
+          <div class="flex flex-cols justify-around">
           <div
             v-for="(coordinator, index) in paceData.coordinators"
             :key="index"
-            class="bg-white p-6 rounded-lg shadow-lg mb-4"
+            class="bg-shadow p-6 text-xl font-medium rounded-lg "
           >
             <p><strong>Name:</strong> {{ coordinator.name }}</p>
             <p><strong>Position:</strong> {{ coordinator.position }}</p>
           </div>
           <div v-if="paceData.support_staff.length">
-            <h3 class="text-xl font-bold mt-4">Support Staff</h3>
-            <ul class="list-disc list-inside ml-4">
+            <h3 class="text-3xl font-bold p-6">Support Staff</h3>
+            <ul class="text-xl font-medium list-disc list-inside p-4 ">
               <li v-for="(staff, index) in paceData.support_staff" :key="index">
                 {{ staff }}
               </li>
             </ul>
           </div>
           <div v-if="paceData.student_volunteers.length">
-            <h3 class="text-xl font-bold mt-4">Student Volunteers</h3>
-            <ul class="list-disc list-inside ml-4">
+            <h3 class="text-3xl font-bold p-6">Student Volunteers</h3>
+            <ul class="text-xl font-medium list-disc list-inside p-4">
               <li
                 v-for="(volunteer, index) in paceData.student_volunteers"
                 :key="index"
@@ -71,6 +72,7 @@
                 {{ volunteer }}
               </li>
             </ul>
+          </div>
           </div>
         </div>
       </section>
