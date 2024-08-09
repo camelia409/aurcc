@@ -16,7 +16,7 @@
     </section>
 
     <!-- Horizontal Tabs -->
-    <div class="sticky top-0 bg-[#fdb827] shadow-md z-10 hidden xl:block">
+    <div class="sticky top-0 bg-[] shadow-md z-10 hidden xl:block">
       <div class="flex justify-between px-9">
         <nav role="tablist" class="tabs">
           <button

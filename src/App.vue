@@ -4,10 +4,10 @@ import { RouterLink, RouterView } from 'vue-router';
 
 <template>
   <header class="bg-[#21209c] text-white">
-    <div class=" bg-rose-600">
+    <div class=" bg-[#aae0ed] text-black">
       <div  class="container mx-auto px-4 text-sm" style="font-family: 'Clash Grotesk', sans-serif;">
-        <div class="flex items-center justify-between">
-          <p class="">Counselling Code: <strong>2025</strong> </p>
+        <div class="p-2 flex items-center justify-between">
+          <strong class="text-xl">Counselling Code: <strong>2025</strong> </strong>
           <ul class="flex items-center justify-between">
             <li class="relative group">
               <button class="px-4 py-2">
@@ -23,9 +23,9 @@ import { RouterLink, RouterView } from 'vue-router';
                 <li><a href="/alumni" class="block px-4 py-2 transition-all duration-300 ease-in-out text-black hover:text-white">Alumni</a></li>
               </ul>
             </li>
-            <li><a href="/library" class="px-4 py-2  text-white">Library</a></li>
-            <li><a href="/hostel" class="px-4 py-2  text-white">Hostel</a></li>
-            <li><a href="#" class="px-4 py-2  text-white">Contact</a></li>
+            <li><a href="/library" class="px-4 py-2  text-black">Library</a></li>
+            <li><a href="/hostel" class="px-4 py-2  text-black">Hostel</a></li>
+            <li><a href="#" class="px-4 py-2  text-black">Contact</a></li>
           </ul>
         </div>
 

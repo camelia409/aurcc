@@ -11,26 +11,26 @@
     </section>
 
     <!-- Content sections -->
-    <section class="container mx-auto py-8 p-9 space-y-8">
-      <div class="bg-gray-200 p-6 rounded-lg">
-        <h2 class="text-2xl font-bold mb-4">Overview</h2>
-        <p>{{ data.description['Admissions at our Regional Campus'] }}</p>
+    <section class=" mx-auto py-8 p-4 space-y-8 bg-gray-300">
+      <div class="bg-white  rounded-lg">
+        <h2 class="text-3xl text-center bg-[#40E0D0] font-bold p-4 rounded-md">Overview</h2>
+        <p class="p-5 text-xl font-medium">{{ data.description['Admissions at our Regional Campus'] }}</p>
       </div>
-      <div class=" p-6 rounded-lg">
-        <h2 class="text-2xl font-bold mb-4">Courses Offered</h2>
-        <p>{{ data.courses_offered }}</p>
+      <div class="bg-white rounded-lg">
+        <h2 class="text-3xl text-center bg-[#C0C0C0] font-bold p-4 rounded-md">Courses Offered</h2>
+        <p class="p-5 text-xl font-medium">{{ data.courses_offered }}</p>
       </div>
-      <div class="bg-gray-200 p-6 rounded-lg">
-        <h2 class="text-2xl font-bold mb-4">Eligibility Criteria</h2>
-        <ul class="list-disc pl-4">
+      <div class="bg-white rounded-lg">
+        <h2 class="text-3xl text-center bg-yellow-400 font-bold p-4 rounded-md">Eligibility Criteria</h2>
+        <ul class="p-8 text-xl font-medium list-disc  ">
           <li v-for="(criteria, category) in data.eligibility_criteria" :key="category">
             <strong>{{ category }}</strong>: {{ criteria }}
           </li>
         </ul>
       </div>
-      <div class=" p-6 rounded-lg">
-        <h2 class="text-2xl font-bold mb-4">Contact Us</h2>
-        <p>{{ data.contact_us['Admission Co-ordinator'] }}</p>
+      <div class="bg-white rounded-lg">
+        <h2 class="text-3xl text-center bg-[#ad8dc0] font-bold p-4 rounded-md">Contact Us</h2>
+        <p class="p-5 text-xl font-medium">{{ data.contact_us['Admission Co-ordinator'] }}</p>
       </div>
     </section>
   </main>
