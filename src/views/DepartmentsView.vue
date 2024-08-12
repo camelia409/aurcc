@@ -210,7 +210,7 @@
 
             <!-- Assistant Professors -->
            <div>
-              <h3 class="text-3xl text-center font-semibold p-14 bg-gradient-to-r from-yellow-200">Assistant Professors</h3>
+              <h3 class="text-3xl text-center font-semibold p-14 bg-yellow-100">Assistant Professors</h3>
               <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 bg-yellow-100">
                 <div 
                   v-for="staff in department.faculty.assistant_professors" 
@@ -295,8 +295,8 @@
             </div>
           </div>
           <div id="administration-and-technical-staff" class=" mx-auto pb-8">
-            <h2 class="text-3xl text-center font-semibold p-10 bg-gradient-to-r from-yellow-200">Administration and Technical Staff</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 bg-gradient-to-r from-yellow-200">
+            <h2 class="text-3xl text-center font-semibold p-10 bg-yellow-100">Administration and Technical Staff</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 bg-yellow-100">
               <div
                 v-for="staff in department.admin_staff"
                 :key="staff.email"

@@ -12,67 +12,54 @@
   
       <!-- Content sections -->
       <section class="">
-          <div class="sticky top-0 bg-[white] shadow-md z-10 hidden xl:block">
-            <div class="flex justify-between  px-9 ">
-              <nav role="tablist" class="tabs">
-                <button role="tab"
-                  v-for="(section, index) in sections"
-                  :key="index"
-                  @click="scrollToSection(section)"
-                  :class="{
-                    'bg-[#21209C] text-white ': currentSection === section,
-                    'text-black hover:bg-blue-700 hover:text-white ': currentSection !== section
-                  }"
-                  class="font-semibold p-4 h-full transition duration-300 ease-in-out tab text-xl "
-                >
-                  {{ section }}
-                </button>
-              </nav>
-            </div>
-          </div>
-          <section v-if="currentSection !== null" class="container p-6 md:col-span-3">
-            <div id="Important Links">
-              <h2 class="text-2xl font-bold p-4">Important Links</h2>
-              <ul class="list-disc p-4">
-                <li v-for="(link, title) in data.important_links" :key="title">
-                  <a :href="link" target="_blank" class="text-blue-500 hover:underline">{{ title }}</a>
-                </li>
-              </ul>
-            </div>
-            <div id="Office Bearer">
-              <h2 class="text-2xl font-bold mb-4">Office Bearer</h2>
-              <p><strong>Name:</strong> {{ data.office_bearers.name }}</p>
-              <p><strong>Qualification:</strong> {{ data.office_bearers.qualification }}</p>
-              <p><strong>Position:</strong> {{ data.office_bearers.position }}</p>
-              <div v-if="data.affiliation_administration_staff">
-                <h3 class="text-xl font-bold mt-4">Affiliation Administration Staff</h3>
-                <table class="min-w-full bg-white">
-                  <thead class="bg-gray-200">
-                    <tr>
-                      <th class="py-2 px-4 border-b">Name</th>
-                      <th class="py-2 px-4 border-b">Position</th>
-                      <th class="py-2 px-4 border-b">Phone</th>
-                      <th class="py-2 px-4 border-b">Email</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr v-for="staff in data.affiliation_administration_staff" :key="staff.name">
-                      <td class="py-2 px-4 border-b">{{ staff.name }}</td>
-                      <td class="py-2 px-4 border-b">{{ staff.position }}</td>
-                      <td class="py-2 px-4 border-b">{{ staff.phone }}</td>
-                      <td class="py-2 px-4 border-b">{{ staff.email }}</td>
-                    </tr>
-                  </tbody>
-                </table>
+          <section v-if="currentSection !== null" class="p-6 bg-gray-100 md:col-span-3">
+            <div class="grid grid-cols-2 gap-4">
+            <div id="Office Bearer" class="bg-white">
+              <h2 class="text-2xl text-center font-bold bg-yellow-300 p-3 rounded-md  ">
+                Office Bearer
+              </h2>
+
+              <div v-if="data.office_bearers" class="space-y-4 p-4">
+                <div class="p-4 text-xl">
+                  <p><strong>Name:</strong> {{ data.office_bearers.name }}</p>
+                  <p><strong>Qualification:</strong> {{ data.office_bearers.qualification }}</p>
+                  <p><strong>Position:</strong> {{ data.office_bearers.position }}</p>
+                </div>
               </div>
             </div>
-            <div id="Contact Us">
-              <h2 class="text-2xl font-bold mb-4">Contact Us</h2>
-              <p><strong>Office:</strong> {{ data.contact_details.office }}</p>
-              <p><strong>Address:</strong> {{ data.contact_details.address }}</p>
-              <p><strong>Phone:</strong> {{ data.contact_details.phone }}</p>
-              <p><strong>Email:</strong> {{ data.contact_details.email }}</p>
+
+            <div id="Affiliation Administration Staff" class="bg-white">
+              <h2 class="text-2xl text-center font-bold bg-yellow-300 p-3 rounded-md ">
+                Affiliation Administration Staff
+              </h2>
+
+              <div v-if="data.affiliation_administration_staff" class="space-y-4 p-4">
+                <div
+                  v-for="staff in data.affiliation_administration_staff"
+                  :key="staff.name"
+                  class="p-4 text-xl"
+                >
+                  <p><strong>Name:</strong> {{ staff.name }}</p>
+                  <p><strong>Position:</strong> {{ staff.position }}</p>
+                  <p><strong>Phone:</strong> {{ staff.phone }}</p>
+                  <p><strong>Email:</strong> {{ staff.email }}</p>
+                </div>
+              </div>
             </div>
+            </div>
+            <div id="Contact Us" class="bg-white mt-4">
+              <h2 class="text-2xl font-bold text-center bg-yellow-300 p-3 rounded-md">
+                Contact Us
+              </h2>
+
+              <div v-if="data.contact_details" class="text-xl px-10 pt-6 pb-6">
+                <p><strong>Office:</strong> {{ data.contact_details.office }}</p>
+                <p><strong>Address:</strong> {{ data.contact_details.address }}</p>
+                <p><strong>Phone:</strong> {{ data.contact_details.phone }}</p>
+                <p><strong>Email:</strong> {{ data.contact_details.email }}</p>
+              </div>
+            </div>
+
           </section>
       </section>
     </main>
