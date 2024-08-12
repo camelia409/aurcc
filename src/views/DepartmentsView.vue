@@ -186,7 +186,7 @@
           <div id="faculty" class=" mx-auto relative ">
             <h2 class="text-5xl bg-[#3c2813] text-center text-white font-bold p-8">Faculty</h2>
             <!-- HOD Desk -->
-           <div class=" bg-gradient-to-r from-yellow-200 " >
+           <div class=" bg-yellow-100 " >
               <h3 class="text-3xl text-center font-semibold p-10">HOD Desk</h3>
               <div class="flex justify-center">
                 <div 
@@ -211,7 +211,7 @@
             <!-- Assistant Professors -->
            <div>
               <h3 class="text-3xl text-center font-semibold p-14 bg-gradient-to-r from-yellow-200">Assistant Professors</h3>
-              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 bg-gradient-to-r from-yellow-200">
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 bg-yellow-100">
                 <div 
                   v-for="staff in department.faculty.assistant_professors" 
                   :key="staff.email" 
