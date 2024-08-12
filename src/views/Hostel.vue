@@ -1,89 +1,86 @@
 <template>
-  <main class="flex-grow">
+  <div class="min-h-screen flex flex-col">
     <!-- Hero section -->
-    <section class="bg-cover bg-center relative -z-10" :style="'background-image: url(http://localhost:5173/src/assets/hostel-hero.jpg)'">
+    <section
+      class="bg-cover bg-center relative -z-10"
+      :style="'background-image: url(http://192.168.72.231:5173/src/assets/dgate-hero.jpg)'"
+    >
       <div class="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div>
       <div class="container mx-auto py-16 text-white p-9 relative z-10">
         <h1 class="text-4xl font-bold mb-4">Hostel</h1>
         <p class="text-xl mb-8">Explore our hostel facilities and services.</p>
-        <button class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded">Learn More</button>
       </div>
     </section>
 
+    <!-- Horizontal Tabs -->
+    <div class="sticky top-0 bg-white shadow-md z-10">
+      <div class="flex px-9">
+        <nav role="tablist" class="flex space-x-2">
+          <button
+            v-for="(section, index) in sections"
+            :key="index"
+            @click="scrollToSection(section)"
+            :class="{
+              'bg-[#006994] text-white': activeSection === section,
+              'text-black bg-white hover:bg-[#006994] hover:text-white': activeSection !== section
+            }"
+            class="font-semibold p-4 transition duration-300 ease-in-out text-xl"
+          >
+            {{ section }}
+          </button>
+        </nav>
+      </div>
+    </div>
+
     <!-- Content sections -->
-    <section class="container mx-auto py-8 p-9">
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-        <div>
-          <h2 class="text-2xl font-bold mb-4 flex items-center">
-            <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
-            </svg>
-            Sections
-          </h2>
-          <div class="flex flex-col">
-            <button v-for="(section, index) in sections" :key="index" @click="currentSection = section" :class="{'bg-blue-500 text-white': currentSection === section, 'bg-white hover:bg-gray-100 text-gray-800': currentSection !== section}" class="font-semibold py-2 px-4 border border-gray-400 rounded shadow flex items-center mb-2">
-              <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-              </svg>
-              {{ section }}
-            </button>
+    <div class="container mx-auto py-8 px-9">
+      <div
+        v-for="(section, index) in sections"
+        :key="index"
+        :ref="section"
+        class="mb-16"
+      >
+        <h2 class="text-2xl text-center font-bold mb-4 p-2 bg-gradient-to-r from-blue-500 to-cyan-300">
+          {{ section }}
+        </h2>
+
+        <div v-if="section === 'Description'">
+          <p>{{ hostel.description }}</p>
+        </div>
+
+        <div v-else-if="section === 'Administration'">
+          <h3 class="text-xl font-semibold mb-2">Wardens</h3>
+          <div v-for="warden in hostel.Administration.Wardens" :key="warden.Name" class="mb-4">
+            <p>{{ warden.Name }} - {{ warden.Designation }}</p>
+            <p>Phone: {{ warden['Phone No'] }}</p>
+            <p>Email: <a :href="'mailto:' + warden['Email ID']" class="text-blue-500 underline">{{ warden['Email ID'] }}</a></p>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Deputy Wardens</h3>
+          <div v-for="deputyWarden in hostel.Administration['Deputy Wardens']" :key="deputyWarden.Name" class="mb-4">
+            <p>{{ deputyWarden.Name }} - {{ deputyWarden.Designation }}</p>
+            <p>Phone: {{ deputyWarden['Phone No'] }}</p>
+            <p>Email: <a :href="'mailto:' + deputyWarden['Email ID']" class="text-blue-500 underline">{{ deputyWarden['Email ID'] }}</a></p>
           </div>
         </div>
-        <section v-if="currentSection !== null" class="container mx-auto py-8 p-9 md:col-span-3">
-          <div v-if="currentSection === 'Description'">
-            <h2 class="text-2xl font-bold mb-4">Description</h2>
-            <p>{{ hostel.Description }}</p>
-          </div>
-          <div v-else-if="currentSection === 'Administration'">
-            <h2 class="text-2xl font-bold mb-4">Administration</h2>
-            <h3 class="text-xl font-semibold mb-2">Wardens</h3>
-            <div v-for="warden in hostel.Administration.Wardens" :key="warden.Name" class="mb-4">
-              <p>{{ warden.Name }} - {{ warden.Designation }}</p>
-              <p>Phone: {{ warden["Phone No"] }}</p>
-              <p>Email: <a :href="'mailto:' + warden['Email ID']" class="text-blue-500 underline">{{ warden['Email ID'] }}</a></p>
-            </div>
-            <h3 class="text-xl font-semibold mb-2">Deputy Wardens</h3>
-            <div v-for="deputyWarden in hostel.Administration['Deputy Wardens']" :key="deputyWarden.Name" class="mb-4">
-              <p>{{ deputyWarden.Name }} - {{ deputyWarden.Designation }}</p>
-              <p>Phone: {{ deputyWarden["Phone No"] }}</p>
-              <p>Email: <a :href="'mailto:' + deputyWarden['Email ID']" class="text-blue-500 underline">{{ deputyWarden['Email ID'] }}</a></p>
-            </div>
-            <h3 class="text-xl font-semibold mb-2">Hostel Office Staffs</h3>
-            <div v-for="staff in hostel.Administration['Hostel Office Staffs']" :key="staff.Name" class="mb-4">
-              <p>{{ staff.Name }} - {{ staff.Designation }}</p>
-            </div>
-            <h3 class="text-xl font-semibold mb-2">Residential Tutors</h3>
-            <div v-for="tutor in hostel.Administration['Residential Tutors']" :key="tutor.Name" class="mb-4">
-              <p>{{ tutor.Name }} - {{ tutor.Designation }}</p>
-              <p>Phone: {{ tutor["Phone No"] }}</p>
-            </div>
-            <h3 class="text-xl font-semibold mb-2">Student Secretaries</h3>
-            <h4 class="text-lg font-semibold">Boys Hostel</h4>
-            <div v-for="secretary in hostel.Administration['Student Secretaries']['Boys Hostel Student Secretary']" :key="secretary['Name of the Student']" class="mb-4">
-              <p>{{ secretary['Name of the Student'] }} - {{ secretary.Secretary }}</p>
-              <p>{{ secretary['Year/Branch/Dept'] }}</p>
-            </div>
-            <h4 class="text-lg font-semibold">Girls Hostel</h4>
-            <div v-for="secretary in hostel.Administration['Student Secretaries']['Girls Hostel Student Secretary']" :key="secretary['Name of the Student']" class="mb-4">
-              <p>{{ secretary['Name of the Student'] }} - {{ secretary.Secretary }}</p>
-              <p>{{ secretary['Year/Branch/Dept'] }}</p>
-              <p>Phone: {{ secretary['Phone No'] }}</p>
-            </div>
-          </div>
-          <div v-else-if="currentSection === 'Fees Structure'">
-            <h2 class="text-2xl font-bold mb-4">Fees Structure</h2>
-            <p><a :href="hostel['Fees Structure']['New Admission']" class="text-blue-500 underline">New Admission</a></p>
-            <p><a :href="hostel['Fees Structure']['Existing Students']" class="text-blue-500 underline">Existing Students</a></p>
-          </div>
-          <div v-else-if="currentSection === 'Rules and Regulations'">
-            <h2 class="text-2xl font-bold mb-4">Rules and Regulations</h2>
-            <!-- <p><a href="../assets/Rules.pdf" class="text-blue-500 underline">View Rules and Regulations</a></p> -->
-            <iframe src="http://localhost:5173/src/assets/EOA Report 2024-2025.PDF" width="100%" height="800"></iframe>
-          </div>
-        </section>
+
+        <div v-else-if="section === 'Fees Structure'">
+          <p><a :href="hostel['Fees Structure']['New Admission']" class="text-blue-500 underline">New Admission</a></p>
+          <p><a :href="hostel['Fees Structure']['Existing Students']" class="text-blue-500 underline">Existing Students</a></p>
+        </div>
+
+        <div v-else-if="section === 'Rules and Regulations'">
+          <iframe :src="rulesPDF" class="w-full h-[700px]" frameborder="0"></iframe>
+        </div>
       </div>
-    </section>
-  </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-4">
+      <div class="container mx-auto text-center">
+        <p>&copy; {{ currentYear }} Hostel. All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
 </template>
 
 <script>
@@ -99,18 +96,47 @@ export default {
         'Fees Structure',
         'Rules and Regulations'
       ],
-      currentSection: null
+      activeSection: null,
+      rulesPDF: new URL('../assets/rules.pdf', import.meta.url).href // Use import.meta.url for correct path
     };
   },
-  created() {
-    // Default to first section
-    if (this.sections.length > 0) {
-      this.currentSection = this.sections[0];
+  mounted() {
+    this.handleScroll();
+    window.addEventListener('scroll', this.handleScroll);
+  },
+  beforeDestroy() {
+    window.removeEventListener('scroll', this.handleScroll);
+  },
+  methods: {
+    scrollToSection(section) {
+      const element = this.$refs[section][0];
+      if (element) {
+        const offsetTop = element.offsetTop - 100;
+        window.scrollTo({ top: offsetTop, behavior: 'smooth' });
+      }
+    },
+    handleScroll() {
+      const scrollPosition = window.scrollY + 150;
+      this.sections.forEach(section => {
+        const element = this.$refs[section][0];
+        if (element) {
+          const offsetTop = element.offsetTop;
+          const offsetBottom = offsetTop + element.offsetHeight;
+          if (scrollPosition >= offsetTop && scrollPosition < offsetBottom) {
+            this.activeSection = section;
+          }
+        }
+      });
+    }
+  },
+  computed: {
+    currentYear() {
+      return new Date().getFullYear();
     }
   }
 };
 </script>
 
 <style scoped>
-/* Add any custom styles for your component here */
+/* Add any additional custom styles here */
 </style>
