@@ -912,7 +912,7 @@
             },
             {
                 "name": "Dr. Fareena N",
-				"image": "Fareena.webp",
+				"image": "fareena2.webp",
                 "position": "Assistant Professor",
                 "email": "fareena.aurcc@gmail.com",
                 "education": [
@@ -995,7 +995,8 @@
 			{
                 "name": "Mr Sasikumar T",
                 "position": " Professional Assistant III",
-                "email": "",
+                "email": "thirusasi12@gmail.com",
+				"image":"sasi.webp",
                 "education": [
                     {
                         "degree": " ",
@@ -1007,7 +1008,8 @@
 			{
                 "name": "Mrs Subashini P ",
                 "position": " Professional Assistant II",
-                "email": "",
+                "email": "subashini.p02@gmail.com",
+				"image":"suba.webp",
                 "education": [
                     {
                         "degree": " ",
@@ -1019,7 +1021,8 @@
 			{
                 "name": "Mr Benedict S",
                 "position": " Professional Assistant I",
-                "email": "",
+                "email": "benedict308.dce@gmail.com",
+				"image":"BENEDICT.webp",
                 "education": [
                     {
                         "degree": " ",
@@ -1031,7 +1034,8 @@
 			{
                 "name": "Mr Ramkumar A",
                 "position": " Peon",
-                "email": "",
+                "email": "ramdanvanth@gmail.com",
+				"image":"ram.webp",
                 "education": [
                     {
                         "degree": " ",
@@ -1284,6 +1288,7 @@
 				"name": "Dr. K. Soorya Prakash",
 				"email": "sooryaprakash.k@gmail.com",
 				"position": "Assistant Professor (Selection Grade)",
+				"image" : "sooryaprakash.webp",
 				"education": [],
 				"professional_experience": [],
 				"research_interests": [],
@@ -1300,6 +1305,7 @@
 				  "name": "Dr. Sakthivel M",
 				  "email": "sakthi.tgode@gmail.com",
 				  "position": "Assistant Professor",
+				  "image" : "sakthivel.m.webp",
 				  "education": [],
 				  "professional_experience": [],
 				  "research_interests": [],
@@ -1314,6 +1320,7 @@
 				  "name": "Dr. Kanthavel K",
 				  "email": "kandavelkk@gmail.com",
 				  "position": "Assistant Professor",
+				  "image" : "kanthavel.webp",
 				  "education": [],
 				  "professional_experience": [],
 				  "research_interests": [],
@@ -1328,6 +1335,7 @@
 				  "name": "Dr. Sathiyamoorthy R",
 				  "email": "sathiya81@gmail.com",
 				  "position": "Assistant Professor",
+				  "image" : "sathiyamoorthy.webp",
 				  "education": [],
 				  "professional_experience": [],
 				  "research_interests": [],
@@ -1342,6 +1350,7 @@
 				  "name": "Dr. Balasubramanian M",
 				  "email": "annaunivbala76@gmail.com",
 				  "position": "Assistant Professor",
+				  "image" : "balasubramanian m.webp",
 				  "education": [],
 				  "professional_experience": [],
 				  "research_interests": [],
@@ -1356,6 +1365,7 @@
 					"name": "Dr. Bhagavathi Pushpa T",
 					"email": "tbhagavathi@aurcc.ac.in",
 					"position": "Assistant Professor",
+					"image" : "",
 					"education": [
 					  {
 						"degree": "B.E. Civil Engineering",
@@ -1402,6 +1412,7 @@
 				  "name": "Mrs. Usha Rani T",
 				  "email": "ushatheivendran@gmail.com",
 				  "position": "Assistant Professor (Senior Grade)",
+				  "image" : "usharani.webp",
 				  "education": [],
 				  "professional_experience": [],
 				  "research_interests": [],
