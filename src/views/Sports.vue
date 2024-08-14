@@ -5,50 +5,31 @@
       <div class="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div>
       <div class="container mx-auto py-16 text-white p-9 relative z-10">
         <h1 class="text-4xl font-bold mb-4">{{ data.name }}</h1>
+        <p class="text-xl mb-8">{{ data.description }}</p>
         <button class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded">Learn More</button>
       </div>
     </section>
 
     <!-- Content sections -->
-    <section class="container mx-auto py-8 p-9">
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-        <div>
-          <h2 class="text-2xl font-bold mb-4 flex items-center">
-            <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
-            </svg>
-            Sections
-          </h2>
-          <div class="flex flex-col">
-            <button v-for="(section, index) in sections" :key="index" @click="currentSection = section" :class="{'bg-blue-500 text-white': currentSection === section, 'bg-white hover:bg-gray-100 text-gray-800': currentSection !== section}" class="font-semibold py-2 px-4 border border-gray-400 rounded shadow flex items-center mb-2">
-              <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-              </svg>
-              {{ section }}
-            </button>
-          </div>
-        </div>
-        <section v-if="currentSection !== null" class="container mx-auto py-8 p-9 md:col-span-3">
-          <div v-if="currentSection === 'About'">
-            <h2 class="text-2xl font-bold mb-4">About</h2>
-            <p>{{ data.description }}</p>
-          </div>
-          <div v-else-if="currentSection === 'Facilities'">
-            <h2 class="text-2xl font-bold mb-4">Facilities</h2>
-            <h3 class="text-xl font-bold mb-2">Indoor Games</h3>
-            <ul class="list-disc pl-4">
-              <li v-for="game in data.facilities.IndoorGames" :key="game" class="mb-2">{{ game }}</li>
-            </ul>
-            <h3 class="text-xl font-bold mb-2 mt-4">Outdoor Games</h3>
-            <ul class="list-disc pl-4">
-              <li v-for="game in data.facilities.OutdoorGames" :key="game" class="mb-2">{{ game }}</li>
-            </ul>
-          </div>
-          <div v-else-if="currentSection === 'Contact Us'">
-            <h2 class="text-2xl font-bold mb-4">Contact Us</h2>
-            <p>{{ data.contact_us.Address }}</p>
-          </div>
-        </section>
+    <section class="mx-auto py-8 p-4 space-y-8 bg-gray-300">
+      <div class="bg-white rounded-lg">
+        <h2 class="text-3xl text-center bg-blue-500 font-bold p-4 rounded-md text-white">Overview</h2>
+        <p class="p-5 text-xl font-medium">{{ data.description }}</p>
+      </div>
+      <div class="bg-white rounded-lg">
+        <h2 class="text-3xl text-center bg-blue-500 font-bold p-4 rounded-md text-white">Facilities</h2>
+        <h3 class="text-xl font-bold mb-2 p-5">Indoor Games</h3>
+        <ul class="list-disc pl-8">
+          <li v-for="game in data.facilities.IndoorGames" :key="game" class="mb-2 text-xl font-medium">{{ game }}</li>
+        </ul>
+        <h3 class="text-xl font-bold mb-2 mt-4 p-5">Outdoor Games</h3>
+        <ul class="list-disc pl-8 pb-6">
+          <li v-for="game in data.facilities.OutdoorGames" :key="game" class="mb-2 text-xl font-medium ">{{ game }}</li>
+        </ul>
+      </div>
+      <div class="bg-white rounded-lg">
+        <h2 class="text-3xl text-center bg-blue-500 font-bold p-4 rounded-md text-white">Contact Us</h2>
+        <p class="p-5 text-xl font-medium">{{ data.contact_us.Address }}</p>
       </div>
     </section>
   </main>
@@ -60,23 +41,12 @@ import data from '../assets/sports.json';
 export default {
   data() {
     return {
-      data: data,
-      sections: [
-        'About',
-        'Facilities',
-        'Contact Us'
-      ],
-      currentSection: null
+      data: data
     };
-  },
-  created() {
-    // Default to first section
-    if (this.sections.length > 0) {
-      this.currentSection = this.sections[0];
-    }
   }
 };
 </script>
 
-<style scoped>
+<style>
+/* You can add any additional custom styles here if needed */
 </style>
