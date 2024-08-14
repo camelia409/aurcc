@@ -9,20 +9,20 @@
 	  </section>
   
 	  <!-- Content sections -->
-	  <section class="mx-auto py-8 px-4 space-y-8 bg-gray-300">
-		<div class="bg-white rounded-lg p-6 shadow-md">
-		  <h2 class="text-3xl text-center font-bold p-4 bg-gradient-to-r from-blue-500 to-cyan-300 rounded-md">About the Exam Cell</h2>
-		  <p class="text-xl mt-6">{{ data.description }}</p>
+	  <section class="mx-auto py-8 px-4 space-y-8 bg-indigo-100">
+		<div class="bg-white rounded-lg  shadow-md">
+		  <h2 class="text-3xl text-center text-white font-bold p-4 bg-blue-800 rounded-md">About the Exam Cell</h2>
+		  <p class="text-xl font-medium p-5">{{ data.description }}</p>
 		</div>
-		<div class="bg-white rounded-lg p-6 shadow-md">
-		  <h2 class="text-3xl text-center font-bold p-4 bg-gradient-to-r from-blue-500 to-cyan-300 rounded-md">Services</h2>
-		  <div class="text-xl mt-6 space-y-4">
+		<div class="bg-white rounded-lg shadow-md">
+		  <h2 class="text-3xl text-center text-white font-bold p-4 bg-blue-800 rounded-md">Services</h2>
+		  <div class="text-xl font-medium p-4 space-y-4">
 			<p v-for="service in data.services" :key="service">{{ service }}</p>
 		  </div>
 		</div>
-		<div class="bg-white rounded-lg p-6 shadow-md">
-		  <h2 class="text-3xl text-center font-bold p-4 bg-gradient-to-r from-blue-500 to-cyan-300 rounded-md">Office Bearers</h2>
-		  <div class="text-xl mt-6 space-y-4">
+		<div class="bg-white rounded-lg shadow-md">
+		  <h2 class="text-3xl text-center text-white font-bold p-4 bg-blue-800 rounded-md">Office Bearers</h2>
+		  <div class="text-xl font-medium p-4 space-y-4">
 			<p v-for="bearer in data.office_bearers" :key="bearer.name">
 			  <strong>{{ bearer.position }}:</strong> {{ bearer.name }}
 			</p>

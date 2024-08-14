@@ -9,36 +9,16 @@
       </div>
     </section>
 
-    <!-- Horizontal Tabs -->
-	  <div class="sticky top-0 bg-white shadow-md z-10 hidden xl:block">
-		<div class="flex justify-between px-9">
-		  <nav role="tablist" class="tabs">
-			<button
-			  v-for="(section, index) in sections"
-			  :key="index"
-			  @click="scrollToSection(section)"
-			  :class="{
-				'bg-[#006994] text-white': activeSection === section,  /* Marine Blue for active section */
-				'text-black bg-white hover:bg-[#006994] hover:text-white': activeSection !== section /* White background with Marine Blue hover */
-			  }"
-			  class="font-semibold p-4 h-full transition duration-300 ease-in-out tab text-xl"
-			>
-			  {{ section }}
-			</button>
-		  </nav>
-		</div>
-	  </div>
-
     <!-- Content sections -->
     <section class="container mx-auto py-8 p-4">
       <div ref="Objectives" class="mb-16">
-        <h2 class="text-2xl font-bold mb-4 p-2 bg-gradient-to-r from-blue-500 to-cyan-300">Objectives</h2>
+        <h2 class="text-2xl font-bold mb-4 p-2 bg-gradient-to-r from-blue-500 to-cyan-300 rounded-lg">Objectives</h2>
         <ul class="list-disc pl-4">
           <li v-for="objective in data.description.objectives" :key="objective">{{ objective }}</li>
         </ul>
       </div>
       <div ref="Key Activities" class="mb-16">
-        <h2 class="text-2xl font-bold mb-4 p-2 bg-gradient-to-r from-blue-500 to-cyan-300">Key Activities</h2>
+        <h2 class="text-2xl font-bold mb-4 p-2 bg-gradient-to-r from-blue-500 to-cyan-300 rounded-lg">Key Activities</h2>
         <div v-for="activity in data.description.key_activities" :key="activity.name" class="bg-white shadow-md rounded-md p-4 mb-4">
           <h3 class="text-lg font-semibold">{{ activity.name }}</h3>
           <p><strong>Location:</strong> {{ activity.location }}</p>
@@ -46,13 +26,13 @@
         </div>
       </div>
       <div ref="MOU" class="mb-16">
-        <h2 class="text-2xl font-bold mb-4 p-2 bg-gradient-to-r from-blue-500 to-cyan-300">MOU</h2>
+        <h2 class="text-2xl font-bold mb-4 p-2 bg-gradient-to-r from-blue-500 to-cyan-300 rounded-lg">MOU</h2>
         <ul class="list-disc pl-4">
           <li v-for="mou in data.MOU" :key="mou">{{ mou }}</li>
         </ul>
       </div>
       <div ref="Links" class="mb-16">
-        <h2 class="text-2xl font-bold mb-4 p-2 bg-gradient-to-r from-blue-500 to-cyan-300">Links</h2>
+        <h2 class="text-2xl font-bold mb-4 p-2 bg-gradient-to-r from-blue-500 to-cyan-300 rounded-lg">Links</h2>
         <ul class="list-disc pl-4">
           <li v-for="link in data.links" :key="link">
             <a :href="'http://' + link" target="_blank" rel="noopener noreferrer">{{ link }}</a>
@@ -60,7 +40,7 @@
         </ul>
       </div>
       <div ref="Office Bearers" class="mb-16">
-        <h2 class="text-2xl font-bold mb-4 p-2 bg-gradient-to-r from-blue-500 to-cyan-300">Office Bearers</h2>
+        <h2 class="text-2xl font-bold mb-4 p-2 bg-gradient-to-r from-blue-500 to-cyan-300 rounded-lg">Office Bearers</h2>
         <div v-for="member in data.office_bearers" :key="member.email" class="bg-white shadow-md rounded-md p-4 mb-4">
           <h3 class="text-lg font-semibold">{{ member.name }}</h3>
           <p><strong>Position:</strong> {{ member.position }}</p>
@@ -79,13 +59,7 @@ export default {
   data() {
     return {
       data: data,
-      sections: [
-        'Objectives',
-        'Key Activities',
-        'MOU',
-        'Links',
-        'Office Bearers'
-      ],
+      sections: ['Objectives', 'Key Activities', 'MOU', 'Links', 'Office Bearers'],
       activeSection: null,
     };
   },
@@ -99,18 +73,22 @@ export default {
   methods: {
     scrollToSection(section) {
       const element = this.$refs[section];
-      const offsetTop = element.offsetTop - 80;
-      window.scrollTo({ top: offsetTop, behavior: 'smooth' });
+      if (element && element.offsetTop) {
+        const offsetTop = element.offsetTop - 80;
+        window.scrollTo({ top: offsetTop, behavior: 'smooth' });
+      }
     },
     handleScroll() {
       const scrollPosition = window.scrollY + 150;
       for (let section of this.sections) {
         const element = this.$refs[section];
-        const offsetTop = element.offsetTop;
-        const offsetBottom = offsetTop + element.offsetHeight;
-        if (scrollPosition >= offsetTop && scrollPosition < offsetBottom) {
-          this.activeSection = section;
-          break;
+        if (element) {
+          const offsetTop = element.offsetTop;
+          const offsetBottom = offsetTop + element.offsetHeight;
+          if (scrollPosition >= offsetTop && scrollPosition < offsetBottom) {
+            this.activeSection = section;
+            break;
+          }
         }
       }
     },
@@ -124,18 +102,5 @@ export default {
 </script>
 
 <style scoped>
-/* Custom Scrollbar */
-.no-scrollbar::-webkit-scrollbar {
-  display: none;
-}
-.no-scrollbar {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
-/* Ensuring horizontal tabs are fully visible */
-.tabs {
-  overflow-x: auto;
-  white-space: nowrap;
-}
+/* Removed unnecessary custom scrollbar styles */
 </style>

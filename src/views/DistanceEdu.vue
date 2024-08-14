@@ -10,23 +10,17 @@
 
     <!-- Details section -->
     <section class="container mx-auto py-8 px-4 md:px-9">
-      <div class="bg-white p-6 rounded-lg shadow-md overflow-x-auto">
-        <h2 class="text-3xl text-center font-bold rounded-md">{{ details.description }}</h2>
+      <div class="bg-gray-100 p- rounded-lg  shadow-md overflow-x-auto">
+        <h2 class="text-3xl text-center bg-blue-800 text-white p-4 font-bold rounded-md">{{ details.description }}</h2>
         <table class="min-w-full divide-y divide-gray-200">
-          <thead class="bg-gradient-to-r from-blue-500 to-cyan-300">
-            <tr>
-              <th class="px-6 py-3 text-left text-xs font-medium text-gray-700 uppercase tracking-wider">Category</th>
-              <th class="px-6 py-3 text-left text-xs font-medium text-gray-700 uppercase tracking-wider">Details</th>
-            </tr>
-          </thead>
           <tbody class="divide-y divide-gray-200">
             <!-- Set -->
-            <tr class="hover:bg-gray-50">
-              <td class="px-6 py-4 font-medium text-gray-900">Set</td>
+            <tr class="bg-gray-100">
+              <td class="px-6 py-4 font-medium text-gray-900">Sets</td>
               <td class="px-6 py-4 text-gray-700">{{ details.sets }}</td>
             </tr>
             <!-- Coordinator -->
-            <tr class="hover:bg-gray-50">
+            <tr class="bg-gray-100">
               <td class="px-6 py-4 font-medium text-gray-900">Coordinator</td>
               <td class="px-6 py-4 text-gray-700">
                 <p>{{ details.coordinator.name }}</p>
@@ -37,7 +31,7 @@
               </td>
             </tr>
             <!-- Specializations -->
-            <tr class="hover:bg-gray-50">
+            <tr class="bg-gray-100">
               <td class="px-6 py-4 font-medium text-gray-900">Specializations</td>
               <td class="px-6 py-4 text-gray-700">
                 <ul class="list-disc pl-4 space-y-1">
