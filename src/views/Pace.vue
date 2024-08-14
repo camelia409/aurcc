@@ -15,27 +15,6 @@
       </div>
     </section>
 
-    <!-- Horizontal Tabs -->
-    <div class="sticky top-0 bg-[] shadow-md z-10 hidden xl:block">
-      <div class="flex justify-around px-9">
-        <nav role="tablist" class="tabs">
-          <button
-            role="tab"
-            v-for="(section, index) in sections"
-            :key="index"
-            @click="scrollToSection(section)"
-            :class="{
-              'bg-[#21209C] text-white': currentSection === section,
-              'text-black hover:bg-blue-700 hover:text-white': currentSection !== section
-            }"
-            class="font-semibold p-4 h-full transition duration-300 ease-in-out tab text-xl"
-          >
-            {{ section }}
-          </button>
-        </nav>
-      </div>
-    </div>
-
     <!-- Content sections -->
     <div class="bg-indigo-100 mx-auto py-8 ">
       <section class="py-8  p-10">
