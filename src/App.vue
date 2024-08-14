@@ -26,7 +26,7 @@ import { RouterLink, RouterView } from 'vue-router';
             </li>
             <li><a href="/library" class="px-4 py-2  text-black">Library</a></li>
             <li><a href="/hostel" class="px-4 py-2  text-black">Hostel</a></li>
-            <li><a href="#" class="px-4 py-2  text-black">Contact</a></li>
+            <li><a href="/contact" class="px-4 py-2  text-black">Contact</a></li>
           </ul>
         </div>
 
