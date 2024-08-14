@@ -178,6 +178,11 @@ const router = createRouter({
       path: '/administrator/',
       name: 'administrator',
       component: ()=> import('../views/Registrar.vue')
+    },
+    {
+      path: '/EstateOff/',
+      name: 'Estate Office',
+      component: ()=> import('../views/EstateOff.vue')
     }
   ]
 })
