@@ -2679,7 +2679,16 @@
     },
 	{
 		"address": "ece",
-		"image": "ece2.webp",
+		"images": [
+		  {
+			"src": "ece2.webp",
+			"alt": "ECE Image 1"
+		  },
+		  {
+			"src": "ECE1.webp",
+			"alt": "ECE Image 2"
+		  }
+		],
 		"name": "Department of Electronics and Communication Engineering",
 		"description": 
 		  "The Department of Electronics and Communication Engineering was established in the year 2007. The Department offers UG Programme and two year PG Programme. The Department is equipped with excellent infrastructure and state of the art equipment to explore the technological challenges in the areas of Electronics, Communication Networks, VLSI design, Signal Processing, Image Processing, ASIC Design, RF Design and Digital system design."
@@ -3071,7 +3080,7 @@
 			{
 				"name":"Applied Electronics laboratory",
 				"description":["The Applied Electronics Lab is equipped with MSP 430 Microcontroller, Beagle bone black board, MSP 430 F2013 starter kit, TMS320C 6678 Multicore DSP Processor Kit and Application boards for implementing both basic and advanced experiments. In addition to that the Lab is equipped with state of equipments which include 20 Workbenches each consisting of inbuilt CRO, Function Generator, RPS, Ammeters and Voltmeters. Also 10 Desktop Computers have been interfaced with the Workbenches and they are loaded with EDA tool like MultiSim.",""],
-				"image":""
+				"image":"Picture3.webp"
 
 			},
 			{
@@ -3081,7 +3090,7 @@
 				"DSP Trainer Kit:TMS320 MICRO 50LC Kit",
 				"DSP Processor TMDSEVM6678L Kit",
 				"TMS 320 DSPS Code Composer Studio IDE"],
-				"image":""
+				"image":"Picture4.webp"
 			},
 			{
 				"name":"Communication Systems Laboratory",
@@ -3097,13 +3106,13 @@
 				"Time Division Multiplexing Modulation Demodulation",
 				"Pulse Code Modulation and Demodulation",
 				"FEKO 6.1 Antenna Design Software"],
-				"image":""
+				"image":"Picture5.webp"
 			},
 			{
 				"name":"Communication Network Laboratory",
 				"description":["Standalone LAN Trainer Kits",
 				"Desktop Computer Systems"],
-				"image":""
+				"image":"Picture6.webp"
 			},
 			{
 				"name":"Microprocessors and Microcontrollers Laboratory",
@@ -3120,7 +3129,7 @@
 				"8- BIT ADC Interface Kit",
 				"Stepper Motor",
 				"DC Motor Interfacing Kit"],
-				"image":""
+				"image":"Picture7.webp"
 			},
 			{
 				"name":"VLSI Design Laboratory",
@@ -3139,7 +3148,7 @@
 				"Altera DE2 -115 Advanced FPGA Board ( DE2 -115 -Cyclone IV )",
 				"Universal FPGA/CPLD Trainer Kit (VVSM 14 and Spartan-3E)",
 				"Universal FPGA/CPLD Trainer Kit Cool Runner II Piggy Back Board"],
-				"image":""
+				"image":"Picture8.webp"
 			},
 			{
 				"name":"Advanced Communication Systems Laboratory",
