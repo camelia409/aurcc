@@ -3,6 +3,7 @@ import { RouterLink, RouterView } from 'vue-router';
 </script>
 
 <template>
+  <div>
   <header class="bg-[#21209c] text-white">
     <div class=" bg-[#aae0ed] text-black">
       <div  class="container mx-auto px-4 text-sm" style="font-family: 'Clash Grotesk', sans-serif;">
@@ -16,11 +17,11 @@ import { RouterLink, RouterView } from 'vue-router';
               <ul
                 class="absolute z-20 left-0 mt-2 w-48 bg-white shadow-lg transition-all duration-300 opacity-0 invisible group-hover:visible group-hover:opacity-100"
               >
-                <li><a href="/sports" class="block px-4 py-2 transition-all duration-300 ease-in-out text-black hover:text-white">Sports</a></li>
-                <li><a href="/nss" class="block px-4 py-2 transition-all duration-300 ease-in-out text-black hover:text-white">NSS</a></li>
-                <li><a href="/tamilmandram" class="block px-4 py-2 transition-all duration-300 ease-in-out text-black hover:text-white">kani thamizh paravai</a></li>
-                <li><a href="/fine-arts" class="block px-4 py-2 transition-all duration-300 ease-in-out text-black hover:text-white">Fine Arts Club</a></li>
-                <li><a href="/alumni" class="block px-4 py-2 transition-all duration-300 ease-in-out text-black hover:text-white">Alumni</a></li>
+                <li><a href="/sports" class="block px-4 py-2  hover:bg-blue-800 hover:text-white transition-all duration-300 ease-in-out text-black hover:text-black">Sports</a></li>
+                <li><a href="/nss" class="block px-4 py-2  hover:bg-blue-800 hover:text-white transition-all duration-300 ease-in-out text-black hover:text-black">NSS</a></li>
+                <li><a href="/tamilmandram" class="block px-4 py-2  hover:bg-blue-800 hover:text-white transition-all duration-300 ease-in-out text-black hover:text-black">kani thamizh paravai</a></li>
+                <li><a href="/fine-arts" class="block px-4 py-2  hover:bg-blue-800 hover:text-white transition-all duration-300 ease-in-out text-black hover:text-black">Fine Arts Club</a></li>
+                <li><a href="/alumni" class="block px-4 py-2  hover:bg-blue-800 hover:text-white transition-all duration-300 ease-in-out text-black hover:text-black">Alumni</a></li>
               </ul>
             </li>
             <li><a href="/library" class="px-4 py-2  text-black">Library</a></li>
@@ -215,6 +216,7 @@ import { RouterLink, RouterView } from 'vue-router';
     </div>
   </div>
 </footer>
+</div>
 </template>
 
 <script>
