@@ -1,6 +1,6 @@
 <template>
   <div 
-    class="container mx-auto p-9"
+    class=" p-9"
     :style="backgroundStyle"
   >
     <div class="text-center mb-8 py-5">
