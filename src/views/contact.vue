@@ -9,10 +9,28 @@
         </div>
       </section>
   
+      <!-- General Information section -->
+      <!--div class="bg-white py-8">
+        <section class="py-8 px-4">
+          <div class="bg-gray-50 rounded-lg shadow-md p-6">
+            <h2 class="text-3xl text-center font-bold mb-4 ">General Information</h2>
+            <p class="text-lg mb-6">
+              Welcome to the Contact Information page. Here, you will find the essential contact details of various offices 
+              to assist you with your academic, administrative, and other student-related needs. Our staff is committed 
+              to helping you with any inquiries or issues you may have during your time at our institution.
+            </p>
+            <p class="text-lg">
+              Whether you need to get in touch with the Dean, inquire about exam schedules, or seek guidance from the 
+              Student Affairs Office, the contact details below will direct you to the right place.
+            </p>
+          </div>
+        </section>
+      </div-->
+  
       <!-- Background section below the hero -->
       <div class="bg-indigo-100 py-8">
         <!-- Contact Office and Numbers section -->
-        <section class="py-8 p-4">
+        <section class="py-8 px-4">
           <div class="bg-white rounded-lg shadow-md">
             <h2 class="text-3xl text-center font-bold p-3 rounded-lg bg-gradient-to-r from-blue-500 to-cyan-300">Contact Office and Numbers</h2>
             <table class="min-w-full divide-y divide-gray-200">
