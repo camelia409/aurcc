@@ -26,7 +26,7 @@ import { RouterLink, RouterView } from 'vue-router';
             </li>
             <li><a href="/library" class="px-4 py-2  text-black">Library</a></li>
             <li><a href="/hostel" class="px-4 py-2  text-black">Hostel</a></li>
-            <li><a href="#" class="px-4 py-2  text-black">Contact</a></li>
+            <li><a href="/contact" class="px-4 py-2  text-black">Contact</a></li>
           </ul>
         </div>
 
@@ -69,9 +69,9 @@ import { RouterLink, RouterView } from 'vue-router';
               <ul
                 class="absolute z-50 left-0 mt-2 w-48 bg-white  shadow-lg  p-0 transition-all duration-300 opacity-0 invisible group-hover:visible group-hover:opacity-100 text-black"
               >
-                <li><a href="/academics/Programs-Offered" class="block px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-300 ease-in-out">Programs Offered</a></li>
-                <li><a href="/academics/Curriculum-&-Syllabus" class="block px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-300 ease-in-out">Curriculum & Syllabus</a></li>
-                <li><a href="/academics/Regulation" class="block px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-300 ease-in-out">Regulations</a></li>
+                <li><a href="/programs_offered" class="block px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-300 ease-in-out">Programs Offered</a></li>
+                <li><a href="/curriculum_syllabus" class="block px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-300 ease-in-out">Curriculum & Syllabus</a></li>
+                <li><a href="/regulation" class="block px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-300 ease-in-out">Regulations</a></li>
                 <li><a href="/student_affairs" class="block px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-300 ease-in-out">Student Affairs</a></li>
               </ul>
             </li>
