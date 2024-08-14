@@ -2,33 +2,33 @@
   "GENERAL ADMINISTRATOR-I": [
     {
       "name": "A.Sundararajan",
-      "position": "Deputy Manager",
+      "position": "Deputy Manager(Finance)",
       "email": "sunvarma69@gmail.com",
-      "image": ""
+      "image": "sundararajan.webp"
     },
   {
       "name": "M.S.Murugesan",
-      "position": "Executive Assistant",
+      "position": "Executive Assistant(Admin)",
       "email": "murugesanms@yahoo.com",
-      "image": ""
+      "image": "murugesanmurugesan.webp"
     },
   {
       "name": "C.Ramasamy",
-      "position": "Executive Assistant",
+      "position": "Executive Assistant(Finance)",
       "email": "ramasamyannaunivcbe@gmail.com",
-      "image": ""
+      "image": "C.Ramasamy.webp"
     },
   {
       "name": "R.Bharathi",
-      "position": "Executive Assistant",
+      "position": "Executive Assistant(Admin)",
       "email": "bramagiri1969@gmail.com",
-      "image": ""
+      "image": "bharathiragupathi.webp"
     },
   {
       "name": "A.Marimuthu",
-      "position": "Professional Assistant",
+      "position": "Professional Assistant-II",
       "email": "gommuthu123456@gmail.com",
-      "image": ""
+      "image": "muthumari.webp"
     }, 
   {
       "name": "S.Santhamani",
@@ -41,115 +41,83 @@
   "GENERAL ADMINISTRATOR-II":[
   {
       "name": "G.Punniyamoorthy",
-      "position": "Deputy Manager",
+      "position": "Deputy Manager(Finance)",
       "email": "moorthy.aurc@gmial.com",
-      "image": ""
+      "image": "gurupunniyamoorthy.webp"
     },
   {
       "name": "M.Sathiyapriya",
-      "position": "Executive Assistant",
+      "position": "Executive Assistant(Admin)",
       "email": "poojaagalya@gmail.com",
-      "image": ""
+      "image": "sathiyapriya.webp"
       },
   {
         "name": "S.Murugavel",
-        "position": "Executive Assistant",
+        "position": "Executive Assistant(Admin)",
         "email": "velmindia@gmail.com",
-        "image": ""
+        "image": "murugavelsoundararajan.webp"
       },
   {
         "name": "S.Bhuvaneswari",
-        "position": "Executive Assistant",
+        "position": "Executive Assistant(Admin)",
         "email": "sbhuvi171978@gmail.com",
+        "image": "S.Bhuvana.webp"
+      },
+      {
+        "name": "K.Yokanayaki",
+        "position": "AD-Hoc Staff",
+        "email": "",
+        "image": ""
+      },
+      {
+        "name": "G.Chinnaraj",
+        "position": "AD-Hoc Staff",
+        "email": "",
         "image": ""
       }
-
     ],
   "GENERAL ADMINISTRATOR-III":[
     {
       "name": "Dr.M.Rathinasamy",
-      "position": "Deputy Manager",
+      "position": "Deputy Manager(Finance)",
       "email": "win.rrv@gmail.com",
-      "image": ""
+      "image": "rathinasamy.webp"
     },
     {
       "name": "Dr.C.Neelaveni",
       "position": "Assistant",
       "email": "ushaneelaveni@gmail.com",
-      "image": ""
+      "image": "neelavenichinnaswamy.webp"
     },
     {
       "name": "N.Sathyabama",
-      "position": "Executive Assistant",
+      "position": "Executive Assistant(Admin)",
       "email": "sathyapranav10@gmail.com",
-      "image": ""
+      "image": "SATHYABAMA.webp"
     },
     {
       "name": "S.Usha",
-      "position": "Executive Assistant",
+      "position": "Executive Assistant(Finance)",
       "email": "ushavarshan@gmail.com",
-      "image": ""
+      "image": "ushaaAbi.webp"
     },
     {
       "name": "V.Sureshkumar",
       "position": "Executive Assistant",
       "email": "vskaucbe@gmail.com",
-      "image": ""
+      "image": "V.Sureshkumar.webp"
     },
     {
       "name": "P.Dhanasekaran",
-      "position": "Professional Assistant",
+      "position": "Professional Assistant-II",
       "email": "dhanasekarnss@gmail.com",
-      "image": ""
+      "image": "dhanasekarpalaniswamy.webp"
     }, 
     {
       "name": "V.Shanthi",
       "position": "Clerical Assistant",
       "email": "shanthibhuvana@gmail.com",
-      "image": ""
-    }, 
-    {
-        "name": "Dr.K.Raja",
-        "position": "",
-        "email": "rajagce@gmail.com",
-        "image": ""
-      },
-      {
-        "name": "R.Deepa",
-        "position": "",
-        "email": "deepapabmanaban113@gmail.com",
-        "image": ""
-      },
-      {
-        "name": "A.Sengathir",
-        "position": "",
-        "email": "asen1973@gmail.com",
-        "image": ""
-      },
-      {
-        "name": "S.Premalathi",
-        "position": "",
-        "email": "prema_august@gmail.com",
-        "image": ""
-      },
-      {
-        "name": "M.A.Kavitha",
-        "position": "",
-        "email": "makavitha1@gmail.com",
-        "image": ""
-      },
-      
-      {
-        "name": "Dr.P.Marikkannu",
-        "position": "",
-        "email": "marikkannu@gmail.com",
-        "image": ""
-      }
-      
-      
-          
-       
-      
-      
+      "image": "saidharssini.webp"
+    }
     ]
   }
