@@ -145,6 +145,21 @@ const router = createRouter({
       component: ()=> import('../views/HOD.vue')
     },
     {
+      path: '/regulation/',
+      name: 'regulation',
+      component: ()=> import('../views/regulation.vue')
+    },
+    {
+      path: '/programs_offered/',
+      name: 'programs_offered',
+      component: ()=> import('../views/programs_offered.vue')
+    },
+    {
+      path: '/curriculum_syllabus/',
+      name: 'curriculum_syllabus',
+      component: ()=> import('../views/curriculum_syllabus.vue')
+    },
+    {
       path: '/student_affairs/',
       name: 'student_affairs',
       component: ()=> import('../views/student_affairs.vue')
