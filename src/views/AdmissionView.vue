@@ -6,7 +6,6 @@
       <div class="container mx-auto py-16 text-white p-9 relative z-10">
         <h1 class="text-4xl font-bold mb-4">{{ data.name }}</h1>
         <p class="text-xl mb-8">{{ data.description.Overview }}</p>
-        <button class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded">Learn More</button>
       </div>
     </section>
 
