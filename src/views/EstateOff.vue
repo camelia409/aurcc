@@ -11,18 +11,18 @@
 	  <!-- Content sections -->
 	  <section class="mx-auto py-8 px-4 space-y-8 bg-indigo-100">
 		<div class="bg-white rounded-lg  shadow-md">
-		  <h2 class="text-3xl text-center text-white font-bold p-4 bg-blue-800 rounded-md">About the Exam Cell</h2>
+		  <h2 class="text-3xl text-center text-white font-bold p-4 bg-blue-800 rounded-t-lg">About the Exam Cell</h2>
 		  <p class="text-xl font-medium p-5">{{ data.description }}</p>
 		</div>
 		<div class="bg-white rounded-lg shadow-md">
-		  <h2 class="text-3xl text-center text-white font-bold p-4 bg-blue-800 rounded-md">Services</h2>
+		  <h2 class="text-3xl text-center text-white font-bold p-4 bg-blue-800 rounded-t-lg">Services</h2>
 		  <div class="text-xl font-medium p-4 space-y-4">
 			<p v-for="service in data.services" :key="service">{{ service }}</p>
 		  </div>
 		</div>
         <div class="grid grid-cols-2 gap-4">
 		<div class="bg-white rounded-lg shadow-md">
-		  <h2 class="text-3xl text-center text-white font-bold p-4 bg-blue-800 rounded-md">Members</h2>
+		  <h2 class="text-3xl text-center text-white font-bold p-4 bg-blue-800 rounded-t-lg">Members</h2>
 		  <div class="text-xl font-medium p-4 space-y-4">
 			<p v-for="bearer in data.office_bearers" :key="bearer.name">
 			  <strong>{{ bearer.position }}:</strong> {{ bearer.name }}
@@ -30,7 +30,7 @@
 		  </div>
 		</div>
         <div class="bg-white rounded-lg  shadow-md">
-		  <h2 class="text-3xl text-center text-white font-bold p-4 bg-blue-800 rounded-md">Contact</h2>
+		  <h2 class="text-3xl text-center text-white font-bold p-4 bg-blue-800 rounded-t-lg">Contact</h2>
 		  <p class="text-xl font-medium p-5">{{ data.contact_us }}</p>
 		</div>
         </div>

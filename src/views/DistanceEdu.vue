@@ -10,8 +10,8 @@
 
     <!-- Details section -->
     <section class="container mx-auto py-8 px-4 md:px-9">
-      <div class="bg-gray-100 p- rounded-lg  shadow-md overflow-x-auto">
-        <h2 class="text-3xl text-center bg-blue-800 text-white p-4 font-bold rounded-md">{{ details.description }}</h2>
+      <div class="bg-gray-100 rounded-lg font-medium shadow-md overflow-x-auto">
+        <h2 class="text-3xl text-center bg-blue-800 text-white p-4 font-bold rounded-t-lg">{{ details.description }}</h2>
         <table class="min-w-full divide-y divide-gray-200">
           <tbody class="divide-y divide-gray-200">
             <!-- Set -->
