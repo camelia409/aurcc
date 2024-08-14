@@ -50,11 +50,6 @@ const router = createRouter({
       component: ()=> import('../views/About.vue')
     },
     {
-      path: '/academics/:section',
-      name: 'academics',
-      component: ()=> import('../views/Academics.vue')
-    },
-    {
       path: '/exam-cell/',
       name: 'examcell',
       component: ()=> import('../views/Examcell.vue')
@@ -148,6 +143,11 @@ const router = createRouter({
       path: '/HOD/',
       name: 'HOD',
       component: ()=> import('../views/HOD.vue')
+    },
+    {
+      path: '/student_affairs/',
+      name: 'student_affairs',
+      component: ()=> import('../views/student_affairs.vue')
     },
     {
       path: '/COD/',
