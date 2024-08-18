@@ -1,0 +1,222 @@
+{
+    "address": "s&h",
+    "image":"",
+    "name": "Department of Science and Humanities",
+    "description": "Comprises the faculty of Mathematics and English with rich academic and research experience.",
+    "vision": "To be recognized globally for establishing Research and Development programme in all the areas of Fundamental Sciences that support Engineering and Technology.",
+    "mission": [
+      "To attain excellence in pedagogy, and provide potential skills in the areas of Humanities and Sciences.",
+      "To impart flexible, responsive, and innovative educational opportunities and to cultivate interest in the young minds to pursue research in emerging areas of Science and Technology.",
+      "To prepare professional leaders to face the emerging global challenges and to foster cultural enrichment.",
+      "To create an atmosphere of learning to enable the students to develop sound cognitive and problem-solving skills."
+    ],
+    "events": {
+      "conferences_workshops_symposium_fdp": 86,
+      "papers_presented_publications": {
+        "state_level": 0,
+        "national_level": 0,
+        "international_level": 86
+      },
+      "programs_conducted": [
+        {
+          "name": "One day Seminar on 'Stochastic Processes and its Applications'",
+          "venue": "ANNA UNIVERSITY, REGIONAL CAMPUS, COIMBATORE",
+          "date": "04-05-2015"
+        },
+        {
+          "name": "One day Workshop on 'Effective Public Speaking'",
+          "venue": "ANNA UNIVERSITY, REGIONAL CAMPUS, COIMBATORE",
+          "date": "29-09-2015"
+        }
+      ]
+    },
+    "placements": "nil",
+    "achievements": "nil",
+    "research_and_publications": "nil",
+    "faculty": [
+      {
+        "name": "Dr. Leelamani A",
+        "position": "Assistant Professor (Senior Grade)",
+        "department": "Department of Science and Humanities",
+        "email": "leelamani@aurcc.ac.in",
+        "education": [
+            {
+                 "degree": "Ph.D.",
+                 "field": "Mathematics",
+                 "institution": "Bharathiar University, Coimbatore",
+                 "year": 2006
+            }
+        ],
+        "research_interests": ["Control Theory", "Differential Equations"],
+        "professional_experience": [
+          {
+            "organization": "Bharathiar University",
+            "role": "Guest Lecture",
+            "duration": "2004-2006"
+          },
+          {
+            "organization": "Park College of Engineering and Technology",
+            "role": "Lecturer",
+            "duration": "2006-2008"
+          },
+          {
+            "organization": "Anna University Regional Campus, Coimbatore",
+            "role": "Assistant Professor",
+            "duration": "2008-present"
+          }
+        ],
+        "achievements": [
+          "University second rank holder in M.Sc degree examination (2001)",
+          "Guided 13 Ph.D. scholars"
+        ],
+        "membership": "Life member in Industrial & Applied Mathematics",
+        "links": {
+          "Google Scholar": "https://scholar.google.com/citations?user=pQVtZXYAAAAJ&hl=en",
+          "Email": "mailto:leelamani@aurcc.ac.in",
+          "Google Drive": "https://drive.google.com/open?id=1pEev3iwFB-aQZ8dTEZtqo-7GKdfS0BZm"
+        }
+      },
+      {
+        "name": "Dr. Vernold Vivin J",
+        "position": "Assistant Professor (Senior Grade)",
+        "department": "Department of Science & Humanities (Mathematics)",
+        "email": "jvvivin@gmail.com",
+        "education": [
+             {  
+                 "degree": "Ph.D.",
+                 "field": "Mathematics",
+                 "institution": "Bharathiar University, Coimbatore"
+             }
+        ],
+        "research_interests": ["Graph Theory", "Graph Colorings"],
+        "professional_experience": [
+          {
+            "organization": "Anna University Regional Campus-Coimbatore",
+            "role": "Assistant Professor",
+            "duration": "03/08/2023-present"
+          },
+          {
+            "organization": "University College of Engineering, Nagercoil",
+            "role": "Assistant Professor",
+            "duration": "20/08/2010-02/08/2023"
+          },
+          {
+            "organization": "Sri Shakthi Institute of Engineering and Technology, Coimbatore",
+            "role": "Assistant Professor",
+            "duration": "17/07/2007-19/08/2010"
+          }
+        ],
+        "achievements": [
+          "Guided 05 Ph.D. candidates",
+          "Published more than 75 research papers",
+          "Delivered more than 10 invited Lectures"
+        ],
+        "links": {
+          "Google Scholar": "https://scholar.google.co.in/citations?user=-XgxYQoAAAAJ&hl=en",
+          "Email": "mailto:jvvivin@gmail.com",
+          "Google Drive": "https://drive.google.com/open?id=1wtLrakLXToiFlf5k36V_ys4XOh31rlj_"
+        }
+      },
+      {
+        "name": "Dr. Krishnakumar M",
+        "position": "Assistant Professor (Senior Grade)",
+        "department": "Department of Science and Humanities (Physics)",
+        "email": "drkrishnakumarmuthusamy@gmail.com",
+        "education": [
+             {   
+                 "degree": "Ph.D.",
+                 "field": "Physics",
+                 "institution": "Anna University, Chennai"
+             }
+        ],
+        "research_interests": ["NLO materials", "Photonic single crystalline materials", "Materials Science"],
+        "professional_experience": [
+          {
+            "organization": "Government College of Technology, Coimbatore",
+            "role": "Lecturer (Visiting)",
+            "duration": "2005-2007"
+          },
+          {
+            "organization": "National Geophysical Research Institute (NGRI), Hyderabad",
+            "role": "CSIR Research Intern",
+            "duration": "2007-2008"
+          },
+          {
+            "organization": "University College of Engineering, Ramanathapuram",
+            "role": "Lecturer",
+            "duration": "2008-2009"
+          },
+          {
+            "organization": "University College of Engineering, Ramanathapuram",
+            "role": "Assistant Professor",
+            "duration": "2009-2014"
+          },
+          {
+            "organization": "University College of Engineering, Dindigul",
+            "role": "Assistant Professor",
+            "duration": "2014-2015"
+          },
+          {
+            "organization": "Anna University Regional campus, Coimbatore",
+            "role": "Assistant Professor (Sr.Gr)",
+            "duration": "2023-present"
+          }
+        ],
+        "achievements": [
+          "Published more than twenty research articles in peer-reviewed SCI journals",
+          "Published three books for Information science, Electrical Engineering, and Electronics Engineering",
+          "Received Kamarajar Endowment fellowship from Bharathiar University",
+          "Received CSIR Diamond jubilee internship award from CSIR Hyderabad"
+        ],
+        "links": {
+          "Google Scholar": "https://scholar.google.com/citations?user=-FRYVoEAAAAJ&hl=en",
+          "Email": "mailto:drkrishnakumarmuthusamy@gmail.com",
+          "Google Drive": "https://drive.google.com/open?id=1iDqdurQldiD2zpn2VVjGUkv5mOpcjkhD"
+        }
+      },
+      {
+        "name": "Dr. Bapitha L",
+        "position": "Assistant Professor (Senior Grade)",
+        "department": "Department of Science and Humanities",
+        "email": "bapithaenglish@gmail.com",
+        "professional_experience": [
+          {
+            "organization": "Anna University Regional Campus Coimbatore",
+            "role": "Assistant Professor",
+            "duration": "11/08/2023-present"
+          },
+          {
+            "organization": "UCER, Ramanathapuram",
+            "role": "Assistant Professor",
+            "duration": "21/07/2014-10/08/2023"
+          },
+          {
+            "organization": "UCE, Ariyalur",
+            "role": "Assistant Professor",
+            "duration": "19/11/2009-18/07/2014"
+          },
+          {
+            "organization": "Panimalar Institute of Technology, Chennai",
+            "role": "Lecturer",
+            "duration": "02/06/2009-17/11/2009"
+          },
+          {
+            "organization": "Syed Ammal Engineering College, Ramanathapuram",
+            "role": "Lecturer",
+            "duration": "19/07/2007-31/05/2008"
+          },
+          {
+            "organization": "Mount Zion College of Engineering, Pudukkottai",
+            "role": "Lecturer",
+            "duration": "01/06/2001-31/07/2006"
+          }
+        ],
+        "achievements": "15 national and International conferences attended",
+        "links": {
+          "Email": "mailto:bapithaenglish@gmail.com",
+          "Google Drive": "https://drive.google.com/open?id=1R3oqrPPxh4pkJGMNkcCTqmWkv2w7wdGC"
+        }
+      }
+    ],
+    "contact": "s&hdepartment@aurcc.ac.in"
+}

@@ -47,9 +47,9 @@
       <div class="bg-white rounded-lg shadow-md">
         <h2 class="text-3xl text-center text-white font-bold p-4 bg-blue-800 rounded-t-lg">Links</h2>
         <div class="text-xl font-medium p-4 space-y-4">
-          <ul class="list-disc pl-4">
+          <ul class="list-disc pl-4 ">
             <li v-for="link in data.links" :key="link">
-              <a :href="'http://' + link" target="_blank" rel="noopener noreferrer">{{ link }}</a>
+              <a :href="'http://' + link" target="_blank" rel="noopener noreferrer" class="hover:underline">{{ link }}</a>
             </li>
           </ul>
         </div>

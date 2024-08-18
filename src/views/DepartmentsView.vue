@@ -15,7 +15,7 @@
       </section>
       <!-- Horizontal Tabs -->
       <div class="sticky top-0 bg-[white] shadow-md z-10 hidden xl:block">
-        <div class="flex justify-between  px-9 ">
+        <div class="flex justify-around  px-9 ">
           <nav role="tablist" class="tabs">
             <button role="tab"
               v-for="(section, index) in sections"
@@ -320,23 +320,23 @@
               {{ department.proud_alumni }}
             </ul>
           </div> -->
-        </div>
-        <div id="research-and-publications" class=" mx-auto bg-indigo-900">
-          <h2 class="text-3xl text-center text-white font-extrabold p-8 ">Research and Publications</h2>
-          <div class="list-disc pl-8 space-y-4 h-96 overflow-auto bg-indigo-100">
-            <div v-for="research in department.research_and_publications" :key="research.title" class="bg-white p-4 border-2 border-gray-200 rounded">
-              <div class="text-lg font-semibold text-gray-700">
-                {{ research.title }} ({{ research.year }}):
-              </div>
-              <div class="text-gray-600">
-                {{ research.authors }}
-              </div>
-              <div class="font-bold ">
-                {{ research.journal }}
+      </div>
+        <!--  <div id="research-and-publications" class=" mx-auto bg-indigo-900">
+            <h2 class="text-3xl text-center text-white font-extrabold p-8 ">Research and Publications</h2>
+            <div class="list-disc pl-8 space-y-4 h-96 overflow-auto bg-indigo-100">
+              <div v-for="research in department.research_and_publications" :key="research.title" class="bg-white p-4 border-2 border-gray-200 rounded">
+                <div class="text-lg font-semibold text-gray-700">
+                  {{ research.title }} ({{ research.year }}):
+                </div>
+                <div class="text-gray-600">
+                  {{ research.authors }}
+                </div>
+                <div class="font-bold ">
+                  {{ research.journal }}
+                </div>
               </div>
             </div>
-          </div>
-        </div>
+        </div> -->  
       </section>
     </main>
   </div>
@@ -353,8 +353,7 @@ export default {
         'Achievements',
         'Facility',
         'Faculty',
-        'Administration and Technical Staff',
-        'Research and Publications',
+        'Administration and Technical Staff'
       ],
       events: null,
       currentIndex: 0,

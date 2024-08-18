@@ -15,35 +15,15 @@
       </div>
     </section>
 
-    <!-- Horizontal Tabs -->
-    <div class="sticky top-0 bg-[] shadow-md z-10 hidden xl:block">
-      <div class="flex justify-between px-9">
-        <nav role="tablist" class="tabs">
-          <button
-            role="tab"
-            v-for="(section, index) in sections"
-            :key="index"
-            @click="currentSection = section"
-            :class="{
-              'bg-[#21209C] text-white': currentSection === section,
-              'text-black hover:bg-blue-700 hover:text-white': currentSection !== section
-            }"
-            class="font-semibold p-4 h-full transition duration-300 ease-in-out tab text-xl"
-          >
-            {{ section }}
-          </button>
-        </nav>
-      </div>
-    </div>
 
     <!-- Content sections -->
-    <div class="p-9">
-      <div v-if="currentSection !== null">
-        <div v-if="currentSection === 'Activities'">
-          <h2 class="text-2xl font-bold mb-4">Activities</h2>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <div class="p-8 bg-gray-300">
+      <div class="">
+        <div class="bg-white rounded-lg">
+          <h2 class="text-3xl text-white text-center p-4 font-bold bg-blue-800 rounded-t-lg">Activities</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 px-10 py-4 font-medium">
             <div>
-              <h3 class="text-lg font-semibold mb-2">Curricular Activities</h3>
+              <h3 class="text-xl font-semibold mb-2">Curricular Activities</h3>
               <ul class="list-disc pl-4">
                 <li
                   v-for="activity in data.description.activities.curricular_activities"
@@ -55,7 +35,7 @@
               </ul>
             </div>
             <div>
-              <h3 class="text-lg font-semibold mb-2">Social Responsibilities</h3>
+              <h3 class="text-xl font-semibold mb-2">Social Responsibilities</h3>
               <ul class="list-disc pl-4">
                 <li
                   v-for="activity in data.description.activities.social_responsibilities"
@@ -67,7 +47,7 @@
               </ul>
             </div>
             <div>
-              <h3 class="text-lg font-semibold mb-2">Internal Activities</h3>
+              <h3 class="text-xl font-semibold mb-2">Internal Activities</h3>
               <ul class="list-disc pl-4">
                 <li
                   v-for="activity in data.description.activities.internal_activities"
@@ -78,7 +58,7 @@
               </ul>
             </div>
             <div>
-              <h3 class="text-lg font-semibold mb-2">External Activities</h3>
+              <h3 class="text-xl font-semibold mb-2">External Activities</h3>
               <ul class="list-disc pl-4">
                 <li
                   v-for="activity in data.description.activities.external_activities"
@@ -90,11 +70,11 @@
             </div>
           </div>
         </div>
-        <div v-else-if="currentSection === 'Projects'">
-          <h2 class="text-2xl font-bold mb-4">Projects</h2>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="bg-white rounded-lg">
+          <h2 class="text-3xl text-white text-center p-4 font-bold bg-blue-800 mt-6 rounded-t-lg">Projects</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 p-4 font-medium">
             <div>
-              <h3 class="text-lg font-semibold mb-2">Completed Projects</h3>
+              <h3 class="text-xl font-semibold mb-2">Completed Projects</h3>
               <ul class="list-disc pl-4">
                 <li class="mb-3" v-for="project in data.description.projects_completed" :key="project.name">
                   <h4 class="font-bold">{{ project.name }}</h4>
@@ -103,7 +83,7 @@
               </ul>
             </div>
             <div>
-              <h3 class="text-lg font-semibold mb-2">Ongoing Projects</h3>
+              <h3 class="text-xl font-semibold mb-2">Ongoing Projects</h3>
               <ul class="list-disc pl-4 font-bold">
                 <li v-for="project in data.description.ongoing_projects" :key="project">
                   {{ project }}
@@ -112,28 +92,28 @@
             </div>
           </div>
         </div>
-        <div v-else-if="currentSection === 'Hackathon Participation'">
-          <h2 class="text-2xl font-bold mb-4">Hackathon Participation</h2>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="bg-white rounded-lg">
+          <h2 class="text-3xl text-white text-center p-4 font-bold bg-blue-800 mt-6 rounded-t-lg">Hackathon Participation</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 p-4 font-medium ">
             <div
               v-for="participation in data.description.participation_in_hackathon"
               :key="participation.project"
-              class="bg-white shadow-md rounded-md p-4"
+              class="bg-white shadow-lg rounded-md p-4"
             >
-              <h3 class="text-lg font-semibold">{{ participation.project }}</h3>
+              <h3 class="text-xl font-semibold">{{ participation.project }}</h3>
               <p>{{ participation.achievement }}</p>
             </div>
           </div>
         </div>
-        <div v-else-if="currentSection === 'Staff Members'">
-          <h2 class="text-2xl font-bold mb-4">Staff Members</h2>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="bg-white rounded-lg">
+          <h2 class="text-3xl text-white text-center p-4 font-bold bg-blue-800 mt-6 rounded-t-lg">Staff Members</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 p-4 font-medium ">
             <div
               v-for="staff in data.staff_members"
               :key="staff.email_id"
               class="bg-white shadow-md rounded-md p-4"
             >
-              <h3 class="text-lg font-semibold">{{ staff.name }}</h3>
+              <h3 class="text-xl font-semibold">{{ staff.name }}</h3>
               <p>{{ staff.designation }}</p>
               <p>{{ staff.email_id }}</p>
             </div>
@@ -151,15 +131,8 @@ export default {
   data() {
     return {
       data: data,
-      sections: ['Activities', 'Projects', 'Hackathon Participation', 'Staff Members'],
-      currentSection: null,
+      
     };
-  },
-  created() {
-    // Default to first section
-    if (this.sections.length > 0) {
-      this.currentSection = this.sections[0];
-    }
   },
   methods: {
     scrollToSection(section) {

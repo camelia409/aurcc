@@ -18,11 +18,11 @@
     <!-- Content sections -->
     <div class="bg-indigo-100 mx-auto py-8 ">
       <section class="py-8  p-10">
-        <div class="bg-white rounded-lg ">
+        <div class="bg-white rounded-lg">
           <h2 class="text-3xl text-center font-bold p-3 rounded-t-lg bg-gradient-to-r from-blue-500 to-cyan-300">Description</h2>
           <p class="font-medium text-xl p-4">{{ paceData.description }}</p>
         </div>
-        <div class="bg-white">
+        <div class="bg-white rounded-lg">
           <h2 class="text-3xl text-center mt-8 mb-6 rounded-t-lg font-bold p-4 bg-gradient-to-r from-blue-500 to-cyan-300">Coordinators</h2>
           <div class="flex flex-cols justify-around">
           <div
