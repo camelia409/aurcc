@@ -14,7 +14,7 @@
       <section class="">
           <section v-if="currentSection !== null" class="p-6 bg-gray-100 md:col-span-3">
             <div class="grid grid-cols-2 gap-4">
-            <div id="Office Bearer" class="bg-white">
+            <div id="Office Bearer" class="bg-white rounded-lg">
               <h2 class="text-3xl text-center font-bold bg-yellow-300 p-4 rounded-t-lg  ">
                 Office Bearer
               </h2>
@@ -28,7 +28,7 @@
               </div>
             </div>
 
-            <div id="Affiliation Administration Staff" class="bg-white">
+            <div id="Affiliation Administration Staff" class="bg-white rounded-lg">
               <h2 class="text-3xl text-center font-bold bg-yellow-300 p-4 rounded-t-lg ">
                 Affiliation Administration Staff
               </h2>
@@ -47,7 +47,7 @@
               </div>
             </div>
             </div>
-            <div id="Contact Us" class="bg-white mt-4">
+            <div id="Contact Us" class="bg-white rounded-lg mt-4">
               <h2 class="text-3xl font-bold text-center bg-yellow-300 p-4 rounded-t-lg">
                 Contact Us
               </h2>
