@@ -2,34 +2,61 @@
   <main class="flex-grow">
     <!-- Hero section -->
     <section class="bg-cover bg-center relative -z-10" :style="'background-image: url(http://192.168.72.231:5173/src/assets/dgate-hero.jpg)'">
-      <div class="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div>
-      <div class="container mx-auto py-16 text-white p-9 relative z-10">
-        <h1 class="text-4xl font-bold mb-4">{{ data.name }}</h1>
-        <p class="text-xl mb-8">{{ data.description.Overview }}</p>
+      <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-t from-blue-900 via-transparent to-blue-900 opacity-70"></div>
+      <div class="container mx-auto py-16 text-center relative z-10">
+        <h1 class="text-4xl font-extrabold text-black mb-4 drop-shadow-lg font-serif">{{ data.name }}</h1>
+        <p class="text-lg max-w-3xl mx-auto mb-8 text-black leading-relaxed drop-shadow-lg font-sans">{{ data.description.Overview }}</p>
       </div>
     </section>
 
-    <!-- Content sections -->
-    <section class=" mx-auto py-8 p-4 space-y-8 bg-gray-300">
-      <div class="bg-white  rounded-lg">
-        <h2 class="text-3xl text-center bg-[#40E0D0] font-bold p-4 rounded-t-lg">Overview</h2>
-        <p class="p-5 text-xl font-medium">{{ data.description['Admissions at our Regional Campus'] }}</p>
-      </div>
-      <div class="bg-white rounded-lg">
-        <h2 class="text-3xl text-center bg-[#C0C0C0] font-bold p-4 rounded-t-lg">Courses Offered</h2>
-        <p class="p-5 text-xl font-medium">{{ data.courses_offered }}</p>
-      </div>
-      <div class="bg-white rounded-lg">
-        <h2 class="text-3xl text-center bg-yellow-400 font-bold p-4 rounded-t-lg">Eligibility Criteria</h2>
-        <ul class="p-8 text-xl font-medium list-disc  ">
-          <li v-for="(criteria, category) in data.eligibility_criteria" :key="category">
-            <strong>{{ category }}</strong>: {{ criteria }}
-          </li>
-        </ul>
-      </div>
-      <div class="bg-white rounded-lg">
-        <h2 class="text-3xl text-center bg-[#ad8dc0] font-bold p-4 rounded-t-lg">Contact Us</h2>
-        <p class="p-5 text-xl font-medium">{{ data.contact_us['Admission Co-ordinator'] }}</p>
+    <!-- Vertical Tabs Section -->
+    <section class="container mx-auto py-8 px-4">
+      <div class="relative flex">
+        <!-- Vertical Tabs -->
+        <div class="flex-shrink-0 w-64 bg-gradient-to-r from-purple-400 to-pink-300 rounded-lg shadow-lg p-4 overflow-hidden">
+          <div class="relative bg-gradient-to-r from-purple-500 to-pink-400 p-4 rounded-lg mb-4">
+            <svg class="absolute inset-0 w-full h-full" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="100" cy="100" r="100" fill="url(#gradient)" />
+              <defs>
+                <linearGradient id="gradient" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="rgba(255, 182, 193, 0.5)" />
+                  <stop offset="100%" stop-color="rgba(255, 105, 180, 0.5)" />
+                </linearGradient>
+              </defs>
+            </svg>
+            <h2 class="text-2xl text-white font-bold">Tabs</h2>
+          </div>
+          <div class="space-y-4">
+            <button @click="activeTab = 'overview'" class="w-full py-2 px-4 bg-white text-gray-800 rounded-md font-semibold hover:bg-gray-200">Overview</button>
+            <button @click="activeTab = 'courses'" class="w-full py-2 px-4 bg-white text-gray-800 rounded-md font-semibold hover:bg-gray-200">Courses Offered</button>
+            <button @click="activeTab = 'eligibility'" class="w-full py-2 px-4 bg-white text-gray-800 rounded-md font-semibold hover:bg-gray-200">Eligibility Criteria</button>
+            <button @click="activeTab = 'contact'" class="w-full py-2 px-4 bg-white text-gray-800 rounded-md font-semibold hover:bg-gray-200">Contact Us</button>
+          </div>
+        </div>
+
+        <!-- Tab Content -->
+        <div class="flex-grow ml-8 p-4">
+          <div v-if="activeTab === 'overview'" class="bg-gradient-to-r from-indigo-500 to-indigo-300 rounded-lg shadow-lg p-6 relative -z-10 ">
+            <h3 class="text-3xl text-white font-bold mb-4">Overview</h3>
+            <p class="text-xl font-medium text-gray-900">{{ data.description['Admissions at our Regional Campus'] }}</p>
+          </div>
+          <div v-if="activeTab === 'courses'" class="bg-gradient-to-r from-gray-500 to-gray-300 rounded-lg shadow-lg p-6 relative -z-10">
+            <h3 class="text-3xl text-white font-bold mb-4">Courses Offered</h3>
+            <p class="text-xl font-medium text-gray-900">{{ data.courses_offered }}</p>
+          </div>
+          <div v-if="activeTab === 'eligibility'" class="bg-gradient-to-r from-teal-500 to-teal-300 rounded-lg shadow-lg p-6 relative -z-10">
+            <h3 class="text-3xl text-white font-bold mb-4">Eligibility Criteria</h3>
+            <ul class="text-xl font-medium text-gray-900 list-disc pl-6">
+              <li v-for="(criteria, category) in data.eligibility_criteria" :key="category">
+                <strong>{{ category }}</strong>: {{ criteria }}
+              </li>
+            </ul>
+          </div>
+          <div v-if="activeTab === 'contact'" class="bg-gradient-to-r from-green-500 to-green-300 rounded-lg shadow-lg p-6 relative -z-10">
+            <h3 class="text-3xl text-white font-bold mb-4">Contact Us</h3>
+            <p class="text-xl font-medium text-gray-900">{{ data.contact_us['Admission Co-ordinator'] }}</p>
+          </div>
+        </div>
       </div>
     </section>
   </main>
@@ -41,12 +68,54 @@ import admissionData from '../assets/admission.json';
 export default {
   data() {
     return {
-      data: admissionData[0]
+      data: admissionData[0],
+      activeTab: 'overview' // Default active tab
     };
   }
 };
 </script>
 
 <style>
-/* You can add any additional custom styles here if needed */
+/* Font Styles */
+.font-sans {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.font-serif {
+  font-family: 'Georgia', 'Times New Roman', Times, serif;
+}
+
+/* Hero section */
+.hero-section {
+  min-height: 50vh;
+  position: relative;
+  background-blend-mode: multiply;
+}
+
+/* Sections */
+section {
+  transition: transform 0.3s ease-in-out;
+}
+
+section:hover {
+  transform: scale(1.01);
+}
+
+/* Gradient Background */
+.bg-gradient-to-r {
+  background: linear-gradient(90deg, var(--tw-gradient-stops));
+}
+
+/* Vertical Tabs */
+.bg-gradient-to-r {
+  position: relative;
+}
+
+button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.flex-shrink-0 {
+  flex-shrink: 0;
+}
 </style>

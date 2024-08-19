@@ -1,33 +1,51 @@
 <template>
   <div class="min-h-screen flex flex-col">
-    <!-- Hero section -->
-    <section class="bg-cover bg-center relative -z-10" :style="'background-image: url(http://192.168.72.231:5173/src/assets/research-cell-hero.jpg)'">
-      <div class="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div>
-      <div class=" mx-auto py-16 text-white p-9 relative z-10">
-        <h1 class="text-4xl font-bold mb-4">{{ data.name }}</h1>
-        <p class="text-xl mb-8">{{ data.description }}</p>
-        <button class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded">Learn More</button>
+    <!-- Hero Section -->
+    <section class="bg-cover bg-center relative -z-10" :style="'background-image: url(http://192.168.72.231:5173/src/assets/dgate-hero.jpg)'">
+      <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-t from-blue-900 via-transparent to-blue-900 opacity-70"></div>
+      <div class="container mx-auto py-16 text-center text-white relative z-10">
+        <h1 class="text-5xl font-extrabold mb-4 drop-shadow-lg text-black">{{ data.name }}</h1>
+        <p class="text-lg max-w-3xl mx-auto mb-8 leading-relaxed drop-shadow-lg text-black">{{ data.description }}</p>
       </div>
     </section>
 
-    <!-- Content sections -->
-    <main class="flex-grow">
-      <section id="Supervisors" class=" mx-auto py-8 px-4">
-        <div class="bg-white font-medium rounded-lg shadow-md">
-          <h2 class="text-3xl font-bold text-center text-white bg-blue-800 p-4 rounded-t-md">Supervisors</h2>
-          <div class="p-4 text-xl">
-            <ul class="list-disc pl-4">
+    <!-- Content Sections with Vertical Tabs -->
+    <section class="container mx-auto py-12 px-4 bg-gray-100 rounded-lg">
+      <div class="flex">
+        <!-- Vertical Tabs -->
+        <div class="flex-shrink-0 w-64 bg-gradient-to-r from-purple-400 to-pink-300 rounded-lg shadow-lg p-4 overflow-hidden">
+          <div class="relative bg-gradient-to-r from-purple-500 to-pink-400 p-4 rounded-lg mb-4">
+            <svg class="absolute inset-0 w-full h-full" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="100" cy="100" r="100" fill="url(#gradient)" />
+              <defs>
+                <linearGradient id="gradient" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="rgba(255, 182, 193, 0.5)" />
+                  <stop offset="100%" stop-color="rgba(255, 105, 180, 0.5)" />
+                </linearGradient>
+              </defs>
+            </svg>
+            <h2 class="text-2xl text-white font-bold">Tabs</h2>
+          </div>
+          <div class="space-y-2">
+            <button @click="currentSection = 'Supervisors'" :class="{'bg-white': currentSection === 'Supervisors', 'bg-gray-200': currentSection !== 'Supervisors'}" class="w-full py-2 px-4 rounded-md font-semibold hover:bg-gray-300">Supervisors</button>
+            <button @click="currentSection = 'PhD Scholars'" :class="{'bg-white': currentSection === 'PhD Scholars', 'bg-gray-200': currentSection !== 'PhD Scholars'}" class="w-full py-2 px-4 rounded-md font-semibold hover:bg-gray-300">PhD Scholars</button>
+            <button @click="currentSection = 'PG Projects'" :class="{'bg-white': currentSection === 'PG Projects', 'bg-gray-200': currentSection !== 'PG Projects'}" class="w-full py-2 px-4 rounded-md font-semibold hover:bg-gray-300">PG Projects</button>
+            <button @click="currentSection = 'Stipend Details'" :class="{'bg-white': currentSection === 'Stipend Details', 'bg-gray-200': currentSection !== 'Stipend Details'}" class="w-full py-2 px-4 rounded-md font-semibold hover:bg-gray-300">Stipend Details</button>
+          </div>
+        </div>
+
+        <!-- Content -->
+        <div class="flex-1 ml-4 bg-white rounded-lg shadow-lg p-6">
+          <div v-if="currentSection === 'Supervisors'">
+            <h2 class="text-4xl font-bold mb-6">Supervisors</h2>
+            <ul class="list-disc pl-4 text-xl">
               <li v-for="supervisor in data.supervisors" :key="supervisor">{{ supervisor }}</li>
             </ul>
           </div>
-        </div>
-      </section>
-
-      <section id="PhD Scholars" class=" mx-auto py-8 px-4">
-        <div class="bg-white font-medium rounded-lg shadow-md">
-          <h2 class="text-3xl font-bold text-center text-white bg-blue-800 p-4 rounded-t-md">PhD Scholars</h2>
-          <div class="p-4 text-xl">
-            <p>Total PhD Scholars: {{ data.phd_scholars.total }}</p>
+          
+          <div v-else-if="currentSection === 'PhD Scholars'">
+            <h2 class="text-4xl font-bold mb-6">PhD Scholars</h2>
+            <p class="text-xl">Total PhD Scholars: {{ data.phd_scholars.total }}</p>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div class="bg-white shadow-md rounded-md p-4">
                 <h3 class="text-lg font-semibold mb-2">Faculty-wise</h3>
@@ -39,14 +57,10 @@
               </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      <section id="PG Projects" class=" mx-auto py-8 px-4">
-        <div class="bg-white rounded-lg font-medium shadow-md">
-          <h2 class="text-3xl font-bold text-center text-white bg-blue-800 p-4 rounded-t-md">PG Projects</h2>
-          <div class="p-4 text-xl">
-            <p>Total PG Projects: {{ data.pg_projects.total }}</p>
+          
+          <div v-else-if="currentSection === 'PG Projects'">
+            <h2 class="text-4xl font-bold mb-6">PG Projects</h2>
+            <p class="text-xl">Total PG Projects: {{ data.pg_projects.total }}</p>
             <table class="table-auto w-full bg-white shadow-md rounded-md mt-4">
               <thead>
                 <tr class="bg-gray-200">
@@ -62,13 +76,9 @@
               </tbody>
             </table>
           </div>
-        </div>
-      </section>
-
-      <section id="Stipend Details" class=" mx-auto py-8 px-4">
-        <div class="bg-white rounded-lg font-medium shadow-md">
-          <h2 class="text-3xl font-bold text-center text-white bg-blue-800 p-4 rounded-t-md">Stipend Details</h2>
-          <div class="text-xl p-4">
+          
+          <div v-else-if="currentSection === 'Stipend Details'">
+            <h2 class="text-4xl font-bold mb-6">Stipend Details</h2>
             <div class="overflow-x-auto">
               <table class="table-auto w-full bg-white shadow-md rounded-md">
                 <thead class="bg-gray-800 text-white">
@@ -99,8 +109,8 @@
             </div>
           </div>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -110,12 +120,13 @@ import data from '../assets/research-cell.json';
 export default {
   data() {
     return {
-      data: data
+      data: data,
+      currentSection: 'Supervisors' // Default to first section
     };
   }
 };
 </script>
 
-<style>
-/* You can add any additional custom styles here if needed */
+<style scoped>
+/* Add custom styles if needed to match the ADM Vue component */
 </style>

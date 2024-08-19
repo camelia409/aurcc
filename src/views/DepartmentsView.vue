@@ -14,8 +14,8 @@
         </div>
       </section>
       <!-- Horizontal Tabs -->
-      <div class="sticky top-0 bg-[white] shadow-md z-10 hidden xl:block">
-        <div class="flex justify-between  px-9 ">
+      <div class="sticky top-0 bg-[white] shadow-md hidden xl:block relative z-10">
+        <div class="flex justify-between  px-9  ">
           <nav role="tablist" class="tabs">
             <button role="tab"
               v-for="(section, index) in sections"
@@ -25,7 +25,7 @@
                 'bg-[#21209C] text-white ': currentSection === section,
                 'text-black hover:bg-blue-700 hover:text-white ': currentSection !== section
               }"
-              class="font-semibold p-4 h-full transition duration-300 ease-in-out tab text-xl "
+              class="font-semibold p-4 h-full transition duration-300 ease-in-out tab text-xl relative-z-10 "
             >
               {{ section }}
             </button>
