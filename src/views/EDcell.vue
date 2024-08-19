@@ -13,9 +13,9 @@
 
     <!-- Vertical Tabs Section -->
     <section class="mx-auto py-8 px-4 space-y-6">
-      <div class="relative flex">
+      <div class="relative flex flex-col md:flex-row">
         <!-- Vertical Tabs -->
-        <div class="flex-shrink-0 w-64 bg-gradient-to-r from-purple-400 to-pink-300 rounded-lg shadow-lg p-4 overflow-hidden">
+        <div class="flex-shrink-0 w-full md:w-64 bg-gradient-to-r from-purple-400 to-pink-300 rounded-lg shadow-lg p-4 mb-4 md:mb-0 md:mr-4">
           <div class="relative bg-gradient-to-r from-purple-500 to-pink-400 p-4 rounded-lg mb-4">
             <svg class="absolute inset-0 w-full h-full" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="100" cy="100" r="100" fill="url(#gradient)" />
@@ -38,7 +38,7 @@
         </div>
 
         <!-- Tab Content -->
-        <div class="flex-grow ml-8 p-4 relative -z-10">
+        <div class="flex-grow p-4 relative -z-10">
           <div v-if="activeTab === 'objectives'" class="bg-gradient-to-r from-indigo-500 to-indigo-300 rounded-lg shadow-lg p-6">
             <h3 class="text-3xl text-white font-bold mb-4">Objectives</h3>
             <ul class="text-lg font-medium text-gray-900 list-disc pl-6">
@@ -47,7 +47,7 @@
           </div>
           <div v-if="activeTab === 'key_activities'" class="bg-gradient-to-r from-blue-500 to-blue-300 rounded-lg shadow-lg p-6">
             <h3 class="text-3xl text-white font-bold mb-4">Key Activities</h3>
-            <div v-for="activity in data.description.key_activities" :key="activity.name" class="p-4 rounded-lg bg-gray-100">
+            <div v-for="activity in data.description.key_activities" :key="activity.name" class="p-4 rounded-lg bg-gray-100 mb-4">
               <h4 class="text-xl font-semibold">{{ activity.name }}</h4>
               <p><strong>Location:</strong> {{ activity.location }}</p>
               <p><strong>Details:</strong> {{ activity.details }}</p>

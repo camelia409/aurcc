@@ -3,43 +3,34 @@
     <!-- Hero section -->
     <section class="hero-section bg-cover bg-center relative -z-10" :style="'background-image: url(http://192.168.72.231:5173/src/assets/dgate-hero.jpg)'">
       <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-t from-blue-900 via-transparent to-blue-900 opacity-70"></div>
-      <div class="container mx-auto py-16 text-center relative z-10">
-        <h1 class="text-4xl font-extrabold  mb-4 drop-shadow-lg font-serif text-balck">{{ data.name }}</h1>
-        <p class="text-lg max-w-3xl mx-auto mb-8  leading-relaxed drop-shadow-lg font-sans text-black">{{ data.description.DGATE }}</p>
+      <div class="container mx-auto py-16 text-center relative z-10 px-4 md:px-0">
+        <h1 class="text-3xl md:text-4xl font-extrabold mb-4 drop-shadow-lg font-serif text-black">{{ data.name }}</h1>
+        <p class="text-base md:text-lg max-w-3xl mx-auto mb-8 leading-relaxed drop-shadow-lg font-sans text-black">{{ data.description.DGATE }}</p>
       </div>
     </section>
 
     <!-- Vertical Tabs Section -->
     <section class="container mx-auto py-8 px-4">
-      <div class="relative flex">
+      <div class="relative flex flex-col md:flex-row">
         <!-- Vertical Tabs -->
-        <div class="flex-shrink-0 w-64 bg-gradient-to-r from-purple-400 to-pink-300 rounded-lg shadow-lg p-4 overflow-hidden">
-          <div class="relative bg-gradient-to-r from-purple-500 to-pink-400 p-4 rounded-lg mb-4">
-            <svg class="absolute inset-0 w-full h-full" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="100" cy="100" r="100" fill="url(#gradient)" />
-              <defs>
-                <linearGradient id="gradient" x1="0" y1="0" x2="1" y2="1">
-                  <stop offset="0%" stop-color="rgba(255, 182, 193, 0.5)" />
-                  <stop offset="100%" stop-color="rgba(255, 105, 180, 0.5)" />
-                </linearGradient>
-              </defs>
-            </svg>
-            <h2 class="text-2xl text-white font-bold">Tabs</h2>
+        <div class="flex-shrink-0 md:w-64 bg-gradient-to-r from-purple-400 to-pink-300 rounded-lg shadow-lg p-4 overflow-hidden mb-4 md:mb-0">
+          <div class="relative bg-gradient-to-r from-purple-500 to-pink-400 p-4 rounded-lg mb-4 text-center md:text-left">
+            <h2 class="text-xl md:text-2xl text-white font-bold">Tabs</h2>
           </div>
           <div class="space-y-4">
-            <button @click="activeTab = 'activities'" class="w-full py-2 px-4 bg-white text-gray-800 rounded-md font-semibold hover:bg-gray-200">Activities</button>
-            <button @click="activeTab = 'projects'" class="w-full py-2 px-4 bg-white text-gray-800 rounded-md font-semibold hover:bg-gray-200">Projects</button>
-            <button @click="activeTab = 'hackathon'" class="w-full py-2 px-4 bg-white text-gray-800 rounded-md font-semibold hover:bg-gray-200">Hackathon Participation</button>
-            <button @click="activeTab = 'staff'" class="w-full py-2 px-4 bg-white text-gray-800 rounded-md font-semibold hover:bg-gray-200">Staff Members</button>
+            <button @click="activeTab = 'activities'" :class="{'bg-gray-200': activeTab === 'activities'}" class="w-full py-2 px-4 bg-white text-gray-800 rounded-md font-semibold hover:bg-gray-200">Activities</button>
+            <button @click="activeTab = 'projects'" :class="{'bg-gray-200': activeTab === 'projects'}" class="w-full py-2 px-4 bg-white text-gray-800 rounded-md font-semibold hover:bg-gray-200">Projects</button>
+            <button @click="activeTab = 'hackathon'" :class="{'bg-gray-200': activeTab === 'hackathon'}" class="w-full py-2 px-4 bg-white text-gray-800 rounded-md font-semibold hover:bg-gray-200">Hackathon Participation</button>
+            <button @click="activeTab = 'staff'" :class="{'bg-gray-200': activeTab === 'staff'}" class="w-full py-2 px-4 bg-white text-gray-800 rounded-md font-semibold hover:bg-gray-200">Staff Members</button>
           </div>
         </div>
 
         <!-- Tab Content -->
-        <div class="flex-grow ml-8 p-4 relative -z-10">
+        <div class="flex-grow md:ml-8 p-4">
           <!-- Activities Tab -->
-          <div v-if="activeTab === 'activities'" class="bg-gradient-to-r from-blue-500 to-teal-300 rounded-lg shadow-lg p-6 relative -z-10">
-            <h3 class="text-3xl text-white font-bold mb-4">Activities</h3>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 ">
+          <div v-if="activeTab === 'activities'" class="bg-gradient-to-r from-blue-500 to-teal-300 rounded-lg shadow-lg p-6">
+            <h3 class="text-2xl md:text-3xl text-white font-bold mb-4">Activities</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
                 <h4 class="text-lg font-semibold mb-2">Curricular Activities</h4>
                 <ul class="list-disc pl-4">
@@ -79,7 +70,7 @@
 
           <!-- Projects Tab -->
           <div v-if="activeTab === 'projects'" class="bg-gradient-to-r from-indigo-500 to-blue-400 rounded-lg shadow-lg p-6">
-            <h3 class="text-3xl text-white font-bold mb-4">Projects</h3>
+            <h3 class="text-2xl md:text-3xl text-white font-bold mb-4">Projects</h3>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
                 <h4 class="text-lg font-semibold mb-2">Completed Projects</h4>
@@ -103,7 +94,7 @@
 
           <!-- Hackathon Participation Tab -->
           <div v-if="activeTab === 'hackathon'" class="bg-gradient-to-r from-teal-500 to-green-300 rounded-lg shadow-lg p-6">
-            <h3 class="text-3xl text-white font-bold mb-4">Hackathon Participation</h3>
+            <h3 class="text-2xl md:text-3xl text-white font-bold mb-4">Hackathon Participation</h3>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div v-for="participation in data.description.participation_in_hackathon" :key="participation.project" class="bg-white shadow-md rounded-md p-4">
                 <h4 class="text-lg font-semibold">{{ participation.project }}</h4>
@@ -114,7 +105,7 @@
 
           <!-- Staff Members Tab -->
           <div v-if="activeTab === 'staff'" class="bg-gradient-to-r from-green-500 to-lime-300 rounded-lg shadow-lg p-6">
-            <h3 class="text-3xl text-white font-bold mb-4">Staff Members</h3>
+            <h3 class="text-2xl md:text-3xl text-white font-bold mb-4">Staff Members</h3>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div v-for="staff in data.staff_members" :key="staff.email_id" class="bg-white shadow-md rounded-md p-4">
                 <h4 class="text-lg font-semibold">{{ staff.name }}</h4>
@@ -180,5 +171,33 @@ button:hover {
 
 .flex-shrink-0 {
   flex-shrink: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  /* Adjust tab buttons on mobile */
+  .flex-shrink-0 {
+    width: 100%;
+  }
+
+  .md\\:ml-8 {
+    margin-left: 0;
+  }
+
+  .md\\:grid-cols-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .md\\:text-3xl {
+    font-size: 1.75rem;
+  }
+
+  .md\\:text-2xl {
+    font-size: 1.5rem;
+  }
+
+  .md\\:flex-row {
+    flex-direction: column;
+  }
 }
 </style>

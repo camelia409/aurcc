@@ -4,16 +4,16 @@
     <section class="hero-section bg-cover bg-center relative -z-10" :style="'background-image: url(http://192.168.72.231:5173/src/assets/dgate-hero.jpg)'">
       <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-t from-blue-900 via-transparent to-blue-900 opacity-70"></div>
       <div class="container mx-auto py-16 text-center relative z-10">
-        <h1 class="text-4xl font-extrabold  mb-4 drop-shadow-lg font-serif text-balck">Placement Cell</h1>
-        <p class="text-lg max-w-3xl mx-auto mb-8  leading-relaxed drop-shadow-lg font-sans text-black">{{ data.description }}</p>
+        <h1 class="text-4xl font-extrabold mb-4 drop-shadow-lg font-serif text-black">Placement Cell</h1>
+        <p class="text-lg max-w-3xl mx-auto mb-8 leading-relaxed drop-shadow-lg font-sans text-black">{{ data.description }}</p>
       </div>
     </section>
 
     <!-- Content Sections with Vertical Tabs -->
     <section class="container mx-auto py-12 px-4 bg-gray-100 rounded-lg">
-      <div class="flex">
+      <div class="flex flex-col lg:flex-row">
         <!-- Vertical Tabs -->
-        <div class="flex-shrink-0 w-64 bg-gradient-to-r from-purple-400 to-pink-300 rounded-lg shadow-lg p-4 overflow-hidden">
+        <div class="flex-shrink-0 w-full lg:w-64 bg-gradient-to-r from-purple-400 to-pink-300 rounded-lg shadow-lg p-4 overflow-hidden mb-4 lg:mb-0">
           <div class="relative bg-gradient-to-r from-purple-500 to-pink-400 p-4 rounded-lg mb-4">
             <svg class="absolute inset-0 w-full h-full" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="100" cy="100" r="100" fill="url(#gradient)" />
@@ -36,7 +36,7 @@
         </div>
 
         <!-- Content -->
-        <div class="flex-1 ml-4 bg-white rounded-lg shadow-lg p-6">
+        <div class="flex-1 ml-0 lg:ml-4 bg-white rounded-lg shadow-lg p-6">
           <div v-if="currentSection === 'Recruitment Process'">
             <h2 class="text-4xl font-bold mb-6">Recruitment Process</h2>
             <p class="text-xl">{{ data.recruitment }}</p>
@@ -101,20 +101,14 @@ export default {
       recruitersPDF,
       placedStudentsImage,
     };
-  },
-  methods: {
-    scrollToSection(section) {
-      this.currentSection = section;
-      this.$nextTick(() => {
-        const element = this.$refs[section][0];
-        const offsetTop = element ? element.offsetTop - 100 : 0;
-        window.scrollTo({ top: offsetTop, behavior: 'smooth' });
-      });
-    }
   }
 };
 </script>
 
 <style scoped>
-/* Add custom styles if needed */
+.hero-section {
+  min-height: 50vh;
+  position: relative;
+  background-blend-mode: multiply;
+}
 </style>
