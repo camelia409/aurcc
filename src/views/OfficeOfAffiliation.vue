@@ -32,19 +32,6 @@
             <button @click="currentSection = 'contactUs'" :class="{'bg-white': currentSection === 'contactUs', 'bg-gray-200': currentSection !== 'contactUs'}" class="w-full py-2 px-4 rounded-md font-semibold hover:bg-gray-300">Contact Us</button>
           </div>
         </div>
-<<<<<<< HEAD
-=======
-      </section>
-  
-      <!-- Content sections -->
-      <section class="">
-          <section v-if="currentSection !== null" class="p-6 bg-gray-100 md:col-span-3">
-            <div class="grid grid-cols-2 gap-4">
-            <div id="Office Bearer" class="bg-white rounded-lg">
-              <h2 class="text-3xl text-center font-bold bg-yellow-300 p-4 rounded-t-lg  ">
-                Office Bearer
-              </h2>
->>>>>>> f48b146bbdc2720d6a607c8f76264af52d2b06c4
 
         <!-- Tab Content -->
         <div class="flex-grow ml-8">
@@ -60,7 +47,6 @@
             </div>
           </div>
 
-<<<<<<< HEAD
           <!-- Affiliation Administration Staff Section -->
           <div v-if="currentSection === 'affiliationStaff'" class="bg-gradient-to-r from-green-500 to-green-300 rounded-lg shadow-lg p-6 mb-4">
             <h3 class="text-3xl text-white font-bold mb-4">Affiliation Administration Staff</h3>
@@ -73,31 +59,6 @@
               </div>
             </div>
           </div>
-=======
-            <div id="Affiliation Administration Staff" class="bg-white rounded-lg">
-              <h2 class="text-3xl text-center font-bold bg-yellow-300 p-4 rounded-t-lg ">
-                Affiliation Administration Staff
-              </h2>
-
-              <div v-if="data.affiliation_administration_staff" class="space-y-4 p-4">
-                <div
-                  v-for="staff in data.affiliation_administration_staff"
-                  :key="staff.name"
-                  class="p-4 text-xl"
-                >
-                  <p><strong>Name:</strong> {{ staff.name }}</p>
-                  <p><strong>Position:</strong> {{ staff.position }}</p>
-                  <p><strong>Phone:</strong> {{ staff.phone }}</p>
-                  <p><strong>Email:</strong> {{ staff.email }}</p>
-                </div>
-              </div>
-            </div>
-            </div>
-            <div id="Contact Us" class="bg-white rounded-lg mt-4">
-              <h2 class="text-3xl font-bold text-center bg-yellow-300 p-4 rounded-t-lg">
-                Contact Us
-              </h2>
->>>>>>> f48b146bbdc2720d6a607c8f76264af52d2b06c4
 
           <!-- Contact Us Section -->
           <div v-if="currentSection === 'contactUs'" class="bg-gradient-to-r from-blue-500 to-blue-300 rounded-lg shadow-lg p-6 mb-4">

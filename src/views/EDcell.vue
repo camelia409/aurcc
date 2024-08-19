@@ -37,7 +37,6 @@
           </div>
         </div>
 
-<<<<<<< HEAD
         <!-- Tab Content -->
         <div class="flex-grow ml-8 p-4 relative -z-10">
           <div v-if="activeTab === 'objectives'" class="bg-gradient-to-r from-indigo-500 to-indigo-300 rounded-lg shadow-lg p-6">
@@ -81,39 +80,6 @@
                 </div>
               </div>
             </div>
-=======
-      <!-- MOU Section -->
-      <div class="bg-white rounded-lg shadow-md">
-        <h2 class="text-3xl text-center text-white font-bold p-4 bg-blue-800 rounded-t-lg">MOU</h2>
-        <div class="text-xl font-medium p-4 space-y-4">
-          <ul class="list-disc pl-4">
-            <li v-for="mou in data.MOU" :key="mou">{{ mou }}</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Links Section -->
-      <div class="bg-white rounded-lg shadow-md">
-        <h2 class="text-3xl text-center text-white font-bold p-4 bg-blue-800 rounded-t-lg">Links</h2>
-        <div class="text-xl font-medium p-4 space-y-4">
-          <ul class="list-disc pl-4 ">
-            <li v-for="link in data.links" :key="link">
-              <a :href="'http://' + link" target="_blank" rel="noopener noreferrer" class="hover:underline">{{ link }}</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Office Bearers Section -->
-      <div class="bg-white rounded-lg shadow-md">
-        <h2 class="text-3xl text-center text-white font-bold p-4 bg-blue-800 rounded-t-lg">Office Bearers</h2>
-        <div class="text-xl font-medium p-4 space-y-4 flex flex-cols-4 justify-around">
-          <div v-for="member in data.office_bearers" :key="member.email" class="p-6 rounded-lg">
-            <p class="text-xl font-bold">{{ member.name }}</p>
-            <p><strong>Position:</strong> {{ member.position }}</p>
-            <p><strong>Email:</strong> <a :href="'mailto:' + member.email">{{ member.email }}</a></p>
-            <p><strong>Organization:</strong> {{ member.organization }}</p>
->>>>>>> f48b146bbdc2720d6a607c8f76264af52d2b06c4
           </div>
         </div>
       </div>
