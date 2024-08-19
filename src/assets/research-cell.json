@@ -15,9 +15,133 @@
     "Science and Humanities"
   ],
   "phd_scholars": {
-    "faculty_wise": "http://www.aurcc.ac.in/amenity/ResearchCell/faculty-wise.php",
-    "department_wise": "http://www.aurcc.ac.in/amenity/ResearchCell/dept-wise.php",
-    "total": 3595
+        "tableData": [
+          {
+            "sno": 1,
+            "department": "CIVIL",
+            "phdCompletedFullTime": 0,
+            "phdCompletedPartTime": 0,
+            "phdRegisteredFullTime": 0,
+            "phdRegisteredPartTime": 0,
+            "completedFTPT": 0,
+            "registeredFTPT": 0,
+            "overallFTPT": 0
+          },
+          {
+            "sno": 2,
+            "department": "MECHANICAL",
+            "phdCompletedFullTime": 7,
+            "phdCompletedPartTime": 10,
+            "phdRegisteredFullTime": 4,
+            "phdRegisteredPartTime": 16,
+            "completedFTPT": 17,
+            "registeredFTPT": 20,
+            "overallFTPT": 37
+          },
+          {
+            "sno": 3,
+            "department": "EEE",
+            "phdCompletedFullTime": 11,
+            "phdCompletedPartTime": 17,
+            "phdRegisteredFullTime": 6,
+            "phdRegisteredPartTime": 10,
+            "completedFTPT": 28,
+            "registeredFTPT": 16,
+            "overallFTPT": 44
+          },
+          {
+            "sno": 4,
+            "department": "ECE",
+            "phdCompletedFullTime": 3,
+            "phdCompletedPartTime": 8,
+            "phdRegisteredFullTime": 0,
+            "phdRegisteredPartTime": 0,
+            "completedFTPT": 11,
+            "registeredFTPT": 10,
+            "overallFTPT": 10
+          },
+          {
+            "sno": 5,
+            "department": "CSE",
+            "phdCompletedFullTime": 0,
+            "phdCompletedPartTime": 0,
+            "phdRegisteredFullTime": 4,
+            "phdRegisteredPartTime": 6,
+            "completedFTPT": 0,
+            "registeredFTPT": 10,
+            "overallFTPT": 10
+          },
+          {
+            "sno": 6,
+            "department": "IT",
+            "phdCompletedFullTime": 1,
+            "phdCompletedPartTime": 8,
+            "phdRegisteredFullTime": 4,
+            "phdRegisteredPartTime": 7,
+            "completedFTPT": 9,
+            "registeredFTPT": 11,
+            "overallFTPT": 20
+          },
+          {
+            "sno": 7,
+            "department": "NANO TECH",
+            "phdCompletedFullTime": 4,
+            "phdCompletedPartTime": 1,
+            "phdRegisteredFullTime": 3,
+            "phdRegisteredPartTime": 0,
+            "completedFTPT": 5,
+            "registeredFTPT": 3,
+            "overallFTPT": 8
+          },
+          {
+            "sno": 8,
+            "department": "BIOTECH",
+            "phdCompletedFullTime": 5,
+            "phdCompletedPartTime": 1,
+            "phdRegisteredFullTime": 2,
+            "phdRegisteredPartTime": 2,
+            "completedFTPT": 6,
+            "registeredFTPT": 4,
+            "overallFTPT": 10
+          },
+          {
+            "sno": 9,
+            "department": "MBA",
+            "phdCompletedFullTime": 7,
+            "phdCompletedPartTime": 87,
+            "phdRegisteredFullTime": 3,
+            "phdRegisteredPartTime": 13,
+            "completedFTPT": 94,
+            "registeredFTPT": 16,
+            "overallFTPT": 110
+          },
+          {
+            "sno": 10,
+            "department": "S&H",
+            "phdCompletedFullTime": 14,
+            "phdCompletedPartTime": 11,
+            "phdRegisteredFullTime": 9,
+            "phdRegisteredPartTime": 4,
+            "completedFTPT": 25,
+            "registeredFTPT": 13,
+            "overallFTPT": 38
+          },
+          {
+            
+            "department": "Total",
+            "phdCompletedFullTime": 52,
+            "phdCompletedPartTime": 143,
+            "phdRegisteredFullTime": 35,
+            "phdRegisteredPartTime": 58,
+            "completedFTPT": 195,
+            "registeredFTPT": 93,
+            "overallFTPT": 288
+          }
+        ]
+    
+    
+    ,
+      "total": 3595
   },
   "pg_projects": {
     "departmentwise": {

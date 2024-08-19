@@ -188,6 +188,11 @@ const router = createRouter({
       path: '/EstateOff/',
       name: 'Estate Office',
       component: ()=> import('../views/EstateOff.vue')
+    },
+    {
+      path: '/s&h/',
+      name: 'Science & Humanities',
+      component: ()=> import('../views/s&h.vue')
     }
   ]
 })
