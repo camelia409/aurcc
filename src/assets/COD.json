@@ -1,20 +1,48 @@
 {
     "centres": [
       {
-        "name": "Dr. S. Chandrakumarmangalam",
+        "name": "Dr S.Chandrakumarmangalam & Dr.S.V.Manisekaran",
         "centre": "Zonal Office"
       },
       {
-        "name": "Dr. M. Kathinasamy",
-        "centre": "Deputy Manager (Finance)"
+        "name": "Dr S.Chandrakumarmangalam & Dr. P. Marikkannu",
+        "centre": "Academics"
       },
       {
-        "name": "Dr. J. Preethi",
+        "name": "Dr. J. Preethi & Dr.M.Newlin Rajkumar",
         "centre": "DGATE"
       },
       {
-        "name": "Dr. Jayaraman I.",
+        "name": "Dr.I. Jayaraman & Dr L. Babitha",
         "centre": "PACE Cell"
+      },
+      {
+        "name": "Mr. R. Balamurugan",
+        "centre": "AICTE"
+      },
+      {
+        "name": "Dr. K. Raja",
+        "centre": "Alumni"
+      },
+      {
+        "name": " Dr. S. N. Mahalakshmi",
+        "centre": "Fine Arts Club"
+      },
+      {
+        "name": "Dr.K. Rajasekar ",
+        "centre": "Research"
+      },
+      {
+        "name": "Dr.S.V.Manisekaran ",
+        "centre": "Tamil Mandram"
+      },
+      {
+        "name": "Dr.T. Suganthalakshmi & Dr. Bhagavathi Pushpa T",
+        "centre": "Admission cell"
+      },
+      {
+        "name": "Dr.M.Newlin Rajkumar & Dr. Fareena N",
+        "centre": "Naan Mudhalvan"
       },
       {
         "name": "Dr. S. Marshal Anthoni",
@@ -25,11 +53,11 @@
         "centre": "Distant Education"
       },
       {
-        "name": "Dr. G. Ravikumar",
-        "centre": "ED Cell"
+        "name": "Dr. M. Yuvaraju",
+        "centre": "NSS"
       },
       {
-        "name": "Dr. Preethi",
+        "name": "Dr.J. Preethi & Dr.T. Suganthalakshmi",
         "centre": "Placement Cell"
       },
       {

@@ -1,7 +1,7 @@
 <template>
-    <div class="min-h-screen flex flex-col">
+    <div class=" flex-grow">
       <!-- Hero section -->
-      <section class="bg-cover bg-center relative h-64" :style="'background-image: url(http://192.168.72.231:5173/src/assets/library-hero.jpg)'">
+      <section class="bg-cover bg-center relative -z-10" :style="'background-image: url(http://192.168.72.231:5173/src/assets/library-hero.jpg)'">
         <div class="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div>
         <div class="container mx-auto py-16 text-white p-9 relative z-10">
           <h1 class="text-4xl font-bold mb-4">Library</h1>
@@ -10,26 +10,26 @@
       </section>
   
       <!-- Horizontal Tabs -->
-      <div class="sticky top-0 bg-white shadow-md z-10">
+      <div class="sticky top-0 relative -z-10">
         <div class="relative">
           <div class="flex overflow-x-auto whitespace-nowrap tabs">
             <button
               v-for="(section, index) in sections"
-              :key="index"
-              @click="scrollToSection(section)"
-              :class="{
-                'bg-[#006994] text-white': activeSection === section,
-                'text-black bg-white hover:bg-[#006994] hover:text-white': activeSection !== section
-              }"
-              class="font-semibold p-4 text-xl transition duration-300 ease-in-out relative"
+             :key="index"
+             @click="scrollToSection(section)"
+             :class="{
+               'bg-[#006994] text-white': activeSection === section,
+               'text-black bg-white hover:bg-[#006994] hover:text-white': activeSection !== section
+             }"
+             class="font-semibold p-4 text-xl transition duration-300 ease-in-out whitespace-nowrap"
             >
-              {{ section }}
+             {{ section }}
             </button>
           </div>
-          <div
-            class="absolute bottom-0 left-0 h-1 bg-[#006994] transition-all duration-300 ease-in-out"
-            :style="{ width: tabWidth + 'px', transform: `translateX(${tabOffset}px)` }"
-          ></div>
+         <div
+           class="absolute bottom-0 left-0 h-1 bg-[#006994] transition-all duration-300 ease-in-out"
+           :style="{ width: tabWidth + 'px', transform: `translateX(${tabOffset}px)` }"
+         ></div>
         </div>
       </div>
   

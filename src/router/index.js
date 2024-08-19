@@ -145,6 +145,11 @@ const router = createRouter({
       component: ()=> import('../views/HOD.vue')
     },
     {
+      path: '/organogram/',
+      name: 'organogram',
+      component: ()=> import('../views/organogram.vue')
+    },
+    {
       path: '/contact/',
       name: 'contact',
       component: ()=> import('../views/contact.vue')

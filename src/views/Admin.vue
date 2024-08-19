@@ -1,6 +1,6 @@
 <template>
   <div class="container mx-auto p-9">
-    <h1 class="text-3xl font-bold mb-8 text-center">Administrator</h1>
+    <h1 class="text-3xl font-bold mb-8 text-center">Administrative staff</h1>
 
     <!-- Iterate over each category of administrators -->
     <div v-for="(admins, category) in administrator" :key="category" class="mb-12">
