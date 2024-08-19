@@ -24,7 +24,6 @@
       </div>
     </section>
 
-<<<<<<< HEAD
     <!-- Vertical Tabs Section -->
     <section class="mx-auto py-8 px-4 space-y-6 animate__animated animate__fadeInUp animate__slow">
       <div class="relative flex">
@@ -62,39 +61,6 @@
             <div class="space-y-4">
               <div
                 v-for="(coordinator, index) in paceData.coordinators"
-=======
-    <!-- Content sections -->
-    <div class="bg-indigo-100 mx-auto py-8 ">
-      <section class="py-8  p-10">
-        <div class="bg-white rounded-lg">
-          <h2 class="text-3xl text-center font-bold p-3 rounded-t-lg bg-gradient-to-r from-blue-500 to-cyan-300">Description</h2>
-          <p class="font-medium text-xl p-4">{{ paceData.description }}</p>
-        </div>
-        <div class="bg-white rounded-lg">
-          <h2 class="text-3xl text-center mt-8 mb-6 rounded-t-lg font-bold p-4 bg-gradient-to-r from-blue-500 to-cyan-300">Coordinators</h2>
-          <div class="flex flex-cols justify-around">
-          <div
-            v-for="(coordinator, index) in paceData.coordinators"
-            :key="index"
-            class="bg-shadow p-6 text-xl font-medium rounded-lg "
-          >
-            <p><strong>Name:</strong> {{ coordinator.name }}</p>
-            <p><strong>Position:</strong> {{ coordinator.position }}</p>
-          </div>
-          <div v-if="paceData.support_staff.length">
-            <h3 class="text-3xl font-bold p-6">Support Staff</h3>
-            <ul class="text-xl font-medium list-disc list-inside p-4 ">
-              <li v-for="(staff, index) in paceData.support_staff" :key="index">
-                {{ staff }}
-              </li>
-            </ul>
-          </div>
-          <div v-if="paceData.student_volunteers.length">
-            <h3 class="text-3xl font-bold p-6">Student Volunteers</h3>
-            <ul class="text-xl font-medium list-disc list-inside p-4">
-              <li
-                v-for="(volunteer, index) in paceData.student_volunteers"
->>>>>>> f48b146bbdc2720d6a607c8f76264af52d2b06c4
                 :key="index"
                 class="p-4 rounded-lg bg-gray-100 animate__animated animate__fadeInUp"
               >

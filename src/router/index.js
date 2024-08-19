@@ -42,7 +42,7 @@ const router = createRouter({
     {
       path: '/research-cell/',
       name: 'research-cell',
-      component: ()=> import('../views/Reseach.vue')
+      component: ()=> import('../views/Research.vue')
     },
     {
       path: '/about/',
@@ -96,7 +96,7 @@ const router = createRouter({
     },
     {
       path: '/distance-education/',
-      name: 'distamce-education',
+      name: 'distance-education',
       component: ()=> import('../views/DistanceEdu.vue')
     },
     {

@@ -9,7 +9,6 @@
       </div>
     </section>
 
-<<<<<<< HEAD
     <!-- Content Sections with Vertical Tabs -->
     <section class="container mx-auto py-12 px-4 bg-gray-100 rounded-lg">
       <div class="flex">
@@ -48,77 +47,14 @@
             <h2 class="text-4xl font-bold mb-6">PhD Scholars</h2>
             <p class="text-xl">Total PhD Scholars: {{ data.phd_scholars.total }}</p>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-=======
-    <!-- Content sections -->
-    <main class="flex-grow bg-gray-200">
-      <section id="Supervisors" class=" mx-auto py-8 px-4">
-        <div class="bg-white font-medium rounded-lg shadow-md">
-          <h2 class="text-3xl font-bold text-center text-white bg-blue-800 p-4 rounded-t-md">Supervisors</h2>
-          <div class="p-4 text-xl">
-            <ul class="list-disc pl-4">
-              <li v-for="supervisor in data.supervisors" :key="supervisor">{{ supervisor }}</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section id="PhD Scholars" class=" mx-auto py-8 px-4">
-        <div class="bg-white font-medium rounded-lg shadow-md">
-          <h2 class="text-3xl font-bold text-center text-white bg-blue-800 p-4 rounded-t-md">PhD Scholars</h2>
-          <div class="p-4 text-xl">
-            <p>Total PhD Scholars: {{ data.phd_scholars.total }}</p>
-            <div class=" ">
->>>>>>> f48b146bbdc2720d6a607c8f76264af52d2b06c4
               <div class="bg-white shadow-md rounded-md p-4">
-                <h3 class="text-2xl text-center font-semibold mb-2">Faculty-wise</h3>
-                <div class="p-4">
-                <iframe
-                  :src="FacUrl"
-                  class="w-full h-screen border-0"
-                  title="Faculty wise PDF"
-                ></iframe>
-              </div>
+                <h3 class="text-lg font-semibold mb-2">Faculty-wise</h3>
+                <a :href="data.phd_scholars.faculty_wise" target="_blank" class="text-blue-500 hover:text-blue-700">View Faculty-wise PhD Scholars</a>
               </div>
               <div class="bg-white shadow-md rounded-md p-4">
-                <h3 class="text-2xl text-center font-semibold mb-2">Department-wise</h3>
-
-          <div class="table-container">
-            <table class="min-w-full divide-y divide-gray-200">
-              <thead class="bg-gray-800">
-                <!-- Main Headings -->
-                <tr>
-                  <th rowspan="2" class="px-6 py-3 text-left text-xl font-medium text-white uppercase tracking-wider">S.No</th>
-                  <th rowspan="2" class="px-6 py-3 text-left text-xl font-medium text-white uppercase tracking-wider">Department</th>
-                  <th colspan="2" class="px-6 py-3 text-left text-xl font-medium text-white uppercase tracking-wider">PhD Completed</th>
-                  <th colspan="2" class="px-6 py-3 text-left text-xl font-medium text-white uppercase tracking-wider">PhD Registered</th>
-                  <th rowspan="2" class="px-6 py-3 text-left text-xl font-medium text-white uppercase tracking-wider">Completed FT & PT</th>
-                  <th rowspan="2" class="px-6 py-3 text-left text-xl font-medium text-white uppercase tracking-wider">Registered FT & PT</th>
-                  <th rowspan="2" class="px-6 py-3 text-left text-xl font-medium text-white uppercase tracking-wider">OVERALL FT & PT</th>
-                </tr>
-                <!-- Sub-Headings -->
-                <tr>
-                  <th class="px-6 py-3 text-left text-xl font-medium text-white uppercase tracking-wider">Full Time</th>
-                  <th class="px-6 py-3 text-left text-xl font-medium text-white uppercase tracking-wider">Part Time</th>
-                  <th class="px-6 py-3 text-left text-xl font-medium text-white uppercase tracking-wider">Full Time</th>
-                  <th class="px-6 py-3 text-left text-xl font-medium text-white uppercase tracking-wider">Part Time</th>
-                </tr>
-              </thead>
-              <tbody class="bg-white divide-y divide-gray-200">
-                <tr v-for="(row, index) in data.phd_scholars.tableData" :key="index">
-                  <td class="px-6 py-4 whitespace-nowrap">{{ row.sno }}</td>
-                  <td class="px-6 py-4 whitespace-nowrap">{{ row.department }}</td>
-                  <td class="px-6 py-4 whitespace-nowrap">{{ row.phdCompletedFullTime }}</td>
-                  <td class="px-6 py-4 whitespace-nowrap">{{ row.phdCompletedPartTime }}</td>
-                  <td class="px-6 py-4 whitespace-nowrap">{{ row.phdRegisteredFullTime }}</td>
-                  <td class="px-6 py-4 whitespace-nowrap">{{ row.phdRegisteredPartTime }}</td>
-                  <td class="px-6 py-4 whitespace-nowrap">{{ row.completedFTPT }}</td>
-                  <td class="px-6 py-4 whitespace-nowrap">{{ row.registeredFTPT }}</td>
-                  <td class="px-6 py-4 whitespace-nowrap">{{ row.overallFTPT }}</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
+                <h3 class="text-lg font-semibold mb-2">Department-wise</h3>
+                <a :href="data.phd_scholars.department_wise" target="_blank" class="text-blue-500 hover:text-blue-700">View Department-wise PhD Scholars</a>
+              </div>
             </div>
           </div>
           
@@ -180,16 +116,12 @@
 
 <script>
 import data from '../assets/research-cell.json';
-import FacUrl from '@/assets/faculty-wise.pdf';
+
 export default {
   data() {
     return {
       data: data,
-<<<<<<< HEAD
       currentSection: 'Supervisors' // Default to first section
-=======
-      FacUrl
->>>>>>> f48b146bbdc2720d6a607c8f76264af52d2b06c4
     };
   }
 };
