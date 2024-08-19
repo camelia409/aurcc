@@ -17,16 +17,16 @@ import { RouterLink, RouterView } from 'vue-router';
               <ul
                 class="absolute z-20 left-0 mt-2 w-48 bg-white shadow-lg transition-all duration-300 opacity-0 invisible group-hover:visible group-hover:opacity-100"
               >
-                <li><a href="/sports" class="block px-4 py-2  hover:bg-blue-800 hover:text-white transition-all duration-300 ease-in-out text-black hover:text-black">Sports</a></li>
-                <li><a href="/nss" class="block px-4 py-2  hover:bg-blue-800 hover:text-white transition-all duration-300 ease-in-out text-black hover:text-black">NSS</a></li>
-                <li><a href="/tamilmandram" class="block px-4 py-2  hover:bg-blue-800 hover:text-white transition-all duration-300 ease-in-out text-black hover:text-black">kani thamizh paravai</a></li>
-                <li><a href="/fine-arts" class="block px-4 py-2  hover:bg-blue-800 hover:text-white transition-all duration-300 ease-in-out text-black hover:text-black">Fine Arts Club</a></li>
-                <li><a href="/alumni" class="block px-4 py-2  hover:bg-blue-800 hover:text-white transition-all duration-300 ease-in-out text-black hover:text-black">Alumni</a></li>
+                <li><RouterLink to="/sports" class="block px-4 py-2  hover:bg-blue-800 transition-all duration-300 ease-in-out text-black hover:text-black">Sports</RouterLink></li>
+                <li><RouterLink to="/nss" class="block px-4 py-2  hover:bg-blue-800 transition-all duration-300 ease-in-out text-black hover:text-black">NSS</RouterLink></li>
+                <li><RouterLink to="/tamilmandram" class="block px-4 py-2  hover:bg-blue-800 transition-all duration-300 ease-in-out text-black hover:text-black">kani thamizh paravai</RouterLink></li>
+                <li><RouterLink to="/fine-arts" class="block px-4 py-2  hover:bg-blue-800 transition-all duration-300 ease-in-out text-black hover:text-black">Fine Arts Club</RouterLink></li>
+                <li><RouterLink to="/alumni" class="block px-4 py-2  hover:bg-blue-800 transition-all duration-300 ease-in-out text-black hover:text-black">Alumni</RouterLink></li>
               </ul>
             </li>
-            <li><a href="/library" class="px-4 py-2  text-black">Library</a></li>
-            <li><a href="/hostel" class="px-4 py-2  text-black">Hostel</a></li>
-            <li><a href="/contact" class="px-4 py-2  text-black">Contact</a></li>
+            <li><RouterLink to="/library" class="px-4 py-2  text-black">Library</RouterLink></li>
+            <li><RouterLink to="/hostel" class="px-4 py-2  text-black">Hostel</RouterLink></li>
+            <li><RouterLink to="/contact" class="px-4 py-2  text-black">Contact</RouterLink></li>
           </ul>
         </div>
 
@@ -52,13 +52,13 @@ import { RouterLink, RouterView } from 'vue-router';
               <ul
                 class="absolute z-20 left-0 mt-2 w-48 bg-white  shadow-lg  p-0 transition-all duration-300 opacity-0 invisible group-hover:visible group-hover:opacity-100 text-black"
               >
-                <li><a href="/organogram" class="block px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-300 ease-in-out">Organogram</a></li>
-                <li><a href="/VC" class="block px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-300 ease-in-out">Vice Chancellor</a></li>
-                <li><a href="/Registrar" class="block px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-300 ease-in-out">University Administration</a></li>
-                <li><a href="administration" class="block px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-300 ease-in-out">Administrative staff</a></li>
-                <li><a href="/HOD" class="block px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-300 ease-in-out">Head of the Departments</a></li>
-                <li><a href="/COD" class="block px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-300 ease-in-out">Cell coordinators</a></li>
-                <li><a href="" class="block px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-300 ease-in-out">Dean Office Staff</a></li>
+                <li><RouterLink to="/organogram" class="block px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-300 ease-in-out">Organogram</RouterLink ></li>
+                <li><RouterLink to="/VC" class="block px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-300 ease-in-out">Vice Chancellor</RouterLink ></li>
+                <li><RouterLink to="/Registrar" class="block px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-300 ease-in-out">University Administration</RouterLink ></li>
+                <li><RouterLink to="administration" class="block px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-300 ease-in-out">Administrative staff</RouterLink ></li>
+                <li><RouterLink to="/HOD" class="block px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-300 ease-in-out">Head of the Departments</RouterLink ></li>
+                <li><RouterLink to="/COD" class="block px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-300 ease-in-out">Cell coordinators</RouterLink ></li>
+                <li><RouterLink to="" class="block px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-300 ease-in-out">Dean Office Staff</RouterLink ></li>
 
               </ul>
             </li>
@@ -69,10 +69,10 @@ import { RouterLink, RouterView } from 'vue-router';
               <ul
                 class="absolute z-50 left-0 mt-2 w-48 bg-white  shadow-lg  p-0 transition-all duration-300 opacity-0 invisible group-hover:visible group-hover:opacity-100 text-black"
               >
-                <li><a href="/programs_offered" class="block px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-300 ease-in-out">Programs Offered</a></li>
-                <li><a href="/curriculum_syllabus" class="block px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-300 ease-in-out">Curriculum & Syllabus</a></li>
-                <li><a href="/regulation" class="block px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-300 ease-in-out">Regulations</a></li>
-                <li><a href="/student_affairs" class="block px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-300 ease-in-out">Student Affairs</a></li>
+                <li><RouterLink to="/programs_offered" class="block px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-300 ease-in-out">Programs Offered</RouterLink ></li>
+                <li><RouterLink to="/curriculum_syllabus" class="block px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-300 ease-in-out">Curriculum & Syllabus</RouterLink ></li>
+                <li><RouterLink to="/regulation" class="block px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-300 ease-in-out">Regulations</RouterLink ></li>
+                <li><RouterLink to="/student_affairs" class="block px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-300 ease-in-out">Student Affairs</RouterLink ></li>
               </ul>
             </li>
             <li class="relative group">
@@ -82,14 +82,14 @@ import { RouterLink, RouterView } from 'vue-router';
               <ul
                 class="absolute z-20 left-0 mt-2 w-48 bg-white text-black shadow-lg  opacity-0 invisible group-hover:visible group-hover:opacity-100"
               >
-                <li><a href="/departments/cse" class="block px-4 py-2 hover:bg-blue-800  hover:text-white transition-all duration-300 ease-in-out">Computer Science Engg</a></li>
-                <li><a href="/departments/eee" class="block px-4 py-2 hover:bg-blue-800  hover:text-white transition-all duration-300 ease-in-out">Electrical and Electronics Engg</a></li>
-                <li><a href="/departments/ece" class="block px-4 py-2 hover:bg-blue-800  hover:text-white transition-all duration-300 ease-in-out">Electronics and Communications Engg</a></li>
-                <li><a href="/departments/mech" class="block px-4 py-2 hover:bg-blue-800  hover:text-white transition-all duration-300 ease-in-out">Mechanical Engg</a></li>
-                <li><a href="/departments/mba" class="block px-4 py-2 hover:bg-blue-800  hover:text-white transition-all duration-300 ease-in-out">MBA</a></li>
-                <li><a href="/departments/biotech" class="block px-4 py-2 hover:bg-blue-800  hover:text-white transition-all duration-300 ease-in-out">Bio-Technology</a></li>
-                <li><a href="/departments/nanotech" class="block px-4 py-2 hover:bg-blue-800  hover:text-white transition-all duration-300 ease-in-out">Nano-Technology</a></li>
-                <li><a href="/s&h" class="block px-4 py-2 hover:bg-blue-800  hover:text-white transition-all duration-300 ease-in-out">Science & Humanities</a></li>
+                <li><RouterLink to="/departments/cse" class="block px-4 py-2 hover:bg-blue-800  hover:text-white transition-all duration-300 ease-in-out">Computer Science Engg</RouterLink ></li>
+                <li><RouterLink to="/departments/eee" class="block px-4 py-2 hover:bg-blue-800  hover:text-white transition-all duration-300 ease-in-out">Electrical and Electronics Engg</RouterLink ></li>
+                <li><RouterLink to="/departments/ece" class="block px-4 py-2 hover:bg-blue-800  hover:text-white transition-all duration-300 ease-in-out">Electronics and Communications Engg</RouterLink ></li>
+                <li><RouterLink to="/departments/mech" class="block px-4 py-2 hover:bg-blue-800  hover:text-white transition-all duration-300 ease-in-out">Mechanical Engg</RouterLink ></li>
+                <li><RouterLink to="/departments/mba" class="block px-4 py-2 hover:bg-blue-800  hover:text-white transition-all duration-300 ease-in-out">MBA</RouterLink ></li>
+                <li><RouterLink to="/departments/biotech" class="block px-4 py-2 hover:bg-blue-800  hover:text-white transition-all duration-300 ease-in-out">Bio-Technology</RouterLink ></li>
+                <li><RouterLink to="/departments/nanotech" class="block px-4 py-2 hover:bg-blue-800  hover:text-white transition-all duration-300 ease-in-out">Nano-Technology</RouterLink ></li>
+                <li><RouterLink to="/s&h" class="block px-4 py-2 hover:bg-blue-800  hover:text-white transition-all duration-300 ease-in-out">Science & Humanities</RouterLink ></li>
               </ul>
             </li>
             <li class="relative group">
@@ -99,17 +99,17 @@ import { RouterLink, RouterView } from 'vue-router';
               <ul
                 class="absolute z-20 left-0 mt-2 w-48 bg-white shadow-lg transition-all duration-300 opacity-0 invisible group-hover:visible group-hover:opacity-100"
               >
-                <li><a href="/admission" class="block px-4 py-2 hover:bg-blue-800 transition-all duration-300 ease-in-out text-black hover:text-white">Admission</a></li>
-                <li><a href="/dgate" class="block px-4 py-2 hover:bg-blue-800 transition-all duration-300 ease-in-out text-black hover:text-white">DGATE Cell</a></li>
-                <li><a href="/pace-cell" class="block px-4 py-2 hover:bg-blue-800 transition-all duration-300 ease-in-out text-black hover:text-white">PACE Cell</a></li>
-                <li><a href="/zonal" class="block px-4 py-2 hover:bg-blue-800 transition-all duration-300 ease-in-out text-black hover:text-white">Zonal Office</a></li>
-                <li><a href="/office-affiliation" class="block px-4 py-2 hover:bg-blue-800 transition-all duration-300 ease-in-out text-black hover:text-white">Office of Affiliation</a></li>
-                <li><a href="/distance-education" class="block px-4 py-2 hover:bg-blue-800 transition-all duration-300 ease-in-out text-black hover:text-white">Distance Education</a></li>
-                <li><a href="/ed-cell" class="block px-4 py-2 hover:bg-blue-800 transition-all duration-300 ease-in-out text-black hover:text-white">ED Cell</a></li>
-                <li><a href="/placement-cell" class="block px-4 py-2 hover:bg-blue-800 transition-all duration-300 ease-in-out text-black hover:text-white">Placement Cell</a></li>
-                <li><a href="/research-cell" class="block px-4 py-2 hover:bg-blue-800 transition-all duration-300 ease-in-out text-black hover:text-white">Research Cell</a></li>
-                <li><a href="/exam-cell" class="block px-4 py-2 hover:bg-blue-800 transition-all duration-300 ease-in-out text-black hover:text-white">Exam cell</a></li>
-                <li><a href="/EstateOff" class="block px-4 py-2 hover:bg-blue-800 transition-all duration-300 ease-in-out text-black hover:text-white">Estate Office</a></li>
+                <li><RouterLink to="/admission" class="block px-4 py-2 hover:bg-blue-800 transition-all duration-300 ease-in-out text-black hover:text-white">Admission</RouterLink ></li>
+                <li><RouterLink to="/dgate" class="block px-4 py-2 hover:bg-blue-800 transition-all duration-300 ease-in-out text-black hover:text-white">DGATE Cell</RouterLink ></li>
+                <li><RouterLink to="/pace-cell" class="block px-4 py-2 hover:bg-blue-800 transition-all duration-300 ease-in-out text-black hover:text-white">PACE Cell</RouterLink ></li>
+                <li><RouterLink to="/zonal" class="block px-4 py-2 hover:bg-blue-800 transition-all duration-300 ease-in-out text-black hover:text-white">Zonal Office</RouterLink ></li>
+                <li><RouterLink to="/office-affiliation" class="block px-4 py-2 hover:bg-blue-800 transition-all duration-300 ease-in-out text-black hover:text-white">Office of Affiliation</RouterLink ></li>
+                <li><RouterLink to="/distance-education" class="block px-4 py-2 hover:bg-blue-800 transition-all duration-300 ease-in-out text-black hover:text-white">Distance Education</RouterLink ></li>
+                <li><RouterLink to="/ed-cell" class="block px-4 py-2 hover:bg-blue-800 transition-all duration-300 ease-in-out text-black hover:text-white">ED Cell</RouterLink ></li>
+                <li><RouterLink to="/placement-cell" class="block px-4 py-2 hover:bg-blue-800 transition-all duration-300 ease-in-out text-black hover:text-white">Placement Cell</RouterLink ></li>
+                <li><RouterLink to="/research-cell" class="block px-4 py-2 hover:bg-blue-800 transition-all duration-300 ease-in-out text-black hover:text-white">Research Cell</RouterLink ></li>
+                <li><RouterLink to="/exam-cell" class="block px-4 py-2 hover:bg-blue-800 transition-all duration-300 ease-in-out text-black hover:text-white">Exam cell</RouterLink ></li>
+                <li><RouterLink to="/EstateOff" class="block px-4 py-2 hover:bg-blue-800 transition-all duration-300 ease-in-out text-black hover:text-white">Estate Office</RouterLink ></li>
               </ul>
             </li>
 
@@ -140,19 +140,19 @@ import { RouterLink, RouterView } from 'vue-router';
         <p class="text-lg font-semibold">Email: ucedean-kovai@gmail.com</p>
         <h3 class="text-2xl font-bold mb-4">Social media</h3>
         <div class="flex flex-wrap gap-2">
-          <a href="https://www.annauniv.edu/" class="transition-transform hover:scale-110">
+          <RouterLink to="https://www.annauniv.edu/" class="transition-transform hover:scale-110">
             <img src="./assets/AN-logo.png" alt="AN logo" class="w-10 h-10 rounded-full bg-white p-1">
-          </a>
-          <a href="https://www.tn.gov.in/" class="transition-transform hover:scale-110">
+          </RouterLink >
+          <RouterLink to="https://www.tn.gov.in/" class="transition-transform hover:scale-110">
             <img src="./assets/2000px-TamilNadu_Logo.svg.png" alt="TN logo" class="w-10 h-10 rounded-full bg-white p-1">
-          </a>
-          <a href="http://india.gov.in" class="transition-transform hover:scale-110">
+          </RouterLink >
+          <RouterLink to="http://india.gov.in" class="transition-transform hover:scale-110">
             <img src="./assets/india.png" alt="India logo" class="w-10 h-10 rounded-full bg-white p-1">
-          </a>
-          <a href="https://www.annauniv.edu/" class="transition-transform hover:scale-110">
+          </RouterLink >
+          <RouterLink to="https://www.annauniv.edu/" class="transition-transform hover:scale-110">
             <img src="./assets/AN-logo.png" alt="AN logo" class="w-10 h-10 rounded-full bg-white p-1">
-          </a>
-          <a href="https://www.tn.gov.in/" class="transition-transform hover:scale-110">
+          </RouterLink>
+          <a to="https://www.tn.gov.in/" class="transition-transform hover:scale-110">
             <img src="./assets/2000px-TamilNadu_Logo.svg.png" alt="TN logo" class="w-10 h-10 rounded-full bg-white p-1">
           </a>
         </div>
@@ -162,22 +162,22 @@ import { RouterLink, RouterView } from 'vue-router';
       <div class="space-y-4 py-6 md:py-0 md:px-6">
         <h3 class="text-2xl font-bold mb-4">Important Links</h3>
         <div class="flex flex-wrap gap-2">
-          <a href="https://www.annauniv.edu/" class="transition-transform hover:scale-110">
+          <a to="https://www.annauniv.edu/" class="transition-transform hover:scale-110">
             <img src="./assets/AN-logo.png" alt="AN logo" class="w-11 h-11 rounded-full bg-white p-1">
           </a>
-          <a href="https://www.tn.gov.in/" class="transition-transform hover:scale-110">
+          <a to="https://www.tn.gov.in/" class="transition-transform hover:scale-110">
             <img src="./assets/2000px-TamilNadu_Logo.svg.png" alt="TN logo" class="w-11 h-11 rounded-full bg-white p-1">
           </a>
-          <a href="http://india.gov.in" class="transition-transform hover:scale-110">
+          <a to="http://india.gov.in" class="transition-transform hover:scale-110">
             <img src="./assets/india.png" alt="India logo" class="w-11 h-11 rounded-full bg-white p-1">
           </a>
-          <a href="#" class="transition-transform hover:scale-110">
+          <a to="#" class="transition-transform hover:scale-110">
             <img src="./assets/mhrd.png" alt="MHRD logo" class="w-11 h-11 rounded-full bg-white p-1">
           </a>
-          <a href="https://www.aicte-india.org/" class="transition-transform hover:scale-110">
+          <a to="https://www.aicte-india.org/" class="transition-transform hover:scale-110">
             <img src="./assets/aicte.png" alt="AICTE logo" class="w-11 h-11 rounded-full bg-white p-1">
           </a>
-          <a href="https://www.ugc.gov.in/" class="transition-transform hover:scale-110">
+          <a to="https://www.ugc.gov.in/" class="transition-transform hover:scale-110">
             <img src="./assets/ugc.png" alt="UGC logo" class="w-11 h-11 rounded-full bg-white p-1">
           </a>
         </div>
@@ -217,8 +217,7 @@ import { RouterLink, RouterView } from 'vue-router';
     </div>
   </div>
 </footer>
-</div>
-</template>
+</div>RouterLink </template>
 
 <script>
 export default {
