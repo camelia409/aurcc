@@ -1,48 +1,77 @@
 <template>
   <main class="flex-grow">
-    <!-- Hero section -->
-    <section class="bg-cover bg-center relative -z-10" :style="'background-image: url(http://192.168.72.231:5173/src/assets/dgate-hero.jpg)'">
-      <div class="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div>
-      <div class="container mx-auto py-16 text-white p-9 relative z-10">
-        <h1 class="text-4xl font-bold mb-4">{{ data.name }}</h1>
-        <button class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded mt-4">Learn More</button>
+        <!-- Hero section -->
+    <section class="bg-cover bg-center relative -z-10" :style="'background-image: url(http://localhost:5173/src/assets/' + data.image1 + ');'">
+      <div class="absolute top-0 left-0 w-full h-full bg-black opacity-20"></div>
+      <div class="flex items-start justify-center  py-28  text-white p-9 relative z-10">
+        <h1 class="text-5xl font-bold mb-20">{{ data.name }}</h1>
       </div>
     </section>
 
-    <!-- Content section -->
-    <section class="container mx-auto py-8 p-9 space-y-8">
-      <!-- Overview Section -->
-      <div class="bg-white rounded-lg shadow-lg ">
-        <h2 class="text-3xl font-bold mb-6 text-center bg-[#40E0D0] p-4 rounded-md">முகப்பு</h2>
-        <p class="text-xl leading-relaxed p-4">{{ data.முகப்பு }}</p>
-      </div>
+    <!-- Sidebar (Tabs) -->
+    <nav class="w-full md:w-auto text-white shadow-lg p-5 md:flex md:justify-around bg-[#23120b]">
+      <ul class="md:flex md:space-x-4 md:space-y-0 space-y-4">
+        <li>
+          <a href="#overview" class="block px-6 py-2 text-xl sm:text-center font-semibold text-white hover:text-[#fdb827] hover:bg-[#3c2f25] rounded-lg">
+            முகப்பு
+          </a>
+        </li>
+        <li>
+          <a href="#events" class="block px-6 py-2 text-xl sm:text-center font-semibold text-white hover:text-[#fdb827] hover:bg-[#3c2f25] rounded-lg">
+            நிகழ்வுகள்
+          </a>
+        </li>
+        <li>
+          <a href="#staff" class="block px-6 py-2 text-xl sm:text-center font-semibold text-white hover:text-[#fdb827] hover:bg-[#3c2f25] rounded-lg">
+            பொறுப்பாளர்
+          </a>
+        </li>
+      </ul>
+    </nav>
 
-      <!-- Events Section -->
-      <div class="bg-white rounded-lg shadow-lg">
-        <h2 class="text-3xl font-bold mb-6 text-center bg-[#40E0D0] p-4 rounded-md">நிகழ்வுகள்</h2>
-        <ul class="list-disc pl-10 pb-4 text-xl space-y-4 ">
-          <li v-for="(event, index) in data.நிகழ்வுகள்" :key="index">
-            {{ event }}
-          </li>
-        </ul>
-      </div>
+    <!-- Content section with tabs -->
+    <section class="relative flex flex-col md:flex-col space-y-8 py-20 px-20">
+      <!-- Background Overlay -->
+      <div
+        class="absolute inset-0  bg-center opacity-80 z-0"
+        :style="'background-image:url(http://localhost:5173/src/assets/' + data.image + ');'"
+      ></div>
 
-      <!-- Staff Section -->
-      <div class="bg-white rounded-lg shadow-lg">
-        <h2 class="text-3xl font-bold mb-6 text-center bg-[#40E0D0] p-4 rounded-md">பொறுப்பாளர்</h2>
-        <div class="space-y-6 p-4">
-          <div class="bg-gray-100 rounded-lg p-6 shadow-sm">
-            <h3 class="text-2xl font-semibold">அவைத்தலைவர்</h3>
-            <p class="text-xl text-gray-700 mt-2">பெயர்: {{ data.பொறுப்பாளர்.அவைத்தலைவர்.பெயர் }}</p>
-            <p class="text-xl text-gray-700">இணைப்பேர்: {{ data.பொறுப்பாளர்.அவைத்தலைவர்.இணைப்பேர் }}</p>
-            <p class="text-xl text-gray-700">மின்னஞ்சல்: {{ data.பொறுப்பாளர்.அவைத்தலைவர்['அவர்களின் மின்னஞ்சல்'] }}</p>
-          </div>
-          <div class="bg-gray-100 rounded-lg p-6 shadow-sm">
-            <h3 class="text-2xl font-semibold">ஒருங்கிணைப்பாளர்</h3>
-            <p class="text-xl text-gray-700 mt-2">பெயர்: {{ data.பொறுப்பாளர்.ஒருங்கிணைப்பாளர்.பெயர் }}</p>
-            <p class="text-xl text-gray-700">மின்னஞ்சல்: {{ data.பொறுப்பாளர்.ஒருங்கிணைப்பாளர்['அவர்களின் மின்னஞ்சல்'] }}</p>
-          </div>
+      <!-- Content -->
+      <div class="relative z-10 space-y-8">
+        <!-- Overview Section -->
+        <div id="overview" class="bg-white rounded-lg shadow-lg">
+          <h2 class="text-3xl text-[#fdb827] font-bold text-center bg-[#23120b] p-4 rounded-t-lg">முகப்பு</h2>
+          <p class="text-xl p-6 leading-relaxed">{{ data.முகப்பு }}</p>
         </div>
+
+        <!-- Events Section -->
+        <div id="events" class="bg-white rounded-lg shadow-lg">
+          <h2 class="text-3xl text-[#fdb827] font-bold text-center bg-[#23120b] p-4 rounded-t-lg">நிகழ்வுகள்</h2>
+          <ul class="list-disc pl-10 py-4 text-xl space-y-4">
+            <li v-for="(event, index) in data.நிகழ்வுகள்" :key="index">
+              {{ event }}
+            </li>
+          </ul>
+        </div>
+
+        <!-- Staff Section -->
+        <div id="staff" class="bg-white rounded-lg shadow-lg">
+  <h2 class="text-3xl text-[#fdb827] font-bold text-center bg-[#23120b] p-4 rounded-t-lg">பொறுப்பாளர்</h2>
+  <div class="p-6 grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-4">
+    <div class="bg-gray-200 rounded-lg p-6 shadow-sm">
+      <h3 class="text-2xl font-semibold">அவைத்தலைவர்</h3>
+      <p class="text-xl text-gray-700">பெயர்: {{ data.பொறுப்பாளர்.அவைத்தலைவர்.பெயர் }}</p>
+      <p class="text-xl text-gray-700">மின்னஞ்சல்: {{ data.பொறுப்பாளர்.அவைத்தலைவர்['அவர்களின் மின்னஞ்சல்'] }}</p>
+    </div>
+    <div class="bg-gray-200 rounded-lg p-6 shadow-sm">
+      <h3 class="text-2xl font-semibold">ஒருங்கிணைப்பாளர்</h3>
+      <p class="text-xl text-gray-700">பெயர்: {{ data.பொறுப்பாளர்.ஒருங்கிணைப்பாளர்.பெயர் }}</p>
+      <p class="text-xl text-gray-700">மின்னஞ்சல்: {{ data.பொறுப்பாளர்.ஒருங்கிணைப்பாளர்['அவர்களின் மின்னஞ்சல்'] }}</p>
+    </div>
+  </div>
+</div>
+
       </div>
     </section>
   </main>
