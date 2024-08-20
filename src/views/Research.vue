@@ -4,16 +4,16 @@
     <section class="bg-cover bg-center relative -z-10" :style="'background-image: url(http://192.168.72.231:5173/src/assets/dgate-hero.jpg)'">
       <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-t from-blue-900 via-transparent to-blue-900 opacity-70"></div>
       <div class="container mx-auto py-16 text-center text-white relative z-10">
-        <h1 class="text-5xl font-extrabold mb-4 drop-shadow-lg text-black">{{ data.name }}</h1>
-        <p class="text-lg max-w-3xl mx-auto mb-8 leading-relaxed drop-shadow-lg text-black">{{ data.description }}</p>
+        <h1 class="text-3xl md:text-5xl font-extrabold mb-4 drop-shadow-lg text-black">{{ data.name }}</h1>
+        <p class="text-base md:text-lg max-w-3xl mx-auto mb-8 leading-relaxed drop-shadow-lg text-black">{{ data.description }}</p>
       </div>
     </section>
 
     <!-- Content Sections with Vertical Tabs -->
     <section class="container mx-auto py-12 px-4 bg-gray-100 rounded-lg">
-      <div class="flex">
+      <div class="flex flex-col md:flex-row">
         <!-- Vertical Tabs -->
-        <div class="flex-shrink-0 w-64 bg-gradient-to-r from-purple-400 to-pink-300 rounded-lg shadow-lg p-4 overflow-hidden">
+        <div class="flex-shrink-0 w-full md:w-64 bg-gradient-to-r from-purple-400 to-pink-300 rounded-lg shadow-lg p-4 overflow-hidden">
           <div class="relative bg-gradient-to-r from-purple-500 to-pink-400 p-4 rounded-lg mb-4">
             <svg class="absolute inset-0 w-full h-full" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="100" cy="100" r="100" fill="url(#gradient)" />
@@ -35,17 +35,17 @@
         </div>
 
         <!-- Content -->
-        <div class="flex-1 ml-4 bg-white rounded-lg shadow-lg p-6">
+        <div class="flex-1 mt-4 md:mt-0 md:ml-4 bg-white rounded-lg shadow-lg p-6">
           <div v-if="currentSection === 'Supervisors'">
-            <h2 class="text-4xl font-bold mb-6">Supervisors</h2>
-            <ul class="list-disc pl-4 text-xl">
+            <h2 class="text-2xl md:text-4xl font-bold mb-6">Supervisors</h2>
+            <ul class="list-disc pl-4 text-base md:text-xl">
               <li v-for="supervisor in data.supervisors" :key="supervisor">{{ supervisor }}</li>
             </ul>
           </div>
           
           <div v-else-if="currentSection === 'PhD Scholars'">
-            <h2 class="text-4xl font-bold mb-6">PhD Scholars</h2>
-            <p class="text-xl">Total PhD Scholars: {{ data.phd_scholars.total }}</p>
+            <h2 class="text-2xl md:text-4xl font-bold mb-6">PhD Scholars</h2>
+            <p class="text-base md:text-xl">Total PhD Scholars: {{ data.phd_scholars.total }}</p>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div class="bg-white shadow-md rounded-md p-4">
                 <h3 class="text-lg font-semibold mb-2">Faculty-wise</h3>
@@ -59,9 +59,9 @@
           </div>
           
           <div v-else-if="currentSection === 'PG Projects'">
-            <h2 class="text-4xl font-bold mb-6">PG Projects</h2>
-            <p class="text-xl">Total PG Projects: {{ data.pg_projects.total }}</p>
-            <table class="table-auto w-full bg-white shadow-md rounded-md mt-4">
+            <h2 class="text-2xl md:text-4xl font-bold mb-6">PG Projects</h2>
+            <p class="text-base md:text-xl">Total PG Projects: {{ data.pg_projects.total }}</p>
+            <table class="table-auto w-full bg-white shadow-md rounded-md mt-4 text-sm md:text-base">
               <thead>
                 <tr class="bg-gray-200">
                   <th class="px-4 py-2">Department</th>
@@ -78,9 +78,9 @@
           </div>
           
           <div v-else-if="currentSection === 'Stipend Details'">
-            <h2 class="text-4xl font-bold mb-6">Stipend Details</h2>
+            <h2 class="text-2xl md:text-4xl font-bold mb-6">Stipend Details</h2>
             <div class="overflow-x-auto">
-              <table class="table-auto w-full bg-white shadow-md rounded-md">
+              <table class="table-auto w-full bg-white shadow-md rounded-md text-sm md:text-base">
                 <thead class="bg-gray-800 text-white">
                   <tr>
                     <th class="px-4 py-2">Supervisor Name</th>

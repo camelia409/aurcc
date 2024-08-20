@@ -4,15 +4,15 @@
 	  <section class="bg-cover bg-center relative -z-10" :style="'background-image: url(http://192.168.72.231:5173/src/assets/dgate-hero.jpg)'">
 		<div class="absolute top-0 left-0 w-full h-full bg-gradient-to-t from-blue-900 via-transparent to-blue-900 opacity-70"></div>
 		<div class="container mx-auto py-16 text-center text-white relative z-10">
-		  <h1 class="text-5xl font-extrabold mb-4 drop-shadow-lg text-black">{{ data.name }}</h1>
+		  <h1 class="text-3xl md:text-5xl font-extrabold mb-4 drop-shadow-lg text-black">{{ data.name }}</h1>
 		</div>
 	  </section>
   
 	  <!-- Content Sections with Vertical Tabs -->
 	  <section class="container mx-auto py-12 px-4 bg-gray-100 rounded-lg">
-		<div class="flex">
+		<div class="flex flex-col md:flex-row">
 		  <!-- Vertical Tabs -->
-		  <div class="flex-shrink-0 w-64 bg-gradient-to-r from-purple-400 to-pink-300 rounded-lg shadow-lg p-4 overflow-hidden">
+		  <div class="flex-shrink-0 w-full md:w-64 bg-gradient-to-r from-purple-400 to-pink-300 rounded-lg shadow-lg p-4 mb-4 md:mb-0 md:mr-4">
 			<div class="relative bg-gradient-to-r from-purple-500 to-pink-400 p-4 rounded-lg mb-4">
 			  <svg class="absolute inset-0 w-full h-full" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<circle cx="100" cy="100" r="100" fill="url(#gradient)" />
@@ -33,21 +33,21 @@
 		  </div>
   
 		  <!-- Tab Content -->
-		  <div class="w-full p-6">
-			<div v-if="currentSection === 'about'" class="bg-white rounded-lg shadow-md p-6">
-			  <h2 class="text-2xl font-bold text-blue-800 mb-4">About the Exam Cell</h2>
-			  <p class="text-lg">{{ data.description }}</p>
+		  <div class="w-full p-6 bg-white rounded-lg shadow-md">
+			<div v-if="currentSection === 'about'">
+			  <h2 class="text-2xl md:text-4xl font-bold text-blue-800 mb-4">About the Exam Cell</h2>
+			  <p class="text-base md:text-lg">{{ data.description }}</p>
 			</div>
-			<div v-if="currentSection === 'services'" class="bg-white rounded-lg shadow-md p-6">
-			  <h2 class="text-2xl font-bold text-blue-800 mb-4">Services</h2>
+			<div v-if="currentSection === 'services'">
+			  <h2 class="text-2xl md:text-4xl font-bold text-blue-800 mb-4">Services</h2>
 			  <ul class="list-disc pl-5">
-				<li v-for="service in data.services" :key="service" class="text-lg">{{ service }}</li>
+				<li v-for="service in data.services" :key="service" class="text-base md:text-lg">{{ service }}</li>
 			  </ul>
 			</div>
-			<div v-if="currentSection === 'office_bearers'" class="bg-white rounded-lg shadow-md p-6">
-			  <h2 class="text-2xl font-bold text-blue-800 mb-4">Office Bearers</h2>
+			<div v-if="currentSection === 'office_bearers'">
+			  <h2 class="text-2xl md:text-4xl font-bold text-blue-800 mb-4">Office Bearers</h2>
 			  <ul class="list-disc pl-5">
-				<li v-for="bearer in data.office_bearers" :key="bearer.name" class="text-lg">
+				<li v-for="bearer in data.office_bearers" :key="bearer.name" class="text-base md:text-lg">
 				  <strong>{{ bearer.position }}:</strong> {{ bearer.name }}
 				</li>
 			  </ul>
