@@ -1,31 +1,38 @@
 <template>
   <main class="flex-grow">
     <!-- Hero section -->
-    <section class="bg-cover bg-center relative -z-10" :style="'background-image: url(http://192.168.72.231:5173/src/assets/dgate-hero.jpg)'">
+    <section class="bg-cover bg-center relative -z-10" :style="'background-image: url(http://localhost:5173/src/assets/' + data.image + ');'">
       <div class="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div>
-      <div class="container mx-auto py-16 text-white p-9 relative z-10">
+     <div class="container mx-auto py-16 text-white p-9 relative z-10 font-serif">
         <h1 class="text-4xl font-bold mb-4">{{ data.name }}</h1>
         <p class="text-xl mb-8">{{ data.description }}</p>
         <button class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded">Learn More</button>
       </div>
     </section>
 
+
     <!-- Content sections -->
-    <section class="mx-auto py-8 p-4 space-y-8 bg-gray-300">
+    <section class="mx-auto  bg-gray-300 font-serif">
       <div class="bg-white rounded-lg">
         <h2 class="text-3xl text-center bg-blue-500 font-bold p-4 rounded-md text-white">Overview</h2>
         <p class="p-5 text-xl font-medium">{{ data.description }}</p>
       </div>
       <div class="bg-white rounded-lg">
         <h2 class="text-3xl text-center bg-blue-500 font-bold p-4 rounded-md text-white">Facilities</h2>
-        <h3 class="text-xl font-bold mb-2 p-5">Indoor Games</h3>
-        <ul class="list-disc pl-8">
-          <li v-for="game in data.facilities.IndoorGames" :key="game" class="mb-2 text-xl font-medium">{{ game }}</li>
-        </ul>
-        <h3 class="text-xl font-bold mb-2 mt-4 p-5">Outdoor Games</h3>
-        <ul class="list-disc pl-8 pb-6">
-          <li v-for="game in data.facilities.OutdoorGames" :key="game" class="mb-2 text-xl font-medium ">{{ game }}</li>
-        </ul>
+        <div class="grid grid-cols-2 ">
+          <div>
+              <h3 class="text-xl font-bold mb-2 p-5">Indoor Games</h3>
+              <ul class="list-disc pl-8">
+                <li v-for="game in data.facilities.IndoorGames" :key="game" class="mb-2 text-xl font-medium">{{ game }}</li>
+              </ul>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold mb-2 mt-4 p-5">Outdoor Games</h3>
+            <ul class="list-disc pl-8 pb-6">
+              <li v-for="game in data.facilities.OutdoorGames" :key="game" class="mb-2 text-xl font-medium ">{{ game }}</li>
+            </ul>
+          </div>
+        </div>
       </div>
       <div class="bg-white rounded-lg">
         <h2 class="text-3xl text-center bg-blue-500 font-bold p-4 rounded-md text-white">Contact Us</h2>

@@ -39,8 +39,8 @@ import { RouterLink, RouterView } from 'vue-router';
         <div class="flex items-center">
           <img src="./assets/logo.svg" alt="Logo" class="h-20 mr-4" />
           <RouterLink to="/" class="" activeClass="border-yellow-600">
-            <p class="text-5xl font-bold">ANNA UNIVERSITY</p>
-            <span class="hidden lg:inline text-2xl font-bold"> REGIONAL CAMPUS COIMBATORE</span>
+            <p class="text-5xl font-bold font-serif">ANNA UNIVERSITY</p>
+            <span class="hidden lg:inline text-2xl font-bold font-serif"> REGIONAL CAMPUS COIMBATORE</span>
           </RouterLink>
         </div>
         <div class="hidden lg:flex">

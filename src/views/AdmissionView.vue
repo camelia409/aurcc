@@ -3,11 +3,11 @@
     <!-- Hero section -->
     <section class="bg-cover bg-center relative -z-10" :style="'background-image: url(http://192.168.72.231:5173/src/assets/dgate-hero.jpg)'">
       <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-t from-blue-900 via-transparent to-blue-900 opacity-70"></div>
-      <div class="container mx-auto py-16 text-center relative z-10 px-4">
-        <h1 class="text-4xl font-extrabold text-black mb-4 drop-shadow-lg font-serif">{{ data.name }}</h1>
-        <p class="text-lg max-w-3xl mx-auto mb-8 text-black leading-relaxed drop-shadow-lg font-sans">{{ data.description.Overview }}</p>
+      <div class="container mx-auto py-10 text-center relative z-10 px-4">
+        <h1 class="text-4xl font-extrabold text-black  drop-shadow-lg font-serif">{{ data.name }}</h1>
       </div>
     </section>
+        <p class="text-lg max-w-3xl mx-auto mb-8 text-black leading-relaxed drop-shadow-lg font-sans">{{ data.description.Overview }}</p>
 
     <!-- Vertical Tabs Section -->
     <section class="container mx-auto py-8 px-4">
