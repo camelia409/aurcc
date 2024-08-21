@@ -3,8 +3,8 @@
     <!-- Hero section -->
     <section class="bg-cover bg-center relative -z-10" :style="'background-image: url(http://192.168.72.231:5173/src/assets/dgate-hero.jpg)'">
       <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-t from-blue-900 via-transparent to-blue-900 opacity-70"></div>
-      <div class="container mx-auto py-16 text-center text-black relative z-10">
-        <h1 class="text-5xl font-extrabold mb-4 drop-shadow-lg">{{ details.name }}</h1>
+      <div class="container mx-auto py-10 text-center relative z-10 px-4">
+        <h1 class="text-4xl font-extrabold text-black  drop-shadow-lg font-serif">{{ details.name }}</h1>
       </div>
     </section>
 

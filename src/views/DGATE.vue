@@ -1,14 +1,14 @@
 <template>
   <main class="flex-grow">
     <!-- Hero section -->
-    <section class="hero-section bg-cover bg-center relative -z-10" :style="'background-image: url(http://192.168.72.231:5173/src/assets/dgate-hero.jpg)'">
+    <section class="bg-cover bg-center relative -z-10" :style="'background-image: url(http://192.168.72.231:5173/src/assets/dgate-hero.jpg)'">
       <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-t from-blue-900 via-transparent to-blue-900 opacity-70"></div>
-      <div class="container mx-auto py-16 text-center relative z-10 px-4 md:px-0">
-        <h1 class="text-3xl md:text-4xl font-extrabold mb-4 drop-shadow-lg font-serif text-black">{{ data.name }}</h1>
-        <p class="text-base md:text-lg max-w-3xl mx-auto mb-8 leading-relaxed drop-shadow-lg font-sans text-black">{{ data.description.DGATE }}</p>
+      <div class="container mx-auto py-10 text-center relative z-10 px-4">
+        <h1 class="text-4xl font-extrabold text-black  drop-shadow-lg font-serif">{{ data.name }}</h1>
       </div>
     </section>
-
+     <p class="text-base md:text-lg max-w-3xl mx-auto mb-8 leading-relaxed drop-shadow-lg font-sans text-black">{{ data.description.DGATE }}</p>
+   
     <!-- Vertical Tabs Section -->
     <section class="container mx-auto py-8 px-4">
       <div class="relative flex flex-col md:flex-row">
