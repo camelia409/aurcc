@@ -1,222 +1,883 @@
 {
-    "address": "s&h",
-    "image":"",
-    "name": "Department of Science and Humanities",
-    "description": "Comprises the faculty of Mathematics and English with rich academic and research experience.",
-    "vision": "To be recognized globally for establishing Research and Development programme in all the areas of Fundamental Sciences that support Engineering and Technology.",
-    "mission": [
-      "To attain excellence in pedagogy, and provide potential skills in the areas of Humanities and Sciences.",
-      "To impart flexible, responsive, and innovative educational opportunities and to cultivate interest in the young minds to pursue research in emerging areas of Science and Technology.",
-      "To prepare professional leaders to face the emerging global challenges and to foster cultural enrichment.",
-      "To create an atmosphere of learning to enable the students to develop sound cognitive and problem-solving skills."
-    ],
-    "events": {
-      "conferences_workshops_symposium_fdp": 86,
-      "papers_presented_publications": {
-        "state_level": 0,
-        "national_level": 0,
-        "international_level": 86
-      },
-      "programs_conducted": [
-        {
-          "name": "One day Seminar on 'Stochastic Processes and its Applications'",
-          "venue": "ANNA UNIVERSITY, REGIONAL CAMPUS, COIMBATORE",
-          "date": "04-05-2015"
-        },
-        {
-          "name": "One day Workshop on 'Effective Public Speaking'",
-          "venue": "ANNA UNIVERSITY, REGIONAL CAMPUS, COIMBATORE",
-          "date": "29-09-2015"
-        }
-      ]
+  "name": "Science and Humanities",
+  "image": "sh_department.jpg",
+  "description": "The Department of Science and Humanities is the cornerstone of Anna University Regional Campus, Coimbatore, dedicated to providing a strong foundation in fundamental sciences and the humanities.",
+  "vision": "To be a department that nurtures intellectual growth and fosters a comprehensive understanding of science and humanities, contributing to the overall development of students.",
+  "mission": [
+    "To offer a balanced curriculum that integrates the sciences and humanities.",
+    "To promote research and innovation in the fields of science and humanities.",
+    "To prepare students for global challenges through quality education and ethical values."
+  ],
+  "facility": [
+    {
+      "name": "physics lab",
+      "description": "State-of-the-art laboratories equipped with modern technology for practical learning.",
+      "image": "lab_facility.jpg"
     },
-    "placements": "nil",
-    "achievements": "nil",
-    "research_and_publications": "nil",
-    "faculty": [
+    {
+      "name": "chemistry lab",
+      "description": "A vast collection of books, journals, and digital resources to support learning and research.",
+      "image": "library_facility.jpg"
+    }
+  ],
+  "faculty": {
+    "hod_desk": [
       {
-        "name": "Dr. Leelamani A",
-        "position": "Assistant Professor (Senior Grade)",
-        "department": "Department of Science and Humanities",
-        "email": "leelamani@aurcc.ac.in",
-        "education": [
-            {
-                 "degree": "Ph.D.",
-                 "field": "Mathematics",
-                 "institution": "Bharathiar University, Coimbatore",
-                 "year": 2006
-            }
+        "name": "Dr. S.N. Mahalakshmi",
+        "position": "Assistant Professor and Head(i/c)",
+        "email": "mahalakshmi@aurcc.ac.in",
+        "image": "Dr.S.N.M - mahalakshmi subramanian.webp",
+        "research_area": "English Language Teaching and Literature",
+        "additional_info": ["Dr. S.N. Mahalakshmi, a distinguished scholar, boasts an illustrious academic journey marked by an unwavering commitment to the English language pedagogy and scholarly exploration"," Armed with M.A., M.Phil, Ph.D., Dr. Mahalakshmi commands an impressive 23 years of relentless dedication to the domain of English language teaching and profound research endeavours","Her scholarly footprint is evident through the remarkable tally of 27 publications in esteemed international and national journals","Furthermore, she has graced several platforms such as 18 international and national conferences with her erudition, delivering captivating presentations that illuminate the forefront of linguistic inquiry"," An author of 12 seminal textbooks and workbooks tailored to the rigorous standards of technical English pertaining to Anna University syllabus"," Her publications serve as guiding beacons, nurturing the linguistic prowess of countless students. It is noteworthy to mention that seven of them have been awarded Ph.D under her able guidance. Currently, 2 research scholars are pursuing part-time Ph.D. in the area of English Language Teaching and Literature"," As the Head of the Department of Science and Humanities at Anna University Regional Campus, Coimbatore, she orchestrates academic excellence with finesse, shaping the intellects of future generations along with her erudite members of faculty" ],
+        "career_history": [
+          "Lecturer in English, Bannari Amman Institute of Technology, Sathyamangalam 2001 - 2004",
+          "Lecturer in English, Sri Krishna College of Engineering and Technology 2004-2008",
+          "Assistant Professor in English, Anna University Regional Campus Coimbatore 2008 - till date"
         ],
-        "research_interests": ["Control Theory", "Differential Equations"],
-        "professional_experience": [
+        "google_scholar": "https://scholar.google.com/citations?user=ODDosSEAAAAJ&hl=en",
+        "cv_link": "https://drive.google.com/open?id=1RBR_4m7ZGuhQGRlnNMgPO2l_Ivi4kOD3"
+      }
+    ],
+    "assistant_professors": [
+      {
+        "name": "Dr. Marshal Anthoni S",
+        "position": "Associate Professor, Department of Science & Humanities (Mathematics)",
+        "email": "marshal@aurcc.ac.in",
+        "image": "Marshal.webp",
+        "research_area": "Systems and Control Theory",
+        "additional_info": "Hailing from P.Puliampatti, a small town in Erode district, Marshal Anthoni did his schooling in the Government schools in and around P.Puliampatti. Then as a proud alumnus of Gobi Arts and Science College, Gobichettipalayam, he received his B.Sc., M.Sc., degrees in Mathematics and as a University Department Scholar he received his M.Phil., and Ph.D. degrees in Mathematics from Bharathiar University, Coimbatore, India, in 1993, 1995, 1996, and 2001, respectively. For a brief period, he served as a Lecturer in the Department of Mathematics, Kumaraguru College of Technology, Coimbatore. From April 2003 to Dec 2004, he was a BK21 Post-Doctoral Fellow in the Department of Mathematics, Yonsei University, Seoul, South Korea. After that he joined as a Lecturer in the Department of Mathematics, Periyar University, Salem till Aug 2008. He then moved to the Department of Mathematics, Anna University of Technology (AUT), Coimbatore as an Assistant Professor in Aug 2008 and then promoted as an Associate Professor from Aug 2011. Now he is continuing his Teaching and Research Career in Anna University Regional Campus, Coimbatore after the merger of all AUTs with Anna University, Chennai since Aug 2012. He has published over 90 research papers in reputed Science Citation Indexed journals. He has served as a program committee member, and a reviewer for various international journals and international conferences. He delivered invited talks in several Universities and institutes in India and Abroad. He has visited Japan, Spain, Brazil, Canada, Switzerland, China, South Korea, Nepal and Oman for academic purposes. His current research interest is in the field of Systems and Control Theory. His students after the completion of their Ph.D. are now working in esteemed institutions at USA, Luxembourg, Israel, Japan, South Korea, China, and Taiwan.",
+        "career_history": [
+          "Lecturer, Kumaraguru College of Technology, Coimbatore (1st June 2001 - 24th Mar 2003)",
+          "Post Doctoral Fellow, Yonsei University, Seoul, South Korea (15th Apr 2003 - 7th Dec 2004)",
+          "Lecturer, Periyar University, Salem (9th Dec 2004 - 13th Aug 2008)",
+          "Assistant Professor (with AGP Rs. 8000), Anna University of Technology, Coimbatore (14th Aug 2008 - 13th Aug 2011)",
+          "Associate Professor, Anna University of Technology, Coimbatore (14th Aug 2011 - 31st July 2012)",
+          "Associate Professor, Anna University Regional Campus, Coimbatore (1st Aug 2012 - till date)"
+        ],
+        "web_of_science": "https://www.webofscience.com/wos/author/record/Z-3614-2019",
+        "scopus": "https://www.scopus.com/authid/detail.uri?authorId=57193520100",
+        "google_scholar": "https://scholar.google.com/citations?user=4v1nHC0AAAAJ&hl=en&oi=ao",
+        "cv_link": "https://drive.google.com/open?id=1TVGOETNL3gzKWWxFdO9hq2kUeGlYXlfP",
+        "research_projects": [
           {
-            "organization": "Bharathiar University",
-            "role": "Guest Lecture",
-            "duration": "2004-2006"
+            "name": "CSIR Project",
+            "title": "Controllability of Nonlinear Stochastic Integrodifferential Systems",
+            "scheme_number": "25(0150)/06/EMR-II dated 11.09.2006",
+            "amount": "Rs.1,65,000/-"
           },
           {
-            "organization": "Park College of Engineering and Technology",
-            "role": "Lecturer",
-            "duration": "2006-2008"
-          },
-          {
-            "organization": "Anna University Regional Campus, Coimbatore",
-            "role": "Assistant Professor",
-            "duration": "2008-present"
+            "name": "NBHM Project",
+            "title": "Design and Analysis of Robust Control for Uncertain Dynamical Systems",
+            "scheme_number": "2/48(4)/2013/NBHM(R.P.)/R&D II/687 dated 16.01.2014",
+            "amount": "Rs.11,50,500/-"
           }
         ],
-        "achievements": [
-          "University second rank holder in M.Sc degree examination (2001)",
-          "Guided 13 Ph.D. scholars"
+        "visits_abroad": [
+          {
+            "event": "10th International Congress on Industrial and Applied Mathematics (ICIAM 2023)",
+            "location": "Tokyo, Japan",
+            "date": "August 20-25, 2023"
+          },
+          {
+            "event": "9th International Congress on Industrial and Applied Mathematics (ICIAM 2019)",
+            "location": "Valencia, Spain",
+            "date": "July 15-19, 2019"
+          },
+          {
+            "event": "Visiting Research Professor to the Department of Mathematics, Yangzhou University",
+            "location": "Yangzhou, China",
+            "date": "May 25-29, 2019"
+          },
+          {
+            "event": "International Congress of Mathematicians (ICM 2018)",
+            "location": "Rio De Janeiro, Brazil",
+            "date": "August 01-09, 2018"
+          },
+          {
+            "event": "Visiting Researcher to the Department of Mathematics, Kongju National University",
+            "location": "South Korea",
+            "date": "June 04-13, 2017"
+          },
+          {
+            "event": "Eighth International Congress on Industrial and Applied Mathematics (ICIAM 2015)",
+            "location": "Beijing, China",
+            "date": "August 10-14, 2015"
+          },
+          {
+            "event": "Visiting Research Fellow to the Department of Mathematics, Sungkyunkwan University",
+            "location": "South Korea",
+            "date": "December 4-10, 2011"
+          },
+          {
+            "event": "Seventh International Congress on Industrial and Applied Mathematics (ICIAM 2011)",
+            "location": "Vancouver, Canada",
+            "date": "July 18-22, 2011"
+          },
+          {
+            "event": "Visiting Research Fellow to the Department of Mathematics, Sungkyunkwan University",
+            "location": "South Korea",
+            "date": "28th October 2010 - 10th November 2010"
+          },
+          {
+            "event": "Sixth International Congress on Industrial and Applied Mathematics (ICIAM 2007)",
+            "location": "Zurich, Switzerland",
+            "date": "July 16-20, 2007"
+          },
+          {
+            "event": "Delivered a series of invited lectures in North East Normal University",
+            "location": "Changchun, China",
+            "date": "June 21-25, 2004"
+          },
+          {
+            "event": "Post Doctoral Fellow, Yonsei University",
+            "location": "Seoul, South Korea",
+            "date": "15th April 2003 - 7th December 2004"
+          },
+          {
+            "event": "Paper presented in the 6th International Conference on Nonlinear Functional Analysis and Applications (NFAA 2000)",
+            "location": "Masan & Chinju, South Korea",
+            "date": "September 1-5, 2000"
+          }
         ],
-        "membership": "Life member in Industrial & Applied Mathematics",
-        "links": {
-          "Google Scholar": "https://scholar.google.com/citations?user=pQVtZXYAAAAJ&hl=en",
-          "Email": "mailto:leelamani@aurcc.ac.in",
-          "Google Drive": "https://drive.google.com/open?id=1pEev3iwFB-aQZ8dTEZtqo-7GKdfS0BZm"
-        }
+        "membership_and_recognitions": [
+          "Elected Fellow - The Academy of Sciences, Chennai (2018)",
+          "Tamil Nadu Scientist Award in Mathematical Sciences (2018)",
+          "Life Member – The Indian Society of Industrial and Applied Mathematics (ISIAM)",
+          "Reviewer for more than 10 SCI/SCIE journals"
+        ],
+        "international_events_organized": [
+          {
+            "role": "Convenor",
+            "event": "NBHM sponsored International Conference on Nonlinear Dynamical Systems (ICNDS-2016)",
+            "location": "Bharathiar University, Coimbatore",
+            "date": "March 24-26, 2016"
+          },
+          {
+            "role": "Organizing Secretary",
+            "event": "International Conference in conjunction with 15th International Conference of ISIAM (IC-ISIAM 2019)",
+            "location": "Bharathiar University and Anna University Regional Campus, Coimbatore",
+            "date": "December 5-7, 2019"
+          }
+        ]
+      },
+      {
+        "name": "Dr. K. Rajasekar",
+        "department": "Department of Chemistry (S&H)",
+        "email": "rajasekar@aurcc.ac.in",
+        "image": "rajasekar.webp",
+        "profile": "Dr. K. Rajasekar holds a B.Sc and M.Sc in Chemistry from Govt Arts College, Salem, affiliated with the University of Madras. He earned his Ph.D. in Chemistry from Anna University Guindy Campus, Chennai in 2007 and pursued post-doctoral research at the Massachusetts Institute of Technology (MIT), USA during 2009-2010. Recognized for his research potential, he was awarded the Raman Fellowship by UGC in 2016-17, conducting research at the National Renewable Energy Laboratory, Denver, USA. Dr. Rajasekar has received funding from the Department of Science and Technology for several projects. With over 40 research publications in esteemed journals such as Nature Nanotechnology, he currently supervises four Ph.D. candidates. He serves as a regular referee for prestigious journals including Materials Science & Engineering B and Journal of Hazardous Materials. His research interests encompass 2D materials, Catalysis, Multifunctional Nanomaterials for renewable energy, and low-dimensional carbon materials.",
+        "research_interests": [
+          "2D materials",
+          "Catalysis",
+          "Multifunctional Nanomaterials for renewable energy",
+          "Low-dimensional carbon materials"
+        ],
+        "phd_research_projects": [
+          {
+            "title": "SYNTHESIS AND CHARACTERIZATION OF TITANATE NANOTUBES/NANORIBBONS, MESOPOROUS TiO2/CNT NANOCOMPOSITES, AND THEIR PHOTOCATALYTIC STUDIES",
+            "candidate": "Dr. S. Thennarasu",
+            "year": 2014
+          },
+          {
+            "title": "SYNTHESIS OF NANOCARBON HYBRID MATERIALS FOR ELECTROCHEMICAL ENERGY APPLICATIONS",
+            "candidate": "Dr. R Rajesh",
+            "year": 2015
+          },
+          {
+            "title": "SYNTHESIS, STRUCTURAL AND ELECTROCHEMICAL STUDIES ON NANOCARBON COMPOSITES OF WO3, MnO2, AND MoS2 MATERIALS",
+            "candidate": "Dr. R. Abirami",
+            "year": 2016
+          }
+        ],
+        "sponsored_research_projects": [
+          {
+            "title": "Large Scale Exfoliation of Few Layer Pristine Graphene and Developing High Performance Electrochemical Devices",
+            "duration": "2 Years",
+            "role": "Principal Investigator",
+            "agency": "DST",
+            "amount": "11 lakhs"
+          },
+          {
+            "title": "Growth of Carbon Nanotubes Through an Active Site Engineered Mesostructured Materials",
+            "duration": "2 Years",
+            "role": "Principal Investigator",
+            "agency": "DST",
+            "amount": "16 lakhs"
+          }
+        ],
+        "international_visits": [
+          {
+            "event": "Post Doctoral Fellow, Department of Chemical Engineering",
+            "location": "Massachusetts Institute of Technology (MIT), Cambridge, USA",
+            "date": "June 2009 – June 2010"
+          },
+          {
+            "event": "Assistant Professor, Department of Nanotechnology",
+            "location": "Anna University of Technology Coimbatore, Tamilnadu, INDIA",
+            "date": "September 2008 – Till now"
+          },
+          {
+            "event": "Lecturer, Department of Chemistry",
+            "location": "Thiyagarajar College of Engineering, Madurai, INDIA",
+            "date": "October 2005 – September 2008"
+          },
+          {
+            "event": "Junior Research Fellow under DRDO Project Scheme",
+            "location": "Anna University, Chennai, INDIA",
+            "date": "December 2001 – November 2003"
+          },
+          {
+            "event": "Lecturer, Department of Chemistry",
+            "location": "Kothari Technological Institute, Chennai, INDIA",
+            "date": "September 2000 to November 2001"
+          }
+        ],
+        "membership_and_recognitions": [
+          "Qualified CSIR-NET-lectureship exam by Council of Scientific and Industrial Research (CSIR), Government of India- chemical sciences- 2000 and 2001",
+          "BOYSCAST FELLOWSHIP awarded for the year 2009-10 by Department of Science and Technology, Govt of India",
+          "RAMAN POST DOCTORAL FELLOWSHIP awarded for the year 2016-17 by UGC, INDIA"
+        ],
+        "selected_research_publications": [
+          {
+            "title": "Eco-benign Synthesis, Characterization of CdS-QDs/Casein Bionanocomposite Towards Anti-microbial, Anti-hemolytic and Cytotoxicity in A549 & MCF-7 Cells",
+            "authors": "A Srinivasan, G Gayathri, M Muthupandi, K Rajasekar, KB Ameen",
+            "journal": "Journal of Cluster Science",
+            "year": 2020,
+            "pages": "1-16"
+          },
+          {
+            "title": "Investigation on Template Etching Process of SBA-15 Derived Ordered Mesoporous Carbon on Electrocatalytic Oxygen Reduction Reaction",
+            "authors": "SMSK Velu Duraisamy, Karuppiah Selvakumar, Rajasekar Krishnan",
+            "journal": "Chemistry select",
+            "year": 2020,
+            "volume": 4,
+            "issue": 2463
+          },
+          {
+            "title": "Synthesis and electrochemical studies of Ta–Graphene nanocomposite film modified platinum electrode",
+            "authors": "R Rajagopal, A Ragunathan, SK SM, R Krishnan, BA Kamaludeen",
+            "journal": "Journal of Electroanalytical Chemistry",
+            "year": 2016,
+            "volume": 780,
+            "pages": "53-59"
+          },
+          {
+            "title": "Modified Synthesis of Edge Scrolled Reduced Graphene Oxide with High Surface Area",
+            "authors": "R Rajesh, KB Ameen, K Rajasekar",
+            "journal": "EDUCATUM Journal of Science, Mathematics and Technology",
+            "year": 2015,
+            "volume": 3,
+            "issue": 1,
+            "pages": "1-5"
+          },
+          {
+            "title": "N-Doped Hollow Mesoporous Carbon Nanospheres for Oxygen Reduction Reaction in Alkaline Media",
+            "authors": "Velu Duraisamy, Rajasekar Krishnan, Sakkarapalayam Murugesan Senthil Kumar",
+            "journal": "ACS Appl. Nano Mater.",
+            "year": 2020,
+            "volume": 3,
+            "issue": 9,
+            "pages": "8875–8887"
+          },
+          {
+            "title": "Hydrothermal assisted morphology designed MoS2 material as alternative cathode catalyst for PEM electrolyser application",
+            "authors": "S.M. Senthil Kumar, A. Karthigai Selvi, Nuria Navascues, K. Selvakumar, K. Rajasekar, Ravichandran, Silvia Irusta",
+            "journal": "International Journal of Hydrogen Energy",
+            "year": 2016,
+            "volume": 41,
+            "pages": "13331-13340"
+          },
+          {
+            "title": "Synthesis and Exploration of Graphene bubbles for Supercapacitor Electrodes",
+            "authors": "Rajesh, R, Balkis Ameen, K Rajasekar",
+            "journal": "Electrochimica Acta",
+            "year": 2015,
+            "volume": 180,
+            "pages": "53-63"
+          },
+          {
+            "title": "Bi- and trilayer graphene solutions",
+            "authors": "Chih-Jen Shih, Aravind Vijayaraghavan, Rajasekar Krishnan, Richa Sharma, Jae-Hee Han, Moon-Ho Ham, Zhong Jin, Shangchao Lin, Geraldine L.C. Paulus, Nigel Forest Reuel, Qing Hua Wang, Daniel Blankschtein and Michael S. Strano",
+            "journal": "Nature Nanotechnology",
+            "year": 2011,
+            "volume": 6,
+            "pages": "439–445"
+          },
+          {
+            "title": "Removal of heavy metal ions from pharma-effluents using graphene-oxide nanosorbents and study of their adsorption kinetics",
+            "authors": "Arthi Gopalakrishnan, Gunasekaran Venugopal, Rajasekar Krishnan, Sang-Jae Kim",
+            "journal": "Journal of Industrial and Engineering Chemistry",
+            "year": 2015,
+            "volume": 30,
+            "pages": "14–19"
+          },
+          {
+            "title": "Preparation of mesoporous TiO2/CNT nanocomposites by synthesis of mesoporous titania via EISA and their photocatalytic degradation under visible light irradiation",
+            "authors": "K. Rajasekar, S. Thennarasu, R. Rajesh, R. Abirami, K. Balkis Ameen, A. Ramasubbu",
+            "journal": "Solid State Sciences",
+            "year": 2013,
+            "volume": 26,
+            "pages": "45-52"
+          }
+        ],
+        "google_scholar": "https://scholar.google.com/citations?user=hQG-NTcAAAAJ&hl=en",
+        "drive_link": "https://drive.google.com/open?id=1Qqw5lD0RjvGhI_y6axNWEWegT36cifB0"
+      },
+      {
+        "name": "Dr. P. Renuka Devi",
+        "position": "Assistant Professor",
+        "email": "renukadevi@aurcc.ac.in",
+        "image": "renuka.webp", 
+        "department_roles": [
+          "Department of Science and Humanities",
+          "Coordinator-Bio Research Innovation Cell (BRIC)",
+          "Deputy Warden, Ladies Hostel",
+          "Coordinator for Value Added Course-YHE"
+        ],
+        "description": "I, Dr. P. Renuka Devi, have 25 years of experience in the academic sector in the field of bioscience, with around 45 research papers. I have completed 9 Ph.D. and 1 PDF research scholars and more than 40 M.Tech. students (Biotechnology and Nanotechnology) in the field of Plant Biotechnology, Food Biotechnology and Nanobiotechnology. I am an expert in biocompounds isolation, nanomaterial synthesis and characterization, and their utilization in various biomedical applications.",
+        "professional_experience": [
+          {
+            "role": "Lecturer",
+            "institution": "Kovai Kalaimagal College of Arts and Science, Coimbatore",
+            "duration": "Jan 1999 - Aug 2008"
+          },
+          {
+            "role": "Lecturer",
+            "institution": "Anna University, Coimbatore",
+            "duration": "Aug 2008 - Dec 2009"
+          },
+          {
+            "role": "Director i/c Biotechnology Center",
+            "institution": "Anna University of Technology, Coimbatore",
+            "duration": "Jan 2010 - Aug 2012"
+          },
+          {
+            "role": "HoD i/c, Department of Biotechnology",
+            "institution": "Anna University, Regional Campus, Coimbatore",
+            "duration": "Aug 2011 - Nov 2022"
+          },
+          {
+            "role": "Assistant Professor",
+            "institution": "Department of Science and Humanities, Anna University, Regional Campus, Coimbatore",
+            "duration": "Nov 2022 - till date"
+          }
+        ],
+        "publications": "https://scholar.google.co.in/citations?user=B5BUeTsAAAAJ&hl=en",
+        "cv": "https://drive.google.com/open?id=1jzWlxcSO4lrJ_XGU0HhZ6Uyf4Gi6k1uH"
+      },
+      {
+        "name": "Dr. Leelamani A",
+        "position": "Assistant Professor",
+        "email": "leelamani@aurcc.ac.in",
+        "image": "dr_leelamani_a.jpg", 
+        "department_roles": [
+          "Department of Science and Humanities"
+        ],
+        "description": "Dr. A. Leelamani is currently working as an Assistant Professor in the Department of Mathematics. She received her Ph.D. degree in 2006 from Bharathiar University, Coimbatore. Her areas of interest include Control Theory and Differential Equations. She has published research papers in national and international journals. She was awarded the University second rank holder in her M.Sc degree examination in 2001 by Bharathiar University, Coimbatore. To her credit, 13 scholars have completed their Ph.D. degrees under her guidance. She is a life member of Industrial & Applied Mathematics.",
+        "professional_experience": [
+          {
+            "role": "Guest Lecturer",
+            "institution": "Bharathiar University",
+            "duration": "2004 - 2006"
+          },
+          {
+            "role": "Lecturer",
+            "institution": "Park College of Engineering and Technology",
+            "duration": "2006 - 2008"
+          },
+          {
+            "role": "Assistant Professor",
+            "institution": "Anna University Regional Campus, Coimbatore",
+            "duration": "2008 - till date"
+          }
+        ],
+        "cv": "https://drive.google.com/open?id=1pEev3iwFB-aQZ8dTEZtqo-7GKdfS0BZm"
+      },
+      {
+        "name": "Dr. Lakshmi J",
+        "position": "Assistant Professor",
+        "email": "lakshmi.ucet@gmail.com",
+        "image": "dr_lakshmi_j.jpg", 
+        "department_roles": [
+          "Department of Science and Humanities"
+        ],
+        "description": "Dr. Lakshmi J is currently working as an Assistant Professor in the Department of Science and Humanities. Her areas of expertise include ELT, Caribbean Literature, Soft Skills, and Life Skills. She has published 36 research papers in various international and national journals and has delivered and conducted over 100 invited talks and workshops for faculty members and students across different universities and colleges.",
+        "professional_experience": [
+          {
+            "role": "Assistant Professor",
+            "institution": "Anna University Regional Campus Coimbatore",
+            "duration": "Feb 2024 - till date"
+          },
+          {
+            "role": "Assistant Professor",
+            "institution": "University College of Engineering Tindivanam",
+            "duration": "Dec 2009 - Feb 2024"
+          },
+          {
+            "role": "Senior Lecturer",
+            "institution": "Surya College of Engineering & Technology",
+            "duration": "Aug 2008 - Dec 2009"
+          },
+          {
+            "role": "Lecturer",
+            "institution": "Sri Manakula Vinayagar Engineering College, Pondicherry",
+            "duration": "Aug 2005 - Jul 2008"
+          },
+          {
+            "role": "Lecturer",
+            "institution": "Nadar Saraswathi College",
+            "duration": "Jun 2001 - Feb 2004"
+          }
+        ],
+        "cv": "https://drive.google.com/open?id=1YdyTn7venJgd6_jw1EI-zMa7GfkorWCk"
+      },
+      {
+        "name": "Dr. Kalugasalam P",
+        "position": "Teaching Fellow",
+        "email": "drponkalugasalam@gmail.com",
+        "image": "dr_kalugasalam_p.jpg", 
+        "department_roles": [
+          "Department of Science and Humanities"
+        ],
+        "description": "Dr. Kalugasalam P was born on 27th December 1970 in Dharmapuri (village), Theni District, Tamil Nadu, India. He completed his Secondary School Education from P. H. N. Higher Secondary School, Kamatchipuram, Theni District in 1987 and Higher Secondary Education from the same school in 1989. He completed his UG degree from Government Arts College, Coimbatore with first class in 1992, PG degree from PSG College of Arts and Science, Coimbatore with first class in 1994, M.Phil. degree from PSG College of Arts and Science, Coimbatore in 1999, and Ph.D. from Anna University, Chennai in 2010. He joined SPM Matriculation Higher Secondary Schools, Coimbatore as a postgraduate teacher in physics in 2000 and then joined the Department of Science and Humanities, Tamilnadu College of Engineering, Coimbatore as a Lecturer in 2004. He is currently working as the Professor and Head of the Department of Science and Humanities at the same Institute. He has thirty-eight papers to his credit in international referred journals. He has presented research papers in International and National seminars, received two best paper awards, and published five books for first-year B.E./B.Tech. students. He is also a reviewer for the book “Engineering Physics” published by McGraw Hill Education India Pvt. Ltd., New Delhi. He was awarded the “Bharat Ratna Mother Teresa Gold Medal Award-2014” by the Global Economic Progress and Research Association.",
+        "professional_experience": [
+          {
+            "role": "Lecturer",
+            "institution": "Tamilnadu College of Engineering",
+            "duration": "2004 - 2010"
+          },
+          {
+            "role": "Assistant Professor",
+            "institution": "Tamilnadu College of Engineering",
+            "duration": "2010 - 2013"
+          },
+          {
+            "role": "Associate Professor",
+            "institution": "Tamilnadu College of Engineering",
+            "duration": "2013 - 2018"
+          },
+          {
+            "role": "Professor",
+            "institution": "Tamilnadu College of Engineering",
+            "duration": "2018 - 2018"
+          }
+        ],
+        "publications": {
+          "international_conference": 3,
+          "national_conference": 4,
+          "book_published": 5,
+          "international_journal": 38,
+          "national_journal": 1,
+          "fdp_conducted": 2,
+          "guest_lecturer_international": 1,
+          "guest_lecturer_national": 3,
+          "book_chapter_correction": 1,
+          "best_paper_award": 2,
+          "phd_scholar_completed": 3
+        },
+        "cv": "https://drive.google.com/open?id=1wCsb2iVXYhy_mWMgmOiXeoblh4imlFb9"
+      },
+      {
+        "name": "Dr. Revathi P",
+        "position": "Teaching Fellow",
+        "email": "revmaths@gmail.com",
+        "image": "dr_revathi_p.jpg", 
+        "department_roles": [
+          "Department of Science and Humanities (Mathematics)"
+        ],
+        "description": "I am Dr. P. Revathi, working as a Teaching Fellow at Anna University Regional Campus, Coimbatore since September 2008. I am from Coimbatore. I completed my school studies at Government Higher Secondary School, Karamadai. I obtained my UG, PG, and M.Phil. in Mathematics from Kongunadu Arts and Science College, Coimbatore from 2002-2008. I completed my Doctorate in 'Stochastic Differential Equations' in 2014 at Anna University under the guidance of Dr. R. Sakthivel and Dr. S. Marshal Anthoni. I have 12 years of teaching experience and am known for my hard work, adaptability to new environments, and motivating students.",
+        "professional_experience": [
+          {
+            "role": "Teaching Fellow",
+            "institution": "Anna University Regional Campus, Coimbatore",
+            "duration": "Sep 2008 - Dec 2015"
+          },
+          {
+            "role": "Teaching Fellow",
+            "institution": "Anna University Regional Campus, Coimbatore",
+            "duration": "Jan 2018 - till date"
+          }
+        ],
+        "publications": {
+          "journals_published": 7,
+          "national_conferences_participated": 9,
+          "international_and_national_conferences_papers_presented": 4
+        },
+        "cv": "https://drive.google.com/open?id=1-GwwhNPmGbO-Hv_YJJX0kinui1ZX130P"
+      },
+      {
+        "name": "Dr. Sardhar Basha S J",
+        "position": "Assistant Professor",
+        "email": "jsardhar@aurcc.ac.in",
+        "image": "dr_sardhar_basha.jpg", 
+        "department_roles": [
+          "Department of Science and Humanities (Chemistry)"
+        ],
+        "description": "I have completed research work in the field of synthesis and characterization of novel mesoporous materials supported Ni-Mo catalysts for hydrotreating process. Also experienced in the preparation of various porous materials like mesoporous aluminosilicates (MAS), SBA-15 and KIT-6 and its composites with different metal hydrotreating catalysts and various physico-chemical characterization techniques. Currently doing research in the area of super capacitors and waste water treatment using novel nano materials and composites.",
+        "professional_experience": [
+          {
+            "role": "Junior Research Fellow and Senior Research Fellow",
+            "institution": "DRDO sponsored project, Anna University Chennai",
+            "duration": "2003 - 2006"
+          },
+          {
+            "role": "Post Doctoral Researcher",
+            "institution": "National Chung Cheng University, Taiwan",
+            "duration": "2006 - 2008"
+          },
+          {
+            "role": "Senior Lecturer",
+            "institution": "Sona College of Technology, Salem",
+            "duration": "2008 - 2009"
+          },
+          {
+            "role": "Assistant Professor",
+            "institution": "University College of Engineering Ramanathapuram",
+            "duration": "2009 - 2015"
+          },
+          {
+            "role": "Assistant Professor",
+            "institution": "Anna University Regional Campus Coimbatore",
+            "duration": "2015 - Till date"
+          }
+        ],
+        "publications": {
+          "patent": "SPINEL TYPE TERNARY METAL CHALCOGENIDES-BASED CRYSTAL LATTICES AND THEIR PROCESS THEREOF – Granted on 17/08/2023",
+          "journals_published": 16,
+          "selected_publications": [
+            {
+              "title": "Unraveling the Enhanced Electrochemical Performances of Nickel Aluminum Sulfide Lattices for Overall Water Splitting and as Counter Electrode Material for Dye-Sensitized Solar Cells",
+              "journal": "J. Phys. Chem. C",
+              "year": 2023,
+              "volume": 127,
+              "issue": 25,
+              "pages": "11921-11931"
+            },
+            {
+              "title": "Revealing the Role of Brønsted Basicity by the Electrocatalytic Reaction via Li Insertion in the MgFe2O4 Lattice",
+              "journal": "J. Phys. Chem. C",
+              "year": 2022,
+              "volume": 126,
+              "pages": "11915−11926"
+            },
+            {
+              "title": "Hierarchical 2D/2D interface of nickel aluminum oxide and nickel aluminum layered double hydroxide nanoflowers: An efficient and robust electrocatalyt for overall water splitting",
+              "journal": "Electrochimica Acta",
+              "year": 2021,
+              "volume": 392,
+              "pages": "139029"
+            },
+            {
+              "title": "Hexacyanoferrate-Complex-Derived NiFe2O4/CoFe2O4 Heterostructure−MWCNTs for an Efficient Oxygen Evolution Reaction",
+              "journal": "Energy & Fuels",
+              "year": 2021,
+              "volume": 35,
+              "issue": 6,
+              "pages": "5372-5382"
+            },
+            {
+              "title": "Amperometric determination of hydrazine using a CuS-ordered mesoporous carbon electrode",
+              "journal": "Microchimica Acta",
+              "year": 2020,
+              "volume": 187,
+              "pages": "1-10"
+            },
+            {
+              "title": "Exploring the synergistic effect of NixSn2xS4x thiospinel with MWCNTs for enhanced performance in dye-sensitized solar cells, the hydrogen evolution reaction, and supercapacitors",
+              "journal": "Dalton Transactions",
+              "year": 2020,
+              "volume": 49,
+              "pages": "5336-5351"
+            },
+            {
+              "title": "Bio Catalytic oxidation of sulphide laden wastewater from leather industry using Sulfide: Quinone oxidoreductase immobilized Bioreactor",
+              "journal": "Biocatalysis and Biotransformation",
+              "year": 2020,
+              "volume": 38,
+              "pages": "123-137"
+            },
+            {
+              "title": "A study on catalytic activity of modified Ni-Re/Al-SBA-15 catalyst for hydrodenitrogenation of o-toluidine",
+              "journal": "International Journal of Hydrogen Energy",
+              "year": 2020,
+              "volume": 45,
+              "pages": "4328-4340"
+            },
+            {
+              "title": "A detailed investigation on rhenium loaded SBA‑15 supported catalyst for hydrodenitrogenation reaction of cyclohexylamine",
+              "journal": "Journal of Porous Materials",
+              "year": 2020,
+              "volume": 27,
+              "pages": "83-93"
+            },
+            {
+              "title": "Application of seaweeds for the removal of cationic dye from aqueous solution",
+              "journal": "Desalination and Water Treatment",
+              "year": 2016,
+              "volume": 57,
+              "issue": 53,
+              "pages": "25812-25821"
+            },
+            {
+              "title": "Investigation on removal of Malachite green using EM based compost as adsorbent",
+              "journal": "Ecotoxicology and Environmental Safety",
+              "year": 2015,
+              "volume": 118,
+              "pages": "177-182"
+            },
+            {
+              "title": "Evaluation of red marine alga Kappaphycus alvarezii as biosorbent for methylene blue: isotherm, kinetic and mechanism studies",
+              "journal": "Separation Science and Technology",
+              "year": 2015,
+              "volume": 50,
+              "pages": "1120-1126"
+            },
+            {
+              "title": "Effect of order of impregnation of Mo and Ni on the Hydrodenitrogenation activity of NiO-MoO3/ AlMCM-41 catalyst",
+              "journal": "Journal of Industrial and Engineering Chemistry Research",
+              "year": 2009,
+              "volume": 48,
+              "pages": "2774"
+            },
+            {
+              "title": "Vapour phase oxidation of Tetralin over Cr and Fe substituted MCM-41 molecular sieves",
+              "journal": "Journal of Molecular Catalysis A: Chemical",
+              "year": 2007,
+              "volume": 275,
+              "pages": "84"
+            },
+            {
+              "title": "Mesoporous H-AlMCM-41 supported NiO-MoO3 catalysts for Hydrodenitrogenation of o-Toluidine. I. Effect of MoO3 loading",
+              "journal": "Journal of Applied Catalysis A: General",
+              "year": 2006,
+              "volume": 308,
+              "pages": "91"
+            },
+            {
+              "title": "Photocatalytic performance of Ru doped anatase mounted on silica for reduction of carbon dioxide",
+              "journal": "Journal of Applied Catalysis B: Environmental",
+              "year": 2005,
+              "volume": 62,
+              "pages": "169"
+            }
+          ]
+        },
+        "cv": "https://drive.google.com/open?id=1XfwNbkwva-mLJEIVRK2xarmRkJBa91iV",
+        "orcid": "https://orcid.org/0000-0002-4531-1262"
       },
       {
         "name": "Dr. Vernold Vivin J",
-        "position": "Assistant Professor (Senior Grade)",
+        "designation": "Assistant Professor",
         "department": "Department of Science & Humanities (Mathematics)",
         "email": "jvvivin@gmail.com",
-        "education": [
-             {  
-                 "degree": "Ph.D.",
-                 "field": "Mathematics",
-                 "institution": "Bharathiar University, Coimbatore"
-             }
-        ],
-        "research_interests": ["Graph Theory", "Graph Colorings"],
-        "professional_experience": [
+        "profile": "Dr Vernold Vivin.J, is presently working as Assistant Professor in the Department of Science and Humanities (Mathematics), Anna University Regional Campus-Coimbatore, Coimbatore. He has more than 16 years of teaching experience. He completed his Doctoral Degree in Mathematics, in the research area of Graph Theory, particularly in Graph Colorings under Bharathiar University, Coimbatore. Under his guidance, 05 candidates have completed their Ph.D. degree under Anna University Chennai. He has published more than 75 research papers in International and National Journals. He has also co-authored one book in Engineering Mathematics. He has delivered more than 10 invited Lectures in LaTeX and graph theory in reputed Institutions. He has presented 24 research papers in International and National Conferences both in India and Taiwan. He is a Reviewer for American Mathematical Society and has served as Referee for reputed International Journals.",
+        "experience": [
           {
-            "organization": "Anna University Regional Campus-Coimbatore",
-            "role": "Assistant Professor",
-            "duration": "03/08/2023-present"
+            "position": "Assistant Professor",
+            "institution": "Department of Science & Humanities (Mathematics), Anna University Regional Campus-Coimbatore",
+            "duration": "From 03/08/2023 to till date"
           },
           {
-            "organization": "University College of Engineering, Nagercoil",
-            "role": "Assistant Professor",
-            "duration": "20/08/2010-02/08/2023"
+            "position": "Assistant Professor",
+            "institution": "Department of Mathematics, University College of Engineering Nagercoil",
+            "duration": "From 20/08/2010 to 02/08/2023"
           },
           {
-            "organization": "Sri Shakthi Institute of Engineering and Technology, Coimbatore",
-            "role": "Assistant Professor",
-            "duration": "17/07/2007-19/08/2010"
+            "position": "Assistant Professor",
+            "institution": "Department of Mathematics, Sri Shakthi Institute of Engineering and Technology, Coimbatore",
+            "duration": "From 17/07/2007 to 19/08/2010"
           }
         ],
-        "achievements": [
-          "Guided 05 Ph.D. candidates",
-          "Published more than 75 research papers",
-          "Delivered more than 10 invited Lectures"
+        "publications": [
+          "Published more than 75 research papers in International and National Journals",
+          "Co-authored one book in Engineering Mathematics"
         ],
-        "links": {
-          "Google Scholar": "https://scholar.google.co.in/citations?user=-XgxYQoAAAAJ&hl=en",
-          "Email": "mailto:jvvivin@gmail.com",
-          "Google Drive": "https://drive.google.com/open?id=1wtLrakLXToiFlf5k36V_ys4XOh31rlj_"
-        }
-      },
-      {
-        "name": "Dr. Krishnakumar M",
-        "position": "Assistant Professor (Senior Grade)",
-        "department": "Department of Science and Humanities (Physics)",
-        "email": "drkrishnakumarmuthusamy@gmail.com",
-        "education": [
-             {   
-                 "degree": "Ph.D.",
-                 "field": "Physics",
-                 "institution": "Anna University, Chennai"
-             }
-        ],
-        "research_interests": ["NLO materials", "Photonic single crystalline materials", "Materials Science"],
-        "professional_experience": [
-          {
-            "organization": "Government College of Technology, Coimbatore",
-            "role": "Lecturer (Visiting)",
-            "duration": "2005-2007"
-          },
-          {
-            "organization": "National Geophysical Research Institute (NGRI), Hyderabad",
-            "role": "CSIR Research Intern",
-            "duration": "2007-2008"
-          },
-          {
-            "organization": "University College of Engineering, Ramanathapuram",
-            "role": "Lecturer",
-            "duration": "2008-2009"
-          },
-          {
-            "organization": "University College of Engineering, Ramanathapuram",
-            "role": "Assistant Professor",
-            "duration": "2009-2014"
-          },
-          {
-            "organization": "University College of Engineering, Dindigul",
-            "role": "Assistant Professor",
-            "duration": "2014-2015"
-          },
-          {
-            "organization": "Anna University Regional campus, Coimbatore",
-            "role": "Assistant Professor (Sr.Gr)",
-            "duration": "2023-present"
-          }
-        ],
-        "achievements": [
-          "Published more than twenty research articles in peer-reviewed SCI journals",
-          "Published three books for Information science, Electrical Engineering, and Electronics Engineering",
-          "Received Kamarajar Endowment fellowship from Bharathiar University",
-          "Received CSIR Diamond jubilee internship award from CSIR Hyderabad"
-        ],
-        "links": {
-          "Google Scholar": "https://scholar.google.com/citations?user=-FRYVoEAAAAJ&hl=en",
-          "Email": "mailto:drkrishnakumarmuthusamy@gmail.com",
-          "Google Drive": "https://drive.google.com/open?id=1iDqdurQldiD2zpn2VVjGUkv5mOpcjkhD"
-        }
+        "lectures": "Delivered more than 10 invited Lectures in LaTeX and graph theory in reputed Institutions",
+        "conferences": "Presented 24 research papers in International and National Conferences both in India and Taiwan",
+        "reviewer": "Reviewer for American Mathematical Society and has served as Referee for reputed International Journals",
+        "google_scholar": "https://scholar.google.co.in/citations?user=-XgxYQoAAAAJ&hl=en",
+        "drive_link": "https://drive.google.com/open?id=1wtLrakLXToiFlf5k36V_ys4XOh31rlj_"
       },
       {
         "name": "Dr. Bapitha L",
-        "position": "Assistant Professor (Senior Grade)",
+        "designation": "Assistant Professor",
         "department": "Department of Science and Humanities",
         "email": "bapithaenglish@gmail.com",
-        "professional_experience": [
+        "profile": "I'm Dr. L Bapitha, working as an Assistant Professor in the Department of Science and Humanities at Anna University Regional Campus Coimbatore. I have 22 years of experience teaching English at Engineering Colleges. I specialize in the field of ELT (English Language Teaching) and have published more than 10 papers in both National and International journals. I am highly dedicated and diplomatic in my field and have a passion for learning new concepts.",
+        "experience": [
           {
-            "organization": "Anna University Regional Campus Coimbatore",
-            "role": "Assistant Professor",
-            "duration": "11/08/2023-present"
+            "position": "Assistant Professor in English",
+            "institution": "Anna University Regional Campus Coimbatore",
+            "duration": "From 11 August 2023 to till date"
           },
           {
-            "organization": "UCER, Ramanathapuram",
-            "role": "Assistant Professor",
-            "duration": "21/07/2014-10/08/2023"
+            "position": "Assistant Professor in English",
+            "institution": "University College of Engineering, Ramanathapuram",
+            "duration": "From 21 July 2014 to 10 August 2023"
           },
           {
-            "organization": "UCE, Ariyalur",
-            "role": "Assistant Professor",
-            "duration": "19/11/2009-18/07/2014"
+            "position": "Assistant Professor in English",
+            "institution": "University College of Engineering, Ariyalur",
+            "duration": "From 19 November 2009 to 18 July 2014"
           },
           {
-            "organization": "Panimalar Institute of Technology, Chennai",
-            "role": "Lecturer",
-            "duration": "02/06/2009-17/11/2009"
+            "position": "Lecturer",
+            "institution": "Panimalar Institute of Technology, Chennai",
+            "duration": "From 2 June 2009 to 17 November 2009"
           },
           {
-            "organization": "Syed Ammal Engineering College, Ramanathapuram",
-            "role": "Lecturer",
-            "duration": "19/07/2007-31/05/2008"
+            "position": "Lecturer",
+            "institution": "Syed Ammal Engineering College, Ramanathapuram",
+            "duration": "From 19 July 2007 to 31 May 2008"
           },
           {
-            "organization": "Mount Zion College of Engineering, Pudukkottai",
-            "role": "Lecturer",
-            "duration": "01/06/2001-31/07/2006"
+            "position": "Lecturer",
+            "institution": "Mount Zion College of Engineering, Pudukkottai",
+            "duration": "From 1 June 2001 to 31 July 2006"
           }
         ],
-        "achievements": "15 national and International conferences attended",
-        "links": {
-          "Email": "mailto:bapithaenglish@gmail.com",
-          "Google Drive": "https://drive.google.com/open?id=1R3oqrPPxh4pkJGMNkcCTqmWkv2w7wdGC"
-        }
+        "publications": "Published more than 10 papers in both National and International journals",
+        "conferences": "Attended 15 National and International conferences",
+        "drive_link": "https://drive.google.com/open?id=1R3oqrPPxh4pkJGMNkcCTqmWkv2w7wdGC"
+      },
+      {
+        "name": "Dr. Krishnakumar M",
+        "designation": "Assistant Professor (Senior Grade)",
+        "department": "Department of Science and Humanities (Physics)",
+        "email": "drkrishnakumarmuthusamy@gmail.com",
+        "profile": "Dr. M. Krishnakumar completed his Ph.D. from Anna University Chennai and has published research articles in nationally and internationally reputed journals. He has over 17 years of experience at the undergraduate level, teaching courses such as Engineering Physics, Physics for Information Science, Physics for Electronics Engineering, Physics for Electrical Engineering, and Materials Science. His research interests include NLO materials, photonic single crystalline materials, and materials science.",
+        "experience": [
+          {
+            "position": "Lecturer (Visiting)",
+            "institution": "Government College of Technology, Coimbatore",
+            "duration": "2005-2007"
+          },
+          {
+            "position": "CSIR Research Intern",
+            "institution": "National Geophysical Research Institute (NGRI), Hyderabad",
+            "duration": "2007-2008"
+          },
+          {
+            "position": "Lecturer",
+            "institution": "Department of Physics, University College of Engineering, Ramanathapuram",
+            "duration": "2008-2009"
+          },
+          {
+            "position": "Assistant Professor",
+            "institution": "Department of Physics, University College of Engineering, Ramanathapuram",
+            "duration": "2009-2014"
+          },
+          {
+            "position": "Assistant Professor",
+            "institution": "Department of Physics, University College of Engineering, Dindigul",
+            "duration": "2014-2015"
+          },
+          {
+            "position": "Assistant Professor (Senior Grade)",
+            "institution": "Department of Physics, University College of Engineering, Dindigul",
+            "duration": "2014-2023"
+          },
+          {
+            "position": "Assistant Professor (Senior Grade)",
+            "institution": "Department of Science and Humanities (Physics), Anna University Regional Campus, Coimbatore",
+            "duration": "2023- till date"
+          }
+        ],
+        "publications": "Published more than twenty research articles in peer-reviewed SCI journals.",
+        "books": [
+          "Physics for Information Science",
+          "Physics for Electronics Engineering",
+          "Physics for Electrical Engineering"
+        ],
+        "awards": [
+          "Kamarajar Endowment fellowship from Bharathiar University for best outgoing student during the year 2004-2005.",
+          "CSIR Diamond Jubilee Internship Award from CSIR Hyderabad for the period 2007-2008."
+        ],
+        "scholar_link": "https://scholar.google.com/citations?user=-FRYVoEAAAAJ&hl=en",
+        "drive_link": "https://drive.google.com/open?id=1iDqdurQldiD2zpn2VVjGUkv5mOpcjkhD"
+      },
+      {
+        "name": "Mrs. Kalaivani S",
+        "designation": "Teaching Fellow",
+        "department": "Department of Science and Humanities (Tamil)",
+        "email": "mabedkalaivani@gmail.com",
+        "profile": "My native is Namakkal. My educational qualifications are M.A., M.Phil., B.Ed., and NET. I am currently pursuing Ph.D. research on the topic 'Namakkal Mavatta Ilakiya Amaippugalin Selnerigal' at Vivekananda College of Arts and Science (Autonomous). I completed my schooling at Government Higher Secondary School, Swamy Sivananda Salai, Rasipuram. I earned my UG degree from Vivekananda College of Arts and Science (Autonomous), and my Master's and M.Phil degrees from Bharatiyar University. I passed the UGC NET Exam in June 2012. My strengths include typing in Tamil, efficiency in basic computer skills, adaptability to new environments, self-confidence, eagerness to learn new things, and motivating students.",
+        "experience": [
+          {
+            "position": "Teacher",
+            "institution": "Sri Sakthi Sai Nursery and Primary School, Salem",
+            "duration": "2014 - 2015"
+          },
+          {
+            "position": "Assistant Professor",
+            "institution": "Jairam Arts and Science College, Salem",
+            "duration": "2015 - 2021"
+          },
+          {
+            "position": "Assistant Professor and Head of the Department",
+            "institution": "Thangavel Women's Arts and Science College, Salem",
+            "duration": "2021 - 2023"
+          },
+          {
+            "position": "Teaching Fellow",
+            "institution": "Anna University Regional Campus Coimbatore",
+            "duration": "2023 - Till date"
+          }
+        ],
+        "publications": "One of the Authors of 'Heritage of Tamils' (Textbook for first-year Engineering students).",
+        "conferences": "Keynote speaker in International Conference, Attended National and International Conferences.",
+        "drive_link": "https://drive.google.com/open?id=1BbHCN8pe6UkwD_wS2BRKIfRL4F4NvTBD"
+      },
+      {
+        "name": "Ms. Kiruba B",
+        "designation": "Teaching Fellow",
+        "department": "Department of Science and Humanities (Chemistry)",
+        "email": "kirunila4@gmail.com",
+        "profile": "I am B. Kiruba, working as a Teaching Fellow at Anna University Regional Campus Coimbatore since September 2018. I am from Mayiladuthurai and completed my schooling at St. Paul's Girls Higher Secondary School, Mayiladuthurai. I earned my UG degree in Chemistry from AVC College, Mannampandal during the academic year 1999-2002, and my M.Sc. and M.Phil. in Chemistry from Bharathidasan University from 2002-2006. I qualified the SET exam in 2016. My thesis is entitled 'Synthesis, Characterization, and Antimicrobial, Anticancer, and Antioxidant Properties of Certain Random Copolyesters Containing Arylidene Moiety in the Main Chain.' With 15 years of teaching experience, I am interested in the field of Polymers, eager to learn new things, flexible to the environment, and motivated to inspire students.",
+        "experience": [
+          {
+            "position": "Guest Lecturer",
+            "institution": "Bharathidasan Institute of Technology",
+            "duration": "2006 - 2007"
+          },
+          {
+            "position": "Assistant Professor",
+            "institution": "Kings Engineering College",
+            "duration": "2007 - 2018"
+          },
+          {
+            "position": "Teaching Fellow",
+            "institution": "Anna University Regional Campus Coimbatore",
+            "duration": "2018 - Till date"
+          }
+        ],
+        "publications": "Published 2 papers.",
+        "conferences": "Attended 5 international and national conferences.",
+        "drive_link": "https://drive.google.com/open?id=1xR0YYxW7ldeuC4Cz2YQ68PFQWObr6ZrC"
+      },
+      {
+        "name": "Mrs. Meena S",
+        "designation": "Executive Assistant",
+        "department": "Department of Science and Humanities",
+        "email": "meena171976@gmail.com",
+        "profile": "I joined this prestigious institution in 2008 with qualifications of M.Sc. and M.Phil. in Mathematics. From 2008 to 2018, I worked in the Office of Affiliation. Since 2018, I have been working in the Department of Science and Humanities. I am very proud and happy to assist students with my administrative experience and academic excellence.",
+        "experience": [
+          {
+            "position": "Executive Assistant",
+            "institution": "Department of Science and Humanities",
+            "duration": "Since 2018"
+          },
+          {
+            "position": "Office of Affiliation",
+            "institution": "Institution",
+            "duration": "2008 - 2018"
+          }
+        ],
+        "publications": "Nil",
+        "conferences": "Nil",
+        "drive_link": "https://drive.google.com/open?id=1gMCBm1liLuV6rALUZuAusvGAs8t5J48f"
       }
-    ],
-    "contact": "s&hdepartment@aurcc.ac.in"
+      
+    ]
+  }
 }
