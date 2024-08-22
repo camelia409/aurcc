@@ -7,28 +7,27 @@
         <h1 class="text-4xl font-extrabold text-black  drop-shadow-lg font-serif">{{ data.name }}</h1>
       </div>
     </section>
-     <p class="text-base md:text-lg max-w-3xl mx-auto mb-8 leading-relaxed drop-shadow-lg font-sans text-black">{{ data.description.DGATE }}</p>
    
     <!-- Vertical Tabs Section -->
     <section class="container mx-auto py-8 px-4">
       <div class="relative flex flex-col md:flex-row">
         <!-- Vertical Tabs -->
-        <div class="flex-shrink-0 md:w-64 bg-gradient-to-r from-purple-400 to-pink-300 rounded-lg shadow-lg p-4 overflow-hidden mb-4 md:mb-0">
-          <div class="relative bg-gradient-to-r from-purple-500 to-pink-400 p-4 rounded-lg mb-4 text-center md:text-left">
-            <h2 class="text-xl md:text-2xl text-white font-bold">Tabs</h2>
+        <div class="flex-shrink-0 w-full h-max md:w-64 bg-gradient-to-r from-[#21209c] to-blue-600 rounded-lg shadow-lg p-4 mb-4 md:mb-0 md:mr-4">
+          <div class="relative p-4 rounded-lg">
+            <h2 class="text-xl md:text-2xl text-white font-bold text-center">Sections</h2>
           </div>
           <div class="space-y-4">
-            <button @click="activeTab = 'activities'" :class="{'bg-gray-200': activeTab === 'activities'}" class="w-full py-2 px-4 bg-white text-gray-800 rounded-md font-semibold hover:bg-gray-200">Activities</button>
-            <button @click="activeTab = 'projects'" :class="{'bg-gray-200': activeTab === 'projects'}" class="w-full py-2 px-4 bg-white text-gray-800 rounded-md font-semibold hover:bg-gray-200">Projects</button>
-            <button @click="activeTab = 'hackathon'" :class="{'bg-gray-200': activeTab === 'hackathon'}" class="w-full py-2 px-4 bg-white text-gray-800 rounded-md font-semibold hover:bg-gray-200">Hackathon Participation</button>
-            <button @click="activeTab = 'staff'" :class="{'bg-gray-200': activeTab === 'staff'}" class="w-full py-2 px-4 bg-white text-gray-800 rounded-md font-semibold hover:bg-gray-200">Staff Members</button>
+            <button @click="activeTab = 'activities'" :class="{'bg-yellow-400': activeTab === 'activities'}" class="w-full py-2 px-4 bg-white text-gray-800 rounded-md font-semibold hover:bg-gray-200">Activities</button>
+            <button @click="activeTab = 'projects'" :class="{'bg-yellow-400': activeTab === 'projects'}" class="w-full py-2 px-4 bg-white text-gray-800 rounded-md font-semibold hover:bg-gray-200">Projects</button>
+            <button @click="activeTab = 'hackathon'" :class="{'bg-yellow-400': activeTab === 'hackathon'}" class="w-full py-2 px-4 bg-white text-gray-800 rounded-md font-semibold hover:bg-gray-200">Hackathon Participation</button>
+            <button @click="activeTab = 'staff'" :class="{'bg-yellow-400': activeTab === 'staff'}" class="w-full py-2 px-4 bg-white text-gray-800 rounded-md font-semibold hover:bg-gray-200">Staff Members</button>
           </div>
         </div>
 
         <!-- Tab Content -->
-        <div class="flex-grow md:ml-8 p-4">
+        <div class="w-full px-10 font-serif min-h-[400px] max-h-[400px] overflow-y-auto relative -z-10 ">
           <!-- Activities Tab -->
-          <div v-if="activeTab === 'activities'" class="bg-gradient-to-r from-blue-500 to-teal-300 rounded-lg shadow-lg p-6">
+          <div v-if="activeTab === 'activities'" >
             <h3 class="text-2xl md:text-3xl text-white font-bold mb-4">Activities</h3>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
@@ -69,7 +68,7 @@
           </div>
 
           <!-- Projects Tab -->
-          <div v-if="activeTab === 'projects'" class="bg-gradient-to-r from-indigo-500 to-blue-400 rounded-lg shadow-lg p-6">
+          <div v-if="activeTab === 'projects'" >
             <h3 class="text-2xl md:text-3xl text-white font-bold mb-4">Projects</h3>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
@@ -93,7 +92,7 @@
           </div>
 
           <!-- Hackathon Participation Tab -->
-          <div v-if="activeTab === 'hackathon'" class="bg-gradient-to-r from-teal-500 to-green-300 rounded-lg shadow-lg p-6">
+          <div v-if="activeTab === 'hackathon'" >
             <h3 class="text-2xl md:text-3xl text-white font-bold mb-4">Hackathon Participation</h3>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div v-for="participation in data.description.participation_in_hackathon" :key="participation.project" class="bg-white shadow-md rounded-md p-4">
@@ -104,7 +103,7 @@
           </div>
 
           <!-- Staff Members Tab -->
-          <div v-if="activeTab === 'staff'" class="bg-gradient-to-r from-green-500 to-lime-300 rounded-lg shadow-lg p-6">
+          <div v-if="activeTab === 'staff'" >
             <h3 class="text-2xl md:text-3xl text-white font-bold mb-4">Staff Members</h3>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div v-for="staff in data.staff_members" :key="staff.email_id" class="bg-white shadow-md rounded-md p-4">
@@ -134,70 +133,8 @@ export default {
 </script>
 
 <style>
-/* Font Styles */
-.font-sans {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
-
-.font-serif {
-  font-family: 'Georgia', 'Times New Roman', Times, serif;
-}
-
-/* Hero section */
-.hero-section {
-  min-height: 50vh;
-  position: relative;
-  background-blend-mode: multiply;
-}
-
-/* Gradient Background */
-.bg-gradient-to-r {
-  background: linear-gradient(90deg, var(--tw-gradient-stops));
-}
-
-/* Sections */
-section {
-  transition: transform 0.3s ease-in-out;
-}
-
-section:hover {
-  transform: scale(1.01);
-}
-
-/* Vertical Tabs */
-button:hover {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-
-.flex-shrink-0 {
-  flex-shrink: 0;
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-  /* Adjust tab buttons on mobile */
-  .flex-shrink-0 {
-    width: 100%;
-  }
-
-  .md\\:ml-8 {
-    margin-left: 0;
-  }
-
-  .md\\:grid-cols-2 {
-    grid-template-columns: 1fr;
-  }
-
-  .md\\:text-3xl {
-    font-size: 1.75rem;
-  }
-
-  .md\\:text-2xl {
-    font-size: 1.5rem;
-  }
-
-  .md\\:flex-row {
-    flex-direction: column;
-  }
+/* Additional custom styles if needed */
+body {
+  font-family: 'Arial', sans-serif;
 }
 </style>

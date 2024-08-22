@@ -9,8 +9,8 @@
     </section>
         
 
-    <!-- Vertical Tabs Section -->
-    <section class="mx-auto py-10 px-10 bg-gray-100 rounded-lg">
+  <!-- Vertical Tabs Section -->
+  <section class="mx-auto py-10 px-10 bg-gray-100 rounded-lg">
   <div class="flex flex-col md:flex-row">
     <!-- Vertical Tabs -->
     <div class="flex-shrink-0 w-full h-max lg:w-64 bg-gradient-to-r from-[#21209c] to-blue-600 rounded-lg shadow-lg p-4 overflow-hidden mb-4 lg:mb-0">
