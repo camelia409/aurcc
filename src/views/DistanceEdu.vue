@@ -10,8 +10,8 @@
 
     <!-- Details section -->
     <section class="container mx-auto py-8 px-4 md:px-9">
-      <div class="bg-gradient-to-r from-purple-100 via-pink-100 to-purple-200 rounded-lg shadow-lg overflow-hidden">
-        <h2 class="text-3xl text-center bg-gradient-to-r from-purple-600 to-pink-500 text-white p-4 font-bold rounded-t-lg">
+      <div class="bg-gradient-to-r from-[#21209c] to-blue-600 rounded-lg shadow-lg overflow-hidden">
+        <h2 class="text-3xl text-center bg-yellow-300 text-blue-600 p-4 font-bold rounded-t-lg">
           {{ details.description }}
         </h2>
         <div class="p-6">
