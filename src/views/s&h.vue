@@ -110,68 +110,73 @@
               </div>
             </div>
 
-            <!-- Modal -->
-            <div v-if="showPopover" class="modal modal-open fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
-              <div class="modal-box relative rounded-lg flex flex-col max-w-4xl p-6 bg-white">
-                <!-- Close Button -->
-                <button @click="showPopover = false" class="btn btn-sm btn-circle absolute right-2 top-2">✕</button>
-                <!-- Heading -->
-                <h1 class="font-bold text-3xl mb-10 text-center w-full">FACULTY DETAILS</h1>
-                <div class="flex flex-col md:flex-row">
-                  <!-- Fixed Image -->
-                  <div class="flex-shrink-0 text-center mt-4 md:mt-0 my-auto mr-8">
-                    <img :src="'/src/assets/' + selectedStaff.image" alt="Profile Picture" class="h-96 w-72 rounded-lg shadow-lg object-cover">
-                    <h2 class="text-lg font-semibold mt-4">{{ selectedStaff.name }}</h2>
-                  </div>
-                  <!-- Scrollable Details -->
-                  <div class="md:overflow-auto flex-grow max-h-[70vh] pr-6">
-                    <h3 class="text-xl font-semibold mb-2"><strong>Position:</strong> {{ selectedStaff.position }}</h3>
-                    <h3 class="text-xl font-semibold mb-2"><strong>Email:</strong> {{ selectedStaff.email }}</h3>
-                    <!-- Education -->
-                    <template v-if="selectedStaff.education && selectedStaff.education.length">
-                      <h3 class="text-md font-semibold mt-4"><strong>Education</strong></h3>
-                      <ul class="list-disc ml-6">
-                        <li v-for="edu in selectedStaff.education" :key="edu.degree">{{ edu.degree }} from {{ edu.institution }} - {{ edu.year }}</li>
-                      </ul>
-                    </template>
-                    <!-- Experience -->
-                    <template v-if="selectedStaff.experience && selectedStaff.experience.length">
-                      <h3 class="text-md font-semibold mt-4"><strong>Experience</strong></h3>
-                      <ul class="list-disc ml-6">
-                        <li v-for="exp in selectedStaff.experience" :key="exp.position">{{ exp.position }} at {{ exp.organization }} ({{ exp.years }} years)</li>
-                      </ul>
-                    </template>
-                    <!-- Research Interests -->
-                    <template v-if="selectedStaff.research_interests && selectedStaff.research_interests.length">
-                      <h3 class="text-md font-semibold mt-4"><strong>Research Interests</strong></h3>
-                      <ul class="list-disc ml-6">
-                        <li v-for="interest in selectedStaff.research_interests" :key="interest">{{ interest }}</li>
-                      </ul>
-                    </template>
-                    <!-- Publications -->
-                    <template v-if="selectedStaff.publications && selectedStaff.publications.length">
-                      <h3 class="text-md font-semibold mt-4"><strong>Publications</strong></h3>
-                      <ul class="list-disc ml-6">
-                        <li v-for="publication in selectedStaff.publications" :key="publication">{{ publication }}</li>
-                      </ul>
-                    </template>
-                    <!-- Projects -->
-                    <template v-if="selectedStaff.projects && selectedStaff.projects.length">
-                      <h3 class="text-md font-semibold mt-4"><strong>Projects</strong></h3>
-                      <ul class="list-disc ml-6">
-                        <li v-for="project in selectedStaff.projects" :key="project">{{ project }}</li>
-                      </ul>
-                    </template>
-                    <!-- Additional Fields -->
-                    <template v-if="selectedStaff.additional_fields">
-                      <div v-for="(value, key) in selectedStaff.additional_fields" :key="key" class="mt-4">
-                        <h3 class="text-md font-semibold"><strong>{{ key }}:</strong> {{ value }}</h3>
+          <!-- Modal -->
+          <div v-if="showPopover" class="modal modal-open">
+            <div class="modal-box relative rounded-lg flex flex-col p-4 bg-white" :style="{ maxWidth: '900px', width: '90%' }">
+              <!-- Close Button -->
+              <button @click="showPopover = false" class="btn btn-sm btn-circle absolute right-2 top-2">✕</button>
+              <!-- Heading -->
+              <h1 class="font-bold text-3xl mb-10 text-center w-full">FACULTY DETAILS</h1>
+              <div class="flex flex-col md:flex-row">
+                <!-- Fixed Image -->
+                <div class="flex-shrink-0 text-center mt-4 md:mt-0 my-auto mr-4">
+                  <img :src="'/src/assets/' + selectedStaff.image" alt="Profile Picture" class="h-96 w-70 rounded-lg shadow-lg object-cover">
+                  <h2 class="text-lg font-semibold mt-4">{{ selectedStaff.name }}</h2>
+                </div>
+                <!-- Scrollable Details -->
+                <div class="md:overflow-auto flex-grow max-h-[50vh] pr-6  shadow-inner">
+                  <h3 class="text-xl font-semibold "><strong>Position:</strong> {{ selectedStaff.position }}</h3>
+                  <h3 class="text-xl font-semibold mb-2"><strong>Email:</strong> {{ selectedStaff.email }}</h3>
+                  
+                  <!-- Profile -->
+                  <template v-if="selectedStaff.profile">
+                    <h3 class="text-md font-semibold mt-4"><strong>Profile:</strong></h3>
+                    <ul class="list-disc ml-4 text-md text-gray-700">
+                      <li v-for="(point, index) in splitProfile(selectedStaff.profile)" :key="index">{{ point }}</li>
+                    </ul>
+                  </template>
+                  
+                  <!-- Education -->
+                  <template v-if="selectedStaff.education && selectedStaff.education.length">
+                    <h3 class="text-md font-semibold mt-4"><strong>Education:</strong></h3>
+                    <div class="text-md text-gray-700">
+                      <div v-for="(edu, index) in selectedStaff.education" :key="index">
+                        <p>{{ edu }}</p>
                       </div>
-                    </template>
-                  </div>
+                    </div>
+                  </template>
+                  
+                  <!-- Experience -->
+                  <template v-if="selectedStaff.experience && selectedStaff.experience.length">
+                    <h3 class="text-md font-semibold mt-4"><strong>Experience:</strong></h3>
+                    <ul class="list-disc ml-4">
+                      <li v-for="exp in selectedStaff.experience" :key="exp.position">{{ exp.position }} at {{ exp.institution }} ({{ exp.duration }})</li>
+                    </ul>
+                  </template>
+                  
+                  <!-- Publications -->
+                  <template v-if="selectedStaff.publications">
+                    <h3 class="text-md font-semibold mt-4"><strong>Publications:</strong></h3>
+                    <p class="text-md text-gray-700">{{ selectedStaff.publications }}</p>
+                  </template>
+                  
+                  <!-- Conferences -->
+                  <template v-if="selectedStaff.conferences">
+                    <h3 class="text-md font-semibold mt-4"><strong>Conferences:</strong></h3>
+                    <p class="text-md text-gray-700">{{ selectedStaff.conferences }}</p>
+                  </template>
+                  
+                  <!-- Additional Fields -->
+                  <template v-if="selectedStaff.additional_fields">
+                    <div v-for="(value, key) in selectedStaff.additional_fields" :key="key" class="mt-4">
+                      <h3 class="text-md font-semibold"><strong>{{ key }}:</strong> {{ value }}</h3>
+                    </div>
+                  </template>
                 </div>
               </div>
             </div>
+          </div>
+
           </div>
         </div>
       </div>
@@ -194,6 +199,9 @@ export default {
     showDetails(staff) {
       this.selectedStaff = staff;
       this.showPopover = true;
+    },
+    splitProfile(profile) {
+      return profile.split('.').map(point => point.trim()).filter(point => point.length > 0);
     }
   }
 };

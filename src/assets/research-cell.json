@@ -1,147 +1,636 @@
 {
   "name": "Research Cell",
   "description": "The Campus Research Co-ordination Cell (CRCC) was started in 2017 to carry out various activities related to research. It collects data on research activities, facilitates research proposals and PG projects, maintains records, and aims to enhance the research environment on campus. The CRCC communicates with the International Centre for Research Facilitation and Training (ICRFT) at Anna University Chennai to establish a Research Facilitation Centre (RFC) at the Regional Campus, Coimbatore. Both RFNC and RFC will provide a platform for accessing international databases, computing facilities, intellectual property protection, and manpower training.",
-  "supervisors": [
-    "Civil Engineering",
-    "Mechanical Engineering",
-    "Electrical and Electronics Engineering",
-    "Electronics and Communication Engineering",
-    "Computer Science and Engineering",
-    "Information Technology",
-    "Biotechnology",
-    "Nanotechnology",
-    "Management Studies",
-    "Computer Applications",
-    "Science and Humanities"
-  ],
+  "supervisors": {
+    "Mechanical Engineering": [
+      {
+        "sno": 1,
+        "refNo": "2120391",
+        "supervisorName": "Dr.M.Sakthivel",
+        "designation": "Associate Professor",
+        "researchArea": "Quality Management Optimization, Composite materials",
+        "email": "sakthi_vel_m@yahoo.com"
+      },
+      {
+        "sno": 2,
+        "refNo": "2620029",
+        "supervisorName": "Dr.K.Kanthavel",
+        "designation": "Asst. Professor",
+        "researchArea": "Production Management, Optimization Technique, SCM - Composites",
+        "email": "kandavelkk@gmail.com"
+      },
+      {
+        "sno": 3,
+        "refNo": "2320469",
+        "supervisorName": "Dr.K.Soorya Prakash",
+        "designation": "Asst. Professor",
+        "researchArea": "Machining Analysis, Product Design, Composite Materials, Materials Characterization",
+        "email": "sooryaprakash.k@gmail.com"
+      },
+      {
+        "sno": 4,
+        "refNo": "2620056",
+        "supervisorName": "Dr.R.Sathiya Moorthy",
+        "designation": "Asst. Professor",
+        "researchArea": "High Speed Spindle Dynamics, Solar",
+        "email": "rsathiyamoorthy@ymail.com"
+      }
+    ],
+    "Electrical and Electronics Engineering": [
+      {
+        "sno": 1,
+        "refNo": "2130036",
+        "supervisorName": "Dr.S N.Deepa",
+        "designation": "Associate Professor",
+        "researchArea": "Electrical Engineering",
+        "email": "deepapsg@gmail.com"
+      },
+      {
+        "sno": 2,
+        "refNo": "2130008",
+        "supervisorName": "Dr.T.Aruldoss Albert Victoire",
+        "designation": "Associate Professor",
+        "researchArea": "Electrical Engineering",
+        "email": "t.aruldoss@gmail.com"
+      },
+      {
+        "sno": 3,
+        "refNo": "2730029",
+        "supervisorName": "Dr.R.Suresh Kumar",
+        "designation": "Asst. Professor",
+        "researchArea": "Power Electronics and Drives, Soft Computing, Renewable Energy Systems, Electrical Machines",
+        "email": "sureshkumarauc@gmail.com"
+      },
+      {
+        "sno": 4,
+        "refNo": "2730016",
+        "supervisorName": "Dr.M.Yuvaraju",
+        "designation": "Asst. Professor",
+        "researchArea": "Control Systems, Power Electronics, Computing, Computer Networks",
+        "email": "rajaucbe@gmail.com"
+      }
+    ],
+    "Electronics and Communication Engineering": [
+      {
+        "sno": 1,
+        "refNo": "2340432",
+        "supervisorName": "Dr.V.R.Vijaykumar",
+        "designation": "Associate Professor",
+        "researchArea": "Image Processing, Signal Processing, Digital Communications and VLSI Design",
+        "email": "vr_vijay@yahoo.com"
+      },
+      {
+        "sno": 2,
+        "refNo": "2440041",
+        "supervisorName": "Dr.V.Bhanumathi",
+        "designation": "Asst.Professor",
+        "researchArea": "Information & Communication Engineering",
+        "email": "vbhanu_02@yahoo.com"
+      },
+      {
+        "sno": 3,
+        "refNo": "2830013",
+        "supervisorName": "Dr.R.Vijayabhasker",
+        "designation": "Asst.Professor",
+        "researchArea": "Power Electronics, Control Systems, Soft Computing, Power Systems",
+        "email": "kaviji04@gmail.com"
+      }
+    ],
+    "Computer Science and Engineering": [
+      {
+        "sno": 1,
+        "refNo": "2740047",
+        "supervisorName": "Dr. J.Preethi",
+        "designation": "Asst.Professor",
+        "researchArea": "Networks, Soft Computing, Medical Image Processing, Computing",
+        "email": "preethi17j@yahoo.com"
+      },
+      {
+        "sno": 2,
+        "refNo": "2840180",
+        "supervisorName": "Dr.V.Venkatesa Kumar",
+        "designation": "Asst.Professor",
+        "researchArea": "Cloud Computing, Data Mining, Big Data Analytics, Soft Computing",
+        "email": "mail2venkatesa@gmail.com"
+      },
+      {
+        "sno": 3,
+        "refNo": "2930040",
+        "supervisorName": "Dr.M.Newlin Rajkumar",
+        "designation": "Asst.Professor",
+        "researchArea": "Electrical Engineering, Computing, Computer Networks, Data Analytics",
+        "email": "drmnrkaurccbe@gmail.com"
+      }
+    ],
+    "Management_Studies": [
+      {
+        "sno": 1,
+        "refNo": "2480003",
+        "supervisorName": "Dr. S. Chandra Kumar Mangalam",
+        "designation": "Associate Professor",
+        "researchArea": "Human Resource and Marketing",
+        "email": "ckmaucbe@gmail.com"
+      },
+      {
+        "sno": 2,
+        "refNo": "2980004",
+        "supervisorName": "Dr. P. Vikkraman",
+        "designation": "Associate Professor",
+        "researchArea": "Marketing, HR, Finance",
+        "email": "dr.p.vikkraman@gmail.com"
+      },
+      {
+        "sno": 3,
+        "refNo": "2180025",
+        "supervisorName": "Dr. J. Venkatesh",
+        "designation": "Associate Professor",
+        "researchArea": "Marketing, Finance, HR, Systems and International Business",
+        "email": "drjvmba@gmail.com"
+      },
+      {
+        "sno": 4,
+        "refNo": "2180016",
+        "supervisorName": "Dr. M. Saravana Kumar",
+        "designation": "Associate Professor",
+        "researchArea": "Marketing & Finance",
+        "email": "saravanakumar.1968@gmail.com"
+      },
+      {
+        "sno": 5,
+        "refNo": "2780017",
+        "supervisorName": "Dr. M. V. Subha",
+        "designation": "Associate Professor",
+        "researchArea": "Finance",
+        "email": "subhamv@gmail.com"
+      },
+      {
+        "sno": 6,
+        "refNo": "2880060",
+        "supervisorName": "Dr. M. S. Prema Priya",
+        "designation": "Assistant Professor",
+        "researchArea": "Marketing, Systems, and Human Resources Management",
+        "email": "mspremapriya@yahoo.in"
+      },
+      {
+        "sno": 7,
+        "refNo": "2180018",
+        "supervisorName": "Dr. S. Srividhya",
+        "designation": "Assistant Professor",
+        "researchArea": "HR, Marketing, Production, General Management",
+        "email": "ssautcbe@gmail.com"
+      },
+      {
+        "sno": 8,
+        "refNo": "2180021",
+        "supervisorName": "Dr. T. Sugantha Lakshmi",
+        "designation": "Assistant Professor",
+        "researchArea": "Management Studies, System, Marketing and Operations",
+        "email": "sugi1971@rediffmail.com"
+      }
+    ],
+    "Science_and_Humanities": [
+        {
+          "sno": 1,
+          "refNo": "2170331",
+          "supervisorName": "Dr. S. Marshal Anthoni",
+          "designation": "Associate Professor",
+          "researchArea": "System and Control Theory",
+          "email": "smarshalanthoni@gmail.com"
+        },
+        {
+          "sno": 2,
+          "refNo": "2170291",
+          "supervisorName": "Dr. A. Leelamani",
+          "designation": "Assistant Professor",
+          "researchArea": "Control Theory, Partial Differential Equations",
+          "email": "aleelamani@gmail.com"
+        },
+        {
+          "sno": 3,
+          "refNo": "2870024",
+          "supervisorName": "Dr. S. N. Mahalakshmi",
+          "designation": "Assistant Professor",
+          "researchArea": "English Literature, Commonwealth Literature",
+          "email": "s.n.mahala@gmail.com"
+        },
+        {
+          "sno": 4,
+          "refNo": "2170516",
+          "supervisorName": "Dr. P. Renuka Devi",
+          "designation": "Assistant Professor",
+          "researchArea": "Plant Biotechnology, Molecular Biology",
+          "email": "prenuka@gmail.com"
+        }
+      ]  
+  },
   "phd_scholars": {
-        "tableData": [
-          {
-            "sno": 1,
-            "department": "CIVIL",
-            "phdCompletedFullTime": 0,
-            "phdCompletedPartTime": 0,
-            "phdRegisteredFullTime": 0,
-            "phdRegisteredPartTime": 0,
-            "completedFTPT": 0,
-            "registeredFTPT": 0,
-            "overallFTPT": 0
-          },
-          {
-            "sno": 2,
-            "department": "MECHANICAL",
-            "phdCompletedFullTime": 7,
-            "phdCompletedPartTime": 10,
-            "phdRegisteredFullTime": 4,
-            "phdRegisteredPartTime": 16,
-            "completedFTPT": 17,
-            "registeredFTPT": 20,
-            "overallFTPT": 37
-          },
-          {
-            "sno": 3,
-            "department": "EEE",
-            "phdCompletedFullTime": 11,
-            "phdCompletedPartTime": 17,
-            "phdRegisteredFullTime": 6,
-            "phdRegisteredPartTime": 10,
-            "completedFTPT": 28,
-            "registeredFTPT": 16,
-            "overallFTPT": 44
-          },
-          {
-            "sno": 4,
-            "department": "ECE",
-            "phdCompletedFullTime": 3,
-            "phdCompletedPartTime": 8,
-            "phdRegisteredFullTime": 0,
-            "phdRegisteredPartTime": 0,
-            "completedFTPT": 11,
-            "registeredFTPT": 10,
-            "overallFTPT": 10
-          },
-          {
-            "sno": 5,
-            "department": "CSE",
-            "phdCompletedFullTime": 0,
-            "phdCompletedPartTime": 0,
-            "phdRegisteredFullTime": 4,
-            "phdRegisteredPartTime": 6,
-            "completedFTPT": 0,
-            "registeredFTPT": 10,
-            "overallFTPT": 10
-          },
-          {
-            "sno": 6,
-            "department": "IT",
-            "phdCompletedFullTime": 1,
-            "phdCompletedPartTime": 8,
-            "phdRegisteredFullTime": 4,
-            "phdRegisteredPartTime": 7,
-            "completedFTPT": 9,
-            "registeredFTPT": 11,
-            "overallFTPT": 20
-          },
-          {
-            "sno": 7,
-            "department": "NANO TECH",
-            "phdCompletedFullTime": 4,
-            "phdCompletedPartTime": 1,
-            "phdRegisteredFullTime": 3,
-            "phdRegisteredPartTime": 0,
-            "completedFTPT": 5,
-            "registeredFTPT": 3,
-            "overallFTPT": 8
-          },
-          {
-            "sno": 8,
-            "department": "BIOTECH",
-            "phdCompletedFullTime": 5,
-            "phdCompletedPartTime": 1,
-            "phdRegisteredFullTime": 2,
-            "phdRegisteredPartTime": 2,
-            "completedFTPT": 6,
-            "registeredFTPT": 4,
-            "overallFTPT": 10
-          },
-          {
-            "sno": 9,
-            "department": "MBA",
-            "phdCompletedFullTime": 7,
-            "phdCompletedPartTime": 87,
-            "phdRegisteredFullTime": 3,
-            "phdRegisteredPartTime": 13,
-            "completedFTPT": 94,
-            "registeredFTPT": 16,
-            "overallFTPT": 110
-          },
-          {
-            "sno": 10,
-            "department": "S&H",
-            "phdCompletedFullTime": 14,
-            "phdCompletedPartTime": 11,
-            "phdRegisteredFullTime": 9,
-            "phdRegisteredPartTime": 4,
-            "completedFTPT": 25,
-            "registeredFTPT": 13,
-            "overallFTPT": 38
-          },
-          {
-            
-            "department": "Total",
-            "phdCompletedFullTime": 52,
-            "phdCompletedPartTime": 143,
-            "phdRegisteredFullTime": 35,
-            "phdRegisteredPartTime": 58,
-            "completedFTPT": 195,
-            "registeredFTPT": 93,
-            "overallFTPT": 288
-          }
-        ]
-    
-    
-    ,
-      "total": 3595
+    "faculty_wise_phd_scholars": [
+      {
+        "faculty_name": "Dr.M.Sakthivel",
+        "phd_completed": {
+          "full_time": 3,
+          "part_time": 9,
+          "total": 12
+        },
+        "phd_registered": {
+          "full_time": 3,
+          "part_time": 4,
+          "total": 7
+        }
+      },
+      {
+        "faculty_name": "Dr.K.Kanthavel",
+        "phd_completed": {
+          "full_time": 1,
+          "part_time": 0,
+          "total": 1
+        },
+        "phd_registered": {
+          "full_time": 0,
+          "part_time": 4,
+          "total": 4
+        }
+      },
+      {
+        "faculty_name": "Dr.K.Soorya Prakash",
+        "phd_completed": {
+          "full_time": 3,
+          "part_time": 1,
+          "total": 4
+        },
+        "phd_registered": {
+          "full_time": 1,
+          "part_time": 3,
+          "total": 4
+        }
+      },
+      {
+        "faculty_name": "Dr.R.Sathiya Moorthy",
+        "phd_completed": {
+          "full_time": 0,
+          "part_time": 0,
+          "total": 0
+        },
+        "phd_registered": {
+          "full_time": 0,
+          "part_time": 5,
+          "total": 5
+        }
+      },
+      {
+        "faculty_name": "Dr.S.N.Deepa",
+        "phd_completed": {
+          "full_time": 10,
+          "part_time": 8,
+          "total": 18
+        },
+        "phd_registered": {
+          "full_time": 3,
+          "part_time": 4,
+          "total": 7
+        }
+      },
+      {
+        "faculty_name": "Dr.T.Aruldoss Albert Victoire",
+        "phd_completed": {
+          "full_time": 1,
+          "part_time": 9,
+          "total": 10
+        },
+        "phd_registered": {
+          "full_time": 0,
+          "part_time": 0,
+          "total": 0
+        }
+      },
+      {
+        "faculty_name": "Dr.R.Sureshkumar",
+        "phd_completed": {
+          "full_time": 0,
+          "part_time": 0,
+          "total": 0
+        },
+        "phd_registered": {
+          "full_time": 1,
+          "part_time": 3,
+          "total": 4
+        }
+      },
+      {
+        "faculty_name": "Dr.M.Yuvaraju",
+        "phd_completed": {
+          "full_time": 0,
+          "part_time": 0,
+          "total": 0
+        },
+        "phd_registered": {
+          "full_time": 2,
+          "part_time": 3,
+          "total": 5
+        }
+      },
+      {
+        "faculty_name": "Dr.V.R.Vijaykumar",
+        "phd_completed": {
+          "full_time": 1,
+          "part_time": 6,
+          "total": 7
+        },
+        "phd_registered": {
+          "full_time": 0,
+          "part_time": 0,
+          "total": 0
+        }
+      },
+      {
+        "faculty_name": "Dr.R.Vijayabhasker",
+        "phd_completed": {
+          "full_time": 1,
+          "part_time": 1,
+          "total": 2
+        },
+        "phd_registered": {
+          "full_time": 0,
+          "part_time": 0,
+          "total": 0
+        }
+      },
+      {
+        "faculty_name": "Dr.V.Bhanumathi",
+        "phd_completed": {
+          "full_time": 1,
+          "part_time": 1,
+          "total": 2
+        },
+        "phd_registered": {
+          "full_time": 0,
+          "part_time": 0,
+          "total": 0
+        }
+      },
+      {
+        "faculty_name": "Dr.J.Preethi",
+        "phd_completed": {
+          "full_time": 0,
+          "part_time": 0,
+          "total": 0
+        },
+        "phd_registered": {
+          "full_time": 2,
+          "part_time": 3,
+          "total": 5
+        }
+      },
+      {
+        "faculty_name": "Dr.M.Newlin Rajkumar",
+        "phd_completed": {
+          "full_time": 0,
+          "part_time": 0,
+          "total": 0
+        },
+        "phd_registered": {
+          "full_time": 2,
+          "part_time": 3,
+          "total": 5
+        }
+      },
+      {
+        "faculty_name": "Dr.P.Marikkannu",
+        "phd_completed": {
+          "full_time": 0,
+          "part_time": 4,
+          "total": 4
+        },
+        "phd_registered": {
+          "full_time": 3,
+          "part_time": 1,
+          "total": 4
+        }
+      },
+      {
+        "faculty_name": "Dr.P.Ganesh Kumar",
+        "phd_completed": {
+          "full_time": 1,
+          "part_time": 4,
+          "total": 5
+        },
+        "phd_registered": {
+          "full_time": 0,
+          "part_time": 5,
+          "total": 5
+        }
+      },
+      {
+        "faculty_name": "Dr. S.V. Manisekaran",
+        "phd_completed": {
+          "full_time": 0,
+          "part_time": 0,
+          "total": 0
+        },
+        "phd_registered": {
+          "full_time": 1,
+          "part_time": 1,
+          "total": 2
+        }
+      },
+      {
+        "faculty_name": "Dr.K.Rajasekar",
+        "phd_completed": {
+          "full_time": 3,
+          "part_time": 0,
+          "total": 3
+        },
+        "phd_registered": {
+          "full_time": 2,
+          "part_time": 0,
+          "total": 2
+        }
+      },
+      {
+        "faculty_name": "Dr Sardar Basha",
+        "phd_completed": {
+          "full_time": 1,
+          "part_time": 1,
+          "total": 2
+        },
+        "phd_registered": {
+          "full_time": 1,
+          "part_time": 0,
+          "total": 1
+        }
+      },
+      {
+        "faculty_name": "Dr.P.Renuka Devi",
+        "phd_completed": {
+          "full_time": 5,
+          "part_time": 1,
+          "total": 6
+        },
+        "phd_registered": {
+          "full_time": 2,
+          "part_time": 2,
+          "total": 4
+        }
+      },
+      {
+        "faculty_name": "Dr.S.Chandrakumarmangalam",
+        "phd_completed": {
+          "full_time": 1,
+          "part_time": 9,
+          "total": 10
+        },
+        "phd_registered": {
+          "full_time": 0,
+          "part_time": 1,
+          "total": 1
+        }
+      },
+      {
+        "faculty_name": "Dr.M.Saravanakumar",
+        "phd_completed": {
+          "full_time": 1,
+          "part_time": 16,
+          "total": 17
+        },
+        "phd_registered": {
+          "full_time": 0,
+          "part_time": 4,
+          "total": 4
+        }
+      },
+      {
+        "faculty_name": "Dr.J.Venkateash",
+        "phd_completed": {
+          "full_time": 0,
+          "part_time": 16,
+          "total": 16
+        },
+        "phd_registered": {
+          "full_time": 0,
+          "part_time": 1,
+          "total": 1
+        }
+      },
+      {
+        "faculty_name": "Dr.P.Vikkraman",
+        "phd_completed": {
+          "full_time": 0,
+          "part_time": 20,
+          "total": 20
+        },
+        "phd_registered": {
+          "full_time": 0,
+          "part_time": 1,
+          "total": 1
+        }
+      },
+      {
+        "faculty_name": "Dr.M.S.Premapriya",
+        "phd_completed": {
+          "full_time": 0,
+          "part_time": 4,
+          "total": 4
+        },
+        "phd_registered": {
+          "full_time": 0,
+          "part_time": 0,
+          "total": 0
+        }
+      },
+      {
+        "faculty_name": "Dr.D.Sivakumaran",
+        "phd_completed": {
+          "full_time": 0,
+          "part_time": 1,
+          "total": 1
+        },
+        "phd_registered": {
+          "full_time": 0,
+          "part_time": 1,
+          "total": 1
+        }
+      },
+      {
+        "faculty_name": "Dr.S.Velmurugan",
+        "phd_completed": {
+          "full_time": 0,
+          "part_time": 1,
+          "total": 1
+        },
+        "phd_registered": {
+          "full_time": 0,
+          "part_time": 2,
+          "total": 2
+        }
+      }
+    ],
+    "department_wise_phd_scholars": [
+      {
+        "department_name": "Department of Computer Science and Engineering",
+        "phd_completed": {
+          "full_time": 7,
+          "part_time": 6,
+          "total": 13
+        },
+        "phd_registered": {
+          "full_time": 8,
+          "part_time": 5,
+          "total": 13
+        }
+      },
+      {
+        "department_name": "Department of Electronics and Communication Engineering",
+        "phd_completed": {
+          "full_time": 2,
+          "part_time": 6,
+          "total": 8
+        },
+        "phd_registered": {
+          "full_time": 2,
+          "part_time": 4,
+          "total": 6
+        }
+      },
+      {
+        "department_name": "Department of Electrical and Electronics Engineering",
+        "phd_completed": {
+          "full_time": 3,
+          "part_time": 9,
+          "total": 12
+        },
+        "phd_registered": {
+          "full_time": 3,
+          "part_time": 4,
+          "total": 7
+        }
+      },
+      {
+        "department_name": "Department of Mechanical Engineering",
+        "phd_completed": {
+          "full_time": 0,
+          "part_time": 6,
+          "total": 6
+        },
+        "phd_registered": {
+          "full_time": 0,
+          "part_time": 4,
+          "total": 4
+        }
+      },
+      {
+        "department_name": "Department of Artificial Intelligence and Data Science",
+        "phd_completed": {
+          "full_time": 0,
+          "part_time": 4,
+          "total": 4
+        },
+        "phd_registered": {
+          "full_time": 0,
+          "part_time": 4,
+          "total": 4
+        }
+      }
+    ]
   },
   "pg_projects": {
     "departmentwise": {
@@ -193,31 +682,21 @@
       "supervisor_name": "Dr. S. Marshal Anthoni",
       "scholar_name": "S. Mohanapriya",
       "full_time_or_part_time": "Full Time",
-      "batch": "JAN-15",
-      "funding_agency": "DST(Kiran Division)",
-      "funding_scheme": "Women Scientist Scheme A (WOS-A)",
-      "stipend_amount": "40,000 /-(Per month)",
-      "stipend_duration": "3 years"
-    },
-    {
-      "supervisor_name": "Dr. A. Leelamani",
-      "scholar_name": "Susana Ramya",
-      "full_time_or_part_time": "Full Time",
-      "batch": "Jul-15",
-      "funding_agency": "DST(Kiran Division)",
-      "funding_scheme": "Women Scientist Scheme A (WOS-A)",
-      "stipend_amount": "40,000 /-(Per month)",
-      "stipend_duration": "3 years"
+      "batch": "July-22",
+      "funding_agency": "Ministry of Science and Technology",
+      "funding_scheme": "DST-INSPIRE",
+      "stipend_amount": "35000 /-(Per month)",
+      "stipend_duration": "5 years"
     },
     {
       "supervisor_name": "Dr. S. Marshal Anthoni",
-      "scholar_name": "V.N. Deiva Mani",
+      "scholar_name": "D. Ashok",
       "full_time_or_part_time": "Full Time",
-      "batch": "Mar-19",
-      "funding_agency": "UGC - MHRO",
-      "funding_scheme": "DSKPDF",
-      "stipend_amount": "43,400 /-(Per month)",
-      "stipend_duration": "3 years"
+      "batch": "July-22",
+      "funding_agency": "Ministry of Science and Technology",
+      "funding_scheme": "DST-INSPIRE",
+      "stipend_amount": "35000 /-(Per month)",
+      "stipend_duration": "5 years"
     }
   ]
 }
