@@ -29,21 +29,21 @@
         </div>
 
         <!-- Content -->
-        <div class="w-full px-10 font-serif">
+        <div class="w-full px-10 font-serif min-h-[400px] max-h-[450px]  ">
           <div v-if="currentSection === 'Description'">
-            <h2 class="text-2xl md:text-4xl font-bold mb-4 mt-5">Description</h2>
+            <h2 class="text-2xl md:text-4xl text-black font-bold mb-4 mt-5">Description</h2>
             <p class="text-base md:text-lg mb-8 text-black">{{ data.description }}</p>
           </div>
 
           <div v-else-if="currentSection === 'Supervisors'">
-            <h2 class="text-2xl md:text-4xl font-bold mb-4 mt-5">Supervisors</h2>
-            <div v-for="(supervisors, department) in data.supervisors" :key="department" class="mb-8">
-              <h3 @click="openModal(department)" class="text-xl md:text-2xl font-semibold mb-4 cursor-pointer text-blue-500 hover:underline">{{ department }}</h3>
+            <h2 class="text-2xl md:text-4xl text-black font-bold mb-4 mt-5">Supervisors</h2>
+            <div v-for="(supervisors, department) in data.supervisors" :key="department" class="mb-5">
+              <h3 @click="openModal(department)" class="text-xl md:text-xl font-semibold mb-4 cursor-pointer text-blue-500 hover:underline">{{ department }}</h3>
             </div>
           </div>
 
           <div v-else-if="currentSection === 'PhD Scholars'">
-            <h2 class="text-xl font-bold mb-4 p-2 bg-gradient-to-r from-blue-500 to-cyan-300">PhD Scholars</h2>
+            <h2 class="text-4xl font-bold mb-4 p-2 text-black">PhD Scholars</h2>
             
             <!-- Faculty-Wise PhD Scholars -->
             <div class="faculty-wise-section mb-8 overflow-x-auto">
@@ -105,7 +105,7 @@
           </div>
 
           <div v-else-if="currentSection === 'PG Projects'">
-            <h2 class="text-2xl md:text-4xl font-bold mb-4 mt-5">PG Projects</h2>
+            <h2 class="text-2xl md:text-4xl text-black font-bold mb-4 mt-5">PG Projects</h2>
             <p class="text-base md:text-xl">Total PG Projects: {{ data.pg_projects.total }}</p>
             <table class="table-auto w-full shadow-md rounded-md mt-4 text-sm md:text-base">
               <thead class="bg-yellow-400 text-[#23120b]">
@@ -124,7 +124,7 @@
           </div>
 
           <div v-else-if="currentSection === 'Stipend Details'">
-            <h2 class="text-2xl md:text-4xl font-bold mb-4 mt-5">Stipend Details</h2>
+            <h2 class="text-2xl md:text-4xl text-black font-bold mb-4 mt-5">Stipend Details</h2>
             <div class="overflow-x-auto">
               <table class="table-auto w-full bg-white shadow-md rounded-md text-sm md:text-base">
                 <thead class="bg-yellow-400 text-[#23120b]">

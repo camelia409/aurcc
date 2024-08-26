@@ -11,7 +11,7 @@
     <!-- Details section -->
     <section class="container mx-auto py-8 px-4 md:px-9">
       <div class="bg-gradient-to-r from-[#21209c] to-blue-600 rounded-lg shadow-lg overflow-hidden">
-        <h2 class="text-3xl text-center bg-yellow-300 text-blue-600 p-4 font-bold rounded-t-lg">
+        <h2 class="text-3xl text-center bg-yellow-300 text-blue-900 p-4 font-semibold rounded-t-lg">
           {{ details.description }}
         </h2>
         <div class="p-6">

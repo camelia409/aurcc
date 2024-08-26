@@ -25,19 +25,19 @@
 		  </div>
   
 		  <!-- Tab Content -->
-		  <div class="w-full px-10  font-serif">
+		  <div class="w-full px-10  font-serif min-h-[400px] max-h-[450px] ">
 			<div v-if="currentSection === 'about'">
-			  <h2 class="text-2xl md:text-4xl font-bold text-blue-800 mb-4">About the Estate office</h2>
+			  <h2 class="text-2xl md:text-4xl font-bold text-black mb-4">About the Estate office</h2>
 			  <p class="text-base md:text-lg">{{ data.description }}</p>
 			</div>
 			<div v-if="currentSection === 'services'">
-			  <h2 class="text-2xl md:text-4xl font-bold text-blue-800 mb-4">Services</h2>
+			  <h2 class="text-2xl md:text-4xl font-bold text-black mb-4">Services</h2>
 			  <ul class="list-disc pl-5">
 				<li v-for="service in data.services" :key="service" class="text-base md:text-lg">{{ service }}</li>
 			  </ul>
 			</div>
 			<div v-if="currentSection === 'members'">
-			  <h2 class="text-2xl md:text-4xl font-bold text-blue-800 mb-4">Members</h2>
+			  <h2 class="text-2xl md:text-4xl font-bold text-black mb-4">Members</h2>
 			  <ul class="list-disc pl-5">
 				<li v-for="bearer in data.office_bearers" :key="bearer.name" class="text-base md:text-lg">
 				  <strong>{{ bearer.position }}:</strong> {{ bearer.name }}
@@ -45,7 +45,7 @@
 			  </ul>
 			</div>
 			<div v-if="currentSection === 'contact'">
-			  <h2 class="text-2xl md:text-4xl font-bold text-blue-800 mb-4">Contact</h2>
+			  <h2 class="text-2xl md:text-4xl font-bold text-black mb-4">Contact</h2>
 			  <p class="text-base md:text-lg">{{ data.contact_us }}</p>
 			</div>
 		  </div>

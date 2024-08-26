@@ -14,7 +14,7 @@
         <!-- Vertical Tabs -->
         <div class="flex-shrink-0 w-full h-max md:w-64 bg-gradient-to-r from-[#21209c] to-blue-600 rounded-lg shadow-lg p-4 mb-4 md:mb-0 md:mr-4">
           <div class="relative p-4 rounded-lg ">
-            <h2 class="text-2xl font-serif text-center text-white font-semibold">Sections</h2>
+            <h2 class="text-2xl font-serif text-center text-white font-bold">Sections</h2>
           </div>
           <div class="space-y-2 font-serif">
             <button @click="currentSection = 'overview'" :class="{'bg-yellow-400 text-[#23120b]': currentSection === 'overview', 'bg-gray-100': currentSection !== 'overview'}" class="w-full py-2 px-4 rounded-md font-semibold hover:bg-yellow-400 hover:text-[#23120b]">Overview</button>
@@ -26,15 +26,15 @@
         <!-- Tab Content -->
         <div class="w-full px-10 font-serif min-h-[400px] max-h-[400px] overflow-y-auto">
           <div v-if="currentSection === 'overview'">
-            <h2 class="text-2xl md:text-4xl font-bold text-blue-800 mb-4">Overview</h2>
+            <h2 class="text-2xl md:text-4xl font-bold text-black mb-4">Overview</h2>
             <p class="text-base md:text-lg">{{ data.description.Overview }}</p>
           </div>
           <div v-if="currentSection === 'courses_offered'">
-            <h2 class="text-2xl md:text-4xl font-bold text-blue-800 mb-4">Courses Offered</h2>
+            <h2 class="text-2xl md:text-4xl font-bold text-black mb-4">Courses Offered</h2>
             <p class="text-base md:text-lg">{{ data.courses_offered }}</p>
           </div>
           <div v-if="currentSection === 'eligibility_criteria'">
-            <h2 class="text-2xl md:text-4xl font-bold text-blue-800 mb-4">Eligibility Criteria</h2>
+            <h2 class="text-2xl md:text-4xl font-bold text-black mb-4">Eligibility Criteria</h2>
             <ul class="list-disc pl-5">
               <li v-for="(criteria, program) in data.eligibility_criteria" :key="program" class="text-base md:text-lg">
                 <strong>{{ program }}:</strong> {{ criteria }}
@@ -42,7 +42,7 @@
             </ul>
           </div>
           <div v-if="currentSection === 'contact_us'">
-            <h2 class="text-2xl md:text-4xl font-bold text-blue-800 mb-4">Contact Us</h2>
+            <h2 class="text-2xl md:text-4xl font-bold text-black mb-4">Contact Us</h2>
             <p class="text-base md:text-lg">{{ data.contact_us['Admission Co-ordinator'] }}</p>
           </div>
         </div>

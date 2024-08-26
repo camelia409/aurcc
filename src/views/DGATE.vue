@@ -14,24 +14,24 @@
         <!-- Vertical Tabs -->
         <div class="flex-shrink-0 w-full h-max md:w-64 bg-gradient-to-r from-[#21209c] to-blue-600 rounded-lg shadow-lg p-4 mb-4 md:mb-0 md:mr-4">
           <div class="relative p-4 rounded-lg">
-            <h2 class="text-xl md:text-2xl text-white font-bold text-center">Sections</h2>
+            <h2 class="text-xl md:text-2xl font-serif text-white font-bold text-center">Sections</h2>
           </div>
-          <div class="space-y-4">
-            <button @click="activeTab = 'activities'" :class="{'bg-yellow-400': activeTab === 'activities'}" class="w-full py-2 px-4 bg-white text-gray-800 rounded-md font-semibold hover:bg-gray-200">Activities</button>
-            <button @click="activeTab = 'projects'" :class="{'bg-yellow-400': activeTab === 'projects'}" class="w-full py-2 px-4 bg-white text-gray-800 rounded-md font-semibold hover:bg-gray-200">Projects</button>
-            <button @click="activeTab = 'hackathon'" :class="{'bg-yellow-400': activeTab === 'hackathon'}" class="w-full py-2 px-4 bg-white text-gray-800 rounded-md font-semibold hover:bg-gray-200">Hackathon Participation</button>
-            <button @click="activeTab = 'staff'" :class="{'bg-yellow-400': activeTab === 'staff'}" class="w-full py-2 px-4 bg-white text-gray-800 rounded-md font-semibold hover:bg-gray-200">Staff Members</button>
+          <div class="space-y-2 font-serif">
+            <button @click="activeTab = 'projects'" :class="{'bg-yellow-400': activeTab === 'projects'}" class="w-full py-2 px-4 bg-white text-gray-800 rounded-md font-semibold hover:bg-yellow-400">Projects</button>
+            <button @click="activeTab = 'activities'" :class="{'bg-yellow-400': activeTab === 'activities'}" class="w-full py-2 px-4 bg-white text-gray-800 rounded-md font-semibold hover:bg-yellow-400">Activities</button>
+            <button @click="activeTab = 'hackathon'" :class="{'bg-yellow-400': activeTab === 'hackathon'}" class="w-full py-2 px-4 bg-white text-gray-800 rounded-md font-semibold hover:bg-yellow-400">Hackathon Participation</button>
+            <button @click="activeTab = 'staff'" :class="{'bg-yellow-400': activeTab === 'staff'}" class="w-full py-2 px-4 bg-white text-gray-800 rounded-md font-semibold hover:bg-yellow-400">Staff Members</button>
           </div>
         </div>
 
         <!-- Tab Content -->
-        <div class="w-full px-10 font-serif min-h-[400px] max-h-[400px] overflow-y-auto relative -z-10 ">
+        <div class="w-full px-10 font-serif min-h-[400px] max-h-[450px]  ">
           <!-- Activities Tab -->
           <div v-if="activeTab === 'activities'" >
-            <h3 class="text-2xl md:text-3xl text-white font-bold mb-4">Activities</h3>
+            <h3 class="text-2xl md:text-3xl text-black font-bold mb-4">Activities</h3>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
-                <h4 class="text-lg font-semibold mb-2">Curricular Activities</h4>
+                <h4 class="text-xl font-semibold mb-2">Curricular Activities</h4>
                 <ul class="list-disc pl-4">
                   <li v-for="activity in data.description.activities.curricular_activities" :key="activity.name">
                     <div class="badge badge-primary mr-2">{{ activity.date }}</div>
@@ -69,7 +69,7 @@
 
           <!-- Projects Tab -->
           <div v-if="activeTab === 'projects'" >
-            <h3 class="text-2xl md:text-3xl text-white font-bold mb-4">Projects</h3>
+            <h3 class="text-2xl md:text-3xl text-black font-bold mb-4">Projects</h3>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
                 <h4 class="text-lg font-semibold mb-2">Completed Projects</h4>
@@ -93,7 +93,7 @@
 
           <!-- Hackathon Participation Tab -->
           <div v-if="activeTab === 'hackathon'" >
-            <h3 class="text-2xl md:text-3xl text-white font-bold mb-4">Hackathon Participation</h3>
+            <h3 class="text-2xl md:text-3xl text-black font-bold mb-4">Hackathon Participation</h3>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div v-for="participation in data.description.participation_in_hackathon" :key="participation.project" class="bg-white shadow-md rounded-md p-4">
                 <h4 class="text-lg font-semibold">{{ participation.project }}</h4>
@@ -104,7 +104,7 @@
 
           <!-- Staff Members Tab -->
           <div v-if="activeTab === 'staff'" >
-            <h3 class="text-2xl md:text-3xl text-white font-bold mb-4">Staff Members</h3>
+            <h3 class="text-2xl md:text-3xl text-black font-bold mb-4">Staff Members</h3>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div v-for="staff in data.staff_members" :key="staff.email_id" class="bg-white shadow-md rounded-md p-4">
                 <h4 class="text-lg font-semibold">{{ staff.name }}</h4>
