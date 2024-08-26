@@ -26,17 +26,17 @@
 	  <!-- Tab Content -->
 		<div class="w-full px-10 font-serif min-h-[400px] max-h-[400px] overflow-y-auto">
 		<div v-if="currentSection === 'about'">
-			<h2 class="text-2xl md:text-4xl font-bold text-blue-800 mb-4">About the Exam Cell</h2>
+			<h2 class="text-2xl md:text-4xl font-bold text-black mb-4">About the Exam Cell</h2>
 			<p class="text-base md:text-lg">{{ data.description }}</p>
 		</div>
 		<div v-if="currentSection === 'services'">
-			<h2 class="text-2xl md:text-4xl font-bold text-blue-800 mb-4">Services</h2>
+			<h2 class="text-2xl md:text-4xl font-bold text-black mb-4">Services</h2>
 			<ul class="list-disc pl-5">
 			<li v-for="service in data.services" :key="service" class="text-base md:text-lg">{{ service }}</li>
 			</ul>
 		</div>
 		<div v-if="currentSection === 'office_bearers'">
-			<h2 class="text-2xl md:text-4xl font-bold text-blue-800 mb-4">Office Bearers</h2>
+			<h2 class="text-2xl md:text-4xl font-bold text-black mb-4">Office Bearers</h2>
 			<ul class="list-disc pl-5">
 			<li v-for="bearer in data.office_bearers" :key="bearer.name" class="text-base md:text-lg">
 				<strong>{{ bearer.position }}:</strong> {{ bearer.name }}

@@ -4,7 +4,7 @@
     <section class="bg-cover bg-center relative -z-10" :style="'background-image: url(http://192.168.72.231:5173/src/assets/dgate-hero.jpg)'">
       <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-t from-blue-900 via-transparent to-blue-900 opacity-70"></div>
       <div class="container mx-auto py-10 text-center relative z-10 px-4">
-        <h1 class="text-4xl font-extrabold text-balck drop-shadow-lg font-serif">{{ paceData.name }}</h1>
+        <h1 class="text-4xl font-extrabold text-black drop-shadow-lg font-serif">{{ paceData.name }}</h1>
       </div>
     </section>
       
@@ -26,7 +26,7 @@
         <!-- Tab Content -->
         <div class="w-full px-10 font-serif min-h-[400px] max-h-[400px] overflow-y-auto">
           <div v-if="currentSection === 'coordinators'">
-            <h2 class="text-2xl md:text-4xl font-bold text-blue-800 mb-4">Coordinators</h2>
+            <h2 class="text-2xl md:text-4xl font-bold text-black mb-4">Coordinators</h2>
             <div class="space-y-4">
               <div v-for="(coordinator, index) in paceData.coordinators" :key="index" class="bg-white rounded-lg shadow-lg p-6">
                 <p class="text-xl font-semibold"><strong>Name:</strong> {{ coordinator.name }}</p>
@@ -35,13 +35,13 @@
             </div>
           </div>
           <div v-if="currentSection === 'support_staff'">
-            <h2 class="text-2xl md:text-4xl font-bold text-blue-800 mb-4">Support Staff</h2>
+            <h2 class="text-2xl md:text-4xl font-bold text-black mb-4">Support Staff</h2>
             <ul class="list-disc pl-5 text-base md:text-lg text-gray-900">
               <li v-for="(staff, index) in paceData.support_staff" :key="index">{{ staff }}</li>
             </ul>
           </div>
           <div v-if="currentSection === 'student_volunteers'">
-            <h2 class="text-2xl md:text-4xl font-bold text-blue-800 mb-4">Student Volunteers</h2>
+            <h2 class="text-2xl md:text-4xl font-bold text-black mb-4">Student Volunteers</h2>
             <ul class="list-disc pl-5 text-base md:text-lg text-gray-900">
               <li v-for="(volunteer, index) in paceData.student_volunteers" :key="index">{{ volunteer }}</li>
             </ul>
@@ -106,19 +106,6 @@ button:focus {
 }
 
 /* Learn More Button Styling */
-button {
-  display: inline-block;
-  border: 2px solid transparent;
-  padding: 0.5rem 1rem;
-  text-align: center;
-}
-
-button:hover {
-  background-color: #2563eb; /* Tailwind blue-600 */
-  color: white;
-  transform: translateY(-2px);
-  transition: all 0.3s ease-in-out;
-}
 
 /* Responsive Styles */
 @media (max-width: 768px) {

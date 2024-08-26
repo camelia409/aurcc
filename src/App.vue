@@ -7,7 +7,7 @@ import { RouterLink, RouterView } from 'vue-router';
   <header class="bg-[#21209c] text-white">
     <div class=" bg-[#aae0ed] text-black">
       <div  class="container mx-auto px-4 text-sm" style="font-family: 'Clash Grotesk', sans-serif;">
-        <div class="p-2 flex items-center justify-between">
+        <div class="p-2 flex items-center justify-between font-serif">
           <strong class="text-xl">Counselling Code: <strong>2025</strong> </strong>
           <ul class="flex items-center justify-between">
             <li class="relative group">
@@ -43,7 +43,7 @@ import { RouterLink, RouterView } from 'vue-router';
             <span class="hidden lg:inline text-2xl font-bold font-serif"> REGIONAL CAMPUS COIMBATORE</span>
           </RouterLink>
         </div>
-        <div class="hidden lg:flex">
+        <div class="hidden lg:flex font-serif">
           <ul class="flex space-x-2">
             <li class="relative group">
               <button class="px-4 py-2  hover:bg-blue-700 focus:outline-none focus:bg-blue-700 border-b-4 border-[#21209c] hover:border-[#fdb827]">
@@ -128,7 +128,7 @@ import { RouterLink, RouterView } from 'vue-router';
   </header>
   <RouterView style="font-family: 'Clash Grotesk', sans-serif;" />
 
-  <footer class="bg-gradient-to-r from-blue-900 to-indigo-900 text-white py-12">
+  <footer class="bg-gradient-to-r from-blue-900 to-indigo-900 text-white py-12 font-serif">
   <div class="container mx-auto px-4">
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8 divide-y md:divide-y-0 md:divide-x divide-blue-700">
       <div class="space-y-4 pb-6 md:pb-0 md:pr-6">

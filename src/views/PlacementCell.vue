@@ -29,27 +29,27 @@
         <!-- Content -->
         <div class="w-full px-10 font-serif ">
           <div v-if="currentSection === 'Description'">
-            <h2 class="text-2xl md:text-4xl font-bold mb-4 mt-5">Description</h2>
+            <h2 class="text-2xl md:text-4xl text-black font-bold mb-4 mt-5">Description</h2>
             <p class="text-base md:text-lg mb-8 text-black">{{ data.description }}</p>
           </div>
           <div v-else-if="currentSection === 'Recruitment Process'">
-            <h2 class="text-2xl md:text-4xl font-bold mb-4 mt-5">Recruitment Process</h2>
+            <h2 class="text-2xl md:text-4xl text-black font-bold mb-4 mt-5">Recruitment Process</h2>
             <p class="text-base md:text-lg mb-8 text-black">{{ data.recruitment }}</p>
           </div>
           <div v-else-if="currentSection === 'CUIC'">
-            <h2 class="text-2xl md:text-4xl font-bold mb-4 mt-5">CUIC</h2>
+            <h2 class="text-2xl md:text-4xl text-black font-bold mb-4 mt-5">CUIC</h2>
             <p class="text-base md:text-lg mb-8 text-black">{{ data.cuic }}</p>
           </div>
           <div v-else-if="currentSection === 'Our Recruiters'">
-            <h2 class="text-2xl md:text-4xl font-bold mb-4 mt-5">Our Recruiters</h2>
+            <h2 class="text-2xl md:text-4xl text-black font-bold mb-4 mt-5">Our Recruiters</h2>
             <iframe :src="recruitersPDF" class="w-full h-[700px] rounded-md shadow-lg" frameborder="0"></iframe>
           </div>
           <div v-else-if="currentSection === 'Placed Students'">
-            <h2 class="text-2xl md:text-4xl font-bold mb-4 mt-5">Placed Students</h2>
+            <h2 class="text-2xl md:text-4xl text-black font-bold mb-4 mt-5">Placed Students</h2>
             <img :src="placedStudentsImage" alt="Placed Students" class="w-full h-auto rounded-md shadow-lg" />
           </div>
           <div v-else-if="currentSection === 'Staff Members'">
-            <h2 class="text-2xl md:text-4xl font-bold mb-4 mt-5">Staff Members</h2>
+            <h2 class="text-2xl md:text-4xl text-black font-bold mb-4 mt-5">Staff Members</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
               <div v-for="member in data.staff_members" :key="member.emailid" class="bg-gray-200 shadow-md text-xl rounded-md p-4">
                 <h3 class="font-semibold">{{ member.name }}</h3>

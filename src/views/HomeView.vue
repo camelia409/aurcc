@@ -1,6 +1,6 @@
 <template>
   <div class="">
-    <main>
+    <main class="font-serif">
       <section class="hero min-h-screen overflow-hidden relative -z-10 ">
         <div class="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div>
         <img src="/src/assets/Drone_shot.jpg" alt="">
@@ -26,12 +26,12 @@
       </section>
 
       <!-- About Section -->
-      <section id="about" class="py-20 bg-gradient-to-b from-white to-gray-100">
+      <section id="about" class="py-20 bg-gradient-to-b from-white to-gray-100 ">
         <div class="container mx-auto px-4">
           
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch" >
             <div class="flex flex-col ">
-              <h2 class="text-5xl font-bold text-center mb-12 text-gray-800 hover-underline" style="font-family: 'Clash Grotesk', sans-serif;" >ABOUT OUR CAMPUS</h2>
+              <h2 class="text-5xl font-bold text-center mb-12 text-gray-800 hover-underline" style="font-serif;" >ABOUT OUR CAMPUS</h2>
               <div class="space-y-6">
                 <p class="text-lg text-gray-700 leading-relaxed hover-brighten">
                   The Regional Campus Coimbatore of Anna University, established in 2012, offers world-class education in Engineering and Technology. Nestled in a serene environment away from the city's hustle, our campus boasts state-of-the-art infrastructure and a team of highly qualified faculty members. As usual this is the text for this sub para, i don’t know why thiz suddenly looks a shit lot more shorter than it used be, do you feel the same way as me The Department of Computer Science and Engineering aims at producing technically competent professionals who can excel in today’s age of technology. Recognizing its role in engineering education, generation, and dissemination, the department is equipped with state-of-the-art facilities and relevant technologies. Computer Science or Computing Science is the scientific and mathematical approach to computation, specifically referring to the design of computing machines and processes.
@@ -41,9 +41,9 @@
                 </p>
               </div>
             </div>
-            <div class="grid grid-cols-1 gap-6" style="font-family: 'Clash Grotesk', sans-serif;">
+            <div class="grid grid-cols-1 gap-6" style="font-serif;">
               <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-duration-300">
-                <h3 class="text-3xl font-semibold bg-gradient-to-r from-[#21209c] to-indigo-500 text-white p-4 hover:brightness-110 transition-all duration-300" style="font-family: 'Clash Grotesk', sans-serif;">
+                <h3 class="text-3xl font-semibold bg-gradient-to-r from-[#21209c] to-indigo-500 text-white p-4 hover:brightness-110 transition-all duration-300" style="font-serif;">
                   News / Admissions
                 </h3>
                 <div class="overflow-hidden relative" style="max-height: 300px;">
@@ -69,7 +69,7 @@
                 </div>
               </div>
               <div class="bg-white rounded-lg shadow-lg overflow-hidden hover-shadow">
-                <h3 class="text-2xl font-semibold bg-gradient-to-r from-[#21209c] to-indigo-500 text-white p-4 hover-brighten" style="font-family: 'Clash Grotesk', sans-serif;">Events / Scholarships</h3>
+                <h3 class="text-2xl font-semibold bg-gradient-to-r from-[#21209c] to-indigo-500 text-white p-4 hover-brighten" style="font-serif;">Events / Scholarships</h3>
                 <div class="overflow-hidden relative" style="max-height: 300px;">
                   <ul class="events-scroll w-full animated-list">
                     <li v-for="(str, index) in events" :key="index" class="py-3 px-4 border-b hover-highlight ">{{str}}</li>
@@ -247,7 +247,7 @@
         </div>
       </section>
 
-      <div class="grid grid-cols-4 gap-4 bg-[#0b0b43] text-white p-14 " style="font-family: 'Clash Grotesk', sans-serif;" >
+      <div class="grid grid-cols-4 gap-4 bg-[#0b0b43] text-white p-14 " style="font-serif;" >
         <h2 class="text-4xl font-bold text-center col-span-4 mb-12">Quick Link's</h2>
           <div class="">
             <p class="text-2xl font-bold text-yellow-500 hover:opacity-75 hover:cursor-pointer bg-blue-950 p-5 rounded-md">AICTE & MOE CELL</p>
