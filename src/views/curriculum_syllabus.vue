@@ -1,11 +1,13 @@
 <template>
     <div class="flex-grow">
       <!-- Hero section -->
-      <section class="bg-cover bg-center relative -z-10" :style="'background-image: url(http://192.168.72.231:5173/src/assets/student_affairs-hero.jpg)'">
+      <section 
+      class="hero-section bg-cover bg-center relative -z-10" 
+      :style="{ backgroundImage: `url(${backgroundImage})` }">
         <div class="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div>
         <div class="container mx-auto py-16 text-white p-9 relative z-10">
-          <h1 class="text-4xl font-bold mb-4">Curriculum & Syllabus</h1>
-          <p class="text-xl mb-8">Explore the detailed curriculum and syllabus for our undergraduate and postgraduate programs.</p>
+          <h1 class="text-4xl font-serif font-bold mb-4">Curriculum & Syllabus</h1>
+          <p class="text-xl font-serif mb-8">Explore the detailed curriculum and syllabus for our undergraduate and postgraduate programs.</p>
         </div>
       </section>
   
@@ -14,7 +16,7 @@
         <!-- UG Programmes section -->
         <section class="py-8 p-4">
           <div class="bg-white rounded-lg shadow-md">
-            <h2 class="text-3xl text-center font-bold p-3 rounded-lg bg-gradient-to-r from-blue-500 to-cyan-300">UG Programmes</h2>
+            <h2 class="text-3xl text-center font-serif font-bold p-3 rounded-lg bg-gradient-to-r from-blue-500 to-cyan-300">UG Programmes</h2>
             <table class="min-w-full divide-y divide-gray-200">
               <thead class="bg-gray-50">
                 <tr>
@@ -37,7 +39,7 @@
         <!-- PG Programmes section -->
         <section class="py-8 p-4">
           <div class="bg-white rounded-lg shadow-md">
-            <h2 class="text-3xl text-center font-bold p-3 rounded-lg bg-gradient-to-r from-blue-500 to-cyan-300">PG Programmes</h2>
+            <h2 class="text-3xl text-center font-serif font-bold p-3 rounded-lg bg-gradient-to-r from-blue-500 to-cyan-300">PG Programmes</h2>
             <table class="min-w-full divide-y divide-gray-200">
               <thead class="bg-gray-50">
                 <tr>
@@ -62,11 +64,13 @@
   
   <script>
   import data from '../assets/curriculum_syllabus.json';
-  
+  import backgroundImage from '@/assets/syllabus.webp';  // Correct path for the image
+
   export default {
     data() {
       return {
         data: data,
+        backgroundImage: backgroundImage,
         activeCourse: null,
       };
     },

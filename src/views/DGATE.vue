@@ -9,8 +9,8 @@
     </section>
    
     <!-- Vertical Tabs Section -->
-    <section class="container mx-auto py-8 px-4">
-      <div class="relative flex flex-col md:flex-row">
+    <section class="mx-auto bg-gray-100  py-12 px-10">
+      <div class="flex flex-col md:flex-row">
         <!-- Vertical Tabs -->
         <div class="flex-shrink-0 w-full h-max md:w-64 bg-gradient-to-r from-[#21209c] to-blue-600 rounded-lg shadow-lg p-4 mb-4 md:mb-0 md:mr-4">
           <div class="relative p-4 rounded-lg">

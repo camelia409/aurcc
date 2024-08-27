@@ -1,23 +1,17 @@
 <template>
   <main class="flex-grow">
     <!-- Hero section -->
-    <section
-      class="bg-cover bg-center relative -z-10"
-      :style="'background-image: url(http://192.168.72.231:5173/src/assets/dgate-hero.jpg)'"
-    >
-      <div class="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div>
-      <div class="container mx-auto py-16 text-white p-9 relative z-10">
-        <h1 class="text-4xl font-bold mb-4">{{ data.name }}</h1>
-        <button class="bg-red-600 hover:bg-red-700 text-white py-2 px-4 rounded">
-          Learn More
-        </button>
-      </div>
-    </section>
+<section 
+  class="hero-section bg-cover bg-center relative -z-10 w-full h-48 sm:h-64 md:h-96"
+  :style="{ backgroundImage: `url(${backgroundImage})` }"
+>
+  <div class="absolute top-0 left-0 w-full h-full "></div>
+</section>
 
     <!-- Content sections -->
-    <section class="container mx-auto py-8 p-4 space-y-8 bg-gray-100">
+    <section class="container mx-auto py-15 p-4 space-y-8 font-serif ">
       <!-- About Section -->
-      <div class="bg-white rounded-lg shadow-md">
+      <div class="bg-white rounded-lg shadow-lg">
         <h2 class="text-3xl text-center bg-navy-blue font-bold p-4 rounded-t-md text-white">
           About
         </h2>
@@ -60,10 +54,12 @@
 
 <script>
 import data from '../assets/NSS.json';
+import backgroundImage from '@/assets/NSS.webp';  // Correct path for the image
 
 export default {
   data() {
     return {
+      backgroundImage: backgroundImage,
       data: data,
     };
   },
@@ -74,4 +70,12 @@ export default {
 .bg-navy-blue {
   background-color: #002147; /* Navy blue color for NSS theme */
 }
+</style>
+<style scoped>
+.hero-section {
+  height: 30vh; /* Adjust height to show less of the image */
+  background-size: cover;
+  background-position: center;
+}
+
 </style>

@@ -14,20 +14,20 @@
     <!-- Content sections -->
     <section class="mx-auto  bg-gray-300 font-serif">
       <div class="bg-white rounded-lg">
-        <h2 class="text-3xl text-center bg-blue-500 font-bold p-4 rounded-md text-white">Overview</h2>
+        <h2 class="text-3xl text-center bg-[#21209c] font-bold p-4 text-white">Overview</h2>
         <p class="p-5 text-xl font-medium">{{ data.description }}</p>
       </div>
       <div class="bg-white rounded-lg">
-        <h2 class="text-3xl text-center bg-blue-500 font-bold p-4 rounded-md text-white">Facilities</h2>
-        <div class="grid grid-cols-2 ">
-          <div>
+        <h2 class="text-3xl text-center bg-[#21209c] font-bold p-4 text-white">Facilities</h2>
+        <div class="grid grid-cols-2 mx-10">
+          <div class="">
               <h3 class="text-xl font-bold mb-2 p-5">Indoor Games</h3>
               <ul class="list-disc pl-8">
                 <li v-for="game in data.facilities.IndoorGames" :key="game" class="mb-2 text-xl font-medium">{{ game }}</li>
               </ul>
           </div>
           <div>
-            <h3 class="text-xl font-bold mb-2 mt-4 p-5">Outdoor Games</h3>
+            <h3 class="text-xl font-bold mb-2 p-5">Outdoor Games</h3>
             <ul class="list-disc pl-8 pb-6">
               <li v-for="game in data.facilities.OutdoorGames" :key="game" class="mb-2 text-xl font-medium ">{{ game }}</li>
             </ul>
@@ -35,7 +35,7 @@
         </div>
       </div>
       <div class="bg-white rounded-lg">
-        <h2 class="text-3xl text-center bg-blue-500 font-bold p-4 rounded-md text-white">Contact Us</h2>
+        <h2 class="text-3xl text-center bg-[#21209c] font-bold p-4  text-white">Contact Us</h2>
         <p class="p-5 text-xl font-medium">{{ data.contact_us.Address }}</p>
       </div>
     </section>

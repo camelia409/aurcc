@@ -1,5 +1,6 @@
 {
   "name": "University Library",
+  "image":"library.webp",
   "description": "The University Library, which has been established in the year 2007 in school of management studies. It is located at the south wing of the new campus building. The total area of the Library building is about 4700 sq.ft. Central Library is a true reflection of Anna University, Regional Centre, Coimbatore culture of excellence which is known in India. Central Library during the year continued to march its mission of facilitating the creation of new knowledge through the collection, organization and dissemination of Information. It offered many knowledge-based services like that of Reference services, Resource sharing, Online journal service, Online Data Base, CD-ROM Databases, Internet browsing and e-services are provided by the library for its users.",
   "library_resources": {
     "description": "Resources building is one of the important functions of the library that supports academic and research work of the students, faculty, staff and other users. Library collection comprising of books, journals, thesis, reports, standards, pamphlets and other reading material in science, engineering, technology, humanities, social sciences and management is considered the best asset.",
