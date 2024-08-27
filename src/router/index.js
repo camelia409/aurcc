@@ -80,6 +80,11 @@ const router = createRouter({
       component: ()=> import('../views/Alumni.vue')
     },
     {
+      path: '/dean_office/',
+      name: 'dean_office',
+      component: ()=> import('../views/deanoff.vue')
+    },
+    {
       path: '/fine-arts/',
       name: 'fine-arts club',
       component: ()=> import('../views/FineArtsClub.vue')
