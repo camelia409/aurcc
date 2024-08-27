@@ -7,7 +7,7 @@ import { RouterLink, RouterView } from 'vue-router';
   <header class="bg-[#21209c] text-white">
     <div class=" bg-[#aae0ed] text-black">
       <div  class="container mx-auto px-4 text-sm" style="font-family: 'Clash Grotesk', sans-serif;">
-        <div class="p-2 flex items-center justify-between font-serif">
+        <div class="p-2 flex items-center justify-between font-family: 'Algerian'">
           <strong class="text-xl">Counselling Code: <strong>2025</strong> </strong>
           <ul class="flex items-center justify-between">
             <li class="relative group">
@@ -17,11 +17,11 @@ import { RouterLink, RouterView } from 'vue-router';
               <ul
                 class="absolute z-20 left-0 mt-2 w-48 bg-white shadow-lg transition-all duration-300 opacity-0 invisible group-hover:visible group-hover:opacity-100"
               >
-                <li><RouterLink to="/sports" class="block px-4 py-2  hover:bg-blue-800 transition-all duration-300 ease-in-out text-black hover:text-black">Sports</RouterLink></li>
-                <li><RouterLink to="/nss" class="block px-4 py-2  hover:bg-blue-800 transition-all duration-300 ease-in-out text-black hover:text-black">NSS</RouterLink></li>
-                <li><RouterLink to="/tamilmandram" class="block px-4 py-2  hover:bg-blue-800 transition-all duration-300 ease-in-out text-black hover:text-black">kani thamizh paravai</RouterLink></li>
-                <li><RouterLink to="/fine-arts" class="block px-4 py-2  hover:bg-blue-800 transition-all duration-300 ease-in-out text-black hover:text-black">Fine Arts Club</RouterLink></li>
-                <li><RouterLink to="/alumni" class="block px-4 py-2  hover:bg-blue-800 transition-all duration-300 ease-in-out text-black hover:text-black">Alumni</RouterLink></li>
+                <li><RouterLink to="/sports" class="block px-4 py-2  hover:bg-blue-800 transition-all duration-300 ease-in-out text-black hover:text-white">Sports</RouterLink></li>
+                <li><RouterLink to="/nss" class="block px-4 py-2  hover:bg-blue-800 transition-all duration-300 ease-in-out text-black hover:text-white">NSS</RouterLink></li>
+                <li><RouterLink to="/tamilmandram" class="block px-4 py-2  hover:bg-blue-800 transition-all duration-300 ease-in-out text-black hover:text-white">kani thamizh paravai</RouterLink></li>
+                <li><RouterLink to="/fine-arts" class="block px-4 py-2  hover:bg-blue-800 transition-all duration-300 ease-in-out text-black hover:text-white">Fine Arts Club</RouterLink></li>
+                <li><RouterLink to="/alumni" class="block px-4 py-2  hover:bg-blue-800 transition-all duration-300 ease-in-out text-black hover:text-white">Alumni</RouterLink></li>
               </ul>
             </li>
             <li><RouterLink to="/library" class="px-4 py-2  text-black">Library</RouterLink></li>
