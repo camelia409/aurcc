@@ -2,25 +2,25 @@
   <div class="flex-grow">
     <!-- Hero section -->
     <section 
-    class="hero-section bg-cover relative -z-10" 
-    :style="{ 
-      backgroundImage: `url(${backgroundImage})`, 
-      backgroundSize: 'cover',
-      backgroundPosition: 'top center' 
-    }">
-      <div class="absolute inset-0 bg-black  opacity-50"></div>
-      <div class="mx-auto py-24 text-white relative z-10 flex flex-col ">
+      class="hero-section bg-cover relative -z-10 animate-fadeInUp" 
+      :style="{ 
+        backgroundImage: `url(${backgroundImage})`, 
+        backgroundSize: 'cover',
+        backgroundPosition: 'top center' 
+      }">
+      <div class="absolute inset-0 bg-black opacity-50"></div>
+      <div class="mx-auto py-24 text-white relative z-10 flex flex-col">
         <h1 class="text-4xl font-extrabold px-20 mb-4 animate-slideIn font-serif">Regulations</h1>
       </div>
     </section>
 
     <!-- Background section below the hero -->
-    <div class="bg-indigo-100 py-8">
+    <div class="bg-indigo-100 py-8 animate-fadeIn">
       <!-- UG Programmes section -->
-      <section class="py-8 p-4">
+      <section class="py-8 p-4 animate-popIn">
         <div class="bg-white rounded-lg shadow-md">
-          <h2 class="text-3xl text-center font-serif font-bold p-3 rounded-lg bg-gradient-to-r from-blue-500 to-cyan-300">UG Programmes</h2>
-          <div class="p-4">
+          <h2 class="text-3xl text-center font-serif font-bold p-3 rounded-lg bg-gradient-to-r from-blue-500 to-cyan-300 animate-fadeInUp">UG Programmes</h2>
+          <div class="p-4 animate-fadeIn delay-1s">
             <iframe
               :src="ugPdfUrl"
               class="w-full h-screen border-0"
@@ -31,10 +31,10 @@
       </section>
 
       <!-- PG Programmes section -->
-      <section class="py-8 p-4">
+      <section class="py-8 p-4 animate-popIn">
         <div class="bg-white rounded-lg shadow-md">
-          <h2 class="text-3xl text-center font-serif font-bold p-3 rounded-lg bg-gradient-to-r from-blue-500 to-cyan-300">PG Programmes</h2>
-          <div class="p-4">
+          <h2 class="text-3xl text-center font-serif font-bold p-3 rounded-lg bg-gradient-to-r from-blue-500 to-cyan-300 animate-fadeInUp">PG Programmes</h2>
+          <div class="p-4 animate-fadeIn delay-1s">
             <iframe
               :src="pgPdfUrl"
               class="w-full h-screen border-0"
@@ -64,5 +64,51 @@ export default {
 </script>
 
 <style scoped>
-/* Add any custom styles if needed */
+/* Add keyframes for animations */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes popIn {
+  0% { opacity: 0; transform: scale(0.8); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+.hero-section.animate-fadeInUp {
+  animation: fadeInUp 1.5s ease-out forwards;
+}
+
+h1.animate-slideIn {
+  animation: slideIn 1s ease-out forwards;
+}
+
+.bg-indigo-100.animate-fadeIn {
+  animation: fadeIn 1.5s ease-out forwards;
+}
+
+section.animate-popIn {
+  animation: popIn 1.2s ease-out forwards;
+}
+
+h2.animate-fadeInUp {
+  animation: fadeInUp 1.5s ease-out forwards;
+}
+
+.p-4.animate-fadeIn {
+  animation: fadeIn 2s ease-out forwards;
+}
+
+/* Add delay utility class */
+
 </style>
