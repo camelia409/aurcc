@@ -2,31 +2,32 @@
   <main class="flex-grow">
     <!-- Hero section -->
     <section 
-    class="hero-section bg-cover relative -z-10" 
-    :style="{ 
-      backgroundImage: `url(${backgroundImage})`, 
-      backgroundSize: 'cover',
-      backgroundPosition: 'top center' 
-    }">
+      class="hero-section bg-cover relative -z-10 animate-fadeIn" 
+      :style="{ 
+        backgroundImage: `url(${backgroundImage})`, 
+        backgroundSize: 'cover',
+        backgroundPosition: 'top center' 
+      }">
       <div class="absolute top-0 left-0 w-full h-full bg-black opacity-20"></div>
-     <!-- <div class="container mx-auto py-16 text-white p-9 relative z-10">
+      <!-- Uncomment this div if you want text in the hero section -->
+      <!-- <div class="container mx-auto py-16 text-white p-9 relative z-10">
         <h1 class="text-4xl font-bold">Fine Arts Club</h1>
       </div>-->
     </section>
 
     <!-- Main content -->
-    <div class="p-6 container mx-auto space-y-8 font-serif">
+    <div class="p-6 container mx-auto space-y-8 font-serif animate-fadeInUp">
       <!-- Description Section -->
-      <div class="bg-white shadow-lg rounded-lg ">
+      <div class="bg-white shadow-lg rounded-lg animate-popIn">
         <h1 class="text-3xl font-bold mb-4 bg-blue-900 text-white p-4 text-center rounded-lg">LAYAM AAM RHYTHM OF ARTS MUSIC & DANCE</h1>
         <p class="text-lg font-medium leading-relaxed p-4">{{ description }}</p>
       </div>
 
       <!-- Office Bearers Section -->
-      <div class="bg-white shadow-lg rounded-lg">
+      <div class="bg-white shadow-lg rounded-lg animate-fadeIn delay-1s">
         <h2 class="text-3xl font-bold mb-4 bg-blue-900 text-white p-4 text-center rounded-lg">Office Bearers</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4 font-medium">
-          <div v-for="bearer in officeBearers" :key="bearer['SL.NO']" class="bg-gray-100 rounded-lg p-4 shadow-md">
+          <div v-for="bearer in officeBearers" :key="bearer['SL.NO']" class="bg-gray-100 rounded-lg p-4 shadow-md animate-fadeInUp delay-1s">
             <p><strong>Name:</strong> {{ bearer.Name }}</p>
             <p><strong>Designation:</strong> {{ bearer.Designation }}</p>
             <p><strong>Department:</strong> {{ bearer.Department }}</p>
@@ -35,9 +36,9 @@
       </div>
 
       <!-- Coordinator Section -->
-      <div class="bg-white shadow-lg rounded-lg ">
+      <div class="bg-white shadow-lg rounded-lg animate-fadeIn delay-2s">
         <h2 class="text-3xl font-bold mb-4 bg-blue-900 text-white p-4 text-center rounded-lg">Coordinator</h2>
-        <div class="p-6  rounded-lg shadow-md font-medium">
+        <div class="p-6 rounded-lg shadow-md font-medium animate-popIn delay-2s">
           <p class="text-lg"><strong>Name:</strong> {{ coordinator.Name }}</p>
           <p class="text-lg"><strong>Designation:</strong> {{ coordinator.Designation }}</p>
           <p class="text-lg"><strong>Department:</strong> {{ coordinator.Department }}</p>
@@ -75,5 +76,41 @@ export default {
   background-size: cover;
   background-position: center;
 }
-/* Additional styles if necessary */
+
+/* Add keyframes for animations */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes popIn {
+  0% { opacity: 0; transform: scale(0.8); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes slideIn {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(0); }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 1.5s ease-out forwards;
+}
+
+.animate-popIn {
+  animation: popIn 1.2s ease-out forwards;
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 1.5s ease-out forwards;
+}
+
+.animate-slideIn {
+  animation: slideIn 1s ease-out forwards;
+}
 </style>
