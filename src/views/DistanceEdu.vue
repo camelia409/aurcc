@@ -1,17 +1,23 @@
 <template>
   <main class="flex-grow">
     <!-- Hero section -->
-    <section class="bg-cover bg-center relative -z-10" :style="'background-image: url(http://192.168.72.231:5173/src/assets/dgate-hero.jpg)'">
-      <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-t from-blue-900 via-transparent to-blue-900 opacity-70"></div>
+    <section 
+    class="hero-section bg-cover  py-32 relative -z-10" 
+    :style="{ 
+     backgroundImage: `url(${backgroundImage})`, 
+      backgroundSize: 'cover',
+      backgroundPosition: 'center center' 
+    }">
+     <!-- <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-t from-blue-900 via-transparent to-blue-900 opacity-70"></div>
       <div class="container mx-auto py-10 text-center relative z-10 px-4">
         <h1 class="text-4xl font-extrabold text-black  drop-shadow-lg font-serif">{{ details.name }}</h1>
-      </div>
+      </div>-->
     </section>
 
     <!-- Details section -->
     <section class="container mx-auto py-8 px-4 md:px-9">
       <div class="bg-gradient-to-r from-[#21209c] to-blue-600 rounded-lg shadow-lg overflow-hidden">
-        <h2 class="text-3xl text-center bg-yellow-300 text-blue-900 p-4 font-semibold rounded-t-lg">
+        <h2 class="text-3xl text-center bg-yellow-300 text-blue-600 p-4 font-bold rounded-t-lg">
           {{ details.description }}
         </h2>
         <div class="p-6">
@@ -48,10 +54,12 @@
 
 <script>
 import details from '../assets/distance education.json';
+import backgroundImage from '@/assets/distanceeducation.webp';
 
 export default {
   data() {
     return {
+      backgroundImage: backgroundImage,
       details: details
     };
   }
