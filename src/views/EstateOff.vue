@@ -1,13 +1,7 @@
 <template>
 	<main class="flex-grow">
 	  <!-- Hero Section -->
-	  <section 
-    class="hero-section bg-cover  py-24 relative -z-10" 
-    :style="{ 
-     backgroundImage: `url(${backgroundImage})`, 
-      backgroundSize: '60%',
-      backgroundPosition: 'center center' 
-    }">
+	  <section class="bg-cover bg-center relative -z-10" :style="'background-image: url(http://192.168.72.231:5173/src/assets/dgate-hero.jpg)'">
       <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-t from-blue-900 via-transparent to-blue-900 opacity-70"></div>
       <div class="container mx-auto py-10 text-center relative z-10 px-4">
         <h1 class="text-4xl font-extrabold text-black  drop-shadow-lg font-serif">{{ data.name }}</h1>
@@ -31,19 +25,19 @@
 		  </div>
   
 		  <!-- Tab Content -->
-		  <div class="w-full px-10  font-serif">
+		  <div class="w-full px-10  font-serif min-h-[400px] max-h-[450px] ">
 			<div v-if="currentSection === 'about'">
-			  <h2 class="text-2xl md:text-4xl font-bold text-blue-800 mb-4">About the Estate office</h2>
+			  <h2 class="text-2xl md:text-4xl font-bold text-black mb-4">About the Estate office</h2>
 			  <p class="text-base md:text-lg">{{ data.description }}</p>
 			</div>
 			<div v-if="currentSection === 'services'">
-			  <h2 class="text-2xl md:text-4xl font-bold text-blue-800 mb-4">Services</h2>
+			  <h2 class="text-2xl md:text-4xl font-bold text-black mb-4">Services</h2>
 			  <ul class="list-disc pl-5">
 				<li v-for="service in data.services" :key="service" class="text-base md:text-lg">{{ service }}</li>
 			  </ul>
 			</div>
 			<div v-if="currentSection === 'members'">
-			  <h2 class="text-2xl md:text-4xl font-bold text-blue-800 mb-4">Members</h2>
+			  <h2 class="text-2xl md:text-4xl font-bold text-black mb-4">Members</h2>
 			  <ul class="list-disc pl-5">
 				<li v-for="bearer in data.office_bearers" :key="bearer.name" class="text-base md:text-lg">
 				  <strong>{{ bearer.position }}:</strong> {{ bearer.name }}
@@ -51,7 +45,7 @@
 			  </ul>
 			</div>
 			<div v-if="currentSection === 'contact'">
-			  <h2 class="text-2xl md:text-4xl font-bold text-blue-800 mb-4">Contact</h2>
+			  <h2 class="text-2xl md:text-4xl font-bold text-black mb-4">Contact</h2>
 			  <p class="text-base md:text-lg">{{ data.contact_us }}</p>
 			</div>
 		  </div>
@@ -62,13 +56,11 @@
   
   <script>
   import data from '../assets/EstateOff.json';
-  import backgroundImage from '@/assets/estate.webp';  // Correct path for the image
-
+  
   export default {
 	data() {
 	  return {
 		data: data,
-		backgroundImage: backgroundImage,
 		currentSection: 'about', // Default tab
 	  };
 	}

@@ -1,6 +1,6 @@
 <template>
   <div class="organogram-section">
-    <h2 class="text-2xl font-bold mb-4 p-2 bg-gradient-to-r from-blue-500 to-cyan-300 text-center animate-slideIn">
+    <h2 class="text-2xl font-bold mb-4 p-2 bg-gradient-to-r from-blue-500 to-cyan-300 text-center">
       Organogram
     </h2>
     <div class="pdf-container">
@@ -29,21 +29,4 @@ export default {
 .pdf-container {
   @apply overflow-auto border border-gray-300 p-2 bg-white;
 }
-
-
-@keyframes slideIn {
-  from {
-    transform: translateX(-20px);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-.animate-slideIn {
-  animation: slideIn 1s ease-out;
-}
-
 </style>
