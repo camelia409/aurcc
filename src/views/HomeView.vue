@@ -1,9 +1,9 @@
 <template>
-  <div class="">
+  <div class="">        
     <main class="font-serif">
-      <section class="hero min-h-screen overflow-hidden relative -z-10 ">
-        <div class="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div>
-        <img src="/src/assets/Drone_shot.jpg" alt="">
+       <!-- Hero Section -->
+       <section class="hero min-h-screen relative overflow-hidden">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
         <!-- <video 
           autoplay 
           loop 
@@ -14,14 +14,11 @@
           <source src="../assets/videoplayback.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video> -->
-
-        
-
-        <div class="relative z-10 text-center text-white">
-          
-          <h1 class="text-5xl md:text-7xl font-bold mb-4">Welcome to Anna University</h1>
-          <p class="text-xl md:text-2xl mb-8">Empowering Minds, Shaping Futures</p>
-          <!-- <a href="#about" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full transition-colors">Learn More</a> -->
+        <div class="absolute z-10 top-0 left-0 w-full h-full bg-black opacity-55"></div>
+        <img src="/src/assets/Drone_shot.jpg" alt="University Campus" class="absolute inset-0 w-full h-full object-cover">
+        <div class="relative z-10 text-center text-white flex flex-col justify-center items-center h-full px-4">
+          <h1 class="text-3xl md:text-5xl lg:text-7xl font-bold mb-4">Welcome to Anna University</h1>
+          <p class="text-lg md:text-xl lg:text-2xl mb-8">Empowering Minds, Shaping Futures</p>
         </div>
       </section>
 
