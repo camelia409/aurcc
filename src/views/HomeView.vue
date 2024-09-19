@@ -273,42 +273,44 @@
       </div>
 
       <!-- Gallery Section -->
-      <section id="gallery" class="py-16 bg-white overflow-hidden w-screen">
-        <div class="container mx-auto px-4">
-          <h2 class="text-4xl font-bold text-center mb-20 text-[#21209c]">Gallery of Memories IG</h2>
-          <div class="relative flex items-center justify-center gap-8">
-            <div @click="prevImage" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-[#21209c]  text-white p-2 rounded-full cursor-pointer hover:bg-opacity-75 z-30">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-10 h-10">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-              </svg>
-            </div>
-            <div class=" flex w-1/2">
-              <div v-for="(image, index) in galleryImages" :key="index" class="flex-shrink-0 w-full transition-transform transform duration-500 ease-in-out px-6" :style="{ transform: `translateX(-${currentImageIndex * 100}%)` }">
-                <div class="relative group">
-                  <img :src="image.src" :alt="image.alt" class="w-full h-72  object-cover rounded-lg shadow-md" />
-                  <div class="absolute bottom-0 h-2/5 w-full bg-gray-800 bg-opacity-75 rounded-b-md flex items-center justify-center">
-                    <p class="text-white text-center px-4">{{ image.description }}</p>
-                  </div>
+      <section id="gallery" class="py-12 md:py-16 bg-white overflow-hidden w-full">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-10 md:mb-20 text-[#21209c]">Gallery of Memories IG</h2>
+      <div class="relative flex items-center justify-center">
+        <button @click="prevImage" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-[#21209c] text-white p-2 rounded-full cursor-pointer hover:bg-opacity-75 z-30 focus:outline-none">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6 md:w-10 md:h-10">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+          </svg>
+        </button>
+        <div class="w-full md:w-3/4 lg:w-1/2" @touchstart="touchStart" @touchmove="touchMove" @touchend="touchEnd">
+          <div class="flex transition-transform duration-500 ease-in-out" :style="{ transform: `translateX(-${currentImageIndex * 100}%)` }">
+            <div v-for="(image, index) in galleryImages" :key="index" class="flex-shrink-0 w-full px-2 md:px-6">
+              <div class="relative group">
+                <img :src="image.src" :alt="image.alt" class="w-full h-48 md:h-72 object-cover rounded-lg shadow-md" />
+                <div class="absolute bottom-0 h-1/3 md:h-2/5 w-full bg-gray-800 bg-opacity-75 rounded-b-lg flex items-center justify-center">
+                  <p class="text-white text-center text-sm md:text-base px-2 md:px-4">{{ image.description }}</p>
                 </div>
               </div>
             </div>
-            <div @click="nextImage" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-[#21209c]  text-white p-2 rounded-full cursor-pointer hover:bg-opacity-75">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-10 h-10">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-              </svg>
-            </div>
-          </div>
-          <div class="flex justify-center mt-8">
-            <button 
-              v-for="(dot, index) in galleryImages" 
-              :key="index" 
-              @click="goToImage(index)" 
-              class="h-1 w-8 mx-1 focus:outline-none transition-colors rounded-full shadow-sm hover:shadow-md transform hover:scale-105 duration-300"
-              :class="index === currentImageIndex ? 'bg-indigo-600' : 'bg-indigo-300'"
-            ></button>
           </div>
         </div>
-      </section>
+        <button @click="nextImage" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-[#21209c] text-white p-2 rounded-full cursor-pointer hover:bg-opacity-75 z-30 focus:outline-none">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6 md:w-10 md:h-10">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
+      </div>
+      <div class="flex justify-center mt-4 md:mt-8">
+        <button 
+          v-for="(dot, index) in galleryImages" 
+          :key="index" 
+          @click="goToImage(index)" 
+          class="h-1 w-4 md:w-8 mx-1 focus:outline-none transition-colors rounded-full shadow-sm hover:shadow-md transform hover:scale-105 duration-300"
+          :class="index === currentImageIndex ? 'bg-indigo-600' : 'bg-indigo-300'"
+        ></button>
+      </div>
+    </div>
+  </section>
 
 
         <!-- Testimonials Section -->
