@@ -114,15 +114,86 @@ import { RouterLink, RouterView } from 'vue-router';
 
           </ul>
         </div>
-        <div class="lg:hidden">
-          <button class="btn btn-square btn-ghost text-white">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-          </button>
-        </div>
-      </nav>
-    </div>
+        <!-- Mobile Menu Button -->
+      <div class="lg:hidden">
+        <button @click="isMobileMenuOpen = !isMobileMenuOpen" class="btn btn-square btn-ghost text-white transition-all duration-300">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Mobile Navigation -->
+  <div v-if="isMobileMenuOpen" class="bg-white lg:hidden">
+    <ul class="text-black flex flex-col-2">
+      <li class="relative group">
+          <button class="px-4 py-2  hover:bg-blue-700 focus:outline-none focus:bg-blue-700 border-b-4 border-[#21209c] hover:border-[#fdb827] hover:text-white">
+            Administration</button>
+               <ul
+                class="absolute z-50 left-0 mt-2 w-48 bg-white  shadow-lg  p-0 transition-all duration-300 opacity-0 invisible group-hover:visible group-hover:opacity-100 text-black"
+              >
+                <li><RouterLink to="/organogram" class="block px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-300 ease-in-out">Organogram</RouterLink ></li>
+                <li><RouterLink to="/VC" class="block px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-300 ease-in-out">Vice Chancellor</RouterLink ></li>
+                <li><RouterLink to="/Registrar" class="block px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-300 ease-in-out">University Administration</RouterLink ></li>
+                <li><RouterLink to="administration" class="block px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-300 ease-in-out">Administrative staff</RouterLink ></li>
+                <li><RouterLink to="/HOD" class="block px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-300 ease-in-out">Head of the Departments</RouterLink ></li>
+                <li><RouterLink to="/COD" class="block px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-300 ease-in-out">Cell coordinators</RouterLink ></li>
+                <li><RouterLink to="/dean_office" class="block px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-300 ease-in-out">Dean Office Staff</RouterLink ></li>
+
+              </ul>
+      </li>
+      <li class="relative group">
+              <button class="px-4 py-2  hover:bg-blue-700 focus:outline-none focus:bg-blue-700 border-b-4 border-[#21209c] hover:border-[#fdb827] hover:text-white">
+                Academics
+              </button>
+              <ul
+                class="absolute z-50 left-0 mt-2 w-48 bg-white  shadow-lg  p-0 transition-all duration-300 opacity-0 invisible group-hover:visible group-hover:opacity-100 text-black"
+              >
+                <li><RouterLink to="/programs_offered" class="block px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-300 ease-in-out">Programs Offered</RouterLink ></li>
+                <li><RouterLink to="/curriculum_syllabus" class="block px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-300 ease-in-out">Curriculum & Syllabus</RouterLink ></li>
+                <li><RouterLink to="/regulation" class="block px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-300 ease-in-out">Regulations</RouterLink ></li>
+                <li><RouterLink to="/student_affairs" class="block px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-300 ease-in-out">Student Affairs</RouterLink ></li>
+              </ul>
+      </li>
+      <li class="relative group">
+            <button class=" px-4 py-2 border-b-4 border-[#21209c] hover:border-[#fdb827] hover:bg-blue-700 focus:outline-none focus:bg-blue-700 hover:text-white">
+                Departments
+              </button>
+              <ul
+                class="absolute z-20 left-0 mt-2 w-48 bg-white text-black shadow-lg  opacity-0 invisible group-hover:visible group-hover:opacity-100"
+              >
+                <li><RouterLink to="/departments/cse" class="block px-4 py-2 hover:bg-blue-800  hover:text-white transition-all duration-300 ease-in-out">Computer Science Engg</RouterLink ></li>
+                <li><RouterLink to="/departments/eee" class="block px-4 py-2 hover:bg-blue-800  hover:text-white transition-all duration-300 ease-in-out">Electrical and Electronics Engg</RouterLink ></li>
+                <li><RouterLink to="/departments/ece" class="block px-4 py-2 hover:bg-blue-800  hover:text-white transition-all duration-300 ease-in-out">Electronics and Communications Engg</RouterLink ></li>
+                <li><RouterLink to="/departments/mech" class="block px-4 py-2 hover:bg-blue-800  hover:text-white transition-all duration-300 ease-in-out">Mechanical Engg</RouterLink ></li>
+                <li><RouterLink to="/departments/mba" class="block px-4 py-2 hover:bg-blue-800  hover:text-white transition-all duration-300 ease-in-out">MBA</RouterLink ></li>
+                <li><RouterLink to="/s&h" class="block px-4 py-2 hover:bg-blue-800  hover:text-white transition-all duration-300 ease-in-out">Science & Humanities</RouterLink ></li>
+              </ul>
+      </li>
+      <li class="relative group">
+              <button class="px-4 py-2 border-b-4 border-[#21209c] hover:border-[#fdb827] hover:bg-blue-700 focus:outline-none focus:bg-blue-700 hover:text-white">
+                Offices
+              </button>
+              <ul
+                class="absolute z-20 left-0 mt-2 w-48 bg-white shadow-lg transition-all duration-300 opacity-0 invisible group-hover:visible group-hover:opacity-100"
+              >
+                <li><RouterLink to="/admission" class="block px-4 py-2 hover:bg-blue-800 transition-all duration-300 ease-in-out text-black hover:text-white">Admission</RouterLink ></li>
+                <li><RouterLink to="/dgate" class="block px-4 py-2 hover:bg-blue-800 transition-all duration-300 ease-in-out text-black hover:text-white">DGATE Cell</RouterLink ></li>
+                <li><RouterLink to="/pace-cell" class="block px-4 py-2 hover:bg-blue-800 transition-all duration-300 ease-in-out text-black hover:text-white">PACE Cell</RouterLink ></li>
+                <li><RouterLink to="/zonal" class="block px-4 py-2 hover:bg-blue-800 transition-all duration-300 ease-in-out text-black hover:text-white">Zonal Office</RouterLink ></li>
+                <li><RouterLink to="/office-affiliation" class="block px-4 py-2 hover:bg-blue-800 transition-all duration-300 ease-in-out text-black hover:text-white">Office of Affiliation</RouterLink ></li>
+                <li><RouterLink to="/distance-education" class="block px-4 py-2 hover:bg-blue-800 transition-all duration-300 ease-in-out text-black hover:text-white">Distance Education</RouterLink ></li>
+                <li><RouterLink to="/ed-cell" class="block px-4 py-2 hover:bg-blue-800 transition-all duration-300 ease-in-out text-black hover:text-white">ED Cell</RouterLink ></li>
+                <li><RouterLink to="/placement-cell" class="block px-4 py-2 hover:bg-blue-800 transition-all duration-300 ease-in-out text-black hover:text-white">Placement Cell</RouterLink ></li>
+                <li><RouterLink to="/research-cell" class="block px-4 py-2 hover:bg-blue-800 transition-all duration-300 ease-in-out text-black hover:text-white">Research Cell</RouterLink ></li>
+                <li><RouterLink to="/exam-cell" class="block px-4 py-2 hover:bg-blue-800 transition-all duration-300 ease-in-out text-black hover:text-white">Exam cell</RouterLink ></li>
+                <li><RouterLink to="/EstateOff" class="block px-4 py-2 hover:bg-blue-800 transition-all duration-300 ease-in-out text-black hover:text-white">Estate Office</RouterLink ></li>
+              </ul>
+      </li> 
+    </ul>
+  </div>
   </header>
   <RouterView style="font-family: 'Clash Grotesk', sans-serif;" />
 
@@ -222,6 +293,7 @@ export default {
   data() {
     return {
       currentYear: new Date().getFullYear(),
+      isMobileMenuOpen: false,
     };
   },
 };
