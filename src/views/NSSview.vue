@@ -68,13 +68,7 @@ export default {
 
 <style scoped>
 .bg-navy-blue {
-  background-color: #002147; /* Navy blue color for NSS theme */
-}
-
-.hero-section {
-  height: 30vh; /* Adjust height to show less of the image */
-  background-size: cover;
-  background-position: center;
+  @apply bg-[#002147]; /* Navy blue color for NSS theme */
 }
 
 /* Add keyframes for animations */
@@ -104,5 +98,4 @@ export default {
 .animate-fadeInUp {
   animation: fadeInUp 1.5s ease-out forwards;
 }
-
 </style>
