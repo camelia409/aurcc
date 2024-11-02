@@ -2,12 +2,12 @@
   <main class="flex-grow">
     <!-- Hero section -->
      <section
-      class="md:bg-cover bg-center relative -z-10 animate-fadeIn"
+      class="bg-cover md:bg-center relative -z-10 w-full h-48 sm:h-64 md:h-94  animate-fadeIn"
       :style="'background-image: url(http://localhost:5173/src/assets/' + data.image + ');'"
     >
-      <div class="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div>
+      <div class="absolute top-0 left-0 w-full h-full bg-[#3c2f25] opacity-50"></div>
       <div class="container mx-auto py-16 text-white px-4 md:px-9 relative z-10 font-serif">
-        <h1 class="text-3xl md:text-4xl font-bold mb-4 animate-slideIn">{{ data.name }}</h1>
+        <h1 class="md:text-4xl text-xl font-bold mb-4 animate-slideIn">{{ data.name }}</h1>
 
         <!-- Conditional Rendering for Description -->
         <p v-if="showDescription" class="md:text-xl mb-8 animate-fadeIn delay-1s">{{ data.description }}</p>
@@ -15,25 +15,25 @@
         <!-- Learn More Button -->
         <button 
           @click="toggleDescription" 
-          class="bg-[#fdb827] text-[#23120b] px-6 py-2 rounded-lg transition duration-300 hover:bg-[#e0a829]"
+          class="bg-[#fdb827] text-[#23120b] md:px-6 md:py-2 rounded-lg transition duration-300 hover:bg-[#e0a829]"
         >
           {{ showDescription ? 'Show Less' : 'Learn More' }}
         </button>
       </div>
     </section>
     <!-- Content sections -->
-    <section class="mx-auto bg-gray-300 font-serif animate-fadeIn p-4 md:p-9">
+    <section class="mx-auto bg-[#4b3b32] font-serif animate-fadeIn p-4 md:p-9">
       <div class="bg-white rounded-lg animate-popIn mb-8">
-        <h2 class="text-2xl md:text-3xl rounded-t-lg text-center bg-[#21209c] font-bold p-4 text-white animate-fadeInUp">
+        <h2 class="text-2xl md:text-3xl rounded-t-lg text-center bg-yellow-200 font-bold text-[#6B1F20] p-2 animate-fadeInUp">
           Overview
         </h2>
-        <p class="p-5 text-lg md:text-xl font-medium animate-fadeIn delay-1s">{{ data.description }}</p>
+        <p class="text-lg md:text-xl rounded-b-lg font-medium bg-yellow-200 p-3 animate-fadeIn delay-1s">{{ data.description }}</p>
       </div>
-      <div class="bg-white rounded-lg animate-popIn mb-8">
-        <h2 class="text-2xl md:text-3xl rounded-t-lg text-center bg-[#21209c] font-bold p-4 text-white animate-fadeInUp">
+      <div class="bg-yellow-200 rounded-lg animate-popIn mb-8">
+        <h2 class="text-2xl md:text-3xl rounded-t-lg text-center bg-yellow-200 font-bold p-2 text-[#6B1F20] animate-fadeInUp">
           Facilities
         </h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mx-2 md:mx-10 animate-fadeIn delay-1s">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 rounded-b-lg md:mx-10 bg-yellow-200 animate-fadeIn delay-1s">
           <div>
             <h3 class="text-lg md:text-xl font-bold mb-2 p-5">Indoor Games</h3>
             <ul class="list-disc pl-8">
@@ -60,11 +60,11 @@
           </div>
         </div>
       </div>
-      <div class="bg-white rounded-lg animate-popIn">
-        <h2 class="text-2xl md:text-3xl rounded-t-lg text-center bg-[#21209c] font-bold p-4 text-white animate-fadeInUp">
+      <div class="bg-yellow-200 rounded-lg animate-popIn">
+        <h2 class="text-2xl md:text-3xl rounded-t-lg text-center bg-yellow-200 font-bold p-2 text-[#6B1F20] animate-fadeInUp">
           Contact Us
         </h2>
-        <p class="p-5 text-lg md:text-xl font-medium animate-fadeIn delay-1s">{{ data.contact_us.Address }}</p>
+        <p class="p-4 text-lg md:text-xl font-medium animate-fadeIn delay-1s">{{ data.contact_us.Address }}</p>
       </div>
     </section>
   </main>
