@@ -1,10 +1,11 @@
 <template>
   <main class="flex-grow">
     <!-- Hero section -->
-    <section 
-      class="bg-cover md:bg-center relative -z-10 w-full h-48 sm:h-64 md:h-94  animate-fadeIn" 
-      :style="'background-image: url(http://localhost:5173/src/assets/' + data.image1 + ');'"
+    <section
+      class="bg-cover md:bg-center relative -z-10 w-full h-48 sm:h-64 md:h-94 animate-fadeIn"
+      :style="`background-image: url(/src/assets/${data.image1});`"
     >
+
       <div class="absolute top-0 left-0 w-full h-full bg-black opacity-20"></div>
       <div class="flex items-start justify-center md:py-19 text-white p-9 relative z-10">
         <h1 class="md:text-4xl text-xl font-bold mb-20 animate-slideIn">{{ data.name }}</h1>
@@ -37,7 +38,7 @@
       <!-- Background Overlay -->
       <div
         class="absolute inset-0 bg-center opacity-80 z-0 animate-fadeIn"
-        :style="'background-image:url(http://localhost:5173/src/assets/' + data.image + ');'"
+        :style="`background-image: url(/src/assets/${data.image});`"
       ></div>
 
       <!-- Content -->
