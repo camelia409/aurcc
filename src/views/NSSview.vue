@@ -57,7 +57,7 @@
 
 <script>
 import data from '../assets/NSS.json';
-import backgroundImage from '@/assets/nss.webp';  // Correct path for the image
+import backgroundImage from '@/assets/NSS.webp';  // Correct path for the image
 
 export default {
   data() {
