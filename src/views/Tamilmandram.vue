@@ -3,7 +3,7 @@
     <!-- Hero section -->
     <section
       class="bg-cover md:bg-center relative -z-10 w-full h-48 sm:h-64 md:h-94 animate-fadeIn"
-      :style="`background-image: url(/src/assets/${data.image1});`"
+      :style="{ backgroundImage: `url(${backgroundImage1})` }"
     >
 
       <div class="absolute top-0 left-0 w-full h-full bg-black opacity-20"></div>
@@ -38,7 +38,7 @@
       <!-- Background Overlay -->
       <div
         class="absolute inset-0 bg-center opacity-80 z-0 animate-fadeIn"
-        :style="`background-image: url(/src/assets/${data.image});`"
+        :style="{ backgroundImage: `url(${backgroundImage2})` }"
       ></div>
 
       <!-- Content -->
@@ -90,11 +90,15 @@
 
 <script>
 import data from '../assets/tamil mandram.json';
+import backgroundImage1 from '@/assets/temple5.webp';
+import backgroundImage2 from '@/assets/kalvettu.webp';
 
 export default {
   data() {
     return {
-      data: data
+      data: data,
+      backgroundImage1: backgroundImage1,
+      backgroundImage2: backgroundImage2,
     };
   }
 };
