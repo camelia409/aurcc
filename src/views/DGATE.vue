@@ -2,13 +2,12 @@
   <main class="flex-grow">
     <!-- Hero section -->
     <section 
-    class="hero-section bg-cover py-24 relative -z-10" 
+    class="bg-cover md:bg-center relative -z-10 w-full h-48 sm:h-64 md:h-94-z-10" 
     :style="{ 
       backgroundImage: `url(${backgroundImage})`
     }">
       <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-t from-blue-900 via-transparent to-blue-900 opacity-70"></div>
       <div class="container mx-auto py-10 text-center relative z-10 px-4">
-        <h1 class="text-4xl font-extrabold text-white drop-shadow-lg font-serif">{{ data.name }}</h1>
       </div>
     </section>
    
