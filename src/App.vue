@@ -127,9 +127,9 @@ import { RouterLink, RouterView } from 'vue-router';
 
   <!-- Mobile Navigation -->
   <div v-if="isMobileMenuOpen" class="bg-white lg:hidden">
-    <ul class="text-black flex flex-col-2">
+    <ul class="text-black grid grid-flow-col justify-stretch">
       <li class="relative group">
-          <button class="px-4 py-2  hover:bg-blue-700 focus:outline-none focus:bg-blue-700 border-b-4 border-[#21209c] hover:border-[#fdb827] hover:text-white">
+          <button class="px-4 py-2 w-full hover:bg-blue-700 focus:outline-none focus:bg-blue-700 border-b-4 border-[#21209c] hover:border-[#fdb827] hover:text-white">
             Administration</button>
                <ul
                 class="absolute z-50 left-0 mt-2 w-48 bg-white  shadow-lg  p-0 transition-all duration-300 opacity-0 invisible group-hover:visible group-hover:opacity-100 text-black"
@@ -145,7 +145,7 @@ import { RouterLink, RouterView } from 'vue-router';
               </ul>
       </li>
       <li class="relative group">
-              <button class="px-4 py-2  hover:bg-blue-700 focus:outline-none focus:bg-blue-700 border-b-4 border-[#21209c] hover:border-[#fdb827] hover:text-white">
+              <button class="px-4 py-2 w-full hover:bg-blue-700 focus:outline-none focus:bg-blue-700 border-b-4 border-[#21209c] hover:border-[#fdb827] hover:text-white">
                 Academics
               </button>
               <ul
@@ -158,7 +158,7 @@ import { RouterLink, RouterView } from 'vue-router';
               </ul>
       </li>
       <li class="relative group">
-            <button class=" px-4 py-2 border-b-4 border-[#21209c] hover:border-[#fdb827] hover:bg-blue-700 focus:outline-none focus:bg-blue-700 hover:text-white">
+            <button class=" px-4 py-2 w-full border-b-4 border-[#21209c] hover:border-[#fdb827] hover:bg-blue-700 focus:outline-none focus:bg-blue-700 hover:text-white">
                 Departments
               </button>
               <ul
@@ -173,7 +173,7 @@ import { RouterLink, RouterView } from 'vue-router';
               </ul>
       </li>
       <li class="relative group">
-              <button class="px-4 py-2 border-b-4 border-[#21209c] hover:border-[#fdb827] hover:bg-blue-700 focus:outline-none focus:bg-blue-700 hover:text-white">
+              <button class="px-4 py-2 w-full border-b-4 border-[#21209c] hover:border-[#fdb827] hover:bg-blue-700 focus:outline-none focus:bg-blue-700 hover:text-white">
                 Offices
               </button>
               <ul

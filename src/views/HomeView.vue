@@ -88,7 +88,7 @@
 
 
       <!-- college stats -->
-      <div class="flex items-center justify-center gap-4 bg-[#0a0a34] text-white p-14 " style="font-family: 'Clash Grotesk', sans-serif;" >
+      <div class="flex-wrap md:flex md:items-center md:justify-center gap-4 bg-[#0a0a34] text-white p-14 " style="font-family: 'Clash Grotesk', sans-serif;" >
           <!-- 15 years of delivering quality education -->
           <div class="flex flex-col items-center  p-4">
             <svg class="text-yellow-500 mb-2 w-16 h-16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
