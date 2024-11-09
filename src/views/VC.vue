@@ -1,16 +1,10 @@
 <template>
   <main class="container">
     <div class="vc-message">
-      <div class="photo">
+      <div class="photo text-center">
         <img src="@/assets/velraj.webp" alt="Vice-Chancellor's Photo" />
         <h2 class="bold">Dr.R.Velraj</h2>
         <a href="#" @click.prevent="openPopover">View Profile</a>
-      </div>
-      <div class="content">
-        <h1>{{ vcMessage.title }}</h1>
-        <h2><strong>Greetings to all!</strong></h2>
-        <p v-html="formattedMessageContent"></p>
-        <p class="signature">{{ vcMessage.signature }}</p>
       </div>
     </div>
 
@@ -104,11 +98,6 @@ export default {
       }
     };
   },
-  computed: {
-    formattedMessageContent() {
-      return this.vcMessage.content.replace(/\n/g, '<br><br>').replace(/a\)/g, '<br>&nbsp;&nbsp;&nbsp;&nbsp;a)').replace(/b\)/g, '<br>&nbsp;&nbsp;&nbsp;&nbsp;b)').replace(/•/g, '<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•');
-    }
-  },
   methods: {
     openPopover() {
       this.showPopover = true;
@@ -123,19 +112,8 @@ export default {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: #f7f7f7;
   padding: 16px;
-}
-
-.vc-message {
-  display: flex;
-  flex-direction: column;
-  background-color: white;
-  padding: 24px;
-  border-radius: 8px;
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-  max-width: 800px;
-  width: 100%;
+  background-color: #f7f7f7;
 }
 
 .photo {
@@ -147,65 +125,15 @@ export default {
   max-width: 100%;
   border-radius: 8px;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  display: block;
+  margin: 0 auto;
 }
 
-.photo h2 {
+.photo h2,
+.photo a {
   margin-top: 8px;
   font-weight: bold;
-}
-
-.content {
-  padding-left: 24px;
-}
-
-h1 {
-  font-size: 2.25rem;
-  font-weight: 700;
-  margin-bottom: 16px;
-  color: #3b82f6;
-}
-
-h2 {
-  font-size: 1.5rem;
-  margin-bottom: 16px;
-  color: black;
-}
-
-p {
-  font-size: 1.125rem;
-  margin-bottom: 16px;
-}
-
-.signature {
-  font-weight: 600;
-  text-align: right;
-}
-
-a {
-  color: #3b82f6;
-  text-decoration: none;
-  display: block;
-  margin-top: 8px;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-@media (min-width: 768px) {
-  .vc-message {
-    flex-direction: row;
-  }
-
-  .photo {
-    margin-bottom: 0;
-    flex: 1;
-  }
-
-  .content {
-    padding-left: 24px;
-    flex: 2;
-  }
+  text-align: center;
 }
 
 .modal-box {
@@ -248,5 +176,21 @@ p {
 .modal-box .flex-grow {
   overflow: auto;
   max-height: calc(100vh - 160px);
+}
+
+@media (min-width: 768px) {
+  .vc-message {
+    flex-direction: row;
+  }
+
+  .photo {
+    margin-bottom: 0;
+    flex: 1;
+  }
+
+  .content {
+    padding-left: 24px;
+    flex: 2;
+  }
 }
 </style>

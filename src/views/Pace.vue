@@ -2,9 +2,9 @@
   <main class="flex-grow">
     <!-- Hero section -->
     <section 
-    class="hero-section bg-cover  py-4 relative -z-10" 
+    class="hero-section bg-cover py-4 relative -z-10" 
     :style="{ 
-     backgroundImage: `url(${backgroundImage})`, 
+      backgroundImage: `url(${backgroundImage})`, 
       backgroundSize: 'cover',
       backgroundPosition: 'center center' 
     }">
@@ -130,33 +130,96 @@ button:hover {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-  .text-4xl {
-    font-size: 2rem;
+  /* Hero Section Text */
+  .hero-section h1 {
+    font-size: 2rem; /* Reduce font size for mobile */
   }
 
-  .text-3xl {
-    font-size: 1.5rem;
+  /* Vertical Tabs Container */
+  .flex-col {
+    flex-direction: column; /* Stack the tabs vertically on mobile */
+  }
+
+  /* Vertical Tabs */
+  .w-full {
+    width: 100%; /* Make tabs take full width on mobile */
+  }
+
+  .md:w-64 {
+    width: 100%; /* Tabs take full width on small screens */
+  }
+
+  /* Button Adjustments */
+  button {
+    padding: 1rem 2rem; /* Adjust button size for mobile */
+    font-size: 1rem; /* Make button text size smaller on mobile */
+  }
+
+  /* Tab Content */
+  .px-10 {
+    padding-left: 1rem;
+    padding-right: 1rem; /* Ensure padding is adequate on mobile */
+  }
+
+  /* Hero Section Styling */
+  .hero-section {
+    background-size: cover;
+    background-position: center center;
+    min-height: 60vh; /* Increase hero section height for mobile */
+  }
+
+  /* Vertical Tabs (buttons) */
+  .space-y-2 {
+    margin-top: 2rem; /* Add space between tabs for better readability */
+  }
+
+  .font-serif {
+    font-size: 1.125rem; /* Adjust font size for better readability on mobile */
+  }
+  
+  /* Text Size */
+  .text-4xl {
+    font-size: 2rem; /* Smaller text for mobile screens */
   }
 
   .text-2xl {
-    font-size: 1.25rem;
+    font-size: 1.25rem; /* Adjust the subheading size for mobile */
+  }
+}
+
+/* Tablet to PC */
+@media (min-width: 768px) {
+  /* Vertical Tabs Container */
+  .flex-col {
+    flex-direction: row; /* Display the tabs horizontally on larger screens */
   }
 
-  .container {
-    padding: 1rem;
+  /* Adjust Tab Content Padding */
+  .px-10 {
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 
-  .flex-shrink-0 {
-    width: 100%;
-    margin-right: 0;
+  /* Adjust Font Sizes for PC */
+  .text-4xl {
+    font-size: 2.5rem; /* Slightly larger text for PCs */
   }
 
-  .ml-8 {
-    margin-left: 0;
+  .text-2xl {
+    font-size: 1.75rem; /* Subheading font size for PCs */
   }
 
-  .p-4 {
-    padding: 1rem;
+  /* Ensure appropriate padding on the hero section */
+  .hero-section {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    min-height: 70vh; /* Adjust hero section height for larger screens */
+  }
+
+  /* Button Adjustments for PC */
+  button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
   }
 }
 </style>

@@ -441,12 +441,104 @@ export default {
 </script>
 
 <!-- Add this to your CSS -->
-<style>
-  .no-scrollbar::-webkit-scrollbar {
-    display: none;
+<style scoped>
+/* Basic Styling */
+.sticky {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #ffffff;
+  overflow-x: auto;
+}
+
+.tab-button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  white-space: nowrap;
+  cursor: pointer;
+  background-color: white;
+  border: none;
+  outline: none;
+}
+
+.tab-button.active {
+  color: #0369a1;
+  border-bottom: 2px solid #0369a1;
+}
+
+.section-container {
+  padding: 2rem;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Event Carousel */
+.event-carousel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.event-details {
+  flex: 1;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Popover */
+.popover {
+  position: fixed;
+  bottom: 10%;
+  left: 10%;
+  right: 10%;
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .section-container {
+    padding: 1rem;
   }
-  .no-scrollbar {
-    -ms-overflow-style: none;  /* Internet Explorer 10+ */
-    scrollbar-width: none;  /* Firefox */
+
+  .sticky {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none;
   }
+
+  .tab-button {
+    font-size: 0.875rem;
+    padding: 0.25rem 0.75rem;
+  }
+
+  .popover {
+    bottom: 5%;
+    left: 5%;
+    right: 5%;
+  }
+
+  .event-carousel {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .event-details {
+    font-size: 0.875rem;
+  }
+}
+
+/* Hide scrollbar */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
 </style>

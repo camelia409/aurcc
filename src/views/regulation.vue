@@ -111,4 +111,117 @@ h2.animate-fadeInUp {
 
 /* Add delay utility class */
 
+/* Mobile responsiveness */
+@media (max-width: 640px) {
+  .hero-section {
+    background-size: cover;
+    background-position: center;
+  }
+
+  .hero-section .text-4xl {
+    font-size: 2xl;
+    padding: 0 8px;
+  }
+
+  .mx-auto.py-24 {
+    padding: 16px;
+  }
+
+  /* For iframe container to adjust to smaller screens */
+  iframe {
+    height: 60vh; /* Adjust iframe height for mobile */
+  }
+
+  /* Ensure the sections' paddings are not too wide for small screens */
+  section {
+    padding: 2rem;
+  }
+
+  /* Adjust section headings on smaller screens */
+  h2 {
+    font-size: 1.8rem;
+    padding: 16px;
+  }
+
+  .bg-indigo-100 {
+    padding: 4rem 0;
+  }
+
+  /* For mobile optimization of PDF iframe */
+  iframe {
+    height: 50vh; /* Reduce iframe height on small screens */
+  }
+
+  /* Adjust the padding on mobile for better layout */
+  .p-4 {
+    padding: 1rem;
+  }
+}
+
+/* Tablet responsiveness */
+@media (max-width: 768px) {
+  .hero-section {
+    background-size: cover;
+    background-position: center;
+  }
+
+  .text-4xl {
+    font-size: 3xl;
+    padding: 0 16px;
+  }
+
+  .mx-auto.py-24 {
+    padding: 20px;
+  }
+
+  iframe {
+    height: 70vh; /* Adjust iframe height for tablet */
+  }
+
+  /* Padding for general sections */
+  section {
+    padding: 3rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .bg-indigo-100 {
+    padding: 5rem 0;
+  }
+}
+
+/* PC (Desktop) responsiveness */
+@media (min-width: 1024px) {
+  .hero-section {
+    background-size: cover;
+    background-position: top center;
+  }
+
+  .text-4xl {
+    font-size: 4xl;
+    padding: 0 20px;
+  }
+
+  /* Adjust section heading size for larger screens */
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  iframe {
+    height: 80vh; /* Increase iframe height for larger screens */
+  }
+
+  /* For section padding on larger screens */
+  section {
+    padding: 4rem 5rem;
+  }
+
+  .bg-indigo-100 {
+    padding: 6rem 0;
+  }
+}
+
+
 </style>

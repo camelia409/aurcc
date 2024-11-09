@@ -130,3 +130,46 @@ export default {
   }
 };
 </script>
+
+<style>
+/* Hero Section */
+.hero-section {
+  min-height: 40vh;
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center center;
+}
+
+@media (max-width: 767px) {
+  .hero-section {
+    min-height: 35vh; /* Adjust height for mobile */
+  }
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+  .space-y-2 {
+    padding-left: 0 !important;
+  }
+  .flex-col {
+    flex-direction: column;
+  }
+  .md\\:w-64 {
+    width: 100% !important;
+  }
+  .md\\:text-4xl {
+    font-size: 1.5rem !important;
+  }
+  .md\\:text-xl {
+    font-size: 1rem !important;
+  }
+}
+
+@media (max-width: 1023px) {
+  .md\\:grid-cols-2 {
+    grid-template-columns: 1fr !important;
+  }
+  .md\\:w-64 {
+    width: 100% !important;
+  }
+}
+</style>

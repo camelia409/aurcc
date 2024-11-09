@@ -142,4 +142,39 @@ export default {
 body {
   font-family: 'Arial', sans-serif;
 }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  /* Adjust vertical tab buttons to take full width on mobile */
+  .flex-shrink-0 {
+    width: 100%;
+  }
+
+  .space-y-4 button {
+    width: 100%;
+  }
+
+  /* Adjust tab content layout on mobile */
+  .grid {
+    grid-template-columns: 1fr; /* Single column on mobile */
+  }
+
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  /* Keep two-column grid on larger screens for activities, projects, hackathons, and staff */
+  .grid {
+    grid-template-columns: 1fr 1fr; /* Two columns for desktop */
+  }
+
+  /* Adjust section padding and margins on larger screens */
+  .container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
 </style>

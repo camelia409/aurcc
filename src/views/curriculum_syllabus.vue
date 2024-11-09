@@ -6,8 +6,8 @@
       :style="{ backgroundImage: `url(${backgroundImage})` }">
       <div class="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div>
       <div class="container mx-auto py-16 text-white p-9 relative z-10">
-        <h1 class="text-4xl font-serif font-bold mb-4 animate-slideIn">Curriculum & Syllabus</h1>
-        <p class="text-xl font-serif mb-8 animate-fadeIn delay-1s">Explore the detailed curriculum and syllabus for our undergraduate and postgraduate programs.</p>
+        <h1 class="text-4xl font-serif font-bold mb-4 animate-slideIn text-center md:text-left">Curriculum & Syllabus</h1>
+        <p class="text-xl font-serif mb-8 animate-fadeIn delay-1s text-center md:text-left">Explore the detailed curriculum and syllabus for our undergraduate and postgraduate programs.</p>
       </div>
     </section>
 
@@ -133,5 +133,65 @@ h2.animate-fadeInUp {
 
 .animate-fadeInUp {
   animation: fadeInUp 1.5s ease-out forwards;
+}
+
+/* Responsive styling */
+@media (max-width: 1024px) {
+  h1.text-4xl {
+    font-size: 3xl;
+  }
+
+  h2.text-3xl {
+    font-size: 2xl;
+  }
+
+  .container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .hero-section {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+
+  .table {
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  td, th {
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-section {
+    background-position: center;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  h1.text-4xl {
+    font-size: 2xl;
+  }
+
+  h2.text-3xl {
+    font-size: xl;
+  }
+
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  table {
+    width: 100%;
+    overflow-x: scroll;
+  }
+
+  .text-xl {
+    font-size: lg;
+  }
 }
 </style>

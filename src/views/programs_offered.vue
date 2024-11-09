@@ -6,14 +6,14 @@
       :style="{ backgroundImage: `url(${backgroundImage})` }">
       <div class="absolute inset-0 bg-black opacity-70"></div>
       <div class="mx-auto py-24 text-white relative z-10 flex flex-col items-center text-center">
-        <h1 class="text-5xl font-extrabold mb-4 animate-slideIn font-serif">Programs Offered</h1>
-        <p class="text-2xl mb-8 animate-fadeIn delay-1s font-serif">Explore the programs we offer for undergraduate and postgraduate studies.</p>
+        <h1 class="text-5xl font-extrabold mb-4 animate-slideIn font-serif sm:text-4xl md:text-5xl lg:text-6xl">Programs Offered</h1>
+        <p class="text-2xl mb-8 animate-fadeIn delay-1s font-serif sm:text-xl md:text-2xl">Explore the programs we offer for undergraduate and postgraduate studies.</p>
       </div>
     </section>
 
     <!-- Background section below the hero -->
-    <div class="bg-gradient-to-b from-gray-100 to-blue-100 py-16 animate-fadeIn relative -z-10 ">
-      <div class="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12">
+    <div class="bg-gradient-to-b from-gray-100 to-blue-100 py-16 animate-fadeIn relative -z-10">
+      <div class="container mx-auto grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-12 px-4">
         <!-- UG Programmes section -->
         <section class="bg-white rounded-lg shadow-lg overflow-hidden transform transition-transform hover:scale-105 hover:shadow-xl animate-popIn">
           <h2 class="text-3xl text-center font-extrabold py-6 bg-gradient-to-r from-blue-600 to-cyan-400 text-white animate-fadeInUp font-serif">UG Programmes</h2>
@@ -137,5 +137,44 @@ table tbody tr:hover {
 
 .animate-fadeInUp {
   animation: fadeInUp 1.5s ease-out forwards;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-section {
+    background-position: center;
+  }
+  
+  .text-5xl {
+    font-size: 2.25rem; /* Adjusting font size for smaller screens */
+  }
+
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  table {
+    width: 100%;
+    table-layout: fixed; /* Ensures the table fits the screen width */
+  }
+
+  th, td {
+    padding: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .text-2xl {
+    font-size: 1.5rem; /* Adjusting font size for smaller screens */
+  }
+
+  .text-3xl {
+    font-size: 2rem; /* Adjusting font size for smaller screens */
+  }
 }
 </style>

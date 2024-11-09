@@ -124,4 +124,79 @@ button:hover {
 .flex-shrink-0 {
   flex-shrink: 0;
 }
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  /* Adjusting layout for tablets and small laptops */
+  .hero-section {
+    min-height: 40vh; /* Reduced height for smaller screens */
+  }
+
+  .flex-col {
+    flex-direction: column;
+  }
+
+  .lg\:w-64 {
+    width: 100%; /* Full width for vertical tabs */
+    margin-bottom: 1rem; /* Margin below tabs */
+  }
+
+  .lg\:pl-10 {
+    padding-left: 0; /* Remove left padding on smaller screens */
+  }
+
+  .w-full {
+    width: 100%;
+  }
+
+  .h-max {
+    height: auto; /* Adjust height for small devices */
+  }
+}
+
+@media (max-width: 640px) {
+  /* Mobile view adjustments */
+  .hero-section {
+    min-height: 35vh; /* Further reduce height for mobile screens */
+    padding: 2rem 0; /* Add padding for better spacing */
+  }
+
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem; /* Ensure content fits nicely on small screens */
+  }
+
+  .text-4xl {
+    font-size: 2rem; /* Reduce font size for hero heading */
+  }
+
+  .font-serif {
+    font-size: 0.875rem; /* Reduce font size for smaller screens */
+  }
+
+  /* Adjust Vertical Tabs for mobile */
+  .flex-shrink-0 {
+    width: 100%; /* Make vertical tabs full width */
+    margin-bottom: 1rem; /* Spacing between tabs and content */
+  }
+
+  .font-serif button {
+    font-size: 0.875rem; /* Smaller font size for buttons on mobile */
+  }
+
+  .lg\:pl-10 {
+    padding-left: 0; /* Remove large left padding for mobile */
+  }
+
+  /* Ensure tab content is fully responsive */
+  iframe {
+    width: 100%;
+    height: auto; /* Allow iframe to adapt to screen size */
+  }
+
+  .grid-cols-1 {
+    grid-template-columns: 1fr; /* Single column layout for office bearers */
+  }
+}
 </style>
+

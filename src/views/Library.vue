@@ -17,7 +17,7 @@
     </section>
 
     <!-- Vertical Tabs Section -->
-    <section class="mx-auto py-12 px-10 bg-gray-100 rounded-lg animate-popIn">
+    <section class="mx-auto py-12 px-4 sm:px-10 bg-gray-100 rounded-lg animate-popIn">
       <div class="relative flex flex-col md:flex-row">
         <!-- Vertical Tabs -->
         <div class="flex-shrink-0 w-full h-max md:w-64 bg-gradient-to-r from-[#21209c] to-blue-600 rounded-lg shadow-lg p-4 mb-4 md:mb-0 md:mr-4">
@@ -38,7 +38,7 @@
         </div>
 
         <!-- Tab Content -->
-        <div class="w-full px-10 font-serif min-h-[400px] max-h-[400px] overflow-y-auto">
+        <div class="w-full px-4 sm:px-10 font-serif min-h-[400px] max-h-[400px] overflow-y-auto">
           <div v-if="activeSection === 'About Library'" ref="AboutLibrary" class="bg-white rounded-lg shadow-lg p-6 mb-16 animate-fadeIn">
             <h3 class="text-2xl md:text-4xl font-bold text-black mb-4">About Library</h3>
             <p class="text-xl">{{ libraryData.description }}</p>
@@ -59,32 +59,34 @@
           <div v-if="activeSection === 'Library Resources'" ref="LibraryResources" class="bg-white rounded-lg shadow-lg p-6 mb-16 animate-fadeIn">
             <h3 class="text-2xl md:text-4xl font-bold text-black mb-4">Library Resources</h3>
             <p class="text-xl mb-4">{{ libraryData.library_resources.description }}</p>
-            <table class="min-w-full bg-white border border-gray-200">
-              <thead>
-                <tr>
-                  <th class="px-4 py-2 border-b text-left">Books</th>
-                  <th class="px-4 py-2 border-b text-left">Reference Books</th>
-                  <th class="px-4 py-2 border-b text-left">CDs</th>
-                  <th class="px-4 py-2 border-b text-left">Donation Books</th>
-                  <th class="px-4 py-2 border-b text-left">Bound Volumes</th>
-                  <th class="px-4 py-2 border-b text-left">Project Reports</th>
-                  <th class="px-4 py-2 border-b text-left">Subscription to Journals</th>
-                  <th class="px-4 py-2 border-b text-left">Journal Binding Volumes</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td class="px-4 py-2 border-b">{{ libraryData.library_resources.collection.books }}</td>
-                  <td class="px-4 py-2 border-b">{{ libraryData.library_resources.collection.reference_books }}</td>
-                  <td class="px-4 py-2 border-b">{{ libraryData.library_resources.collection.cds }}</td>
-                  <td class="px-4 py-2 border-b">{{ libraryData.library_resources.collection.donation_books_collection }}</td>
-                  <td class="px-4 py-2 border-b">{{ libraryData.library_resources.collection.bound_volumes_of_journals }}</td>
-                  <td class="px-4 py-2 border-b">{{ libraryData.library_resources.collection.project_reports }}</td>
-                  <td class="px-4 py-2 border-b">{{ libraryData.library_resources.collection.subscription_to_journals }}</td>
-                  <td class="px-4 py-2 border-b">{{ libraryData.library_resources.journal_binding.volumes }}</td>
-                </tr>
-              </tbody>
-            </table>
+            <div class="overflow-auto w-full">
+              <table class="min-w-full bg-white border border-gray-200">
+                <thead>
+                  <tr>
+                    <th class="px-4 py-2 border-b text-left">Books</th>
+                    <th class="px-4 py-2 border-b text-left">Reference Books</th>
+                    <th class="px-4 py-2 border-b text-left">CDs</th>
+                    <th class="px-4 py-2 border-b text-left">Donation Books</th>
+                    <th class="px-4 py-2 border-b text-left">Bound Volumes</th>
+                    <th class="px-4 py-2 border-b text-left">Project Reports</th>
+                    <th class="px-4 py-2 border-b text-left">Subscription to Journals</th>
+                    <th class="px-4 py-2 border-b text-left">Journal Binding Volumes</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="px-4 py-2 border-b">{{ libraryData.library_resources.collection.books }}</td>
+                    <td class="px-4 py-2 border-b">{{ libraryData.library_resources.collection.reference_books }}</td>
+                    <td class="px-4 py-2 border-b">{{ libraryData.library_resources.collection.cds }}</td>
+                    <td class="px-4 py-2 border-b">{{ libraryData.library_resources.collection.donation_books_collection }}</td>
+                    <td class="px-4 py-2 border-b">{{ libraryData.library_resources.collection.bound_volumes_of_journals }}</td>
+                    <td class="px-4 py-2 border-b">{{ libraryData.library_resources.collection.project_reports }}</td>
+                    <td class="px-4 py-2 border-b">{{ libraryData.library_resources.collection.subscription_to_journals }}</td>
+                    <td class="px-4 py-2 border-b">{{ libraryData.library_resources.journal_binding.volumes }}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
 
           <div v-if="activeSection === 'Digital Library'" ref="DigitalLibrary" class="bg-white rounded-lg shadow-lg p-6 mb-16 animate-fadeIn">
@@ -130,11 +132,11 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div
                 v-for="faculty in libraryData.faculty"
-                :key="faculty.name"
-                class="bg-gray-100 rounded-md shadow p-4 animate-fadeIn"
+                :key="faculty.id"
+                class="bg-gray-200 p-4 rounded-md shadow-md"
               >
-                <h4 class="text-xl font-semibold mb-2">{{ faculty.name }}</h4>
-                <p>{{ faculty.designation }}</p>
+                <h4 class="text-lg font-semibold">{{ faculty.name }}</h4>
+                <p>{{ faculty.position }}</p>
               </div>
             </div>
           </div>
@@ -143,6 +145,7 @@
     </section>
   </main>
 </template>
+
 
 <script>
 import backgroundImage from '@/assets/library.webp';

@@ -9,9 +9,9 @@
         backgroundPosition: 'top center' 
       }">
       <div class="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div>
-      <div class="container mx-auto py-16 text-white p-12 relative z-10">
-        <h1 class="text-4xl font-bold mb-4 font-serif animate-slideIn">Student Affairs</h1>
-        <p class="text-xl mb-8 font-serif animate-fadeIn delay-1s">The Office of Student Affairs is dedicated to addressing the needs and
+      <div class="container mx-auto py-16 px-4 text-white p-12 relative z-10">
+        <h1 class="text-4xl font-bold mb-4 font-serif animate-slideIn text-center sm:text-5xl lg:text-6xl">Student Affairs</h1>
+        <p class="text-xl mb-8 font-serif animate-fadeIn delay-1s text-center sm:text-2xl">The Office of Student Affairs is dedicated to addressing the needs and
           concerns of students, ensuring their academic and personal success.</p>
       </div>
     </section>
@@ -21,7 +21,7 @@
       <!-- Description section -->
       <section class="py-8 p-4 animate-popIn">
         <div class="bg-white rounded-lg shadow-md">
-          <h2 class="text-3xl text-center font-bold p-3 rounded-lg bg-gradient-to-r from-blue-500 to-cyan-300 animate-fadeInUp">Description</h2>
+          <h2 class="text-3xl text-center font-bold p-3 rounded-lg bg-gradient-to-r from-blue-500 to-cyan-300 animate-fadeInUp text-lg sm:text-2xl md:text-3xl">Description</h2>
           <div class="font-medium text-xl p-4 space-y-2 animate-fadeIn delay-2s">
             <p v-for="(item, index) in data.description" :key="index">{{ item }}</p>
           </div>
@@ -31,7 +31,7 @@
       <!-- Re-Admission section -->
       <section class="py-8 p-4 animate-popIn">
         <div class="bg-white rounded-lg shadow-md">
-          <h2 class="text-3xl text-center font-bold p-3 rounded-lg bg-gradient-to-r from-blue-500 to-cyan-300 animate-fadeInUp">Re-Admission</h2>
+          <h2 class="text-3xl text-center font-bold p-3 rounded-lg bg-gradient-to-r from-blue-500 to-cyan-300 animate-fadeInUp text-lg sm:text-2xl md:text-3xl">Re-Admission</h2>
           <div class="font-medium text-xl p-4 animate-fadeIn delay-2s">
             <p>{{ data['Re-Admission'] }}</p>
           </div>
@@ -41,7 +41,7 @@
       <!-- Scholarships section -->
       <section class="py-8 p-4 animate-popIn">
         <div class="bg-white rounded-lg shadow-md">
-          <h2 class="text-3xl text-center font-bold p-3 rounded-lg bg-gradient-to-r from-blue-500 to-cyan-300 animate-fadeInUp">Scholarships</h2>
+          <h2 class="text-3xl text-center font-bold p-3 rounded-lg bg-gradient-to-r from-blue-500 to-cyan-300 animate-fadeInUp text-lg sm:text-2xl md:text-3xl">Scholarships</h2>
           <div class="font-medium text-xl p-4 animate-fadeIn delay-2s">
             <p>{{ data.Scholarship.description }}</p>
             <ul class="list-disc pl-5 mt-4">
@@ -54,7 +54,7 @@
       <!-- Fees Details section -->
       <section class="py-8 p-4 animate-popIn">
         <div class="bg-white rounded-lg shadow-md">
-          <h2 class="text-3xl text-center font-bold p-3 rounded-lg bg-gradient-to-r from-blue-500 to-cyan-300 animate-fadeInUp">Fees Details</h2>
+          <h2 class="text-3xl text-center font-bold p-3 rounded-lg bg-gradient-to-r from-blue-500 to-cyan-300 animate-fadeInUp text-lg sm:text-2xl md:text-3xl">Fees Details</h2>
           <div class="font-medium text-xl p-4 animate-fadeIn delay-2s">
             <p>For more details on fees, click the button below:</p>
             <div class="text-center mt-4">
@@ -71,7 +71,7 @@
       <!-- Office Bearers section -->
       <section class="py-8 p-4 animate-popIn">
         <div class="bg-white rounded-lg shadow-md">
-          <h2 class="text-3xl text-center font-bold p-3 rounded-lg bg-gradient-to-r from-blue-500 to-cyan-300 animate-fadeInUp">Office Bearers</h2>
+          <h2 class="text-3xl text-center font-bold p-3 rounded-lg bg-gradient-to-r from-blue-500 to-cyan-300 animate-fadeInUp text-lg sm:text-2xl md:text-3xl">Office Bearers</h2>
           <table class="min-w-full divide-y divide-gray-200 animate-fadeIn delay-2s">
             <thead class="bg-gray-50">
               <tr>
@@ -94,7 +94,7 @@
       <!-- Contact Us section -->
       <section class="py-8 p-4 animate-popIn">
         <div class="bg-white rounded-lg shadow-md">
-          <h2 class="text-3xl text-center font-bold p-3 rounded-lg bg-gradient-to-r from-blue-500 to-cyan-300 animate-fadeInUp">Contact Us</h2>
+          <h2 class="text-3xl text-center font-bold p-3 rounded-lg bg-gradient-to-r from-blue-500 to-cyan-300 animate-fadeInUp text-lg sm:text-2xl md:text-3xl">Contact Us</h2>
           <div class="font-medium text-xl p-4 animate-fadeIn delay-2s">
             <div class="space-y-2">
               <p>Anna University Regional Campus, Maruthamalai Main Road, Coimbatore (Dt), Pin-641 046</p>
@@ -176,26 +176,15 @@ export default {
   100% { transform: translateX(0); }
 }
 
-@keyframes popIn {
-  0% { opacity: 0; transform: scale(0.8); }
-  100% { opacity: 1; transform: scale(1); }
-}
-
-.animate-slideIn {
-  animation: slideIn 1s ease-out forwards;
-}
-
-.animate-fadeIn {
-  animation: fadeIn 2s ease-out forwards;
+.hero-section {
+  animation: fadeIn 1s ease-in-out;
 }
 
 .animate-popIn {
-  animation: popIn 1.2s ease-out forwards;
+  animation: fadeInUp 1s ease-in-out;
 }
 
-.animate-fadeInUp {
-  animation: fadeInUp 1.5s ease-out forwards;
+.animate-slideIn {
+  animation: slideIn 1s ease-in-out;
 }
-
-
 </style>

@@ -6,14 +6,14 @@
     <div class="text-center mb-8 py-5 bg-black bg-opacity-50">
       <h1 class="text-3xl font-bold text-white text-shadow-lg">Head of the Departments</h1>
     </div>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
       <div
         v-for="hod in hods"
         :key="hod.name"
         class="hod-member bg-white rounded-lg shadow-lg overflow-hidden flex flex-col items-center"
       >
         <div class="w-full flex justify-center">
-          <div class="w-60 h-70 overflow-hidden">
+          <div class="w-60 h-60 md:w-72 md:h-72 overflow-hidden">
             <img
               :src="getPhotoPath(hod.photo)"
               :alt="hod.name"
