@@ -37,8 +37,8 @@ import { RouterLink, RouterView } from 'vue-router';
     <div class="sticky top-0 container mx-auto px-4 py-4">
       <nav class="flex items-center justify-between" style="font-family: 'Clash Grotesk', sans-serif;">
         <div class="flex items-center">
-          <img src="./assets/logo.svg" alt="Logo" class="h-20 mr-4" />
-          <router-link to="/" class="text-5xl font-bold font-serif">
+          <img src="./assets/logo.svg" alt="Logo" class="h-10  sm:h-20 mr-4" />
+          <router-link to="/" class="text-xl sm:text-2xl md:text-5xl font-bold font-serif">
             <p>ANNA UNIVERSITY</p>
             <span class="hidden lg:inline text-2xl font-bold font-serif">REGIONAL CAMPUS COIMBATORE</span>
           </router-link>
@@ -304,7 +304,7 @@ import { RouterLink, RouterView } from 'vue-router';
       <div class="py-2 text-center">
         <p class="text-lg">&copy; {{new Date().getFullYear()}} Anna University Regional Campus Coimbatore. All rights reserved.</p>
       </div>
-      <a href="/about" class="text-xl font-bold text-blue-300 hover:text-blue-100 transition-colors">Website Development Team</a> 
+      <a href="/about" class="text-xl truncate hover:text-clip font-bold text-blue-300 hover:text-blue-100 transition-colors">Website Development Team</a> 
     </div>
   </div>
 </footer>
