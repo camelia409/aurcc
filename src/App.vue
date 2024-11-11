@@ -148,12 +148,6 @@ import { RouterLink, RouterView } from 'vue-router';
     <!-- Quick Access Links -->
     <div class="grid grid-cols-2 gap-3 mb-8">
       <router-link 
-        to="/life-aurcc" 
-        class="bg-white/10 rounded-lg p-4 text-center text-white hover:bg-white/20 transition-colors"
-      >
-        Life@aurcc
-      </router-link>
-      <router-link 
         to="/library" 
         class="bg-white/10 rounded-lg p-4 text-center text-white hover:bg-white/20 transition-colors"
       >
@@ -317,44 +311,67 @@ export default {
       currentYear: new Date().getFullYear(),
       isMobileMenuOpen: false,
       mobileSections: [
+      {
+          name: "Life@aurcc",
+          isOpen: false,
+          links: [
+            { name: "Sports", route: "/sports" },
+            { name: "NSS", route: "/nss" },
+            { name: "Kani Tamil Peravai", route: "/tamilmandram" },
+            { name: "Fine Arts Club", route: "/fine-arts" },
+            { name: "Alumni", route: "/alumni" }
+          ],
+        },
         {
           name: "Administration",
           isOpen: false,
           links: [
             { name: "Organogram", route: "/organogram" },
-            { name: "Governing Body", route: "/governing-body" },
-            { name: "Director’s Message", route: "/directors-message" },
-            { name: "Faculty", route: "/faculty" },
+            { name: "Vice Chancellor", route: "/VC" },
+            { name: "University Administration", route: "/Register" },
+            { name: "Administrative Staff", route: "/administration" },
+            { name: "Head of the Departments", route: "/HOD" },
+            { name: "Cell Coordinators", route: "/COD" },
+            { name: "Dean Office Staff", route: "/dean_office" },
           ],
         },
         {
           name: "Academics",
           isOpen: false,
           links: [
-            { name: "Courses", route: "/courses" },
-            { name: "Syllabus", route: "/syllabus" },
-            { name: "Timetable", route: "/timetable" },
-            { name: "Examinations", route: "/examinations" },
+            { name: "Programs Offered", route: "/programs_offered" },
+            { name: "Curriculam & Syllabus", route: "/curriculam_syllabus" },
+            { name: "Regulation", route: "/regulation" },
+            { name: "Student Affairs", route: "/student_affairs" },
           ],
         },
         {
           name: "Departments",
           isOpen: false,
           links: [
-            { name: "Computer Science", route: "/cse" },
-            { name: "Electrical & Electronics", route: "/eee" },
-            { name: "Mechanical", route: "/mech" },
-            { name: "Civil", route: "/civil" },
+            { name: "Computer Science", route: "/departments/cse" },
+            { name: "Electrical & Electronics", route: "/departments/eee" },
+            { name: "Electronics & communication", route: "/departments/ece" },
+            { name: "Mechanical", route: "/departments/mech" },
+            { name: "MBA", route: "/departments/mba" },
+            { name: "Science & Humanities", route: "/departments/s&h" },
           ],
         },
         {
           name: "Offices",
           isOpen: false,
           links: [
-            { name: "Registrar’s Office", route: "/registrar-office" },
-            { name: "Finance Office", route: "/finance-office" },
-            { name: "Placements", route: "/placements" },
-            { name: "Research", route: "/research" },
+            { name: "Admission", route: "/admission" },
+            { name: "DGATE Cell", route: "/dgate" },
+            { name: "PACE Cell", route: "/pace-cell" },
+            { name: "Zonal Office", route: "/zonal" },
+            { name: "Office of Affiliation", route: "/office-affiliation" },
+            { name: "Distance Education", route: "/distance-education" },
+            { name: "ED Cell", route: "/ed-cell" },
+            { name: "Placement Cell", route: "/placement-cell" },
+            { name: "Research Cell", route: "/research-cell" },
+            { name: "Exam Cell", route: "/exam-cell" },
+            { name: "Estate Office", route: "/EstateOff" },
           ],
         },
       ],
