@@ -356,6 +356,13 @@
             </div>
           </div>
         </section>
+        <!-- Chatbot button -->
+        <button
+        class="fixed bottom-4 right-4 bg-blue-600 text-white p-4 rounded-full shadow-lg z-50"
+        @click="toggleChatbot"
+      >
+        💬 Help Desk
+      </button>
 
     </main>
   </div>
@@ -459,7 +466,34 @@ export default {
     },
     nextImage() {
       this.currentImageIndex = (this.currentImageIndex + 1) % this.galleryImages.length;
-    }
+    },
+    toggleChatbot() {
+      this.showChatbot = !this.showChatbot;
+    },
+    async sendMessage() {
+      if (this.userMessage.trim() === "") return;
+      
+      // Add the user's message to the chat log
+      this.chatLog.push({ sender: "user", message: this.userMessage });
+
+      const userInput = this.userMessage;
+      this.userMessage = ""; // Clear the input field
+
+      try {
+        // Send the message to the backend (replace with your API)
+        const response = await fetch("http://localhost:8000/chat", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ message: userInput })
+        });
+        const data = await response.json();
+
+        // Add the bot's response to the chat log
+        this.chatLog.push({ sender: "bot", message: data.response });
+      } catch (error) {
+        console.error("Error while communicating with the chatbot:", error);
+      }
+    },
   },
 };
 </script>
