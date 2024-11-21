@@ -198,6 +198,11 @@ const router = createRouter({
       path: '/s&h/',
       name: 'Science & Humanities',
       component: ()=> import('../views/s&h.vue')
+    },
+    {
+      path: '/Grievence/',
+      name: 'Grievence',
+      component: ()=> import('../views/Grievence.vue')
     }
   ]
 })
