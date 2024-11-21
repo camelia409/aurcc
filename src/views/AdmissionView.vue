@@ -2,19 +2,16 @@
   <main class="flex-grow">
     <!-- Hero section -->
     <section 
-    class="hero-section bg-cover py-4 relative -z-10" 
+    class="bg-cover md:bg-center relative -z-10 w-full h-60 sm:h-80 md:h-94 animate-fadeIn" 
     :style="{ 
       backgroundImage: `url(${backgroundImage})`
     }">
-      <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-t from-blue-900 via-transparent to-blue-900 opacity-70"></div>
-      <div class="container mx-auto py-24 text-center relative z-10 px-4">
-        <h1 class="text-4xl font-extrabold text-black drop-shadow-lg font-serif">{{ data.name }}</h1>
-      </div>
+      <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-t from-blue-900 via-transparent to-blue-900 opacity-50"></div>
     </section>
 
     <!-- Content Sections with Vertical Tabs -->
-    <section class="mx-auto py-12 px-10 bg-gray-100 rounded-lg">
-      <div class="flex flex-col md:flex-row">
+    <section class="mx-auto py-6 md:py-12 px-4 md:px-10 bg-indigo-100 rounded-lg animate-popIn">
+      <div class="relative flex flex-col px-8 md:flex-row">
         <!-- Vertical Tabs -->
         <div class="flex-shrink-0 w-full h-max md:w-64 bg-gradient-to-r from-[#21209c] to-blue-600 rounded-lg shadow-lg p-4 mb-4 md:mb-0 md:mr-4">
           <div class="relative p-4 rounded-lg ">
@@ -28,26 +25,26 @@
           </div>
           </div>
         <!-- Tab Content -->
-        <div class="w-full px-10 font-serif min-h-[400px] max-h-[400px] overflow-y-auto">
-          <div v-if="currentSection === 'overview'">
-            <h2 class="text-2xl md:text-4xl font-bold text-blue-800 mb-4">Overview</h2>
-            <p class="text-base md:text-lg">{{ data.description.Overview }}</p>
+        <div class="w-full px-0 md:px-10  font-serif min-h-[400px] max-h-[600px] md:max-h-[800px] overflow-y-auto">
+          <div v-if="currentSection === 'overview'" class="bg-white rounded-lg shadow-lg p-4 md:p-6 mb-16 animate-fadeIn">
+            <h2 class="text-2xl md:text-3xl font-bold text-black mb-4">Overview</h2>
+            <p class="text-base text-lg md:text-xl rounded-b-lg">{{ data.description.Overview }}</p>
           </div>
-          <div v-if="currentSection === 'courses_offered'">
-            <h2 class="text-2xl md:text-4xl font-bold text-blue-800 mb-4">Courses Offered</h2>
-            <p class="text-base md:text-lg">{{ data.courses_offered }}</p>
+          <div v-if="currentSection === 'courses_offered'" class="bg-white rounded-lg shadow-lg p-4 md:p-6 mb-16 animate-fadeIn">
+            <h2 class="text-2xl md:text-3xl font-bold text-black mb-4">Courses Offered</h2>
+            <p class="text-base text-lg md:text-xl rounded-b-lg">{{ data.courses_offered }}</p>
           </div>
-          <div v-if="currentSection === 'eligibility_criteria'">
-            <h2 class="text-2xl md:text-4xl font-bold text-blue-800 mb-4">Eligibility Criteria</h2>
+          <div v-if="currentSection === 'eligibility_criteria'" class="bg-white rounded-lg shadow-lg p-4 md:p-6 mb-16 animate-fadeIn">
+            <h2 class="text-2xl md:text-3xl font-bold text-black mb-4">Eligibility Criteria</h2>
             <ul class="list-disc pl-5">
               <li v-for="(criteria, program) in data.eligibility_criteria" :key="program" class="text-base md:text-lg">
                 <strong>{{ program }}:</strong> {{ criteria }}
               </li>
             </ul>
           </div>
-          <div v-if="currentSection === 'contact_us'">
-            <h2 class="text-2xl md:text-4xl font-bold text-blue-800 mb-4">Contact Us</h2>
-            <p class="text-base md:text-lg">{{ data.contact_us['Admission Co-ordinator'] }}</p>
+          <div v-if="currentSection === 'contact_us'" class="bg-white rounded-lg shadow-lg p-4 md:p-6 mb-16 animate-fadeIn">
+            <h2 class="text-2xl md:text-3xl font-bold text-black mb-4">Contact Us</h2>
+            <p class="text-base text-lg md:text-xl rounded-b-lg">{{ data.contact_us['Admission Co-ordinator'] }}</p>
           </div>
         </div>
       </div>
