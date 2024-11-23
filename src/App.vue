@@ -34,7 +34,7 @@ import { RouterLink, RouterView } from 'vue-router';
     </div>
 
     <!-- Main Navbar Section -->
-    <div class="top-0 container mx-auto px-4 py-4">
+    <div class="container mx-auto px-4 py-4">
       <nav class="flex items-center justify-between" style="font-family: 'Clash Grotesk', sans-serif;">
         <div class="flex items-center">
           <img src="./assets/logo.svg" alt="Logo" class="h-10  sm:h-20 mr-4" />
@@ -380,6 +380,33 @@ export default {
   methods: {
     toggleMobileDropdown(section) {
       section.isOpen = !section.isOpen;
+    },
+    toggleChatbot() {
+      this.showChatbot = !this.showChatbot;
+    },
+    async sendMessage() {
+      if (this.userMessage.trim() === "") return;
+      
+      // Add the user's message to the chat log
+      this.chatLog.push({ sender: "user", message: this.userMessage });
+
+      const userInput = this.userMessage;
+      this.userMessage = ""; // Clear the input field
+
+      try {
+        // Send the message to the backend (replace with your API)
+        const response = await fetch("http://localhost:8000/chat", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ message: userInput })
+        });
+        const data = await response.json();
+
+        // Add the bot's response to the chat log
+        this.chatLog.push({ sender: "bot", message: data.response });
+      } catch (error) {
+        console.error("Error while communicating with the chatbot:", error);
+      }
     },
   },
 };
