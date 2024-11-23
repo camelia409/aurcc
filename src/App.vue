@@ -34,7 +34,7 @@ import { RouterLink, RouterView } from 'vue-router';
     </div>
 
     <!-- Main Navbar Section -->
-    <div class="sticky top-0 container mx-auto px-4 py-4">
+    <div class="top-0 container mx-auto px-4 py-4">
       <nav class="flex items-center justify-between" style="font-family: 'Clash Grotesk', sans-serif;">
         <div class="flex items-center">
           <img src="./assets/logo.svg" alt="Logo" class="h-10  sm:h-20 mr-4" />

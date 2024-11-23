@@ -2,22 +2,25 @@
   <main class="flex-grow">
     <!-- Hero section -->
     <section 
-    class="hero-section bg-cover  py-32 relative -z-10" 
-    :style="{ 
-     backgroundImage: `url(${backgroundImage})`, 
-      backgroundSize: 'cover',
-      backgroundPosition: 'center center' 
-    }">
-     <!-- <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-t from-blue-900 via-transparent to-blue-900 opacity-70"></div>
-      <div class="container mx-auto py-10 text-center relative z-10 px-4">
-        <h1 class="text-4xl font-extrabold text-black  drop-shadow-lg font-serif">{{ details.name }}</h1>
-      </div>-->
+      class="bg-cover bg-center relative w-full h-60 sm:h-80 md:h-94 animate-fadeIn" 
+      :style="{ 
+        backgroundImage: `url(${backgroundImage})`
+      }">
+      <!-- Dark overlay -->
+        <div class="absolute inset-0 bg-black opacity-20"></div>
+        
+        <!-- Centered text -->
+        <div class="flex items-center justify-center h-full relative z-10 px-4">
+          <h1 class="md:text-4xl text-xl font-extrabold text-white drop-shadow-lg font-serif text-center animate-slideIn">
+            DISTANCE EDUCATION
+          </h1>
+        </div>
     </section>
 
     <!-- Details section -->
-    <section class="container mx-auto py-8 px-4 md:px-9">
-      <div class="bg-gradient-to-r from-[#21209c] to-blue-600 rounded-lg shadow-lg overflow-hidden">
-        <h2 class="text-3xl text-center bg-yellow-300 text-blue-600 p-4 font-bold rounded-t-lg">
+    <section class="bg-indigo-100 rounded-lg animate-popIn mx-auto py-8 px-4 md:px-60">
+      <div class="bg-blue-300 rounded-lg shadow-lg overflow-hidden">
+        <h2 class="text-3xl text-center bg-gradient-to-r from-[#21209c] to-blue-600 text-yellow-400 p-4 font-semibold rounded-t-lg">
           {{ details.description }}
         </h2>
         <div class="p-6">
@@ -54,7 +57,7 @@
 
 <script>
 import details from '../assets/distance education.json';
-import backgroundImage from '@/assets/distanceeducation.webp';
+import backgroundImage from '@/assets/offices.webp';
 
 export default {
   data() {
