@@ -2,14 +2,21 @@
   <main class="flex-grow">
     <!-- Hero section -->
     <section 
-    class="bg-cover md:bg-center relative -z-10 w-full h-48 sm:h-64 md:h-94-z-10" 
-    :style="{ 
-      backgroundImage: `url(${backgroundImage})`
-    }">
-      <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-t from-blue-900 via-transparent to-blue-900 opacity-70"></div>
-      <div class="container mx-auto py-10 text-center relative z-10 px-4">
-      </div>
-    </section>
+  class="bg-cover bg-center relative w-full h-60 sm:h-80 md:h-94 animate-fadeIn" 
+  :style="{ 
+    backgroundImage: `url(${backgroundImage})`
+  }">
+  <!-- Gradient Overlay -->
+  <div class="absolute inset-0 bg-black opacity-20"></div>
+  
+  <!-- Content Container -->
+  <div class="flex items-center justify-center h-full relative z-10 px-4">
+    <h1 class="md:text-4xl text-xl font-extrabold text-white drop-shadow-lg font-serif text-center animate-slideIn">
+      DGATE
+    </h1>
+  </div>
+</section>
+
   <!-- Vertical Tabs Section -->
 <section class="mx-auto py-6 md:py-12 px-4 md:px-10 bg-indigo-100 rounded-lg animate-popIn">
   <div class="relative flex flex-col md:flex-row">
@@ -122,7 +129,7 @@
 
 <script>
 import data from '../assets/DGATE-cell.json';
-import backgroundImage from '@/assets/dgate.webp';  // Correct path for the image
+import backgroundImage from '@/assets/offices.webp';  // Correct path for the image
 
 export default {
   data() {

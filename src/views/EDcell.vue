@@ -2,22 +2,26 @@
   <main class="flex-grow">
     <!-- Hero section -->
     <section 
-    class="hero-section bg-cover  py-4 relative -z-10" 
-    :style="{ 
-     backgroundImage: `url(${backgroundImage})`, 
-      backgroundSize: 'cover',
-      backgroundPosition: 'center center' 
-    }">
-      <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-t from-blue-900 via-transparent to-blue-900 opacity-70"></div>
-      <!--<div class="container mx-auto py-10 text-center relative z-10 px-4">
-        <h1 class="text-4xl font-extrabold text-black  drop-shadow-lg font-serif">ED Cell</h1>
-      </div>-->
+      class="bg-cover bg-center relative w-full h-60 sm:h-80 md:h-94 animate-fadeIn" 
+      :style="{ 
+        backgroundImage: `url(${backgroundImage})`
+      }">
+      <!-- Dark overlay -->
+        <div class="absolute inset-0 bg-black opacity-20"></div>
+        
+        <!-- Centered text -->
+        <div class="flex items-center justify-center h-full relative z-10 px-4">
+          <h1 class="md:text-4xl text-xl font-extrabold text-white drop-shadow-lg font-serif text-center animate-slideIn">
+            ED CELL
+          </h1>
+        </div>
     </section>
+
         
 
   <!-- Vertical Tabs Section -->
-  <section class="mx-auto py-10 px-10 bg-gray-100 rounded-lg">
-  <div class="flex flex-col md:flex-row">
+  <section class="mx-auto py-6 md:py-12 px-4 md:px-10 bg-indigo-100 rounded-lg animate-popIn">
+    <div class="relative flex flex-col px-8 md:flex-row">
     <!-- Vertical Tabs -->
     <div class="flex-shrink-0 w-full h-max lg:w-64 bg-gradient-to-r from-[#21209c] to-blue-600 rounded-lg shadow-lg p-4 overflow-hidden mb-4 lg:mb-0">
       <div class="relative bg-gradient-to-r from-[#21209c] to-blue-600 p-4 rounded-lg">
@@ -34,39 +38,39 @@
     </div>
 
     <!-- Tab Content -->
-    <div class="w-full px-10  font-serif">
-      <div v-if="activeTab === 'Description'" >
-        <h3 class="text-2xl md:text-4xl font-bold text-blue-800 mb-4">Description</h3>
-        <p class="text-lg mb-6 max-w-2xl font-serif text-black">
+    <div class="w-full px-0 md:px-10  font-serif min-h-[400px] max-h-[600px] md:max-h-[800px] overflow-y-auto">
+      <div v-if="activeTab === 'Description'" class="bg-white rounded-lg shadow-lg p-4 md:p-6 mb-16 animate-fadeIn">
+        <h3 class="text-2xl md:text-3xl font-bold text-black mb-4">Description</h3>
+        <p class="text-lg md:text-xl rounded-b-lg mb-6 max-w-2xl font-serif text-black">
           Entrepreneurship is the person who plays a certain price for a product to resell it at an uncertain price, hereby making decisions about obtaining and using the resources while consequently admitting the risk of enterprise.
       </p>
       </div>
 
-      <div v-else-if="activeTab === 'objectives'" >
-        <h3 class="text-2xl md:text-4xl font-bold text-blue-800 mb-4">Objectives</h3>
-        <ul class="text-lg font-medium text-gray-900 list-disc pl-6">
+      <div v-else-if="activeTab === 'objectives'" class="bg-white rounded-lg shadow-lg p-4 md:p-6 mb-16 animate-fadeIn">
+        <h3 class="text-2xl md:text-3xl font-bold text-black mb-4">Objectives</h3>
+        <ul class="text-lg md:text-xl rounded-b-lg font-medium text-gray-900 list-disc pl-6">
           <li v-for="objective in data.description.objectives" :key="objective">{{ objective }}</li>
         </ul>
       </div>
 
-      <div v-if="activeTab === 'key_activities'" >
-        <h3 class="text-2xl md:text-4xl font-bold text-blue-800 mb-4">Key Activities</h3>
+      <div v-if="activeTab === 'key_activities'" class="bg-white rounded-lg shadow-lg p-4 md:p-6 mb-16 animate-fadeIn">
+        <h3 class="text-2xl md:text-3xl font-bold text-black mb-4">Key Activities</h3>
         <div v-for="activity in data.description.key_activities" :key="activity.name" class="p-4 rounded-lg bg-gray-100 mb-4">
-          <h4 class="text-xl font-semibold">{{ activity.name }}</h4>
+          <h4 class="text-lg md:text-xl rounded-b-lg font-semibold">{{ activity.name }}</h4>
           <p><strong>Location:</strong> {{ activity.location }}</p>
           <p><strong>Details:</strong> {{ activity.details }}</p>
         </div>
       </div>
 
-      <div v-if="activeTab === 'mou'" >
-        <h3 class="text-2xl md:text-4xl font-bold text-blue-800 mb-4">MOU</h3>
-        <ul class="text-lg font-medium text-gray-900 list-disc pl-6">
+      <div v-if="activeTab === 'mou'" class="bg-white rounded-lg shadow-lg p-4 md:p-6 mb-16 animate-fadeIn">
+        <h3 class="text-2xl md:text-3xl font-bold text-black mb-4">MOU</h3>
+        <ul class="text-lg md:text-xl rounded-b-lg font-medium text-gray-900 list-disc pl-6">
           <li v-for="mou in data.MOU" :key="mou">{{ mou }}</li>
         </ul>
       </div>
 
-      <div v-if="activeTab === 'links'" >
-        <h3 class="text-2xl md:text-4xl font-bold text-blue-800 mb-4">Links</h3>
+      <div v-if="activeTab === 'links'" class="bg-white rounded-lg shadow-lg p-4 md:p-6 mb-16 animate-fadeIn">
+        <h3 class="text-2xl md:text-3xl font-bold text-black mb-4">Links</h3>
         <ul class="text-lg  font-medium text-gray-900 list-disc pl-6">
           <li v-for="link in data.links" :key="link">
             <a :href="'http://' + link" target="_blank" rel="noopener noreferrer" class="hover:underline">{{ link }}</a>
@@ -74,10 +78,10 @@
         </ul>
       </div>
 
-      <div v-if="activeTab === 'office_bearers'">
-        <h3 class="text-2xl md:text-4xl font-bold text-blue-800 mb-4">Office Bearers</h3>
+      <div v-if="activeTab === 'office_bearers'" class="bg-white rounded-lg shadow-lg p-4 md:p-6 mb-16 animate-fadeIn">
+        <h3 class="text-2xl md:text-3xl font-bold text-black mb-4">Office Bearers</h3>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div v-for="member in data.office_bearers" :key="member.email" class="p-6 bg-gray-100 rounded-lg shadow-md relative overflow-hidden">
+          <div v-for="member in data.office_bearers" :key="member.email" class="p-2 bg-gray-100 rounded-lg shadow-md relative overflow-hidden">
             <div class="absolute inset-0 bg-blue-50 transform rotate-3"></div>
             <div class="relative z-10 p-4">
               <p class="text-xl font-bold text-center">{{ member.name }}</p>
@@ -97,7 +101,7 @@
 
 <script>
 import data from '../assets/ED-cell.json';
-import backgroundImage from '@/assets/EDcell.webp';  // Correct path for the image
+import backgroundImage from '@/assets/offices.webp';  // Correct path for the image
 
 export default {
   data() {

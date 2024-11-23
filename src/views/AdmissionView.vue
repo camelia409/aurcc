@@ -1,13 +1,21 @@
 <template>
   <main class="flex-grow">
     <!-- Hero section -->
-    <section 
-    class="bg-cover md:bg-center relative -z-10 w-full h-60 sm:h-80 md:h-94 animate-fadeIn" 
-    :style="{ 
-      backgroundImage: `url(${backgroundImage})`
-    }">
-      <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-t from-blue-900 via-transparent to-blue-900 opacity-50"></div>
-    </section>
+<section 
+  class="bg-cover bg-center relative w-full h-60 sm:h-80 md:h-94 animate-fadeIn" 
+  :style="{ 
+    backgroundImage: `url(${backgroundImage})`
+  }">
+  <!-- Dark overlay -->
+    <div class="absolute inset-0 bg-black opacity-20"></div>
+    
+    <!-- Centered text -->
+    <div class="flex items-center justify-center h-full relative z-10 px-4">
+      <h1 class="md:text-4xl text-xl font-extrabold text-white drop-shadow-lg font-serif text-center animate-slideIn">
+        ADMISSION
+      </h1>
+    </div>
+</section>
 
     <!-- Content Sections with Vertical Tabs -->
     <section class="mx-auto py-6 md:py-12 px-4 md:px-10 bg-indigo-100 rounded-lg animate-popIn">
@@ -54,7 +62,7 @@
 
 <script>
 import data from '../assets/admission.json';
-import backgroundImage from '@/assets/admissions.webp';  // Correct path for the image
+import backgroundImage from '@/assets/offices.webp';  // Correct path for the image
 
 export default {
   data() {
@@ -72,4 +80,42 @@ export default {
 body {
   font-family: 'Arial', sans-serif;
 }
+/* Add keyframes for animations */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes popIn {
+  0% { opacity: 0; transform: scale(0.8); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes slideIn {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(0); }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 1.5s ease-out forwards;
+}
+
+.animate-popIn {
+  animation: popIn 1.2s ease-out forwards;
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 1.5s ease-out forwards;
+}
+
+.animate-slideIn {
+  animation: slideIn 1s ease-out forwards;
+}
+
+
 </style>

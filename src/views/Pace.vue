@@ -2,17 +2,20 @@
   <main class="flex-grow">
     <!-- Hero section -->
     <section 
-    class="hero-section bg-cover  py-4 relative -z-10" 
-    :style="{ 
-     backgroundImage: `url(${backgroundImage})`, 
-      backgroundSize: 'cover',
-      backgroundPosition: 'center center' 
-    }">
-      <div class="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div>
-      <div class="container mx-auto py-10 text-center relative z-10 px-4">
-        <h1 class="text-4xl font-extrabold text-white drop-shadow-lg font-serif">{{ paceData.name }}</h1>
-      </div>
-    </section>
+  class="bg-cover bg-center relative w-full h-60 sm:h-80 md:h-94 animate-fadeIn" 
+  :style="{ 
+    backgroundImage: `url(${backgroundImage})`
+  }">
+  <!-- Gradient Overlay -->
+  <div class="absolute inset-0 bg-black opacity-20"></div>
+  
+  <!-- Content Container -->
+  <div class="flex items-center justify-center h-full relative z-10 px-4">
+    <h1 class="md:text-4xl text-xl font-extrabold text-white drop-shadow-lg font-serif text-center animate-slideIn">
+      PACE CELL
+    </h1>
+  </div>
+</section>
       
     <!-- Vertical Tabs Section -->
     <section class="mx-auto py-6 md:py-12 px-4 md:px-10 bg-indigo-100 rounded-lg animate-popIn">
@@ -63,7 +66,7 @@
 
 <script>
 import paceData from '../assets/pace.json';
-import backgroundImage from '@/assets/pace.webp';  // Correct path for the image
+import backgroundImage from '@/assets/offices.webp';  // Correct path for the image
 
 export default {
   data() {
