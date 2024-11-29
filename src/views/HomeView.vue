@@ -1,6 +1,6 @@
 <template>
   <div class="">        
-    <main class="font-serif">
+    <main class="">
        <!-- Hero Section -->
        <section class="hero min-h-screen relative overflow-hidden">
         <div class="absolute inset-0 bg-black opacity-50"></div>
@@ -269,9 +269,6 @@
           <a href="https://docs.google.com/forms/d/e/1FAIpQLScNS4VLaepGgelMcCyQXkE0KyPLKUws4YQQeTmdvZDQKFFjJg/viewform" class="">
             <p class="text-2xl font-bold text-yellow-500 hover:opacity-75 hover:cursor-pointer bg-blue-950 p-5 rounded-md">Online Grievence</p>
           </a>
-          <router-link to="/Grievence" class="">
-              <p class="text-2xl font-bold text-yellow-500 hover:opacity-75 hover:cursor-pointer bg-blue-950 p-5 rounded-md">Help Desk</p>
-          </router-link>
       </div>
 
       <!-- Gallery Section -->
@@ -360,41 +357,61 @@
           </div>
         </section>
         <!-- Chatbot button -->
-        <button
-        class="fixed bottom-4 right-4 bg-blue-600 text-white p-4 rounded-full shadow-lg z-50"
-        @click="toggleChatbot"
-        >
-        💬 Help Desk
-        </button>
-        <!-- Chatbot interface -->
-      <div v-if="showChatbot" class="fixed bottom-20 right-4 w-80 bg-white shadow-lg rounded-lg z-50">
-        <div class="flex justify-between items-center bg-blue-600 p-4 rounded-t-lg text-white">
-          <h2 class="text-lg font-semibold">Support Chatbot</h2>
-          <button @click="toggleChatbot" class="text-white">✖</button>
+<!-- Help Desk Button -->
+<button
+  onclick="document.getElementById('my_modal_5').showModal()"
+  class="btn fixed bottom-4 right-4 bg-blue-600 text-white p-4 rounded-full shadow-lg z-50"
+>
+  💬 Help Desk
+</button>
+
+<!-- Chatbot Interface -->
+<dialog id="my_modal_5" class="modal">
+  <div
+    class="modal-box p-0 w-80 shadow-lg rounded-lg fixed bottom-20 right-4 md:right-10"
+
+  >
+    <!-- Modal Header -->
+    <div class="flex justify-between items-center bg-blue-600 p-4 rounded-t-lg text-white">
+      <h2 class="text-lg font-semibold">Support Chatbot</h2>
+      <button
+        onclick="document.getElementById('my_modal_5').close()"
+        class="btn btn-sm btn-circle btn-ghost text-white"
+        aria-label="Close"
+      >
+        ✖
+      </button>
+    </div>
+
+    <!-- Chat Log -->
+    <div class="p-4 h-64 overflow-y-auto bg-gray-50">
+      <div v-for="(chat, index) in chatLog" :key="index" class="mb-4">
+        <!-- User Messages -->
+        <div v-if="chat.sender === 'user'" class="chat chat-end">
+          <div class="chat-bubble chat-bubble-accent">{{ chat.message }}</div>
         </div>
-        <div class="p-4 h-64 overflow-y-auto">
-          <!-- Chat log -->
-          <div v-for="(chat, index) in chatLog" :key="index" class="mb-4">
-            <div v-if="chat.sender === 'user'" class="chat chat-end">
-              <div class="chat-bubble chat-bubble-primary">{{ chat.message }}</div>
-            </div>
-            <div v-if="chat.sender === 'bot'" class="chat chat-start">
-              <div class="chat-bubble chat-bubble-primary">{{ chat.message }}</div>
-            </div>
-          </div>
-        </div>
-        <div class="p-4">
-          <input
-            v-model="userMessage"
-            type="text"
-            class="input input-bordered w-full"
-            placeholder="Type your message..."
-            @keyup.enter="sendMessage"
-          />
-          <button @click="sendMessage" class="btn btn-primary w-full mt-2">Send</button>
+        <!-- Bot Messages -->
+        <div v-if="chat.sender === 'bot'" class="chat chat-start">
+          <div class="chat-bubble chat-bubble-primary">{{ chat.message }}</div>
         </div>
       </div>
+      <!-- Loading Spinner -->
+      <div v-if="loading" class="loading loading-dots loading-lg mx-auto"></div>
+    </div>
 
+    <!-- Input Area -->
+    <div class="p-4 bg-gray-100 rounded-b-lg">
+      <input
+        v-model="userMessage"
+        type="text"
+        class="input input-bordered w-full"
+        placeholder="Type your message..."
+        @keyup.enter="sendMessage"
+      />
+      <button @click="sendMessage" class="btn btn-primary w-full mt-2">Send</button>
+    </div>
+  </div>
+</dialog>
     </main>
   </div>
 </template>
@@ -408,6 +425,7 @@ export default {
       showChatbot: false, // Controls visibility of chatbot
       chatLog: [], // Stores chat messages
       userMessage: "",
+      loading: false,
       programs: [
         { name: 'Computer Science Engineering', image: '../assets/cse.jpg', description: 'Learn cutting-edge technologies and software development.' },
         { name: 'Electrical Engineering', image: '../assets/ee.jpg', description: 'Explore power systems, control, and electrical machines.' },
@@ -506,6 +524,7 @@ export default {
       console.log("clicked show chatbot")
     },
     async sendMessage() {
+      this.loading = true;
       if (this.userMessage.trim() === "") return;
       
       // Add the user's message to the chat log
@@ -527,7 +546,9 @@ export default {
         this.chatLog.push({ sender: "bot", message: data.response });
       } catch (error) {
         console.error("Error while communicating with the chatbot:", error);
+        this.chatLog.push({ sender: "bot", message: "404 Error : please try Again Later" });
       }
+      this.loading = false;
     },
   },
 };
