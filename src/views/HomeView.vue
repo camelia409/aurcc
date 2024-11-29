@@ -357,61 +357,70 @@
           </div>
         </section>
         <!-- Chatbot button -->
-<!-- Help Desk Button -->
-<button
-  onclick="document.getElementById('my_modal_5').showModal()"
-  class="btn fixed bottom-4 right-4 bg-blue-600 text-white p-4 rounded-full shadow-lg z-50"
->
-  💬 Help Desk
-</button>
+        <!-- Help Desk Button -->
+        <button
+          onclick="document.getElementById('my_modal_5').showModal()"
+          class="btn fixed bottom-4 right-4 bg-blue-600 text-white p-4 rounded-full shadow-lg z-50"
+        >
+          💬 Help Desk
+        </button>
 
-<!-- Chatbot Interface -->
-<dialog id="my_modal_5" class="modal">
-  <div
-    class="modal-box p-0 w-80 shadow-lg rounded-lg fixed bottom-20 right-4 md:right-10"
+        <!-- Chatbot Interface -->
+        <dialog id="my_modal_5" class="modal">
+          <div
+            class="modal-box p-0 w-80 shadow-lg rounded-lg fixed bottom-20 right-4 md:right-10"
 
-  >
-    <!-- Modal Header -->
-    <div class="flex justify-between items-center bg-blue-600 p-4 rounded-t-lg text-white">
-      <h2 class="text-lg font-semibold">Support Chatbot</h2>
-      <button
-        onclick="document.getElementById('my_modal_5').close()"
-        class="btn btn-sm btn-circle btn-ghost text-white"
-        aria-label="Close"
-      >
-        ✖
-      </button>
-    </div>
+          >
+            <!-- Modal Header -->
+            <div class="flex justify-between items-center bg-blue-600 p-4 rounded-t-lg text-white">
+              <h2 class="text-lg font-semibold">Support Chatbot</h2>
+              <button
+                onclick="document.getElementById('my_modal_5').close()"
+                class="btn btn-sm btn-circle btn-ghost text-white"
+                aria-label="Close"
+              >
+                ✖
+              </button>
+            </div>
+            <!-- Chat Log -->
+            <div class="p-4 h-64 overflow-y-auto bg-gray-50" ref="chatContainer">
+              <div
+                v-for="(chat, index) in chatLog"
+                :key="index"
+                class="mb-4"
+                :class="chat.sender === 'user' ? 'chat chat-end' : 'chat chat-start'"
+              >
+                <div
+                  class="chat-bubble chat-bubble-accent"
+                  v-if="chat.sender === 'user'"
+                  :style="{ animation: 'popIn 0.4s ease-out' }"
+                >
+                  {{ chat.message }}
+                </div>
+                <div
+                  class="chat-bubble chat-bubble-primary"
+                  v-if="chat.sender === 'bot'"
+                  :style="{ animation: 'popIn 0.4s ease-out' }"
+                >
+                  {{ chat.message }}
+                </div>
+              </div>
+              <div v-if="loading" class="loading loading-dots loading-lg mx-auto"></div>
+            </div>
 
-    <!-- Chat Log -->
-    <div class="p-4 h-64 overflow-y-auto bg-gray-50">
-      <div v-for="(chat, index) in chatLog" :key="index" class="mb-4">
-        <!-- User Messages -->
-        <div v-if="chat.sender === 'user'" class="chat chat-end">
-          <div class="chat-bubble chat-bubble-accent">{{ chat.message }}</div>
-        </div>
-        <!-- Bot Messages -->
-        <div v-if="chat.sender === 'bot'" class="chat chat-start">
-          <div class="chat-bubble chat-bubble-primary">{{ chat.message }}</div>
-        </div>
-      </div>
-      <!-- Loading Spinner -->
-      <div v-if="loading" class="loading loading-dots loading-lg mx-auto"></div>
-    </div>
-
-    <!-- Input Area -->
-    <div class="p-4 bg-gray-100 rounded-b-lg">
-      <input
-        v-model="userMessage"
-        type="text"
-        class="input input-bordered w-full"
-        placeholder="Type your message..."
-        @keyup.enter="sendMessage"
-      />
-      <button @click="sendMessage" class="btn btn-primary w-full mt-2">Send</button>
-    </div>
-  </div>
-</dialog>
+            <!-- Input Area -->
+            <div class="p-4 bg-gray-100 rounded-b-lg">
+              <input
+                v-model="userMessage"
+                type="text"
+                class="input input-bordered w-full"
+                placeholder="Type your message..."
+                @keyup.enter="sendMessage"
+              />
+              <button @click="sendMessage" class="btn btn-primary w-full mt-2">Send</button>
+            </div>
+          </div>
+        </dialog>
     </main>
   </div>
 </template>
@@ -533,6 +542,11 @@ export default {
       const userInput = this.userMessage;
       this.userMessage = ""; // Clear the input field
 
+      this.$nextTick(() => {
+        const chatContainer = this.$refs.chatContainer;
+        chatContainer.scrollTop = chatContainer.scrollHeight;
+      });
+
       try {
         // Send the message to the backend (replace with your API)
         const response = await fetch("http://localhost:8000/chat", {
@@ -544,9 +558,17 @@ export default {
 
         // Add the bot's response to the chat log
         this.chatLog.push({ sender: "bot", message: data.response });
+        this.$nextTick(() => {
+          const chatContainer = this.$refs.chatContainer;
+          chatContainer.scrollTop = chatContainer.scrollHeight;
+        });
       } catch (error) {
         console.error("Error while communicating with the chatbot:", error);
         this.chatLog.push({ sender: "bot", message: "404 Error : please try Again Later" });
+        this.$nextTick(() => {
+          const chatContainer = this.$refs.chatContainer;
+          chatContainer.scrollTop = chatContainer.scrollHeight;
+        });
       }
       this.loading = false;
     },
@@ -604,8 +626,23 @@ export default {
   transition: box-shadow 0.3s ease;
 }
 
-.hover-highlight:hover {
-  background-color: rgba(59, 130, 246, 0.1);
-  transition: background-color 0.3s ease;
+/* Chatbot interface */
+@keyframes popIn {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.chat-bubble {
+  transition: transform 0.4s ease-out, opacity 0.4s ease-out;
 }
 </style>
