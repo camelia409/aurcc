@@ -2,21 +2,24 @@
   <main class="flex-grow">
     <!-- Hero section -->
     <section 
-    class="hero-section bg-cover  py-4 relative -z-10" 
-    :style="{ 
-     backgroundImage: `url(${backgroundImage})`, 
-      backgroundSize: 'cover',
-      backgroundPosition: 'center center' 
-    }">
-      <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-t from-blue-900 via-transparent to-blue-900 opacity-70"></div>
-      <div class="container mx-auto py-10 text-center relative z-10 px-4">
-        <h1 class="text-4xl font-extrabold text-white drop-shadow-lg font-serif">Zonal Office</h1>
+      class="bg-cover bg-center relative w-full h-60 sm:h-80 md:h-94 animate-fadeIn" 
+      :style="{ 
+        backgroundImage: `url(${backgroundImage})`
+      }">
+      <!-- Gradient Overlay -->
+      <div class="absolute inset-0 bg-black opacity-20"></div>
+      
+      <!-- Content Container -->
+      <div class="flex items-center justify-center h-full relative z-10 px-4">
+        <h1 class="md:text-4xl text-xl font-extrabold text-white drop-shadow-lg font-serif text-center animate-slideIn">
+          ZONAL OFFICE
+        </h1>
       </div>
     </section>
 
     <!-- Vertical Tabs Section -->
-    <section class="mx-auto py-10 px-10">
-      <div class="flex flex-col lg:flex-row">
+    <section class="mx-auto py-6 md:py-12 px-4 md:px-10 bg-indigo-100 rounded-lg animate-popIn">
+      <div class="relative flex flex-col px-8 md:flex-row">
         <!-- Vertical Tabs -->
         <div class="flex-shrink-0 w-full h-max lg:w-64 bg-gradient-to-r from-[#21209c] to-blue-600 rounded-lg shadow-lg p-4 mb-4 lg:mb-0">
           <div class="relative p-4 rounded-lg bg-gradient-to-r from-[#21209c] to-blue-600">
@@ -30,19 +33,19 @@
         </div>
 
         <!-- Tab Content -->
-        <div class="w-full lg:pl-10 font-serif">
-          <div v-if="activeTab === 'description'">
-            <h3 class="text-2xl md:text-4xl font-bold text-blue-800 mb-4">Description</h3>
-            <ul class="text-lg sm:text-xl font-medium text-gray-900 list-disc pl-6">
+        <div class="w-full px-0 md:px-10  font-serif min-h-[400px] max-h-[600px] md:max-h-[800px] overflow-y-auto">
+          <div v-if="activeTab === 'description'" class="bg-white rounded-lg shadow-lg p-4 md:p-6 mb-16 animate-fadeIn">
+            <h3 class="text-2xl md:text-3xl font-bold text-black mb-4">Description</h3>
+            <ul class="text-lg md:text-xl font-medium text-gray-900 list-disc pl-6">
               <li v-for="(desc, index) in data.description" :key="index">{{ desc }}</li>
             </ul>
           </div>
-          <div v-if="activeTab === 'zoneList'">
-            <h3 class="text-2xl sm:text-3xl text-blue-800 font-bold mb-4">Zone List of Colleges</h3>
+          <div v-if="activeTab === 'zoneList'" class="bg-white rounded-lg shadow-lg p-4 md:p-6 mb-16 animate-fadeIn">
+            <h3 class="text-2xl md:text-3xl font-bold text-black mb-4">Zone List of Colleges</h3>
             <iframe :src="zonalListPDF" class="w-full h-[500px] sm:h-[700px] rounded-lg border-2 border-gray-300 shadow-sm" frameborder="0"></iframe>
           </div>
-          <div v-if="activeTab === 'officeBearers'">
-            <h3 class="text-2xl md:text-4xl font-bold text-blue-800 mb-4">Office Bearers</h3>
+          <div v-if="activeTab === 'officeBearers'" class="bg-white rounded-lg shadow-lg p-4 md:p-6 mb-16 animate-fadeIn">
+            <h3 class="text-2xl md:text-3xl font-bold text-black mb-4">Office Bearers</h3>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div v-for="bearer in data['Office bearers']" :key="bearer.name" class="p-6 rounded-lg bg-white shadow-md">
                 <h4 class="text-lg font-semibold">{{ bearer.name }}</h4>
@@ -66,7 +69,7 @@
 <script>
 import data from '../assets/zonaloffice.json';
 import zonalListPDF from '../assets/zonal-list.pdf';
-import backgroundImage from '@/assets/zonal.webp';  // Correct path for the image
+import backgroundImage from '@/assets/offices.webp';  // Correct path for the image
 
 export default {
   data() {
@@ -95,33 +98,5 @@ export default {
   font-family: 'Georgia', 'Times New Roman', Times, serif;
 }
 
-/* Hero section */
-.hero-section {
-  min-height: 50vh;
-  position: relative;
-  background-blend-mode: multiply;
-}
 
-/* Sections */
-section {
-  transition: transform 0.3s ease-in-out;
-}
-
-section:hover {
-  transform: scale(1.01);
-}
-
-/* Gradient Background */
-.bg-gradient-to-r {
-  background: linear-gradient(90deg, var(--tw-gradient-stops));
-}
-
-/* Vertical Tabs */
-button:hover {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-
-.flex-shrink-0 {
-  flex-shrink: 0;
-}
 </style>

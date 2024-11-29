@@ -2,21 +2,24 @@
   <main class="flex-grow">
     <!-- Hero section -->
     <section 
-    class="hero-section bg-cover  py-24 relative -z-10" 
-    :style="{ 
-     backgroundImage: `url(${backgroundImage})`, 
-      backgroundSize: 'cover',
-      backgroundPosition: 'top center' 
-    }">
-      <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-t from-blue-900 via-transparent to-blue-900 opacity-70"></div>
-      <div class="container mx-auto py-10 text-center relative z-10 px-4">
-        <h1 class="text-4xl font-extrabold text-black  drop-shadow-lg {font-family: 'Algerian', 'Arial', sans-serif;}">{{ data.name }}</h1>
+      class="bg-cover bg-center relative w-full h-60 sm:h-80 md:h-94 animate-fadeIn" 
+      :style="{ 
+        backgroundImage: `url(${backgroundImage})`
+      }">
+      <!-- Gradient Overlay -->
+      <div class="absolute inset-0 bg-black opacity-20"></div>
+      
+      <!-- Content Container -->
+      <div class="flex items-center justify-center h-full relative z-10 px-4">
+        <h1 class="md:text-4xl text-xl font-extrabold text-white drop-shadow-lg font-serif text-center animate-slideIn">
+          OFFICE OF AFFILIATION
+        </h1>
       </div>
     </section>
 
     <!-- Content sections with Vertical Tabs -->
-    <section class="mx-auto py-10 px-4 bg-gray-100">
-      <div class="flex flex-col md:flex-row">
+    <section class="mx-auto py-6 md:py-12 px-4 md:px-10 bg-indigo-100 rounded-lg animate-popIn">
+      <div class="relative flex flex-col px-8 md:flex-row">
         <!-- Vertical Tabs -->
         <div class="flex-shrink-0 w-full h-max lg:w-64 bg-gradient-to-r from-[#21209c] to-blue-600 rounded-lg shadow-lg p-4 overflow-hidden mb-4 lg:mb-0">
           <div class="relative bg-gradient-to-r from-[#21209c] to-blue-600 p-4 rounded-lg">
@@ -31,16 +34,16 @@
         </div>
 
         <!-- Tab Content -->
-        <div class="w-full px-10 font-serif">
+        <div class="w-full px-0 md:px-10  font-serif min-h-[400px] max-h-[600px] md:max-h-[800px] overflow-y-auto">
 
-          <div v-if="currentSection === 'Description'" >
-            <h3 class="text-2xl md:text-4xl font-bold mb-4 mt-5">Description</h3>
-            <p class="text-base md:text-lg mb-8 text-black">{{ data.description['About Office of Affiliation and its activities'] }}</p>        
+          <div v-if="currentSection === 'Description'" class="bg-white rounded-lg shadow-lg p-4 md:p-6 mb-16 animate-fadeIn" >
+            <h3 class="text-2xl md:text-3xl font-bold text-black mb-4">Description</h3>
+            <p class="text-base text-lg md:text-xl rounded-b-lg mb-8 text-black">{{ data.description['About Office of Affiliation and its activities'] }}</p>        
           </div>
           <!-- Office Bearer Section -->
 
-          <div v-else-if="currentSection === 'officeBearer'">
-            <h3 class="text-2xl md:text-4xl font-bold mb-4 mt-5">Office Bearer</h3>
+          <div v-else-if="currentSection === 'officeBearer'" class="bg-white rounded-lg shadow-lg p-4 md:p-6 mb-16 animate-fadeIn">
+            <h3 class="text-2xl md:text-3xl font-bold text-black mb-4">Office Bearer</h3>
             <div v-if="data.office_bearers" class="text-base md:text-xl text-gray-900">
               <div class="bg-white p-4 rounded-lg shadow-md mb-4">
                 <p><strong>Name:</strong> {{ data.office_bearers.name }}</p>
@@ -51,8 +54,8 @@
           </div>
 
           <!-- Affiliation Administration Staff Section -->
-          <div v-if="currentSection === 'affiliationStaff'">
-            <h3 class="text-2xl md:text-4xl font-bold mb-4 mt-5">Affiliation Administration Staff</h3>
+          <div v-if="currentSection === 'affiliationStaff'" class="bg-white rounded-lg shadow-lg p-4 md:p-6 mb-16 animate-fadeIn">
+            <h3 class="text-2xl md:text-3xl font-bold text-black mb-4">Affiliation Administration Staff</h3>
             <div v-if="data.affiliation_administration_staff" class="text-base md:text-xl text-gray-900">
               <div v-for="staff in data.affiliation_administration_staff" :key="staff.name" class="bg-white p-4 rounded-lg shadow-md mb-4">
                 <p><strong>Name:</strong> {{ staff.name }}</p>
@@ -64,8 +67,8 @@
           </div>
 
           <!-- Contact Us Section -->
-          <div v-if="currentSection === 'contactUs'">
-            <h3 class="text-2xl md:text-4xl font-bold mb-4 mt-5">Contact Us</h3>
+          <div v-if="currentSection === 'contactUs'" class="bg-white rounded-lg shadow-lg p-4 md:p-6 mb-16 animate-fadeIn">
+            <h3 class="text-2xl md:text-3xl font-bold text-black mb-4">Contact Us</h3>
             <div v-if="data.contact_details" class="text-base md:text-xl text-gray-900">
               <div class="bg-white p-4 rounded-lg shadow-md">
                 <p><strong>Office:</strong> {{ data.contact_details.office }}</p>
@@ -83,7 +86,7 @@
 
 <script>
 import data from '../assets/office of affiliation.json';
-import backgroundImage from '@/assets/affiliation.webp';
+import backgroundImage from '@/assets/offices.webp';
 export default {
   data() {
     return {

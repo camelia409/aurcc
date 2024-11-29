@@ -2,21 +2,25 @@
   <div class="flex-grow">
     <!-- Hero Section -->
     <section 
-    class="hero-section bg-cover  py-32 relative -z-10" 
-    :style="{ 
-     backgroundImage: `url(${backgroundImage})`, 
-      backgroundSize: 'cover',
-      backgroundPosition: 'top center' 
-    }">
-<!--      <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-t from-blue-900 via-transparent to-blue-900 opacity-70"></div>
-      <div class="container mx-auto py-10 text-center relative z-10 px-4">
-        <h1 class="text-4xl font-extrabold text-black drop-shadow-lg font-serif">Placement Cell</h1>
-      </div>-->
+      class="bg-cover bg-center relative w-full h-60 sm:h-80 md:h-94 animate-fadeIn" 
+      :style="{ 
+        backgroundImage: `url(${backgroundImage})`
+      }">
+      <!-- Dark overlay -->
+        <div class="absolute inset-0 bg-black opacity-20"></div>
+        
+        <!-- Centered text -->
+        <div class="flex items-center justify-center h-full relative z-10 px-4">
+          <h1 class="md:text-4xl text-xl font-extrabold text-white drop-shadow-lg font-serif text-center animate-slideIn">
+            PLACEMENT CELL
+          </h1>
+        </div>
     </section>
 
+
     <!-- Content Sections with Vertical Tabs -->
-    <section class="mx-auto py-10 px-10 bg-gray-100 rounded-lg">
-      <div class="flex flex-col md:flex-row">
+    <section class="mx-auto py-6 md:py-12 px-4 md:px-10 bg-indigo-100 rounded-lg animate-popIn">
+      <div class="relative flex flex-col px-8 md:flex-row">
         <!-- Vertical Tabs -->
         <div class="flex-shrink-0 w-full h-max lg:w-64 bg-gradient-to-r from-[#21209c] to-blue-600 rounded-lg shadow-lg p-4 overflow-hidden mb-4 lg:mb-0">
           <div class="relative bg-gradient-to-r from-[#21209c] to-blue-600 p-4 rounded-lg ">
@@ -33,29 +37,29 @@
         </div>
 
         <!-- Content -->
-        <div class="w-full px-10 font-serif ">
-          <div v-if="currentSection === 'Description'">
-            <h2 class="text-2xl md:text-4xl font-bold mb-4 mt-5">Description</h2>
+        <div class="w-full px-0 md:px-10  font-serif min-h-[400px] max-h-[600px] md:max-h-[800px] overflow-y-auto ">
+          <div v-if="currentSection === 'Description'" class="bg-white rounded-lg shadow-lg p-4 md:p-6 mb-16 animate-fadeIn">
+            <h2 class="text-2xl md:text-3xl font-bold text-black mb-4">Description</h2>
             <p class="text-base md:text-lg mb-8 text-black">{{ data.description }}</p>
           </div>
-          <div v-else-if="currentSection === 'Recruitment Process'">
-            <h2 class="text-2xl md:text-4xl font-bold mb-4 mt-5">Recruitment Process</h2>
+          <div v-else-if="currentSection === 'Recruitment Process'" class="bg-white rounded-lg shadow-lg p-4 md:p-6 mb-16 animate-fadeIn">
+            <h2 class="text-2xl md:text-3xl font-bold text-black mb-4">Recruitment Process</h2>
             <p class="text-base md:text-lg mb-8 text-black">{{ data.recruitment }}</p>
           </div>
-          <div v-else-if="currentSection === 'CUIC'">
-            <h2 class="text-2xl md:text-4xl font-bold mb-4 mt-5">CUIC</h2>
+          <div v-else-if="currentSection === 'CUIC'" class="bg-white rounded-lg shadow-lg p-4 md:p-6 mb-16 animate-fadeIn">
+            <h2 class="text-2xl md:text-3xl font-bold text-black mb-4">CUIC</h2>
             <p class="text-base md:text-lg mb-8 text-black">{{ data.cuic }}</p>
           </div>
-          <div v-else-if="currentSection === 'Our Recruiters'">
-            <h2 class="text-2xl md:text-4xl font-bold mb-4 mt-5">Our Recruiters</h2>
+          <div v-else-if="currentSection === 'Our Recruiters'" class="bg-white rounded-lg shadow-lg p-4 md:p-6 mb-16 animate-fadeIn">
+            <h2 class="text-2xl md:text-3xl font-bold text-black mb-4">Our Recruiters</h2>
             <iframe :src="recruitersPDF" class="w-full h-[700px] rounded-md shadow-lg" frameborder="0"></iframe>
           </div>
-          <div v-else-if="currentSection === 'Placed Students'">
-            <h2 class="text-2xl md:text-4xl font-bold mb-4 mt-5">Placed Students</h2>
+          <div v-else-if="currentSection === 'Placed Students'" class="bg-white rounded-lg shadow-lg p-4 md:p-6 mb-16 animate-fadeIn">
+            <h2 class="text-2xl md:text-3xl font-bold text-black mb-4">Placed Students</h2>
             <img :src="placedStudentsImage" alt="Placed Students" class="w-full h-auto rounded-md shadow-lg" />
           </div>
-          <div v-else-if="currentSection === 'Staff Members'">
-            <h2 class="text-2xl md:text-4xl font-bold mb-4 mt-5">Staff Members</h2>
+          <div v-else-if="currentSection === 'Staff Members'" class="bg-white rounded-lg shadow-lg p-4 md:p-6 mb-16 animate-fadeIn">
+            <h2 class="text-2xl md:text-3xl font-bold text-black mb-4">Staff Members</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
               <div v-for="member in data.staff_members" :key="member.emailid" class="bg-gray-200 shadow-md text-xl rounded-md p-4">
                 <h3 class="font-semibold">{{ member.name }}</h3>
@@ -74,7 +78,7 @@
 import data from '../assets/placement-cell.json';
 import recruitersPDF from '../assets/placementBrochure.pdf';
 import placedStudentsImage from '../assets/Placedstudents.webp';
-import backgroundImage from '@/assets/placement.webp';
+import backgroundImage from '@/assets/offices.webp';
 
 
 export default {
