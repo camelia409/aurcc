@@ -434,6 +434,7 @@ export default {
       showChatbot: false, // Controls visibility of chatbot
       chatLog: [], // Stores chat messages
       userMessage: "",
+      sessionId: null,
       loading: false,
       programs: [
         { name: 'Computer Science Engineering', image: '../assets/cse.jpg', description: 'Learn cutting-edge technologies and software development.' },
@@ -505,7 +506,10 @@ export default {
       return this.galleryImages[nextIndex].src;
     }
   },
-
+  created() {
+    // Generate a session ID when the component is created
+    this.sessionId = this.generateSessionId();
+  },
   methods: {
     toggleMobileMenu() {
       this.mobileMenuOpen = !this.mobileMenuOpen;
@@ -535,42 +539,69 @@ export default {
     async sendMessage() {
       this.loading = true;
       if (this.userMessage.trim() === "") return;
-      
+
       // Add the user's message to the chat log
       this.chatLog.push({ sender: "user", message: this.userMessage });
 
       const userInput = this.userMessage;
       this.userMessage = ""; // Clear the input field
 
+      // Scroll the chat container to the bottom after rendering the new message
       this.$nextTick(() => {
         const chatContainer = this.$refs.chatContainer;
-        chatContainer.scrollTop = chatContainer.scrollHeight;
+        if (chatContainer) {
+          chatContainer.scrollTop = chatContainer.scrollHeight;
+        }
       });
 
       try {
-        // Send the message to the backend (replace with your API)
+        // Send the message to the backend, including the sessionId for context
         const response = await fetch("https://ai.edventuretech.in/chat", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ message: userInput })
+          body: JSON.stringify({
+            message: userInput,
+            session_id: this.sessionId, // Send the session ID for context
+          }),
         });
+
+        if (!response.ok) {
+          throw new Error(`Server error: ${response.status}`);
+        }
+
         const data = await response.json();
 
         // Add the bot's response to the chat log
         this.chatLog.push({ sender: "bot", message: data.response });
+
+        // Scroll to the bottom again after rendering the bot's response
         this.$nextTick(() => {
           const chatContainer = this.$refs.chatContainer;
-          chatContainer.scrollTop = chatContainer.scrollHeight;
+          if (chatContainer) {
+            chatContainer.scrollTop = chatContainer.scrollHeight;
+          }
         });
       } catch (error) {
         console.error("Error while communicating with the chatbot:", error);
-        this.chatLog.push({ sender: "bot", message: "404 Error : please try Again Later" });
+        this.chatLog.push({
+          sender: "bot",
+          message: "An error occurred. Please try again later.",
+        });
+
+        // Ensure scrolling works even in error scenarios
         this.$nextTick(() => {
           const chatContainer = this.$refs.chatContainer;
-          chatContainer.scrollTop = chatContainer.scrollHeight;
+          if (chatContainer) {
+            chatContainer.scrollTop = chatContainer.scrollHeight;
+          }
         });
+      } finally {
+        this.loading = false;
       }
-      this.loading = false;
+    },
+    // Generate a simple unique session ID
+    generateSessionId() {
+      return "session-" + Math.random().toString(36).substr(2, 9);
     },
   },
 };
