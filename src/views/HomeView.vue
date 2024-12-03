@@ -556,7 +556,7 @@ export default {
 
       try {
         // Send the message to the backend, including the sessionId for context
-        const response = await fetch("https://ai.edventuretech.in/chat", {
+        const response = await fetch("https://aurcc.onrender.com/chat", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
