@@ -23,6 +23,8 @@ app.add_middleware(
 
 genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
+
+
 # Store contexts for each session
 user_contexts = defaultdict(list)
 
@@ -37,7 +39,7 @@ class ChatRequest(BaseModel):
 
 
 @app.post("/chat")
-def chat_with_gemini(request: ChatRequest):
+async def chat_with_gemini(request: ChatRequest):
     session_id = request.session_id
     user_contexts[session_id].append(f"User: {request.message}")
 
