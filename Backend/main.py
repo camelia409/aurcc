@@ -42,7 +42,7 @@ class ChatRequest(BaseModel):
 async def chat_with_gemini(request: ChatRequest):
     session_id = request.session_id
     user_contexts[session_id].append(f"User: {request.message}")
-
+    print(f"{session_id} : {request.message}")
     # Generate response using the context
     model = genai.GenerativeModel("gemini-pro")
     conversation = f"{SYSTEM_PROMPT} {' '.join(user_contexts[session_id])}"
