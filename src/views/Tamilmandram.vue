@@ -34,7 +34,7 @@
     </nav>
 
     <!-- Content section with tabs -->
-     <section class="relative flex flex-col md:flex-col space-y-8 py-20 px-4 lg:px-20 max-w-screen-xl mx-auto">
+     <section class="relative flex flex-col md:flex-col space-y-8 py-20 px-4 lg:px-20 mx-auto">
       <!-- Background Overlay -->
       <div
         class="absolute inset-0 bg-center opacity-80 z-0 animate-fadeIn"

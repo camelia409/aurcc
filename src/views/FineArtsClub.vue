@@ -15,7 +15,7 @@
     </section>
 
     <!-- Main content -->
-    <div class="p-6 container mx-auto space-y-8 bg-blue-200 font-serif animate-fadeInUp">
+    <div class="p-6 mx-auto space-y-8 bg-blue-200 font-serif animate-fadeInUp">
       <!-- Description Section -->
       <div class="bg-white shadow-lg rounded-lg animate-popIn">
         <h1 class="text-2xl md:text-3xl font-bold mb-4 bg-blue-900 text-white p-4 text-center rounded-t-lg">LAYAM AAM RHYTHM OF ARTS MUSIC & DANCE</h1>
@@ -70,11 +70,6 @@ export default {
 </script>
 
 <style scoped>
-.hero-section {
-  height: 40vh; /* Adjust height to show less of the image */
-  background-size: cover;
-  background-position: center;
-}
 
 /* Add keyframes for animations */
 @keyframes fadeIn {

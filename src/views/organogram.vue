@@ -1,7 +1,7 @@
 <template>
   <div class="organogram-section">
-    <h2 class="text-2xl font-bold mb-4 p-2 bg-gradient-to-r from-blue-500 to-cyan-300 text-center">
-      Organogram
+    <h2 class="text-xl md:text-3xl font-bold p-4 bg-yellow-400 text-center">
+      ORGANGRAM
     </h2>
     <div class="pdf-container">
       <iframe :src="pdfUrl" class="w-full h-screen border rounded-lg shadow-md"></iframe>
@@ -22,9 +22,6 @@ export default {
 </script>
 
 <style scoped>
-.organogram-section {
-  @apply p-4 bg-gray-100;
-}
 
 .pdf-container {
   @apply overflow-auto border border-gray-300 p-2 bg-white;
