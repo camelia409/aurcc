@@ -22,18 +22,18 @@
       </div>
     </section>
     <!-- Content sections -->
-    <section class="mx-auto bg-[#4b3b32] font-serif animate-fadeIn p-4 md:p-9">
+    <section class="mx-auto bg-amber-300 font-serif animate-fadeIn p-4 md:p-9">
       <div class="bg-white rounded-lg animate-popIn mb-8">
-        <h2 class="text-2xl md:text-3xl rounded-t-lg text-center bg-yellow-200 font-bold text-[#6B1F20] p-2 animate-fadeInUp">
+        <h2 class="text-2xl md:text-3xl rounded-t-lg text-center bg-[#4b3b32] font-bold text-[#FFDB58] p-4 animate-fadeInUp">
           Overview
         </h2>
-        <p class="text-lg md:text-xl rounded-b-lg font-medium bg-yellow-200 p-3 animate-fadeIn delay-1s">{{ data.description }}</p>
+        <p class="text-lg md:text-xl rounded-b-lg font-medium bg-white p-6 animate-fadeIn delay-1s">{{ data.description }}</p>
       </div>
-      <div class="bg-yellow-200 rounded-lg animate-popIn mb-8">
-        <h2 class="text-2xl md:text-3xl rounded-t-lg text-center bg-yellow-200 font-bold p-2 text-[#6B1F20] animate-fadeInUp">
+      <div class="bg-white rounded-lg animate-popIn mb-8">
+        <h2 class="text-2xl md:text-3xl rounded-t-lg text-center bg-[#4b3b32] font-bold p-4 text-[#FFDB58] animate-fadeInUp">
           Facilities
         </h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 rounded-b-lg md:mx-10 bg-yellow-200 animate-fadeIn delay-1s">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 rounded-b-lg md:mx-10 bg-white animate-fadeIn delay-1s">
           <div>
             <h3 class="text-lg md:text-xl font-bold mb-2 p-5">Indoor Games</h3>
             <ul class="list-disc pl-8">
@@ -60,11 +60,11 @@
           </div>
         </div>
       </div>
-      <div class="bg-yellow-200 rounded-lg animate-popIn">
-        <h2 class="text-2xl md:text-3xl rounded-t-lg text-center bg-yellow-200 font-bold p-2 text-[#6B1F20] animate-fadeInUp">
+      <div class="bg-white rounded-lg animate-popIn">
+        <h2 class="text-2xl md:text-3xl rounded-t-lg text-center bg-[#4b3b32] font-bold p-4 text-[#FFDB58] animate-fadeInUp">
           Contact Us
         </h2>
-        <p class="p-4 text-lg md:text-xl font-medium animate-fadeIn delay-1s">{{ data.contact_us.Address }}</p>
+        <p class="p-6 text-lg md:text-xl font-medium animate-fadeIn delay-1s">{{ data.contact_us.Address }}</p>
       </div>
     </section>
   </main>

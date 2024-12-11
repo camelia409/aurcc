@@ -1,58 +1,78 @@
 <template>
-  <main class="container">
-    <div class="vc-message">
-      <div class="photo">
-        <img src="@/assets/velraj.webp" alt="Vice-Chancellor's Photo" />
-        <h2 class="bold">Dr.R.Velraj</h2>
-        <a href="#" @click.prevent="openPopover">View Profile</a>
+  <main class="flex justify-center items-center min-h-screen bg-indigo-100 p-4">
+    <div class="bg-white p-6 rounded-lg shadow-lg max-w-4xl w-full">
+      <div class="text-center mb-6">
+        <img src="@/assets/velraj.webp" alt="Vice-Chancellor's Photo" class="w-60 h-full mx-auto rounded-lg shadow-md">
+        <h2 class="mt-4 font-bold text-xl md:text-2xl">Dr. R. Velraj</h2>
+        <a href="#" @click.prevent="openPopover" class="text-blue-500 hover:underline">View Profile</a>
       </div>
-      <div class="content">
-        <h1>{{ vcMessage.title }}</h1>
-        <h2><strong>Greetings to all!</strong></h2>
-        <p v-html="formattedMessageContent"></p>
-        <p class="signature">{{ vcMessage.signature }}</p>
+      <div>
+        <h1 class="text-2xl md:text-3xl font-semibold text-blue-800 mb-4">{{ vcMessage.title }}</h1>
+        <h2 class="text-lg md:text-xl font-semibold mb-4">Greetings to all!</h2>
+        <p class="text-lg leading-relaxed" v-html="formattedMessageContent"></p>
+        <p class="text-right font-semibold mt-4">{{ vcMessage.signature }}</p>
       </div>
     </div>
 
-    <div v-if="showPopover" class="modal modal-open">
-      <div class="modal-box relative rounded-lg flex flex-col max-w-4xl p-6 overflow-y-auto">
-        <button @click="showPopover = false" class="btn btn-sm btn-circle absolute right-2 top-2">✕</button>
-        <h1 class="font-bold text-3xl mb-10 text-center w-full text-blue-500">PROFILE</h1>
+    <div v-if="showPopover" class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
+      <div class="bg-white p-6 rounded-lg shadow-lg max-w-4xl w-full overflow-y-auto max-h-[90vh]">
+        <button @click="showPopover = false" class="absolute top-4 right-4 bg-red-500 text-white rounded-full w-8 h-8 flex items-center justify-center">✕</button>
+        <h1 class="text-3xl font-bold text-blue-500 text-center mb-10">PROFILE</h1>
         <div class="flex flex-col md:flex-row">
-          <div class="flex-shrink-0 text-center mt-4 md:mt-0 my-auto mr-8">
-            <img src="@/assets/velraj.webp" alt="Profile Picture" class="h-96 w-72 rounded-lg shadow-lg object-cover">
-            <h2 class="text-lg font-semibold mt-4">{{ selectedStaff.name }}</h2>
+          <div class="text-center md:text-left md:mr-8 mb-6 md:mb-0">
+            <img src="@/assets/velraj.webp" alt="Profile Picture" class="h-64 w-48 rounded-lg shadow-lg mx-auto md:mx-0">
+            <h2 class="mt-4 text-lg font-semibold">{{ selectedStaff.name }}</h2>
           </div>
-          <div class="md:overflow-auto flex-grow max-h-[50vh] pr-6 shadow-inner">
-            <h3 class="text-xl font-semibold text-black"><strong>Position:</strong> {{ selectedStaff.position }}</h3>
-            <h3 class="text-xl font-semibold text-black"><strong>Email:</strong> {{ selectedStaff.email }}</h3>
+          <div class="flex-grow space-y-6">
+            <div>
+              <h3 class="text-lg font-semibold">Position:</h3>
+              <p class="text-gray-700">{{ selectedStaff.position }}</p>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold">Email:</h3>
+              <p class="text-gray-700">{{ selectedStaff.email }}</p>
+            </div>
             <template v-if="selectedStaff.education">
-              <h3 class="text-md font-semibold text-black mt-4"><strong>Education</strong></h3>
-              <ul class="list-disc ml-6">
-                <li v-for="edu in selectedStaff.education" :key="edu.degree">{{ edu.degree }}, {{ edu.institution }} ({{ edu.year }})</li>
-              </ul>
+              <div>
+                <h3 class="text-lg font-semibold">Education</h3>
+                <ul class="list-disc list-inside text-gray-700">
+                  <li v-for="edu in selectedStaff.education" :key="edu.degree">
+                    {{ edu.degree }}, {{ edu.institution }} ({{ edu.year }})
+                  </li>
+                </ul>
+              </div>
             </template>
             <template v-if="selectedStaff.professional_experience">
-              <h3 class="text-md font-semibold text-black mt-4"><strong>Professional Experience</strong></h3>
-              <ul class="list-disc ml-6">
-                <li v-for="exp in selectedStaff.professional_experience" :key="exp.position">{{ exp.position }}, {{ exp.institution }} ({{ exp.duration }})</li>
-              </ul>
+              <div>
+                <h3 class="text-lg font-semibold">Professional Experience</h3>
+                <ul class="list-disc list-inside text-gray-700">
+                  <li v-for="exp in selectedStaff.professional_experience" :key="exp.position">
+                    {{ exp.position }}, {{ exp.institution }} ({{ exp.duration }})
+                  </li>
+                </ul>
+              </div>
             </template>
             <template v-if="selectedStaff.research_interests">
-              <h3 class="text-md font-semibold text-black mt-4"><strong>Research Interests</strong></h3>
-              <ul class="list-disc ml-6">
-                <li v-for="interest in selectedStaff.research_interests" :key="interest">{{ interest }}</li>
-              </ul>
+              <div>
+                <h3 class="text-lg font-semibold">Research Interests</h3>
+                <ul class="list-disc list-inside text-gray-700">
+                  <li v-for="interest in selectedStaff.research_interests" :key="interest">{{ interest }}</li>
+                </ul>
+              </div>
             </template>
             <template v-if="selectedStaff.achievements">
-              <h3 class="text-md font-semibold text-black mt-4"><strong>Achievements</strong></h3>
-              <ul class="list-disc ml-6">
-                <li v-for="achievement in selectedStaff.achievements" :key="achievement">{{ achievement }}</li>
-              </ul>
+              <div>
+                <h3 class="text-lg font-semibold">Achievements</h3>
+                <ul class="list-disc list-inside text-gray-700">
+                  <li v-for="achievement in selectedStaff.achievements" :key="achievement">{{ achievement }}</li>
+                </ul>
+              </div>
             </template>
             <template v-if="selectedStaff.additional_details">
-              <h3 class="text-md font-semibold text-black mt-4"><strong>Additional Details</strong></h3>
-              <p>{{ selectedStaff.additional_details }}</p>
+              <div>
+                <h3 class="text-lg font-semibold">Additional Details</h3>
+                <p class="text-gray-700">{{ selectedStaff.additional_details }}</p>
+              </div>
             </template>
           </div>
         </div>
@@ -106,7 +126,11 @@ export default {
   },
   computed: {
     formattedMessageContent() {
-      return this.vcMessage.content.replace(/\n/g, '<br><br>').replace(/a\)/g, '<br>&nbsp;&nbsp;&nbsp;&nbsp;a)').replace(/b\)/g, '<br>&nbsp;&nbsp;&nbsp;&nbsp;b)').replace(/•/g, '<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•');
+      return this.vcMessage.content
+        .replace(/\n/g, '<br><br>')
+        .replace(/a\)/g, '<br>&nbsp;&nbsp;&nbsp;&nbsp;a)')
+        .replace(/b\)/g, '<br>&nbsp;&nbsp;&nbsp;&nbsp;b)')
+        .replace(/•/g, '<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•');
     }
   },
   methods: {
@@ -116,137 +140,3 @@ export default {
   }
 };
 </script>
-
-<style scoped>
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background-color: #f7f7f7;
-  padding: 16px;
-}
-
-.vc-message {
-  display: flex;
-  flex-direction: column;
-  background-color: white;
-  padding: 24px;
-  border-radius: 8px;
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-  max-width: 800px;
-  width: 100%;
-}
-
-.photo {
-  margin-bottom: 16px;
-  text-align: center;
-}
-
-.photo img {
-  max-width: 100%;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-}
-
-.photo h2 {
-  margin-top: 8px;
-  font-weight: bold;
-}
-
-.content {
-  padding-left: 24px;
-}
-
-h1 {
-  font-size: 2.25rem;
-  font-weight: 700;
-  margin-bottom: 16px;
-  color: #3b82f6;
-}
-
-h2 {
-  font-size: 1.5rem;
-  margin-bottom: 16px;
-  color: black;
-}
-
-p {
-  font-size: 1.125rem;
-  margin-bottom: 16px;
-}
-
-.signature {
-  font-weight: 600;
-  text-align: right;
-}
-
-a {
-  color: #3b82f6;
-  text-decoration: none;
-  display: block;
-  margin-top: 8px;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-@media (min-width: 768px) {
-  .vc-message {
-    flex-direction: row;
-  }
-
-  .photo {
-    margin-bottom: 0;
-    flex: 1;
-  }
-
-  .content {
-    padding-left: 24px;
-    flex: 2;
-  }
-}
-
-.modal-box {
-  background-color: white;
-  padding: 16px;
-  border-radius: 8px;
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-  max-width: 800px;
-  width: 100%;
-}
-
-.text-blue-500 {
-  color: #3b82f6;
-}
-
-.text-black {
-  color: black;
-}
-
-.modal-box .list-disc {
-  list-style-type: disc;
-}
-
-h3 {
-  font-size: 1.25rem;
-  font-weight: 600;
-  margin-top: 16px;
-  color: black;
-}
-
-ul {
-  margin-bottom: 16px;
-}
-
-p {
-  font-size: 1.125rem;
-  margin-bottom: 16px;
-}
-
-.modal-box .flex-grow {
-  overflow: auto;
-  max-height: calc(100vh - 160px);
-}
-</style>

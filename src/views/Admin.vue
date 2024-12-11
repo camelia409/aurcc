@@ -1,7 +1,7 @@
 <template>
   <div class="">
-    <div class="text-center mb-8 py-5 bg-black bg-opacity-50 ">
-      <h1 class="text-3xl font-bold mb-8 text-white">ADMINISTRATIVE STAFF</h1>
+    <div class="text-center mb-8 py-5 bg-yellow-500 bg-opacity-90">
+      <h1 class="text-3xl font-bold text-black">ADMINISTRATIVE STAFF</h1>
     </div>
    <div class="container mx-auto p-9">
     <!-- Iterate over each general administration section -->
@@ -22,7 +22,7 @@
               class="admin-member bg-white rounded-lg shadow-lg overflow-hidden flex flex-col items-center mx-4"
             >
               <div class="w-full flex justify-center pt-6">
-                <div class="w-60 h-60 overflow-hidden border-4 border-gray-200">
+                <div class="w-60 h-full overflow-hidden border-4 border-gray-200">
                   <img
                     :src="getPhotoPath(member.image)"
                     :alt="member.name"
@@ -100,10 +100,6 @@ export default {
   flex-direction: column;
   align-items: center;
   transition: transform 0.3s ease;
-}
-
-.admin-member:hover {
-  transform: scale(1.05);
 }
 
 h1 {
