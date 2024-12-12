@@ -3,14 +3,14 @@
     class=" p-9"
     :style="backgroundStyle"
   >
-    <div class="text-center mb-8 py-5">
-      <h1 class="text-3xl font-bold text-white text-shadow-lg">Cell coordinators</h1>
+    <div class="text-center py-5">
+      <h1 class="text-xl md:text-3xl font-semibold text-white text-shadow-lg">Cell coordinators</h1>
     </div>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      <div v-for="director in directors" :key="director.name" class="director-member bg-white rounded-lg shadow-lg overflow-hidden flex flex-col items-center p-6">
-        <div class="flex-grow flex flex-col justify-center text-center w-full">
-          <h2 class="text-2xl font-bold text-blue-600">{{ director.name }}</h2>
-          <p class="text-lg text-gray-800">{{ director.centre }}</p>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+      <div v-for="director in directors" :key="director.name" class="director-member bg-white rounded-lg shadow-lg overflow-hidden flex flex-col items-center ">
+        <div class="flex-grow flex flex-col justify-center text-center w-full my-8">
+          <h2 class="text-lg md:text-2xl font-semibold text-blue-600">{{ director.name }}</h2>
+          <p class="text-sm md:text-lg text-gray-800">{{ director.centre }}</p>
         </div>
       </div>
     </div>
@@ -50,8 +50,4 @@ export default {
   align-items: center;
 }
 
-h1 {
-  text-align: center;
-  margin-bottom: 20px;
-}
 </style>
