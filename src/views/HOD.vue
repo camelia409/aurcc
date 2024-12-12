@@ -1,31 +1,31 @@
 <template>
   <div
-    class="container mx-auto bg-cover bg-center"
+    class="mx-auto bg-cover bg-center"
     :style="backgroundStyle"
   >
-    <div class="text-center mb-8 py-5 bg-black bg-opacity-50">
-      <h1 class="text-3xl font-bold text-white text-shadow-lg">Head of the Departments</h1>
+    <div class="text-center mb-8 py-6 bg-yellow-500 bg-opacity-90">
+      <h1 class="text-xl md:text-3xl font-semibold text-black">Head of the Departments</h1>
     </div>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-6 md:mx-10 gap-8">
       <div
         v-for="hod in hods"
         :key="hod.name"
-        class="hod-member bg-white rounded-lg shadow-lg overflow-hidden flex flex-col items-center"
+        class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col m-20 items-center border-4 border-black"
       >
         <div class="w-full flex justify-center">
-          <div class="w-60 h-70 overflow-hidden">
+          <div class="w-60 h-60 overflow-hidden">
             <img
               :src="getPhotoPath(hod.photo)"
               :alt="hod.name"
-              class="w-full h-full object-cover"
+              class="w-60 h-60 object-contain"
             />
           </div>
         </div>
         <div
-          class="flex-grow flex flex-col justify-center p-6 bg-gray-100 text-center w-full"
+          class="flex-grow flex flex-col justify-center p-5 bg-gray-100 text-center w-full"
         >
-          <h2 class="text-2xl font-bold text-blue-600">{{ hod.name }}</h2>
-          <p class="text-lg text-gray-800">{{ hod.department }}</p>
+          <h2 class="text-lg md:text-2xl font-semibold text-blue-600">{{ hod.name }}</h2>
+          <p class="text-base md:text-lg text-gray-800">{{ hod.department }}</p>
         </div>
       </div>
     </div>
