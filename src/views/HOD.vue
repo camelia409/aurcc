@@ -6,13 +6,13 @@
     <div class="text-center mb-8 py-6 bg-yellow-500 bg-opacity-90">
       <h1 class="text-xl md:text-3xl font-semibold text-black">Head of the Departments</h1>
     </div>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 md:gap-10">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-4 md:gap-10">
       <div
         v-for="hod in hods"
         :key="hod.name"
-        class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col m-8 sm:m-6 md:m-20 items-center border-4 border-black"
+        class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col m-16 sm:m-6 md:m-20 items-center border-4 border-black"
       >
-        <div class="w-full flex justify-center px-2 md:px-6 pt-2 md:pt-4">
+        <div class="w-full flex justify-center pt-2 md:pt-4">
           <div class="md:w-60 md:h-60 w-40 h-40 sm:w-48 sm:h-48 overflow-hidden">
             <img
               :src="getPhotoPath(hod.photo)"

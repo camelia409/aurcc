@@ -2,11 +2,11 @@
   <main class="flex-grow">
     <!-- Hero section -->
     <section
-      class="bg-cover md:bg-center relative -z-10 w-full h-48 sm:h-64 md:h-94  animate-fadeIn"
+      class="bg-left md:bg-cover relative -z-10 w-full h-48 sm:h-64 md:h-94  animate-fadeIn"
       :style="{ backgroundImage: `url(${backgroundImage})` }"
     >
       <div class="absolute top-0 left-0 w-full h-full"></div>
-      <div class="flex items-start md:justify-center justify-end pr-1 py-20 text-blue relative z-10 font-serif">
+      <div class="flex items-start md:justify-center justify-center pr-1 md:py-20 py-40 text-blue relative z-10 font-serif">
         <h1 class="md:text-4xl text-xl font-bold animate-slideIn">{{ data.name }}</h1>
       </div> 
     </section>
