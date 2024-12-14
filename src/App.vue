@@ -328,7 +328,7 @@ export default {
           links: [
             { name: "Organogram", route: "/organogram" },
             { name: "Vice Chancellor", route: "/VC" },
-            { name: "University Administration", route: "/Register" },
+            { name: "University Administration", route: "/Registrar" },
             { name: "Administrative Staff", route: "/administration" },
             { name: "Head of the Departments", route: "/HOD" },
             { name: "Cell Coordinators", route: "/COD" },
