@@ -243,33 +243,135 @@
         </div>
       </section>
 
-      <div class="flex-grow gap-4 bg-[#0b0b43] text-white p-14 ">
-        <h2 class="text-4xl font-bold text-center col-span-4 mb-12">Quick Link's</h2>
-          <div class="">
-            <p class="text-2xl font-bold text-yellow-500 hover:opacity-75 hover:cursor-pointer bg-blue-950 p-5 rounded-md">AICTE & MOE CELL</p>
-          </div>
-          <a href="https://drive.google.com/file/d/1z8ioKdQN0-fvahtIfneCPJI6i7j-YaFz/view" class="">
-            <p class="text-2xl font-bold text-yellow-500 hover:opacity-75 hover:cursor-pointer bg-blue-950 p-5 rounded-md">Mandatory Disclosure</p>
-          </a>
-          <div class="">
-            <p class="text-2xl font-bold text-yellow-500 hover:opacity-75 hover:cursor-pointer bg-blue-950 p-5 rounded-md">Anti Ragging Cell</p>
-          </div>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLScKl-8gkctBfoE_E0wYdYM6lhZ_GOUVKErLfBXQQLx7jfkPJQ/viewform" class="">
-            <p class="text-2xl font-bold text-yellow-500 hover:opacity-75 hover:cursor-pointer bg-blue-950 p-5 rounded-md">POSH CELL</p>
-          </a >
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdCUoPQpO0ZUonxAatNpgkXzVTqiTW6tVsUSViTVjkNRasMkA/viewform" class="">
-            <p class="text-2xl font-bold text-yellow-500 hover:opacity-75 hover:cursor-pointer bg-blue-950 p-5 rounded-md">Differently Abled Cell</p>
-          </a>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSct1Nzh8zasrBf1pL8TQeDVLpNTckhwPYJw8L_JAL4-e-VRrA/viewform" class="">
-            <p class="text-2xl font-bold text-yellow-500 hover:opacity-75 hover:cursor-pointer bg-blue-950 p-5 rounded-md">Prevention of Caste</p>
-          </a>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSenLuIhWEHNtty-CA7a2hMufyxj1sFLd-ET4geM3VvwN3KoHg/viewform" class="">
-            <p class="text-2xl font-bold text-yellow-500 hover:opacity-75 hover:cursor-pointer bg-blue-950 p-5 rounded-md">Anti-Drugs</p>
-          </a>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLScNS4VLaepGgelMcCyQXkE0KyPLKUws4YQQeTmdvZDQKFFjJg/viewform" class="">
-            <p class="text-2xl font-bold text-yellow-500 hover:opacity-75 hover:cursor-pointer bg-blue-950 p-5 rounded-md">Online Grievence</p>
-          </a>
+      <div class="bg-gradient-to-b from-blue-900 to-indigo-950 text-white py-16 px-4">
+    <div class="container mx-auto">
+      <!-- Section Title with decorative elements -->
+      <div class="relative text-center mb-12">
+        <h2 class="text-4xl font-bold">
+          <span class="inline-block px-4 relative">
+            Quick Links
+            <!-- <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-yellow-500"></div> -->
+          </span>
+        </h2>
       </div>
+
+      <!-- Grid Layout for Quick Links -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+        <!-- AICTE & MOE Cell -->
+        <div class="group">
+          <div class="bg-blue-950/50 rounded-lg p-6 h-full transform transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-blue-500/20 cursor-pointer border border-blue-800/30">
+            <div class="flex items-center space-x-3">
+              <span class="text-yellow-500">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                </svg>
+              </span>
+              <h3 class="text-lg font-semibold text-yellow-500">AICTE & MOE CELL</h3>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mandatory Disclosure -->
+        <a href="https://drive.google.com/file/d/1z8ioKdQN0-fvahtIfneCPJI6i7j-YaFz/view" target="_blank" class="group">
+          <div class="bg-blue-950/50 rounded-lg p-6 h-full transform transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-blue-500/20 border border-blue-800/30">
+            <div class="flex items-center space-x-3">
+              <span class="text-yellow-500">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
+              </span>
+              <h3 class="text-lg font-semibold text-yellow-500">Mandatory Disclosure</h3>
+            </div>
+          </div>
+        </a>
+
+        <!-- Anti Ragging Cell -->
+        <div class="group">
+          <div class="bg-blue-950/50 rounded-lg p-6 h-full transform transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-blue-500/20 cursor-pointer border border-blue-800/30">
+            <div class="flex items-center space-x-3">
+              <span class="text-yellow-500">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                </svg>
+              </span>
+              <h3 class="text-lg font-semibold text-yellow-500">Anti Ragging Cell</h3>
+            </div>
+          </div>
+        </div>
+
+        <!-- POSH CELL -->
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScKl-8gkctBfoE_E0wYdYM6lhZ_GOUVKErLfBXQQLx7jfkPJQ/viewform" target="_blank" class="group">
+          <div class="bg-blue-950/50 rounded-lg p-6 h-full transform transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-blue-500/20 border border-blue-800/30">
+            <div class="flex items-center space-x-3">
+              <span class="text-yellow-500">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                </svg>
+              </span>
+              <h3 class="text-lg font-semibold text-yellow-500">POSH CELL</h3>
+            </div>
+          </div>
+        </a>
+
+        <!-- Differently Abled Cell -->
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdCUoPQpO0ZUonxAatNpgkXzVTqiTW6tVsUSViTVjkNRasMkA/viewform" target="_blank" class="group">
+          <div class="bg-blue-950/50 rounded-lg p-6 h-full transform transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-blue-500/20 border border-blue-800/30">
+            <div class="flex items-center space-x-3">
+              <span class="text-yellow-500">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </span>
+              <h3 class="text-lg font-semibold text-yellow-500">Differently Abled Cell</h3>
+            </div>
+          </div>
+        </a>
+
+        <!-- Prevention of Caste -->
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSct1Nzh8zasrBf1pL8TQeDVLpNTckhwPYJw8L_JAL4-e-VRrA/viewform" target="_blank" class="group">
+          <div class="bg-blue-950/50 rounded-lg p-6 h-full transform transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-blue-500/20 border border-blue-800/30">
+            <div class="flex items-center space-x-3">
+              <span class="text-yellow-500">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                </svg>
+              </span>
+              <h3 class="text-lg font-semibold text-yellow-500">Prevention of Caste</h3>
+            </div>
+          </div>
+        </a>
+
+        <!-- Anti-Drugs -->
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSenLuIhWEHNtty-CA7a2hMufyxj1sFLd-ET4geM3VvwN3KoHg/viewform" target="_blank" class="group">
+          <div class="bg-blue-950/50 rounded-lg p-6 h-full transform transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-blue-500/20 border border-blue-800/30">
+            <div class="flex items-center space-x-3">
+              <span class="text-yellow-500">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                </svg>
+              </span>
+              <h3 class="text-lg font-semibold text-yellow-500">Anti-Drugs</h3>
+            </div>
+          </div>
+        </a>
+
+        <!-- Online Grievance -->
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScNS4VLaepGgelMcCyQXkE0KyPLKUws4YQQeTmdvZDQKFFjJg/viewform" target="_blank" class="group">
+          <div class="bg-blue-950/50 rounded-lg p-6 h-full transform transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-blue-500/20 border border-blue-800/30">
+            <div class="flex items-center space-x-3">
+              <span class="text-yellow-500">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-4l-4 4z" />
+                </svg>
+              </span>
+              <h3 class="text-lg font-semibold text-yellow-500">Online Grievance</h3>
+            </div>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </div>
 
       <!-- Gallery Section -->
       <section id="gallery" class="py-12 md:py-16 bg-white overflow-hidden w-full">
