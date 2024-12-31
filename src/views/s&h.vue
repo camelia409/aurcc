@@ -100,54 +100,56 @@
     </section>
 
     <section id="faculty" ref="faculty" class="scroll-section bg-blue-100">
-      <div class="container mx-auto py-10">
-        <h2 class="text-5xl bg-[#3c2813] text-center text-white font-bold p-8">Faculty</h2>
+      <div class="container mx-auto py-10 bg-yellow-100">
+        <h2 class="text-5xl bg-[#3c2813] text-center text-white font-bold p-4 md:p-8">Faculty</h2>
         <!-- HOD Desk -->
         <div class="bg-yellow-100">
-          <h3 class="text-3xl text-center font-semibold p-10">HOD Desk</h3>
+          <h3 class="text-2xl md:text-3xl text-center font-semibold pt-5 md:pt-10">HOD Desk</h3>
           <div class="flex justify-center flex-wrap">
             <div 
               v-for="staff in department.faculty.hod_desk" 
               :key="staff.email" 
-              class="admin-member bg-white rounded-lg shadow-lg overflow-hidden flex flex-col items-center cursor-pointer transition-transform duration-300 ease-in-out hover:-translate-y-1"
+              class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col m-10 sm:m-6 md:m-20 items-center border-4 border-black   cursor-pointer transition-transform duration-300 ease-in-out hover:-translate-y-1"
               @click="showDetails(staff)"
             >
-              <div class="w-full max-w-xs aspect-[1/1] overflow-hidden border-4 border-gray-200">
-                <img :src="'/src/assets/' + staff.image" :alt="staff.name" class="object-cover"/>
+              <div class="w-full flex justify-center px-5 md:px-12 pt-2 md:pt-2 ">
+                  <div class="w-40 sm:w-48 md:w-60 h-40 sm:h-48 md:h-60 overflow-hidden">
+                    <img :src="'http://localhost:5173/src/assets/' + staff.image" :alt="staff.name" class="w-full h-full object-contain"/>
+                  </div>
               </div>
-              <div class="flex-grow flex flex-col justify-center p-4 bg-gray-100 text-center w-full">
-                <h2 class="text-2xl font-bold text-gray-800 mb-2">{{ staff.name }}</h2>
-                <p class="text-lg text-gray-800">{{ staff.position }}</p>
-                <p class="text-md text-gray-600">{{ staff.email }}</p>
+              <div class="flex-grow flex flex-col justify-center p-3 sm:p-4 md:p-6 bg-gray-100 text-center w-full">
+                <h2 class="text-sm sm:text-lg md:text-2xl font-semibold text-black">{{ staff.name }}</h2>
+                <p class="text-xs sm:text-sm md:text-lg text-gray-800">{{ staff.position }}</p>
+                <p class="text-xs sm:text-sm md:text-lg text-gray-800">{{ staff.email }}</p>
               </div>
             </div>
           </div>
         </div>
 
         <!-- Assistant Professors -->
-        <div>
-          <h3 class="text-3xl text-center font-semibold p-14 bg-yellow-100">Assistant Professors</h3>
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 bg-yellow-100">
-            <div 
-              v-for="staff in department.faculty.assistant_professors" 
-              :key="staff.email" 
-              class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col items-center cursor-pointer transition-transform duration-300 ease-in-out hover:-translate-y-1" 
-              @click="showDetails(staff)"
-            >
-              <div class="w-full flex justify-center">
-                <div class="w-full max-w-xs aspect-[1/1] overflow-hidden border-4 border-gray-200">
-                  <img :src="'/src/assets/' + staff.image" :alt="staff.name" class="object-cover"/>
+          <div>
+              <h3 class="text-2xl md:text-3xl text-center font-semibold  pt-4 bg-yellow-100">Assistant Professors</h3>
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0 md:gap-4 bg-yellow-100">
+                <div 
+                  v-for="staff in department.faculty.assistant_professors" 
+                  :key="staff.email" 
+                  class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col m-20 sm:m-6 md:m-20 items-center border-4 border-black cursor-pointer transition-transform duration-300 ease-in-out hover:-translate-y-1" 
+                  @click="showDetails(staff)"
+                >
+                  <div class="w-full flex justify-center  pt-2 md:pt-4">
+                    <div class="w-40 sm:w-48 md:w-60 h-40 sm:h-48 md:h-60 overflow-hidden">
+                      <img :src="'http://localhost:5173/src/assets/' + staff.image" :alt="staff.name" class="h-full w-full object-contain "/>
+                    </div>
+                  </div>
+                  <div class="flex-grow flex flex-col justify-center p-3 sm:p-4 md:p-6 bg-gray-100 text-center w-full">
+                    <h2 class="text-sm sm:text-lg md:text-2xl font-semibold text-black">{{ staff.name }}</h2>
+                    <p class="text-xs sm:text-sm md:text-lg text-gray-800">{{ staff.position }}</p>
+                    <p class="text-xs sm:text-sm md:text-lg text-gray-800">{{ staff.email }}</p>
+                  </div>
                 </div>
-              </div>
-              <div class="flex-grow flex flex-col justify-center p-4 bg-gray-100 text-center w-full">
-                <h2 class="text-2xl font-bold text-gray-800">{{ staff.name }}</h2>
-                <p class="text-lg text-gray-800">{{ staff.position }}</p>
-                <p class="text-md text-gray-600">{{ staff.email }}</p>
               </div>
             </div>
           </div>
-        </div>
-      </div>
       </section>
 
     <!-- Modal -->
