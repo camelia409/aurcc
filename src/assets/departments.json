@@ -751,7 +751,7 @@
 				"image": "preethi.webp",
 				"position": "Assistant Professor (Senior Grade)",
 				"departments": ["Department of Computer Science and Engineering", "Placement Cell", "DGATE Cell"],
-				"clg-email": "preethi@aurcc.ac.in",
+				"email": "preethi@aurcc.ac.in",
 				"education": [
 				  {
 					"degree": "Ph.D. in Computer Science and Engineering",
@@ -3661,7 +3661,7 @@
 			  "hod_desk": [
 				{
 				  "name": "Dr. N. Kumaresan",
-				  "image": "Kumar.webp",
+				  "image": "Kumaresan-N.webp",
 				  "position": "Associate Professor",
 				  "email": "kumaresan@aurcc.ac.in",
 				  "education": [

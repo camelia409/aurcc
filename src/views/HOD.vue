@@ -10,7 +10,7 @@
       <div
         v-for="hod in hods"
         :key="hod.name"
-        class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col m-16 sm:m-6 md:m-20 items-center border-4 border-black"
+        class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col m-14 sm:m-6 md:m-20 items-center border-4 border-black"
       >
         <div class="w-full flex justify-center pt-2 md:pt-4">
           <div class="md:w-60 md:h-60 w-40 h-40 sm:w-48 sm:h-48 overflow-hidden">
