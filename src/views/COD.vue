@@ -4,11 +4,11 @@
     :style="backgroundStyle"
   >
     <div class="text-center py-5">
-      <h1 class="text-xl md:text-3xl font-semibold text-white drop-shadow-lg">
+      <h1 class="text-xl md:text-3xl font-semibold text-white drop-shadow-lg font-serif">
         Cell Coordinators
       </h1>
     </div>
-    <div class="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+    <div class="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 font-serif">
       <div
         v-for="director in directors"
         :key="director.name"

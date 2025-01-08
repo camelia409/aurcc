@@ -2,7 +2,7 @@
   <main class="flex-grow">
     <!-- Hero section -->
     <section 
-      class="bg-cover bg-center relative w-full h-60 sm:h-80 md:h-94 animate-fadeIn" 
+      class="bg-cover bg-center relative w-full h-40 sm:h-80 md:h-94 animate-fadeIn" 
       :style="{ 
         backgroundImage: `url(${backgroundImage})`
       }">
@@ -20,14 +20,15 @@
         
 
   <!-- Vertical Tabs Section -->
-  <section class="mx-auto py-6 md:py-12 px-4 md:px-10 bg-indigo-100 rounded-lg animate-popIn">
-    <div class="relative flex flex-col px-8 md:flex-row">
+  <section class="mx-auto py-6 md:py-12 md:px-10 bg-indigo-100 rounded-lg animate-popIn">
+    <div class="relative flex flex-col md:px-8 px-4 md:flex-row">
     <!-- Vertical Tabs -->
-    <div class="flex-shrink-0 w-full h-max lg:w-64 bg-gradient-to-r from-[#21209c] to-blue-600 rounded-lg shadow-lg p-4 overflow-hidden mb-4 lg:mb-0">
-      <div class="relative bg-gradient-to-r from-[#21209c] to-blue-600 p-4 rounded-lg">
-        <h2 class="text-2xl font-serif text-white font-bold text-center">Sections</h2>
-      </div>
-      <div class="space-y-4 font-serif">
+    <div class="px-8 md:px-0">
+        <div class="flex-shrink-0 w-full h-max md:w-64 bg-gradient-to-r from-[#21209c] to-blue-600 rounded-lg shadow-lg p-4 mb-4 md:mb-0 md:mr-4">
+          <div class="relative p-4 rounded-lg">
+            <h2 class="text-2xl font-serif text-center text-white font-semibold">Sections</h2>
+          </div>
+      <div class="space-y-2 font-serif">
         <button @click="activeTab = 'Description'" :class="{'bg-yellow-400 text-[#23120b]': activeTab === 'Description', 'bg-white text-gray-800': activeTab !== 'Description'}" class="w-full py-2 px-4 rounded-md font-semibold hover:bg-yellow-400 hover:text-[#23120b]">Description</button>
         <button @click="activeTab = 'objectives'" :class="{'bg-yellow-400 text-[#23120b]': activeTab === 'objectives', 'bg-white text-gray-800': activeTab !== 'objectives'}" class="w-full py-2 px-4 rounded-md font-semibold hover:bg-yellow-400 hover:text-[#23120b]">Objectives</button>
         <button @click="activeTab = 'key_activities'" :class="{'bg-yellow-400 text-[#23120b]': activeTab === 'key_activities', 'bg-white text-gray-800': activeTab !== 'key_activities'}" class="w-full py-2 px-4 rounded-md font-semibold hover:bg-yellow-400 hover:text-[#23120b]">Key Activities</button>
@@ -35,6 +36,7 @@
         <button @click="activeTab = 'links'" :class="{'bg-yellow-400 text-[#23120b]': activeTab === 'links', 'bg-white text-gray-800': activeTab !== 'links'}" class="w-full py-2 px-4 rounded-md font-semibold hover:bg-yellow-400 hover:text-[#23120b]">Links</button>
         <button @click="activeTab = 'office_bearers'" :class="{'bg-yellow-400 text-[#23120b]': activeTab === 'office_bearers', 'bg-white text-gray-800': activeTab !== 'office_bearers'}" class="w-full py-2 px-4 rounded-md font-semibold hover:bg-yellow-400 hover:text-[#23120b]">Office Bearers</button>
       </div>
+    </div>
     </div>
 
     <!-- Tab Content -->

@@ -2,7 +2,7 @@
   <main class="flex-grow">
     <!-- Hero section -->
     <section 
-      class="bg-cover bg-center relative w-full h-60 sm:h-80 md:h-94 animate-fadeIn" 
+      class="bg-cover bg-center relative w-full h-40 sm:h-80 md:h-94 animate-fadeIn" 
       :style="{ 
         backgroundImage: `url(${backgroundImage})`
       }">
@@ -20,7 +20,7 @@
     <!-- Details section -->
     <section class="bg-indigo-100 rounded-lg animate-popIn mx-auto py-8 px-4 md:px-60">
       <div class="bg-blue-300 rounded-lg shadow-lg overflow-hidden">
-        <h2 class="text-3xl text-center bg-gradient-to-r from-[#21209c] to-blue-600 text-yellow-400 p-4 font-semibold rounded-t-lg">
+        <h2 class="text-xl md:text-3xl text-center bg-gradient-to-r from-[#21209c] to-blue-600 text-yellow-400 p-4 font-semibold rounded-t-lg">
           {{ details.description }}
         </h2>
         <div class="p-6">

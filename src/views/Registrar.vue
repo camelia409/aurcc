@@ -1,7 +1,7 @@
 <template>
   <div class="bg-indigo-100 mx-auto p-4 md:p-9">
-    <h1 class="text-xl sm:text-2xl md:text-3xl font-semibold mb-4 md:mb-8 text-center">University Administration</h1>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 ">
+    <h1 class="text-xl sm:text-2xl md:text-3xl font-serif font-semibold mb-4 md:mb-8 text-center">University Administration</h1>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 font-serif">
       <div 
         v-for="member in administrator" 
         :key="member.name" 

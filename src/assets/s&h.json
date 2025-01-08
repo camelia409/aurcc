@@ -11,12 +11,12 @@
   "facility": [
     {
       "name": "physics lab",
-      "description": "State-of-the-art laboratories equipped with modern technology for practical learning.",
+      "description": ["State-of-the-art laboratories equipped with modern technology for practical learning."],
       "image": "lab_facility.jpg"
     },
     {
       "name": "chemistry lab",
-      "description": "A vast collection of books, journals, and digital resources to support learning and research.",
+      "description": ["A vast collection of books, journals, and digital resources to support learning and research."],
       "image": "library_facility.jpg"
     }
   ],
@@ -33,7 +33,7 @@
             "M.Phil in English",
             "Ph.D. in English"
         ],
-        "experience": [
+        "professional_experience": [
             {
                 "position": "Lecturer in English",
                 "institution": "Bannari Amman Institute of Technology, Sathyamangalam",
@@ -70,7 +70,7 @@
             "M.Phil. in Mathematics, Bharathiar University, Coimbatore (1996)",
             "Ph.D. in Mathematics, Bharathiar University, Coimbatore (2001)"
         ],
-        "experience": [
+        "professional_experience": [
             {
                 "position": "Lecturer in Mathematics",
                 "institution": "Kumaraguru College of Technology, Coimbatore",
@@ -133,7 +133,7 @@
             "M.Sc in Chemistry",
             "Ph.D. in Chemistry"
         ],
-        "experience": [
+        "professional_experience": [
             {
                 "position": "Lecturer, Department of Chemistry",
                 "institution": "Kothari Technological Institute, Chennai, INDIA",
@@ -176,7 +176,7 @@
             "Ph.D. in Bioscience",
             "PDF in Bioscience"
         ],
-        "experience": [
+        "professional_experience": [
             {
                 "position": "Lecturer",
                 "institution": "Kovai Kalaimagal College of Arts and Science, Coimbatore",
@@ -216,7 +216,7 @@
         "education": [
             "Ph.D. in Mathematics"
         ],
-        "experience": [
+        "professional_experience": [
             {
                 "position": "Guest Lecturer",
                 "institution": "Bharathiar University",
@@ -248,7 +248,7 @@
         "education": [
             "Details not provided."
         ],
-        "experience": [
+        "professional_experience": [
             {
                 "position": "Assistant Professor",
                 "institution": "Anna University Regional Campus Coimbatore",
@@ -287,7 +287,7 @@
         "department": "Department of Science and Humanities",
         "email": "drponkalugasalam@gmail.com",
         "profile": "Dr. Kalugasalam P was born on 27th December 1970 in Dharmapuri (village), Theni District, Tamil Nadu, India. He completed his Secondary School Education from P. H. N. Higher Secondary School, Kamatchipuram, Theni District in 1987 and Higher Secondary Education from the same school in 1989. He completed his UG degree from Government Arts College, Coimbatore with first class in 1992, PG degree from PSG College of Arts and Science, Coimbatore with first class in 1994, M.Phil. degree from PSG College of Arts and Science, Coimbatore in 1999, and Ph.D. from Anna University, Chennai in 2010. He joined SPM Matriculation Higher Secondary Schools, Coimbatore as a postgraduate teacher in physics in 2000 and then joined the Department of Science and Humanities, Tamilnadu College of Engineering, Coimbatore as a Lecturer in 2004. He is currently working as the Professor and Head of the Department of Science and Humanities at the same Institute. He has thirty-eight papers to his credit in international referred journals. He has presented research papers in International and National seminars, received two best paper awards, and published five books for first-year B.E./B.Tech. students. He is also a reviewer for the book “Engineering Physics” published by McGraw Hill Education India Pvt. Ltd., New Delhi. He was awarded the “Bharat Ratna Mother Teresa Gold Medal Award-2014” by the Global Economic Progress and Research Association.",
-        "experience": [
+        "professional_experience": [
             {
                 "position": "Lecturer",
                 "institution": "Tamilnadu College of Engineering",
@@ -321,7 +321,7 @@
         "department": "Department of Science and Humanities (Mathematics)",
         "email": "revmaths@gmail.com",
         "profile": "I am Dr. P. Revathi, working as a Teaching Fellow at Anna University Regional Campus, Coimbatore since September 2008. I am from Coimbatore. I completed my school studies at Government Higher Secondary School, Karamadai. I obtained my UG, PG, and M.Phil. in Mathematics from Kongunadu Arts and Science College, Coimbatore from 2002-2008. I completed my Doctorate in 'Stochastic Differential Equations' in 2014 at Anna University under the guidance of Dr. R. Sakthivel and Dr. S. Marshal Anthoni. I have 12 years of teaching experience and am known for my hard work, adaptability to new environments, and motivating students.",
-        "experience": [
+        "professional_experience": [
             {
                 "position": "Teaching Fellow",
                 "institution": "Anna University Regional Campus, Coimbatore",
@@ -345,7 +345,7 @@
         "department": "Department of Science and Humanities (Chemistry)",
         "email": "jsardhar@aurcc.ac.in",
         "profile": "I have completed research work in the field of synthesis and characterization of novel mesoporous materials supported Ni-Mo catalysts for hydrotreating process. Also experienced in the preparation of various porous materials like mesoporous aluminosilicates (MAS), SBA-15 and KIT-6 and its composites with different metal hydrotreating catalysts and various physico-chemical characterization techniques. Currently doing research in the area of super capacitors and waste water treatment using novel nano materials and composites.",
-        "experience": [
+        "professional_experience": [
             {
                 "position": "Junior Research Fellow and Senior Research Fellow",
                 "institution": "DRDO sponsored project, Anna University Chennai",
@@ -384,7 +384,7 @@
         "department": "Department of Science & Humanities (Mathematics)",
         "email": "jvvivin@gmail.com",
         "profile": "Dr Vernold Vivin.J, is presently working as Assistant Professor in the Department of Science and Humanities (Mathematics), Anna University Regional Campus-Coimbatore, Coimbatore. He has more than 16 years of teaching experience. He completed his Doctoral Degree in Mathematics, in the research area of Graph Theory, particularly in Graph Colorings under Bharathiar University, Coimbatore. Under his guidance, 05 candidates have completed their Ph.D. degree under Anna University Chennai. He has published more than 75 research papers in International and National Journals. He has also co-authored one book in Engineering Mathematics. He has delivered more than 10 invited Lectures in LaTeX and graph theory in reputed Institutions. He has presented 24 research papers in International and National Conferences both in India and Taiwan. He is a Reviewer for American Mathematical Society and has served as Referee for reputed International Journals.",
-        "experience": [
+        "professional_experience": [
             {
                 "position": "Assistant Professor",
                 "institution": "Department of Science & Humanities (Mathematics), Anna University Regional Campus-Coimbatore",
@@ -413,7 +413,7 @@
         "department": "Department of Science and Humanities",
         "email": "bapithaenglish@gmail.com",
         "profile": "Dr. Bapitha L is an Assistant Professor of English at the Department of Science and Humanities, Anna University Regional Campus Coimbatore. She obtained her Master’s degree in English Literature from Bharathiar University, Coimbatore, and her M.Phil. and Ph.D. in English from the same university. She has 15 years of experience in teaching English and has published articles and papers in both national and international journals. Her research interests include English Language Teaching, Literary Theory, and Postcolonial Studies.",
-        "experience": [
+        "professional_experience": [
             {
                 "position": "Assistant Professor",
                 "institution": "Department of Science and Humanities, Anna University Regional Campus Coimbatore",
@@ -432,7 +432,7 @@
         "department": "Department of Science and Humanities (Tamil)",
         "email": "mabedkalaivani@gmail.com",
         "profile": "My native is Namakkal. My educational qualifications are M.A., M.Phil., B.Ed., and NET. I am currently pursuing Ph.D. research on the topic 'Namakkal Mavatta Ilakiya Amaippugalin Selnerigal' at Vivekananda College of Arts and Science (Autonomous). I completed my schooling at Government Higher Secondary School, Swamy Sivananda Salai, Rasipuram. I earned my UG degree from Vivekananda College of Arts and Science (Autonomous), and my Master's and M.Phil degrees from Bharatiyar University. I passed the UGC NET Exam in June 2012. My strengths include typing in Tamil, efficiency in basic computer skills, adaptability to new environments, self-confidence, eagerness to learn new things, and motivating students.",
-        "experience": [
+        "professional_experience": [
             {
                 "position": "Teacher",
                 "institution": "Sri Sakthi Sai Nursery and Primary School, Salem",
@@ -466,7 +466,7 @@
         "department": "Department of Science and Humanities (Chemistry)",
         "email": "kirunila4@gmail.com",
         "profile": "I am B. Kiruba, working as a Teaching Fellow at Anna University Regional Campus Coimbatore since September 2018. I am from Mayiladuthurai and completed my schooling at St. Paul's Girls Higher Secondary School, Mayiladuthurai. I earned my UG degree in Chemistry from AVC College, Mannampandal during the academic year 1999-2002, and my M.Sc. and M.Phil. in Chemistry from Bharathidasan University from 2002-2006. I qualified the SET exam in 2016. My thesis is entitled 'Synthesis, Characterization, and Antimicrobial, Anticancer, and Antioxidant Properties of Certain Random Copolyesters Containing Arylidene Moiety in the Main Chain.' With 15 years of teaching experience, I am interested in the field of Polymers, eager to learn new things, flexible to the environment, and motivated to inspire students.",
-        "experience": [
+        "professional_experience": [
             {
                 "position": "Guest Lecturer",
                 "institution": "Bharathidasan Institute of Technology",
@@ -495,7 +495,7 @@
         "department": "Department of Science and Humanities",
         "email": "meena171976@gmail.com",
         "profile": "I joined this prestigious institution in 2008 with qualifications of M.Sc. and M.Phil. in Mathematics. From 2008 to 2018, I worked in the Office of Affiliation. Since 2018, I have been working in the Department of Science and Humanities. I am very proud and happy to assist students with my administrative experience and academic excellence.",
-        "experience": [
+        "professional_experience": [
             {
                 "position": "Executive Assistant",
                 "institution": "Department of Science and Humanities",
