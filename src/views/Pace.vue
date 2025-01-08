@@ -2,7 +2,7 @@
   <main class="flex-grow">
     <!-- Hero section -->
     <section 
-  class="bg-cover bg-center relative w-full h-60 sm:h-80 md:h-94 animate-fadeIn" 
+  class="bg-cover bg-center relative w-full h-40 sm:h-80 md:h-94 animate-fadeIn" 
   :style="{ 
     backgroundImage: `url(${backgroundImage})`
   }">
@@ -18,9 +18,10 @@
 </section>
       
     <!-- Vertical Tabs Section -->
-    <section class="mx-auto py-6 md:py-12 px-4 md:px-10 bg-indigo-100 rounded-lg animate-popIn">
-      <div class="relative flex flex-col px-8 md:flex-row">
+    <section class="mx-auto py-6 md:py-12 md:px-10 bg-indigo-100 rounded-lg animate-popIn">
+      <div class="relative flex flex-col md:px-8 px-4 md:flex-row">
         <!-- Vertical Tabs -->
+        <div class="px-8 md:px-0">
         <div class="flex-shrink-0 w-full h-max md:w-64 bg-gradient-to-r from-[#21209c] to-blue-600 rounded-lg shadow-lg p-4 mb-4 md:mb-0 md:mr-4">
           <div class="relative p-4 rounded-lg">
             <h2 class="text-2xl font-serif text-center text-white font-semibold">Sections</h2>
@@ -32,7 +33,7 @@
             
             <button @click="currentSection = 'student_volunteers'" v-if="paceData.student_volunteers.length" :class="{'bg-yellow-400 text-[#23120b]': currentSection === 'student_volunteers', 'bg-gray-100': currentSection !== 'student_volunteers'}" class="w-full py-2 px-4 rounded-md font-semibold hover:bg-yellow-400 hover:text-[#23120b]">Student Volunteers</button>
           </div>
-
+        </div>
         </div>
 
         <!-- Tab Content -->

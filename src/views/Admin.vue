@@ -1,9 +1,9 @@
 <template>
   <div class="bg-indigo-100">
-    <div class="text-center py-6 bg-yellow-500 bg-opacity-90">
-      <h1 class="text-xl md:text-3xl pt-3 font-semibold text-black">ADMINISTRATIVE STAFF</h1>
+    <div class="text-center md:py-6 py-3 bg-yellow-500 bg-opacity-90">
+      <h1 class="text-xl md:text-3xl font-semibold font-serif text-black">ADMINISTRATIVE STAFF</h1>
     </div>
-   <div class="container mx-auto p-9 ">
+   <div class="container mx-auto p-9 font-serif">
     <!-- Iterate over each general administration section -->
     <div v-for="(section, sectionName) in administrator" :key="sectionName" class="mb-12">
       <h2 class="text-xl md:text-3xl font-semibold mb-6 text-center">{{ sectionName }}</h2>

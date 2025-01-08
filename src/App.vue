@@ -54,7 +54,7 @@ import { RouterLink, RouterView } from 'vue-router';
                 class="absolute z-20 left-0 mt-2 w-48 bg-white  shadow-lg  p-0 transition-all duration-300 opacity-0 invisible group-hover:visible group-hover:opacity-100 text-black"
               >
                 <li><RouterLink to="/organogram" class="block px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-300 ease-in-out">Organogram</RouterLink ></li>
-                <li><RouterLink to="/VC" class="block px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-300 ease-in-out">Vice Chancellor</RouterLink ></li>
+        <!--    <li><RouterLink to="/VC" class="block px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-300 ease-in-out">Vice Chancellor</RouterLink ></li>-->
                 <li><RouterLink to="/Registrar" class="block px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-300 ease-in-out">University Administration</RouterLink ></li>
                 <li><RouterLink to="administration" class="block px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-300 ease-in-out">Administrative staff</RouterLink ></li>
                 <li><RouterLink to="/HOD" class="block px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-300 ease-in-out">Head of the Departments</RouterLink ></li>
@@ -298,7 +298,7 @@ import { RouterLink, RouterView } from 'vue-router';
       <div class="py-2 text-center">
         <p class="text-lg">&copy; {{new Date().getFullYear()}} Anna University Regional Campus Coimbatore. All rights reserved.</p>
       </div>
-      <a href="/about" class="text-xl truncate hover:text-clip font-bold text-blue-300 hover:text-blue-100 transition-colors">Website Development Team</a> 
+      <RouterLink to="/about" class="text-xl truncate hover:text-clip font-bold text-blue-300 hover:text-blue-100 transition-colors">Website Development Team</RouterLink> 
     </div>
   </div>
 </footer>
@@ -327,7 +327,6 @@ export default {
           isOpen: false,
           links: [
             { name: "Organogram", route: "/organogram" },
-            { name: "Vice Chancellor", route: "/VC" },
             { name: "University Administration", route: "/Registrar" },
             { name: "Administrative Staff", route: "/administration" },
             { name: "Head of the Departments", route: "/HOD" },
@@ -354,7 +353,7 @@ export default {
             { name: "Electronics & communication", route: "/departments/ece" },
             { name: "Mechanical", route: "/departments/mech" },
             { name: "MBA", route: "/departments/mba" },
-            { name: "Science & Humanities", route: "/departments/s&h" },
+            { name: "Science & Humanities", route: "/s&h" },
           ],
         },
         {

@@ -20,7 +20,7 @@
     <section class="mx-auto py-6 md:py-12 px-4 md:px-10 bg-indigo-100 rounded-lg animate-popIn">
       <div class="relative flex flex-col px-8 md:flex-row">
         <!-- Mobile Section Dropdown -->
-        <div class="md:hidden md:block flex-shrink-0 w-64 bg-gradient-to-r from-[#21209c] to-blue-600 rounded-lg shadow-lg p-4 mb-4 md:mb-0 md:mr-4 top-4 h-max">
+        <div class="md:hidden md:block flex-shrink-0 w-64 bg-gradient-to-r from-[#21209c] to-blue-600 rounded-lg shadow-lg p-4 mb-4 md:mb-0 md:ml-0 ml-3 top-4 h-max">
           <div class="relative p-4 rounded-lg text-center">
             <h2 class="text-2xl font-serif text-white font-semibold animate-slideIn">Sections</h2>
           </div>

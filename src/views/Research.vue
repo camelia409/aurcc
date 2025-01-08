@@ -2,7 +2,7 @@
   <div class="flex-grow">
     <!-- Hero Section -->
     <section 
-      class="bg-cover bg-center relative w-full h-60 sm:h-80 md:h-94 animate-fadeIn" 
+      class="bg-cover bg-center relative w-full h-40 sm:h-80 md:h-94 animate-fadeIn" 
       :style="{ 
         backgroundImage: `url(${backgroundImage})`
       }">
@@ -18,12 +18,13 @@
     </section>
 
     <!-- Content Sections with Vertical Tabs -->
-    <section class="mx-auto py-6 md:py-12 px-4 md:px-10 bg-indigo-100 rounded-lg animate-popIn">
-      <div class="relative flex flex-col px-8 md:flex-row">
+    <section class="mx-auto py-6 md:py-12 md:px-10 bg-indigo-100 rounded-lg animate-popIn">
+      <div class="relative flex flex-col md:px-8 px-4 md:flex-row">
         <!-- Vertical Tabs -->
-        <div class="flex-shrink-0 w-full h-max md:w-64 bg-gradient-to-r from-[#21209c] to-blue-600 rounded-lg shadow-lg p-4 overflow-hidden">
-          <div class="relative p-4 rounded-lg ">
-            <h2 class="text-2xl font-serif text-center text-white font-bold">Sections</h2>
+        <div class="px-8 md:px-0">
+        <div class="flex-shrink-0 w-full h-max md:w-64 bg-gradient-to-r from-[#21209c] to-blue-600 rounded-lg shadow-lg p-4 mb-4 md:mb-0 md:mr-4">
+          <div class="relative p-4 rounded-lg">
+            <h2 class="text-2xl font-serif text-center text-white font-semibold">Sections</h2>
           </div>
           <div class="space-y-2 font-serif">
             <button @click="currentSection = 'Description'" :class="{'bg-yellow-400 text-[#23120b]': currentSection === 'Description', 'bg-gray-100': currentSection !== 'Description'}" class="w-full py-2 px-4 rounded-md font-semibold hover:bg-yellow-400 hover:text-[#23120b]">Description</button>
@@ -33,17 +34,18 @@
             <button @click="currentSection = 'Stipend Details'" :class="{'bg-yellow-400 text-[#23120b]': currentSection === 'Stipend Details', 'bg-gray-100': currentSection !== 'Stipend Details'}" class="w-full py-2 px-4 rounded-md font-semibold hover:bg-yellow-400 hover:text-[#23120b]">Stipend Details</button>
           </div>
         </div>
+        </div>
 
         <!-- Content -->
-        <div class="w-full px-0 md:px-10  font-serif min-h-[400px] max-h-[600px] md:max-h-[800px] overflow-y-auto">
+        <div class="w-full px-0 md:px-10 mt-10 font-serif min-h-[400px] max-h-[600px] md:max-h-[800px] overflow-y-auto">
           <div v-if="currentSection === 'Description'" class="bg-white rounded-lg shadow-lg p-4 md:p-6 mb-16 animate-fadeIn">
             <h2 class="text-2xl md:text-3xl font-bold text-black mb-4">Description</h2>
-            <p class="text-base  text-lg md:text-xl rounded-b-lg mb-8 text-black">{{ data.description }}</p>
+            <p class="text-base md:text-lg rounded-b-lg mb-8 text-black">{{ data.description }}</p>
           </div>
 
           <div v-else-if="currentSection === 'Supervisors'" class="bg-white rounded-lg shadow-lg p-4 md:p-6 mb-16 animate-fadeIn">
             <h2 class="text-2xl md:text-3xl font-bold text-black mb-4">Supervisors</h2>
-            <ul class="list-disc pl-4 text-base md:text-xl">
+            <ul class="list-disc pl-4 text-base md:text-lg">
               <li v-for="supervisor in data.supervisors" :key="supervisor">{{ supervisor }}</li>
             </ul>
           </div>

@@ -1,8 +1,8 @@
 <template>
     <div class="mx-auto p-9">
-      <h1 class="text-xl md:text-3xl font-semibold mb-8 text-center">Dean Office Staff</h1>
+      <h1 class="text-xl md:text-3xl font-semibold mb-8 text-center font-serif">Dean Office Staff</h1>
   
-      <div class="flex justify-center">
+      <div class="flex justify-center font-serif">
         <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col m-8 sm:m-6 md:m-0 items-center border-4 border-black">
           <div class="w-full flex justify-center px-2 md:px-6 pt-2 md:pt-4">
             <div class="w-40 sm:w-48 md:w-60 h-40 sm:h-48 md:h-60 overflow-hidden">

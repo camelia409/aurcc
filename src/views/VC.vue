@@ -1,6 +1,6 @@
 <template>
   <main class="flex justify-center items-center min-h-screen bg-indigo-100 p-4">
-    <div class="bg-white p-6 rounded-lg shadow-lg max-w-4xl w-full">
+    <div class="bg-white p-6 rounded-lg shadow-lg max-w-4xl w-full font-serif">
       <div class="text-center mb-6">
         <img src="@/assets/velraj.webp" alt="Vice-Chancellor's Photo" class="w-60 h-full mx-auto rounded-lg shadow-md">
         <h2 class="mt-4 font-bold text-xl md:text-2xl">Dr. R. Velraj</h2>
