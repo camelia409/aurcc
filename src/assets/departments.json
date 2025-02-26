@@ -1677,49 +1677,34 @@
 					"highest_salary": "",
 					"placement_percentage": "70%"
                   },
-          "achievements" :   {
-                    "notable_achievements": {
-                      "phd_candidates": {
-                        "total": 15,
-                        "supervisors": 2,
-                        "duration": "8 years"
-                      },
-                      "faculty_development_programs": {
-                        "total": 4,
-                        "subjects": "undergraduate",
-                        "focus": "technical expertise enhancement"
-                      },
-                      "workshops": {
-                        "total": 12,
-                        "topic": "growing machine learning techniques",
-                        "beneficiaries": "research scholars"
-                      },
-                      "national_conferences": {
-                        "total": 3,
-                        "funding_sources": ["AICTE", "BRNS", "DRDO", "ISRO", "AERB"],
-                        "purpose": "facilitate research presentation and interactions with keynote speakers"
-                      },
-                      "industrial_projects": {
-                        "students": {
-                          "full_time": "numerous",
-                          "part_time": "numerous"
-                        }
-                      },
-                      "postgraduate_publications": {
-                        "journals": ["referred National", "International"]
-                      },
-                      "in_plant_training": {
-                        "locations": [
-                          "NLC thermal power plants",
-                          "Hydro Power Stations",
-                          "L&T Switchgear Training Centre",
-                          "Suzlon Pvt. Ltd.",
-                          "ZF Wind Power Pvt. Ltd."
-                        ],
-                        "students": "Postgraduate"
-                      }
-                    }
-                  },
+          "achievements" :   [
+			{
+				"event": "The Department of EEE with its facilities has placed 70% of students in respective batches in various core and IT industries and as well in educational sectors."
+
+			},
+			{
+				"event": "The Department has produced 15 PhD candidates with the guidance of 2 research supervisors over a period of 8 years."
+			},
+			{
+				"event": "The Department has conducted 4 FDP's in the undergraduate subjects to enhance the technical expertise of the faculty handling those subjects"
+			},
+			{
+				"event": "The Department has organized 12 workshops in the growing machine learning techniques wherein several research scholars working in this research area has been benefitted."
+			},
+			{
+				"event": "Three National Conferences have been organized with funding from AICTE,BRNS,DRDO,ISRO and AERB.These conferences have paved way for the presentation of research contributions of the scholars and interactions with key note speakers and session chairs has made the participants aware if the emerging trends."
+
+			},
+			{
+				"event": "Numerous industrial related projects have been carried out by full time and part time students."
+			},
+			{
+				"event": "The Post graduate students actively have published their project work contributions in referred National and International journals."
+			},
+			{
+				"event": "The postgraduate students underwent inplant training to NLC thermal power plants, Hydro POwer Stations, L&T Switch gear Training centre,Suzlon Pvt.Ltd. and ZF Wind Power Pvt. Ltd."
+			}
+		],
         "research_and_publications": [
                       {
                         "authors": "Sivanandam, S. N., Deepa, S. N.",
@@ -2311,7 +2296,11 @@
                         "pages": "1-8"
                       }
                     ]
-                  ,   
+                  ,  
+		"facility":[{
+			"description":["The Department of Electrical and Electronics Engineering established with an aim to spearhead the installation of world class technologically advanced and highly sophisticated laboratories like Electrical Machines laboratory, Power Electronics laboratory ,Electric Circuits laboratory, Control Systems laboratory, Measurements and Instrumentations laboratory, Process Control laboratory and Modeling and Simulation laboratory.","The department provides software's like MATLAB R14,NI Lab VIEW,PSIM,NI Multi Sim, Active HDL and Process Control Simulator to enrich the students in their modeling and simulation skills.","A Laboratory has been set up to utilize the free open source software (FOSS) posted-which includes SCILAB and ESIM." ]
+		}
+		] ,
           "faculty": {
 			"hod_desk": [
 				{
@@ -3059,20 +3048,19 @@
 		},
 		"achievements": [
 			{
-			"event":"Established Altera FPGA Lab in the Department of ECE by creating Memorandum of Understanding with ALTERA Corporation, USA at the cost of Rs.12.00 Lakhs.",
-			"awards":"Rs.12.00 Lakhs."
+			"event":"Established Altera FPGA Lab in the Department of ECE by creating Memorandum of Understanding with ALTERA Corporation, USA at the cost of Rs.12.00 Lakhs."
 			},
 			{
-			"event":"Established TI MSP430 Microcontroller Lab in the Department of ECE by creating Memorandum of Understanding with TEXAS Instruments, India at the cost of Rs.1.00 Lakh."	,
-			"awards":"Rs.1.00 Lakh."
+			"event":"Established TI MSP430 Microcontroller Lab in the Department of ECE by creating Memorandum of Understanding with TEXAS Instruments, India at the cost of Rs.1.00 Lakh."	
+			
 			},
 			{
-			"event":"Established Analog System Design Lab (ASLK) Lab in the Department of ECE by creating Memorandum of Understanding with TEXAS Instruments, India at the cost of Rs.1.00 Lakh.",
-			"awards":"Rs.1.00 Lakh."
+			"event":"Established Analog System Design Lab (ASLK) Lab in the Department of ECE by creating Memorandum of Understanding with TEXAS Instruments, India at the cost of Rs.1.00 Lakh."
+		
 			},
 			{
-			"event":"Established C2000 Microcontroller Lab and set-up of ARM SITARA (AM 3359) and BEAGLE BONE kit in the Department of ECE by creating Memorandum of Understanding with TEXAS Instruments, India at the cost of Rs.2.00 Lakhs",
-			"awards":"Rs.2.00 Lakhs"
+			"event":"Established C2000 Microcontroller Lab and set-up of ARM SITARA (AM 3359) and BEAGLE BONE kit in the Department of ECE by creating Memorandum of Understanding with TEXAS Instruments, India at the cost of Rs.2.00 Lakhs"
+			
 			}
 		  ]
 		,
