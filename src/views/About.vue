@@ -28,7 +28,7 @@
               class="w-40 h-40 mx-auto rounded-full mb-6 object-cover border-4 border-indigo-100 transform hover:scale-105 transition-transform duration-300"
             />
           </div>
-          <h3 class="text-2xl font-semibold text-indigo-600 mb-2">
+          <h3 class="text-xl font-semibold text-indigo-600 mb-2">
             {{ member.name }}
           </h3>
           <p class="text-gray-600 text-lg">{{ member.department }}</p>
