@@ -1,308 +1,342 @@
-<script setup>
-import { RouterLink, RouterView } from 'vue-router';
-</script>
-
 <template>
   <div>
-    <header class="bg-[#21209c] text-white">
-    <!-- Desktop Top Bar Section -->
-    <div class=" bg-[#aae0ed] text-black">
-      <div  class="container mx-auto px-4 text-sm" style="font-family: 'Clash Grotesk', sans-serif;">
-        <div class="p-2 flex items-center justify-center lg:justify-between font-family: 'Algerian'">
-          <strong class="text-xl">Counselling Code: <strong>2025</strong> </strong>
-          <ul class="hidden lg:flex  items-center justify-between">
-            <li class="relative group">
-              <button class="px-4 py-2">
-                Life@aurcc
-              </button>
-              <ul
-                class="absolute z-20 left-0 mt-2 w-48 bg-white shadow-lg transition-all duration-300 opacity-0 invisible group-hover:visible group-hover:opacity-100"
-              >
-                <li><RouterLink to="/sports" class="block px-4 py-2  hover:bg-blue-800 transition-all duration-300 ease-in-out text-black hover:text-white">Sports</RouterLink></li>
-                <li><RouterLink to="/nss" class="block px-4 py-2  hover:bg-blue-800 transition-all duration-300 ease-in-out text-black hover:text-white">NSS</RouterLink></li>
-                <li><RouterLink to="/tamilmandram" class="block px-4 py-2  hover:bg-blue-800 transition-all duration-300 ease-in-out text-black hover:text-white">kani thamizh paravai</RouterLink></li>
-                <li><RouterLink to="/fine-arts" class="block px-4 py-2  hover:bg-blue-800 transition-all duration-300 ease-in-out text-black hover:text-white">Fine Arts Club</RouterLink></li>
-                <li><RouterLink to="/alumni" class="block px-4 py-2  hover:bg-blue-800 transition-all duration-300 ease-in-out text-black hover:text-white">Alumni</RouterLink></li>
-              </ul>
-            </li>
-            <li><RouterLink to="/library" class="px-4 py-2  text-black">Library</RouterLink></li>
-            <li><RouterLink to="/hostel" class="px-4 py-2  text-black">Hostel</RouterLink></li>
-            <li><RouterLink to="/contact" class="px-4 py-2  text-black">Contact</RouterLink></li>
-          </ul>
+    <!-- Modern Top Bar with Gradient -->
+    <div class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white">
+      <div class="container mx-auto px-4">
+        <div class="flex items-center justify-between py-3 text-sm">
+          <span class="font-semibold">Counselling Code: <span class="text-yellow-300">2025</span></span>
+          <div class="hidden md:flex items-center space-x-6">
+            <RouterLink to="/library" class="hover:text-yellow-300 transition-colors duration-300">Library</RouterLink>
+            <RouterLink to="/hostel" class="hover:text-yellow-300 transition-colors duration-300">Hostel</RouterLink>
+            <RouterLink to="/contact" class="hover:text-yellow-300 transition-colors duration-300">Contact</RouterLink>
+          </div>
         </div>
       </div>
     </div>
 
-    <!-- Main Navbar Section -->
-    <div class="container mx-auto px-4 py-4">
-      <nav class="flex items-center justify-between" style="font-family: 'Clash Grotesk', sans-serif;">
-        <div class="flex items-center">
-          <img src="./assets/logo.svg" alt="Logo" class="h-10  sm:h-20 mr-4" />
-          <router-link to="/" class="text-xl sm:text-2xl md:text-5xl font-bold font-serif">
-            <p>ANNA UNIVERSITY</p>
-            <span class="hidden lg:inline text-2xl font-bold font-serif">REGIONAL CAMPUS COIMBATORE</span>
-          </router-link>
-        </div>
-        <!-- Desktop Navigation Links -->
-        <div class="hidden lg:flex font-serif">
-          <ul class="flex space-x-2">
-            <li class="relative group">
-              <button class="px-4 py-2  hover:bg-blue-700 focus:outline-none focus:bg-blue-700 border-b-4 border-[#21209c] hover:border-[#fdb827]">
+    <!-- Main Header with Modern Design -->
+    <header class="sticky top-0 z-40 bg-white shadow-md">
+      <div class="container mx-auto px-4">
+        <nav class="flex items-center justify-between py-4">
+          <!-- Logo and University Name -->
+          <div class="flex items-center space-x-4 cursor-pointer transform hover:scale-105 transition-transform duration-300" @click="$router.push('/')">
+            <img src="./assets/logo.svg" alt="Logo" class="h-16 w-auto"/>
+            <div class="flex flex-col">
+              <span class="text-2xl font-bold text-gray-800">ANNA UNIVERSITY</span>
+              <span class="text-lg text-gray-600">Regional Campus Coimbatore</span>
+            </div>
+          </div>
+
+          <!-- Desktop Navigation -->
+          <div class="hidden lg:flex items-center space-x-1">
+            <!-- Life@aurcc Dropdown -->
+            <div class="relative group">
+              <button class="px-4 py-2 text-gray-700 hover:text-blue-600 group-hover:text-blue-600 transition-colors duration-300">
+                Life@aurcc
+                <span class="inline-block ml-1 transform group-hover:rotate-180 transition-transform duration-300">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                  </svg>
+                </span>
+              </button>
+              <div class="dropdown-menu">
+                <RouterLink v-for="link in mobileSections[0].links" 
+                          :key="link.route" 
+                          :to="link.route"
+                          class="dropdown-item">
+                  {{ link.name }}
+                </RouterLink>
+              </div>
+            </div>
+
+            <!-- Administration Dropdown -->
+            <div class="relative group">
+              <button class="px-4 py-2 text-gray-700 hover:text-blue-600 group-hover:text-blue-600 transition-colors duration-300">
                 Administration
+                <span class="inline-block ml-1 transform group-hover:rotate-180 transition-transform duration-300">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                  </svg>
+                </span>
               </button>
-              <ul
-                class="absolute z-20 left-0 mt-2 w-48 bg-white  shadow-lg  p-0 transition-all duration-300 opacity-0 invisible group-hover:visible group-hover:opacity-100 text-black"
-              >
-                <li><RouterLink to="/organogram" class="block px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-300 ease-in-out">Organogram</RouterLink ></li>
-        <!--    <li><RouterLink to="/VC" class="block px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-300 ease-in-out">Vice Chancellor</RouterLink ></li>-->
-                <li><RouterLink to="/Registrar" class="block px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-300 ease-in-out">University Administration</RouterLink ></li>
-                <li><RouterLink to="administration" class="block px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-300 ease-in-out">Administrative staff</RouterLink ></li>
-                <li><RouterLink to="/HOD" class="block px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-300 ease-in-out">Head of the Departments</RouterLink ></li>
-                <li><RouterLink to="/COD" class="block px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-300 ease-in-out">Cell coordinators</RouterLink ></li>
-                <li><RouterLink to="/dean_office" class="block px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-300 ease-in-out">Dean Office Staff</RouterLink ></li>
+              <div class="dropdown-menu w-56">
+                <RouterLink v-for="link in mobileSections[1].links" 
+                          :key="link.route" 
+                          :to="link.route"
+                          class="dropdown-item">
+                  {{ link.name }}
+                </RouterLink>
+              </div>
+            </div>
 
-              </ul>
-            </li>
-            <li class="relative group">
-              <button class="px-4 py-2  hover:bg-blue-700 focus:outline-none focus:bg-blue-700 border-b-4 border-[#21209c] hover:border-[#fdb827]">
+            <!-- Academics Dropdown -->
+            <div class="relative group">
+              <button class="px-4 py-2 text-gray-700 hover:text-blue-600 group-hover:text-blue-600 transition-colors duration-300">
                 Academics
+                <span class="inline-block ml-1 transform group-hover:rotate-180 transition-transform duration-300">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                  </svg>
+                </span>
               </button>
-              <ul
-                class="absolute z-50 left-0 mt-2 w-48 bg-white  shadow-lg  p-0 transition-all duration-300 opacity-0 invisible group-hover:visible group-hover:opacity-100 text-black"
-              >
-                <li><RouterLink to="/programs_offered" class="block px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-300 ease-in-out">Programs Offered</RouterLink ></li>
-                <li><RouterLink to="/curriculum_syllabus" class="block px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-300 ease-in-out">Curriculum & Syllabus</RouterLink ></li>
-                <li><RouterLink to="/regulation" class="block px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-300 ease-in-out">Regulations</RouterLink ></li>
-                <li><RouterLink to="/student_affairs" class="block px-4 py-2 hover:bg-blue-800 hover:text-white transition-all duration-300 ease-in-out">Student Affairs</RouterLink ></li>
-              </ul>
-            </li>
-            <li class="relative group">
-            <button class=" px-4 py-2 border-b-4 border-[#21209c] hover:border-[#fdb827] hover:bg-blue-700 focus:outline-none focus:bg-blue-700">
-                Departments
-              </button>
-              <ul
-                class="absolute z-20 left-0 mt-2 w-48 bg-white text-black shadow-lg  opacity-0 invisible group-hover:visible group-hover:opacity-100"
-              >
-                <li><RouterLink to="/departments/cse" class="block px-4 py-2 hover:bg-blue-800  hover:text-white transition-all duration-300 ease-in-out">Computer Science Engg</RouterLink ></li>
-                <li><RouterLink to="/departments/eee" class="block px-4 py-2 hover:bg-blue-800  hover:text-white transition-all duration-300 ease-in-out">Electrical and Electronics Engg</RouterLink ></li>
-                <li><RouterLink to="/departments/ece" class="block px-4 py-2 hover:bg-blue-800  hover:text-white transition-all duration-300 ease-in-out">Electronics and Communications Engg</RouterLink ></li>
-                <li><RouterLink to="/departments/mech" class="block px-4 py-2 hover:bg-blue-800  hover:text-white transition-all duration-300 ease-in-out">Mechanical Engg</RouterLink ></li>
-                <li><RouterLink to="/departments/mba" class="block px-4 py-2 hover:bg-blue-800  hover:text-white transition-all duration-300 ease-in-out">MBA</RouterLink ></li>
-                <li><RouterLink to="/s&h" class="block px-4 py-2 hover:bg-blue-800  hover:text-white transition-all duration-300 ease-in-out">Science & Humanities</RouterLink ></li>
-              </ul>
-            </li>
-            <li class="relative group">
-              <button class="px-4 py-2 border-b-4 border-[#21209c] hover:border-[#fdb827] hover:bg-blue-700 focus:outline-none focus:bg-blue-700">
-                Offices
-              </button>
-              <ul
-                class="absolute z-20 left-0 mt-2 w-48 bg-white shadow-lg transition-all duration-300 opacity-0 invisible group-hover:visible group-hover:opacity-100"
-              >
-                <li><RouterLink to="/admission" class="block px-4 py-2 hover:bg-blue-800 transition-all duration-300 ease-in-out text-black hover:text-white">Admission</RouterLink ></li>
-                <li><RouterLink to="/dgate" class="block px-4 py-2 hover:bg-blue-800 transition-all duration-300 ease-in-out text-black hover:text-white">DGATE Cell</RouterLink ></li>
-                <li><RouterLink to="/pace-cell" class="block px-4 py-2 hover:bg-blue-800 transition-all duration-300 ease-in-out text-black hover:text-white">PACE Cell</RouterLink ></li>
-                <li><RouterLink to="/zonal" class="block px-4 py-2 hover:bg-blue-800 transition-all duration-300 ease-in-out text-black hover:text-white">Zonal Office</RouterLink ></li>
-                <li><RouterLink to="/office-affiliation" class="block px-4 py-2 hover:bg-blue-800 transition-all duration-300 ease-in-out text-black hover:text-white">Office of Affiliation</RouterLink ></li>
-                <li><RouterLink to="/distance-education" class="block px-4 py-2 hover:bg-blue-800 transition-all duration-300 ease-in-out text-black hover:text-white">Distance Education</RouterLink ></li>
-                <li><RouterLink to="/ed-cell" class="block px-4 py-2 hover:bg-blue-800 transition-all duration-300 ease-in-out text-black hover:text-white">ED Cell</RouterLink ></li>
-                <li><RouterLink to="/placement-cell" class="block px-4 py-2 hover:bg-blue-800 transition-all duration-300 ease-in-out text-black hover:text-white">Placement Cell</RouterLink ></li>
-                <li><RouterLink to="/research-cell" class="block px-4 py-2 hover:bg-blue-800 transition-all duration-300 ease-in-out text-black hover:text-white">Research Cell</RouterLink ></li>
-                <li><RouterLink to="/exam-cell" class="block px-4 py-2 hover:bg-blue-800 transition-all duration-300 ease-in-out text-black hover:text-white">Exam cell</RouterLink ></li>
-                <li><RouterLink to="/EstateOff" class="block px-4 py-2 hover:bg-blue-800 transition-all duration-300 ease-in-out text-black hover:text-white">Estate Office</RouterLink ></li>
-              </ul>
-            </li>
+              <div class="dropdown-menu">
+                <RouterLink v-for="link in mobileSections[2].links" 
+                          :key="link.route" 
+                          :to="link.route"
+                          class="dropdown-item">
+                  {{ link.name }}
+                </RouterLink>
+              </div>
+            </div>
 
-          </ul>
-        </div>
-        <!-- Mobile Navigation Toggle -->
-        <div class="lg:hidden">
-          <button @click="isMobileMenuOpen = !isMobileMenuOpen" class="text-white transition-all duration-300">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            <!-- Departments Dropdown -->
+            <div class="relative group">
+              <button class="px-4 py-2 text-gray-700 hover:text-blue-600 group-hover:text-blue-600 transition-colors duration-300">
+                Departments
+                <span class="inline-block ml-1 transform group-hover:rotate-180 transition-transform duration-300">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                  </svg>
+                </span>
+              </button>
+              <div class="dropdown-menu w-56">
+                <RouterLink v-for="link in mobileSections[3].links" 
+                          :key="link.route" 
+                          :to="link.route"
+                          class="dropdown-item">
+                  {{ link.name }}
+                </RouterLink>
+              </div>
+            </div>
+
+            <!-- Offices Dropdown -->
+            <div class="relative group">
+              <button class="px-4 py-2 text-gray-700 hover:text-blue-600 group-hover:text-blue-600 transition-colors duration-300">
+                Offices
+                <span class="inline-block ml-1 transform group-hover:rotate-180 transition-transform duration-300">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                  </svg>
+                </span>
+              </button>
+              <div class="dropdown-menu">
+                <RouterLink v-for="link in mobileSections[4].links" 
+                          :key="link.route" 
+                          :to="link.route"
+                          class="dropdown-item">
+                  {{ link.name }}
+                </RouterLink>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mobile Menu Button with Animation -->
+          <button @click="isMobileMenuOpen = !isMobileMenuOpen" 
+                  class="lg:hidden p-2 rounded-md hover:bg-gray-100 transition-colors duration-300">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                    d="M4 6h16M4 12h16M4 18h16"/>
             </svg>
           </button>
-        </div>
-      </nav>
-    </div>
+        </nav>
+      </div>
+    </header>
 
-<!-- Mobile Navigation Menu -->
-<div 
-  v-if="isMobileMenuOpen" 
-  class="fixed inset-0 z-50 overflow-y-auto"
->
-  <!-- Backdrop with gradient -->
-  <div class="fixed inset-0 bg-gradient-to-b from-indigo-900 to-blue-900 opacity-98"></div>
-  
-  <!-- Menu Content -->
-  <div class="relative h-full flex flex-col p-6">
-    <!-- Header with Close Button -->
-    <div class="flex justify-end mb-8">
-      <button 
-        @click="isMobileMenuOpen = false" 
-        class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 text-white hover:bg-white/20 transition-colors"
-      >
-        <span class="text-2xl">✕</span>
-      </button>
-    </div>
-
-    <!-- Quick Access Links -->
-    <div class="grid grid-cols-2 gap-3 mb-8">
-      <router-link 
-        to="/library" 
-        class="bg-white/10 rounded-lg p-4 text-center text-white hover:bg-white/20 transition-colors"
-      >
-        Library
-      </router-link>
-      <router-link 
-        to="/hostel" 
-        class="bg-white/10 rounded-lg p-4 text-center text-white hover:bg-white/20 transition-colors"
-      >
-        Hostel
-      </router-link>
-      <router-link 
-        to="/contact" 
-        class="bg-white/10 rounded-lg p-4 text-center text-white hover:bg-white/20 transition-colors"
-      >
-        Contact
-      </router-link>
-    </div>
-
-    <!-- Main Navigation Sections -->
-    <ul class="space-y-4">
-      <li v-for="section in mobileSections" :key="section.name">
-        <button 
-          @click="section.isOpen = !section.isOpen"
-          class="w-full flex justify-between items-center py-3 text-white text-lg font-medium hover:text-yellow-400 transition-colors"
+    <!-- Mobile Menu with Improved Transitions -->
+    <Transition 
+      enter-active-class="transition-all duration-300 ease-out"
+      enter-from-class="opacity-0"
+      enter-to-class="opacity-100"
+      leave-active-class="transition-all duration-300 ease-in"
+      leave-from-class="opacity-100"
+      leave-to-class="opacity-0"
+    >
+      <div v-if="isMobileMenuOpen" 
+           class="lg:hidden fixed inset-0 z-50 bg-gray-900/50 backdrop-blur-sm"
+           @click.self="isMobileMenuOpen = false">
+        <Transition
+          enter-active-class="transition-all duration-300 ease-out"
+          enter-from-class="translate-x-full"
+          enter-to-class="translate-x-0"
+          leave-active-class="transition-all duration-300 ease-in"
+          leave-from-class="translate-x-0"
+          leave-to-class="translate-x-full"
         >
-          {{ section.name }}
-          <span class="transform transition-transform duration-200" :class="{ 'rotate-180': section.isOpen }">
-            <svg 
-                  class="w-5 h-5 transform transition-transform duration-200"
-                  :class="{ 'rotate-180': section.isOpen }"
-                  fill="none" 
-                  stroke="currentColor" 
-                  viewBox="0 0 24 24"
-                >
-                  <path 
-                    stroke-linecap="round" 
-                    stroke-linejoin="round" 
-                    stroke-width="2" 
-                    d="M19 9l-7 7-7-7"
-                  />
+          <div v-if="isMobileMenuOpen" class="fixed inset-y-0 right-0 max-w-xs w-full bg-white shadow-xl overflow-hidden">
+            <!-- Header -->
+            <div class="flex items-center justify-between p-4 border-b">
+              <span class="font-semibold text-lg">Menu</span>
+              <button @click="isMobileMenuOpen = false" 
+                      class="p-2 rounded-full hover:bg-gray-100 transition-colors duration-300">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
                 </svg>
-          </span>
-        </button>
-        
-        <ul 
-          v-if="section.isOpen" 
-          class="mt-2 ml-4 space-y-2 transition-all duration-200"
-        >
-          <li v-for="link in section.links" :key="link.name">
-            <router-link 
-              :to="link.route"
-              class="block py-2 text-gray-300 hover:text-white transition-colors"
-            >
-              {{ link.name }}
-            </router-link>
-          </li>
-        </ul>
-      </li>
-    </ul>
-  </div>
-</div>
-  </header>
-  <RouterView style="font-family: 'Clash Grotesk', sans-serif;" />
+              </button>
+            </div>
 
-  <footer class="bg-gradient-to-r from-blue-900 to-indigo-900 text-white py-12 font-serif">
-  <div class="container mx-auto px-4">
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 divide-y md:divide-y-0 md:divide-x divide-blue-700">
-      <div class="space-y-4 pb-6 md:pb-0 md:pr-6">
-        <h2 class="text-3xl font-extrabold mb-4">Anna University Regional Campus Coimbatore</h2>
-        <p class="text-lg">
-          Maruthamalai Main Road, Somayampalayam,<br>
-          Coimbatore(Dt), Tamil Nadu 641046, India
-        </p>
-        <p class="text-lg font-semibold">Email: ucedean-kovai@gmail.com</p>
-        <h3 class="text-2xl font-bold mb-4">Social media</h3>
-        <div class="flex flex-wrap gap-2">
-          <RouterLink to="https://www.annauniv.edu/" class="transition-transform hover:scale-110">
-            <img src="./assets/AN-logo.png" alt="AN logo" class="w-10 h-10 rounded-full bg-white p-1">
-          </RouterLink >
-          <RouterLink to="https://www.tn.gov.in/" class="transition-transform hover:scale-110">
-            <img src="./assets/2000px-TamilNadu_Logo.svg.png" alt="TN logo" class="w-10 h-10 rounded-full bg-white p-1">
-          </RouterLink >
-          <RouterLink to="http://india.gov.in" class="transition-transform hover:scale-110">
-            <img src="./assets/india.png" alt="India logo" class="w-10 h-10 rounded-full bg-white p-1">
-          </RouterLink >
-          <RouterLink to="https://www.annauniv.edu/" class="transition-transform hover:scale-110">
-            <img src="./assets/AN-logo.png" alt="AN logo" class="w-10 h-10 rounded-full bg-white p-1">
-          </RouterLink>
-          <a to="https://www.tn.gov.in/" class="transition-transform hover:scale-110">
-            <img src="./assets/2000px-TamilNadu_Logo.svg.png" alt="TN logo" class="w-10 h-10 rounded-full bg-white p-1">
-          </a>
-        </div>
+            <!-- Navigation Links -->
+            <nav class="overflow-y-auto h-[calc(100vh-5rem)] py-2">
+              <div class="p-4 space-y-2">
+                <div v-for="(section, index) in mobileSections" :key="section.name" class="border-b border-gray-100 last:border-0 pb-2">
+                  <button @click="section.isOpen = !section.isOpen"
+                          class="w-full flex items-center justify-between py-3 text-gray-700 hover:text-blue-600 transition-colors duration-300">
+                    <span class="font-medium">{{ section.name }}</span>
+                    <svg class="w-5 h-5 transform transition-transform duration-300"
+                         :class="{ 'rotate-180': section.isOpen }"
+                         fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                    </svg>
+                  </button>
+                  
+                  <Transition
+                    enter-active-class="transition-all duration-300 ease-out"
+                    enter-from-class="mobile-menu-closed"
+                    enter-to-class="mobile-menu-open"
+                    leave-active-class="transition-all duration-300 ease-in"
+                    leave-from-class="mobile-menu-open"
+                    leave-to-class="mobile-menu-closed"
+                  >
+                    <div v-if="section.isOpen" class="mobile-menu-container">
+                      <RouterLink v-for="link in section.links"
+                                :key="link.route"
+                                :to="link.route"
+                                class="block py-2 px-3 text-sm text-gray-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors duration-200"
+                                @click="isMobileMenuOpen = false">
+                        {{ link.name }}
+                      </RouterLink>
+                    </div>
+                  </Transition>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </Transition>
       </div>
-      
-      
-      <div class="space-y-4 py-6 md:py-0 md:px-6">
-        <h3 class="text-2xl font-bold mb-4">Important Links</h3>
-        <div class="flex flex-wrap gap-2">
-          <a to="https://www.annauniv.edu/" class="transition-transform hover:scale-110">
-            <img src="./assets/AN-logo.png" alt="AN logo" class="w-11 h-11 rounded-full bg-white p-1">
-          </a>
-          <a to="https://www.tn.gov.in/" class="transition-transform hover:scale-110">
-            <img src="./assets/2000px-TamilNadu_Logo.svg.png" alt="TN logo" class="w-11 h-11 rounded-full bg-white p-1">
-          </a>
-          <a to="http://india.gov.in" class="transition-transform hover:scale-110">
-            <img src="./assets/india.png" alt="India logo" class="w-11 h-11 rounded-full bg-white p-1">
-          </a>
-          <a to="#" class="transition-transform hover:scale-110">
-            <img src="./assets/mhrd.png" alt="MHRD logo" class="w-11 h-11 rounded-full bg-white p-1">
-          </a>
-          <a to="https://www.aicte-india.org/" class="transition-transform hover:scale-110">
-            <img src="./assets/aicte.png" alt="AICTE logo" class="w-11 h-11 rounded-full bg-white p-1">
-          </a>
-          <a to="https://www.ugc.gov.in/" class="transition-transform hover:scale-110">
-            <img src="./assets/ugc.png" alt="UGC logo" class="w-11 h-11 rounded-full bg-white p-1">
-          </a>
+    </Transition>
+
+    <RouterView />
+
+    <!-- Modern Footer -->
+    <footer class="bg-gradient-to-r from-gray-900 to-blue-900 text-white py-16">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+          <!-- University Info -->
+          <div class="space-y-4">
+            <h3 class="text-xl font-bold">Anna University</h3>
+            <p class="text-gray-300">Regional Campus Coimbatore</p>
+            <address class="text-gray-300 not-italic">
+              Maruthamalai Main Road<br>
+              Somayampalayam<br>
+              Coimbatore - 641046<br>
+              Tamil Nadu, India
+            </address>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="space-y-4">
+            <h3 class="text-xl font-bold">Quick Links</h3>
+            <ul class="space-y-2">
+              <li><RouterLink to="/academics" class="text-gray-300 hover:text-white transition-colors duration-300">Academics</RouterLink></li>
+              <li><RouterLink to="/admissions" class="text-gray-300 hover:text-white transition-colors duration-300">Admissions</RouterLink></li>
+              <li><RouterLink to="/research" class="text-gray-300 hover:text-white transition-colors duration-300">Research</RouterLink></li>
+            </ul>
+          </div>
+
+          <!-- Resources -->
+          <div class="space-y-4">
+            <h3 class="text-xl font-bold">Resources</h3>
+            <ul class="space-y-2">
+              <li><RouterLink to="/library" class="text-gray-300 hover:text-white transition-colors duration-300">Library</RouterLink></li>
+              <li><RouterLink to="/careers" class="text-gray-300 hover:text-white transition-colors duration-300">Careers</RouterLink></li>
+              <li><RouterLink to="/events" class="text-gray-300 hover:text-white transition-colors duration-300">Events</RouterLink></li>
+            </ul>
+          </div>
+
+          <!-- Social Links -->
+          <div class="space-y-4">
+            <h3 class="text-xl font-bold">Connect With Us</h3>
+            <div class="flex space-x-4">
+              <RouterLink v-for="(img, index) in ['AN-logo.png', '2000px-TamilNadu_Logo.svg.png', 'india.png']"
+                       :key="index"
+                       to="#"
+                       class="transition-transform hover:scale-110 duration-300">
+                <img :src="`./assets/${img}`" :alt="`Logo ${index + 1}`" class="w-10 h-10 rounded-full bg-white p-1"/>
+              </RouterLink>
+            </div>
+          </div>
         </div>
 
-      </div>
-      
-      <div class="space-y-6 pt-6 md:pt-0 md:pl-6">
-        <div>
-          <h3 class="text-2xl font-bold mb-2">UG Courses</h3>
-          <ul class="list-disc list-inside space-y-1">
-            <li>Computer Science Engineering</li>
-            <li>Artificial Intelligence and Data Science</li>
-            <li>Electrical and Electronics Engineering</li>
-            <li>Electronics and Communication Engineering</li>
-            <li>Mechanical Engineering</li>
-            <li>Artificial Intelligence and Data Science</li>
-          </ul>
-        </div>
-        <div class="border-t border-blue-700 pt-4">
-          <h3 class="text-2xl font-bold mb-2">MBA Courses</h3>
-          <ul class="list-disc list-inside space-y-1">
-            <li>Computer Science Engineering</li>
-            <li>Artificial Intelligence and Data Science</li>
-            <li>Artificial Intelligence and Data Science</li>
-          </ul>
+        <!-- Copyright -->
+        <div class="mt-12 pt-8 border-t border-gray-700 text-center text-gray-300">
+          <p>&copy; {{ new Date().getFullYear() }} Anna University Regional Campus Coimbatore. All rights reserved.</p>
         </div>
       </div>
-    </div>
-    
-    <hr class="my-8 border-blue-700">
-    
-    <div class="flex justify-between items-center">
-      <div class="py-2 text-center">
-        <p class="text-lg">&copy; {{new Date().getFullYear()}} Anna University Regional Campus Coimbatore. All rights reserved.</p>
-      </div>
-      <RouterLink to="/about" class="text-xl truncate hover:text-clip font-bold text-blue-300 hover:text-blue-100 transition-colors">Website Development Team</RouterLink> 
-    </div>
+    </footer>
   </div>
-</footer>
-</div>RouterLink </template>
+</template>
+
+<style>
+/* Additional styling for enhanced animations */
+.router-link-active {
+  @apply text-blue-600 font-medium;
+}
+
+/* Smooth scroll behavior for the whole page */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Desktop dropdown styling */
+.dropdown-menu {
+  @apply absolute z-50 left-0 mt-1 w-48 bg-white rounded-md shadow-lg 
+         opacity-0 invisible transform -translate-y-2 
+         group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 
+         transition-all duration-300 ease-in-out;
+}
+
+.dropdown-item {
+  @apply block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 
+         hover:text-blue-600 transition-colors duration-200;
+}
+
+/* Mobile menu animations */
+.mobile-menu-closed {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+}
+
+.mobile-menu-open {
+  max-height: 500px;
+  opacity: 1;
+  overflow: hidden;
+}
+
+.mobile-menu-container {
+  padding-left: 1rem;
+  padding-bottom: 0.75rem;
+  overflow: hidden;
+}
+
+/* Prevent transition flicker */
+.transition-gpu {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+/* Apply smooth transitions to all interactive elements */
+button, a {
+  transition-property: all;
+  transition-duration: 300ms;
+}
+
+/* Fix for mobile menu transition */
+@media (max-width: 1023px) {
+  body.menu-open {
+    overflow: hidden;
+  }
+}
+</style>
 
 <script>
 export default {
@@ -375,6 +409,16 @@ export default {
         },
       ],
     };
+  },
+  // Add in a watcher or in methods
+  watch: {
+    isMobileMenuOpen(newVal) {
+      if (newVal) {
+        document.body.classList.add('menu-open');
+      } else {
+        document.body.classList.remove('menu-open');
+      }
+    }
   },
   methods: {
     toggleMobileDropdown(section) {
