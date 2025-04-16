@@ -1,75 +1,205 @@
 <template>
   <div class="flex-grow">
-    <!-- Hero section -->
+    <!-- Hero section with Parallax Effect -->
     <section 
-      class="hero-section bg-cover bg-center relative -z-10 animate-fadeIn"
-      :style="{ backgroundImage: `url(${backgroundImage})` }"
+      class="relative h-[40vh] md:h-[50vh] flex items-center justify-center overflow-hidden"
     >
-      <div class="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div>
-      <div class="container mx-auto py-16 text-white p-6 sm:p-18 relative z-10 animate-slideIn">
-        <h1 class="text-2xl sm:text-4xl font-bold mb-4">Contact Information</h1>
-        <p class="text-lg sm:text-xl mb-8">Get in touch with the relevant offices for any assistance or inquiries.</p>
+      <!-- Background Image with Overlay -->
+      <div class="absolute inset-0 -z-10">
+        <img 
+          :src="backgroundImage" 
+          alt="Contact Background" 
+          class="h-full w-full object-cover"
+        >
+        <!-- Gradient Overlay -->
+        <div class="absolute inset-0 bg-gradient-to-r from-blue-900/80 to-indigo-900/80"></div>
+      </div>
+
+      <!-- Content -->
+      <div class="relative text-center px-4 max-w-4xl mx-auto z-20">
+        <h1 class="text-3xl md:text-5xl font-bold text-white mb-6 tracking-tight">
+          Contact <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-200 to-indigo-200">Information</span>
+        </h1>
+        <p class="text-lg md:text-xl text-blue-200">
+          Get in touch with the relevant offices for any assistance or inquiries
+        </p>
       </div>
     </section>
 
-    <!-- Background section below the hero -->
-    <div class="bg-indigo-100 py-8">
-      <!-- Contact Office and Numbers section -->
-      <section class="py-8 px-4 animate-popIn">
-        <div class="bg-white rounded-lg shadow-md">
-          <h2 class="text-2xl sm:text-2xl text-center font-bold p-2.5 rounded-lg bg-gradient-to-r from-blue-500 to-blue-600">Contact Office and Numbers</h2>
+    <!-- Contact Information Cards -->
+    <section class="py-16 px-4 bg-gray-50">
+      <div class="container mx-auto max-w-6xl">
+        <!-- Section Title with Animated Underline -->
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-blue-900 relative inline-block group">
+            CONTACT OFFICES
+            <span class="absolute -bottom-3 left-0 h-1 w-full bg-yellow-500 transform origin-left transition-transform duration-300 group-hover:scale-x-110"></span>
+          </h2>
+        </div>
+
+        <!-- Modern Card with Shadow and Hover Effects -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-blue-100 transform hover:shadow-xl transition-all duration-300">
+          <div class="bg-gradient-to-r from-blue-600 to-indigo-600 py-4 px-6">
+            <h3 class="text-xl font-semibold text-white">Contact Office and Numbers</h3>
+          </div>
+          
           <div class="overflow-x-auto">
-            <table class="min-w-full divide-y divide-gray-200">
+            <table class="min-w-full">
               <thead class="bg-gray-50">
                 <tr>
-                  <th scope="col" class="px-4 sm:px-6 py-3 text-left text-s font-bold text-gray-500 uppercase tracking-wider">Office</th>
-                  <th scope="col" class="px-4 sm:px-6 py-3 text-left text-s font-bold text-gray-500 uppercase tracking-wider">Contact Number</th>
+                  <th scope="col" class="px-6 py-4 text-left text-sm font-semibold text-gray-600 uppercase tracking-wider">Office</th>
+                  <th scope="col" class="px-6 py-4 text-left text-sm font-semibold text-gray-600 uppercase tracking-wider">Contact Number</th>
                 </tr>
               </thead>
-              <tbody class="bg-white divide-y divide-gray-200">
-                <tr v-for="(contact, index) in contacts" :key="index" class="animate-fadeIn">
-                  <td class="px-4 sm:px-6 py-4 whitespace-nowrap text-sm">{{ contact.office }}</td>
-                  <td class="px-4 sm:px-6 py-4 whitespace-nowrap text-sm">{{ contact.number }}</td>
+              <tbody class="divide-y divide-gray-100">
+                <tr v-for="(contact, index) in contacts" :key="index" 
+                    class="hover:bg-blue-50 transition-colors duration-200">
+                  <td class="px-6 py-4 whitespace-nowrap">
+                    <div class="text-sm font-medium text-gray-800">{{ contact.office }}</div>
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap">
+                    <div class="text-sm text-gray-600">{{ contact.number }}</div>
+                  </td>
                 </tr>
               </tbody>
             </table>
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
+
+    <!-- Map and Direct Contact Section -->
+    <section class="py-16 px-4 bg-white">
+      <div class="container mx-auto max-w-6xl">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <!-- Map Card -->
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-blue-100 h-full">
+            <div class="bg-gradient-to-r from-indigo-600 to-blue-600 py-4 px-6">
+              <h3 class="text-xl font-semibold text-white">Our Location</h3>
+            </div>
+            <div class="p-6 h-[400px]">
+              <!-- Replace with actual map embed -->
+              <div class="w-full h-full bg-gray-200 rounded-lg flex items-center justify-center">
+                <p class="text-gray-500">Map Embed Goes Here</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form Card -->
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-blue-100">
+            <div class="bg-gradient-to-r from-blue-600 to-indigo-600 py-4 px-6">
+              <h3 class="text-xl font-semibold text-white">Send Us a Message</h3>
+            </div>
+            <div class="p-6">
+              <form class="space-y-4">
+                <div>
+                  <label class="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
+                  <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200" placeholder="Your Name">
+                </div>
+                <div>
+                  <label class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+                  <input type="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200" placeholder="your.email@example.com">
+                </div>
+                <div>
+                  <label class="block text-sm font-medium text-gray-700 mb-1">Subject</label>
+                  <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200" placeholder="Message Subject">
+                </div>
+                <div>
+                  <label class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                  <textarea rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200" placeholder="Your message here..."></textarea>
+                </div>
+                <div>
+                  <button type="submit" class="w-full bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-medium py-2 px-4 rounded-lg hover:from-blue-700 hover:to-indigo-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all duration-200">
+                    Send Message
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Additional Contact Information -->
+    <section class="py-16 px-4 bg-gray-50">
+      <div class="container mx-auto max-w-6xl">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Address Card -->
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-blue-100 transform hover:translate-y-[-5px] transition-all duration-300">
+            <div class="p-6 text-center">
+              <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg class="w-8 h-8 text-blue-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-800 mb-2">Address</h3>
+              <p class="text-gray-600">Maruthamalai Road,<br>Navavoor, Coimbatore - 641046</p>
+            </div>
+          </div>
+          
+          <!-- Phone Card -->
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-blue-100 transform hover:translate-y-[-5px] transition-all duration-300">
+            <div class="p-6 text-center">
+              <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg class="w-8 h-8 text-blue-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-800 mb-2">Phone</h3>
+              <p class="text-gray-600">0422-2691123</p>
+              <p class="text-gray-600">0422-2691124</p>
+            </div>
+          </div>
+          
+          <!-- Email Card -->
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-blue-100 transform hover:translate-y-[-5px] transition-all duration-300">
+            <div class="p-6 text-center">
+              <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg class="w-8 h-8 text-blue-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-800 mb-2">Email</h3>
+              <p class="text-gray-600">info@aurcc.edu.in</p>
+              <p class="text-gray-600">admissions@aurcc.edu.in</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
 <script>
-import contacts from '../assets/contact.json';
-import backgroundImage from '@/assets/contact.webp';  // Correct path for the image
-
 export default {
   data() {
     return {
-      backgroundImage: backgroundImage,
-      contacts: contacts.contacts
+      backgroundImage: new URL(`../assets/contact.webp`, import.meta.url).href,
+      contacts: [
+        { office: "Dean's Office", number: "0422-2691123" },
+        { office: "Administrative Office", number: "0422-2691124" },
+        { office: "Department of CSE", number: "0422-2691125" },
+        { office: "Department of ECE", number: "0422-2691126" },
+        { office: "Department of EEE", number: "0422-2691127" },
+        { office: "Department of Mechanical", number: "0422-2691128" },
+        { office: "Library", number: "0422-2691129" },
+        { office: "Hostel Office", number: "0422-2691130" },
+        { office: "Placement Cell", number: "0422-2691131" },
+        { office: "Examination Cell", number: "0422-2691132" }
+      ]
     };
   }
 };
 </script>
 
 <style scoped>
-/* Add any custom styles for the table or section if needed */
-
-@keyframes fadeIn {
+/* Add any custom animations or styles here */
+@keyframes slide-up {
   from {
     opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
+    transform: translateY(20px);
   }
   to {
     opacity: 1;
@@ -77,45 +207,8 @@ export default {
   }
 }
 
-@keyframes popIn {
-  from {
-    transform: scale(0.9);
-    opacity: 0;
-  }
-  to {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-
-@keyframes slideIn {
-  0% { transform: translateX(-100%); }
-  100% { transform: translateX(0); }
-}
-
-.animate-slideIn {
-  animation: slideIn 1s ease-out forwards;
-}
-
-.animate-fadeIn {
-  animation: fadeIn 1s ease-out;
-}
-
-.animate-fadeInUp {
-  animation: fadeInUp 1s ease-out;
-}
-
-.animate-popIn {
-  animation: popIn 1s ease-out;
-}
-
-/* Responsive adjustments */
-@media (max-width: 640px) {
-  .hero-section {
-    background-position: center;
-  }
-  table th, table td {
-    font-size: 0.9rem;
-  }
+.slide-up-animation {
+  animation: slide-up 0.5s ease-out forwards;
 }
 </style>
+
