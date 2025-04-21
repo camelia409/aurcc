@@ -3,7 +3,8 @@
   "image": "sh_department.jpg",
   "description": "The Department of Science and Humanities is the cornerstone of Anna University Regional Campus, Coimbatore, dedicated to providing a strong foundation in fundamental sciences and the humanities.",
   "vision": "To be a department that nurtures intellectual growth and fosters a comprehensive understanding of science and humanities, contributing to the overall development of students.",
-  "mission": [
+ "courses_offered":["Ph.D.,(FULL TIME and PART TIME) in English and Mathematics and need based Mathematics course to various UG , PG Programmes in the regional campus ,Coimbatore"], 
+ "mission": [
     "To offer a balanced curriculum that integrates the sciences and humanities.",
     "To promote research and innovation in the fields of science and humanities.",
     "To prepare students for global challenges through quality education and ethical values."

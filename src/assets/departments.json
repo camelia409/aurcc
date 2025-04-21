@@ -10,6 +10,7 @@
             "Cultivate ethical values, leadership qualities, and a spirit of entrepreneurship among students.",
             "Contribute to the socio-economic development of the region through technology transfer and community engagement."
         ],
+		"courses_offered":["B.E.Computer Science Engineering (FULL TIME)","B.Tech.Artificial Intelligence And Data Science (FULL TIME)"],
         
 		"events": [
 				{
@@ -1221,7 +1222,7 @@
 		"contact": "nanotechdepartment@aurcc.ac.in"
 	},		  
 	{	"address":"mech",
-		"image":"",
+		"image":"mechhead.webp",
 		"name": "Mechanical Engineering",
 		"description": "The Department of Mechanical Engineering was established in the year 2007 with undergraduate (UG) programmes, followed by the introduction of postgraduate (PG) programmes. The team comprises potential faculty and administrative personnel dedicated to the conduct of programmes and the establishment of various laboratories to ensure smooth and efficient departmental operations. The main objective of the department is to create a highly skilled and dedicated workforce capable of facing global challenges.",
 		"vision": "The Department of Mechanical Engineering strives to be globally renowned for outstanding technical education and research leading to highly-qualified ethical engineers, who are innovative, entrepreneurial and successful in advanced fields of engineering and research.",
@@ -1231,56 +1232,58 @@
 		"Provide service to society through contribution of ideas for projects and carrying out research for the benefit and development of the community.",
 		"Foster freedom of opinion for sharing knowledge and information."
 		],
-		"events": {
-		"department_activities": {
-			"conferences_conducted": 1,
-			"workshops_conducted": 5,
-			"papers_presented_by_students": 225,
-			"papers_presented_publications_by_staff": 91
-		},
-		"programmes_conducted": [
+		"courses_offered":["B.E.Mechanical Engineering (FULL TIME)","M.E.Engineering Design(FULL TIME"],
+		"events": [
 			{
 			"name": "Design for Manufacturing and Assembly (DFMA)",
-			"duration_event_date": "20.12.2012 - 21.12.2012",
-			"conference_workshop_type": "Workshop"
+			"date": "20.12.2012 - 21.12.2012",
+			"description": "Workshop"
 			},
 			{
 			"name": "Innovative Developments in Mechanical Engineering",
-			"duration_event_date": "21.03.2014 - 22.03.2014",
-			"conference_workshop_type": "National Conference"
+			"date": "21.03.2014 - 22.03.2014",
+			"description": "National Conference"
 			},
 			{
 			"name": "Advancements in Metal Forming",
-			"duration_event_date": "08.04.2014 - 09.04.2014",
-			"conference_workshop_type": "Workshop"
+			"date": "08.04.2014 - 09.04.2014",
+			"description": "Workshop"
 			},
 			{
 			"name": "Industrial Safety Management and Regulations",
-			"duration_event_date": "11.08.2014 - 12.08.2014",
-			"conference_workshop_type": "Workshop"
+			"date": "11.08.2014 - 12.08.2014",
+			"description": "Workshop"
 			},
 			{
 			"name": "Finite Element Methods and its Applications",
-			"duration_event_date": "13.03.2015",
-			"conference_workshop_type": "Workshop"
+			"date": "13.03.2015",
+			"description": "Workshop"
 			},
 			{
 			"name": "Agile Manufacturing",
-			"duration_event_date": "25.07.2015",
-			"conference_workshop_type": "Workshop"
+			"date": "25.07.2015",
+			"description": "Workshop"
 			}
-		]
-		},
-		"placements": "nil",
-		"achievements": "nil",
+		],
+		"achievements": [
+			{
+			"name": "ARUN MANI J, PRADEEPRAJ D, RAGUL R",
+			"event": "SAFETYTHON (A Road Safety Hackathon)",
+			"organized_by": "UYIR Trust at Kumaraguru College of Technology, Coimbatore",
+			"date": "19.04.2023",
+			"awards": "First Prize Rs.12000 with certificate and medals"
+			}],
 		"research_and_publications": [
-		{
-			"programme": "INSPIRE Fellowship under Assured Opportunity for Research Career (AORC) - a component of INSPIRE program for students admitted for pursuing full-time doctoral (Ph.D) programme at Anna University, Regional Campus, Coimbatore - 641 046, TamilNadu.",
-			"title_of_the_project": "Inspire Fellow Code: IF 110324",
-			"total_estimated_fund_for_the_project": "7.3 Lakhs",
-			"principal_investigator": "Krishnaraj.R",
-			"co_principal_investigator_research_supervisor": "Dr. M. Sakthiv"
-		}
+			{
+			  "authors": "principal_investigator: Krishnaraj.R,co_principal_investigator_research_supervisor: Dr. M. Sakthiv",
+			  "title": "Inspire Fellow Code: IF 110324",
+			  "journal": "INSPIRE Fellowship under Assured Opportunity for Research Career (AORC) - a component of INSPIRE program for students admitted for pursuing full-time doctoral (Ph.D) programme at Anna University, Regional Campus, Coimbatore - 641 046, TamilNadu.",
+			  "volume": "total_estimated_fund_for_the_project: 7.3 Lakhs",
+			  "issue": "",
+			  "pages": "",
+			  "year": 2000
+			}
+		
 		],
 		"faculty": {
 			"hod_desk": [
@@ -1289,13 +1292,24 @@
 				"email": "sooryaprakash.k@gmail.com",
 				"position": "Assistant Professor (Selection Grade)",
 				"image" : "sooryaprakash.webp",
-				"education": [],
+				"education": [
+					{
+						"degree": "M.E.",
+						"institution": "",
+						"year": 2007
+					  },
+					  {
+						"degree": "Ph.D.",
+						"institution": "",
+						"year": 2007
+					  }
+				],
 				"professional_experience": [],
-				"research_interests": [],
+				"research_interests": ["Advanced Manufacturing","Nano Composite Materials","Bionic Engineering"],
 				"publications": null,
 				"links": {
 				  "google_scholar": "https://scholar.google.com/schhp?hl=en",
-				  "email": "soorya@aurcc.ac.in",
+				  "email": "sooryaprakash.k@gmail.com",
 				  "linkedin": "nil"
 				}
 			  }
@@ -1303,12 +1317,23 @@
 			"assistant_professors": [
 				{
 				  "name": "Dr. Sakthivel M",
-				  "email": "sakthi.tgode@gmail.com",
+				  "email": "sakthi_vel_m@yahoo.com",
 				  "position": "Assistant Professor",
 				  "image" : "sakthivel.m.webp",
-				  "education": [],
+				  "education": [
+					 {
+						"degree": "M.E",
+						"institution": "",
+						"year": 2007
+					  },
+					  {
+						"degree": "Ph.D.",
+						"institution": "",
+						"year": 2007
+					  }
+				  ],
 				  "professional_experience": [],
-				  "research_interests": [],
+				  "research_interests": ["Total Quality Management","Optimization","Renewable Energy","Machining"],
 				  "publications": null,
 				  "links": {
 					"google_scholar": "https://scholar.google.co.in/citations?hl=en&user=H7rEMNAAAAAJ&view_op=list_works&sortby=pubdate",
@@ -1317,55 +1342,51 @@
 				  }
 				},
 				{
-				  "name": "Dr. Kanthavel K",
-				  "email": "kandavelkk@gmail.com",
-				  "position": "Assistant Professor",
-				  "image" : "kanthavel.webp",
-				  "education": [],
-				  "professional_experience": [],
-				  "research_interests": [],
-				  "publications": null,
-				  "links": {
-					"google_scholar": "https://scholar.google.com/citations?user=yRxP8XIAAAAJ",
-					"email": "kandavelkk@ccf.annauniv.edu",
-					"drive_link": "https://drive.google.com/open?id=11I4xY-G_IdN6mUzi5GZNg9Sabf_RNeje"
-				  }
-				},
-				{
-				  "name": "Dr. Sathiyamoorthy R",
-				  "email": "sathiya81@gmail.com",
-				  "position": "Assistant Professor",
-				  "image" : "sathiyamoorthy.webp",
-				  "education": [],
-				  "professional_experience": [],
-				  "research_interests": [],
-				  "publications": null,
-				  "links": {
-					"google_scholar": "https://scholar.google.com/citations?user=QSBDUCQAAAAJ&hl=en",
-					"email": "sathiya@aurcc.ac.in",
-					"drive_link": "https://drive.google.com/open?id=1U9z-1VT7NUjKG_ZxlJBNa51p45P1hWgL"
-				  }
-				},
-				{
-				  "name": "Dr. Balasubramanian M",
-				  "email": "annaunivbala76@gmail.com",
-				  "position": "Assistant Professor",
-				  "image" : "balasubramanian m.webp",
-				  "education": [],
-				  "professional_experience": [],
-				  "research_interests": [],
-				  "publications": null,
-				  "links": {
-					"google_scholar": "https://scholar.google.com/citations?user=JLZmMBYAAAAJ&hl=en",
-					"email": "annaunivbala76@gmail.com",
-					"drive_link": "https://drive.google.com/open?id=1hVAjAQwSddu9gWkM40lhPYF_c2A2ZyGb"
-				  }
-				},
-				{
+					"name": "Dr. Sathiyamoorthy R",
+					"email": "rsathiyamoorthy@ymail.com",
+					"position": "Assistant Professor",
+					"image" : "sathiyamoorthy.webp",
+					"education": [
+					  {
+						  "degree": "M.E.",
+						  "institution": "",
+						  "year": 2007
+						},
+						{
+						  "degree": "Ph.D.",
+						  "institution": "",
+						  "year": 2007
+						}
+					],
+					"professional_experience": [],
+					"research_interests": ["High Speed Spindles","Nano Fluids"],
+					"publications": null,
+					"links": {
+					  "google_scholar": "https://scholar.google.com/citations?user=QSBDUCQAAAAJ&hl=en",
+					  "email": "rsathiyamoorthy@ymail.com",
+					  "drive_link": "https://drive.google.com/open?id=1U9z-1VT7NUjKG_ZxlJBNa51p45P1hWgL"
+					}
+				  },
+				  {
+					"name": "Mrs. Usha Rani T",
+					"email": "ushatheivendran@gmail.com",
+					"position": "Assistant Professor (Senior Grade)",
+					"image" : "usha_org.webp",
+					"education": [],
+					"professional_experience": [],
+					"research_interests": ["Thermal","Heat Transfer and Refrigeration","Air conditioning"],
+					"publications": null,
+					"links": {
+					  "google_scholar": "https://scholar.google.com/citations?user=tFUawD8AAAAJ&hl=en",
+					  "email": "usharani@annaunivtut.in",
+					  "drive_link": "https://drive.google.com/open?id=17GllGUg-oZ6QKvrErHh6vOu9g0SZFMiG"
+					}
+				  },
+				  {
 					"name": "Dr. Bhagavathi Pushpa T",
 					"email": "tbhagavathi@aurcc.ac.in",
 					"position": "Assistant Professor",
-					"image" : "",
+					"image" : "bhagavathi.webp",
 					"education": [
 					  {
 						"degree": "B.E. Civil Engineering",
@@ -1384,12 +1405,28 @@
 					  }
 					],
 					"professional_experience": [
-					  "Lecturer, Shri Andal Alagar College of Engineering, Chengalpattu (2005 - 2006)",
-					  "Lecturer, Adhiparasakthi Engineering College, Melmaruvathur (2006 - 2009)",
-					  "Assistant Professor, University College of Engineering, Ramanathapuram (2009 - 2023)",
-					  "Assistant Professor, Anna University Regional Campus Coimbatore (2023 - Till Date)"
-					],
-					"research_interests": null,
+				  {
+					"position": "Lecturer",
+					"institution": "Shri Andal Alagar College of Engineering, Chengalpattu",
+					"duration": "(2005 - 2006)"
+				  },
+				  {
+					"position": "Lecturer",
+					"institution": "Adhiparasakthi Engineering College, Melmaruvathur",
+					"duration": "(2006 - 2009)"
+				  },
+				  {
+					"position": "Assistant Professor",
+					"institution": "University College of Engineering, Ramanathapuram",
+					"duration": "(2009 - 2023)"
+				  },
+				  {
+					"position": "Assistant Professor",
+					"institution": "Assistant Professor, Anna University Regional Campus Coimbatore",
+					"duration": "(2023 - Till Date)"
+				  }
+				],
+					"research_interests": ["Solid Waste Management","Wastewater Treatement"],
 					"publications": {
 					  "Books Published": 3,
 					  "Book Chapter Published": 1,
@@ -1409,68 +1446,249 @@
 					}
 				},
 				{
-				  "name": "Mrs. Usha Rani T",
-				  "email": "ushatheivendran@gmail.com",
-				  "position": "Assistant Professor (Senior Grade)",
-				  "image" : "usharani.webp",
-				  "education": [],
+				  "name": "Dr. Kanthavel K",
+				  "email": "kandavelkk@gmail.com",
+				  "position": "Assistant Professor",
+				  "image" : "kanthavel.webp",
+				  "education": [
+					{
+						"degree": "M.E.",
+						"institution": "",
+						"year": 2007
+					  },
+					  {
+						"degree": "Ph.D.",
+						"institution": "",
+						"year": 2007
+					  }
+				  ],
 				  "professional_experience": [],
-				  "research_interests": [],
+				  "research_interests": ["Production Engineering","Optimization Technique","Supply chain Management"],
 				  "publications": null,
 				  "links": {
-					"google_scholar": "https://scholar.google.com/citations?user=tFUawD8AAAAJ&hl=en",
-					"email": "usharani@annaunivtut.in",
-					"drive_link": "https://drive.google.com/open?id=17GllGUg-oZ6QKvrErHh6vOu9g0SZFMiG"
+					"google_scholar": "https://scholar.google.com/citations?user=yRxP8XIAAAAJ",
+					"email": "kandavelkk@ccf.annauniv.edu",
+					"drive_link": "https://drive.google.com/open?id=11I4xY-G_IdN6mUzi5GZNg9Sabf_RNeje"
 				  }
-				}
+				},
+				
+				{
+				  "name": "Dr. Balasubramanian M",
+				  "email": "annaunivbala76@gmail.com",
+				  "position": "Assistant Professor",
+				  "image" : "balasubramanian m.webp",
+				  "education": [
+					{
+						"degree": "M.E.",
+						"institution": "",
+						"year": 2007
+					  },
+					  {
+						"degree": "Ph.D.",
+						"institution": "",
+						"year": 2007
+					  }
+				  ],
+				  "professional_experience": [],
+				  "research_interests": ["Design and Manufacturing"],
+				  "publications": null,
+				  "links": {
+					"google_scholar": "https://scholar.google.com/citations?user=JLZmMBYAAAAJ&hl=en",
+					"email": "annaunivbala76@gmail.com",
+					"drive_link": "https://drive.google.com/open?id=1hVAjAQwSddu9gWkM40lhPYF_c2A2ZyGb"
+				  }
+				},
+				
+				{
+					"name": "Dr. Raja K",
+					"email": "rajagce@gmail.com",
+					"position": "Assistant Professor",
+					"image" : "raja.webp",
+					"education": [
+					  {
+						  "degree": "M.E.",
+						  "institution": "",
+						  "year": 2007
+						},
+						{
+						  "degree": "Ph.D.",
+						  "institution": "",
+						  "year": 2007
+						}
+					],
+					"professional_experience": [],
+					"research_interests": ["Bio Composites Intelligent Manufacturing","BioChar Materials"],
+					"publications": null,
+					"links": {
+					  "google_scholar": "",
+					  "email": "rrajagce@gmail.com",
+					  "drive_link": ""
+					}
+				  }
 			  ]
 			},
 		"contact": "mechdepartment@aurcc.ac.in"
 	},
 	{	"address": "mba",
-		"image": "",
+		"image": "mbahead.webp",
 		"name": "MBA - Masters of Business Administration",
 		"description": "The Department offers Master of Business Administration (MBA) course at Anna University Regional Campus Coimbatore as a four-semester regular programme spread over two academic years. The course structure is designed to impart knowledge in areas of specialization, viz. Marketing, Human Resource, Finance, Systems, and Production specializations. The department has two aims: to increase the understanding of the factors which influence the conduct of organizations and to offer students the tools and techniques which they may use to navigate organizational life.",
 		"vision": "The Department strives to provide a stimulating environment for learning, to maximize individual potential, and empower students to meet the challenges of their dynamic environment.",
 		"mission": ["Our mission is to disseminate managerial expertise by developing human resources to meet the country's entrepreneurial and workforce needs with an adaptive approach to our cultural, ethical, and professional norms."],
-		"events": {
-			"conferences_workshops": 16,
-			"student_papers_presented": {
-				"state_level": 0,
-				"national_level": 17,
-				"international_level": 0
+		"courses_offered":["M.B.A.(FULL TIME)-Marketing,HR,Finance,Systems and Production Specializations","M.B.A.(FULL TIME) - BUSINESS ANALYTICS","Ph.D.,(FULL TIME and PART TIME mode)"],
+		"events": [
+			{
+			  "name": "NATIONAL CONFERENCE ON \"CYBERCRIME, CRIMINALS AND LAW\"",
+			  "description": "Conference",
+			  "date": "05.08.2013 - 06.08.2013"
 			},
-			"faculty_papers_presented": {
-				"state_level": 0,
-				"national_level": 0,
-				"international_level": 600
+			{
+			  "name": "WORKSHOP ON \"FINANCIAL PLANNING FOR YOUNG INVESTORS\"",
+			  "description": "Workshop",
+			  "date": "22.08.2013"
+			},
+			{
+			  "name": "SOFT SKILLS TRAINING PROGRAMME",
+			  "description": "Training Programme",
+			  "date": "11.11.2013 - 13.11.2013"
+			},
+			{
+			  "name": "ACCOUNTING FOR MANAGEMENT",
+			  "description": "Workshop",
+			  "date": "10.12.2013 - 12.12.2013"
+			},
+			{
+			  "name": "National Seminar on \"Contemporary Management thoughts in Classical Tamil Literature\"",
+			  "description": "Seminar",
+			  "date": "22.01.2014 - 24.01.2014"
+			},
+			{
+			  "name": "FACULTY DEVELOPMENT PROGRAMME on DATA ANALYSIS & BUSINESS MODELING",
+			  "description": "Faculty Development Programme",
+			  "date": "27.01.2014 - 31.01.2014"
+			},
+			{
+			  "name": "GUEST LECTURER on FINANCIAL RISK MGT",
+			  "description": "Guest Lecture",
+			  "date": "28.01.2014"
+			},
+			{
+			  "name": "FACULTY DEVELOPMENT PROGRAMME on INNOVATIVE TECHNIQUES IN MANAGEMENT TEACHING",
+			  "description": "Faculty Development Programme",
+			  "date": "07.03.2014 - 08.03.2014"
+			},
+			{
+			  "name": "WORKSHOPS on FINANCIAL MODELING USING MS-EXCEL",
+			  "description": "Workshop",
+			  "date": "13.03.2014 - 14.03.2014"
+			},
+			{
+			  "name": "GUEST LECTURER on APPLIED OPERAITON RESEARCH",
+			  "description": "Guest Lecture",
+			  "date": "30.04.2014"
+			},
+			{
+			  "name": "FACULTY DEVELOPMENT PROGRAMME on ENTERPRISE RESOURCE PLANNING",
+			  "description": "Faculty Development Programme",
+			  "date": "16.07.2014 - 18.07.2014"
+			},
+			{
+			  "name": "Orientation Programme for 1st Year MBA students",
+			  "description": "Orientation Programme",
+			  "date": "01.09.2014 - 04.09.2014"
+			},
+			{
+			  "name": "“Communication Skills Development Programme\" for First year MBA Students",
+			  "description": "Communication Skills Programme",
+			  "date": "14.10.14, 01.11.14, 08.11.14 & 15.11.14"
+			},
+			{
+			  "name": "Special Lecture on “Overview for Statistics for Management” for 1st year MBA students",
+			  "description": "Special Lecture",
+			  "date": "13.12.2014"
+			},
+			{
+			  "name": "Special Lecture on “Queing Theory and TORA”",
+			  "description": "Special Lecture",
+			  "date": "30.04.2015"
+			},
+			{
+			  "name": "Special Lecture on \"Logistics and Supply Chain Management\"",
+			  "description": "Special Lecture",
+			  "date": "31.07.2015"
 			}
-		},
+		  ]
+		  ,
 		"placements": {
 			"description": "The department strives to offer 100% placement and skill development training for self-employment. Thus, all the students were continuously trained on soft skills. The students who sought placements were offered support and were placed in TVS, ICICI, and such premier organizations."
 		},
-		"achievements": {
-			"passed_out_students": 1500,
-			"events_organized": ["Anna Bazaar"],
-			"grants_received": {
-				"DRDO_Delhi": 0.5,
-				"Central_Institute_of_Classical_Tamil": 1.5
-			},
-			"papers_presented_abroad": ["Dr.G.Barani presented papers in the University of Central Florida, USA during February, 2014"],
-			"faculty_publications": {
-				"books": 20,
-				"papers": 600
-			},
-			"completed_phd_students": 71
-		},
-		"research_and_publications": {
-			"faculty_publications": {
-				"books": 20,
-				"papers": 600
-			},
-			"completed_phd_students": 71,
-			"synopsis_submitted": 4
-		},
+		
+		"achievements": [
+			  {
+				"name": "Department of Management Studies",
+				"event": "Anna Bazaar Marketing Event & Project Guidelines Distribution",
+				"organized_by": "Department of Management Studies",
+				"date": "Ongoing",
+				"awards": "Organized Anna Bazaar event successfully and published a project guideline book for students"
+			  },
+			  {
+				"name": "Department of Management Studies",
+				"event": "National Conference on 'Cybercrime, Criminals and Law' & Three Days Seminar",
+				"organized_by": "DRDO Delhi & Central Institute of Classical Tamil",
+				"date": "2013 - 2014",
+				"awards": "Received ₹0.5 Lakhs from DRDO and ₹1.5 Lakhs from CICT for organizing events; Dr. G. Barani presented papers in University of Central Florida, USA"
+			  },
+			  {
+				"name": "Faculty Members & Research Scholars",
+				"event": "Publications and Ph.D. Completions",
+				"organized_by": "Department of Management Studies",
+				"date": "Ongoing",
+				"awards": "20 books and over 600 papers published; 71 research scholars completed Ph.D. through the department"
+			  }
+			]
+		  ,
+		"research_and_publications": [
+			  {
+				"authors": "Faculty Members",
+				"title": "Publication of 20 Books and Over 600 Research Papers",
+				"journal": "Various National and International Journals and Conferences",
+				"volume": "-",
+				"issue": "-",
+				"pages": "-",
+				"year": "-",
+				"metrics": {
+				  "SNIP": null,
+				  "SJR": null
+				}
+			  },
+			  {
+				"authors": "Research Scholars",
+				"title": "71 Ph.D. Completions (Part Time and Full Time)",
+				"journal": "Department of Management Studies",
+				"volume": "-",
+				"issue": "-",
+				"pages": "-",
+				"year": "-",
+				"metrics": {
+				  "SNIP": null,
+				  "SJR": null
+				}
+			  },
+			  {
+				"authors": "Research Scholars",
+				"title": "4 Ph.D. Scholars Submitted Their Synopsis",
+				"journal": "Department of Management Studies",
+				"volume": "-",
+				"issue": "-",
+				"pages": "-",
+				"year": "-",
+				"metrics": {
+				  "SNIP": null,
+				  "SJR": null
+				}
+			  }
+			]
+		  ,
 		"faculty": {
 			"hod_desk": [
 			  {
@@ -1486,7 +1704,21 @@
 				  "Corporate Finance",
 				  "Time Series Analysis"
 				],
-				"education": ["Ph.D. in Finance"],
+				"education": [
+					{
+					"degree": "B.Sc",
+					"year": 1996,
+					"institution": ""
+				  },
+				  {
+					"degree": "MBA",
+					"year": 1996,
+					"institution": ""
+				  },{
+					"degree": "Ph.D.",
+					"year": 1996,
+					"institution": ""
+				  }],
 				"current_position": "Associate Professor, Anna University Regional Campus Coimbatore (18.8.2011 to present)",
 				"previous_positions": [
 				  "Assistant Professor SG, Anna University, Coimbatore (18.08.2008 to 17.08.2011)",
@@ -1506,9 +1738,29 @@
 				  "image": "suganthalakshmi.webp",
 				  "email": "sugi1971@rediffmail.com",
 				  "position": "Assistant Professor",
+				  "education": [
+					{
+					"degree": "MCA",
+					"year": 1996,
+					"institution": ""
+				  },
+				  {
+					"degree": "MBA",
+					"year": 1996,
+					"institution": ""
+				  },{
+					"degree": "M.Phil.(CS).",
+					"year": 1996,
+					"institution": ""
+				  },
+				  {
+					"degree": "Ph.D.",
+					"year": 1996,
+					"institution": ""
+				  }],
 				  "department": "Department of Management Studies",
 				  "experience": "25 years",
-				  "research_interests": ["Skill development activities for students"],
+				  "research_interests": ["Enterprise Resourse Planning","Information System"],
 				  "current_position": "Assistant Professor, Anna University Regional campus Coimbatore (2008 to present)",
 				  "previous_positions": [
 					"Lecturer in MCA at RVS College of Arts and Science (1999 to 2004)",
@@ -1524,10 +1776,29 @@
 				  "image": "prema.webp",
 				  "email": "premapriya@aurcc.ac.in",
 				  "position": "Assistant Professor",
+				  "education": [
+					{
+					"degree": "BBM",
+					"year": 1996,
+					"institution": ""
+				  },
+				  {
+					"degree": "MBA",
+					"year": 1996,
+					"institution": ""
+				  },{
+					"degree": "M.Phil.",
+					"year": 1996,
+					"institution": ""
+				  },
+				  {
+					"degree": "Ph.D.",
+					"year": 1996,
+					"institution": ""
+				  }],
 				  "department": "Department of Management Studies",
 				  "experience": "21 years",
 				  "research_interests": ["Marketing", "Systems", "Women empowerment", "Women studies"],
-				  "education": ["Ph.D. in Management"],
 				  "current_position": "Assistant Professor, Anna University Regional Campus Coimbatore (8 August 2008 to present)",
 				  "previous_positions": ["Lecturer, SNR Sons College, Coimbatore (16 June 2003 to 7 August 2008)"],
 				  "links": {
@@ -1539,6 +1810,21 @@
 				  "image": "chandra.webp",
 				  "email": "ckmaucbe@gmail.com",
 				  "position": "Assistant Professor",
+				  "education": [
+				  {
+					"degree": "MBA",
+					"year": 1996,
+					"institution": ""
+				  },{
+					"degree": "M.Phil.(CS).",
+					"year": 1996,
+					"institution": ""
+				  },
+				  {
+					"degree": "Ph.D.",
+					"year": 1996,
+					"institution": ""
+				  }],
 				  "department": "Department of Management Studies",
 				  "experience": "25 years",
 				  "research_interests": [
@@ -1552,6 +1838,40 @@
 				  }
 				},
 				{
+					"name": "Dr. M. Saravanakumar",
+					"image": "chandra.webp",
+					"email": "saravanakumar.1968@gmail.com",
+					"position": "Associate Professor & Dean (i/c)",
+					"education": [
+					{
+					  "degree": "MBA",
+					  "year": 1996,
+					  "institution": ""
+					},{
+					  "degree": "MS(IT)",
+					  "year": 1996,
+					  "institution": ""
+					},
+					{
+					  "degree": "M.Phil.",
+					  "year": 1996,
+					  "institution": ""
+					},
+					{
+						"degree": "Ph.D.",
+						"year": 1996,
+						"institution": ""
+					  }],
+					"department": "Department of Management Studies",
+					"experience": "",
+					"research_interests": [
+					  "Finance and Marketing"
+					],
+					"links": {
+					  "scholar_profile": ""
+					}
+				  },
+				{
 				  "name": "Dr. Srividhya S",
 				  "image": "srividhya.webp",
 				  "email": "srividhya@aurcc.ac.in",
@@ -1559,7 +1879,26 @@
 				  "department": "Department of Management Studies",
 				  "experience": "29 years",
 				  "research_interests": ["Performance Management and Assessment"],
-				  "education": ["Two Post Graduate Degrees in Commerce and Business Administration", "Ph.D."],
+				  "education": [
+					{
+					"degree": "BBM",
+					"year": 1996,
+					"institution": ""
+				  },
+				  {
+					"degree": "M.Com",
+					"year": 1996,
+					"institution": ""
+				  },{
+					"degree": "MBA.",
+					"year": 1996,
+					"institution": ""
+				  },
+				  {
+					"degree": "Ph.D.",
+					"year": 1996,
+					"institution": ""
+				  }],
 				  "current_position": "Assistant Professor, Anna University Regional Campus Coimbatore (2008 - present)",
 				  "previous_positions": [
 					"Purchase Officer, ANP APPAREL, Tirupur (1995 to 2002)",
@@ -1603,6 +1942,7 @@
                 " To enable Industries to adopt effective solutions in thrust areas of electrical engineering through research and consultancy.",
                 " To be a place for innovation and technology development in growing areas of Electrical and Electronics Engineering."
                 ],
+		"courses_offered":["B.E.Electrical and Electronics Engineering (FULL TIME)","M.E.Power system and Engineering (FULL TIME)"],
         "events": [
 			{
 			  "name": "One Day Workshop on “Machine Learning Neural Network Models for Data Science and Analytics”",
@@ -2610,17 +2950,7 @@
         "scope":[
                 "The Department aims to impart the Students a learning Experience in understanding the fundamental concepts of Electrical & Electronics Engineering built on the Foundation of Science, Mathematics, Computing and Technology by active learning process with dedicated faculty members and extensive laboratory facilities so as to prepare them for their Professional Careers.",
                 " It also prepares the students to meet the growing global challenges of Engineering Industries by educating them to become highly professional Electrical and Electronics Engineers of high ethics. The Department produces highly qualified Engineers not only to meet the Global environment but also to build a developed nation."
-                ],
-        "courses_offered": [
-                    {
-                      "name": "B.E. ELECTRICAL AND ELECTRONICS ENGINEERING",
-                      "type": "FULL TIME"
-                    },
-                    {
-                      "name": "M.E-POWER SYSTEM AND ENGINEERING",
-                      "type": "FULL TIME"
-                    }
-                  ],      
+                ],      
         "projects":[
       
                 "1. Voltage tracking control using fuzzy Pi controller",
@@ -2689,8 +3019,8 @@
 		   "To develop a strong centre of excellence for education and research with excellent infrastructure.",
 			"To impart quality education and technical skills to enable the students to satisfy the industrial requirements.",
 			"To achieve cent percent placement."
-		  ]
-		,
+		  ],
+		"courses_offered":["B.E.Electronics and Communication Engineering (FULL TIME)","B.E.Electronics Engineering(VLSI Design and Technology)(Full Time)"],
 		"events": [
 
 		  {
@@ -4030,6 +4360,7 @@
 		  "To prepare professional leaders to face the emerging global challenges and to foster cultural enrichment.",
 		  "To create an atmosphere of learning to enable the students to develop sound cognitive and problem-solving skills."
 		],
+		
 		"events": {
 		  "conferences_workshops_symposium_fdp": 86,
 		  "papers_presented_publications": {
