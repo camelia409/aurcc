@@ -1047,180 +1047,7 @@
             }
 		   ],
         "contact": "csedepartment@aurcc.ac.in"
-    },
-	{	"address": "biotech",
-		"image": "",
-		"name": "Biotechnology",
-		"description": "Biotechnology is the Science for this century. With its advances, we are on the first part of a great journey. The Department of Biotechnology, Anna University, Regional Centre, Coimbatore was started in the year 2011. The Department of Biotechnology works with the start-up aim of developing high-quality infrastructure with the required support services to enhance the knowledge of the biotech student community and developing competent human resources at different levels in the field of biotechnology. The students of M.Tech. Biotechnology have undergone training & project works in several labs like CLRI, Micro labs, IGCAR, MKU, NIO, Anna University (Chennai), AMET University, Ramachandra Medical College, etc.",
-		"vision": "nil",
-		"mission": "nil",
-		"events": "nil",
-		"placements": "nil",
-		"achievements": "nil",
-		"research_and_publications": [
-		  "Formulation and evaluation of single-dose tetanus toxoid vaccine using chitosan and alginate: HPMC microspheres.",
-		  "Formulation and bioavailability studies of chitosan: PLGA encapsulated ferrous phosphate nanoparticle drug for iron deficiency anemia.",
-		  "Biodegradation study of polyoxymethylene polymer using CuO, MSN, and Y203 nanoparticles.",
-		  "Characterization of Syzygium cumini (L.) fruit peels anthocyanins and their in silico studies as candidate inhibitors for hBest1 and RP2.",
-		  "Synthesis of gold and silver nanoparticles encapsulated by active phytochemical fraction of Justicia gendarussa burm F P potential drug for arthritis."
-		],
-		"faculty": {
-			"hod_desk": [
-				{
-					"name": "Dr. P. Renuka Devi",
-					"email": "renukadevi@aurcc.ac.in",
-					"position": "Head of the Department",
-					"department": "Biotechnology",
-					"teaching_experience": [
-						{
-							"organization": "Kovai Kalaimagal College of Arts and Science, Coimbatore",
-							"role": "Lecturer",
-							"from": "Jan 1999",
-							"to": "Aug 2008"
-						},
-						{
-							"organization": "Anna University, Coimbatore",
-							"role": "Lecturer",
-							"from": "Aug 2008",
-							"to": "Dec 2009"
-						},
-						{
-							"organization": "Anna University of Technology, Coimbatore",
-							"role": "Director i/c Biotechnology Center",
-							"from": "Jan 2010",
-							"to": "Aug 2012"
-						},
-						{
-							"organization": "Anna University, Regional Campus, Coimbatore",
-							"role": "HoD i/c, Department of Biotechnology",
-							"from": "Aug 2011",
-							"to": "Nov 2022"
-						},
-						{
-							"organization": "Anna University, Regional Campus, Coimbatore",
-							"role": "Assistant Professor",
-							"from": "Nov 2022",
-							"to": "Till Date"
-						}
-					],
-					"links": {
-						"google_scholar": "https://scholar.google.co.in/citations?user=B5BUeTsAAAAJ&hl=en",
-						"email": "renukadevi@aurcc.ac.in",
-						"drive_link": "https://drive.google.com/open?id=1jzWlxcSO4lrJ_XGU0HhZ6Uyf4Gi6k1uH"
-					}
-				}
-			]
-		},
-		"contact": "biotechdepartment@aurcc.ac.in"
-	},
-	{	"address":"nanotech",
-		"image": "",
-		"name": "Nanotechnology",
-		"description": "The Department of Nanoscience and technology staff's and students are actively doing research in the field of Energy materials, catalysis, and nanocomposites, fuel cells.",
-		"vision": null,
-		"mission": null,
-		"events": null,
-		"placements": null,
-		"achievements": null,
-		"research_and_publications": "The rated offer with for a our Departmentd wealth teaching Of constituent F of in higher Nanoscience expertise, colleges education and Nanotechnology Collaborators and Technology research in at at the, in Anna industries Anna Tamilnadu. University and University With other Regional Regional excellent research Campus Campus facilities organizations and Coimbatore Coimbatore services enjoy has is working with us on mutually beneficial projects: Department of Nanoscience and Technology's academics are at the forefront of developments in the higher education and research towards nanotechnology and many other subjects. At the forefront of nanotechnology research stretching across the boundaries of Science and Engineering; from controlled assembly of nanostructured materials to design of advanced materials. A new state-of -the-art research laboratories housing comprehensive suite of experimental facilities ranging from UV-Vis Spectroscopy, Raman Spectroscopy, Adsorption measurements and surface imaging tools have been well established. The department offers highly competitive two years/four semester M.Tech, programme in Nanoscience and Technology. The aim of this programme is to lead up students in cutting-edge nanotechnology. We are committed and ensure that the best candidates are able to start their own research towards social development.",
-		"faculty": {
-			"hod_desk": [
-				{
-					"name": "Dr. Rajasekar Krishnan",
-					"email": "rajasekar@aurcc.ac.in",
-					"position": "Head of the Department",
-					"department": "Chemistry",
-					"education": [
-					  {
-						"degree": "B.Sc. in Chemistry",
-						"institution": "Govt Arts College, Salem, University of Madras"
-					  },
-					  {
-						"degree": "M.Sc. in Chemistry",
-						"institution": "Govt Arts College, Salem, University of Madras"
-					  },
-					  {
-						"degree": "Ph.D. in Chemistry",
-						"institution": "Anna University Guindy Campus, Chennai",
-						"year": 2007
-					  }
-					],
-					"professional_experience": [
-					  {
-						"position": "Post Doctoral Fellow",
-						"organization": "Department of Chemical Engineering, Massachusetts Institute of Technology (MIT), Cambridge, USA",
-						"duration": "June 2009 - June 2010"
-					  },
-					  {
-						"position": "Assistant Professor",
-						"organization": "Department of Nanotechnology, Anna University of Technology Coimbatore, Tamilnadu, INDIA",
-						"duration": "September 2008 - Till now"
-					  }
-					],
-					"achievements": [
-						  "Eco-benign Synthesis, Characterization of CdS-QDs/Casein Bionanocomposite Towards Anti-microbial, Anti-hemolytic and Cytotoxicity in A549 & MCF-7 Cells, Journal of Cluster Science, 1-16.",
-						  "Investigation on Template Etching Process of SBA-15 Derived Ordered Mesoporous Carbon on Electrocatalytic Oxygen Reduction Reaction, Chemistry select, 4, 2463.",
-						  "Synthesis and Electrochemical Studies of Ta-Graphene Nanocomposite Film Modified Platinum Electrode, Journal of Electroanalytical Chemistry, 780, 53-59.",
-						  "Modified Synthesis of Edge Scrolled Reduced Graphene Oxide with High Surface Area, EDUCATUM Journal of Science, Mathematics and Technology, 3 (1), 1-5.",
-						  "N-Doped Hollow Mesoporous Carbon Nanospheres for Oxygen Reduction Reaction in Alkaline Media, ACS Appl. Nano Mater., 2020, 3 (9), 8875–8887.",
-						  "Hydrothermal Assisted Morphology Designed MoS2 Material as Alternative Cathode Catalyst for PEM Electrolyser Application, International Journal of Hydrogen Energy, 2016, 41, 13331-13340."
-						],
-					"links": {
-					  "Google Scholar": "https://scholar.google.com/citations?user=hQG-NTcAAAAJ&hl=en",
-					  "Email": "mailto:rajasekar@aurcc.ac.in",
-					  "Resume": "https://drive.google.com/open?id=1Qqw5lD0RjvGhI_y6axNWEWegT36cifB0"
-					}
-				}
-			],
-			"assistant_professors": [
-				{
-					"name": "Dr. Sardhar Basha S J",
-					"email": "jsardhar@aurcc.ac.in",
-					"position": "Assistant Professor (Senior Grade)",
-					"department": "Chemistry",
-					"professional_experience": [
-					{
-						"position": "Junior Research Fellow and Senior Research Fellow",
-						"organization": "DRDO sponsored project, Anna University Chennai",
-						"duration": "2003-2006"
-					},
-					{
-						"position": "Post Doctoral Researcher",
-						"organization": "National Chung Cheng University, Taiwan",
-						"duration": "2006 - 2008"
-					},
-					{
-						"position": "Senior Lecturer",
-						"organization": "Sona College of Technology, Salem",
-						"duration": "2008 - 2009"
-					},
-					{
-						"position": "Assistant Professor",
-						"organization": "University College of Engineering Ramanathapuram",
-						"duration": "2009 - 2015"
-					},
-					{
-						"position": "Assistant Professor",
-						"organization": "Anna University Regional Campus Coimbatore",
-						"duration": "2015- Till date"
-					}
-					],
-					"achievements": [
-						  "Unraveling the Enhanced Electrochemical Performances of Nickel Aluminum Sulfide Lattices for Overall Water Splitting and as Counter Electrode Material for Dye-Sensitized Solar Cells, J. Phys. Chem. C, 2023, 127 (25), 11921-11931.",
-						  "Revealing the Role of Brønsted Basicity by the Electrocatalytic Reaction via Li Insertion in the MgFe2O4 Lattice, J. Phys. Chem. C, 2022, 126, 11915-11926.",
-						  "Hierarchical 2D/2D Interface of Nickel Aluminum Oxide and Nickel Aluminum Layered Double Hydroxide Nanoflowers: An Efficient and Robust Electrocatalyst for Overall Water Splitting, Electrochimica Acta, 2021, 392, 139029.",
-						  "Hexacyanoferrate-Complex-Derived NiFe2O4/CoFe2O4 Heterostructure-MWCNTs for an Efficient Oxygen Evolution Reaction, Energy & Fuels, 2021, 35 (6), 5372-5382.",
-						  "Amperometric Determination of Hydrazine Using a CuS-Ordered Mesoporous Carbon Electrode, Microchimica Acta, 2020, 187, 1-10."
-						],
-					"links": {
-						"Email": "mailto:jsardhar@aurcc.ac.in"
-							}
-					
-				} 
-			]
-		},
-		"contact": "nanotechdepartment@aurcc.ac.in"
-	},		  
+    },		  
 	{	"address":"mech",
 		"image":"mechhead.webp",
 		"name": "Mechanical Engineering",
@@ -1536,6 +1363,7 @@
 		"vision": "The Department strives to provide a stimulating environment for learning, to maximize individual potential, and empower students to meet the challenges of their dynamic environment.",
 		"mission": ["Our mission is to disseminate managerial expertise by developing human resources to meet the country's entrepreneurial and workforce needs with an adaptive approach to our cultural, ethical, and professional norms."],
 		"courses_offered":["M.B.A.(FULL TIME)-Marketing,HR,Finance,Systems and Production Specializations","M.B.A.(FULL TIME) - BUSINESS ANALYTICS","Ph.D.,(FULL TIME and PART TIME mode)"],
+		
 		"events": [
 			{
 			  "name": "NATIONAL CONFERENCE ON \"CYBERCRIME, CRIMINALS AND LAW\"",
@@ -1647,6 +1475,13 @@
 			  }
 			]
 		  ,
+		  "facility": [
+				{
+					"name": "",
+					"description": ["Computer lab with LAN networking with Internet and web-browsing facility."," Full Fledged Seminar hall which has seating capacity of 1000 persons.", "Audio Visual Facilities","LCD Projector facility  in all the  class rooms"],
+					"room no": "222",
+					"image": "cb.webp"
+				}],
 		"research_and_publications": [
 			  {
 				"authors": "Faculty Members",
@@ -1734,6 +1569,396 @@
 			],
 			"assistant_professors": [
 				{
+					"name": "Dr. S. Chandrakumarmangalam",
+					"image": "chandra.webp",
+					"email": "ckmaucbe@gmail.com",
+					"position": "Assistant Professor",
+					"education": [
+					{
+					  "degree": "MBA",
+					  "year": 1996,
+					  "institution": ""
+					},{
+					  "degree": "M.Phil.(CS).",
+					  "year": 1996,
+					  "institution": ""
+					},
+					{
+					  "degree": "Ph.D.",
+					  "year": 1996,
+					  "institution": ""
+					}],
+					"department": "Department of Management Studies",
+					"experience": "25 years",
+					"research_interests": [
+					  "Open-source software project management",
+					  "Rural entrepreneurship",
+					  "Economic development"
+					],
+					"current_position": "Assistant Professor, School of Management Studies, Anna University Regional Centre Coimbatore (11.08.2011 to present)",
+					"links": {
+					  "scholar_profile": "https://scholar.google.com/citations?user=9T0CchQAAAAJ&hl=en"
+					}
+				  },
+				  {
+					"name": "Dr. M. Saravanakumar",
+					"image": "dean.webp",
+					"email": "saravanakumar.1968@gmail.com",
+					"position": "Associate Professor & Dean (i/c)",
+					"education": [
+					{
+					  "degree": "MBA",
+					  "year": 1996,
+					  "institution": ""
+					},{
+					  "degree": "MS(IT)",
+					  "year": 1996,
+					  "institution": ""
+					},
+					{
+					  "degree": "M.Phil.",
+					  "year": 1996,
+					  "institution": ""
+					},
+					{
+						"degree": "Ph.D.",
+						"year": 1996,
+						"institution": ""
+					  }],
+					"department": "Department of Management Studies",
+					"experience": "",
+					"research_interests": [
+					  "Finance and Marketing"
+					],
+					"links": {
+					  "scholar_profile": ""
+					}
+				  },
+				  {
+					"name": "Dr. C. Muthuvelayutham",
+					"image": "muthuvelay.webp",
+					"email": "drmuthu2009@gmail.com",
+					"position": "Associate Professor",
+					"education": [
+					{
+					  "degree": "MBA",
+					  "year": 1996,
+					  "institution": ""
+					},{
+					  "degree": "M.L.M.",
+					  "year": 1996,
+					  "institution": ""
+					},
+					{
+						"degree": "M.Phil.",
+						"year": 1996,
+						"institution": ""
+					  },
+					{
+					  "degree": "Ph.D.",
+					  "year": 1996,
+					  "institution": ""
+					},
+					{
+						"degree": "FTP.",
+						"year": 1996,
+						"institution": ""
+					  },
+					  {
+						"degree": "IIM(A)",
+						"year": 1996,
+						"institution": ""
+					  }],
+					"department": "Department of Management Studies",
+					"experience": "",
+					"research_interests": [
+					  "HR and Marketing"
+					],
+					"current_position": "Associate Professor",
+					"links": {
+					  "scholar_profile": ""
+					}
+				  },
+				
+				  {
+					"name": "Dr. J. Venkatesh",
+					"image": "venkatesh.webp",
+					"email": "drjvmba@gmail.com",
+					"position": "Associate Professor",
+					"education": [
+					{
+					  "degree": "MBA",
+					  "year": 1996,
+					  "institution": ""
+					},{
+					  "degree": "Ph.D.(Mgt)",
+					  "year": 1996,
+					  "institution": ""
+					},
+					{
+						"degree": "Ph.D(IB)",
+						"year": 1996,
+						"institution": ""
+					  },
+					{
+					  "degree": "Ph.D.(Com)",
+					  "year": 1996,
+					  "institution": ""
+					},
+					{
+						"degree": "M.Phil.(Mgt)",
+						"year": 1996,
+						"institution": ""
+					  },
+					  {
+						"degree": "M.Phil.(IB)",
+						"year": 1996,
+						"institution": ""
+					  },
+					  {
+						"degree": "M.Phil.(Com)",
+						"year": 1996,
+						"institution": ""
+					  },
+					  {
+						"degree": "M.Com",
+						"year": 1996,
+						"institution": ""
+					  },
+					  {
+						"degree": "MCA",
+						"year": 1996,
+						"institution": ""
+					  },
+					  {
+						"degree": "MBM",
+						"year": 1996,
+						"institution": ""
+					  },
+					  {
+						"degree": "PGDB",
+						"year": 1996,
+						"institution": ""
+					  },
+					  {
+						"degree": "PGDIB.",
+						"year": 1996,
+						"institution": ""
+					  },
+					  {
+						"degree": "PGDIM",
+						"year": 1996,
+						"institution": ""
+					  },
+					  {
+						"degree": "PGDCA",
+						"year": 1996,
+						"institution": ""
+					  },
+					  {
+						"degree": "DHRD",
+						"year": 1996,
+						"institution": ""
+					  },
+					  {
+						"degree": "DR&D.",
+						"year": 1996,
+						"institution": ""
+					  },
+					  {
+						"degree": "DPR.",
+						"year": 1996,
+						"institution": ""
+					  },
+					  {
+						"degree": "DEM.",
+						"year": 1996,
+						"institution": ""
+					  },
+					  {
+						"degree": "FMISLE",
+						"year": 1996,
+						"institution": ""
+					  },
+					  {
+						"degree": "MISTE",
+						"year": 1996,
+						"institution": ""
+					  },
+					  {
+						"degree": "MISRD.",
+						"year": 1996,
+						"institution": ""
+					  },
+					  {
+						"degree": "MAIS.",
+						"year": 1996,
+						"institution": ""
+					  },
+					  {
+						"degree": "AMT.",
+						"year": 1996,
+						"institution": ""
+					  },
+					  {
+						"degree": "CMT",
+						"year": 1996,
+						"institution": ""
+					  },
+					  {
+						"degree": "SMIEDRC.",
+						"year": 1996,
+						"institution": ""
+					  }],
+					"department": "Department of Management Studies",
+					"experience": "",
+					"research_interests": [
+					  "Systems","Production","Finance","HRM","marketing"
+					],
+					"current_position": "Associate Professor",
+					"links": {
+					  "scholar_profile": ""
+					}
+				  },
+
+				  {
+					"name": "Dr. PREMAPRIYA M.S",
+					"image": "prema.webp",
+					"email": "premapriya@aurcc.ac.in",
+					"position": "Assistant Professor",
+					"education": [
+					  {
+					  "degree": "BBM",
+					  "year": 1996,
+					  "institution": ""
+					},
+					{
+					  "degree": "MBA",
+					  "year": 1996,
+					  "institution": ""
+					},{
+					  "degree": "M.Phil.",
+					  "year": 1996,
+					  "institution": ""
+					},
+					{
+					  "degree": "Ph.D.",
+					  "year": 1996,
+					  "institution": ""
+					}],
+					"department": "Department of Management Studies",
+					"experience": "21 years",
+					"research_interests": ["Marketing", "Systems", "Women empowerment", "Women studies"],
+					"current_position": "Assistant Professor, Anna University Regional Campus Coimbatore (8 August 2008 to present)",
+					"previous_positions": ["Lecturer, SNR Sons College, Coimbatore (16 June 2003 to 7 August 2008)"],
+					"links": {
+					  "additional_info": "https://drive.google.com/open?id=1sZJsiwR5-qF2ADNPeOLUeneOjfCclZMM"
+					}
+				  },
+				 
+				   
+				{
+					"name": "Dr. Srividhya S",
+					"image": "srividhya.webp",
+					"email": "srividhya@aurcc.ac.in",
+					"position": "Assistant Professor",
+					"department": "Department of Management Studies",
+					"experience": "29 years",
+					"research_interests": ["Performance Management and Assessment"],
+					"education": [
+					  {
+					  "degree": "BBM",
+					  "year": 1996,
+					  "institution": ""
+					},
+					{
+					  "degree": "M.Com",
+					  "year": 1996,
+					  "institution": ""
+					},{
+					  "degree": "MBA.",
+					  "year": 1996,
+					  "institution": ""
+					},
+					{
+					  "degree": "Ph.D.",
+					  "year": 1996,
+					  "institution": ""
+					}],
+					"current_position": "Assistant Professor, Anna University Regional Campus Coimbatore (2008 - present)",
+					"previous_positions": [
+					  "Purchase Officer, ANP APPAREL, Tirupur (1995 to 2002)",
+					  "Administrative Officer, M/s. KARTHIKEYAN ENGINEERING CONSULTANTS, Coimbatore (2002 to 2008)"
+					],
+					"links": {
+					  "scholar_profile": "https://scholar.google.co.in/citations",
+					  "additional_info": "https://drive.google.com/open?id=10-MRxOAOtbhsa6mjZZN_ccjpL5T3bv3o"
+					}
+				  },
+				
+				  {
+					"name": "Dr. S. Karthikeyan",
+					"image": "karthikeyan.webp",
+					"email": "karthikeyan2128@gmail.com",
+					"position": "Assistant Professor",
+					"education": [
+						{
+							"degree": "BBM.",
+							"year": 1996,
+							"institution": ""
+						  },
+					{
+					  "degree": "MBA",
+					  "year": 1996,
+					  "institution": ""
+					},{
+					  "degree": "PGDHRM.",
+					  "year": 1996,
+					  "institution": ""
+					},
+					{
+						"degree": "Ph.D.",
+						"year": 1996,
+						"institution": ""
+					  }],
+					"department": "Department of Management Studies",
+					"experience": "",
+					"research_interests": [
+					  "Health","Safety and Welfare Issues of Migrant Labour","Entrepreneurship and Legal Environment"
+					],
+					"links": {
+					  "scholar_profile": ""
+					}
+				  },
+				  {
+					"name": "Dr. D. Sivakumaran",
+					"image": "sivakumaran.webp",
+					"email": "sivakumaran1972@yahoo.com",
+					"position": "Assistant Professor",
+					"education": [
+					{
+					  "degree": "MBA",
+					  "year": 1996,
+					  "institution": ""
+					},{
+					  "degree": "M.Phil.",
+					  "year": 1996,
+					  "institution": ""
+					},
+					{
+						"degree": "Ph.D.",
+						"year": 1996,
+						"institution": ""
+					  }],
+					"department": "Department of Management Studies",
+					"experience": "",
+					"research_interests": ["Finance and Marketing"],
+					"links": {
+					  "scholar_profile": ""
+					}
+				  },
+				 
+				{
 				  "name": "Dr. Suganthalakshmi T",
 				  "image": "suganthalakshmi.webp",
 				  "email": "sugi1971@rediffmail.com",
@@ -1770,145 +1995,9 @@
 					"scholar_profile": "https://scholar.google.com/citations?user=uVpPQDAAAAAJ&hl=en",
 					"additional_info": "https://drive.google.com/open?id=1yfUS2vouzCRs1AWLfuQvlLtvduelqrV6"
 				  }
-				},
-				{
-				  "name": "Dr. PREMAPRIYA M.S",
-				  "image": "prema.webp",
-				  "email": "premapriya@aurcc.ac.in",
-				  "position": "Assistant Professor",
-				  "education": [
-					{
-					"degree": "BBM",
-					"year": 1996,
-					"institution": ""
-				  },
-				  {
-					"degree": "MBA",
-					"year": 1996,
-					"institution": ""
-				  },{
-					"degree": "M.Phil.",
-					"year": 1996,
-					"institution": ""
-				  },
-				  {
-					"degree": "Ph.D.",
-					"year": 1996,
-					"institution": ""
-				  }],
-				  "department": "Department of Management Studies",
-				  "experience": "21 years",
-				  "research_interests": ["Marketing", "Systems", "Women empowerment", "Women studies"],
-				  "current_position": "Assistant Professor, Anna University Regional Campus Coimbatore (8 August 2008 to present)",
-				  "previous_positions": ["Lecturer, SNR Sons College, Coimbatore (16 June 2003 to 7 August 2008)"],
-				  "links": {
-					"additional_info": "https://drive.google.com/open?id=1sZJsiwR5-qF2ADNPeOLUeneOjfCclZMM"
-				  }
-				},
-				{
-				  "name": "Dr. S. Chandrakumarmangalam",
-				  "image": "chandra.webp",
-				  "email": "ckmaucbe@gmail.com",
-				  "position": "Assistant Professor",
-				  "education": [
-				  {
-					"degree": "MBA",
-					"year": 1996,
-					"institution": ""
-				  },{
-					"degree": "M.Phil.(CS).",
-					"year": 1996,
-					"institution": ""
-				  },
-				  {
-					"degree": "Ph.D.",
-					"year": 1996,
-					"institution": ""
-				  }],
-				  "department": "Department of Management Studies",
-				  "experience": "25 years",
-				  "research_interests": [
-					"Open-source software project management",
-					"Rural entrepreneurship",
-					"Economic development"
-				  ],
-				  "current_position": "Assistant Professor, School of Management Studies, Anna University Regional Centre Coimbatore (11.08.2011 to present)",
-				  "links": {
-					"scholar_profile": "https://scholar.google.com/citations?user=9T0CchQAAAAJ&hl=en"
-				  }
-				},
-				{
-					"name": "Dr. M. Saravanakumar",
-					"image": "chandra.webp",
-					"email": "saravanakumar.1968@gmail.com",
-					"position": "Associate Professor & Dean (i/c)",
-					"education": [
-					{
-					  "degree": "MBA",
-					  "year": 1996,
-					  "institution": ""
-					},{
-					  "degree": "MS(IT)",
-					  "year": 1996,
-					  "institution": ""
-					},
-					{
-					  "degree": "M.Phil.",
-					  "year": 1996,
-					  "institution": ""
-					},
-					{
-						"degree": "Ph.D.",
-						"year": 1996,
-						"institution": ""
-					  }],
-					"department": "Department of Management Studies",
-					"experience": "",
-					"research_interests": [
-					  "Finance and Marketing"
-					],
-					"links": {
-					  "scholar_profile": ""
-					}
-				  },
-				{
-				  "name": "Dr. Srividhya S",
-				  "image": "srividhya.webp",
-				  "email": "srividhya@aurcc.ac.in",
-				  "position": "Assistant Professor",
-				  "department": "Department of Management Studies",
-				  "experience": "29 years",
-				  "research_interests": ["Performance Management and Assessment"],
-				  "education": [
-					{
-					"degree": "BBM",
-					"year": 1996,
-					"institution": ""
-				  },
-				  {
-					"degree": "M.Com",
-					"year": 1996,
-					"institution": ""
-				  },{
-					"degree": "MBA.",
-					"year": 1996,
-					"institution": ""
-				  },
-				  {
-					"degree": "Ph.D.",
-					"year": 1996,
-					"institution": ""
-				  }],
-				  "current_position": "Assistant Professor, Anna University Regional Campus Coimbatore (2008 - present)",
-				  "previous_positions": [
-					"Purchase Officer, ANP APPAREL, Tirupur (1995 to 2002)",
-					"Administrative Officer, M/s. KARTHIKEYAN ENGINEERING CONSULTANTS, Coimbatore (2002 to 2008)"
-				  ],
-				  "links": {
-					"scholar_profile": "https://scholar.google.co.in/citations",
-					"additional_info": "https://drive.google.com/open?id=10-MRxOAOtbhsa6mjZZN_ccjpL5T3bv3o"
-				  }
 				}
+				
+				
 			  ]
 			},
 			"admin_staff":[
@@ -2998,16 +3087,7 @@
     },
 	{
 		"address": "ece",
-		"images": [
-		  {
-			"src": "ece2.webp",
-			"alt": "ECE Image 1"
-		  },
-		  {
-			"src": "ECE1.webp",
-			"alt": "ECE Image 2"
-		  }
-		],
+		"image":"ece.webp",
 		"name": "Department of Electronics and Communication Engineering",
 		"description": 
 		  "The Department of Electronics and Communication Engineering was established in the year 2007. The Department offers UG Programme and two year PG Programme. The Department is equipped with excellent infrastructure and state of the art equipment to explore the technological challenges in the areas of Electronics, Communication Networks, VLSI design, Signal Processing, Image Processing, ASIC Design, RF Design and Digital system design."
@@ -4347,228 +4427,5 @@
 		  "Fall accident detection and position identification using smart phone.",
 		  "Smart phone-based drip irrigation system using wireless sensor networks."
 		]
-	},
-	{
-		"address": "s&h",
-		"image":"",
-		"name": "Department of Science and Humanities",
-		"description": "Comprises the faculty of Mathematics and English with rich academic and research experience.",
-		"vision": "To be recognized globally for establishing Research and Development programme in all the areas of Fundamental Sciences that support Engineering and Technology.",
-		"mission": [
-		  "To attain excellence in pedagogy, and provide potential skills in the areas of Humanities and Sciences.",
-		  "To impart flexible, responsive, and innovative educational opportunities and to cultivate interest in the young minds to pursue research in emerging areas of Science and Technology.",
-		  "To prepare professional leaders to face the emerging global challenges and to foster cultural enrichment.",
-		  "To create an atmosphere of learning to enable the students to develop sound cognitive and problem-solving skills."
-		],
-		
-		"events": {
-		  "conferences_workshops_symposium_fdp": 86,
-		  "papers_presented_publications": {
-			"state_level": 0,
-			"national_level": 0,
-			"international_level": 86
-		  },
-		  "programs_conducted": [
-			{
-			  "name": "One day Seminar on 'Stochastic Processes and its Applications'",
-			  "venue": "ANNA UNIVERSITY, REGIONAL CAMPUS, COIMBATORE",
-			  "date": "04-05-2015"
-			},
-			{
-			  "name": "One day Workshop on 'Effective Public Speaking'",
-			  "venue": "ANNA UNIVERSITY, REGIONAL CAMPUS, COIMBATORE",
-			  "date": "29-09-2015"
-			}
-		  ]
-		},
-		"placements": "nil",
-		"achievements": "nil",
-		"research_and_publications": "nil",
-		"faculty": [
-		  {
-			"name": "Dr. Leelamani A",
-			"position": "Assistant Professor (Senior Grade)",
-			"department": "Department of Science and Humanities",
-			"email": "leelamani@aurcc.ac.in",
-			"education": [
-			    {
-					 "degree": "Ph.D.",
-			         "field": "Mathematics",
-			         "institution": "Bharathiar University, Coimbatore",
-			         "year": 2006
-			    }
-			],
-			"research_interests": ["Control Theory", "Differential Equations"],
-			"professional_experience": [
-			  {
-				"organization": "Bharathiar University",
-				"role": "Guest Lecture",
-				"duration": "2004-2006"
-			  },
-			  {
-				"organization": "Park College of Engineering and Technology",
-				"role": "Lecturer",
-				"duration": "2006-2008"
-			  },
-			  {
-				"organization": "Anna University Regional Campus, Coimbatore",
-				"role": "Assistant Professor",
-				"duration": "2008-present"
-			  }
-			],
-			"achievements": [
-			  "University second rank holder in M.Sc degree examination (2001)",
-			  "Guided 13 Ph.D. scholars"
-			],
-			"membership": "Life member in Industrial & Applied Mathematics",
-			"links": {
-			  "Google Scholar": "https://scholar.google.com/citations?user=pQVtZXYAAAAJ&hl=en",
-			  "Email": "mailto:leelamani@aurcc.ac.in",
-			  "Google Drive": "https://drive.google.com/open?id=1pEev3iwFB-aQZ8dTEZtqo-7GKdfS0BZm"
-			}
-		  },
-		  {
-			"name": "Dr. Vernold Vivin J",
-			"position": "Assistant Professor (Senior Grade)",
-			"department": "Department of Science & Humanities (Mathematics)",
-			"email": "jvvivin@gmail.com",
-			"education": [
-			     {  
-					 "degree": "Ph.D.",
-			         "field": "Mathematics",
-			         "institution": "Bharathiar University, Coimbatore"
-			     }
-			],
-			"research_interests": ["Graph Theory", "Graph Colorings"],
-			"professional_experience": [
-			  {
-				"organization": "Anna University Regional Campus-Coimbatore",
-				"role": "Assistant Professor",
-				"duration": "03/08/2023-present"
-			  },
-			  {
-				"organization": "University College of Engineering, Nagercoil",
-				"role": "Assistant Professor",
-				"duration": "20/08/2010-02/08/2023"
-			  },
-			  {
-				"organization": "Sri Shakthi Institute of Engineering and Technology, Coimbatore",
-				"role": "Assistant Professor",
-				"duration": "17/07/2007-19/08/2010"
-			  }
-			],
-			"achievements": [
-			  "Guided 05 Ph.D. candidates",
-			  "Published more than 75 research papers",
-			  "Delivered more than 10 invited Lectures"
-			],
-			"links": {
-			  "Google Scholar": "https://scholar.google.co.in/citations?user=-XgxYQoAAAAJ&hl=en",
-			  "Email": "mailto:jvvivin@gmail.com",
-			  "Google Drive": "https://drive.google.com/open?id=1wtLrakLXToiFlf5k36V_ys4XOh31rlj_"
-			}
-		  },
-		  {
-			"name": "Dr. Krishnakumar M",
-			"position": "Assistant Professor (Senior Grade)",
-			"department": "Department of Science and Humanities (Physics)",
-			"email": "drkrishnakumarmuthusamy@gmail.com",
-			"education": [
-			     {   
-					 "degree": "Ph.D.",
-			         "field": "Physics",
-			         "institution": "Anna University, Chennai"
-			     }
-			],
-			"research_interests": ["NLO materials", "Photonic single crystalline materials", "Materials Science"],
-			"professional_experience": [
-			  {
-				"organization": "Government College of Technology, Coimbatore",
-				"role": "Lecturer (Visiting)",
-				"duration": "2005-2007"
-			  },
-			  {
-				"organization": "National Geophysical Research Institute (NGRI), Hyderabad",
-				"role": "CSIR Research Intern",
-				"duration": "2007-2008"
-			  },
-			  {
-				"organization": "University College of Engineering, Ramanathapuram",
-				"role": "Lecturer",
-				"duration": "2008-2009"
-			  },
-			  {
-				"organization": "University College of Engineering, Ramanathapuram",
-				"role": "Assistant Professor",
-				"duration": "2009-2014"
-			  },
-			  {
-				"organization": "University College of Engineering, Dindigul",
-				"role": "Assistant Professor",
-				"duration": "2014-2015"
-			  },
-			  {
-				"organization": "Anna University Regional campus, Coimbatore",
-				"role": "Assistant Professor (Sr.Gr)",
-				"duration": "2023-present"
-			  }
-			],
-			"achievements": [
-			  "Published more than twenty research articles in peer-reviewed SCI journals",
-			  "Published three books for Information science, Electrical Engineering, and Electronics Engineering",
-			  "Received Kamarajar Endowment fellowship from Bharathiar University",
-			  "Received CSIR Diamond jubilee internship award from CSIR Hyderabad"
-			],
-			"links": {
-			  "Google Scholar": "https://scholar.google.com/citations?user=-FRYVoEAAAAJ&hl=en",
-			  "Email": "mailto:drkrishnakumarmuthusamy@gmail.com",
-			  "Google Drive": "https://drive.google.com/open?id=1iDqdurQldiD2zpn2VVjGUkv5mOpcjkhD"
-			}
-		  },
-		  {
-			"name": "Dr. Bapitha L",
-			"position": "Assistant Professor (Senior Grade)",
-			"department": "Department of Science and Humanities",
-			"email": "bapithaenglish@gmail.com",
-			"professional_experience": [
-			  {
-				"organization": "Anna University Regional Campus Coimbatore",
-				"role": "Assistant Professor",
-				"duration": "11/08/2023-present"
-			  },
-			  {
-				"organization": "UCER, Ramanathapuram",
-				"role": "Assistant Professor",
-				"duration": "21/07/2014-10/08/2023"
-			  },
-			  {
-				"organization": "UCE, Ariyalur",
-				"role": "Assistant Professor",
-				"duration": "19/11/2009-18/07/2014"
-			  },
-			  {
-				"organization": "Panimalar Institute of Technology, Chennai",
-				"role": "Lecturer",
-				"duration": "02/06/2009-17/11/2009"
-			  },
-			  {
-				"organization": "Syed Ammal Engineering College, Ramanathapuram",
-				"role": "Lecturer",
-				"duration": "19/07/2007-31/05/2008"
-			  },
-			  {
-				"organization": "Mount Zion College of Engineering, Pudukkottai",
-				"role": "Lecturer",
-				"duration": "01/06/2001-31/07/2006"
-			  }
-			],
-			"achievements": "15 national and International conferences attended",
-			"links": {
-			  "Email": "mailto:bapithaenglish@gmail.com",
-			  "Google Drive": "https://drive.google.com/open?id=1R3oqrPPxh4pkJGMNkcCTqmWkv2w7wdGC"
-			}
-		  }
-		],
-		"contact": "s&hdepartment@aurcc.ac.in"
 	}
 ]

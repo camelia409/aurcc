@@ -1,7 +1,7 @@
 <template>
   <div class="bg-indigo-100">
-    <div class="text-center md:py-6 py-3 bg-yellow-500 bg-opacity-90">
-      <h1 class="text-xl md:text-3xl font-semibold font-serif text-black">ADMINISTRATIVE STAFF</h1>
+    <div class="text-center md:py-6 py-3 bg-blue-700 bg-opacity-90">
+      <h1 class="text-xl md:text-3xl font-semibold font-serif text-white">ADMINISTRATIVE STAFF</h1>
     </div>
    <div class="container mx-auto p-9 font-serif">
     <!-- Iterate over each general administration section -->
@@ -30,10 +30,10 @@
                   />
                 </div>
               </div>
-              <div class="flex-grow flex flex-col justify-center p-3 sm:p-4 md:p-6 bg-yellow-300 text-center w-full">
-                <h2 class="text-sm sm:text-lg md:text-2xl font-semibold text-black">{{ member.name }}</h2>
-                <p class="text-xs sm:text-sm md:text-lg text-gray-800">{{ member.position || 'Position not available' }}</p>
-                <p class="text-xs sm:text-sm md:text-lg text-gray-800">{{ member.email || 'Email not available' }}</p>
+              <div class="flex-grow flex flex-col justify-center p-3 sm:p-4 md:p-6 bg-indigo-800 text-center w-full">
+                <h2 class="text-sm sm:text-lg md:text-2xl font-semibold text-white">{{ member.name }}</h2>
+                <p class="text-xs sm:text-sm md:text-lg text-white">{{ member.position || 'Position not available' }}</p>
+                <p class="text-xs sm:text-sm md:text-lg text-white">{{ member.email || 'Email not available' }}</p>
               </div>
             </div>
           </div>
@@ -59,10 +59,10 @@
                   />
                 </div>
               </div>
-              <div class="flex-grow flex flex-col justify-center p-3 sm:p-4 md:p-6 bg-yellow-300 text-center w-full">
-                <h2 class="text-sm sm:text-lg md:text-2xl font-semibold text-black">{{ member.name }}</h2>
-                <p class="text-xs sm:text-sm md:text-lg text-gray-800">{{ member.position || 'Position not available' }}</p>
-                <p class="text-xs sm:text-sm md:text-lg text-gray-800">{{ member.email || 'Email not available' }}</p>
+              <div class="flex-grow flex flex-col justify-center p-3 sm:p-4 md:p-6 bg-indigo-800 text-center w-full">
+                <h2 class="text-sm sm:text-lg md:text-2xl font-semibold text-white">{{ member.name }}</h2>
+                <p class="text-xs sm:text-sm md:text-lg text-white">{{ member.position || 'Position not available' }}</p>
+                <p class="text-xs sm:text-sm md:text-lg text-white">{{ member.email || 'Email not available' }}</p>
               </div>
             </div>
           </div>

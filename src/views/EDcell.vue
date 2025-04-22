@@ -20,7 +20,7 @@
         
 
   <!-- Vertical Tabs Section -->
-  <section class="mx-auto py-6 md:py-12 md:px-10 bg-indigo-100 rounded-lg animate-popIn">
+  <section class="mx-auto py-6 md:py-12 md:px-10 bg-indigo-100 rounded-lg">
     <div class="relative flex flex-col md:px-8 px-4 md:flex-row">
     <!-- Vertical Tabs -->
     <div class="px-8 md:px-0">
