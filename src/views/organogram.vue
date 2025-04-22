@@ -1,6 +1,6 @@
 <template>
   <div class="organogram-section">
-    <h2 class="text-xl md:text-3xl font-semibold font-serif p-4 bg-yellow-400 text-center">
+    <h2 class="text-xl md:text-3xl font-semibold font-serif text-white p-4 bg-blue-700 text-center">
       ORGANGRAM
     </h2>
     <div class="pdf-container">

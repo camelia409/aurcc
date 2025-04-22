@@ -13,10 +13,10 @@
               />
             </div>
           </div>
-          <div class="flex-grow flex flex-col justify-center p-2 sm:p-4 md:p-6 bg-yellow-300 text-center w-full">
-            <h2 class="text-sm sm:text-lg md:text-2xl font-semibold text-black">{{ staffMember.name }}</h2>
-            <p class="text-xs sm:text-sm md:text-lg text-gray-800">{{ staffMember.position || 'Position not available' }}</p>
-            <p class="text-xs sm:text-sm md:text-lg text-gray-800">{{ staffMember.email || 'Email not available' }}</p>
+          <div class="flex-grow flex flex-col justify-center p-2 sm:p-4 md:p-6 bg-indigo-800 text-center w-full">
+            <h2 class="text-sm sm:text-lg md:text-2xl font-semibold text-white">{{ staffMember.name }}</h2>
+            <p class="text-xs sm:text-sm md:text-lg text-white">{{ staffMember.position || 'Position not available' }}</p>
+            <p class="text-xs sm:text-sm md:text-lg text-white">{{ staffMember.email || 'Email not available' }}</p>
           </div>
         </div>
       </div>

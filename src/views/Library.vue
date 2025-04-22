@@ -17,12 +17,12 @@
     </section>
 
     <!-- Vertical Tabs Section -->
-    <section class="mx-auto py-6 md:py-12 px-4 md:px-10 bg-indigo-100 rounded-lg animate-popIn">
+    <section class="mx-auto py-6 md:py-12 px-4 md:px-10 bg-indigo-100 rounded-lg">
       <div class="relative flex flex-col px-8 md:flex-row">
         <!-- Mobile Section Dropdown -->
         <div class="md:hidden md:block flex-shrink-0 w-64 bg-gradient-to-r from-[#21209c] to-blue-600 rounded-lg shadow-lg p-4 mb-4 md:mb-0 md:ml-0 ml-3 top-4 h-max">
           <div class="relative p-4 rounded-lg text-center">
-            <h2 class="text-2xl font-serif text-white font-semibold animate-slideIn">Sections</h2>
+            <h2 class="text-2xl font-serif text-white font-semibold">Sections</h2>
           </div>
           <div class="space-y-2 font-serif">
             <button
@@ -30,7 +30,7 @@
               :key="index"
               @click="scrollToSection(section)"
               :class="{'bg-yellow-400 text-[#23120b]': activeSection === section, 'bg-gray-100': activeSection !== section}"
-              class="w-full py-2 px-4 rounded-md font-semibold hover:bg-yellow-400 hover:text-[#23120b] transition-colors duration-200 animate-slideIn"
+              class="w-full py-2 px-4 rounded-md font-semibold hover:bg-yellow-400 hover:text-[#23120b] transition-colors duration-200"
             >
               {{ section }}
             </button>
@@ -40,7 +40,7 @@
         <!-- Desktop Vertical Tabs -->
         <div class="hidden md:block flex-shrink-0 w-64 bg-gradient-to-r from-[#21209c] to-blue-600 rounded-lg shadow-lg p-4 mb-4 md:mb-0 md:mr-4 sticky top-4 h-max">
           <div class="relative p-4 rounded-lg text-center">
-            <h2 class="text-2xl font-serif text-white font-semibold animate-slideIn">Sections</h2>
+            <h2 class="text-2xl font-serif text-white font-semibold">Sections</h2>
           </div>
           <div class="space-y-2 font-serif">
             <button
@@ -48,7 +48,7 @@
               :key="index"
               @click="scrollToSection(section)"
               :class="{'bg-yellow-400 text-[#23120b]': activeSection === section, 'bg-gray-100': activeSection !== section}"
-              class="w-full py-2 px-4 rounded-md font-semibold hover:bg-yellow-400 hover:text-[#23120b] transition-colors duration-200 animate-slideIn"
+              class="w-full py-2 px-4 rounded-md font-semibold hover:bg-yellow-400 hover:text-[#23120b] transition-colors duration-200"
             >
               {{ section }}
             </button>
@@ -58,13 +58,13 @@
         <!-- Tab Content -->
         <div class="w-full px-0 md:px-10  font-serif min-h-[400px] max-h-[600px] md:max-h-[800px] overflow-y-auto">
            <!-- About Library Section -->
-            <div v-if="activeSection === 'About Library'" ref="AboutLibrary" class="bg-white rounded-lg shadow-lg p-4 md:p-6 mb-16 animate-fadeIn">
+            <div v-if="activeSection === 'About Library'" ref="AboutLibrary" class="bg-white rounded-lg shadow-lg p-4 md:p-6 mb-16">
               <h3 class="text-2xl md:text-3xl font-bold text-black mb-4">About Library</h3>
               <p class="text-base text-lg md:text-xl rounded-b-lg">{{ libraryData.description }}</p>
             </div>
 
             <!-- E-journals Section -->
-            <div v-if="activeSection === 'E-journals'" ref="EJournals" class="bg-white rounded-lg shadow-lg p-4 md:p-6 mb-16 animate-fadeIn">
+            <div v-if="activeSection === 'E-journals'" ref="EJournals" class="bg-white rounded-lg shadow-lg p-4 md:p-6 mb-16">
               <h3 class="text-2xl md:text-3xl font-bold text-black mb-4">E-journals</h3>
               <p class="text-base text-lg md:text-xl mb-4 rounded-b-lg">{{ libraryData.e_journals.description }}</p>
               <ul class="list-disc pl-5 text-sm md:text-xl text-gray-900 mb-4">
@@ -82,7 +82,7 @@
 
             <!-- Other sections... -->
             <!-- Library Resources Section with Responsive Table -->
-          <div v-if="activeSection === 'Library Resources'" ref="LibraryResources" class="bg-white rounded-lg shadow-lg p-4 md:p-6 mb-16 animate-fadeIn">
+          <div v-if="activeSection === 'Library Resources'" ref="LibraryResources" class="bg-white rounded-lg shadow-lg p-4 md:p-6 mb-16">
             <h3 class="text-2xl md:text-3xl font-bold text-black mb-4">Library Resources</h3>
             <p class="text-base md:text-xl mb-4 rounded-b-lg">{{ libraryData.library_resources.description }}</p>
             
@@ -131,7 +131,7 @@
           </div>
 
           <!-- Digital Library Section -->
-          <div v-if="activeSection === 'Digital Library'" ref="DigitalLibrary" class="bg-white rounded-lg shadow-lg p-4 md:p-6 mb-16 animate-fadeIn">
+          <div v-if="activeSection === 'Digital Library'" ref="DigitalLibrary" class="bg-white rounded-lg shadow-lg p-4 md:p-6 mb-16">
             <h3 class="text-2xl md:text-3xl font-bold text-black mb-4">Digital Library</h3>
             <p class="text-base md:text-xl mb-4">{{ libraryData.digital_library.description }}</p>
             <ul class="list-disc pl-5 text-sm md:text-lg text-gray-900 space-y-2">
@@ -141,7 +141,7 @@
           </div>
 
           <!-- Open Access Resources Section -->
-          <div v-if="activeSection === 'Open Access Resources'" ref="OpenAccessResources" class="bg-white rounded-lg shadow-lg p-4 md:p-6 mb-16 animate-fadeIn">
+          <div v-if="activeSection === 'Open Access Resources'" ref="OpenAccessResources" class="bg-white rounded-lg shadow-lg p-4 md:p-6 mb-16">
             <h3 class="text-2xl md:text-3xl font-bold text-black mb-4">Open Access Resources</h3>
             <ul class="list-disc pl-5 text-sm md:text-xl text-gray-900 space-y-2">
               <li v-for="resource in libraryData.open_access_resources" :key="resource">{{ resource }}</li>
@@ -161,13 +161,13 @@
           </div>
 
           <!-- Faculty Section -->
-          <div v-if="activeSection === 'Faculty'" ref="Faculty" class="bg-white rounded-lg shadow-lg p-4 md:p-6 mb-16 animate-fadeIn">
+          <div v-if="activeSection === 'Faculty'" ref="Faculty" class="bg-white rounded-lg shadow-lg p-4 md:p-6 mb-16">
             <h3 class="text-2xl md:text-3xl font-bold text-black mb-4">Faculty</h3>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4">
               <div
                 v-for="faculty in libraryData.faculty"
                 :key="faculty.name"
-                class="bg-gray-50 rounded-md shadow p-4 animate-fadeIn hover:bg-gray-100 transition-colors duration-200"
+                class="bg-gray-50 rounded-md shadow p-4 hover:bg-gray-100 transition-colors duration-200"
               >
                 <h4 class="text-lg md:text-xl font-semibold mb-2">{{ faculty.name }}</h4>
                 <p class="text-sm md:text-base text-gray-700">{{ faculty.designation }}</p>

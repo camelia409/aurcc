@@ -1,31 +1,26 @@
 <template>
   <div class="min-h-screen flex flex-col">
     <!-- Hero section with Parallax Effect -->
-    <section class="relative h-[40vh] md:h-[50vh] flex items-center justify-center overflow-hidden">
-      <!-- Background Image with Overlay -->
-      <div class="absolute inset-0 -z-10">
-        <img 
-          :src="'http://localhost:5173/src/assets/' + department.image" 
-          alt="Department Background" 
-          class="h-full w-full object-cover"
-        >
-        <!-- Gradient Overlay -->
-        <div class="absolute inset-0 bg-gradient-to-r from-blue-900/70 to-indigo-900/60"></div>
-      </div>
+    <section class="bg-cover bg-center relative h-80 md:h-96"
+  :style="'background-image: url(http://localhost:5173/src/assets/' + department.image + ')'">
+  <div class="absolute inset-0 bg-gradient-to-r from-blue-900/70 to-indigo-900/60 z-0"></div>
+  <div class="container mx-auto h-full flex items-center relative z-10 px-6 md:px-9">
+    <div class="max-w-2xl">
+      <h1 class="text-2xl md:text-5xl font-bold mb-4 text-white">
+        <span class="bg-gradient-to-r from-blue-400 to-indigo-300 bg-clip-text text-transparent">
+          {{ department.name }}
+        </span>
+      </h1>
+      <p class="text-sm md:text-xl mb-8 text-gray-100 leading-relaxed">
+        Explore our cutting-edge programs and stay ahead in the field.
+      </p>
+      <button class="bg-white text-indigo-700 hover:bg-indigo-100 py-2 px-6 rounded-full font-semibold transition duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+        Learn More
+      </button>
+    </div>
+  </div>
+</section>
 
-      <!-- Content -->
-      <div class="relative text-center px-4 max-w-4xl mx-auto z-20">
-        <h1 class="text-3xl md:text-5xl font-bold text-white mb-4 tracking-tight">
-          Welcome to <span class="text-white">{{ department.name }}</span>
-        </h1>
-        <p class="text-lg md:text-xl text-gray-100 leading-relaxed mb-6">
-          Explore our cutting-edge programs and stay ahead in the field
-        </p>
-        <button class="bg-white text-blue-800 hover:bg-blue-50 py-2 px-6 rounded-full font-medium transition duration-300 shadow-lg">
-          Learn More
-        </button>
-      </div>
-    </section>
 
     <!-- Modern Tabs Section with Animated Underline -->
     <div class="sticky top-0 z-30 bg-white shadow-md">
@@ -62,46 +57,52 @@
 
     <!-- About Section with Modern Cards -->
     <section id="about" ref="about" class="scroll-section py-16 bg-gray-50">
-      <div class="container mx-auto px-4">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          <!-- About Department Card -->
-          <div class="flex flex-col h-full">
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-blue-100 h-full">
-              <div class="bg-gradient-to-r from-blue-600 to-indigo-600 py-4 px-6">
-                <h2 class="text-xl md:text-2xl font-semibold text-white text-center">About Department</h2>
-              </div>
-              <div class="p-6">
-                <p class="text-gray-700 leading-relaxed">{{ department.description }}</p>
-              </div>
-            </div>
+      <div class="w-full">
+  <div class="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto py-12 bg-gradient-to-b from-gray-50 to-white">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+      
+      <!-- About Department Card -->
+      <div class="flex flex-col h-full">
+        <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden h-full transition-all duration-300 hover:shadow-md">
+          <div class="bg-gradient-to-r from-indigo-600 to-blue-500 py-6">
+            <h2 class="text-2xl md:text-3xl text-white font-bold text-center">About Department</h2>
           </div>
-
-          <!-- Vision & Mission Cards -->
-          <div class="grid grid-cols-1 gap-8">
-            <!-- Vision Card -->
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-blue-100">
-              <div class="bg-gradient-to-r from-indigo-600 to-blue-600 py-4 px-6">
-                <h3 class="text-xl md:text-2xl font-semibold text-white text-center">Vision</h3>
-              </div>
-              <div class="p-6">
-                <p class="text-gray-700 leading-relaxed">{{ department.vision }}</p>
-              </div>
-            </div>
-            
-            <!-- Mission Card -->
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-blue-100">
-              <div class="bg-gradient-to-r from-blue-600 to-indigo-600 py-4 px-6">
-                <h3 class="text-xl md:text-2xl font-semibold text-white text-center">Mission</h3>
-              </div>
-              <div class="p-6">
-                <ul class="list-disc pl-6 text-gray-700 space-y-2">
-                  <li v-for="mission in department.mission" :key="mission">{{ mission }}</li>
-                </ul>
-              </div>
-            </div>
+          <div class="p-6 md:p-8">
+            <p class="text-lg text-gray-700 leading-relaxed">{{ department.description }}</p>
           </div>
         </div>
       </div>
+
+      <!-- Vision & Mission Cards -->
+      <div class="grid grid-cols-1 gap-8 h-full">
+        
+        <!-- Vision Card -->
+        <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden transition-all duration-300 hover:shadow-md">
+          <div class="bg-gradient-to-r from-blue-500 to-cyan-400 py-6">
+            <h3 class="text-2xl md:text-3xl text-white font-bold text-center">Vision</h3>
+          </div>
+          <div class="p-6 md:p-8">
+            <p class="text-lg text-gray-700 leading-relaxed">{{ department.vision }}</p>
+          </div>
+        </div>
+        
+        <!-- Mission Card -->
+        <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden transition-all duration-300 hover:shadow-md">
+          <div class="bg-gradient-to-r from-cyan-400 to-teal-400 py-6">
+            <h3 class="text-2xl md:text-3xl text-white font-bold text-center">Mission</h3>
+          </div>
+          <div class="p-6 md:p-8">
+            <ul class="text-lg list-disc pl-5 text-gray-700 space-y-3">
+              <li v-for="mission in department.mission" :key="mission" class="pl-2">{{ mission }}</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
     </section>
 
     <!-- Courses Offered Section -->

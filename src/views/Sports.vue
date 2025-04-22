@@ -22,15 +22,15 @@
       </div>
     </section>
     <!-- Content sections -->
-    <section class="mx-auto bg-amber-300 font-serif animate-fadeIn p-4 md:p-9">
+    <section class="mx-auto bg-blue-200 font-serif animate-fadeIn p-4 md:p-9">
       <div class="bg-white rounded-lg animate-popIn mb-8">
-        <h2 class="text-2xl md:text-3xl rounded-t-lg text-center bg-[#4b3b32] font-bold text-[#FFDB58] p-4 animate-fadeInUp">
+        <h2 class="text-2xl md:text-3xl rounded-t-lg text-center bg-blue-900 font-bold text-white p-4 animate-fadeInUp">
           Overview
         </h2>
         <p class="text-lg md:text-xl rounded-b-lg font-medium bg-white p-6 animate-fadeIn delay-1s">{{ data.description }}</p>
       </div>
       <div class="bg-white rounded-lg animate-popIn mb-8">
-        <h2 class="text-2xl md:text-3xl rounded-t-lg text-center bg-[#4b3b32] font-bold p-4 text-[#FFDB58] animate-fadeInUp">
+        <h2 class="text-2xl md:text-3xl rounded-t-lg text-center bg-blue-900 font-bold p-4 text-white animate-fadeInUp">
           Facilities
         </h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 rounded-b-lg md:mx-10 bg-white animate-fadeIn delay-1s">
@@ -61,7 +61,7 @@
         </div>
       </div>
       <div class="bg-white rounded-lg animate-popIn">
-        <h2 class="text-2xl md:text-3xl rounded-t-lg text-center bg-[#4b3b32] font-bold p-4 text-[#FFDB58] animate-fadeInUp">
+        <h2 class="text-2xl md:text-3xl rounded-t-lg text-center bg-blue-900 font-bold p-4 text-white animate-fadeInUp">
           Contact Us
         </h2>
         <p class="p-6 text-lg md:text-xl font-medium animate-fadeIn delay-1s">{{ data.contact_us.Address }}</p>

@@ -1,14 +1,18 @@
 {
   "name": "Science and Humanities",
-  "image": "sh_department.jpg",
-  "description": "The Department of Science and Humanities is the cornerstone of Anna University Regional Campus, Coimbatore, dedicated to providing a strong foundation in fundamental sciences and the humanities.",
-  "vision": "To be a department that nurtures intellectual growth and fosters a comprehensive understanding of science and humanities, contributing to the overall development of students.",
- "courses_offered":["Ph.D.,(FULL TIME and PART TIME) in English and Mathematics and need based Mathematics course to various UG , PG Programmes in the regional campus ,Coimbatore"], 
- "mission": [
-    "To offer a balanced curriculum that integrates the sciences and humanities.",
-    "To promote research and innovation in the fields of science and humanities.",
-    "To prepare students for global challenges through quality education and ethical values."
+  "image": "s&h.webp",
+  "description": "The Department of Science and Humanities comprises of the faculty of Mathematics and English. The Faculty members of the department have rich academic experience in respective areas and research experience with outstanding research publications in reputed journals. The strength of the department is the excellent coordination in carrying out the academic responsibilities. It caters to the needs of the society and instills in students the spirit and commitment for acquiring knowledge and community service.",
+  "vision":
+  "The vision of the Department of Science and Humanities is to be recognized globally for establishing Research and Development programme in all the areas of Fundamental Sciences that support Engineering and Technology",
+"mission":[
+
+  "To attain excellence in pedagogy, and provide potential skills in the areas of Humanities and Sciences",
+  " To enrich the students to possess the ability and passion to work wisely, creatively, and effectively for the benefit of society.",
+  "To prepare professional leaders to face the emerging global challenges and to foster cultural enrichment",
+  " To create an atmosphere of learning to enable the students to develop sound cognitive and problem solving skills."
   ],
+
+   "courses_offered":["Ph.D.,(FULL TIME and PART TIME) in English and Mathematics and need based Mathematics course to various UG , PG Programmes in the regional campus ,Coimbatore"], 
   "facility": [
     {
       "name": "physics lab",

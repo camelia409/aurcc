@@ -3,7 +3,7 @@
     class="mx-auto bg-cover bg-center"
     :style="backgroundStyle"
   >
-    <div class="text-center mb-8 py-3 md:py-6 bg-yellow-500 bg-opacity-90 font-serif">
+    <div class="text-center mb-8 py-3 md:py-6 bg-opacity-90 font-serif">
       <h1 class="text-xl md:text-3xl font-semibold text-black">Head of the Departments</h1>
     </div>
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-4 md:gap-10 font-serif">
