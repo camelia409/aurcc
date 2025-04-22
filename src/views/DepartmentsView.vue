@@ -83,6 +83,21 @@
               </div>
             </div>
           </div>
+
+          <!-- Courses Offered Section -->
+          <div class="bg-white rounded-2xl mx-52 mb-6 shadow-sm border border-gray-100 overflow-hidden h-full transition-all duration-300 hover:shadow-md mt-8">
+            <div class="bg-gradient-to-r from-indigo-600 to-blue-500 py-6">
+              <h2 class="text-2xl md:text-3xl text-white font-bold text-center">Courses Offered</h2>
+            </div>
+            <div class="p-6 md:p-8">
+              <ul class="list-disc list-inside space-y-2 text-gray-700 text-base md:text-lg">
+                <li v-for="(course, index) in department.courses_offered" :key="index">
+                  {{ course }}
+                </li>
+              </ul>
+            </div>
+          </div>
+
           
           <div id="events" class="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto py-12 bg-white">
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-10 text-gray-800">

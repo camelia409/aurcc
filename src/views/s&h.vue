@@ -87,7 +87,7 @@
                 <p class="text-gray-700 leading-relaxed">{{ department.vision }}</p>
               </div>
             </div>
-
+            
             <!-- Mission Card -->
             <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-blue-100">
               <div class="bg-gradient-to-r from-blue-600 to-indigo-600 py-4 px-6">
@@ -104,6 +104,19 @@
       </div>
     </section>
 
+    <!-- Courses Offered Section -->
+          <div class="bg-white rounded-2xl mx-52 mb-6 shadow-sm border border-gray-100 overflow-hidden h-full transition-all duration-300 hover:shadow-md mt-8">
+            <div class="bg-gradient-to-r from-indigo-600 to-blue-500 py-6">
+              <h2 class="text-2xl md:text-3xl text-white font-bold text-center">Courses Offered</h2>
+            </div>
+            <div class="p-6 md:p-8">
+              <ul class="list-disc list-inside space-y-2 text-gray-700 text-base md:text-lg">
+                <li v-for="(course, index) in department.courses_offered" :key="index">
+                  {{ course }}
+                </li>
+              </ul>
+            </div>
+          </div>
     <!-- Facility Section with Improved Layout -->
     <section id="facility" ref="facility" class="scroll-section py-16 bg-white">
       <div class="container mx-auto px-4">
