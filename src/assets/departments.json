@@ -2034,14 +2034,59 @@
 		"courses_offered":["B.E.Electrical and Electronics Engineering (FULL TIME)","M.E.Power system and Engineering (FULL TIME)"],
         "events": [
 			{
-			  "name": "One Day Workshop on “Machine Learning Neural Network Models for Data Science and Analytics”",
+			  "name": "One Day Workshop on “Machine Learning Neural Network Models for Data Science and Analytics",
 			  "description": "Workshop",
 			  "date": "September 30, 2019"
+			},
+			{
+				"name": "Two day workshop on genetic algorithm and PSO :Hands on training using MATLAB",
+				"description": "Workshop",
+				"date": "September 27, 2012"
+			},
+			{
+				"name": "Two day workshop on genetic algorithm and PSO :Hands on training using MATLAB",
+				"description": "Workshop",
+				"date": "October 18, 2012"
 			},
 			{
 			  "name": "Embedded System in industrial Automation",
 			  "description": "Guest Lecture",
 			  "date": "September 13, 2022"
+			},
+			{
+				"name": "Two day workshop on PSO and its variants:Concepts & Basic Implementation in MATLAB",
+				"description": "Workshop",
+				"date": "November 23, 2012"
+			},
+			{
+				"name": "Two day workshop on MATLAB based training and simulation on supervised learning neural networks and differential evolutional algorithm",
+				"description": "Workshop",
+				"date": "December 20, 2012"
+			},
+			{
+				"name": "Two day workshop on PSO and its variants:Concepts & Basic Implementation in MATLAB",
+				"description": "Workshop",
+				"date": "February 21, 2013"
+			},
+			{
+				"name": "FDP on control system",
+				"description": "FDP",
+				"date": "December 17, 2013"
+			},
+			{
+				"name": "FDP on special electrical machines",
+				"description": "FDP",
+				"date": "June 10, 2013"
+			},
+			{
+				"name": "National Conference on intelligent computing and control for engineering applications",
+				"description": "Conference",
+				"date": "March 27, 2013"
+			},
+			{
+				"name": "National seminar on energy conservation and management",
+				"description": "Seminar",
+				"date": "January 23, 2014"
 			},
 			{
 			  "name": "Electricity Generation, Transmission & Distribution, Smart Grid, Power System Protection, AT& C Losses & Motivation",
@@ -2727,7 +2772,8 @@
                     ]
                   ,  
 		"facility":[{
-			"description":["The Department of Electrical and Electronics Engineering established with an aim to spearhead the installation of world class technologically advanced and highly sophisticated laboratories like Electrical Machines laboratory, Power Electronics laboratory ,Electric Circuits laboratory, Control Systems laboratory, Measurements and Instrumentations laboratory, Process Control laboratory and Modeling and Simulation laboratory.","The department provides software's like MATLAB R14,NI Lab VIEW,PSIM,NI Multi Sim, Active HDL and Process Control Simulator to enrich the students in their modeling and simulation skills.","A Laboratory has been set up to utilize the free open source software (FOSS) posted-which includes SCILAB and ESIM." ]
+			"description":["The Department of Electrical and Electronics Engineering established with an aim to spearhead the installation of world class technologically advanced and highly sophisticated laboratories like Electrical Machines laboratory, Power Electronics laboratory ,Electric Circuits laboratory, Control Systems laboratory, Measurements and Instrumentations laboratory, Process Control laboratory and Modeling and Simulation laboratory.","The department provides software's like MATLAB R14,NI Lab VIEW,PSIM,NI Multi Sim, Active HDL and Process Control Simulator to enrich the students in their modeling and simulation skills.","A Laboratory has been set up to utilize the free open source software (FOSS) posted-which includes SCILAB and ESIM." ],
+			"image":"pic5.JPG"
 		}
 		] ,
           "faculty": {
@@ -2792,7 +2838,262 @@
 					}
 				}
 			],
-			"assistant_professors": [				
+			"assistant_professors": [	
+				{
+					"name": "Dr T Aruldoss Albert Victoire",
+					"image":"Aruldoss-Albert.webp",
+					"position": "Associate Professor",
+					"email": "albert@aurcc.ac.in",
+					"education": [
+						{
+							"degree": "B.Tech.",
+							"institution": "Pondicherry University",
+							"year": 1998
+						},
+						{
+							"degree": "M.E.",
+							"institution": "Madurai Kamaraj University",
+							"year": 2000
+						},
+						{
+							"degree": "Ph.D.",
+							"institution": "Anna University",
+							"year": 2005
+						}
+					],
+					"research_interests": ["Hybrid intelligent optimization algorithms", "Power system operation and control", "Data mining", "Microarray classification", "Scheduling problems"],
+					"professional_experience": [
+						{
+							"position": "Assistant Professor",
+							"institution": "Karunya University, Coimbatore",
+							"duration": "2000-2007"
+						},
+						{
+							"position": "Assistant Professor",
+							"institution": "Anna University of Technology, Coimbatore",
+							"duration": "2008-2012"
+						},
+						{
+							"position": "Assistant Professor",
+							"institution": "Anna University Regional Campus, Coimbatore",
+							"duration": "2012-present"
+						}
+					],
+					"links": {
+						"scholar": "https://scholar.google.com/citations?user=wFhRVKEAAAAJ&hl=en&oi=ao",
+						"orcid": "https://orcid.org/0000-0003-2274-1988",
+						"scopus": "https://www.scopus.com/authid/detail.uri?authorId=8537600900",
+						"vidwan": "https://vidwan.inflibnet.ac.in/profile/277398",
+						"webofscience": "https://www.webofscience.com/wos/author/rid/V-6247-2018"
+					},
+					"achievements": ["Dr. Albert received the B.Tech. degree from Pondicherry University, Pondicherry, India, the M.E. degree from Madurai Kamaraj University, Madurai, India, and the Ph.D. degree from Anna University, Chennai, India, in 1998, 2000, and 2005, respectively, all in electrical engineering."],
+					"drive_link": "https://drive.google.com/open?id=1C8_wsKV2NZi_iH8l4btc9RTmUDo4z7dg"
+				},	
+				{
+					"name": "Mr R Balamurugan",
+					"image":"Balamurugan.webp",
+					"position": "Assistant Professor",
+					"email": "balamurugan.r@ieee.org",
+					"education": [
+						{
+							"degree": "M.E.",
+							"institution": "",
+							"year": 1999
+						},
+						{
+							"degree": "Ph.D.",
+							"institution": "",
+							"year": 1999
+						}
+					],
+					"research_interests": ["Electrical drivers", "Embedded Control Systems"],
+					"professional_experience": [
+						{
+							"position": "",
+							"institution": "",
+							"duration": ""
+						},
+						{
+							"position": "",
+							"institution": "",
+							"duration": ""
+						},
+						{
+							"position": "",
+							"institution": "",
+							"duration": ""
+						}
+					],
+					"links": {
+						
+					},
+					"achievements": [""],
+					"drive_link": ""
+				},		
+				{
+					"name": "Dr R Suresh Kumar",
+					"image":"SureshkumarEEE.webp",
+					"position": "Assistant Professor",
+					"email": "sureshkumarauc@gmail.com",
+					"education": [
+						{
+							"degree": "B.E.",
+							"institution": "Madurai Kamaraj University",
+							"year": 2003
+						},
+						{
+							"degree": "M.E.",
+							"institution": "Anna University",
+							"year": 2007
+						},
+						{
+							"degree": "Ph.D.",
+							"institution": "Anna University ",
+							"year": 2014
+						}
+					],
+					"research_interests": ["Converters", "Electrical Machines","Solar Energy","Embedded Systems","Soft Computing techniques"],
+					"professional_experience": [
+						{
+							"position": "",
+							"institution": "",
+							"duration": ""
+						}
+					],
+					"links": {
+						
+					},
+					"achievements": [""],
+					"drive_link": ""
+				},		
+				{
+					"name": "Dr M Yuvaraju",
+					"image":"Yuvaraju.webp",
+					"position": "Assistant Professor",
+					"email": "rajaucbe@gmail.com",
+					"education": [
+						{
+							"degree": "B.E.",
+							"institution": "Bharathiar University",
+							"year": 2000
+						},
+						{
+							"degree": "M.E.",
+							"institution": "Anna University ",
+							"year": 2000
+						},
+						{
+							"degree": "Ph.D.",
+							"institution": "Anna University ",
+							"year": 2000
+						}
+					],
+					"research_interests": ["Control Systems","Computer Networks","Intelligent Computing"],
+					"professional_experience": [
+						{
+							"position": "",
+							"institution": "",
+							"duration": ""
+						},
+						{
+							"position": "",
+							"institution": "",
+							"duration": ""
+						},
+						{
+							"position": "",
+							"institution": "",
+							"duration": ""
+						}
+					],
+					"links": {
+						
+					},
+					"achievements": [""],
+					"drive_link": ""
+				},	
+				{
+					"name": "Dr R Vijayabhasker",
+					"image":"VB.webp",
+					"position": "Assistant Professor",
+					"email": "kaviji04@gmail.com",
+					"education": [
+						{
+							"degree": "M.E.",
+							"institution": " ",
+							"year": 2000
+						},
+						{
+							"degree": "Ph.D.",
+							"institution": "",
+							"year": 2000
+						}
+					],
+					"research_interests": ["Soft Computing","Electrical Machines","Control System","Power System","Signals and System","Power Electronics","VLSI and Embedded Systems"],
+					"professional_experience": [
+						{
+							"position": "",
+							"institution": "",
+							"duration": ""
+						},
+						{
+							"position": "",
+							"institution": "",
+							"duration": ""
+						},
+						{
+							"position": "",
+							"institution": "",
+							"duration": ""
+						}
+					],
+					"links": {
+						
+					},
+					"achievements": [""],
+					"drive_link": ""
+				},	
+				{
+					"name": "Dr M Newlin Rajkumar",
+					"image":"newlin.webp",
+					"position": "Assistant Professor",
+					"email": "newlin_rajkumar@yahoo.co.in",
+					"education": [
+						{
+							"degree": "B.E.Electrical and Electronics Engineering",
+							"institution": "",
+							"year": 2000
+						},
+						{
+							"degree": "M.S.Electrical and Control Engineering",
+							"institution": "National Chiao Tsung University,Hsinchu,Taiwan,Republic of China",
+							"year": 2007
+						},
+						{
+							"degree": "M.B.A",
+							"institution": "",
+							"year": 2000
+						},
+						{
+							"degree": "Ph.D.",
+							"institution": "",
+							"year": 2000
+						}
+					],
+					"research_interests": ["Cloud Computing","Big Data","Network Security"],
+					"professional_experience": [
+						{
+							"position": "",
+							"institution": "",
+							"duration": ""
+						}
+					],
+					"links": {
+						
+					},
+					"achievements": [""],
+					"drive_link": ""
+				},	
 				{
 					"name": "Dr KIRUBADEVI S",
 					"image":"kiruba-devi.webp",
@@ -2931,63 +3232,12 @@
 					"links": {
 						"drive_link": "https://drive.google.com/open?id=1d8Lp38-FsiiSQNxZq1yfq9UWOWVTmtVq"
 					}
-				},
-				{
-					"name": "Dr T Aruldoss Albert Victoire",
-					"image":"Aruldoss-Albert.webp",
-					"position": "Associate Professor",
-					"email": "albert@aurcc.ac.in",
-					"education": [
-						{
-							"degree": "B.Tech.",
-							"institution": "Pondicherry University",
-							"year": 1998
-						},
-						{
-							"degree": "M.E.",
-							"institution": "Madurai Kamaraj University",
-							"year": 2000
-						},
-						{
-							"degree": "Ph.D.",
-							"institution": "Anna University",
-							"year": 2005
-						}
-					],
-					"research_interests": ["Hybrid intelligent optimization algorithms", "Power system operation and control", "Data mining", "Microarray classification", "Scheduling problems"],
-					"professional_experience": [
-						{
-							"position": "Assistant Professor",
-							"institution": "Karunya University, Coimbatore",
-							"duration": "2000-2007"
-						},
-						{
-							"position": "Assistant Professor",
-							"institution": "Anna University of Technology, Coimbatore",
-							"duration": "2008-2012"
-						},
-						{
-							"position": "Assistant Professor",
-							"institution": "Anna University Regional Campus, Coimbatore",
-							"duration": "2012-present"
-						}
-					],
-					"links": {
-						"scholar": "https://scholar.google.com/citations?user=wFhRVKEAAAAJ&hl=en&oi=ao",
-						"orcid": "https://orcid.org/0000-0003-2274-1988",
-						"scopus": "https://www.scopus.com/authid/detail.uri?authorId=8537600900",
-						"vidwan": "https://vidwan.inflibnet.ac.in/profile/277398",
-						"webofscience": "https://www.webofscience.com/wos/author/rid/V-6247-2018"
-					},
-					"achievements": ["Dr. Albert received the B.Tech. degree from Pondicherry University, Pondicherry, India, the M.E. degree from Madurai Kamaraj University, Madurai, India, and the Ph.D. degree from Anna University, Chennai, India, in 1998, 2000, and 2005, respectively, all in electrical engineering."],
-					"drive_link": "https://drive.google.com/open?id=1C8_wsKV2NZi_iH8l4btc9RTmUDo4z7dg"
 				}
-				
 			]
 		},
 		"admin_staff": [
 			{
-				"name": "Mrs. L. Thamaraiselvi",
+				"name": "",
 				"position": "Executive Assistant",
 				"email": "not provided",
 				"education": [
@@ -2999,7 +3249,7 @@
 				]
 			},
 			{
-				"name": "Mr. K. M. Elavarasan",
+				"name": "",
 				"position": "Lab Technician",
 				"email": "not provided",
 				"education": [
@@ -3011,7 +3261,7 @@
 				]
 			},
 			{
-				"name": "Mr. S. Boopathyrajasekar",
+				"name": "",
 				"position": "Professional Assistant ",
 				"email": "not provided",
 				"education": [
@@ -3023,7 +3273,7 @@
 				]
 			},
 			{
-				"name": "Mr. S. Ravikumar",
+				"name": "",
 				"position": "Office Assistant",
 				"email": "not provided",
 				"education": [
@@ -3564,7 +3814,7 @@
 				"Single Mode Fiber Characteristics Setup",
 				"FM Detector",
 				"Phase Locked Loop"],
-				"image":""
+				"image":"pic11.JPG"
 			},
 			{
 				"name":"Embedded Laboratory",
@@ -3578,36 +3828,8 @@
 				"ARM9 Single Evaluation Board-LPC 3250",
 				"MSP430 Starter Kit REV 2.0",
 				"Embedded Workbench For ARM Processor-EWARM 511A-442A / Beagle Bone"],
-				"image":""
-			},
-			{
-				"name":"Internet of Things (IoT) Laboratory",
-				"description":["Arduino UNO Board",
-				"Raspberry PI Complete Kit (V3 Model B)",
-				"LORA Long Range Embedded Wireless Communication Starter Kit With Multi Channel LORAWAN Gateway",
-				"Wireless Development Module for Wi-Fi,Bluetooth, Classic, BLE Ver 4.2, LORA, LORAWAN",
-				"RP2040 PICO Development Board",
-				"Arduino Due Development Board With USB Cable",
-				"37-IN One Sensor Kit Package",
-				"Node MCU ESP8266 Wifi Development Board With USB Cable",
-				"Ultrasonic Distance Sensor Module, 5V 4 Channel Relay Card, Gas Sensor, PIR Sensor etc"],
-				"image":""
-			},
-			{
-				"name":"",
-				"description":["Keil - MDK ARM FOR ARM Family (MDK ARM CD)",
-				"Keil-RL-ARM RTOS (RL- ARM CD)",
-				"Keil U-LINK2 DEBUGGER",
-				"ZIGBEE WIRELESS MODULE",
-				"ARM 7 LPC2148 (Experimental Board)",
-				"ARM 7 Evaluation Board Vi ARM-LPC2148",
-				"Keil ARM7 Board with UC LINUX &amp; Keil Support-LPC 2478-32",
-				"ARM9 Single Evaluation Board-LPC 3250",
-				"MSP430 Starter Kit REV 2.0",
-				"Embedded Workbench For ARM Processor-EWARM 511A-442A / Beagle Bone"],
-				"image":""
+				"image":"pic12.JPG"
 			}
-			
 		],
 		"research_and_publications": [
 			{
