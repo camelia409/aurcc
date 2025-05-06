@@ -116,12 +116,13 @@
                 </span>
               </button>
               <div class="dropdown-menu w-56">
-                <RouterLink v-for="link in mobileSections[3].links" 
-                          :key="link.route" 
-                          :to="link.route"
-                          class="dropdown-item">
+                <a v-for="link in mobileSections[3].links" 
+                   :key="link.route" 
+                   :href="link.route"
+                   @click.prevent="$router.push(link.route)"
+                   class="dropdown-item">
                   {{ link.name }}
-                </RouterLink>
+                </a>
               </div>
             </div>
 

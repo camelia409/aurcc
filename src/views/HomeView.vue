@@ -1,38 +1,38 @@
 <template>
   <div class="">        
     <main class="">
-      <!-- Hero Section - Modern Parallax Effect -->
-      <section class="relative h-screen flex items-center justify-center overflow-hidden">
-        <!-- Background Image -->
-        <div class="absolute inset-0 -z-10">
-          <img 
-            src="/src/assets/Drone_shot.jpg" 
-            alt="Campus" 
-            class="h-full w-full object-cover scale-110 transform transition-transform duration-10000 animate-subtle-zoom"
-          >
-          <!-- Gradient Overlay -->
-          <div class="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-indigo-900/90"></div>
-        </div>
-
-        <!-- Ensure Text is Visible -->
-        <div class="relative text-center px-4 max-w-5xl mx-auto z-20">
-          <h1 class="text-4xl md:text-7xl font-bold text-white mb-6 tracking-tight">
-            <span class="block">Welcome to</span>
-            <span class="block text-transparent bg-clip-text bg-gradient-to-r from-blue-200 to-indigo-200 mt-2">
-              Anna University
-            </span>
-          </h1>
-          <p class="text-xl md:text-2xl text-blue-200">
-            Shaping Tomorrow's Leaders Today
-          </p>
-          <div class="mt-10">
-            <a href="#programs" class="inline-block px-8 py-4 bg-white text-blue-900 rounded-full font-semibold 
-              transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
-              Explore Programs
-            </a>
-          </div>
-        </div>
-      </section>
+   <!-- Hero Section - Modern Parallax Effect -->
+   <section class="relative h-screen flex items-center justify-center overflow-hidden">
+         <!-- Background Image -->
+         <div class="absolute inset-0 ">
+           <img 
+             src="/src/assets/Drone_shot.jpg" 
+             alt="Campus" 
+             class="h-full w-full object-cover scale-110 transform transition-transform duration-10000 animate-subtle-zoom"
+           >
+           <!-- Gradient Overlay -->
+           <div class="absolute inset-0 opacity-35 bg-slate-950"></div>
+         </div>
+ 
+         <!-- Ensure Text is Visible -->
+         <div class="relative text-center px-4 max-w-5xl mx-auto z-20">
+           <h1 class="text-4xl md:text-7xl font-bold text-white mb-6 tracking-tight">
+             <span class="block">Welcome to</span>
+             <span class="block text-transparent bg-clip-text bg-gradient-to-r from-blue-200 to-indigo-200 mt-2">
+               Anna University
+             </span>
+           </h1>
+           <p class="text-xl md:text-2xl text-blue-200">
+             Shaping Tomorrow's Leaders Today
+           </p>
+           <div class="mt-10">
+             <a href="#programs" class="inline-block px-8 py-4 bg-white text-blue-900 rounded-full font-semibold 
+               transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
+               Explore Programs
+             </a>
+           </div>
+         </div>
+       </section>
 
 
       <!-- Floating Stats Cards with 3D Effect -->
@@ -346,9 +346,96 @@
                   <p class="program-description">
                     Advanced computing, AI, and software engineering
                   </p>
-                  <a href="#" class="program-link">Learn More →</a>
+                  <a href="departments/cse" class="program-link">Learn More →</a>
                 </div>
+
+                <!-- Electrical -->
+                <div class="program-card">
+                  <div class="program-icon bg-yellow-500">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                        d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    </svg>
+                  </div>
+                  <h3 class="program-title">Electrical Engineering</h3>
+                  <p class="program-description">
+                    Power systems, control systems, and electrical machines
+                  </p>
+                  <a href="departments/eee" class="program-link">Learn More →</a>
+                </div>
+
+                <!-- ECE -->
+                <div class="program-card">
+                  <div class="program-icon bg-green-500">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                        d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
+                    </svg>
+                  </div>
+                  <h3 class="program-title">Electronics & Communication</h3>
+                  <p class="program-description">
+                    Digital electronics, communication systems, and signal processing
+                  </p>
+                  <a href="departments/ece" class="program-link">Learn More →</a>
+                </div>
+
+                <!-- Mechanical -->
+                <div class="program-card">
+                  <div class="program-icon bg-red-500">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                        d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                  </div>
+                  <h3 class="program-title">Mechanical Engineering</h3>
+                  <p class="program-description">
+                    Design, manufacturing, and thermal engineering
+                  </p>
+                  <a href="departments/mech" class="program-link">Learn More →</a>
+                </div>
+
+                <!-- MBA -->
+                <div class="program-card">
+                  <div class="program-icon bg-purple-500">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                        d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                  </div>
+                  <h3 class="program-title">MBA</h3>
+                  <p class="program-description">
+                    Business administration, management, and leadership
+                  </p>
+                  <a href="departments/mba" class="program-link">Learn More →</a>
+                </div>
+
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+            <!-- Dean's Message Section - Modern Glass Design -->
+            <section id="deans-message" class="py-24 bg-gradient-to-br from-blue-900 to-indigo-900 text-white">
+        <div class="container mx-auto px-6">
+          <h2 class="text-4xl font-bold text-center mb-12">From the Dean's Desk</h2>
+          <div class="flex flex-col md:flex-row items-center bg-white bg-opacity-10 rounded-lg shadow-xl overflow-hidden backdrop-filter backdrop-blur-lg">
+            <div class="md:w-1/3">
+              <img src="../assets/Dean.webp" alt="Dean's Photo" class="w-full h-full object-cover" />
+            </div>
+            <div class="md:w-2/3 p-8">
+              <h3 class="text-3xl font-semibold mb-4">Dr. Saravanan Kumar</h3>
+              <p class="text-indigo-200 mb-6 italic">"Empowering the next generation of innovators and leaders."</p>
+              <p class="mb-4">
+                Welcome to Anna University! Our institution stands at the forefront of technological education and research. We are committed to nurturing not just skilled professionals, but visionary leaders who will shape the future of our society.
+              </p>
+              <p class="mb-4">
+                Our world-class faculty, cutting-edge facilities, and industry partnerships provide an unparalleled learning environment. We encourage our students to push boundaries, think critically, and innovate fearlessly.
+              </p>
+              <p>
+                Join us in this exciting journey of discovery and growth. Together, let's build a brighter, more sustainable future through the power of education and technology.
+              </p>
             </div>
           </div>
         </div>
@@ -405,75 +492,8 @@
         </div>
       </section>
 
-      <!-- Dean's Message Section - Modern Glass Design -->
-      <section id="deans-message" class="py-24 bg-gradient-to-br from-blue-900 to-indigo-900 text-white">
-        <div class="container mx-auto px-6">
-          <h2 class="text-4xl font-bold text-center mb-12">From the Dean's Desk</h2>
-          <div class="flex flex-col md:flex-row items-center bg-white bg-opacity-10 rounded-lg shadow-xl overflow-hidden backdrop-filter backdrop-blur-lg">
-            <div class="md:w-1/3">
-              <img src="../assets/steve_jobs.webp" alt="Dean's Photo" class="w-full h-full object-cover" />
-            </div>
-            <div class="md:w-2/3 p-8">
-              <h3 class="text-3xl font-semibold mb-4">Dr. Saravanan Kumar</h3>
-              <p class="text-indigo-200 mb-6 italic">"Empowering the next generation of innovators and leaders."</p>
-              <p class="mb-4">
-                Welcome to Anna University! Our institution stands at the forefront of technological education and research. We are committed to nurturing not just skilled professionals, but visionary leaders who will shape the future of our society.
-              </p>
-              <p class="mb-4">
-                Our world-class faculty, cutting-edge facilities, and industry partnerships provide an unparalleled learning environment. We encourage our students to push boundaries, think critically, and innovate fearlessly.
-              </p>
-              <p>
-                Join us in this exciting journey of discovery and growth. Together, let's build a brighter, more sustainable future through the power of education and technology.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      <!-- Testimonials Section -->
-      <section id="testimonials" class="py-20 bg-indigo-100">
-        <div class="container mx-auto px-6">
-          <h2 class="text-4xl font-bold text-center mb-12 text-indigo-800 pb-10">Voices of Success</h2>
-          <div class="relative w-4/5 mx-auto">
-            <div class="overflow-hidden">
-              <div class="flex transition-transform duration-500 ease-in-out" :style="{ transform: `translateX(-${currentIndex * 100}%)` }">
-                <div v-for="(testimonial, index) in testimonials" :key="index" class="w-full flex-shrink-0 px-4">
-                  <div class="bg-white text-gray-800 rounded-lg p-8 shadow-xl">
-                    <p class="text-xl italic mb-6">"{{ testimonial.message }}"</p>
-                    <div class="flex items-center">
-                      <img :src="testimonial.image" :alt="testimonial.name" class="w-16 h-16 rounded-full object-cover mr-4" />
-                      <div>
-                        <p class="font-bold text-lg">{{ testimonial.name }}</p>
-                        <p class="text-indigo-600">{{ testimonial.branch }}, {{ testimonial.batch }}</p>
-                        <p class="text-sm text-gray-600">{{ testimonial.company }}</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <button @click="prevSlide" class="absolute top-1/2 left-0 transform -translate-y-1/2 -translate-x-4 bg-[#21209c] text-white p-2 rounded-full cursor-pointer">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-10 h-10">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M15 19l-7-7 7-7" />
-              </svg>
-            </button>
-            <button @click="nextSlide" class="absolute top-1/2 right-0 transform -translate-y-1/2 translate-x-4 bg-[#21209c] text-white p-2 rounded-full focus:outline-none hover:bg-indigo-700 transition-colors">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-10 h-10">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M9 5l7 7-7 7" />
-              </svg>
-            </button>
-          </div>
-          <div class="flex justify-center mt-8">
-            <button 
-              v-for="(dot, index) in testimonials.length" 
-              :key="index" 
-              @click="goToSlide(index)" 
-              class="h-1 w-8 mx-1 focus:outline-none transition-colors rounded-full shadow-sm hover:shadow-md transform hover:scale-105 duration-300"
-              :class="index === currentIndex ? 'bg-[#fdb827]' : 'bg-[#0a0a34]'"
-            ></button>
-          </div>
-        </div>
-      </section>
+
 
       <!-- Chatbot button -->
       <button

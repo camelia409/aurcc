@@ -538,6 +538,8 @@
 </template>
 
 <script>
+import departmentData from '/src/assets/departments.json';
+
 export default {
   data() {
     return {
@@ -559,20 +561,23 @@ export default {
       selectedStaff: null
     };
   },
-  async created() {
-    await this.loadDepartment();
-    this.currentSection = this.sections[0];
-    this.$nextTick(() => {
-      this.updateSectionOffsets();
-    });
+  watch: {
+    '$route.params.departmentName': {
+      immediate: true,
+      handler() {
+        this.loadDepartment();
+        this.currentSection = this.sections[0];
+        this.$nextTick(() => {
+          this.updateSectionOffsets();
+        });
+      }
+    }
   },
   methods: {
-    async loadDepartment() {
+    loadDepartment() {
       try {
-        const response = await fetch('http://localhost:5173/src/assets/departments.json');
-        const departmentsData = await response.json();
-        this.department = departmentsData.find(dept => dept.address === this.$route.params.departmentName);
-        this.events = this.department.events.reverse()
+        this.department = departmentData.find(dept => dept.address === this.$route.params.departmentName);
+        this.events = this.department.events.reverse();
       } catch (error) {
         console.error('Error loading department:', error);
       }
