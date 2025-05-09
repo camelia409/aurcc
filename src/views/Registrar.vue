@@ -36,7 +36,7 @@ export default {
   },
   methods: {
     getPhotoPath(photo) {
-      return new URL(`../assets/${photo}`, import.meta.url).href;
+      return photo ? `/${photo}` : '/default-image-path.jpg';
     }
   }
 };

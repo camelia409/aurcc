@@ -3,7 +3,7 @@
     <!-- Hero section -->
     <section 
       class="bg-cover bg-center relative w-full h-60 sm:h-80 md:h-94 animate-fadeIn" 
-      :style="{ backgroundImage: `url(${backgroundImage})` }">
+      :style="{ backgroundImage: `url(/programsoffered.webp)` }">
       <div class="absolute inset-0 bg-black opacity-80"></div>
       <div class="mx-auto py-24 text-white relative z-10 flex flex-col items-center text-center">
         <h1 class="md:text-4xl text-xl font-extrabold mb-4 animate-slideIn font-serif">Programs Offered</h1>
@@ -109,12 +109,10 @@
 
 <script>
 import data from '../assets/programs_offered.json';
-import backgroundImage from '../assets/programsoffered.webp'; 
 export default {
   data() {
     return {
       data: data,
-      backgroundImage: backgroundImage,
     };
   },
 };

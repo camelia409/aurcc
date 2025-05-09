@@ -3,7 +3,7 @@
     <!-- Hero section -->
      <section
       class="bg-cover md:bg-center relative -z-10 w-full h-48 sm:h-64 md:h-94  animate-fadeIn"
-      :style="{ backgroundImage: `url(${backgroundImage})` }"
+      :style="'background-image: url(/sports.webp)'"
     >
       <div class="absolute top-0 left-0 w-full h-full bg-[#3c2f25] opacity-50"></div>
       <div class="container mx-auto py-16 text-white px-4 md:px-9 relative z-10 font-serif">
@@ -72,12 +72,11 @@
 
 <script>
 import data from '../assets/sports.json';
-import backgroundImage from '@/assets/sports.webp';
 export default {
   data() {
     return {
       data: data,
-      backgroundImage: backgroundImage,
+      backgroundImage: "/sports.webp",
       showDescription: false, // State variable to control visibility of the description
     };
   },

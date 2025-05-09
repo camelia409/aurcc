@@ -3,7 +3,7 @@
     <!-- Hero section -->
     <section 
       class="bg-cover bg-center relative w-full h-60 sm:h-80 md:h-94 animate-fadeIn" 
-      :style="{ backgroundImage: `url(${backgroundImage})` }">
+      :style="{ backgroundImage: `url(/syllabus.webp)` }">
       <div class="absolute top-0 left-0 w-full h-full bg-black opacity-70"></div>
       <div class="mx-10 md:py-20 py-16 text-white relative z-10 flex flex-col ">
         <h1 class="md:text-4xl text-xl font-serif font-bold mb-4 animate-slideIn">Curriculum & Syllabus</h1>
@@ -97,13 +97,11 @@
 
 <script>
 import data from '../assets/curriculum_syllabus.json';
-import backgroundImage from '@/assets/syllabus.webp';  // Correct path for the image
 
 export default {
   data() {
     return {
       data: data,
-      backgroundImage: backgroundImage,
       activeCourse: null,
     };
   },

@@ -28,7 +28,6 @@
 </template>
 
 <script>
-import bgImage from '@/assets/bg.webp';
 import directorsData from '@/assets/COD.json';
 
 export default {
@@ -41,7 +40,7 @@ export default {
   computed: {
     backgroundStyle() {
       return {
-        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${bgImage})`,
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/bg.webp)`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
       };

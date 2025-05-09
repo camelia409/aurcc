@@ -15,7 +15,7 @@
         <div class="w-full flex justify-center pt-2 md:pt-4">
           <div class="md:w-60 md:h-60 w-40 h-40 sm:w-48 sm:h-48 overflow-hidden">
             <img
-              :src="getPhotoPath(hod.photo)"
+              :src="'/'+hod.photo"
               :alt="hod.name"
               class="w-full h-full object-contain"
             />
@@ -33,7 +33,6 @@
 </template>
 
 <script>
-import ltImage from '@/assets/lt.webp';
 import hodsData from '@/assets/HOD.json';
 
 export default {
@@ -46,14 +45,11 @@ export default {
   computed: {
     backgroundStyle() {
       return {
-        backgroundImage: `url(${ltImage})`,
+        backgroundImage: `url(/lt.webp)`,
       };
     },
   },
   methods: {
-    getPhotoPath(photo) {
-      return new URL(`../assets/${photo}`, import.meta.url).href;
-    },
   },
 };
 </script>

@@ -2,7 +2,7 @@
   <div class="min-h-screen flex flex-col">
     <!-- Hero section with Parallax Effect -->
     <section class="bg-cover bg-center relative h-80 md:h-96"
-  :style="'background-image: url(http://localhost:5173/src/assets/' + department.image + ')'">
+  :style="'background-image: url(/' + department.image + ')'">
   <div class="absolute inset-0 bg-gradient-to-r from-blue-900/70 to-indigo-900/60 z-0"></div>
   <div class="container mx-auto h-full flex items-center relative z-10 px-6 md:px-9">
     <div class="max-w-2xl">
@@ -140,7 +140,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
               <div :class="{'md:order-1': index % 2 !== 0, 'md:order-2': index % 2 === 0}">
                 <img 
-                  :src="'http://localhost:5173/src/assets/' + facility.image" 
+                  :src="'/' + facility.image" 
                   :alt="facility.name" 
                   class="w-full h-auto object-cover rounded-xl shadow-lg"
                 >
@@ -188,7 +188,7 @@
                 <div class="absolute inset-0 h-1/2 bg-gradient-to-r from-blue-600 to-indigo-600"></div>
                 <div class="relative">
                   <img 
-                    :src="'http://localhost:5173/src/assets/' + staff.image" 
+                    :src="'/' + staff.image" 
                     :alt="staff.name" 
                     class="w-48 h-48 object-cover rounded-full border-4 border-white shadow-lg"
                   >
@@ -225,7 +225,7 @@
                 <div class="absolute inset-0 h-1/2 bg-gradient-to-r from-blue-600 to-indigo-600"></div>
                 <div class="relative">
                   <img 
-                    :src="'http://localhost:5173/src/assets/' + staff.image" 
+                    :src="'/' + staff.image" 
                     :alt="staff.name" 
                     class="w-40 h-40 object-cover rounded-full border-4 border-white shadow-lg"
                   >
@@ -283,7 +283,7 @@
                 <!-- Profile Image and Name -->
                 <div class="md:w-1/3 flex flex-col items-center">
                   <div class="w-48 h-48 rounded-full overflow-hidden border-4 border-indigo-100 shadow-md mb-4">
-                    <img :src="'http://localhost:5173/src/assets/' + selectedStaff.image" :alt="selectedStaff.name" class="w-full h-full object-cover">
+                    <img :src="'/' + selectedStaff.image" :alt="selectedStaff.name" class="w-full h-full object-cover">
                   </div>
                   <h2 class="text-xl font-bold text-center text-gray-800 mt-2">{{ selectedStaff.name }}</h2>
                   <p class="text-indigo-600 font-medium text-center">{{ selectedStaff.position }}</p>

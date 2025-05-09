@@ -4,7 +4,7 @@
       <!-- Hero section -->
       <section
         class="bg-cover bg-center relative h-80 md:h-96"
-        :style="'background-image: url(http://localhost:5173/src/assets/' + department.image + ')'"
+        :style="'background-image: url(/' + department.image + ')'"
       >
         <div class="absolute inset-0 bg-gradient-to-r from-blue-900/70 to-indigo-900/60"></div>
         <div class="container mx-auto h-full flex items-center relative z-10 px-6 md:px-9">
@@ -219,7 +219,7 @@
                   <div class="relative">
                     <div class="absolute inset-0 bg-gradient-to-r from-emerald-200 to-teal-100 transform rotate-3 rounded-2xl"></div>
                     <img 
-                      :src="'http://localhost:5173/src/assets/' + facility.image" 
+                      :src="'/' + facility.image" 
                       :alt="facility.name" 
                       class="relative z-10 w-full h-auto object-cover rounded-2xl shadow-lg"
                     >
@@ -265,7 +265,7 @@
                     <div class="absolute inset-0 h-1/2 bg-gradient-to-r from-blue-600 to-indigo-600"></div>
                     <div class="relative">
                       <img 
-                        :src="'http://localhost:5173/src/assets/' + staff.image" 
+                        :src="'/' + staff.image" 
                         :alt="staff.name" 
                         class="w-48 h-48 object-cover rounded-full border-4 border-white shadow-lg"
                       >
@@ -302,7 +302,7 @@
                     <div class="absolute inset-0 h-1/2 bg-gradient-to-r from-blue-600 to-indigo-600"></div>
                     <div class="relative">
                       <img 
-                        :src="'http://localhost:5173/src/assets/' + staff.image" 
+                        :src="'/' + staff.image" 
                         :alt="staff.name" 
                         class="w-40 h-40 object-cover rounded-full border-4 border-white shadow-lg"
                       >
@@ -477,7 +477,7 @@
                 <div class="bg-gradient-to-r from-blue-400 to-blue-300 h-2"></div>
                 <div class="p-6 flex justify-center">
                   <div class="w-28 h-28 rounded-full overflow-hidden border-2 border-amber-100 shadow">
-                    <img :src="'http://localhost:5173/src/assets/' + staff.image" :alt="staff.name" class="w-full h-full object-cover" />
+                    <img :src="'/' + staff.image" :alt="staff.name" class="w-full h-full object-cover" />
                   </div>
                 </div>
                 

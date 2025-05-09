@@ -6,7 +6,7 @@
          <!-- Background Image -->
          <div class="absolute inset-0 ">
            <img 
-             src="/src/assets/Drone_shot.jpg" 
+             src="/Drone_shot.jpg" 
              alt="Campus" 
              class="h-full w-full object-cover scale-110 transform transition-transform duration-10000 animate-subtle-zoom"
            >
@@ -422,7 +422,7 @@
           <h2 class="text-4xl font-bold text-center mb-12">From the Dean's Desk</h2>
           <div class="flex flex-col md:flex-row items-center bg-white bg-opacity-10 rounded-lg shadow-xl overflow-hidden backdrop-filter backdrop-blur-lg">
             <div class="md:w-1/3">
-              <img src="../assets/Dean.webp" alt="Dean's Photo" class="w-full h-full object-cover" />
+              <img src="/Dean.webp" alt="Dean's Photo" class="w-full h-full object-cover" />
             </div>
             <div class="md:w-2/3 p-8">
               <h3 class="text-3xl font-semibold mb-4">Dr. Saravanan Kumar</h3>
@@ -609,12 +609,12 @@ export default {
       ],
       currentIndex: 0,
       galleryImages: [
-        { src: 'src/assets/1.webp', alt: 'Gallery Image 1', description: 'This is a dummy event description, lykky means like you know you know' },
-        { src: 'src/assets/cse-girls-closeup.webp', alt: 'Gallery Image 2', description: 'This is a dummy event description, lykky means like you know you know' },
-        { src: 'src/assets/4.webp', alt: 'Gallery Image 2', description: 'This is a dummy event description, lykky means like you know you know' },
-        { src: 'src/assets/computer-lab.webp', alt: 'Gallery Image 3', description: 'This is a dummy event description, lykky means like you know you know' },
-        { src: 'src/assets/4.webp', alt: 'Gallery Image 2', description: 'This is a dummy event description, lykky means like you know you know' },
-        { src: 'src/assets/cse-girls-closeup.webp', alt: 'Gallery Image 2', description: 'This is a dummy event description, lykky means like you know you know' },
+        { src: '/1.webp', alt: 'Gallery Image 1', description: 'This is a dummy event description, lykky means like you know you know' },
+        { src: '/cse-girls-closeup.webp', alt: 'Gallery Image 2', description: 'This is a dummy event description, lykky means like you know you know' },
+        { src: '/4.webp', alt: 'Gallery Image 2', description: 'This is a dummy event description, lykky means like you know you know' },
+        { src: '/computer-lab.webp', alt: 'Gallery Image 3', description: 'This is a dummy event description, lykky means like you know you know' },
+        { src: '/4.webp', alt: 'Gallery Image 2', description: 'This is a dummy event description, lykky means like you know you know' },
+        { src: '/cse-girls-closeup.webp', alt: 'Gallery Image 2', description: 'This is a dummy event description, lykky means like you know you know' },
       ],
       currentImageIndex: 1,
       news:[

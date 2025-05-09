@@ -7,7 +7,7 @@
           <div class="w-full flex justify-center px-2 md:px-6 pt-2 md:pt-4">
             <div class="w-40 sm:w-48 md:w-60 h-40 sm:h-48 md:h-60 overflow-hidden">
               <img
-                :src="getPhotoPath(staffMember.image)"
+                :src="'/'+staffMember.image"
                 :alt="staffMember.name"
                 class="w-full h-full object-contain"
               />
@@ -34,9 +34,6 @@
       };
     },
     methods: {
-      getPhotoPath(photo) {
-        return photo ? new URL(`../assets/${photo}`, import.meta.url).href : 'default-image-path.jpg'; // Provide a default image path if the image is not available
-      }
     }
   };
   </script>

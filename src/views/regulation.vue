@@ -4,7 +4,7 @@
     <section 
       class="hero-section bg-cover relative w-full h-60 sm:h-80 md:h-94 animate-fadeIn" 
       :style="{ 
-        backgroundImage: `url(${backgroundImage})`, 
+        backgroundImage: `url(/regulation.webp)`, 
         backgroundSize: 'cover',
         backgroundPosition: 'top center' 
       }">
@@ -49,15 +49,13 @@
 
 <script>
 import ugPdf from '@/assets/ug_regulations.pdf';
-import pgPdf from '@/assets/pg_regulations.pdf';
-import backgroundImage from '@/assets/regulation.webp';  // Correct path for the image
+import pgPdf from '@/assets/pg_regulations.pdf';;  // Correct path for the image
 
 export default {
   data() {
     return {
       ugPdfUrl: ugPdf,
       pgPdfUrl: pgPdf,
-      backgroundImage: backgroundImage,
     };
   },
 };

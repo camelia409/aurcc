@@ -1,9 +1,8 @@
 <template>
   <main class="flex-grow">
-    <!-- Hero section -->
     <section
       class="bg-cover md:bg-center relative -z-10 w-full h-48 sm:h-64 md:h-94 animate-fadeIn"
-      :style="{ backgroundImage: `url(${backgroundImage})` }"
+      :style="{ backgroundImage: `url('${baseUrl}NSS.webp')` }" 
     >
 
       <div class="absolute top-0 left-0 w-full h-full"></div>
@@ -13,9 +12,7 @@
     </section>
 
 
-    <!-- Content sections -->
     <section class="container mx-auto py-15 p-4 space-y-8 font-serif animate-fadeIn">
-      <!-- About Section -->
       <div class="bg-white rounded-lg shadow-lg animate-popIn">
         <h2 class="text-2xl md:text-3xl text-center bg-[#000080] font-bold p-4 rounded-t-md text-white animate-fadeInUp">
           About
@@ -23,7 +20,6 @@
         <p class="p-5 text-lg md:text-xl font-medium animate-fadeIn delay-1s">{{ data.description }}</p>
       </div>
 
-      <!-- Activities Section -->
       <div class="bg-white rounded-lg shadow-md animate-popIn">
         <h2 class="text-2xl md:text-3xl text-center bg-[#000080] font-bold p-4 rounded-t-md text-white animate-fadeInUp">
           Activities
@@ -35,7 +31,6 @@
         </ul>
       </div>
 
-      <!-- NSS Coordinators Section -->
       <div class="bg-white rounded-lg shadow-md animate-popIn">
         <h2 class="text-2xl md:text-3xl text-center bg-[#000080] font-bold p-4 rounded-t-md text-white animate-fadeInUp">
           NSS Coordinators
@@ -59,13 +54,13 @@
 
 <script>
 import data from '../assets/NSS.json';
-import backgroundImage from '@/assets/NSS.webp';  // Correct path for the image
 
 export default {
   data() {
     return {
-      backgroundImage: backgroundImage,
       data: data,
+      // Expose the base URL from process.env to the template
+      baseUrl: process.env.BASE_URL,
     };
   },
 };

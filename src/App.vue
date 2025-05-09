@@ -36,7 +36,7 @@
         <nav class="flex items-center justify-between py-3">
           <!-- Logo and University Name with Enhanced Styling -->
           <div class="flex items-center space-x-4 cursor-pointer transform hover:scale-105 transition-transform duration-300" @click="$router.push('/')">
-            <img src="./assets/logo.svg" alt="Logo" class="h-16 w-auto"/>
+            <img src="/logo.svg" alt="Logo" class="h-16 w-auto"/>
             <div class="flex flex-col">
               <span class="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-700 to-indigo-800">ANNA UNIVERSITY</span>
               <span class="text-md text-gray-500">Regional Campus Coimbatore</span>
@@ -340,7 +340,7 @@ export default {
           isOpen: false,
           links: [
             { name: "Programs Offered", route: "/programs_offered" },
-            { name: "Curriculam & Syllabus", route: "/curriculam_syllabus" },
+            { name: "Curriculam & Syllabus", route: "/curriculum_syllabus" },
             { name: "Regulation", route: "/regulation" },
             { name: "Student Affairs", route: "/student_affairs" },
           ],
@@ -349,12 +349,12 @@ export default {
           name: "Departments",
           isOpen: false,
           links: [
-            { name: "Computer Science", route: "/departments/cse" },
-            { name: "Electrical & Electronics", route: "/departments/eee" },
-            { name: "Electronics & communication", route: "/departments/ece" },
-            { name: "Mechanical", route: "/departments/mech" },
+            { name: "Computer Science Engineering", route: "/departments/cse" },
+            { name: "Electrical & Electronics Engineering", route: "/departments/eee" },
+            { name: "Electronics & communication Engineering", route: "/departments/ece" },
+            { name: "Mechanical Engineering", route: "/departments/mech" },
             { name: "MBA", route: "/departments/mba" },
-            { name: "Science & Humanities", route: "/s&h" },
+            { name: "Science & Humanities Department", route: "/s&h" },
           ],
         },
         {

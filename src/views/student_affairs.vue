@@ -175,13 +175,12 @@
 
 <script>
 import data from '../assets/student_affairs.json';
-import backgroundImage from '@/assets/studentaffairs.webp';
 
 export default {
   data() {
     return {
       data: data,
-      backgroundImage: backgroundImage
+      backgroundImage: "/studentaffairs.webp"
     };
   }
 };
