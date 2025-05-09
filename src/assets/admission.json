@@ -109,7 +109,8 @@
           "university": "Anna University Regional Campus, Coimbatore",
           "address": "Maruthamalai Main Road, Coimbatore (Dt). Pin-641 046.",
           "phone": "0422 2984009, 0422 2984011",
-          "email": "aurccadmissions@gmail.com"
+          "email": "aurccadmissions@gmail.com",
+          "image": "path_to_image.jpg"
         }
       ],
       "contact_us": {
