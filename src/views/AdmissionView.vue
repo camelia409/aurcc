@@ -1,61 +1,125 @@
 <template>
-  <main class="flex-grow">
-    <!-- Hero section -->
-<section 
-  class="bg-cover bg-center relative w-full h-40 sm:h-80 md:h-94 animate-fadeIn" 
-  :style="{ 
-    backgroundImage: `url(${backgroundImage})`
-  }">
-  <!-- Dark overlay -->
-    <div class="absolute inset-0 bg-black opacity-20"></div>
-    
-    <!-- Centered text -->
-    <div class="flex items-center justify-center h-full relative z-10 px-4">
-      <h1 class="md:text-4xl text-xl font-extrabold text-white drop-shadow-lg font-serif text-center animate-slideIn">
-        ADMISSION
-      </h1>
-    </div>
-</section>
+  <main class="font-serif text-gray-800">
+    <!-- Hero Section -->
+    <section
+      class="w-full h-40 sm:h-80 md:h-96 bg-cover bg-center relative"
+      :style="{ backgroundImage: `url(${backgroundImage})` }"
+    >
+      <div class="absolute inset-0 bg-black opacity-30"></div>
+      <div class="flex items-center justify-center h-full relative z-10 px-4">
+        <h1 class="md:text-5xl text-2xl font-extrabold text-white drop-shadow-lg text-center">
+          ADMISSION
+        </h1>
+      </div>
+    </section>
 
-    <!-- Content Sections with Vertical Tabs -->
-    <section class="mx-auto py-6 md:py-12  md:px-10 bg-indigo-100 rounded-lg ">
-      <div class="relative flex flex-col md:px-8 px-4 md:flex-row">
-        <!-- Vertical Tabs -->
-        <div class="px-8 md:px-0">
-        <div class="flex-shrink-0 w-full h-max md:w-64 bg-gradient-to-r from-[#21209c] to-blue-600 rounded-lg shadow-lg p-4 mb-4 md:mb-0 ">
-          <div class="relative p-4 rounded-lg ">
-            <h2 class="text-2xl font-serif text-center text-white font-semibold">Sections</h2>
-          </div>
-          <div class="space-y-2 font-serif">
-            <button @click="currentSection = 'overview'" :class="{'bg-yellow-400 text-[#23120b]': currentSection === 'overview', 'bg-gray-100': currentSection !== 'overview'}" class="w-full py-2 px-4 rounded-md font-semibold hover:bg-yellow-400 hover:text-[#23120b]">Overview</button>
-            <button @click="currentSection = 'courses_offered'" :class="{'bg-yellow-400 text-[#23120b]': currentSection === 'courses_offered', 'bg-gray-100': currentSection !== 'courses_offered'}" class="w-full py-2 px-4 rounded-md font-semibold hover:bg-yellow-400 hover:text-[#23120b]">Courses Offered</button>
-            <button @click="currentSection = 'eligibility_criteria'" :class="{'bg-yellow-400 text-[#23120b]': currentSection === 'eligibility_criteria', 'bg-gray-100': currentSection !== 'eligibility_criteria'}" class="w-full py-2 px-4 rounded-md font-semibold hover:bg-yellow-400 hover:text-[#23120b]">Eligibility Criteria</button>
-            <button @click="currentSection = 'contact_us'" :class="{'bg-yellow-400 text-[#23120b]': currentSection === 'contact_us', 'bg-gray-100': currentSection !== 'contact_us'}" class="w-full py-2 px-4 rounded-md font-semibold hover:bg-yellow-400 hover:text-[#23120b]">Contact Us</button>
-          </div>
+    <!-- Navigation Tabs - Modern floating design -->
+    <div class="sticky top-0 z-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-white/95 backdrop-blur-sm shadow-lg rounded-full -mt-6 py-1 px-2 flex justify-center overflow-x-auto no-scrollbar">
+          <nav role="tablist" class="tabs flex space-x-1 md:space-x-2">
+            <button
+              v-for="section in sections"
+              :key="section.key"
+              @click="currentSection = section.key"
+              :class="{
+                'bg-indigo-600 text-white': currentSection === section.key,
+                'text-gray-700 hover:bg-gray-100': currentSection !== section.key
+              }"
+              class="font-medium px-4 md:px-5 py-2 md:py-3 rounded-full text-sm md:text-base transition duration-300 whitespace-nowrap"
+            >
+              {{ section.label }}
+            </button>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <!-- Content Sections -->
+    <section class="py-10 md:py-16 px-4 sm:px-6 lg:px-8 bg-indigo-50">
+      <div class="max-w-7xl mx-auto space-y-12">
+        <!-- Overview -->
+        <div v-if="currentSection === 'overview'" class="bg-white rounded-2xl shadow p-6 md:p-10">
+          <h2 class="text-3xl font-bold mb-4">Overview</h2>
+          <p class="mb-4">{{ data.description.Overview }}</p>
+          <p class="mb-6">{{ data.description['Admissions at our Regional Campus'] }}</p>
+          <div class="flex justify-center">
+            <img :src="flowchartImage" alt="Admission Flowchart" class="w-full md:w-3/4 lg:w-1/2 rounded shadow" />
           </div>
         </div>
-        <!-- Tab Content -->
-        <div class="w-full px-0 md:px-10  font-serif min-h-[400px] max-h-[600px] md:max-h-[800px] overflow-y-auto">
-          <div v-if="currentSection === 'overview'" class="bg-white rounded-lg shadow-lg p-4 md:p-6 mb-16 animate-fadeIn">
-            <h2 class="text-2xl md:text-3xl font-bold text-black mb-4">Overview</h2>
-            <p class="text-base text-lg md:text-xl rounded-b-lg">{{ data.description.Overview }}</p>
+
+        <!-- Courses Offered -->
+        <div v-if="currentSection === 'courses_offered'" class="bg-white rounded-2xl shadow p-6 md:p-10">
+          <h2 class="text-3xl font-bold mb-6">Courses Offered</h2>
+          <div v-for="(programs, category) in data.courses_offered" :key="category" class="mb-8">
+            <h3 class="text-2xl font-semibold text-indigo-700 mb-3">{{ category }}</h3>
+            <div class="overflow-x-auto">
+              <table class="table-auto w-full border border-gray-300 mb-4 text-left">
+                <thead>
+                  <tr class="bg-gray-200">
+                    <th class="border px-4 py-2">S.No</th>
+                    <th class="border px-4 py-2">Courses Offered</th>
+                    <th class="border px-4 py-2">Intake</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr v-for="course in programs" :key="course['S.No']">
+                    <td class="border px-4 py-2 text-center">{{ course['S.No'] }}</td>
+                    <td class="border px-4 py-2">{{ course['Courses Offered'] }}</td>
+                    <td class="border px-4 py-2 text-center">{{ course.Intake }}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
-          <div v-if="currentSection === 'courses_offered'" class="bg-white rounded-lg shadow-lg p-4 md:p-6 mb-16 animate-fadeIn">
-            <h2 class="text-2xl md:text-3xl font-bold text-black mb-4">Courses Offered</h2>
-            <p class="text-base text-lg md:text-xl rounded-b-lg">{{ data.courses_offered }}</p>
+        </div>
+
+        <!-- Eligibility Criteria -->
+        <div v-if="currentSection === 'eligibility'" class="bg-white rounded-2xl shadow p-6 md:p-10">
+          <h2 class="text-3xl font-bold mb-6">Eligibility Criteria</h2>
+          <div v-for="(text, program) in data.eligibility_criteria" :key="program" class="mb-4">
+            <h3 class="text-xl font-semibold text-indigo-700 mb-2">{{ program }}</h3>
+            <p>{{ text }}</p>
           </div>
-          <div v-if="currentSection === 'eligibility_criteria'" class="bg-white rounded-lg shadow-lg p-4 md:p-6 mb-16 animate-fadeIn">
-            <h2 class="text-2xl md:text-3xl font-bold text-black mb-4">Eligibility Criteria</h2>
-            <ul class="list-disc pl-5">
-              <li v-for="(criteria, program) in data.eligibility_criteria" :key="program" class="text-base md:text-lg">
-                <strong>{{ program }}:</strong> {{ criteria }}
-              </li>
-            </ul>
+        </div>
+
+        <!-- Staff -->
+        <div v-if="currentSection === 'staff'" class="bg-white rounded-2xl shadow p-6 md:p-10">
+          <h2 class="text-3xl font-bold mb-6">Staff</h2>
+          <div
+            v-for="person in data.staff"
+            :key="person.name"
+            class="flex flex-col md:flex-row items-center md:items-start bg-indigo-50 rounded-xl p-6 md:p-8 mb-6 shadow-md gap-6"
+          >
+            <div class="flex-shrink-0">
+              <img
+                :src="staffImage"
+                alt="Staff Photo"
+                class="w-40 h-40 md:w-48 md:h-48 object-cover rounded-2xl border-4 border-white shadow-lg"
+              />
+            </div>
+            <div class="text-center md:text-left space-y-1">
+              <h3 class="text-2xl font-bold text-indigo-800">{{ person.name }}</h3>
+              <p><span class="font-semibold">Position:</span> {{ person.position }}</p>
+              <p><span class="font-semibold">Department:</span> {{ person.department }}</p>
+              <p><span class="font-semibold">University:</span> {{ person.university }}</p>
+              <p><span class="font-semibold">Address:</span> {{ person.address }}</p>
+              <p><span class="font-semibold">Phone:</span> {{ person.phone }}</p>
+              <p>
+                <span class="font-semibold">Email:</span>
+                <a :href="`mailto:${person.email}`" class="text-blue-600 underline">{{ person.email }}</a>
+              </p>
+            </div>
           </div>
-          <div v-if="currentSection === 'contact_us'" class="bg-white rounded-lg shadow-lg p-4 md:p-6 mb-16 animate-fadeIn">
-            <h2 class="text-2xl md:text-3xl font-bold text-black mb-4">Contact Us</h2>
-            <p class="text-base text-lg md:text-xl rounded-b-lg">{{ data.contact_us['Admission Co-ordinator'] }}</p>
-          </div>
+        </div>
+
+
+        <!-- Contact Us -->
+        <div v-if="currentSection === 'contact'" class="bg-white rounded-2xl shadow p-6 md:p-10">
+          <h2 class="text-3xl font-bold mb-6">Contact Us</h2>
+          <p class="mb-2"><strong>Address:</strong> {{ data.contact_us.address }}</p>
+          <p class="mb-2"><strong>Phone:</strong> {{ data.contact_us.phone }}</p>
+          <p><strong>Email:</strong> <a :href="`mailto:${data.contact_us.email}`" class="text-blue-600 underline">{{ data.contact_us.email }}</a></p>
         </div>
       </div>
     </section>
@@ -63,61 +127,38 @@
 </template>
 
 <script>
-import data from '../assets/admission.json';
-import backgroundImage from '@/assets/offices.webp';  // Correct path for the image
+import admissionData from '../assets/admission.json';
+import backgroundImage from '@/assets/offices.webp';
+import flowchartImage from '@/assets/admission-flowchart.webp';
+import staffImage from '@/assets/rathinasamy.webp';
 
 export default {
+  name: 'AdmissionSection',
   data() {
     return {
-      data: data[0],
-      backgroundImage: backgroundImage,
-      currentSection: 'overview' // Default active tab
+      data: admissionData[0],
+      backgroundImage,
+      flowchartImage,
+      staffImage,
+      currentSection: 'overview',
+      sections: [
+        { key: 'overview', label: 'Overview' },
+        { key: 'courses_offered', label: 'Courses Offered' },
+        { key: 'eligibility', label: 'Eligibility Criteria' },
+        { key: 'staff', label: 'Staff' },
+        { key: 'contact', label: 'Contact Us' },
+      ],
     };
-  }
+  },
 };
 </script>
 
-<style>
-/* Additional custom styles if needed */
-body {
-  font-family: 'Arial', sans-serif;
+<style scoped>
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
 }
-/* Add keyframes for animations */
-@keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
-
-@keyframes fadeInUp {
-  0% { opacity: 0; transform: translateY(20px); }
-  100% { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes popIn {
-  0% { opacity: 0; transform: scale(0.8); }
-  100% { opacity: 1; transform: scale(1); }
-}
-
-@keyframes slideIn {
-  0% { transform: translateX(-100%); }
-  100% { transform: translateX(0); }
-}
-
-.animate-fadeIn {
-  animation: fadeIn 1.5s ease-out forwards;
-}
-
-.animate-popIn {
-  animation: popIn 1.2s ease-out forwards;
-}
-
-.animate-fadeInUp {
-  animation: fadeInUp 1.5s ease-out forwards;
-}
-
-.animate-slideIn {
-  animation: slideIn 1s ease-out forwards;
-}
-
-
 </style>

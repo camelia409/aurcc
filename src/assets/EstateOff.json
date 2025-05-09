@@ -13,11 +13,15 @@
         ],
     "office_bearers": [
       {
-        "name": "Dr.R. Suresh Kumar",
-        "position": "Estate Officer"
+        "name": "Dr R Vijayabhasker",
+        "position": "Estate Office Incharge"
       },
       {
         "name": "Mr.M. Muralidharan",
+        "position": "EA (Admin)"
+      },
+      {
+        "name": "Ms.Girija",
         "position": "EA (Admin)"
       }
     ],

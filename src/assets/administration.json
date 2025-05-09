@@ -5,40 +5,35 @@
         {
           "name": "A.Sundararajan",
           "position": "Deputy Manager(Finance)",
-          "email": "sunvarma69@gmail.com",
           "image": "sundararajan.webp"
         }
       ],
       "STAFFS": [
         {
-          "name": "M.S.Murugesan",
-          "position": "Executive Assistant(Admin)",
-          "email": "murugesanms@yahoo.com",
-          "image": "murugesanmurugesan.webp"
-        },
-        {
           "name": "C.Ramasamy",
           "position": "Executive Assistant(Finance)",
-          "email": "ramasamyannaunivcbe@gmail.com",
           "image": "C.Ramasamy.webp"
         },
         {
           "name": "R.Bharathi",
           "position": "Executive Assistant(Admin)",
-          "email": "bramagiri1969@gmail.com",
           "image": "bharathiragupathi.webp"
         },
         {
+          "name": "M.S.Murugesan",
+          "position": "Executive Assistant(Admin)",
+          "image": "murugesanmurugesan.webp"
+        },
+       
+        {
           "name": "A.Marimuthu",
           "position": "Professional Assistant-II",
-          "email": "gommuthu123456@gmail.com",
           "image": "muthumari.webp"
         },
         {
-          "name": "S.Santhamani",
-          "position": "Clerical Assistant",
-          "email": "santhamanibalasundaram@gmail.com",
-          "image": "santhamani.webp"
+          "name": "Ganga",
+          "position": "",
+          "image": ""
         }
       ]
     }
@@ -49,39 +44,39 @@
         {
           "name": "G.Punniyamoorthy",
           "position": "Deputy Manager(Finance)",
-          "email": "moorthy.aurc@gmail.com",
           "image": "gurupunniyamoorthy.webp"
         }
       ],
       "STAFFS": [
         {
-          "name": "M.Sathiyapriya",
-          "position": "Executive Assistant(Admin)",
-          "email": "poojaagalya@gmail.com",
-          "image": "sathiyapriya.webp"
-        },
-        {
           "name": "S.Murugavel",
           "position": "Executive Assistant(Admin)",
-          "email": "velmindia@gmail.com",
           "image": "murugavelsoundararajan.webp"
         },
         {
           "name": "S.Bhuvaneswari",
           "position": "Executive Assistant(Admin)",
-          "email": "sbhuvi171978@gmail.com",
           "image": "S.Bhuvana.webp"
         },
         {
+          "name": "R.Deepa",
+          "position": "Executive Assistant",
+          "image": ""
+        },
+        {
+          "name": "Premalatha",
+          "position": "Executive Assistant",
+          "image": ""
+        },
+       
+        {
           "name": "K.Yokanayaki",
-          "position": "AD-Hoc Staff",
-          "email": "",
+          "position": "",
           "image": "yoganayaki.webp"
         },
         {
           "name": "G.Chinnaraj",
-          "position": "AD-Hoc Staff",
-          "email": "",
+          "position": "",
           "image": "chinna.webp"
         }
       ]
@@ -99,39 +94,34 @@
       ],
       "STAFFS": [
         {
-          "name": "Dr.C.Neelaveni",
-          "position": "Assistant",
-          "email": "ushaneelaveni@gmail.com",
-          "image": "neelavenichinnaswamy.webp"
-        },
-        {
           "name": "N.Sathyabama",
           "position": "Executive Assistant(Admin)",
-          "email": "sathyapranav10@gmail.com",
           "image": "SATHYABAMA.webp"
         },
         {
           "name": "S.Usha",
           "position": "Executive Assistant(Finance)",
-          "email": "ushavarshan@gmail.com",
           "image": "ushaaAbi.webp"
         },
         {
           "name": "V.Sureshkumar",
           "position": "Executive Assistant",
-          "email": "vskaucbe@gmail.com",
           "image": "V.Sureshkumar.webp"
         },
         {
+          "name": "Dr.C.Neelaveni",
+          "position": "Assistant",
+          "image": "neelavenichinnaswamy.webp"
+        },
+       
+        {
           "name": "P.Dhanasekaran",
           "position": "Professional Assistant-II",
-          "email": "dhanasekarnss@gmail.com",
           "image": "dhanasekarpalaniswamy.webp"
         },
         {
           "name": "V.Shanthi",
           "position": "Clerical Assistant",
-          "email": "shanthibhuvana@gmail.com",
           "image": "saidharssini.webp"
         }
       ]
