@@ -31,7 +31,6 @@
             
             <button @click="currentSection = 'support_staff'" v-if="paceData.support_staff.length" :class="{'bg-yellow-400 text-[#23120b]': currentSection === 'support_staff', 'bg-gray-100': currentSection !== 'support_staff'}" class="w-full py-2 px-4 rounded-md font-semibold hover:bg-yellow-400 hover:text-[#23120b]">Support Staff</button>
             
-            <button @click="currentSection = 'student_volunteers'" v-if="paceData.student_volunteers.length" :class="{'bg-yellow-400 text-[#23120b]': currentSection === 'student_volunteers', 'bg-gray-100': currentSection !== 'student_volunteers'}" class="w-full py-2 px-4 rounded-md font-semibold hover:bg-yellow-400 hover:text-[#23120b]">Student Volunteers</button>
           </div>
         </div>
         </div>
@@ -53,12 +52,7 @@
               <li v-for="(staff, index) in paceData.support_staff" :key="index">{{ staff }}</li>
             </ul>
           </div>
-          <div v-if="currentSection === 'student_volunteers'"  class="bg-white rounded-lg shadow-lg p-4 md:p-6 mb-16 animate-fadeIn">
-            <h2 class="text-2xl md:text-3xl font-bold text-black mb-4">Student Volunteers</h2>
-            <ul class="list-disc pl-5 text-base md:text-xl text-gray-900">
-              <li v-for="(volunteer, index) in paceData.student_volunteers" :key="index">{{ volunteer }}</li>
-            </ul>
-          </div>
+          
         </div>
       </div>
     </section>

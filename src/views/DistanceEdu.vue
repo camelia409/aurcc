@@ -12,41 +12,60 @@
         <!-- Centered text -->
         <div class="flex items-center justify-center h-full relative z-10 px-4">
           <h1 class="md:text-4xl text-xl font-extrabold text-white drop-shadow-lg font-serif text-center animate-slideIn">
-            DISTANCE EDUCATION
+            Distance Education
           </h1>
         </div>
     </section>
+    <!-- Vertical Tabs Section -->
+    <section class="mx-auto py-6 md:py-12 md:px-10 bg-indigo-100 rounded-lg">
+      <div class="relative flex flex-col md:px-8 px-4 md:flex-row font-serif">
+        <!-- Vertical Tabs -->
+        <div class="px-8 md:px-0">
+          <div class="flex-shrink-0 w-full h-max md:w-64 bg-gradient-to-r from-[#21209c] to-blue-600 rounded-lg shadow-lg p-4 mb-4 md:mb-0 md:mr-4">
+            <div class="relative p-4 rounded-lg">
+              <h2 class="text-2xl font-serif text-center text-white font-semibold">Sections</h2>
+            </div>
+            <div class="space-y-2 font-serif">
+              <button 
+                v-for="tab in tabs" 
+                :key="tab" 
+                @click="currentTab = tab" 
+                :class="{
+                  'bg-yellow-400 text-[#23120b]': currentTab === tab, 
+                  'bg-gray-100': currentTab !== tab
+                }"
+                class="w-full py-2 px-4 rounded-md font-semibold hover:bg-yellow-400 hover:text-[#23120b]"
+              >
+                {{ tab }}
+              </button>
+            </div>
+          </div>
+        </div>
 
-    <!-- Details section -->
-    <section class="bg-indigo-100 rounded-lg mx-auto py-8 px-4 md:px-60">
-      <div class="bg-blue-300 rounded-lg shadow-lg overflow-hidden">
-        <h2 class="text-xl md:text-3xl text-center bg-gradient-to-r from-[#21209c] to-blue-600 text-yellow-400 p-4 font-semibold rounded-t-lg">
-          {{ details.description }}
-        </h2>
-        <div class="p-6">
-          <div class="space-y-4">
-            <!-- Sets -->
-            <div class="bg-white rounded-lg shadow-md p-4">
-              <h3 class="text-xl font-semibold text-gray-900">Sets</h3>
-              <p class="text-gray-700">{{ details.sets }}</p>
-            </div>
-            <!-- Coordinator -->
-            <div class="bg-white rounded-lg shadow-md p-4">
-              <h3 class="text-xl font-semibold text-gray-900">Coordinator</h3>
-              <p class="text-gray-700">{{ details.coordinator.name }}</p>
-              <p class="text-gray-700">{{ details.coordinator.position }}</p>
-              <p class="text-gray-700">{{ details.coordinator.department }}</p>
-              <p class="text-gray-700">{{ details.coordinator.university }}</p>
-              <p class="text-gray-700">{{ details.coordinator.address }}</p>
-            </div>
-            <!-- Specializations -->
-            <div class="bg-white rounded-lg shadow-md p-4">
-              <h3 class="text-xl font-semibold text-gray-900">Specializations</h3>
-              <ul class="list-disc pl-4 space-y-1">
-                <li v-for="specialization in details.specialization" :key="specialization" class="text-gray-700">
-                  {{ specialization }}
-                </li>
-              </ul>
+        <!-- Tab Content -->
+        <div class="w-full px-0 md:px-10 min-h-[400px] max-h-[600px] md:max-h-[800px] overflow-y-auto font-serif">
+          <!-- Programmes Offered -->
+          <div v-if="currentTab === 'Programmes Offered'" class="bg-white rounded-lg shadow-lg p-4 md:p-6 mb-16 animate-fadeIn">
+            <h2 class="text-2xl md:text-3xl font-bold text-black mb-4">Programmes Offered</h2>
+            <ul class="list-disc pl-5 text-base md:text-xl text-gray-900">
+              <li v-for="program in details.programs" :key="program">{{ program }}</li>
+            </ul>
+          </div>
+
+          <!-- Specializations -->
+          <div v-if="currentTab === 'Specializations'" class="bg-white rounded-lg shadow-lg p-4 md:p-6 mb-16 animate-fadeIn">
+            <h2 class="text-2xl md:text-3xl font-bold text-black mb-4">Specializations</h2>
+            <ul class="list-disc pl-5 text-base md:text-xl text-gray-900">
+              <li v-for="spec in details.specialization" :key="spec">{{ spec }}</li>
+            </ul>
+          </div>
+
+          <!-- Staff -->
+          <div v-if="currentTab === 'Staff'" class="bg-white rounded-lg shadow-lg p-4 md:p-6 mb-16 animate-fadeIn">
+            <h2 class="text-2xl md:text-3xl font-bold text-black mb-4">Staff</h2>
+            <div v-for="member in details.staff" :key="member.name" class="bg-white rounded-lg shadow-lg p-6 mb-4">
+              <p class="text-xl font-semibold"><strong>Name:</strong> {{ member.name }}</p>
+              <p class="text-xl"><strong>Position:</strong> {{ member.position }}</p>
             </div>
           </div>
         </div>
@@ -57,30 +76,33 @@
 
 <script>
 import details from '../assets/distance education.json';
-import backgroundImage from '@/assets/offices.webp';
+import backgroundImage from '@/assets/offices.webp';  // Correct path for the image
+
 
 export default {
   data() {
     return {
+      details,
       backgroundImage: backgroundImage,
-      details: details
+      tabs: ['Programmes Offered', 'Specializations', 'Staff'],
+      currentTab: 'Programmes Offered'
     };
   }
 };
 </script>
 
 <style scoped>
-/* Scoped styles to ensure consistent styling */
-.container {
-  max-width: 900px;
+/* Hero section */
+.hero-section {
+  min-height: 50vh;
+  position: relative;
+  background-blend-mode: multiply;
 }
-.bg-gradient-to-t {
-  background: linear-gradient(to top, var(--tw-gradient-stops));
-}
+/* Gradient Background */
 .bg-gradient-to-r {
-  background: linear-gradient(to right, var(--tw-gradient-stops));
+  background: linear-gradient(90deg, var(--tw-gradient-stops));
 }
-.drop-shadow-lg {
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+.font-serif {
+  font-family: 'Georgia', 'Times New Roman', Times, serif;
 }
 </style>
