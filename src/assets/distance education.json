@@ -1,18 +1,30 @@
 {
   "name": "Distance Education",
   "description": "Programme: MBA, MCA",
-  "sets": "Set XV-XVI",
-  "coordinator": {
-    "name": "Dr. M.V. Subha",
-    "position": "Associate Professor",
-    "department": "Dept of Management Studies",
-    "university": "Anna University Regional Campus",
-    "address": "Navavoor, Coimbatore-641 046"
-  },
+  "programs": [
+    "MBA",
+    "MCA"
+  ],
   "specialization": [
     "MBA-General Management",
     "MBA-Technology Management",
     "MBA-Financial Services Management",
     "MBA-Human Resources Management"
+  ],
+  "staff": [
+    {
+      "name": "Dr. M.V. Subha",
+      "position": "Associate Professor",
+      "department": "Dept of Management Studies",
+      "university": "Anna University Regional Campus",
+      "address": "Navavoor, Coimbatore-641 046"
+    },
+    {
+      "name": "Mr. Karthikeyan",
+      "position": "Assistant Professor",
+      "department": "Dept of Management Studies",
+      "university": "Anna University Regional Campus",
+      "address": "Navavoor, Coimbatore-641 046"
+    }
   ]
 }

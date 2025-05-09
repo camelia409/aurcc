@@ -10,20 +10,23 @@
               {
                   "si.no": 1,
                   "name": "Dr. Preethi AP/CSE",
-                  "designation": "Placement Coordinator",
-                  "emailid": "placement@aurcc.ac.in"
+                  "designation": "Placement Coordinator"
                 },
                 {
                   "si.no": 2,
                   "name": "Dr. T. Suganthalakshmi AP/MBA",
-                  "designation": "Placement Coordinator",
-                  "emailid": "placement@aurcc.ac.in"
+                  "designation": "Placement Coordinator"
                 },
+               
                 {
                   "si.no": 3,
                   "name": "Mrs.M.A.Kavitha.",
-                  "designation": "Executive Asst. (Admin)",
-                  "emailid": "placement@aurcc.ac.in."
+                  "designation": "Executive Asst. (Admin)"
+                },
+                {
+                  "si.no": 4,
+                  "name": "Mrs.T.Mohanapriya",
+                  "designation": "Professional Assistant-II"
                 }
                     ]
 }

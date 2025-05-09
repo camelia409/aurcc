@@ -30,7 +30,6 @@
               <div class="flex-grow flex flex-col justify-center p-3 sm:p-4 md:p-6 bg-indigo-800 text-center w-full">
                 <h2 class="text-sm sm:text-lg md:text-2xl font-semibold text-white">{{ member.name }}</h2>
                 <p class="text-xs sm:text-sm md:text-lg text-white">{{ member.position || 'Position not available' }}</p>
-                <p class="text-xs sm:text-sm md:text-lg text-white">{{ member.email || 'Email not available' }}</p>
               </div>
             </div>
           </div>
@@ -58,7 +57,6 @@
               <div class="flex-grow flex flex-col justify-center p-3 sm:p-4 md:p-6 bg-indigo-800 text-center w-full">
                 <h2 class="text-sm sm:text-lg md:text-2xl font-semibold text-white">{{ member.name }}</h2>
                 <p class="text-xs sm:text-sm md:text-lg text-white">{{ member.position || 'Position not available' }}</p>
-                <p class="text-xs sm:text-sm md:text-lg text-white">{{ member.email || 'Email not available' }}</p>
               </div>
             </div>
           </div>
