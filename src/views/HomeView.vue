@@ -74,7 +74,7 @@
                       </svg>
                     </div>
                   </div>
-                  <h3 class="stat-value">Xth </h3>
+                  <h3 class="stat-value">7 th </h3>
                   <p class="stat-label">Rank in Coimbatore For TNEA </p>
                 </div>
               </div>
@@ -92,7 +92,7 @@
                       </svg>
                     </div>
                   </div>
-                  <h3 class="stat-value">Y Years</h3>
+                  <h3 class="stat-value">17 Years</h3>
                   <p class="stat-label">Of delivering quality education</p>
                 </div>
               </div>
