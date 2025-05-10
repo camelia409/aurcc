@@ -1,84 +1,77 @@
 <template>
-  <main class="flex-grow">
-    <!-- Hero section -->
-    <section 
-      class="bg-cover bg-center relative w-full h-40 sm:h-80 md:h-94 animate-fadeIn" 
-      :style="{ 
-        backgroundImage: `url(${backgroundImage})`
-      }">
-      <!-- Gradient Overlay -->
-      <div class="absolute inset-0 bg-black opacity-20"></div>
-      
-      <!-- Content Container -->
+  <main class="flex-grow font-serif">
+    <!-- Hero Section -->
+    <section
+      class="bg-cover bg-center relative w-full h-40 sm:h-80 md:h-94 animate-fadeIn"
+      :style="{ backgroundImage: `url('/offices.webp')` }"
+    >
+      <div class="absolute inset-0 bg-black opacity-30"></div>
       <div class="flex items-center justify-center h-full relative z-10 px-4">
-        <h1 class="md:text-4xl text-xl font-extrabold text-white drop-shadow-lg font-serif text-center animate-slideIn">
+        <h1 class="md:text-4xl text-xl font-extrabold text-white drop-shadow-lg text-center animate-slideIn">
           OFFICE OF AFFILIATION
         </h1>
       </div>
     </section>
 
-    <!-- Content sections with Vertical Tabs -->
-    <section class="mx-auto py-6 md:py-12 md:px-10 bg-indigo-100 rounded-lg">
-      <div class="relative flex flex-col md:px-8 px-4 md:flex-row">
-        <!-- Vertical Tabs -->
-        <div class="px-8 md:px-0">
-        <div class="flex-shrink-0 w-full h-max md:w-64 bg-gradient-to-r from-[#21209c] to-blue-600 rounded-lg shadow-lg p-4 mb-4 md:mb-0 md:mr-4">
-          <div class="relative p-4 rounded-lg">
-            <h2 class="text-2xl font-serif text-center text-white font-semibold">Sections</h2>
-          </div>
-          <div class="space-y-2 font-serif">
-            <button @click="currentSection = 'Description'" :class="{'bg-yellow-400 text-[#23120b]': currentSection === 'Description', 'bg-gray-100': currentSection !== 'Description'}" class="w-full py-2 px-4 rounded-md font-semibold hover:bg-yellow-400 hover:text-[#23120b]">Description</button>
-            <button @click="currentSection = 'officeBearer'" :class="{'bg-yellow-400 text-[#23120b]': currentSection === 'officeBearer', 'bg-gray-100': currentSection !== 'officeBearer'}" class="w-full py-2 px-4 rounded-md font-semibold hover:bg-yellow-400 hover:text-[#23120b]">Office Bearer</button>
-            <button @click="currentSection = 'affiliationStaff'" :class="{'bg-yellow-400 text-[#23120b]': currentSection === 'affiliationStaff', 'bg-gray-100': currentSection !== 'affiliationStaff'}" class="w-full py-2 px-4 rounded-md font-semibold hover:bg-yellow-400 hover:text-[#23120b]">Affiliation Administration Staff</button>
-            <button @click="currentSection = 'contactUs'" :class="{'bg-yellow-400 text-[#23120b]': currentSection === 'contactUs', 'bg-gray-100': currentSection !== 'contactUs'}" class="w-full py-2 px-4 rounded-md font-semibold hover:bg-yellow-400 hover:text-[#23120b]">Contact Us</button>
+    <!-- Tabs -->
+    <div class="sticky top-0 z-20 bg-white/95 backdrop-blur-sm shadow-lg rounded-full -mt-6 py-1 px-2 flex justify-center overflow-x-auto no-scrollbar">
+      <nav class="tabs flex space-x-2">
+        <button
+          v-for="section in sections"
+          :key="section.value"
+          @click="scrollToSection(section.value)"
+          :class="[
+            'font-medium px-4 py-2 rounded-full text-sm transition duration-300',
+            currentSection === section.value ? 'bg-indigo-600 text-white' : 'text-gray-700 hover:bg-gray-100'
+          ]"
+        >
+          {{ section.label }}
+        </button>
+      </nav>
+    </div>
+
+    <!-- Content Sections -->
+    <section class="max-w-6xl mx-auto px-4 md:px-8 py-8 space-y-10">
+      <!-- Description -->
+      <div :id="'Description'" class="scroll-mt-24">
+        <h2 class="text-2xl font-bold mb-4">About the Office</h2>
+        <p class="text-lg leading-relaxed text-gray-800">
+          {{ data.description['About Office of Affiliation and its activities'] }}
+        </p>
+      </div>
+
+      <!-- Staff Section -->
+      <div id="staff" ref="staff" class="bg-white px-4 sm:px-6 lg:px-8 py-12 rounded-2xl shadow scroll-mt-28">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-10 text-gray-800">Office of Affiliation Staff</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div
+            v-for="staff in data.staff"
+            :key="staff.name"
+            class="bg-white border rounded-xl shadow-sm overflow-hidden text-center"
+          >
+            <div class="bg-gradient-to-r from-indigo-600 to-indigo-400 h-2"></div>
+            <div class="p-6">
+              <img
+                :src="`/${staff.image}`"
+                :alt="staff.name"
+                class="w-28 h-28 mx-auto rounded-full border-2 border-indigo-100 shadow object-cover"
+              />
+              <h3 class="mt-4 text-xl font-semibold text-gray-800">{{ staff.name }}</h3>
+              <p class="text-indigo-600 font-medium">{{ staff.position }}</p>
+            </div>
           </div>
         </div>
-        </div>
-        <!-- Tab Content -->
-        <div class="w-full px-0 md:px-10  font-serif min-h-[400px] max-h-[600px] md:max-h-[800px] overflow-y-auto">
+      </div>
 
-          <div v-if="currentSection === 'Description'" class="bg-white rounded-lg shadow-lg p-4 md:p-6 mb-16 animate-fadeIn" >
-            <h3 class="text-2xl md:text-3xl font-bold text-black mb-4">Description</h3>
-            <p class="text-base text-lg md:text-xl rounded-b-lg mb-8 text-black">{{ data.description['About Office of Affiliation and its activities'] }}</p>        
-          </div>
-          <!-- Office Bearer Section -->
 
-          <div v-else-if="currentSection === 'officeBearer'" class="bg-white rounded-lg shadow-lg p-4 md:p-6 mb-16 animate-fadeIn">
-            <h3 class="text-2xl md:text-3xl font-bold text-black mb-4">Office Bearer</h3>
-            <div v-if="data.office_bearers" class="text-base md:text-xl text-gray-900">
-              <div class="bg-white p-4 rounded-lg shadow-md mb-4">
-                <p><strong>Name:</strong> {{ data.office_bearers.name }}</p>
-                <p><strong>Qualification:</strong> {{ data.office_bearers.qualification }}</p>
-                <p><strong>Position:</strong> {{ data.office_bearers.position }}</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Affiliation Administration Staff Section -->
-          <div v-if="currentSection === 'affiliationStaff'" class="bg-white rounded-lg shadow-lg p-4 md:p-6 mb-16 animate-fadeIn">
-            <h3 class="text-2xl md:text-3xl font-bold text-black mb-4">Affiliation Administration Staff</h3>
-            <div v-if="data.affiliation_administration_staff" class="text-base md:text-xl text-gray-900">
-              <div v-for="staff in data.affiliation_administration_staff" :key="staff.name" class="bg-white p-4 rounded-lg shadow-md mb-4">
-                <p><strong>Name:</strong> {{ staff.name }}</p>
-                <p><strong>Position:</strong> {{ staff.position }}</p>
-                <p><strong>Phone:</strong> {{ staff.phone }}</p>
-                <p><strong>Email:</strong> {{ staff.email }}</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Contact Us Section -->
-          <div v-if="currentSection === 'contactUs'" class="bg-white rounded-lg shadow-lg p-4 md:p-6 mb-16 animate-fadeIn">
-            <h3 class="text-2xl md:text-3xl font-bold text-black mb-4">Contact Us</h3>
-            <div v-if="data.contact_details" class="text-base md:text-xl text-gray-900">
-              <div class="bg-white p-4 rounded-lg shadow-md">
-                <p><strong>Office:</strong> {{ data.contact_details.office }}</p>
-                <p><strong>Address:</strong> {{ data.contact_details.address }}</p>
-                <p><strong>Phone:</strong> {{ data.contact_details.phone }}</p>
-                <p><strong>Email:</strong> {{ data.contact_details.email }}</p>
-              </div>
-            </div>
-          </div>
+      <!-- Contact -->
+      <div :id="'Contact'" class="scroll-mt-24">
+        <h2 class="text-2xl font-bold mb-4">Contact Us</h2>
+        <div class="bg-white rounded-xl shadow-md p-6 text-gray-800 space-y-2">
+          <p><strong>Office:</strong> {{ data.contact_details.office }}</p>
+          <p><strong>Address:</strong> {{ data.contact_details.address }}</p>
+          <p><strong>Phone:</strong> {{ data.contact_details.phone }}</p>
+          <p><strong>Email:</strong> {{ data.contact_details.email }}</p>
         </div>
       </div>
     </section>
@@ -86,24 +79,41 @@
 </template>
 
 <script>
-import data from '../assets/office of affiliation.json';
-import backgroundImage from '@/assets/offices.webp';
+import data from '@/assets/office of affiliation.json';
+
 export default {
   data() {
     return {
-      data: data,
-      backgroundImage: backgroundImage,
-      currentSection: 'Description' // Default to 'officeBearer'
+      data,
+      currentSection: 'Description',
+      sections: [
+        { label: 'Description', value: 'Description' },
+        { label: 'Staff', value: 'Staff' },
+        { label: 'Contact Us', value: 'Contact' }
+      ]
     };
   },
+  methods: {
+    scrollToSection(id) {
+      this.currentSection = id;
+      const element = document.getElementById(id);
+      if (element) {
+        window.scrollTo({
+          top: element.offsetTop - 100,
+          behavior: 'smooth'
+        });
+      }
+    }
+  }
 };
 </script>
 
 <style scoped>
-/* Custom styles for the component */
-
-
-button.bg-white {
-  background-color: #fff;
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 </style>
