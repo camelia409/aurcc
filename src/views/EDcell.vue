@@ -4,7 +4,7 @@
     <section 
       class="bg-cover bg-center relative w-full h-40 sm:h-80 md:h-94 animate-fadeIn" 
       :style="{ 
-        backgroundImage: `url(${backgroundImage})`
+        backgroundImage: `url(/offices.webp)`
       }">
       <!-- Dark overlay -->
         <div class="absolute inset-0 bg-black opacity-20"></div>
@@ -103,13 +103,11 @@
 
 <script>
 import data from '../assets/ED-cell.json';
-import backgroundImage from '@/assets/offices.webp';  // Correct path for the image
 
 export default {
   data() {
     return {
       data: data,
-      backgroundImage: backgroundImage,
       activeTab: 'objectives' // Default active tab
     };
   }

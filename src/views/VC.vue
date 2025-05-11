@@ -2,7 +2,7 @@
   <main class="flex justify-center items-center min-h-screen bg-indigo-100 p-4">
     <div class="bg-white p-6 rounded-lg shadow-lg max-w-4xl w-full font-serif">
       <div class="text-center mb-6">
-        <img src="@/assets/velraj.webp" alt="Vice-Chancellor's Photo" class="w-60 h-full mx-auto rounded-lg shadow-md">
+        <img src="/velraj.webp" alt="Vice-Chancellor's Photo" class="w-60 h-full mx-auto rounded-lg shadow-md">
         <h2 class="mt-4 font-bold text-xl md:text-2xl">Dr. R. Velraj</h2>
         <a href="#" @click.prevent="openPopover" class="text-blue-500 hover:underline">View Profile</a>
       </div>
@@ -20,7 +20,7 @@
         <h1 class="text-3xl font-bold text-blue-500 text-center mb-10">PROFILE</h1>
         <div class="flex flex-col md:flex-row">
           <div class="text-center md:text-left md:mr-8 mb-6 md:mb-0">
-            <img src="@/assets/velraj.webp" alt="Profile Picture" class="h-64 w-48 rounded-lg shadow-lg mx-auto md:mx-0">
+            <img src="/velraj.webp" alt="Profile Picture" class="h-64 w-48 rounded-lg shadow-lg mx-auto md:mx-0">
             <h2 class="mt-4 text-lg font-semibold">{{ selectedStaff.name }}</h2>
           </div>
           <div class="flex-grow space-y-6">

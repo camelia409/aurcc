@@ -4,7 +4,7 @@
     <section 
       class="bg-cover bg-center relative w-full h-40 sm:h-80 md:h-94 animate-fadeIn" 
       :style="{ 
-        backgroundImage: `url(${backgroundImage})`
+        backgroundImage: `url(/offices.webp)`
       }">
       <!-- Dark overlay -->
         <div class="absolute inset-0 bg-black opacity-20"></div>
@@ -58,7 +58,7 @@
           </div>
           <div v-else-if="currentSection === 'Placed Students'" class="bg-white rounded-lg shadow-lg p-4 md:p-6 mb-16 animate-fadeIn">
             <h2 class="text-2xl md:text-3xl font-bold text-black mb-4">Placed Students</h2>
-            <img :src="placedStudentsImage" alt="Placed Students" class="w-full h-auto rounded-md shadow-lg" />
+            <img src="/Placedstudents.webp" alt="Placed Students" class="w-full h-auto rounded-md shadow-lg" />
           </div>
           <div v-else-if="currentSection === 'Staff Members'" class="bg-white rounded-lg shadow-lg p-4 md:p-6 mb-16 animate-fadeIn">
             <h2 class="text-2xl md:text-3xl font-bold text-black mb-4">Staff Members</h2>
@@ -79,18 +79,16 @@
 <script>
 import data from '../assets/placement-cell.json';
 import recruitersPDF from '../assets/placementBrochure.pdf';
-import placedStudentsImage from '../assets/Placedstudents.webp';
-import backgroundImage from '@/assets/offices.webp';
 
 
 export default {
   data() {
     return {
       data: data,
-      backgroundImage:backgroundImage,
+      backgroundImage: "/offices.webp",
       currentSection: 'Recruitment Process', // Default to first section
       recruitersPDF,
-      placedStudentsImage,
+      placedStudentsImage: "/Placedstudents.webp",
     };
   }
 };

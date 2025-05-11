@@ -3,7 +3,7 @@
     <!-- Hero Section -->
     <section 
       class="bg-cover md:bg-center relative -z-10 w-full h-60 sm:h-80 md:h-94 animate-fadeIn"
-      :style="{ backgroundImage: `url(${backgroundImage})` }"
+      :style="{ backgroundImage: `url(/library.webp)` }"
     >
       <div class="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div>
       <div class="container py-8 md:py-24 text-center relative z-10 px-4">
@@ -182,13 +182,11 @@
 
 
 <script>
-import backgroundImage from '@/assets/library.webp';
 import libraryData from '../assets/library.json';
 
 export default {
   data() {
     return {
-      backgroundImage,
       libraryData,
       sections: [
         'About Library',

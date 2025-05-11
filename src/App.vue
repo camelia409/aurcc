@@ -361,7 +361,7 @@ export default {
           name: "Offices",
           isOpen: false,
           links: [
-            { name: "Admission", route: "/admission" },
+            { name: "Admission", route: "/admissions" },
             { name: "DGATE Cell", route: "/dgate" },
             { name: "PACE Cell", route: "/pace-cell" },
             { name: "Zonal Office", route: "/zonal" },

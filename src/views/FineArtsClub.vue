@@ -4,7 +4,7 @@
     <section 
       class="bg-cover md:bg-center relative -z-10 w-full h-48 sm:h-64 md:h-94  animate-fadeIn" 
       :style="{ 
-        backgroundImage: `url(${backgroundImage})`, 
+        backgroundImage: `url(/fac.webp)`, 
         backgroundSize: 'cover',
         backgroundPosition: 'top center' 
       }">
@@ -56,11 +56,9 @@
 
 <script>
 import data from '../assets/fine arts.json';
-import backgroundImage from '@/assets/fac.webp';  // Correct path for the image
 export default {
   data() {
     return {
-      backgroundImage: backgroundImage,
       description: data.description,
       officeBearers: data.office_bearers,
       coordinator: data.Coordinator
