@@ -1,24 +1,20 @@
 {
-  "name": "Office of Affiliation",
   "description": {
-     "About Office of Affiliation and its activities": "functioning as a liaisoning office between University and the Affiliated Institutions and effectively facilitating the granting of affiliation to the affiliated institutions in Coimbatore Region in each and every year as directed by the Director, Centre for Affiliation of Institutions, Anna University, Chennai."
+    "About Office of Affiliation and its activities": "Functioning as a liaisoning office between the University and the affiliated institutions and effectively facilitating the granting of affiliation to the affiliated institutions in Coimbatore Region every year as directed by the Director, Centre for Affiliation of Institutions, Anna University, Chennai."
   },
-  "important_links": {
-    "Affiliated Colleges - Coimbatore Region": "https://www.annauniv.edu/cai/Regioncoimbatore.php",
-    "CAI - Web Portal":"https://cai1.annauniv.edu/cai/index.php",
-    "AICTE Approval Process Handbook 2020 - 21":"chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/http://www.aurcc.ac.in/centres/Affiliation/APH%202020-21.pdf"
-  },
-  "office_bearers": {
-    "name": "Dr. S. MARSHAL ANTHONI",
-    "qualification": "M.Sc., M.Phil., Ph.D.",
-    "position": "Deputy Director Affiliation"
-  },
-  "affiliation_administration_staff": [
+  "staff": [
+    {
+      "name": "Dr. S. MARSHAL ANTHONI",
+      "qualification": "M.Sc., M.Phil., Ph.D.",
+      "position": "Deputy Director - Affiliation",
+      "image": "Marshal.webp"
+    },
     {
       "name": "Mr. R. Hamsaraj",
-      "position": "Executive Asst(Admin)",
+      "position": "Executive Asst (Admin)",
       "phone": "0422-2984010",
-      "email": "aucbeaffln@gmail.com"
+      "email": "aucbeaffln@gmail.com",
+      "image": "staff/hamsaraj.jpg"
     }
   ],
   "contact_details": {
