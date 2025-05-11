@@ -1,5 +1,5 @@
 <template>
-  <main class="flex-grow">
+  <main class="flex-grow font-serif">
     <!-- Hero Section -->
     <section
       class="bg-cover bg-center relative w-full h-40 sm:h-80 md:h-94"
@@ -14,25 +14,34 @@
     </section>
 
     <!-- Tabs -->
-    <div class="sticky top-0 z-20 bg-white/95 backdrop-blur-sm shadow-lg rounded-full -mt-6 py-1 px-2 flex justify-center overflow-x-auto no-scrollbar">
-      <nav class="tabs flex space-x-2">
-        <button
-          v-for="section in sections"
-          :key="section.value"
-          @click="scrollToSection(section.value)"
-          :class="[
-            'font-medium px-4 py-2 rounded-full text-sm transition duration-300',
-            currentSection === section.value ? 'bg-indigo-600 text-white' : 'text-gray-700 hover:bg-gray-100'
-          ]"
+    <div class="sticky top-0 z-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div
+          class="bg-white/95 backdrop-blur-sm shadow-lg rounded-full -mt-6 py-1 px-2 flex justify-center overflow-x-auto no-scrollbar"
         >
-          {{ section.label }}
-        </button>
-      </nav>
+          <nav role="tablist" class="tabs flex space-x-1 md:space-x-2">
+            <button
+              role="tab"
+              v-for="(section, index) in sections"
+              :key="section.key"
+              @click="scrollToSection(section.key)"
+              :class="[
+                'font-medium px-4 md:px-5 py-2 md:py-3 rounded-full text-sm md:text-base transition duration-300 whitespace-nowrap',
+                currentSection === section.key
+                  ? 'bg-indigo-600 text-white'
+                  : 'text-gray-700 hover:bg-gray-100'
+              ]"
+            >
+              {{ section.label }}
+            </button>
+          </nav>
+        </div>
+      </div>
     </div>
 
     <!-- Content -->
     <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-12" ref="contentWrapper">
-      
+
       <!-- Description -->
       <div id="description" ref="description" class="bg-white rounded-2xl shadow p-6 md:p-10 scroll-mt-28">
         <h2 class="text-3xl font-bold mb-4 text-indigo-700">Description</h2>
@@ -95,51 +104,44 @@ export default {
       zonalListPDF,
       currentSection: 'description',
       backgroundImage: '/offices.webp',
+      currentYear: new Date().getFullYear(),
       sections: [
-        { label: 'Description', value: 'description' },
-        { label: 'Zone List of Colleges', value: 'zoneList' },
-        { label: 'Staff', value: 'staff' }
+        { label: 'Description', key: 'description' },
+        { label: 'Zone List of Colleges', key: 'zoneList' },
+        { label: 'Staff', key: 'staff' }
       ]
     };
   },
-  computed: {
-    currentYear() {
-      return new Date().getFullYear();
-    }
+  mounted() {
+    window.addEventListener('scroll', this.onScroll);
+  },
+  beforeDestroy() {
+    window.removeEventListener('scroll', this.onScroll);
   },
   methods: {
-    scrollToSection(section) {
-      const target = this.$refs[section];
-      if (target?.scrollIntoView) {
-        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        this.currentSection = section;
+    scrollToSection(id) {
+      const section = this.$refs[id];
+      if (section?.scrollIntoView) {
+        section.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }
     },
-    handleScroll() {
-      const buffer = 200;
-      const scrollY = window.scrollY + buffer;
+    onScroll() {
       for (const section of this.sections) {
-        const el = this.$refs[section.value];
-        if (el && el.offsetTop <= scrollY && el.offsetTop + el.offsetHeight > scrollY) {
-          this.currentSection = section.value;
-          break;
+        const el = this.$refs[section.key];
+        if (el) {
+          const rect = el.getBoundingClientRect();
+          if (rect.top <= 200 && rect.bottom > 200) {
+            this.currentSection = section.key;
+            break;
+          }
         }
       }
     }
-  },
-  mounted() {
-    window.addEventListener('scroll', this.handleScroll);
-  },
-  beforeUnmount() {
-    window.removeEventListener('scroll', this.handleScroll);
   }
 };
 </script>
 
 <style scoped>
-.font-serif {
-  font-family: 'Georgia', 'Times New Roman', Times, serif;
-}
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
@@ -147,7 +149,16 @@ export default {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
-.scroll-mt-28 {
-  scroll-margin-top: 7rem;
+.section-box {
+  background: white;
+  padding: 2.5rem 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  scroll-margin-top: 6rem;
+}
+.section-title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
 }
 </style>

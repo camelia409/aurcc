@@ -13,7 +13,7 @@
       </div>
     </section>
 
-    <!-- Navigation Tabs - Modern floating design -->
+    <!-- Navigation Tabs -->
     <div class="sticky top-0 z-20">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div
@@ -21,7 +21,6 @@
         >
           <nav role="tablist" class="tabs flex space-x-1 md:space-x-2">
             <button
-              role="tab"
               v-for="(section, index) in sections"
               :key="index"
               @click="scrollToSection(section.key)"
@@ -87,40 +86,26 @@
       </div>
 
       <!-- Staff -->
-      <div :id="'staff'" ref="staff" class="section-box">
-        <h2 class="section-title">Staff</h2>
-        <div
-          v-for="person in data.staff"
-          :key="person.name"
-          class="flex flex-col md:flex-row items-center md:items-start bg-indigo-50 rounded-xl p-6 md:p-8 mb-6 shadow-md gap-6"
-        >
-          <div class="flex-shrink-0">
-            <img
-              :src="staffImage"
-              alt="Staff Photo"
-              class="w-40 h-40 md:w-48 md:h-48 object-cover rounded-2xl border-4 border-white shadow-lg"
-            />
-          </div>
-          <div class="text-center md:text-left space-y-1">
-            <h3 class="text-2xl font-bold text-indigo-800">{{ person.name }}</h3>
-            <p><strong>Position:</strong> {{ person.position }}</p>
-            <p><strong>University:</strong> {{ person.university }}</p>
-            <p><strong>Address:</strong> {{ person.address }}</p>
-            <p><strong>Phone:</strong> {{ person.phone }}</p>
-            <p>
-              <strong>Email:</strong>
-              <a :href="`mailto:${person.email}`" class="text-blue-600 underline">{{ person.email }}</a>
-            </p>
+      <div :id="'staff'" ref="staff" class="bg-white px-4 sm:px-6 lg:px-8 py-12 rounded-2xl shadow scroll-mt-28">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-10 text-gray-800">Staff</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div
+            v-for="staff in data.staff"
+            :key="staff.name"
+            class="bg-white border rounded-xl shadow-sm overflow-hidden text-center"
+          >
+            <div class="bg-gradient-to-r from-blue-400 to-blue-300 h-2"></div>
+            <div class="p-6">
+              <img
+                :src="`/${staff.image}`"
+                :alt="staff.name"
+                class="w-28 h-28 mx-auto rounded-full border-2 border-amber-100 shadow object-cover"
+              />
+              <h3 class="mt-4 text-xl font-semibold text-gray-800">{{ staff.name }}</h3>
+              <p class="text-blue-600 font-medium">{{ staff.position }}</p>
+            </div>
           </div>
         </div>
-      </div>
-
-      <!-- Contact -->
-      <div :id="'contact'" ref="contact" class="section-box">
-        <h2 class="section-title">Contact Us</h2>
-        <p class="mb-2"><strong>Address:</strong> {{ data.contact_us.address }}</p>
-        <p class="mb-2"><strong>Phone:</strong> {{ data.contact_us.phone }}</p>
-        <p><strong>Email:</strong> <a :href="`mailto:${data.contact_us.email}`" class="text-blue-600 underline">{{ data.contact_us.email }}</a></p>
       </div>
     </section>
   </main>
@@ -136,13 +121,12 @@ export default {
       data: admissionData[0],
       backgroundImage: '/offices.webp',
       flowchartImage: '/admission-flowchart.webp',
-      staffImage: '/rathinasamy.webp',
       sections: [
         { key: 'overview', label: 'Overview' },
         { key: 'courses_offered', label: 'Courses Offered' },
         { key: 'eligibility', label: 'Eligibility Criteria' },
         { key: 'staff', label: 'Staff' },
-        { key: 'contact', label: 'Contact Us' },
+        // You can add contact section later
       ],
       currentSection: 'overview',
     };
@@ -150,7 +134,7 @@ export default {
   mounted() {
     window.addEventListener('scroll', this.onScroll);
   },
-  beforeDestroy() {
+  beforeUnmount() {
     window.removeEventListener('scroll', this.onScroll);
   },
   methods: {

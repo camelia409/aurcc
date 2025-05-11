@@ -103,14 +103,14 @@
       },
       "staff": [
         {
+          "name": "Dr. Suganthalakshmi T",
+          "position": "TFC-62 Coordinator",
+          "image": "suganthalakshmi.webp"
+        },
+        {
           "name": "Dr. M. Rathinasamy",
           "position": "Deputy Manager (Finance)",
-          "department": "Admission Cell",
-          "university": "Anna University Regional Campus, Coimbatore",
-          "address": "Maruthamalai Main Road, Coimbatore (Dt). Pin-641 046.",
-          "phone": "0422 2984009, 0422 2984011",
-          "email": "aurccadmissions@gmail.com",
-          "image": "path_to_image.jpg"
+          "image": "rathinasamy.webp"
         }
       ],
       "contact_us": {
