@@ -1,35 +1,37 @@
 {
-    "name": "PACE Cell (Performance Acceleration for Competitive Excellence)",
-    "description": "The PACE Cell, Anna University Regional Campus Coimbatore, is well equipped with various books on competitive exams. It oversees all awareness and training programs with the avowed objective of assisting student graduates from all departments to succeed in exams such as TNPSC, UPSC, Banking Exams, Railway Exams, and other Government exams. The PACE Cell has two Coordinators, two Assistant Coordinators as well as overall Student coordinators and Student Volunteers through them the cell ensures comprehensive support for students.",
-    "coordinators": [
-      {
-        "name": "Dr Jayaraman I.",
-        "position": "Assistant Librarian"
-      },
-      {
-        "name": "Dr L. Babitha",
-        "position": "Assistant Professor, S&H"
-      }
-    ],
-    "support_staff": [
-      "Mrs P. Shobana",
-      "Mr S.Suresh",
-      "Mrs S.Pandiarkkarasi"
-    ],
-    "student_volunteers": [
-      "Mr Hemanth D. (EEE)",
-      "Mr Kaleeshnaran (EEE)",
-      "Ms Abarna (EEE)",
-      "Mr Dharshan (EEE)",
-      "Ms Rubala (ECE)",
-      "Mr Ragul M (ECE)",
-      "Mr Santhosh V (Mech)",
-      "Mr Siva Santhosh N V (Mech)",
-      "Mr Jayasuriya R. K (CSE)",
-      "Ms Deepa C (CSE)"
-    ],
+  "description": "The PACE (Placement and Competitive Exam) Cell at Anna University Regional Campus Coimbatore plays a pivotal role in guiding and empowering students to excel in various government and competitive examinations. Established with the vision of nurturing career-ready graduates, the cell is well-equipped with a wide range of books, study materials, and online resources focusing on competitive exams such as TNPSC, UPSC, Banking, SSC, Railway, and other central and state-level government exams. The PACE Cell regularly organizes training programs, workshops, mock tests, and expert sessions to enhance students' general awareness, analytical thinking, and problem-solving skills. Through collaborations with subject matter experts and reputed training institutions, it ensures that students receive the best preparation guidance. Furthermore, the Cell provides continuous support via mentoring, peer groups, and dedicated volunteer teams. With two Coordinators, two Assistant Coordinators, overall Student Coordinators, and a committed team of Student Volunteers, the PACE Cell ensures a well-structured and inclusive support system that benefits students from all departments across the campus.",
+
+  "staff": [
+    {
+      "name": "Dr. Jayaraman I.",
+      "position": "Assistant Librarian",
+      "image": "bapitha.webp"
+    },
+    {
+      "name": "Dr. L. Babitha",
+      "position": "Assistant Professor, S&H",
+      "image": "bapitha.webp"
+    },
+    {
+      "name": "Mrs. P. Shobana",
+      "position": "Support Staff",
+      "image": "bapitha.webp"
+    },
+    {
+      "name": "Mr. S. Suresh",
+      "position": "Support Staff",
+      "image": "bapitha.webp"
+    },
+    {
+      "name": "Mrs. S. Pandiarkkarasi",
+      "position": "Support Staff",
+      "image": "bapitha.webp"
+    }
+  ],
+
+  "contact": {
     "email": "ijayaraman71@gmail.com",
     "phone": "+919566920349",
     "website": "https://drive.google.com/open?id=1WKjQt0IhIfX1bNiRC9-b17YAYNMTozzA"
   }
-  
+}

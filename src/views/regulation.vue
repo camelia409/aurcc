@@ -14,12 +14,35 @@
       </div>
     </section>
 
-    <!-- Background section below the hero -->
+    <!-- Tabs for UG and PG Programmes -->
+    <div class="sticky top-0 z-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-white/95 backdrop-blur-sm shadow-lg rounded-full -mt-6 py-1 px-2 flex justify-center overflow-x-auto no-scrollbar">
+          <nav role="tablist" class="tabs flex space-x-1 md:space-x-2">
+            <button
+              role="tab"
+              v-for="(section, index) in sections"
+              :key="section.key"
+              @click="selectTab(section.key)"
+              :class="[
+                'font-medium px-4 md:px-5 py-2 md:py-3 rounded-full text-sm md:text-base transition duration-300 whitespace-nowrap',
+                currentTab === section.key
+                  ? 'bg-indigo-600 text-white'
+                  : 'text-gray-700 hover:bg-gray-100'
+              ]"
+            >
+              {{ section.label }}
+            </button>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <!-- Content for selected tab -->
     <div class="bg-indigo-100 py-8 animate-fadeIn">
-      <!-- UG Programmes section -->
-      <section class="py-8 p-4 animate-popIn">
+      <section v-if="currentTab === 'ug'" class="py-8 p-4 animate-popIn">
         <div class="bg-white rounded-lg shadow-md">
-          <h2 class="text-xl md:text-3xl text-center font-serif font-bold p-3 rounded-t-lg bg-gradient-to-r from-blue-500 to-cyan-300 animate-fadeInUp">UG Programmes</h2>
+          <h2 class="text-xl md:text-3xl text-center font-serif font-bold p-3 rounded-t-lg">UG Programmes</h2>
           <div class="p-4 animate-fadeIn delay-1s">
             <iframe
               :src="ugPdfUrl"
@@ -30,10 +53,9 @@
         </div>
       </section>
 
-      <!-- PG Programmes section -->
-      <section class="py-8 p-4 animate-popIn">
+      <section v-if="currentTab === 'pg'" class="py-8 p-4 animate-popIn">
         <div class="bg-white rounded-lg shadow-md">
-          <h2 class="text-xl md:text-3xl text-center font-serif font-bold p-3 rounded-t-lg bg-gradient-to-r from-blue-500 to-cyan-300 animate-fadeInUp">PG Programmes</h2>
+          <h2 class="text-xl md:text-3xl text-center font-serif font-bold p-3 rounded-t-lg">PG Programmes</h2>
           <div class="p-4 animate-fadeIn delay-1s">
             <iframe
               :src="pgPdfUrl"
@@ -49,15 +71,25 @@
 
 <script>
 import ugPdf from '@/assets/ug_regulations.pdf';
-import pgPdf from '@/assets/pg_regulations.pdf';;  // Correct path for the image
+import pgPdf from '@/assets/pg_regulations.pdf'; // Correct path for the PDF files
 
 export default {
   data() {
     return {
       ugPdfUrl: ugPdf,
       pgPdfUrl: pgPdf,
+      currentTab: 'ug', // Default tab is UG
+      sections: [
+        { key: 'ug', label: 'UG Programmes' },
+        { key: 'pg', label: 'PG Programmes' }
+      ]
     };
   },
+  methods: {
+    selectTab(tabKey) {
+      this.currentTab = tabKey;
+    }
+  }
 };
 </script>
 
@@ -98,6 +130,8 @@ h2.animate-fadeInUp {
   animation: fadeIn 2s ease-out forwards;
 }
 
-/* Add delay utility class */
-
+/* Tabs styles */
+.tabs button {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
 </style>

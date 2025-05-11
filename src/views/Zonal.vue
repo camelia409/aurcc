@@ -1,58 +1,85 @@
 <template>
-  <main class="flex-grow">
-    <!-- Hero section -->
-    <section 
-      class="bg-cover bg-center relative w-full h-40 sm:h-80 md:h-94 animate-fadeIn" 
-      :style="{ 
-        backgroundImage: `url(${backgroundImage})`
-      }">
-      <!-- Gradient Overlay -->
+  <main class="flex-grow font-serif">
+    <!-- Hero Section -->
+    <section
+      class="bg-cover bg-center relative w-full h-40 sm:h-80 md:h-94"
+      :style="{ backgroundImage: `url(${backgroundImage})` }"
+    >
       <div class="absolute inset-0 bg-black opacity-20"></div>
-      
-      <!-- Content Container -->
       <div class="flex items-center justify-center h-full relative z-10 px-4">
-        <h1 class="md:text-4xl text-xl font-extrabold text-white drop-shadow-lg font-serif text-center animate-slideIn">
+        <h1 class="md:text-4xl text-xl font-extrabold text-white drop-shadow-lg font-serif text-center">
           ZONAL OFFICE
         </h1>
       </div>
     </section>
 
-    <!-- Vertical Tabs Section -->
-    <section class="mx-auto py-6 md:py-12 md:px-10 bg-indigo-100 rounded-lg">
-      <div class="relative flex flex-col md:px-8 px-4 md:flex-row">
-        <!-- Vertical Tabs -->
-        <div class="px-8 md:px-0">
-        <div class="flex-shrink-0 w-full h-max md:w-64 bg-gradient-to-r from-[#21209c] to-blue-600 rounded-lg shadow-lg p-4 mb-4 md:mb-0 md:mr-4">
-          <div class="relative p-4 rounded-lg">
-            <h2 class="text-2xl font-serif text-center text-white font-semibold">Sections</h2>
-          </div>
-          <div class="space-y-2 font-serif mt-4">
-            <button @click="activeTab = 'description'" :class="{'bg-yellow-400 text-[#23120b]': activeTab === 'description', 'bg-white text-gray-800': activeTab !== 'description'}" class="w-full py-2 px-4 rounded-md font-semibold hover:bg-yellow-400 hover:text-[#23120b]">Description</button>
-            <button @click="activeTab = 'zoneList'" :class="{'bg-yellow-400 text-[#23120b]': activeTab === 'zoneList', 'bg-white text-gray-800': activeTab !== 'zoneList'}" class="w-full py-2 px-4 rounded-md font-semibold hover:bg-yellow-400 hover:text-[#23120b]">Zone List of Colleges</button>
-            <button @click="activeTab = 'officeBearers'" :class="{'bg-yellow-400 text-[#23120b]': activeTab === 'officeBearers', 'bg-white text-gray-800': activeTab !== 'officeBearers'}" class="w-full py-2 px-4 rounded-md font-semibold hover:bg-yellow-400 hover:text-[#23120b]">Office Bearers</button>
-          </div>
+    <!-- Tabs -->
+    <div class="sticky top-0 z-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div
+          class="bg-white/95 backdrop-blur-sm shadow-lg rounded-full -mt-6 py-1 px-2 flex justify-center overflow-x-auto no-scrollbar"
+        >
+          <nav role="tablist" class="tabs flex space-x-1 md:space-x-2">
+            <button
+              role="tab"
+              v-for="(section, index) in sections"
+              :key="section.key"
+              @click="scrollToSection(section.key)"
+              :class="[
+                'font-medium px-4 md:px-5 py-2 md:py-3 rounded-full text-sm md:text-base transition duration-300 whitespace-nowrap',
+                currentSection === section.key
+                  ? 'bg-indigo-600 text-white'
+                  : 'text-gray-700 hover:bg-gray-100'
+              ]"
+            >
+              {{ section.label }}
+            </button>
+          </nav>
         </div>
-        </div>
+      </div>
+    </div>
 
-        <!-- Tab Content -->
-        <div class="w-full px-0 md:px-10  font-serif min-h-[400px] max-h-[600px] md:max-h-[800px] overflow-y-auto">
-          <div v-if="activeTab === 'description'" class="bg-white rounded-lg shadow-lg p-4 md:p-6 mb-16 animate-fadeIn">
-            <h3 class="text-2xl md:text-3xl font-bold text-black mb-4">Description</h3>
-            <ul class="text-lg md:text-xl font-medium text-gray-900 list-disc pl-6">
-              <li v-for="(desc, index) in data.description" :key="index">{{ desc }}</li>
-            </ul>
-          </div>
-          <div v-if="activeTab === 'zoneList'" class="bg-white rounded-lg shadow-lg p-4 md:p-6 mb-16 animate-fadeIn">
-            <h3 class="text-2xl md:text-3xl font-bold text-black mb-4">Zone List of Colleges</h3>
-            <iframe :src="zonalListPDF" class="w-full h-[500px] sm:h-[700px] rounded-lg border-2 border-gray-300 shadow-sm" frameborder="0"></iframe>
-          </div>
-          <div v-if="activeTab === 'officeBearers'" class="bg-white rounded-lg shadow-lg p-4 md:p-6 mb-16 animate-fadeIn">
-            <h3 class="text-2xl md:text-3xl font-bold text-black mb-4">Office Bearers</h3>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div v-for="bearer in data['Office bearers']" :key="bearer.name" class="p-6 rounded-lg bg-white shadow-md">
-                <h4 class="text-lg font-semibold">{{ bearer.name }}</h4>
-                <p>{{ bearer.designation }}</p>
-              </div>
+    <!-- Content -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-12" ref="contentWrapper">
+
+      <!-- Description -->
+      <div id="description" ref="description" class="bg-white rounded-2xl shadow p-6 md:p-10 scroll-mt-28">
+        <h2 class="text-3xl font-bold mb-4 text-indigo-700">Description</h2>
+        <ul class="list-disc pl-6 text-gray-800 text-lg space-y-2">
+          <li v-for="(desc, index) in zonalData.description" :key="index">
+            {{ desc }}
+          </li>
+        </ul>
+      </div>
+
+      <!-- PDF Section -->
+      <div id="zoneList" ref="zoneList" class="bg-white rounded-2xl shadow p-6 md:p-10 scroll-mt-28">
+        <h2 class="text-3xl font-bold mb-4 text-indigo-700">Zone List of Colleges</h2>
+        <iframe
+          :src="zonalListPDF"
+          class="w-full h-[500px] sm:h-[700px] rounded-lg border border-gray-300"
+          frameborder="0"
+        ></iframe>
+      </div>
+
+      <!-- Staff Section -->
+      <div id="staff" ref="staff" class="bg-white px-4 sm:px-6 lg:px-8 py-12 rounded-2xl shadow scroll-mt-28">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-10 text-gray-800">Zonal Office Staff</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div
+            v-for="staff in zonalData.staff"
+            :key="staff.name"
+            class="bg-white border rounded-xl shadow-sm overflow-hidden text-center"
+          >
+            <div class="bg-gradient-to-r from-blue-400 to-blue-300 h-2"></div>
+            <div class="p-6">
+              <img
+                :src="`/${staff.image}`"
+                :alt="staff.name"
+                class="w-28 h-28 mx-auto rounded-full border-2 border-amber-100 shadow object-cover"
+              />
+              <h3 class="mt-4 text-xl font-semibold text-gray-800">{{ staff.name }}</h3>
+              <p class="text-blue-600 font-medium">{{ staff.designation }}</p>
             </div>
           </div>
         </div>
@@ -60,45 +87,78 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-4">
-      <div class="container mx-auto text-center">
-        <p>&copy; {{ currentYear }} Zonal Office. All rights reserved.</p>
-      </div>
+    <footer class="bg-gray-800 text-white py-4 text-center">
+      <p>&copy; {{ currentYear }} Zonal Office. All rights reserved.</p>
     </footer>
   </main>
 </template>
 
 <script>
-import data from '../assets/zonaloffice.json';
-import zonalListPDF from '../assets/zonal-list.pdf';
-import backgroundImage from '@/assets/offices.webp';  // Correct path for the image
+import zonalData from '@/assets/zonaloffice.json';
+import zonalListPDF from '@/assets/zonal-list.pdf';
 
 export default {
   data() {
     return {
-      data: data[0],
-      backgroundImage: backgroundImage,
+      zonalData: zonalData[0],
       zonalListPDF,
-      activeTab: 'description', // Default active tab
+      currentSection: 'description',
+      backgroundImage: '/offices.webp',
+      currentYear: new Date().getFullYear(),
+      sections: [
+        { label: 'Description', key: 'description' },
+        { label: 'Zone List of Colleges', key: 'zoneList' },
+        { label: 'Staff', key: 'staff' }
+      ]
     };
   },
-  computed: {
-    currentYear() {
-      return new Date().getFullYear();
-    },
+  mounted() {
+    window.addEventListener('scroll', this.onScroll);
   },
+  beforeDestroy() {
+    window.removeEventListener('scroll', this.onScroll);
+  },
+  methods: {
+    scrollToSection(id) {
+      const section = this.$refs[id];
+      if (section?.scrollIntoView) {
+        section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    },
+    onScroll() {
+      for (const section of this.sections) {
+        const el = this.$refs[section.key];
+        if (el) {
+          const rect = el.getBoundingClientRect();
+          if (rect.top <= 200 && rect.bottom > 200) {
+            this.currentSection = section.key;
+            break;
+          }
+        }
+      }
+    }
+  }
 };
 </script>
 
 <style scoped>
-/* Font Styles */
-.font-sans {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
 }
-
-.font-serif {
-  font-family: 'Georgia', 'Times New Roman', Times, serif;
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
-
-
+.section-box {
+  background: white;
+  padding: 2.5rem 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  scroll-margin-top: 6rem;
+}
+.section-title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+}
 </style>

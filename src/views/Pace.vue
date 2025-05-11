@@ -1,110 +1,180 @@
 <template>
   <main class="flex-grow">
-    <!-- Hero section -->
-    <section 
-  class="bg-cover bg-center relative w-full h-40 sm:h-80 md:h-94 animate-fadeIn" 
-  :style="{ 
-    backgroundImage: `url(${backgroundImage})`
-  }">
-  <!-- Gradient Overlay -->
-  <div class="absolute inset-0 bg-black opacity-20"></div>
-  
-  <!-- Content Container -->
-  <div class="flex items-center justify-center h-full relative z-10 px-4">
-    <h1 class="md:text-4xl text-xl font-extrabold text-white drop-shadow-lg font-serif text-center animate-slideIn">
-      PACE CELL
-    </h1>
-  </div>
-</section>
-      
-    <!-- Vertical Tabs Section -->
-    <section class="mx-auto py-6 md:py-12 md:px-10 bg-indigo-100 rounded-lg">
-      <div class="relative flex flex-col md:px-8 px-4 md:flex-row">
-        <!-- Vertical Tabs -->
-        <div class="px-8 md:px-0">
-        <div class="flex-shrink-0 w-full h-max md:w-64 bg-gradient-to-r from-[#21209c] to-blue-600 rounded-lg shadow-lg p-4 mb-4 md:mb-0 md:mr-4">
-          <div class="relative p-4 rounded-lg">
-            <h2 class="text-2xl font-serif text-center text-white font-semibold">Sections</h2>
-          </div>
-          <div class="space-y-2 font-serif">
-            <button @click="currentSection = 'coordinators'" :class="{'bg-yellow-400 text-[#23120b]': currentSection === 'coordinators', 'bg-gray-100': currentSection !== 'coordinators'}" class="w-full py-2 px-4 rounded-md font-semibold hover:bg-yellow-400 hover:text-[#23120b]">Coordinators</button>
-            
-            <button @click="currentSection = 'support_staff'" v-if="paceData.support_staff.length" :class="{'bg-yellow-400 text-[#23120b]': currentSection === 'support_staff', 'bg-gray-100': currentSection !== 'support_staff'}" class="w-full py-2 px-4 rounded-md font-semibold hover:bg-yellow-400 hover:text-[#23120b]">Support Staff</button>
-            
-          </div>
-        </div>
-        </div>
+    <!-- Hero Section -->
+    <section
+      class="bg-cover bg-center relative w-full h-40 sm:h-80 md:h-94 animate-fadeIn"
+      :style="{ backgroundImage: `url(${backgroundImage})` }"
+    >
+      <div class="absolute inset-0 bg-black opacity-20"></div>
+      <div class="flex items-center justify-center h-full relative z-10 px-4">
+        <h1 class="md:text-4xl text-xl font-extrabold text-white drop-shadow-lg font-serif text-center animate-slideIn">
+          PACE CELL
+        </h1>
+      </div>
+    </section>
 
-        <!-- Tab Content -->
-        <div class="w-full px-0 md:px-10  font-serif min-h-[400px] max-h-[600px] md:max-h-[800px] overflow-y-auto">
-          <div v-if="currentSection === 'coordinators'"  class="bg-white rounded-lg shadow-lg p-4 md:p-6 mb-16 animate-fadeIn">
-            <h2 class="text-2xl md:text-3xl font-bold text-black mb-4">Coordinators</h2>
-            <div class="space-y-4">
-              <div v-for="(coordinator, index) in paceData.coordinators" :key="index" class="bg-white rounded-lg shadow-lg p-6">
-                <p class="text-xl font-semibold"><strong>Name:</strong> {{ coordinator.name }}</p>
-                <p class="text-xl"><strong>Position:</strong> {{ coordinator.position }}</p>
+    <!-- Sticky Modern Horizontal Tabs -->
+    <div class="sticky top-0 z-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-white/95 backdrop-blur-sm shadow-lg rounded-full -mt-6 py-1 px-2 flex justify-center overflow-x-auto no-scrollbar">
+          <nav role="tablist" class="tabs flex space-x-1 md:space-x-2">
+            <button
+              v-for="section in sections"
+              :key="section.value"
+              @click="scrollToSection(section.value)"
+              :class="{
+                'bg-indigo-600 text-white': currentSection === section.value,
+                'text-gray-700 hover:bg-gray-100': currentSection !== section.value
+              }"
+              class="font-medium px-4 md:px-5 py-2 md:py-3 rounded-full text-sm md:text-base transition duration-300 whitespace-nowrap"
+            >
+              {{ section.label }}
+            </button>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <!-- Content -->
+    <section
+      class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-12"
+      ref="contentWrapper"
+    >
+      <!-- Description Section -->
+      <div
+        id="description"
+        class="bg-white rounded-2xl shadow p-6 md:p-10 scroll-mt-28"
+      >
+        <h2 class="text-3xl font-bold mb-4 text-indigo-700">About the PACE Cell</h2>
+        <p class="text-lg leading-relaxed text-gray-800">
+          {{ paceData.description }}
+        </p>
+      </div>
+
+      <!-- Staff Section -->
+      <div
+        ref="staff"
+        id="staff"
+        class="bg-white px-4 sm:px-6 lg:px-8 py-12 rounded-2xl shadow scroll-mt-28"
+      >
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-10 text-gray-800">
+          PACE Cell Staff
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div
+            v-for="staff in paceData.staff"
+            :key="staff.name"
+            class="bg-white rounded-xl shadow-sm overflow-hidden flex flex-col border border-gray-100"
+          >
+            <div class="bg-gradient-to-r from-blue-400 to-blue-300 h-2"></div>
+            <div class="p-6 flex justify-center">
+              <div class="w-28 h-28 rounded-full overflow-hidden border-2 border-amber-100 shadow">
+                <img
+                  :src="getImageUrl(staff.image)"
+                  :alt="staff.name"
+                  class="w-full h-full object-cover"
+                />
               </div>
             </div>
+            <div class="flex-grow flex flex-col p-5 text-center">
+              <h2 class="text-xl font-bold text-gray-800 mb-1">{{ staff.name }}</h2>
+              <p class="text-blue-600 font-medium mb-2">{{ staff.position }}</p>
+            </div>
           </div>
-          <div v-if="currentSection === 'support_staff'"  class="bg-white rounded-lg shadow-lg p-4 md:p-6 mb-16 animate-fadeIn">
-            <h2 class="text-2xl md:text-3xl font-bold text-black mb-4">Support Staff</h2>
-            <ul class="list-disc pl-5 text-base md:text-xl text-gray-900">
-              <li v-for="(staff, index) in paceData.support_staff" :key="index">{{ staff }}</li>
-            </ul>
-          </div>
-          
         </div>
+      </div>
+
+      <!-- Contact Section -->
+      <div
+        ref="contact"
+        id="contact"
+        class="bg-white rounded-2xl shadow p-6 md:p-10 scroll-mt-28"
+      >
+        <h2 class="text-3xl font-bold mb-4">Contact Us</h2>
+        <ul class="text-lg space-y-2 text-gray-800">
+          <li>
+            <span class="font-semibold">Email:</span>
+            <a :href="`mailto:${paceData.contact.email}`" class="text-blue-600 underline">
+              {{ paceData.contact.email }}
+            </a>
+          </li>
+          <li><span class="font-semibold">Phone:</span> {{ paceData.contact.phone }}</li>
+          <li>
+            <span class="font-semibold">Website:</span>
+            <a :href="paceData.contact.website" class="text-blue-600 underline" target="_blank" rel="noopener">
+              Visit Link
+            </a>
+          </li>
+        </ul>
       </div>
     </section>
   </main>
 </template>
 
 <script>
-import paceData from '../assets/pace.json';
-import backgroundImage from '@/assets/offices.webp';  // Correct path for the image
+import paceData from '@/assets/pace.json';
 
 export default {
   data() {
     return {
       paceData,
-      backgroundImage: backgroundImage,
-      currentSection: 'coordinators', // Default active section
-      showFull: false, // To toggle full description
+      backgroundImage: '/offices.webp',
+      showFull: false,
+      currentSection: 'description',
+      sections: [
+        { label: 'Description', value: 'description' },
+        { label: 'Staff', value: 'staff' },
+        { label: 'Contact Us', value: 'contact' }
+      ]
     };
   },
   computed: {
     truncatedDescription() {
-      if (this.showFull || !this.isDescriptionLong) {
-        return this.paceData.description;
-      }
-      const firstFullStop = this.paceData.description.indexOf('.');
-      return this.paceData.description.slice(0, firstFullStop + 1);
+      const desc = this.paceData.description;
+      return desc.length > 120 ? desc.slice(0, desc.indexOf('.') + 1) : desc;
     },
     isDescriptionLong() {
-      return this.paceData.description.length > 100; // Adjust the length as needed
-    },
+      return this.paceData.description.length > 120;
+    }
   },
   methods: {
-    showFullDescription() {
-      this.showFull = true; // Show the full description when the button is clicked
+    scrollToSection(section) {
+      const el = this.$refs[section];
+      if (el?.scrollIntoView) {
+        el.scrollIntoView({ behavior: 'smooth' });
+        this.currentSection = section;
+      }
     },
+    getImageUrl(imageName) {
+      return `/${imageName}`;
+    },
+    handleScroll() {
+      const positions = Object.entries(this.$refs)
+        .filter(([key]) => ['description', 'staff', 'contact'].includes(key))
+        .map(([key, el]) => ({ key, top: el.getBoundingClientRect().top }));
+
+      const closest = positions.reduce((a, b) => Math.abs(b.top) < Math.abs(a.top) ? b : a);
+      this.currentSection = closest.key;
+    }
   },
+  mounted() {
+    window.addEventListener('scroll', this.handleScroll);
+  },
+  beforeUnmount() {
+    window.removeEventListener('scroll', this.handleScroll);
+  }
 };
 </script>
 
 <style scoped>
-/* Font Styles */
 .font-serif {
   font-family: 'Georgia', 'Times New Roman', Times, serif;
 }
-
-/* Hero section */
-
-
-
-/* Learn More Button Styling */
-
-
-/* Responsive Styles */
-
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
 </style>
