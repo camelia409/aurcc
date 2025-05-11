@@ -203,6 +203,16 @@ const router = createRouter({
       path: '/Grievence/',
       name: 'Grievence',
       component: ()=> import('../views/Grievence.vue')
+    },
+    {
+      path: '/news',
+      name: 'News',
+      component: () => import('@/views/NewsView.vue')
+    },
+    {
+      path: '/events',
+      name: 'Events',
+      component: () => import('@/views/EventsView.vue')
     }
   ]
 })

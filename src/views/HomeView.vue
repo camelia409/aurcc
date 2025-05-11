@@ -25,10 +25,14 @@
            <p class="text-xl md:text-2xl text-blue-200">
              Shaping Tomorrow's Leaders Today
            </p>
-           <div class="mt-10">
+           <div class="mt-10 flex justify-center gap-4">
              <a href="#programs" class="inline-block px-8 py-4 bg-white text-blue-900 rounded-full font-semibold 
                transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
                Explore Programs
+             </a>
+             <a href="#about" class="inline-block px-8 py-4 bg-blue-600 text-white rounded-full font-semibold 
+               transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
+               Campus Tour
              </a>
            </div>
          </div>
@@ -52,7 +56,7 @@
                       </svg>
                     </div>
                   </div>
-                  <h3 class="stat-value">X,000+</h3>
+                  <h3 class="stat-value">5,000+</h3>
                   <p class="stat-label">Global Alumni</p>
                 </div>
               </div>
@@ -74,8 +78,8 @@
                       </svg>
                     </div>
                   </div>
-                  <h3 class="stat-value">7 th </h3>
-                  <p class="stat-label">Rank in Coimbatore For TNEA </p>
+                  <h3 class="stat-value">7th</h3>
+                  <p class="stat-label">Rank in TNEA</p>
                 </div>
               </div>
             </div>
@@ -92,8 +96,8 @@
                       </svg>
                     </div>
                   </div>
-                  <h3 class="stat-value">17 Years</h3>
-                  <p class="stat-label">Of delivering quality education</p>
+                  <h3 class="stat-value">20+ Years</h3>
+                  <p class="stat-label">Of Excellence</p>
                 </div>
               </div>
             </div>
@@ -110,31 +114,36 @@
                       </svg>
                     </div>
                   </div>
-                  <h3 class="stat-value">Anna Univ</h3>
-                  <p class="stat-label">Reginal Campus</p>
+                  <h3 class="stat-value">100%</h3>
+                  <p class="stat-label">Placement Record</p>
                 </div>
               </div>
             </div>
-            <!-- Add other stat cards -->
           </div>
         </div>
       </section>
 
       <!-- About Section with Modern Design -->
-      <section id="about" class="container mx-auto px-14 relative py-20  overflow-hidden">
+      <section id="about" class="container mx-auto px-14 relative py-20 overflow-hidden">
         <div class="container mx-auto px-4">
           <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
             <!-- Main Content Area - Takes 8 of 12 columns on large screens -->
             <div class="lg:col-span-8 space-y-10">
               <!-- Section Title with Animated Underline -->
-              <h2 class="text-4xl md:text-5xl font-bold text-blue-900 relative  group">
+              <h2 class="text-4xl md:text-5xl font-bold text-blue-900 relative inline-block group">
                   ABOUT OUR CAMPUS
-                  <span class="absolute -bottom-3 left-1/2 transform -translate-x-1/2 h-1 w-52 bg-yellow-500"></span>
+                  <span class="absolute -bottom-3 left-0 h-1 w-52 bg-yellow-500"></span>
               </h2>
               <!-- About Text Card with Subtle Animation -->
               <div class="bg-white/80 backdrop-blur-sm rounded-xl shadow-xl p-8 border border-blue-200">
                 <p class="text-lg text-gray-700 leading-relaxed">
-                  The Regional Campus Coimbatore of Anna University, established in 2012, offers world-class education in Engineering and Technology. Nestled in a serene environment away from the city's hustle, our campus boasts state-of-the-art infrastructure and a team of highly qualified faculty members. The Department of Computer Science and Engineering aims at producing technically competent professionals who can excel in today's age of technology. Recognizing its role in engineering education, generation, and dissemination, the department is equipped with state-of-the-art facilities and relevant technologies. Computer Science or Computing Science is the scientific and mathematical approach to computation, specifically referring to the design of computing machines and processes.
+                  The Regional Campus Coimbatore of Anna University, established in 2012, offers world-class education in Engineering and Technology. Nestled in a serene environment away from the city's hustle, our campus boasts state-of-the-art infrastructure and a team of highly qualified faculty members dedicated to academic excellence.
+                </p>
+                <p class="text-lg text-gray-700 leading-relaxed mt-4">
+                  Our university is committed to holistic education with a focus on innovation, research, and industry collaboration. We provide an engaging learning environment where students can develop their technical skills, critical thinking abilities, and leadership qualities needed to excel in their chosen fields.
+                </p>
+                <p class="text-lg text-gray-700 leading-relaxed mt-4">
+                  The campus features modern laboratories, spacious classrooms, well-stocked libraries, and recreational facilities that enhance the overall student experience. Our commitment to excellence has earned us recognition as one of the top engineering institutions in the region.
                 </p>
               </div>
 
@@ -152,16 +161,18 @@
                   </div>
                   <div class="max-h-[300px] overflow-hidden">
                     <ul class="events-scroll w-full divide-y divide-gray-100">
-                      <li v-for="(item, index) in news" :key="index" class="flex items-center py-3 px-6 hover:bg-blue-50 transition-colors duration-200 group cursor-pointer">
+                      <li v-for="(item, index) in news" :key="index" class="flex font-bold items-center py-3 px-6 hover:bg-blue-50 transition-colors duration-200 group cursor-pointer">
                         <div class="mr-3 flex-shrink-0 w-2 h-2 bg-blue-500 rounded-full group-hover:scale-150 transition-transform duration-300"></div>
-                        <span class="transform translate-x-0 group-hover:translate-x-1 transition-transform duration-300 ease-out">{{ item }}</span>
+                        <a :href="item.url" class="transform translate-x-0 group-hover:translate-x-1 transition-transform duration-300 ease-out">{{ item.name }}</a>
                       </li>
                       <li class="flex items-center py-3 px-6 text-blue-600 font-medium group cursor-pointer hover:bg-blue-50">
                         <span class="flex items-center transform group-hover:translate-x-1 transition-transform duration-300">
-                          View All Announcements
-                          <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M5 12h14M12 5l7 7-7 7"></path>
-                          </svg>
+                          <router-link to="/news" class="flex items-center">
+                            View All Announcements
+                            <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                              <path d="M5 12h14M12 5l7 7-7 7"></path>
+                            </svg>
+                          </router-link>
                         </span>
                       </li>
                     </ul>
@@ -180,18 +191,18 @@
                   </div>
                   <div class="max-h-[300px] overflow-hidden">
                     <ul class="events-scroll w-full divide-y divide-gray-100">
-                      <li v-for="(str, index) in events" :key="index" class="py-3 px-6 hover:bg-blue-50 transition-colors duration-200 group cursor-pointer">
-                        <div class="flex items-center">
-                          <div class="mr-3 flex-shrink-0 w-2 h-2 bg-indigo-500 rounded-full group-hover:scale-150 transition-transform duration-300"></div>
-                          <span class="transform translate-x-0 group-hover:translate-x-1 transition-transform duration-300 ease-out">{{ str }}</span>
-                        </div>
+                      <li v-for="(item, index) in events" :key="index" class="flex font-bold items-center py-3 px-6 hover:bg-blue-50 transition-colors duration-200 group cursor-pointer">
+                        <div class="mr-3 flex-shrink-0 w-2 h-2 bg-indigo-500 rounded-full group-hover:scale-150 transition-transform duration-300"></div>
+                        <a :href="item.url" class="transform translate-x-0 group-hover:translate-x-1 transition-transform duration-300 ease-out">{{ item.name }}</a>
                       </li>
                       <li class="flex items-center py-3 px-6 text-indigo-600 font-medium group cursor-pointer hover:bg-blue-50">
                         <span class="flex items-center transform group-hover:translate-x-1 transition-transform duration-300">
-                          View All Events
-                          <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M5 12h14M12 5l7 7-7 7"></path>
-                          </svg>
+                          <router-link to="/events" class="flex items-center">
+                            View All Events
+                            <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                              <path d="M5 12h14M12 5l7 7-7 7"></path>
+                            </svg>
+                          </router-link>
                         </span>
                       </li>
                     </ul>
@@ -211,17 +222,30 @@
                 </h3>
                 
                 <div class="space-y-3">
-                  <!-- Online Grievance -->
+                  <!-- Online Application -->
                   <div class="group">
                     <div class="bg-white/10 hover:bg-white/20 rounded-lg p-4 flex items-center space-x-3 transition-all duration-300 transform hover:translate-x-2 cursor-pointer">
                       <div class="bg-blue-500/20 p-2 rounded-full">
                         <svg class="h-5 w-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                          <path d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-4l-4 4z"></path>
+                          <path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
                         </svg> 
                       </div>
-                      <h3 class="text-xl text-white font-medium">Help Desk</h3>
+                      <h3 class="text-xl text-white font-medium">Online Application</h3>
                     </div>
                   </div>
+                  
+                  <!-- Student Portal -->
+                  <div class="group">
+                    <div class="bg-white/10 hover:bg-white/20 rounded-lg p-4 flex items-center space-x-3 transition-all duration-300 transform hover:translate-x-2 cursor-pointer">
+                      <div class="bg-blue-500/20 p-2 rounded-full">
+                        <svg class="h-5 w-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                          <path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                        </svg>
+                      </div>
+                      <h3 class="text-xl text-white font-medium">Student Portal</h3>
+                    </div>
+                  </div>
+
                   <!-- AICTE & MOE Cell -->
                   <div class="group">
                     <div class="bg-white/10 hover:bg-white/20 rounded-lg p-4 flex items-center space-x-3 transition-all duration-300 transform hover:translate-x-2 cursor-pointer">
@@ -230,13 +254,13 @@
                           <path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
                         </svg>
                       </div>
-                      <h3 class="text-xl text-white font-medium">AICTE & MOE CELL</h3>
+                      <h3 class="text-xl text-white font-medium">AICTE Approval</h3>
                     </div>
                   </div>
 
                   <!-- Mandatory Disclosure -->
-                  <a href="https://drive.google.com/file/d/1z8ioKdQN0-fvahtIfneCPJI6i7j-YaFz/view" target="_blank" class="block group">
-                    <div class="bg-white/10 hover:bg-white/20 rounded-lg p-4 flex items-center space-x-3 transition-all duration-300 transform hover:translate-x-2">
+                  <div class="group">
+                    <div class="bg-white/10 hover:bg-white/20 rounded-lg p-4 flex items-center space-x-3 transition-all duration-300 transform hover:translate-x-2 cursor-pointer">
                       <div class="bg-indigo-500/20 p-2 rounded-full">
                         <svg class="h-5 w-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                           <path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
@@ -244,7 +268,7 @@
                       </div>
                       <h3 class="text-xl text-white font-medium">Mandatory Disclosure</h3>
                     </div>
-                  </a>
+                  </div>
 
                   <!-- Anti Ragging Cell -->
                   <div class="group">
@@ -258,65 +282,41 @@
                     </div>
                   </div>
 
-                  <!-- POSH CELL -->
-                  <a href="https://docs.google.com/forms/d/e/1FAIpQLScKl-8gkctBfoE_E0wYdYM6lhZ_GOUVKErLfBXQQLx7jfkPJQ/viewform" target="_blank" class="block group">
-                    <div class="bg-white/10 hover:bg-white/20 rounded-lg p-4 flex items-center space-x-3 transition-all duration-300 transform hover:translate-x-2">
+                  <!-- SC/ST Cell -->
+                  <div class="group">
+                    <div class="bg-white/10 hover:bg-white/20 rounded-lg p-4 flex items-center space-x-3 transition-all duration-300 transform hover:translate-x-2 cursor-pointer">
                       <div class="bg-purple-500/20 p-2 rounded-full">
                         <svg class="h-5 w-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                           <path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
                         </svg>
                       </div>
-                      <h3 class="text-xl text-white font-medium">POSH CELL</h3>
+                      <h3 class="text-xl text-white font-medium">SC/ST Cell</h3>
                     </div>
-                  </a>
+                  </div>
 
-                  <!-- Differently Abled Cell -->
-                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSdCUoPQpO0ZUonxAatNpgkXzVTqiTW6tVsUSViTVjkNRasMkA/viewform" target="_blank" class="block group">
-                    <div class="bg-white/10 hover:bg-white/20 rounded-lg p-4 flex items-center space-x-3 transition-all duration-300 transform hover:translate-x-2">
+                  <!-- Grievance Cell -->
+                  <div class="group">
+                    <div class="bg-white/10 hover:bg-white/20 rounded-lg p-4 flex items-center space-x-3 transition-all duration-300 transform hover:translate-x-2 cursor-pointer">
                       <div class="bg-blue-400/20 p-2 rounded-full">
-                        <svg class="h-5 w-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                          <path d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                        </svg>
-                      </div>
-                      <h3 class="text-xl text-white font-medium">Differently Abled Cell</h3>
-                    </div>
-                  </a>
-
-                  <!-- Prevention of Caste -->
-                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSct1Nzh8zasrBf1pL8TQeDVLpNTckhwPYJw8L_JAL4-e-VRrA/viewform" target="_blank" class="block group">
-                    <div class="bg-white/10 hover:bg-white/20 rounded-lg p-4 flex items-center space-x-3 transition-all duration-300 transform hover:translate-x-2">
-                      <div class="bg-green-500/20 p-2 rounded-full">
-                        <svg class="h-5 w-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                          <path d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path>
-                        </svg>
-                      </div>
-                      <h3 class="text-xl text-white font-medium">Prevention of Caste</h3>
-                    </div>
-                  </a>
-
-                  <!-- Anti-Drugs -->
-                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSenLuIhWEHNtty-CA7a2hMufyxj1sFLd-ET4geM3VvwN3KoHg/viewform" target="_blank" class="block group">
-                    <div class="bg-white/10 hover:bg-white/20 rounded-lg p-4 flex items-center space-x-3 transition-all duration-300 transform hover:translate-x-2">
-                      <div class="bg-orange-500/20 p-2 rounded-full">
-                        <svg class="h-5 w-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                          <path d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
-                        </svg>
-                      </div>
-                      <h3 class="text-xl text-white font-medium">Anti-Drugs</h3>
-                    </div>
-                  </a>
-
-                  <!-- Online Grievance -->
-                  <a href="https://docs.google.com/forms/d/e/1FAIpQLScNS4VLaepGgelMcCyQXkE0KyPLKUws4YQQeTmdvZDQKFFjJg/viewform" target="_blank" class="block group">
-                    <div class="bg-white/10 hover:bg-white/20 rounded-lg p-4 flex items-center space-x-3 transition-all duration-300 transform hover:translate-x-2">
-                      <div class="bg-teal-500/20 p-2 rounded-full">
                         <svg class="h-5 w-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                           <path d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-4l-4 4z"></path>
                         </svg>
                       </div>
-                      <h3 class="text-xl text-white font-medium">Online Grievance</h3>
+                      <h3 class="text-xl text-white font-medium">Grievance Cell</h3>
                     </div>
-                  </a>
+                  </div>
+
+                  <!-- NCC -->
+                  <div class="group">
+                    <div class="bg-white/10 hover:bg-white/20 rounded-lg p-4 flex items-center space-x-3 transition-all duration-300 transform hover:translate-x-2 cursor-pointer">
+                      <div class="bg-green-500/20 p-2 rounded-full">
+                        <svg class="h-5 w-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                          <path d="M3 21h18M3 10h18M3 7l9-4 9 4M4 10v11m16-11v11M8 14v3m4-3v3m4-3v3"></path>
+                        </svg>
+                      </div>
+                      <h3 class="text-xl text-white font-medium">NCC</h3>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -326,13 +326,13 @@
 
       <!-- Programs Showcase with Horizontal Scroll -->
       <section id="programs" class="py-20 bg-gradient-to-b from-white to-blue-50/50">
-        <div class="container mx-auto px-20">
+        <div class="container mx-auto px-6 md:px-20">
           <h2 class="text-4xl font-bold text-center mb-16 text-[#21209c] relative inline-block mx-auto">
             PROGRAMS OFFERED
             <span class="absolute -bottom-3 left-1/2 transform -translate-x-1/2 h-1 w-24 bg-yellow-500"></span>
           </h2>
           <div class="mt-16 relative">
-            <div class="program-scroll-container scrollbar-hide">
+            <div class="program-scroll-container">
               <div class="program-scroll-wrapper">
                 <!-- Program Cards -->
                 <div class="program-card">
@@ -342,9 +342,24 @@
                         d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                     </svg>
                   </div>
-                  <h3 class="program-title">Computer Science</h3>
+                  <h3 class="program-title">B.E. Computer Science Engineering</h3>
                   <p class="program-description">
                     Advanced computing, AI, and software engineering
+                  </p>
+                  <a href="departments/cse" class="program-link">Learn More →</a>
+                </div>
+
+                <!-- AI & Data Science -->
+                <div class="program-card">
+                  <div class="program-icon bg-purple-500">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                        d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                    </svg>
+                  </div>
+                  <h3 class="program-title">B.Tech Artificial Intelligence & Data Science</h3>
+                  <p class="program-description">
+                    Machine learning, data analytics, and artificial intelligence
                   </p>
                   <a href="departments/cse" class="program-link">Learn More →</a>
                 </div>
@@ -357,7 +372,7 @@
                         d="M13 10V3L4 14h7v7l9-11h-7z" />
                     </svg>
                   </div>
-                  <h3 class="program-title">Electrical Engineering</h3>
+                  <h3 class="program-title">B.E. Electrical Engineering</h3>
                   <p class="program-description">
                     Power systems, control systems, and electrical machines
                   </p>
@@ -372,12 +387,12 @@
                         d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
                     </svg>
                   </div>
-                  <h3 class="program-title">Electronics & Communication</h3>
+                  <h3 class="program-title">B.E. Electronics & Communication</h3>
                   <p class="program-description">
                     Digital electronics, communication systems, and signal processing
                   </p>
                   <a href="departments/ece" class="program-link">Learn More →</a>
-                </div>
+                </div>  
 
                 <!-- Mechanical -->
                 <div class="program-card">
@@ -388,28 +403,12 @@
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                     </svg>
                   </div>
-                  <h3 class="program-title">Mechanical Engineering</h3>
+                  <h3 class="program-title">B.E. Mechanical Engineering</h3>
                   <p class="program-description">
                     Design, manufacturing, and thermal engineering
                   </p>
                   <a href="departments/mech" class="program-link">Learn More →</a>
                 </div>
-
-                <!-- MBA -->
-                <div class="program-card">
-                  <div class="program-icon bg-purple-500">
-                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
-                        d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                  </div>
-                  <h3 class="program-title">MBA</h3>
-                  <p class="program-description">
-                    Business administration, management, and leadership
-                  </p>
-                  <a href="departments/mba" class="program-link">Learn More →</a>
-                </div>
-
               </div>
             </div>
           </div>
@@ -441,8 +440,133 @@
         </div>
       </section>
 
+      <!-- Campus Life Section -->
+      <section id="campus-life" class="py-24 bg-white">
+        <div class="container mx-auto px-6 md:px-20">
+          <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="text-4xl font-bold text-[#21209c] relative inline-block">
+              CAMPUS LIFE
+              <span class="absolute -bottom-3 left-1/2 transform -translate-x-1/2 h-1 w-24 bg-yellow-500"></span>
+            </h2>
+            <p class="mt-8 text-xl text-gray-700">
+              LIVELY AND HAPPY CAMPUS!
+            </p>
+            <p class="mt-4 text-gray-600">
+              Buzzing with lively and vibrant activities, our campus is always a fun-filled and happy place. 
+              After a rigorous day of learning, our students have a host of activities to indulge in and engage themselves.
+              Be it their love of music and dance, sweating it out in the sports field, or getting together with peers through club activities, 
+              the vibe around the campus is always <span class="font-bold">HAPPY AND UPBEAT!</span>
+            </p>
+          </div>
+          
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Campus Life Card 1 -->
+            <div class="rounded-xl overflow-hidden shadow-lg group">
+              <div class="relative h-64 overflow-hidden">
+                <img 
+                  src="/cse-girls-closeup.webp" 
+                  alt="State-of-the-art Labs" 
+                  class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                >
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-80"></div>
+                <div class="absolute bottom-0 left-0 p-6">
+                  <h3 class="text-xl font-bold text-white">Advanced Labs</h3>
+                  <p class="text-blue-200">Cutting-edge technology for hands-on learning</p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Campus Life Card 2 -->
+            <div class="rounded-xl overflow-hidden shadow-lg group">
+              <div class="relative h-64 overflow-hidden">
+                <img 
+                  src="/annual_day_dance.webp" 
+                  alt="Cultural Events" 
+                  class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                >
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-80"></div>
+                <div class="absolute bottom-0 left-0 p-6">
+                  <h3 class="text-xl font-bold text-white">Cultural Events</h3>
+                  <p class="text-blue-200">Celebrating talent and creativity</p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Campus Life Card 3 -->
+            <div class="rounded-xl overflow-hidden shadow-lg group">
+              <div class="relative h-64 overflow-hidden">
+                <img 
+                  src="/sports_day_parade.jpg" 
+                  alt="Sports Activities" 
+                  class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                >
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-80"></div>
+                <div class="absolute bottom-0 left-0 p-6">
+                  <h3 class="text-xl font-bold text-white">Sports Excellence</h3>
+                  <p class="text-blue-200">Promoting physical fitness and team spirit</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="flex justify-center mt-12 gap-4">
+            <a href="#campus-tour" class="inline-block px-8 py-4 bg-white border-2 border-blue-600 text-blue-600 rounded-full font-semibold 
+               transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
+              CAMPUS TOUR
+            </a>
+            <a href="/admissions" class="inline-block px-8 py-4 bg-blue-600 text-white rounded-full font-semibold 
+               transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
+              ADMISSIONS
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Hostel Section -->
+      <section id="hostel" class="py-24 bg-gradient-to-br from-blue-900 to-indigo-900 text-white">
+        <div class="container mx-auto px-6 md:px-20">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 class="text-4xl font-bold mb-6">HOSTEL</h2>
+              <h3 class="text-2xl font-semibold mb-4 text-blue-200">CREATING MEMORIES FOR LIFETIME!</h3>
+              <h4 class="text-xl font-semibold mb-6 text-blue-100">COZY ROOMS. COMFORTABLE STAY.</h4>
+              <p class="text-lg mb-6">
+                Well designed airy rooms, clean and fully equipped kitchens, dining space with multi cuisine food options, 
+                facilities like laundry, salon & supermarket, lots of greenery, unique seating spaces for friends to get together 
+                and have casual conversations, extended lab facilities for students to work after college hours – forms a part of 
+                our hostel experience.
+              </p>
+              <p class="text-lg mb-8">
+                Extended learning is a big part of hostel life. Our hostel at night, with beautiful lighting and the young 
+                energetic vibe of students, is a must-see for all! In a nutshell, our hostel will provide the ambience to relax, 
+                enjoy a variety of tasty food, and also to collaborate and grow in the company of peers.
+              </p>
+              <a href="#hostel-details" class="inline-block px-8 py-4 bg-white text-blue-900 rounded-full font-semibold 
+                transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
+                KNOW MORE
+              </a>
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+              <div class="rounded-xl overflow-hidden shadow-lg">
+                <img src="/cse-girls-closeup.webp" alt="Hostel Room" class="w-full h-full object-cover">
+              </div>
+              <div class="rounded-xl overflow-hidden shadow-lg">
+                <img src="/computer-lab.webp" alt="Hostel Dining" class="w-full h-full object-cover">
+              </div>
+              <div class="rounded-xl overflow-hidden shadow-lg">
+                <img src="/1.webp" alt="Hostel Common Area" class="w-full h-full object-cover">
+              </div>
+              <div class="rounded-xl overflow-hidden shadow-lg">
+                <img src="/4.webp" alt="Hostel Night View" class="w-full h-full object-cover">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gallery Section -->
       <section id="gallery" class="py-20 bg-white overflow-hidden w-full">
-        <div class="container mx-auto px-20">
+        <div class="container mx-auto px-6 md:px-20">
           <h2 class="text-4xl font-bold text-center mb-16 text-[#21209c] relative inline-block mx-auto">
             Gallery of Memories
             <span class="absolute -bottom-3 left-1/2 transform -translate-x-1/2 h-1 w-24 bg-yellow-500"></span>
@@ -492,8 +616,79 @@
         </div>
       </section>
 
+      <!-- Alumni Testimonials Section -->
+      <section id="alumni" class="py-24 bg-gray-50">
+        <div class="container mx-auto px-6 md:px-20">
+          <h2 class="text-4xl font-bold text-center mb-16 text-[#21209c] relative inline-block mx-auto">
+            ALUMNI SPEAK
+            <span class="absolute -bottom-3 left-1/2 transform -translate-x-1/2 h-1 w-24 bg-yellow-500"></span>
+          </h2>
+          <p class="text-center text-xl mb-16">Here's what our successful Alumni have to say about Anna University!</p>
 
-
+          <!-- Testimonial Slider -->
+          <div class="relative">
+            <div class="overflow-hidden">
+              <div class="flex transition-transform duration-700 ease-in-out" :style="{ transform: `translateX(-${currentIndex * 100}%)` }">
+                <div v-for="(testimonial, index) in testimonials" :key="index" class="flex-shrink-0 w-full">
+                  <div class="bg-white rounded-xl shadow-xl overflow-hidden max-w-4xl mx-auto">
+                    <div class="grid grid-cols-1 md:grid-cols-3">
+                      <div class="md:col-span-1 bg-gradient-to-br from-blue-600 to-indigo-900 p-8 flex flex-col justify-center">
+                        <img 
+                          :src="testimonial.image" 
+                          :alt="testimonial.name" 
+                          class="w-32 h-32 rounded-full object-cover border-4 border-white mx-auto mb-4"
+                        >
+                        <h3 class="text-xl font-bold text-white text-center">{{ testimonial.name }}</h3>
+                        <p class="text-blue-200 text-center">{{ testimonial.branch }}</p>
+                        <p class="text-blue-200 text-center">{{ testimonial.batch }}</p>
+                        <p class="text-white font-semibold text-center mt-2">Placed in <span class="text-yellow-300">{{ testimonial.company }}</span></p>
+                      </div>
+                      <div class="md:col-span-2 p-8 flex items-center">
+                        <div>
+                          <svg class="w-12 h-12 text-blue-200 mb-4" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                          </svg>
+                          <p class="text-gray-700 text-lg mb-6 leading-relaxed">{{ testimonial.message }}</p>
+                          <div class="flex space-x-1">
+                            <svg v-for="star in 5" :key="star" class="w-5 h-5 text-yellow-500" fill="currentColor" viewBox="0 0 20 20">
+                              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118l-2.8-2.034c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Navigation Buttons -->
+            <button @click="prevSlide" class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-[#21209c]/80 text-white p-3 rounded-full cursor-pointer hover:bg-[#21209c] transition-colors z-30 focus:outline-none shadow-lg">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+              </svg>
+            </button>
+            <button @click="nextSlide" class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-[#21209c]/80 text-white p-3 rounded-full cursor-pointer hover:bg-[#21209c] transition-colors z-30 focus:outline-none shadow-lg">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
+            
+            <!-- Dots -->
+            <div class="flex justify-center mt-8">
+              <div class="flex space-x-2">
+                <button 
+                  v-for="(_, index) in testimonials" 
+                  :key="index" 
+                  @click="goToSlide(index)" 
+                  class="h-1 w-4 md:w-8 mx-1 focus:outline-none transition-colors rounded-full shadow-sm hover:shadow-md transform hover:scale-105 duration-300"
+                  :class="index === currentIndex ? 'bg-indigo-600' : 'bg-indigo-300'"
+                ></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <!-- Chatbot button -->
       <button
@@ -588,7 +783,7 @@ export default {
           batch: '2015 Batch',
           company: 'SIEMENS',
           message: 'I am truly proud to have graduated from Anna University. The exceptional opportunities provided here enabled me to excel in every aspect, leading to my employment at Siemens, Bangalore.',
-          image: "../assets/pic1.webp",
+          image: "/pic1.webp",
         },
         {
           name: 'Pathi R',
@@ -596,7 +791,7 @@ export default {
           batch: '2016 Batch',
           company: 'Google',
           message: 'My journey at Anna University was transformative. The rigorous curriculum and supportive faculty prepared me well for the challenges in the tech industry.',
-          image: "../assets/pic2.webp",
+          image: "/pic2.webp",
         },
         {
           name: 'Priya S',
@@ -604,33 +799,46 @@ export default {
           batch: '2017 Batch',
           company: 'Tesla',
           message: 'The hands-on experience and industry exposure at Anna University were invaluable. It gave me the confidence to pursue my dreams and land a job at Tesla.',
-          image: "../assets/pic3.webp",
+          image: "/pic3.webp",
         },
       ],
       currentIndex: 0,
       galleryImages: [
-        { src: '/1.webp', alt: 'Gallery Image 1', description: 'This is a dummy event description, lykky means like you know you know' },
-        { src: '/cse-girls-closeup.webp', alt: 'Gallery Image 2', description: 'This is a dummy event description, lykky means like you know you know' },
-        { src: '/4.webp', alt: 'Gallery Image 2', description: 'This is a dummy event description, lykky means like you know you know' },
-        { src: '/computer-lab.webp', alt: 'Gallery Image 3', description: 'This is a dummy event description, lykky means like you know you know' },
-        { src: '/4.webp', alt: 'Gallery Image 2', description: 'This is a dummy event description, lykky means like you know you know' },
-        { src: '/cse-girls-closeup.webp', alt: 'Gallery Image 2', description: 'This is a dummy event description, lykky means like you know you know' },
+        { src: '/1.webp', alt: 'College Event', description: 'Annual cultural festival celebrating diverse talents' },
+        { src: '/cse-girls-closeup.webp', alt: 'Students in Lab', description: 'Students collaborating on innovative projects' },
+        { src: '/4.webp', alt: 'Campus View', description: 'Our beautiful campus surrounded by greenery' },
+        { src: '/computer-lab.webp', alt: 'Computer Lab', description: 'State-of-the-art computer lab with latest equipment' },
+        { src: '/Drone_shot.jpg', alt: 'Aerial View', description: 'Aerial view of our sprawling campus facilities' },
       ],
-      currentImageIndex: 1,
-      news:[
-        "This is news one just made testing purpose, and this has to be reasonably long you right and i thing this is enough",
-        "List of the Selected Students under AICTE-Pragati Scholarship Scheme(Degree) - 2020-21",
-        "Fees payment procedures for Admission - 2023",
-        "Campus Placement Drive (2021 - 2025) - Batch Students - 'E-CON SYSTEMS'",
-        "AICTE – SAKSHAM SCHOLARSHIP SCHEME FOR SPECIALLY-ABLED STUDENT (DEGREE) - 2020-21",
+      currentImageIndex: 0,
+      news: [
+        { name: "On Going Placement Drives and Drives Completed - 2025 Batch", url: "http://aurcc.ac.in/loginpage/loginpage/uploads/Placed%202025.jpg" },
+        { name: "Engagement for Project Assistant(Pr.A1) CMRG project at Department of Mechanical Engineering - AURCC", url: "http://aurcc.ac.in/loginpage/loginpage/uploads/388.pdf" },
+        { name: "Access to Anna University E-Resource Consortium", url: "http://aurcc.ac.in/loginpage/loginpage/uploads/382.pdf" },
+        { name: "Fees for UG / PG Students - 2024 - 2025", url: "http://aurcc.ac.in/loginpage/loginpage/uploads/352.pdf" },
+        { name: "UG / PG Hostel Fee Structure for New Admission - 2024 - 2025", url: "http://aurcc.ac.in/loginpage/loginpage/uploads/355.pdf" },
+        { name: "SCOUT(Scholarship for Outstanding Undergraduate talent) Winners in Naan Mudhalvan Scheme", url: "http://aurcc.ac.in/loginpage/loginpage/uploads/374.jpeg" },
+        { name: "QS WORLD UNIVERSITY RANKINGS - 2025 - ANNA UNIVERSITY 383rd RANK", url: "http://aurcc.ac.in/loginpage/loginpage/uploads/375.jpg" },
+        { name: "Placement Statistics - 2020 Batch Students", url: "http://aurcc.ac.in/loginpage/loginpage/uploads/373.pdf" },
+        { name: "Placed Students (Batch - 2020 - 2024 )", url: "http://aurcc.ac.in/loginpage/loginpage/uploads/Placed.jpeg" },
+        { name: "JRF Application Form for MeitY Project", url: "http://aurcc.ac.in/loginpage/loginpage/uploads/370.pdf" },
       ],
       events: [
-        "This is events one just made testing purpose, and this has to be reasonably long you right and i thing this is enough",
-        "Annd I will younk this a lot of times and then i will consider this is as a absolute win for me and you as well, but who are u btw.",
-        "This is events one just made testing purpose, and this has to be reasonably long you right and i thing this is enough",
-        "This is events one just made testing purpose, and this has to be reasonably long you right and i thing this is enough",
-        "This is events one just made testing purpose, and this has to be reasonably long you right and i thing this is enough",
-      ]
+        { name: "FORSCH 25 - National Level TECHNO CULTURAL FEST by Dept. of Mechanical Engineering", url: "https://forsch25.com/" },
+        { name: "International Womens Day Celebrations at AURCC", url: "http://aurcc.ac.in/loginpage/loginpage/uploads/387.pdf" },
+        { name: "SC - ST Fresh Scholarship form - 2024-2025", url: "http://aurcc.ac.in/loginpage/loginpage/uploads/364.pdf" },
+        { name: "SC - ST Renewal Scholarship form - 2024-2025", url: "http://aurcc.ac.in/loginpage/loginpage/uploads/365.pdf" },
+        { name: "BC - MBC Fresh Scholarship form - 2024-2025", url: "http://aurcc.ac.in/loginpage/loginpage/uploads/362.pdf" },
+        { name: "BC - MBC Renewal Scholarship form - 2024-2025", url: "http://aurcc.ac.in/loginpage/loginpage/uploads/363.pdf" },
+        { name: "SC-ST Special Higher Education Scholarship 2022-23 (Hostelers)-UG", url: "http://aurcc.ac.in/loginpage/loginpage/uploads/347.pdf" },
+        { name: "AICTE – SWANATH SCHOLARSHIP SCHEME FOR STUDENTS – 2021-22", url: "http://aurcc.ac.in/loginpage/loginpage/uploads/312.pdf" },
+        { name: "AICTE – PRAGATI SCHOLARSHIP SCHEME FOR GIRL STUDENTS - Degree - 2020-21", url: "http://aurcc.ac.in/loginpage/loginpage/uploads/313.pdf" },
+        { name: "AICTE – SAKSHAM SCHOLARSHIP SCHEME FOR SPECIALLY-ABLED STUDENT (DEGREE) - 2020-21", url: "http://aurcc.ac.in/loginpage/loginpage/uploads/314.pdf" },
+        { name: "List of the Selected Students under AICTE-Pragati Scholarship Scheme(Degree) - 2020-21", url: "http://aurcc.ac.in/loginpage/loginpage/uploads/315.pdf" },
+        { name: "Scholarship - List of Beneficiaries", url: "http://aurcc.ac.in/loginpage/loginpage/uploads/249.pdf" },
+      ],
+      touchStartX: 0,
+      touchEndX: 0,
     };
   },
   computed: {
@@ -668,6 +876,22 @@ export default {
     },
     nextImage() {
       this.currentImageIndex = (this.currentImageIndex + 1) % this.galleryImages.length;
+    },
+    touchStart(e) {
+      this.touchStartX = e.changedTouches[0].screenX;
+    },
+    touchMove(e) {
+      // Optional: could implement real-time dragging here
+    },
+    touchEnd(e) {
+      this.touchEndX = e.changedTouches[0].screenX;
+      if (this.touchStartX - this.touchEndX > 50) {
+        // Swiped left
+        this.nextImage();
+      } else if (this.touchEndX - this.touchStartX > 50) {
+        // Swiped right
+        this.prevImage();
+      }
     },
     toggleChatbot() {
       this.showChatbot = !this.showChatbot;
@@ -755,6 +979,20 @@ export default {
   to { transform: scale(1.2); }
 }
 
+@keyframes popIn {
+  0% { transform: scale(0.8); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.animate-subtle-zoom {
+  animation: subtleZoom 10s ease-in-out infinite alternate;
+}
+
 /* Modern Component Styles */
 .perspective {
   perspective: 1000px;
@@ -773,6 +1011,14 @@ export default {
 .stat-icon-circle {
   @apply w-16 h-16 rounded-full bg-gradient-to-r from-blue-500 to-indigo-500 
     flex items-center justify-center text-white;
+}
+
+.stat-value {
+  @apply text-3xl font-bold text-gray-900 mb-2;
+}
+
+.stat-label {
+  @apply text-gray-600;
 }
 
 .modern-section-title {
@@ -795,7 +1041,7 @@ export default {
 }
 
 .program-card {
-  @apply bg-white rounded-xl p-8 shadow-lg transform hover:-translate-y-2 transition-all duration-300;
+  @apply bg-white rounded-xl p-8 shadow-lg transform hover:-translate-y-2 transition-all duration-300 w-72;
 }
 
 .program-icon {
@@ -807,7 +1053,7 @@ export default {
 }
 
 .program-description {
-  @apply text-gray-600 mb-6;
+  @apply text-gray-600 mb-6 h-20;
 }
 
 .program-link {
@@ -820,6 +1066,7 @@ export default {
   background-size: 200% 200%;
   animation: gradient 15s ease infinite;
 }
+
 /* Glass Card Effect */
 .glass-card {
   @apply bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl;
@@ -928,5 +1175,24 @@ export default {
 .hover-shadow:hover {
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
   transition: box-shadow 0.3s ease;
+}
+
+/* Details animation for FAQs */
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+@keyframes slideDown {
+  from { opacity: 0; height: 0; padding-top: 0; padding-bottom: 0; }
+  to { opacity: 1; height: var(--auto-height, auto); padding-top: 1rem; padding-bottom: 1rem; }
+}
+
+details[open] > *:not(summary) {
+  animation: slideDown 0.3s ease-in-out;
+}
+
+details > summary {
+  list-style: none;
+  transition: all 0.3s;
 }
 </style>
