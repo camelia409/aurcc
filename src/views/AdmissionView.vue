@@ -128,18 +128,15 @@
 
 <script>
 import admissionData from '../assets/admission.json';
-import backgroundImage from '@/assets/offices.webp';
-import flowchartImage from '@/assets/admission-flowchart.webp';
-import staffImage from '@/assets/rathinasamy.webp';
 
 export default {
   name: 'AdmissionSection',
   data() {
     return {
       data: admissionData[0],
-      backgroundImage,
-      flowchartImage,
-      staffImage,
+      backgroundImage : '/offices.webp',
+      flowchartImage: '/admission-flowchart.webp',
+      staffImage: '/rathinasamy.webp',
       currentSection: 'overview',
       sections: [
         { key: 'overview', label: 'Overview' },
