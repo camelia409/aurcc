@@ -258,7 +258,7 @@
               <li><a href="#" class="text-blue-200 hover:text-white transition-colors duration-300">About Us</a></li>
               <li><a href="#" class="text-blue-200 hover:text-white transition-colors duration-300">Academics</a></li>
               <li><a href="#" class="text-blue-200 hover:text-white transition-colors duration-300">Admissions</a></li>
-              <li><a href="#" class="text-blue-200 hover:text-white transition-colors duration-300">Contact</a></li>
+              <li><a href="https://colab.research.google.com/drive/1ITG9eiVOIUpZPnQThBsW-eAQG1-zB3rg?usp=sharing" class="text-blue-200 hover:text-white transition-colors duration-300">Contact</a></li>
             </ul>
           </div>
           
