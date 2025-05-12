@@ -14,6 +14,23 @@
            <div class="absolute inset-0 opacity-35 bg-slate-950"></div>
          </div>
  
+         <!-- Background sketch pattern -->
+         <div class="absolute inset-0 overflow-hidden pointer-events-none opacity-5 mix-blend-overlay">
+           <div class="absolute inset-0">
+             <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+               <pattern id="circuit-pattern" width="200" height="200" patternUnits="userSpaceOnUse">
+                 <path d="M50 0 L50 50 L100 50 M150 0 L150 50 L100 50 M100 50 L100 100 M0 100 L50 100 M50 100 L50 150 L100 150 M150 150 L200 150 M150 100 L150 200" fill="none" stroke="white" stroke-width="1.5"/>
+                 <circle cx="50" cy="50" r="5" fill="white"/>
+                 <circle cx="150" cy="50" r="5" fill="white"/>
+                 <circle cx="100" cy="100" r="5" fill="white"/>
+                 <circle cx="50" cy="150" r="5" fill="white"/>
+                 <circle cx="150" cy="150" r="5" fill="white"/>
+               </pattern>
+               <rect width="100%" height="100%" fill="url(#circuit-pattern)" />
+             </svg>
+           </div>
+         </div>
+ 
          <!-- Ensure Text is Visible -->
          <div class="relative text-center px-4 max-w-5xl mx-auto z-20">
            <h1 class="text-4xl md:text-7xl font-bold text-white mb-6 tracking-tight">
@@ -125,6 +142,22 @@
 
       <!-- About Section with Modern Design -->
       <section id="about" class="container mx-auto px-14 relative py-20 overflow-hidden">
+        <!-- Background sketch pattern -->
+        <div class="absolute inset-0 overflow-hidden pointer-events-none opacity-10">
+          <div class="absolute inset-0">
+            <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+              <pattern id="dots-pattern" width="40" height="40" patternUnits="userSpaceOnUse">
+                <circle cx="2" cy="2" r="1" fill="#2563eb"/>
+                <circle cx="20" cy="20" r="1" fill="#2563eb"/>
+                <circle cx="38" cy="38" r="1" fill="#2563eb"/>
+                <circle cx="2" cy="38" r="1" fill="#2563eb"/>
+                <circle cx="38" cy="2" r="1" fill="#2563eb"/>
+              </pattern>
+              <rect width="100%" height="100%" fill="url(#dots-pattern)" />
+            </svg>
+          </div>
+        </div>
+        
         <div class="container mx-auto px-4">
           <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
             <!-- Main Content Area - Takes 8 of 12 columns on large screens -->
@@ -146,7 +179,7 @@
                   The campus features modern laboratories, spacious classrooms, well-stocked libraries, and recreational facilities that enhance the overall student experience. Our commitment to excellence has earned us recognition as one of the top engineering institutions in the region.
                 </p>
               </div>
-
+              
               <!-- News and Events Cards with Modern Design -->
               <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <!-- News/Admissions Card -->
@@ -325,8 +358,20 @@
       </section>
 
       <!-- Programs Showcase with Horizontal Scroll -->
-      <section id="programs" class="py-20 bg-gradient-to-b from-white to-blue-50/50">
-        <div class="container mx-auto px-6 md:px-20">
+      <section id="programs" class="py-20 bg-gradient-to-b from-white to-blue-50/50 relative">
+        <!-- Background sketch pattern -->
+        <div class="absolute inset-0 overflow-hidden pointer-events-none opacity-10">
+          <div class="absolute inset-0">
+            <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+              <pattern id="hexagon-pattern" width="100" height="100" patternUnits="userSpaceOnUse">
+                <path d="M50 0 L87.5 25 L87.5 75 L50 100 L12.5 75 L12.5 25 Z" fill="none" stroke="#2563eb" stroke-width="1"/>
+              </pattern>
+              <rect width="100%" height="100%" fill="url(#hexagon-pattern)" />
+            </svg>
+          </div>
+        </div>
+        
+        <div class="container mx-auto px-6 md:px-20 relative z-10">
           <h2 class="text-4xl font-bold text-center mb-16 text-[#21209c] relative inline-block mx-auto">
             PROGRAMS OFFERED
             <span class="absolute -bottom-3 left-1/2 transform -translate-x-1/2 h-1 w-24 bg-yellow-500"></span>
@@ -416,8 +461,20 @@
       </section>
 
             <!-- Dean's Message Section - Modern Glass Design -->
-            <section id="deans-message" class="py-24 bg-gradient-to-br from-blue-900 to-indigo-900 text-white">
-        <div class="container mx-auto px-6">
+            <section id="deans-message" class="py-24 bg-gradient-to-br from-blue-900 to-indigo-900 text-white relative">
+        <!-- Background sketch pattern -->
+        <div class="absolute inset-0 overflow-hidden pointer-events-none opacity-10">
+          <div class="absolute inset-0">
+            <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+              <pattern id="wave-pattern" width="100" height="20" patternUnits="userSpaceOnUse">
+                <path d="M0 10 Q 12.5 0, 25 10 T 50 10 T 75 10 T 100 10" fill="none" stroke="white" stroke-width="1"/>
+              </pattern>
+              <rect width="100%" height="100%" fill="url(#wave-pattern)" />
+            </svg>
+          </div>
+        </div>
+        
+        <div class="container mx-auto px-6 relative z-10">
           <h2 class="text-4xl font-bold text-center mb-12">From the Dean's Desk</h2>
           <div class="flex flex-col md:flex-row items-center bg-white bg-opacity-10 rounded-lg shadow-xl overflow-hidden backdrop-filter backdrop-blur-lg">
             <div class="md:w-1/3">
@@ -441,8 +498,20 @@
       </section>
 
       <!-- Campus Life Section -->
-      <section id="campus-life" class="py-24 bg-white">
-        <div class="container mx-auto px-6 md:px-20">
+      <section id="campus-life" class="py-24 bg-white relative">
+        <!-- Background sketch pattern -->
+        <div class="absolute inset-0 overflow-hidden pointer-events-none opacity-10">
+          <div class="absolute inset-0">
+            <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+              <pattern id="triangle-pattern" width="60" height="60" patternUnits="userSpaceOnUse">
+                <path d="M0 60 L30 0 L60 60 Z" fill="none" stroke="#2563eb" stroke-width="1"/>
+              </pattern>
+              <rect width="100%" height="100%" fill="url(#triangle-pattern)" />
+            </svg>
+          </div>
+        </div>
+        
+        <div class="container mx-auto px-6 md:px-20 relative z-10">
           <div class="text-center max-w-3xl mx-auto mb-16">
             <h2 class="text-4xl font-bold text-[#21209c] relative inline-block">
               CAMPUS LIFE
@@ -523,8 +592,22 @@
       </section>
 
       <!-- Hostel Section -->
-      <section id="hostel" class="py-24 bg-gradient-to-br from-blue-900 to-indigo-900 text-white">
-        <div class="container mx-auto px-6 md:px-20">
+      <section id="hostel" class="py-24 bg-gradient-to-br from-blue-900 to-indigo-900 text-white relative">
+        <!-- Background sketch pattern -->
+        <div class="absolute inset-0 overflow-hidden pointer-events-none opacity-10">
+          <div class="absolute inset-0">
+            <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+              <pattern id="square-pattern" width="40" height="40" patternUnits="userSpaceOnUse">
+                <rect x="1" y="1" width="38" height="38" fill="none" stroke="white" stroke-width="1"/>
+                <line x1="0" y1="20" x2="40" y2="20" stroke="white" stroke-width="0.5"/>
+                <line x1="20" y1="0" x2="20" y2="40" stroke="white" stroke-width="0.5"/>
+              </pattern>
+              <rect width="100%" height="100%" fill="url(#square-pattern)" />
+            </svg>
+          </div>
+        </div>
+        
+        <div class="container mx-auto px-6 md:px-20 relative z-10">
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 class="text-4xl font-bold mb-6">HOSTEL</h2>
@@ -565,8 +648,21 @@
       </section>
 
       <!-- Gallery Section -->
-      <section id="gallery" class="py-20 bg-white overflow-hidden w-full">
-        <div class="container mx-auto px-6 md:px-20">
+      <section id="gallery" class="py-20 bg-white overflow-hidden w-full relative">
+        <!-- Background sketch pattern -->
+        <div class="absolute inset-0 overflow-hidden pointer-events-none opacity-10">
+          <div class="absolute inset-0">
+            <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+              <pattern id="circle-pattern" width="60" height="60" patternUnits="userSpaceOnUse">
+                <circle cx="30" cy="30" r="15" fill="none" stroke="#2563eb" stroke-width="1"/>
+                <circle cx="30" cy="30" r="5" fill="none" stroke="#2563eb" stroke-width="0.5"/>
+              </pattern>
+              <rect width="100%" height="100%" fill="url(#circle-pattern)" />
+            </svg>
+          </div>
+        </div>
+        
+        <div class="container mx-auto px-6 md:px-20 relative z-10">
           <h2 class="text-4xl font-bold text-center mb-16 text-[#21209c] relative inline-block mx-auto">
             Gallery of Memories
             <span class="absolute -bottom-3 left-1/2 transform -translate-x-1/2 h-1 w-24 bg-yellow-500"></span>
@@ -617,8 +713,21 @@
       </section>
 
       <!-- Alumni Testimonials Section -->
-      <section id="alumni" class="py-24 bg-gray-50">
-        <div class="container mx-auto px-6 md:px-20">
+      <section id="alumni" class="py-24 bg-gray-50 relative">
+        <!-- Background sketch pattern -->
+        <div class="absolute inset-0 overflow-hidden pointer-events-none opacity-10">
+          <div class="absolute inset-0">
+            <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+              <pattern id="zigzag-pattern" width="100" height="20" patternUnits="userSpaceOnUse">
+                <path d="M0 0 L20 10 L0 20 L20 30 L0 40 L20 50 L0 60 L20 70 L0 80" fill="none" stroke="#2563eb" stroke-width="1"/>
+                <path d="M50 0 L70 10 L50 20 L70 30 L50 40 L70 50 L50 60 L70 70 L50 80" fill="none" stroke="#2563eb" stroke-width="1"/>
+              </pattern>
+              <rect width="100%" height="100%" fill="url(#zigzag-pattern)" />
+            </svg>
+          </div>
+        </div>
+        
+        <div class="container mx-auto px-6 md:px-20 relative z-10">
           <h2 class="text-4xl font-bold text-center mb-16 text-[#21209c] relative inline-block mx-auto">
             ALUMNI SPEAK
             <span class="absolute -bottom-3 left-1/2 transform -translate-x-1/2 h-1 w-24 bg-yellow-500"></span>
