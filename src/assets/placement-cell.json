@@ -10,12 +10,14 @@
               {
                   "si.no": 1,
                   "name": "Dr. Preethi AP/CSE",
-                  "designation": "Placement Coordinator"
+                  "designation": "Placement Coordinator",
+                   "image": "preethi.webp"
                 },
                 {
                   "si.no": 2,
                   "name": "Dr. T. Suganthalakshmi AP/MBA",
-                  "designation": "Placement Coordinator"
+                  "designation": "Placement Coordinator",
+                  "image":"suganthalakshmi.webp"
                 },
                
                 {

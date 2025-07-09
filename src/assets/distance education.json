@@ -13,18 +13,21 @@
   ],
   "staff": [
     {
-      "name": "Dr. M.V. Subha",
-      "position": "Associate Professor",
-      "department": "Dept of Management Studies",
-      "university": "Anna University Regional Campus",
-      "address": "Navavoor, Coimbatore-641 046"
-    },
-    {
-      "name": "Mr. Karthikeyan",
-      "position": "Assistant Professor",
-      "department": "Dept of Management Studies",
-      "university": "Anna University Regional Campus",
-      "address": "Navavoor, Coimbatore-641 046"
-    }
+  "name": "Dr. M.V. Subha",
+  "position": "Associate Professor",
+  "department": "Dept of Management Studies",
+  "university": "Anna University Regional Campus",
+  "address": "Navavoor, Coimbatore-641 046",
+  "image": "subha.webp"
+},
+{
+  "name": "Mr. Karthikeyan",
+  "position": "Assistant Professor",
+  "department": "Dept of Management Studies",
+  "university": "Anna University Regional Campus",
+  "address": "Navavoor, Coimbatore-641 046",
+  "image": "karthikeyan.webp"
+}
+
   ]
 }

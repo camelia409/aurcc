@@ -1,76 +1,96 @@
 <template>
   <div class="flex-grow">
     <!-- Hero Section -->
-    <section 
-      class="bg-cover bg-center relative w-full h-40 sm:h-80 md:h-94 animate-fadeIn" 
-      :style="{ 
-        backgroundImage: `url(/offices.webp)`
-      }">
-      <!-- Dark overlay -->
-        <div class="absolute inset-0 bg-black opacity-20"></div>
-        
-        <!-- Centered text -->
-        <div class="flex items-center justify-center h-full relative z-10 px-4">
-          <h1 class="md:text-4xl text-xl font-extrabold text-white drop-shadow-lg font-serif text-center animate-slideIn">
-            PLACEMENT CELL
-          </h1>
-        </div>
+    <section
+      class="bg-cover bg-center relative w-full h-40 sm:h-80 md:h-94 animate-fadeIn"
+      :style="{ backgroundImage: `url(${backgroundImage})` }"
+    >
+      <div class="absolute inset-0 bg-black opacity-20"></div>
+      <div class="flex items-center justify-center h-full relative z-10 px-4">
+        <h1 class="md:text-4xl text-xl font-extrabold text-white drop-shadow-lg font-serif text-center animate-slideIn">
+          PLACEMENT CELL
+        </h1>
+      </div>
     </section>
 
+    <!-- Tab Navigation -->
+    <div class="w-full bg-transparent flex justify-center px-4 -mt-8 relative z-10">
+      <div class="bg-white rounded-full shadow-md w-full max-w-6xl flex flex-wrap justify-center gap-4 px-4 py-3 overflow-x-auto">
+        <button
+          v-for="section in sections"
+          :key="section.id"
+          @click="scrollToSection(section.id)"
+          :class="[
+            'px-5 py-2 rounded-full font-medium whitespace-nowrap transition-all duration-300',
+            activeSection === section.id
+              ? 'bg-indigo-600 text-white shadow'
+              : 'bg-gray-100 text-gray-700 hover:bg-indigo-100'
+          ]"
+        >
+          {{ section.label }}
+        </button>
+      </div>
+    </div>
 
-    <!-- Content Sections with Vertical Tabs -->
-    <section class="mx-auto py-6 md:py-12 md:px-10 bg-indigo-100 rounded-lg">
-      <div class="relative flex flex-col md:px-8 px-4 md:flex-row">
-        <!-- Vertical Tabs -->
-        <div class="px-8 md:px-0">
-        <div class="flex-shrink-0 w-full h-max md:w-64 bg-gradient-to-r from-[#21209c] to-blue-600 rounded-lg shadow-lg p-4 mb-4 md:mb-0 md:mr-4">
-          <div class="relative p-4 rounded-lg">
-            <h2 class="text-2xl font-serif text-center text-white font-semibold">Sections</h2>
-          </div>
-          <div class="space-y-2 font-serif">
-            <button @click="currentSection = 'Description'" :class="{'bg-yellow-400 text-[#23120b]': currentSection === 'Description', 'bg-gray-100': currentSection !== 'Description'}" class="w-full py-2 px-4 rounded-md font-semibold hover:bg-yellow-400 hover:text-[#23120b]">Description</button>
-            <button @click="currentSection = 'Recruitment Process'" :class="{'bg-yellow-400 text-[#23120b]': currentSection === 'Recruitment Process', 'bg-gray-100': currentSection !== 'Recruitment Process'}" class="w-full py-2 px-4 rounded-md font-semibold hover:bg-yellow-400 hover:text-[#23120b]">Recruitment Process</button>
-            <button @click="currentSection = 'CUIC'" :class="{'bg-yellow-400 text-[#23120b]': currentSection === 'CUIC', 'bg-gray-100': currentSection !== 'CUIC'}" class="w-full py-2 px-4 rounded-md font-semibold hover:bg-yellow-400 hover:text-[#23120b]">CUIC</button>
-            <button @click="currentSection = 'Our Recruiters'" :class="{'bg-yellow-400 text-[#23120b]': currentSection === 'Our Recruiters', 'bg-gray-100': currentSection !== 'Our Recruiters'}" class="w-full py-2 px-4 rounded-md font-semibold hover:bg-yellow-400 hover:text-[#23120b]">Our Recruiters</button>
-            <button @click="currentSection = 'Placed Students'" :class="{'bg-yellow-400 text-[#23120b]': currentSection === 'Placed Students', 'bg-gray-100': currentSection !== 'Placed Students'}" class="w-full py-2 px-4 rounded-md font-semibold hover:bg-yellow-400 hover:text-[#23120b]">Placed Students</button>
-            <button @click="currentSection = 'Staff Members'" :class="{'bg-yellow-400 text-[#23120b]': currentSection === 'Staff Members', 'bg-gray-100': currentSection !== 'Staff Members'}" class="w-full py-2 px-4 rounded-md font-semibold hover:bg-yellow-400 hover:text-[#23120b]">Staff Members</button>
-          </div>
-        </div>
+    <!-- Content Section Wrapper -->
+    <section class="mx-auto py-10 px-4 md:px-10 bg-indigo-100 rounded-lg">
+      <div class="relative font-serif">
+
+        <!-- Description -->
+        <div id="Description" ref="Description" class="scroll-mt-32 bg-white rounded-lg shadow-lg p-4 md:p-6 mb-12 animate-fadeIn">
+          <h2 class="text-2xl md:text-3xl font-bold text-black mb-4">Description</h2>
+          <p class="text-base md:text-lg text-black">{{ data.description }}</p>
         </div>
 
-        <!-- Content -->
-        <div class="w-full px-0 md:px-10  font-serif min-h-[400px] max-h-[600px] md:max-h-[800px] overflow-y-auto ">
-          <div v-if="currentSection === 'Description'" class="bg-white rounded-lg shadow-lg p-4 md:p-6 mb-16 animate-fadeIn">
-            <h2 class="text-2xl md:text-3xl font-bold text-black mb-4">Description</h2>
-            <p class="text-base md:text-lg mb-8 text-black">{{ data.description }}</p>
-          </div>
-          <div v-else-if="currentSection === 'Recruitment Process'" class="bg-white rounded-lg shadow-lg p-4 md:p-6 mb-16 animate-fadeIn">
-            <h2 class="text-2xl md:text-3xl font-bold text-black mb-4">Recruitment Process</h2>
-            <p class="text-base md:text-lg mb-8 text-black">{{ data.recruitment }}</p>
-          </div>
-          <div v-else-if="currentSection === 'CUIC'" class="bg-white rounded-lg shadow-lg p-4 md:p-6 mb-16 animate-fadeIn">
-            <h2 class="text-2xl md:text-3xl font-bold text-black mb-4">CUIC</h2>
-            <p class="text-base md:text-lg mb-8 text-black">{{ data.cuic }}</p>
-          </div>
-          <div v-else-if="currentSection === 'Our Recruiters'" class="bg-white rounded-lg shadow-lg p-4 md:p-6 mb-16 animate-fadeIn">
-            <h2 class="text-2xl md:text-3xl font-bold text-black mb-4">Our Recruiters</h2>
-            <iframe :src="recruitersPDF" class="w-full h-[700px] rounded-md shadow-lg" frameborder="0"></iframe>
-          </div>
-          <div v-else-if="currentSection === 'Placed Students'" class="bg-white rounded-lg shadow-lg p-4 md:p-6 mb-16 animate-fadeIn">
-            <h2 class="text-2xl md:text-3xl font-bold text-black mb-4">Placed Students</h2>
-            <img src="/Placedstudents.webp" alt="Placed Students" class="w-full h-auto rounded-md shadow-lg" />
-          </div>
-          <div v-else-if="currentSection === 'Staff Members'" class="bg-white rounded-lg shadow-lg p-4 md:p-6 mb-16 animate-fadeIn">
-            <h2 class="text-2xl md:text-3xl font-bold text-black mb-4">Staff Members</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-              <div v-for="member in data.staff_members" :key="member.emailid" class="bg-gray-200 shadow-md text-xl rounded-md p-4">
-                <h3 class="font-semibold">{{ member.name }}</h3>
-                <p><strong>Designation:</strong> {{ member.designation }}</p>
-                <p><strong>Email:</strong> <a :href="'mailto:' + member.emailid">{{ member.emailid }}</a></p>
+        <!-- Placement Statistics -->
+        <div id="PlacementStatistics" ref="PlacementStatistics" class="scroll-mt-32 bg-white rounded-lg shadow-lg p-4 md:p-6 mb-12 animate-fadeIn">
+          <h2 class="text-2xl md:text-3xl font-bold text-black mb-4">Placement Statistics</h2>
+          <img src="/placement%20statistics.webp" alt="Placement Statistics" class="w-full max-w-4xl mx-auto h-auto rounded-md shadow-lg" />
+        </div>
+
+        <!-- CUIC -->
+        <div id="CUIC" ref="CUIC" class="scroll-mt-32 bg-white rounded-lg shadow-lg p-4 md:p-6 mb-12 animate-fadeIn">
+          <h2 class="text-2xl md:text-3xl font-bold text-black mb-4">CUIC</h2>
+          <p class="text-base md:text-lg text-black">{{ data.cuic }}</p>
+        </div>
+
+        <!-- Our Recruiters -->
+        <div id="OurRecruiters" ref="OurRecruiters" class="scroll-mt-32 bg-white rounded-lg shadow-lg p-4 md:p-6 mb-12 animate-fadeIn">
+          <h2 class="text-2xl md:text-3xl font-bold text-black mb-4">Our Recruiters</h2>
+          <img src="/recruiters.jpg" alt="Our Recruiters" class="w-full max-w-4xl mx-auto h-auto rounded-md shadow-lg" />
+        </div>
+
+        <!-- Placed Students -->
+        <div id="PlacedStudents" ref="PlacedStudents" class="scroll-mt-32 bg-white rounded-lg shadow-lg p-4 md:p-6 mb-12 animate-fadeIn">
+          <h2 class="text-2xl md:text-3xl font-bold text-black mb-4">Placed Students</h2>
+          <img src="/Placedstudents.webp" alt="Placed Students" class="w-full max-w-4xl mx-auto h-auto rounded-md shadow-lg" />
+        </div>
+
+        <!-- Staff Members -->
+        <div id="StaffMembers" ref="StaffMembers" class="scroll-mt-32 mb-12 px-4 md:px-10">
+          <div class="bg-white p-6 rounded-2xl shadow-md transition duration-300 py-6">
+            <h2 class="text-2xl md:text-3xl font-bold text-center mb-10 text-gray-900">Placement Team</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <div
+                v-for="staff in data.staff_members"
+                :key="staff.emailid"
+                class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden text-center"
+              >
+                <div class="h-2 bg-gradient-to-r from-blue-500 to-blue-300"></div>
+                <div class="p-6">
+                  <img
+                    :src="`/${staff.image}`"
+                    :alt="staff.name"
+                    class="w-24 h-24 mx-auto rounded-full border-2 border-amber-100 shadow object-cover"
+                  />
+                  <h3 class="mt-4 text-base md:text-lg font-bold text-gray-800">{{ staff.name }}</h3>
+                  <p class="text-blue-600 font-medium text-sm">{{ staff.designation }}</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
+
       </div>
     </section>
   </div>
@@ -80,16 +100,48 @@
 import data from '../assets/placement-cell.json';
 import recruitersPDF from '../assets/placementBrochure.pdf';
 
-
 export default {
   data() {
     return {
       data: data,
       backgroundImage: "/offices.webp",
-      currentSection: 'Recruitment Process', // Default to first section
+      activeSection: "Description",
       recruitersPDF,
       placedStudentsImage: "/Placedstudents.webp",
+      sections: [
+        { id: 'Description', label: 'Description' },
+        { id: 'PlacementStatistics', label: 'Placement Statistics' },
+        { id: 'CUIC', label: 'CUIC' },
+        { id: 'OurRecruiters', label: 'Our Recruiters' },
+        { id: 'PlacedStudents', label: 'Placed Students' },
+        { id: 'StaffMembers', label: 'Staff Members' }
+      ],
     };
+  },
+  methods: {
+    scrollToSection(sectionId) {
+      this.activeSection = sectionId;
+      const section = this.$refs[sectionId];
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
   }
 };
 </script>
+<style scoped>
+.animate-slideIn {
+  animation: slideIn 1s ease-in-out;
+}
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+</style>
+
