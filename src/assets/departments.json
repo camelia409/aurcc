@@ -1276,7 +1276,7 @@
 				  "name": "Dr. Kanthavel K",
 				  "email": "kandavelkk@gmail.com",
 				  "position": "Assistant Professor",
-				  "image" : "kanthavel.webp",
+				  "image" : "Kanthavel.webp",
 				  "education": [
 					{
 						"degree": "M.E.",
@@ -1526,6 +1526,75 @@
 		  ,
 		"faculty": {
 			"hod_desk": [
+				{
+					"name": "Dr. M. Saravanakumar",
+					"image": "Dean.webp",
+					"email": "saravanakumar.1968@gmail.com",
+					"position": "Associate Professor & Dean (i/c)",
+					"education": [
+					{
+					  "degree": "MBA",
+					  "year": 1996,
+					  "institution": ""
+					},{
+					  "degree": "MS(IT)",
+					  "year": 1996,
+					  "institution": ""
+					},
+					{
+					  "degree": "M.Phil.",
+					  "year": 1996,
+					  "institution": ""
+					},
+					{
+						"degree": "Ph.D.",
+						"year": 1996,
+						"institution": ""
+					  }],
+					"department": "Department of Management Studies",
+					"experience": "",
+					"research_interests": [
+					  "Finance and Marketing"
+					],
+					"links": {
+					  "scholar_profile": ""
+					}
+				  }
+			],
+			"assistant_professors": [
+				{
+					"name": "Dr. S. Chandrakumarmangalam",
+					"image": "chandra.webp",
+					"email": "ckmaucbe@gmail.com",
+					"position": "Assistant Professor",
+					"education": [
+					{
+					  "degree": "MBA",
+					  "year": 1996,
+					  "institution": ""
+					},{
+					  "degree": "M.Phil.(CS).",
+					  "year": 1996,
+					  "institution": ""
+					},
+					{
+					  "degree": "Ph.D.",
+					  "year": 1996,
+					  "institution": ""
+					}],
+					"department": "Department of Management Studies",
+					"experience": "25 years",
+					"research_interests": [
+					  "Open-source software project management",
+					  "Rural entrepreneurship",
+					  "Economic development"
+					],
+					"current_position": "Assistant Professor, School of Management Studies, Anna University Regional Centre Coimbatore (11.08.2011 to present)",
+					"links": {
+					  "scholar_profile": "https://scholar.google.com/citations?user=9T0CchQAAAAJ&hl=en"
+					}
+				  },
+				  
 			  {
 				"name": "Dr. Subha M V",
 				"image": "subha.webp",
@@ -1565,75 +1634,7 @@
 				  "scholar_profile": "https://scholar.google.com/citations?user=ze1WOaIAAAAJ&hl=en",
 				  "additional_info": "https://drive.google.com/open?id=1G0HK15KlSlt-rhKJ7MlhSoFxWoTFCHzX"
 				}
-			  }
-			],
-			"assistant_professors": [
-				{
-					"name": "Dr. S. Chandrakumarmangalam",
-					"image": "chandra.webp",
-					"email": "ckmaucbe@gmail.com",
-					"position": "Assistant Professor",
-					"education": [
-					{
-					  "degree": "MBA",
-					  "year": 1996,
-					  "institution": ""
-					},{
-					  "degree": "M.Phil.(CS).",
-					  "year": 1996,
-					  "institution": ""
-					},
-					{
-					  "degree": "Ph.D.",
-					  "year": 1996,
-					  "institution": ""
-					}],
-					"department": "Department of Management Studies",
-					"experience": "25 years",
-					"research_interests": [
-					  "Open-source software project management",
-					  "Rural entrepreneurship",
-					  "Economic development"
-					],
-					"current_position": "Assistant Professor, School of Management Studies, Anna University Regional Centre Coimbatore (11.08.2011 to present)",
-					"links": {
-					  "scholar_profile": "https://scholar.google.com/citations?user=9T0CchQAAAAJ&hl=en"
-					}
-				  },
-				  {
-					"name": "Dr. M. Saravanakumar",
-					"image": "dean.webp",
-					"email": "saravanakumar.1968@gmail.com",
-					"position": "Associate Professor & Dean (i/c)",
-					"education": [
-					{
-					  "degree": "MBA",
-					  "year": 1996,
-					  "institution": ""
-					},{
-					  "degree": "MS(IT)",
-					  "year": 1996,
-					  "institution": ""
-					},
-					{
-					  "degree": "M.Phil.",
-					  "year": 1996,
-					  "institution": ""
-					},
-					{
-						"degree": "Ph.D.",
-						"year": 1996,
-						"institution": ""
-					  }],
-					"department": "Department of Management Studies",
-					"experience": "",
-					"research_interests": [
-					  "Finance and Marketing"
-					],
-					"links": {
-					  "scholar_profile": ""
-					}
-				  },
+			  },
 				  {
 					"name": "Dr. C. Muthuvelayutham",
 					"image": "muthuvelay.webp",
@@ -2780,7 +2781,7 @@
 			"hod_desk": [
 				{
 					"name": "Dr Saravanakumar S",
-					"image": "saravanakumar-s.webp",
+					"image": "Saravanakumar-S.webp",
 					"position": "Head of the Department",
 					"email": "ssk@aurcc.ac.in",
 					"education":
@@ -3096,7 +3097,7 @@
 				},	
 				{
 					"name": "Dr KIRUBADEVI S",
-					"image":"kiruba-devi.webp",
+					"image":"Kiruba-Devi.webp",
 					"position": "Assistant Professor (Senior Grade)",
 					"email": "kirubadevi@aurcc.ac.in",
 					"education":
