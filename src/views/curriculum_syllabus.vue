@@ -1,5 +1,5 @@
 <template>
-  <div class="flex-grow">
+  <div class="flex-grow bg-gradient-to-b from-indigo-100 to-blue-50 min-h-screen">
     <!-- Hero section -->
     <section 
       class="bg-cover bg-center relative w-full h-60 sm:h-80 md:h-94 animate-fadeIn" 
@@ -11,158 +11,106 @@
       </div>
     </section>
 
-    <!-- Background section below the hero -->
-    <div class="bg-indigo-100 py-8 animate-fadeIn">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <!-- UG Programmes section -->
-    <section class="py-8 animate-popIn">
-      <div class="bg-white rounded-lg shadow-md overflow-hidden">
-        <h2 class="text-xl md:text-3xl text-center font-serif font-bold p-4 rounded-t-lg bg-gradient-to-r from-blue-500 to-cyan-300 animate-fadeInUp">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <!-- UG Programmes section -->
+      <section class="mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-10 relative inline-block group">
           UG Programmes
+          <span class="absolute -bottom-2 left-0 h-1 w-24 bg-yellow-500 animate-underline"></span>
         </h2>
-        <div class="overflow-x-auto">
-          <table class="min-w-full divide-y divide-gray-200">
-            <thead class="bg-gray-50 animate-fadeIn delay-2s">
-              <tr>
-                <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                  S.No
-                </th>
-                <th scope="col" class="px-4 md:px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                  Curriculum & Syllabus
-                </th>
-              </tr>
-            </thead>
-            <tbody class="bg-white divide-y divide-gray-200 animate-fadeInUp">
-              <tr v-for="(programme, index) in data['UG programmes']" :key="index" 
-                  :class="{'bg-yellow-100': activeCourse === programme['Curriculum & Syllabus']}" 
-                  class="hover:bg-gray-100 transition-colors">
-                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">
-                  {{ programme['S.No'] }}
-                </td>
-                <td class="px-1 md:px-6 py-4 whitespace-nowrap text-sm text-gray-700">
-                  <a @click="redirectToCourse(programme['Link'])" 
-                     class="text-blue-600 hover:underline cursor-pointer">
-                    {{ programme['Curriculum & Syllabus'] }}
-                  </a>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+          <SyllabusCard
+            v-for="(programme, idx) in data['UG programmes']"
+            :key="'ug-' + idx"
+            :title="programme['Curriculum & Syllabus']"
+            :link="programme['Link']"
+            :index="programme['S.No']"
+          />
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- PG Programmes section -->
-    <section class="py-8 animate-popIn">
-      <div class="bg-white rounded-lg shadow-md overflow-hidden">
-        <h2 class="text-xl md:text-3xl text-center font-serif font-bold p-4 rounded-t-lg bg-gradient-to-r from-blue-500 to-cyan-300 animate-fadeInUp">
+      <!-- PG Programmes section -->
+      <section>
+        <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-10 relative inline-block group">
           PG Programmes
+          <span class="absolute -bottom-2 left-0 h-1 w-24 bg-yellow-500 animate-underline"></span>
         </h2>
-        <div class="overflow-x-auto">
-          <table class="min-w-full divide-y divide-gray-200">
-            <thead class="bg-gray-50 animate-fadeIn delay-2s">
-              <tr>
-                <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                  S.No
-                </th>
-                <th scope="col" class="px-4 md:px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                  Curriculum & Syllabus
-                </th>
-              </tr>
-            </thead>
-            <tbody class="bg-white divide-y divide-gray-200 animate-fadeInUp">
-              <tr v-for="(programme, index) in data['PG programmes']" :key="index" 
-                  :class="{'bg-yellow-100': activeCourse === programme['Curriculum & Syllabus']}" 
-                  class="hover:bg-gray-100 transition-colors">
-                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">
-                  {{ programme['S.No'] }}
-                </td>
-                <td class="px-1 md:px-6 py-4 whitespace-nowrap text-sm text-gray-700">
-                  <a @click="redirectToCourse(programme['Link'])" 
-                     class="text-blue-600 hover:underline cursor-pointer">
-                    {{ programme['Curriculum & Syllabus'] }}
-                  </a>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+          <SyllabusCard
+            v-for="(programme, idx) in data['PG programmes']"
+            :key="'pg-' + idx"
+            :title="programme['Curriculum & Syllabus']"
+            :link="programme['Link']"
+            :index="programme['S.No']"
+          />
         </div>
-      </div>
-    </section>
-  </div>
-</div>
-
+      </section>
+    </div>
   </div>
 </template>
 
-<script>
+<script setup>
 import data from '../assets/curriculum_syllabus.json';
+import { ref } from 'vue';
+import SyllabusCard from '../components/SyllabusCard.vue';
 
-export default {
-  data() {
-    return {
-      data: data,
-      activeCourse: null,
-    };
-  },
-  methods: {
-    redirectToCourse(link) {
-      this.activeCourse = this.getCourseNameFromLink(link);
-      window.open(link, '_blank');
-    },
-    getCourseNameFromLink(link) {
-      // Extract course name from the link or match it directly
-      const course = this.data['UG programmes'].find(p => p['Link'] === link)?.['Curriculum & Syllabus']
-        || this.data['PG programmes'].find(p => p['Link'] === link)?.['Curriculum & Syllabus'];
-      return course;
-    },
-  },
-};
+const activeCourse = ref(null);
+
+function openSyllabus(link) {
+  window.open(link, '_blank');
+}
 </script>
 
 <style scoped>
-/* Enhanced styling with animations */
-@keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+.syllabus-card {
+  @apply bg-white/90 backdrop-blur-lg border border-blue-100 rounded-2xl shadow-xl transition-all duration-300 px-8 py-8 flex flex-col items-center min-h-[240px];
 }
-
-@keyframes fadeInUp {
-  0% { opacity: 0; transform: translateY(20px); }
-  100% { opacity: 1; transform: translateY(0); }
+.icon-circle {
+  @apply flex items-center justify-center rounded-full shadow-lg bg-gradient-to-br from-blue-500 to-indigo-400;
+  width: 64px;
+  height: 64px;
+  margin-bottom: 1rem;
 }
-
-@keyframes slideIn {
-  0% { transform: translateX(-100%); }
-  100% { transform: translateX(0); }
+.hover-lift {
+  @apply transition-all duration-300 ease-out;
 }
-
-@keyframes popIn {
-  0% { opacity: 0; transform: scale(0.8); }
-  100% { opacity: 1; transform: scale(1); }
+.hover-lift:hover {
+  transform: translateY(-10px) scale(1.04);
+  box-shadow: 0 24px 48px rgba(0,0,0,0.13);
 }
-
-h1.animate-slideIn {
-  animation: slideIn 1s ease-out forwards;
+.animate-fade-scale {
+  animation: fadeScale 0.6s ease-out forwards;
 }
-
-p.animate-fadeIn {
-  animation: fadeIn 2s ease-out forwards;
+@keyframes fadeScale {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
-
-section.animate-popIn {
-  animation: popIn 1.2s ease-out forwards;
+.syllabus-title {
+  @apply text-lg md:text-xl font-extrabold text-gray-900 mb-2;
 }
-
-h2.animate-fadeInUp {
-  animation: fadeInUp 1.5s ease-out forwards;
+.syllabus-link {
+  @apply text-blue-100 font-semibold hover:text-yellow-300 transition-colors;
 }
-
-.animate-fadeIn {
-  animation: fadeIn 1.5s ease-out forwards;
+@media (max-width: 640px) {
+  .syllabus-card {
+    @apply px-4 py-6 min-h-[180px];
+  }
+  .icon-circle {
+    width: 48px;
+    height: 48px;
+  }
 }
-
-.animate-fadeInUp {
-  animation: fadeInUp 1.5s ease-out forwards;
+.animate-underline {
+  animation: underlineGrow 1s cubic-bezier(0.4,0,0.2,1) forwards;
+}
+@keyframes underlineGrow {
+  from { width: 0; }
+  to { width: 6rem; }
 }
 </style>
