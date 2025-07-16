@@ -69,31 +69,68 @@
               </div>
               <div class="p-6 md:p-8">
                 <template v-if="section === 'Description'">
-                  <p>{{ hostel.description }}</p>
+                  <p>
+                    Anna University Regional Campus, Coimbatore, offers comfortable and secure hostel accommodation for both boys and girls, with a total capacity of 360 students. Each hostel features well-ventilated rooms, modern amenities, and dedicated staff for cleaning, security, and maintenance. The mess provides nutritious meals in a hygienic environment, and students can enjoy purified RO water and a variety of cuisines. 
+                  </p>
+                  <p class="mt-4">
+                    The hostels are supervised by experienced wardens and deputy wardens, ensuring a safe and supportive atmosphere. Recreational facilities, including a common room with television and sports activities, help students relax and bond outside of academics. CCTV surveillance and strict entry protocols further enhance safety. 
+                  </p>
+                  <p class="mt-4">
+                    Students are encouraged to participate in social and cultural events, making hostel life vibrant and memorable. A suggestion and grievance book is available for feedback, ensuring continuous improvement of hostel services.
+                  </p>
                 </template>
                 <template v-else-if="section === 'Administration'">
-                  <h3 class="text-xl font-semibold mb-4">Wardens</h3>
+                  <h3 class="text-xl font-semibold mb-4">Chief Warden / Dean</h3>
                   <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-                    <div v-for="warden in hostel.Administration.Wardens" :key="warden.Name" class="bg-white rounded-xl shadow p-6 border border-gray-100 flex flex-col gap-2">
-                      <div class="font-bold text-lg text-indigo-700">{{ warden.Name }}</div>
-                      <div class="text-gray-700 font-medium">{{ warden.Designation }}</div>
-                      <div class="text-gray-600 text-sm">Phone: <span class="font-normal">{{ warden['Phone No'] }}</span></div>
-                      <div class="text-gray-600 text-sm">Email: <a :href="'mailto:' + warden['Email ID']" class="text-blue-500 underline">{{ warden['Email ID'] }}</a></div>
+                    <div class="bg-white rounded-xl shadow p-6 border border-gray-100 flex flex-col gap-2">
+                      <div class="font-bold text-lg text-indigo-700">Dr. M. Saravanakumar</div>
+                      <div class="text-gray-700 font-medium">Warden / Dean</div>
+                      <div class="text-gray-600 text-sm">Phone: <span class="font-normal">0422-2984002</span></div>
+                      <div class="text-gray-600 text-sm">Email: <a href="mailto:ucedean-kovai@annauniv.edu" class="text-blue-500 underline">ucedean-kovai@annauniv.edu</a></div>
                     </div>
                   </div>
-                  <h3 class="text-xl font-semibold mb-4">Deputy Wardens</h3>
+                  <h3 class="text-xl font-semibold mb-4">Boys & Girls Hostel Administration</h3>
                   <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div v-for="deputyWarden in hostel.Administration['Deputy Wardens']" :key="deputyWarden.Name" class="bg-white rounded-xl shadow p-6 border border-gray-100 flex flex-col gap-2">
-                      <div class="font-bold text-lg text-indigo-700">{{ deputyWarden.Name }}</div>
-                      <div class="text-gray-700 font-medium">{{ deputyWarden.Designation }}</div>
-                      <div class="text-gray-600 text-sm">Phone: <span class="font-normal">{{ deputyWarden['Phone No'] }}</span></div>
-                      <div class="text-gray-600 text-sm">Email: <a :href="'mailto:' + deputyWarden['Email ID']" class="text-blue-500 underline">{{ deputyWarden['Email ID'] }}</a></div>
+                    <div class="bg-white rounded-xl shadow p-6 border border-gray-100 flex flex-col gap-2">
+                      <div class="font-bold text-lg text-indigo-700">Dr. M. Yuvaraju</div>
+                      <div class="text-gray-700 font-medium">Deputy Warden 1 (Boys Hostel)</div>
+                      <div class="text-gray-600 text-sm">Phone: <span class="font-normal">9952461315</span></div>
+                      <div class="text-gray-600 text-sm">Email: <a href="mailto:rajaucbe@gmail.com" class="text-blue-500 underline">rajaucbe@gmail.com</a></div>
+                    </div>
+                    <div class="bg-white rounded-xl shadow p-6 border border-gray-100 flex flex-col gap-2">
+                      <div class="font-bold text-lg text-indigo-700">Dr. R. Vijayabhasker</div>
+                      <div class="text-gray-700 font-medium">Deputy Warden 2 (Boys Hostel)</div>
+                      <div class="text-gray-600 text-sm">Phone: <span class="font-normal">9842616953</span></div>
+                      <div class="text-gray-600 text-sm">Email: <a href="mailto:kaviji04@gmail.com" class="text-blue-500 underline">kaviji04@gmail.com</a></div>
+                    </div>
+                    <div class="bg-white rounded-xl shadow p-6 border border-gray-100 flex flex-col gap-2">
+                      <div class="font-bold text-lg text-indigo-700">Mr. D. Prabhu</div>
+                      <div class="text-gray-700 font-medium">Deputy Warden 3 (Boys Hostel)</div>
+                      <div class="text-gray-600 text-sm">Phone: <span class="font-normal">9626477744</span></div>
+                      <div class="text-gray-600 text-sm">Email: <a href="mailto:prabhu2kraj@gmail.com" class="text-blue-500 underline">prabhu2kraj@gmail.com</a></div>
+                    </div>
+                    <div class="bg-white rounded-xl shadow p-6 border border-gray-100 flex flex-col gap-2">
+                      <div class="font-bold text-lg text-indigo-700">Dr. S. Sumathi</div>
+                      <div class="text-gray-700 font-medium">Deputy Warden 1 (Girls Hostel)</div>
+                      <div class="text-gray-600 text-sm">Phone: <span class="font-normal">0422-2984009</span></div>
+                      <div class="text-gray-600 text-sm">Email: <a href="mailto:sumathime@gmail.com" class="text-blue-500 underline">sumathime@gmail.com</a></div>
+                    </div>
+                    <div class="bg-white rounded-xl shadow p-6 border border-gray-100 flex flex-col gap-2">
+                      <div class="font-bold text-lg text-indigo-700">Dr. N. Fareena</div>
+                      <div class="text-gray-700 font-medium">Deputy Warden 2 (Girls Hostel)</div>
+                      <div class="text-gray-600 text-sm">Phone: <span class="font-normal">0422-2984009</span></div>
+                      <div class="text-gray-600 text-sm">Email: <a href="mailto:fareena.aurcc@gmail.com" class="text-blue-500 underline">fareena.aurcc@gmail.com</a></div>
                     </div>
                   </div>
                 </template>
                 <template v-else-if="section === 'Fees Structure'">
                   <p><a :href="hostel['Fees Structure']['New Admission']" class="text-blue-500 underline">New Admission</a></p>
                   <p><a :href="hostel['Fees Structure']['Existing Students']" class="text-blue-500 underline">Existing Students</a></p>
+                  <div class="mt-6 flex justify-center">
+                    <a href="https://services.sabpaisa.in/pages/annauniversityregionalcampus.html" target="_blank" rel="noopener" class="inline-block px-8 py-4 bg-indigo-600 text-white rounded-full font-semibold transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl text-lg">
+                      Pay Hostel Fees
+                    </a>
+                  </div>
                 </template>
                 <template v-else-if="section === 'Rules and Regulations'">
                   <iframe :src="rulesPDF" class="w-full h-[700px]" frameborder="0"></iframe>

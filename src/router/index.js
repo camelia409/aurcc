@@ -213,6 +213,16 @@ const router = createRouter({
       path: '/events',
       name: 'Events',
       component: () => import('@/views/EventsView.vue')
+    },
+    {
+      path: '/downloads',
+      name: 'downloads',
+      component: () => import('../views/Downloads.vue')
+    },
+    {
+      path: '/posh',
+      name: 'posh',
+      component: () => import('../views/POSH.vue')
     }
   ]
 })
