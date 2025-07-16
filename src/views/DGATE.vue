@@ -1,15 +1,14 @@
 <template>
   <main class="flex-grow font-serif text-gray-800">
     <!-- Hero Section -->
-    <section
-      class="bg-cover bg-center relative w-full h-40 sm:h-80 md:h-96 animate-fadeIn"
-      :style="{ backgroundImage: 'url(/offices.webp)' }"
-    >
-      <div class="absolute inset-0 bg-black opacity-20"></div>
-      <div class="flex items-center justify-center h-full relative z-10 px-4">
-        <h1 class="md:text-4xl text-2xl font-extrabold text-white drop-shadow-lg text-center animate-slideIn">
-          DGATE CELL
-        </h1>
+     <section class="relative w-full min-h-[40vh] md:min-h-[60vh] overflow-hidden flex items-center justify-center animate-fadeIn">
+      <img :src="backgroundImage" alt="Admission" class="absolute inset-0 w-full h-full object-cover object-center" />
+      <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-black/60 via-black/30 to-transparent"></div>
+      <div class="absolute inset-0 flex flex-col items-center justify-center z-10 px-2">
+        <div class="backdrop-blur-md bg-white/30 rounded-2xl shadow-lg px-4 py-4 sm:px-8 sm:py-6 md:px-12 md:py-10 flex flex-col items-center w-full max-w-2xl border border-white/30">
+          <h1 class="text-2xl sm:text-4xl md:text-5xl font-extrabold text-white drop-shadow-lg tracking-wide text-center mb-2 leading-tight">DGATE CELL</h1>
+          <p class="text-base sm:text-lg md:text-2xl text-white drop-shadow text-center font-medium">Join our vibrant campus and shape your future with us!</p>
+        </div>
       </div>
     </section>
 
