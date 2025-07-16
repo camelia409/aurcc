@@ -1,92 +1,161 @@
 <template>
-	<main class="flex-grow">
-	  <!-- Hero Section -->
-	  <section 
-      class="bg-cover bg-center relative w-full h-40 sm:h-80 md:h-94 animate-fadeIn" 
-      :style="{ 
-        backgroundImage: `url(/offices.webp)`
-      }">
-      <!-- Dark overlay -->
-        <div class="absolute inset-0 bg-black opacity-20"></div>
-        
-        <!-- Centered text -->
-        <div class="flex items-center justify-center h-full relative z-10 px-4">
-          <h1 class="md:text-4xl text-xl font-extrabold text-white drop-shadow-lg font-serif text-center animate-slideIn">
-            ESTATE OFFICE
-          </h1>
-        </div>
+  <main class="flex-grow font-serif text-gray-800">
+    <!-- Hero Section -->
+    <section
+      class="bg-cover bg-center relative w-full h-40 sm:h-80 md:h-96 animate-fadeIn"
+      :style="{ backgroundImage: 'url(/offices.webp)' }"
+    >
+      <div class="absolute inset-0 bg-black opacity-20"></div>
+      <div class="flex items-center justify-center h-full relative z-10 px-4">
+        <h1 class="md:text-4xl text-2xl font-extrabold text-white drop-shadow-lg text-center animate-slideIn">
+          ESTATE OFFICE
+        </h1>
+      </div>
     </section>
-  
-	  <!-- Content Sections with Vertical Tabs -->
-	  <section class="mx-auto py-6 md:py-12 md:px-10 bg-indigo-100 rounded-lg">
-		<div class="relative flex flex-col md:px-8 px-4 md:flex-row">
-		  <!-- Vertical Tabs -->
-		  <div class="px-8 md:px-0">
-        <div class="flex-shrink-0 w-full h-max md:w-64 bg-gradient-to-r from-[#21209c] to-blue-600 rounded-lg shadow-lg p-4 mb-4 md:mb-0 md:mr-4">
-          <div class="relative p-4 rounded-lg">
-            <h2 class="text-2xl font-serif text-center text-white font-semibold">Sections</h2>
-          </div>
-			<div class="space-y-2 font-serif">
-			  <button @click="currentSection = 'about'" :class="{'bg-yellow-400 text-[#23120b]': currentSection === 'about', 'bg-gray-100': currentSection !== 'about'}" class="w-full py-2 px-4 rounded-md font-semibold hover:bg-yellow-400 hover:text-[#23120b]">About</button>
-			  <button @click="currentSection = 'services'" :class="{'bg-yellow-400 text-[#23120b]': currentSection === 'services', 'bg-gray-100': currentSection !== 'services'}" class="w-full py-2 px-4 rounded-md font-semibold hover:bg-yellow-400 hover:text-[#23120b]">Services</button>
-			  <button @click="currentSection = 'members'" :class="{'bg-yellow-400 text-[#23120b]': currentSection === 'members', 'bg-gray-100': currentSection !== 'members'}" class="w-full py-2 px-4 rounded-md font-semibold hover:bg-yellow-400 hover:text-[#23120b]">Staff</button>
-			  <button @click="currentSection = 'contact'" :class="{'bg-yellow-400 text-[#23120b]': currentSection === 'contact', 'bg-gray-100': currentSection !== 'contact'}" class="w-full py-2 px-4 rounded-md font-semibold hover:bg-yellow-400 hover:text-[#23120b]">Contact</button>
-			</div>
-		  </div>
-		  </div>
-  
-		  <!-- Tab Content -->
-		  <div class="w-full px-0 md:px-10  font-serif min-h-[400px] max-h-[600px] md:max-h-[800px] overflow-y-auto">
-			<div v-if="currentSection === 'about'" class="bg-white rounded-lg shadow-lg p-4 md:p-6 mb-16 animate-fadeIn">
-			  <h2 class="text-2xl md:text-3xl font-bold text-black mb-4">About the Estate office</h2>
-			  <p class="text-base md:text-lg">{{ data.description }}</p>
-			</div>
-			<div v-if="currentSection === 'services'" class="bg-white rounded-lg shadow-lg p-4 md:p-6 mb-16 animate-fadeIn">
-			  <h2 class="text-2xl md:text-3xl font-bold text-black mb-4">Services</h2>
-			  <ul class="list-disc pl-5">
-				<li v-for="service in data.services" :key="service" class="text-base md:text-lg">{{ service }}</li>
-			  </ul>
-			</div>
-			<div v-if="currentSection === 'members'" class="bg-white rounded-lg shadow-lg p-4 md:p-6 mb-16 animate-fadeIn">
-				<h2 class="text-2xl md:text-3xl font-bold text-black mb-6 text-center">Staff</h2>
-				<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-					<div 
-					v-for="bearer in data.office_bearers" 
-					:key="bearer.name" 
-					class="bg-gradient-to-br from-indigo-200 to-indigo-100 p-4 rounded-xl shadow-md hover:shadow-lg transition duration-300">
-					<p class="text-lg font-semibold text-indigo-900">{{ bearer.name }}</p>
-					<p class="text-sm text-gray-700">{{ bearer.position }}</p>
-					</div>
-				</div>
-			</div>
 
-			<div v-if="currentSection === 'contact'" class="bg-white rounded-lg shadow-lg p-4 md:p-6 mb-16 animate-fadeIn">
-			  <h2 class="text-2xl md:text-3xl font-bold text-black mb-4">Contact</h2>
-			  <p class="text-base md:text-lg">{{ data.contact_us }}</p>
-			</div>
-		  </div>
-		</div>
-	  </section>
-	</main>
-  </template>
-  
-  <script>
-  import data from '../assets/EstateOff.json';// Correct path for the image
+    <!-- Sticky Tabs -->
+    <div class="sticky top-0 z-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-white/95 backdrop-blur-sm shadow-lg rounded-full -mt-6 py-1 px-2 flex justify-center overflow-x-auto no-scrollbar">
+          <nav role="tablist" class="tabs flex space-x-1 md:space-x-2">
+            <button
+  v-for="section in sections"
+  :key="section.id"
+  @click="scrollTo(section.id)"
+  :class="{
+    'bg-indigo-600 text-white': activeSection === section.id,
+    'text-gray-700 hover:bg-gray-100': activeSection !== section.id
+  }"
+  class="font-medium px-4 md:px-5 py-2 md:py-3 rounded-full text-sm md:text-base transition duration-300 whitespace-nowrap"
+>
+  {{ section.label }}
+</button>
 
-  export default {
-	data() {
-	  return {
-		data: data,
-		currentSection: 'about', // Default tab
-	  };
-	}
-  };
-  </script>
-  
-  <style>
-  /* Additional custom styles if needed */
-  body {
-	font-family: 'Arial', sans-serif;
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <!-- Content Sections -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-12">
+      <!-- About -->
+      <div id="about" class="bg-white rounded-2xl shadow p-6 md:p-10 scroll-mt-28">
+        <h2 class="text-3xl font-bold mb-4 text-indigo-700">About the Estate Office</h2>
+        <p class="text-lg leading-relaxed text-gray-800">{{ data.description }}</p>
+      </div>
+
+      <!-- Services -->
+      <div id="services" class="bg-white rounded-2xl shadow p-6 md:p-10 scroll-mt-28">
+        <h2 class="text-3xl font-bold mb-6 text-indigo-700">Services</h2>
+        <ul class="list-disc pl-5 space-y-2 text-gray-800 text-base md:text-lg">
+          <li v-for="service in data.services" :key="service">{{ service }}</li>
+        </ul>
+      </div>
+
+     <!-- Staff -->
+<div id="staff" class="bg-white rounded-2xl shadow p-6 md:p-10 scroll-mt-28">
+  <h2 class="text-3xl font-bold text-center mb-10 text-gray-900">Staff</h2>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div
+      v-for="staff in data.office_bearers"
+      :key="staff.email_id || staff.name"
+      class="bg-white rounded-xl shadow-sm overflow-hidden flex flex-col border border-gray-100"
+    >
+      <div class="bg-gradient-to-r from-blue-500 to-blue-300 h-2"></div>
+      <div class="p-6 flex justify-center">
+        <div class="w-28 h-28 rounded-full overflow-hidden border-2 border-amber-100 shadow">
+          <img
+            :src="staff.image ? `/${staff.image}` : '/placeholder.jpg'"
+            :alt="staff.name"
+            class="w-full h-full object-cover"
+            loading="lazy"
+          />
+        </div>
+      </div>
+      <div class="flex-grow flex flex-col p-5 text-center">
+        <h2 class="text-xl font-bold text-gray-800 mb-1">{{ staff.name }}</h2>
+        <p class="text-blue-600 font-medium mb-2">{{ staff.position }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+      <!-- Contact -->
+      <div id="contact" class="bg-white rounded-2xl shadow p-6 md:p-10 scroll-mt-28">
+        <h2 class="text-3xl font-bold mb-6 text-indigo-700">Contact</h2>
+        <p class="text-base md:text-lg text-gray-800">{{ data.contact_us }}</p>
+      </div>
+    </section>
+  </main>
+</template>
+
+<script>
+import data from '@/assets/EstateOff.json';
+
+export default {
+  name: 'EstateOffice',
+  data() {
+    return {
+      data,
+      sections: [
+        { id: 'about', label: 'About' },
+        { id: 'services', label: 'Services' },
+        { id: 'staff', label: 'Staff' },
+        { id: 'contact', label: 'Contact' },
+      ],
+      activeSection: '',
+    };
+  },
+  methods: {
+    scrollTo(sectionId) {
+      const el = document.getElementById(sectionId);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth' });
+        this.activeSection = sectionId;
+      }
+    },
+    handleScroll() {
+      const sections = this.sections.map(s => {
+        const el = document.getElementById(s.id);
+        return el ? { id: s.id, top: el.getBoundingClientRect().top } : null;
+      }).filter(Boolean);
+
+      const closest = sections.reduce((a, b) => Math.abs(b.top) < Math.abs(a.top) ? b : a, sections[0]);
+      if (closest) this.activeSection = closest.id;
+    }
+  },
+  mounted() {
+    window.addEventListener('scroll', this.handleScroll);
+  },
+  beforeUnmount() {
+    window.removeEventListener('scroll', this.handleScroll);
   }
-  </style>
-  
+};
+</script>
+
+<style scoped>
+.font-serif {
+  font-family: 'Georgia', 'Times New Roman', Times, serif;
+}
+.animate-slideIn {
+  animation: slideIn 1s ease-in-out;
+}
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+</style>

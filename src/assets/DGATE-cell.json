@@ -1,7 +1,7 @@
 {
   "name": "DGATE cell",
   "description": {
-    "DGATE": "The DIGITAL GOVERNANCE AND TECHNOLOGY ENHANCEMENT (DGATE) CELL was established in our campus on 15.09.2022, with a motto to digitalize all the internal and external communications undergoing in the campus.",
+    "DGATE": "The Digital Governance and Technology Enhancement (DGATE) Cell was established at our campus on 15th September 2022 with the vision of streamlining and modernizing all communication processes within the institution. The cell is committed to driving digital transformation by enhancing both internal and external communications, ensuring efficiency, transparency, and accessibility across campus operations. Through innovative technology adoption and strategic digital initiatives, DGATE aims to foster a connected, responsive, and future-ready campus environment.",
     "activities": {
       "curricular_activities": [
         {
@@ -75,24 +75,28 @@
       }
     ]
   },
-  "staff_members": [
-    {
-      "name": "Dr.J.Preethi",
-      "designation": "AP(Sr.Grade)/CSE",
-      "phone_no": "",
-      "email_id": "dgate@aurcc.ac.in"
-    },
-    {
-      "name": "Dr.M.Newlin Rajkumar",
-      "designation": "AP/EEE",
-      "phone_no": "",
-      "email_id": "dgate@aurcc.ac.in"
-    },
-    {
-      "name": "Mrs.T.Mohanapriya",
-      "designation": "Professional Assistant-II",
-      "phone_no": "",
-      "email_id": "dgate@aurcc.ac.in"
-    }
-  ]
-}
+    "staff_members": [
+      {
+        "name": "Dr.J.Preethi",
+        "designation": "AP(Sr.Grade)/CSE",
+        "phone_no": "",
+        "email_id": "dgate@aurcc.ac.in",
+        "image": "preethi.webp"
+      },
+      {
+        "name": "Dr.M.Newlin Rajkumar",
+        "designation": "AP/EEE",
+        "phone_no": "",
+        "email_id": "dgate@aurcc.ac.in",
+        "image": "newlin.webp"
+      },
+      {
+        "name": "Mrs.T.Mohanapriya",
+        "designation": "Professional Assistant-II",
+        "phone_no": "",
+        "email_id": "dgate@aurcc.ac.in",
+        "image": ""
+      }
+    ]
+  }
+  

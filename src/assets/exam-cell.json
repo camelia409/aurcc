@@ -9,17 +9,24 @@
     "5. Issuing of certificates like Statement of Grades/Marks, Consolidated Statement of Grades/Marks, and Provisional Degree Certificates"
   ],
   "office_bearers": [
-    {
-      "name": "Dr. M. Saravanakumar",
-      "position": "Dean of AURCC"
-    },
-    {
-      "name": "Dr. S.J. Sardhar Basha",
-      "position": "Exam Cell Coordinator"
-    },
-    {
-      "name": "Mr. S. Natarajan",
-      "position": "Executive Assistant(Finance)"
-    }
-  ]
+  {
+    "name": "Dr. M. Saravanakumar",
+    "position": "Dean of AURCC",
+    "email_id": "saravanakumar@aurcc.edu.in",
+    "image": "Dean.webp"
+  },
+  {
+    "name": "Dr. S.J. Sardhar Basha",
+    "position": "Exam Cell Coordinator",
+    "email_id": "sardharbasha@aurcc.edu.in",
+    "image": "baasha.webp"
+  },
+  {
+    "name": "Mr. S. Natarajan",
+    "position": "Executive Assistant (Finance)",
+    "email_id": "snatarajan@aurcc.edu.in",
+    "image": "snatarajan.jpg"
+  }
+]
+
 }
