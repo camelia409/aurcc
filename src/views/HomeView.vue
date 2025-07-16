@@ -253,102 +253,78 @@
                   </svg>
                   Quick Links
                 </h3>
-                
                 <div class="space-y-3">
-                  <!-- Online Application -->
                   <div class="group">
-                    <div class="bg-white/10 hover:bg-white/20 rounded-lg p-4 flex items-center space-x-3 transition-all duration-300 transform hover:translate-x-2 cursor-pointer">
+                    <router-link to="/aicte&moe" class="bg-white/10 hover:bg-white/20 rounded-lg p-4 flex items-center space-x-3 transition-all duration-300 transform hover:translate-x-2 cursor-pointer">
                       <div class="bg-blue-500/20 p-2 rounded-full">
-                        <svg class="h-5 w-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                          <path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
-                        </svg> 
+                        <svg class="h-5 w-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
                       </div>
-                      <h3 class="text-xl text-white font-medium">Online Application</h3>
-                    </div>
+                      <h3 class="text-xl text-white font-medium">AICTE & MOE CELL</h3>
+                    </router-link>
                   </div>
-                  
-                  <!-- Student Portal -->
                   <div class="group">
-                    <div class="bg-white/10 hover:bg-white/20 rounded-lg p-4 flex items-center space-x-3 transition-all duration-300 transform hover:translate-x-2 cursor-pointer">
-                      <div class="bg-blue-500/20 p-2 rounded-full">
-                        <svg class="h-5 w-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                          <path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
-                        </svg>
-                      </div>
-                      <h3 class="text-xl text-white font-medium">Student Portal</h3>
-                    </div>
-                  </div>
-
-                  <!-- AICTE & MOE Cell -->
-                  <div class="group">
-                    <div class="bg-white/10 hover:bg-white/20 rounded-lg p-4 flex items-center space-x-3 transition-all duration-300 transform hover:translate-x-2 cursor-pointer">
-                      <div class="bg-blue-500/20 p-2 rounded-full">
-                        <svg class="h-5 w-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                          <path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
-                        </svg>
-                      </div>
-                      <h3 class="text-xl text-white font-medium">AICTE Approval</h3>
-                    </div>
-                  </div>
-
-                  <!-- Mandatory Disclosure -->
-                  <div class="group">
-                    <div class="bg-white/10 hover:bg-white/20 rounded-lg p-4 flex items-center space-x-3 transition-all duration-300 transform hover:translate-x-2 cursor-pointer">
+                    <a href="https://drive.google.com/file/d/1z8ioKdQN0-fvahtIfneCPJI6i7j-YaFz/view" target="_blank" rel="noopener" class="bg-white/10 hover:bg-white/20 rounded-lg p-4 flex items-center space-x-3 transition-all duration-300 transform hover:translate-x-2 cursor-pointer">
                       <div class="bg-indigo-500/20 p-2 rounded-full">
-                        <svg class="h-5 w-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                          <path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
-                        </svg>
+                        <svg class="h-5 w-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
                       </div>
-                      <h3 class="text-xl text-white font-medium">Mandatory Disclosure</h3>
-                    </div>
+                      <h3 class="text-xl text-white font-medium">MANDATORY DISCLOSURE</h3>
+                    </a>
                   </div>
-
-                  <!-- Anti Ragging Cell -->
                   <div class="group">
-                    <div class="bg-white/10 hover:bg-white/20 rounded-lg p-4 flex items-center space-x-3 transition-all duration-300 transform hover:translate-x-2 cursor-pointer">
-                      <div class="bg-red-500/20 p-2 rounded-full">
-                        <svg class="h-5 w-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                          <path d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
-                        </svg>
-                      </div>
-                      <h3 class="text-xl text-white font-medium">Anti Ragging Cell</h3>
-                    </div>
-                  </div>
-
-                  <!-- SC/ST Cell -->
-                  <div class="group">
-                    <div class="bg-white/10 hover:bg-white/20 rounded-lg p-4 flex items-center space-x-3 transition-all duration-300 transform hover:translate-x-2 cursor-pointer">
-                      <div class="bg-purple-500/20 p-2 rounded-full">
-                        <svg class="h-5 w-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                          <path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
-                        </svg>
-                      </div>
-                      <h3 class="text-xl text-white font-medium">SC/ST Cell</h3>
-                    </div>
-                  </div>
-
-                  <!-- Grievance Cell -->
-                  <div class="group">
-                    <div class="bg-white/10 hover:bg-white/20 rounded-lg p-4 flex items-center space-x-3 transition-all duration-300 transform hover:translate-x-2 cursor-pointer">
-                      <div class="bg-blue-400/20 p-2 rounded-full">
-                        <svg class="h-5 w-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                          <path d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-4l-4 4z"></path>
-                        </svg>
-                      </div>
-                      <h3 class="text-xl text-white font-medium">Grievance Cell</h3>
-                    </div>
-                  </div>
-
-                  <!-- NCC -->
-                  <div class="group">
-                    <div class="bg-white/10 hover:bg-white/20 rounded-lg p-4 flex items-center space-x-3 transition-all duration-300 transform hover:translate-x-2 cursor-pointer">
+                    <router-link to="/downloads" class="bg-white/10 hover:bg-white/20 rounded-lg p-4 flex items-center space-x-3 transition-all duration-300 transform hover:translate-x-2 cursor-pointer">
                       <div class="bg-green-500/20 p-2 rounded-full">
-                        <svg class="h-5 w-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                          <path d="M3 21h18M3 10h18M3 7l9-4 9 4M4 10v11m16-11v11M8 14v3m4-3v3m4-3v3"></path>
-                        </svg>
+                        <svg class="h-5 w-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 20h9"></path><path d="M12 4v16m0 0l-4-4m4 4l4-4"></path></svg>
                       </div>
-                      <h3 class="text-xl text-white font-medium">NCC</h3>
-                    </div>
+                      <h3 class="text-xl text-white font-medium">DOWNLOADS</h3>
+                    </router-link>
+                  </div>
+                  <div class="group">
+                    <router-link to="/antiragging" class="bg-white/10 hover:bg-white/20 rounded-lg p-4 flex items-center space-x-3 transition-all duration-300 transform hover:translate-x-2 cursor-pointer">
+                      <div class="bg-red-500/20 p-2 rounded-full">
+                        <svg class="h-5 w-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+                      </div>
+                      <h3 class="text-xl text-white font-medium">ANTIRAGGING CELL</h3>
+                    </router-link>
+                  </div>
+                  <div class="group">
+                    <router-link to="/posh" class="bg-white/10 hover:bg-white/20 rounded-lg p-4 flex items-center space-x-3 transition-all duration-300 transform hover:translate-x-2 cursor-pointer">
+                      <div class="bg-pink-500/20 p-2 rounded-full">
+                        <svg class="h-5 w-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="M8 15s1.5-2 4-2 4 2 4 2"></path><path d="M9 9h.01"></path><path d="M15 9h.01"></path></svg>
+                      </div>
+                      <h3 class="text-xl text-white font-medium">POSH CELL</h3>
+                    </router-link>
+                  </div>
+                  <div class="group">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSct1Nzh8zasrBf1pL8TQeDVLpNTckhwPYJw8L_JAL4-e-VRrA/viewform" target="_blank" rel="noopener" class="bg-white/10 hover:bg-white/20 rounded-lg p-4 flex items-center space-x-3 transition-all duration-300 transform hover:translate-x-2 cursor-pointer">
+                      <div class="bg-yellow-500/20 p-2 rounded-full">
+                        <svg class="h-5 w-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"></path></svg>
+                      </div>
+                      <h3 class="text-xl text-white font-medium">PREVENTION OF CASTE</h3>
+                    </a>
+                  </div>
+                  <div class="group">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdCUoPQpO0ZUonxAatNpgkXzVTqiTW6tVsUSViTVjkNRasMkA/viewform" target="_blank" rel="noopener" class="bg-white/10 hover:bg-white/20 rounded-lg p-4 flex items-center space-x-3 transition-all duration-300 transform hover:translate-x-2 cursor-pointer">
+                      <div class="bg-purple-500/20 p-2 rounded-full">
+                        <svg class="h-5 w-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                      </div>
+                      <h3 class="text-xl text-white font-medium">DIFFERENTLY ABLED PERSONS CELL</h3>
+                    </a>
+                  </div>
+                  <div class="group">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSenLuIhWEHNtty-CA7a2hMufyxj1sFLd-ET4geM3VvwN3KoHg/viewform" target="_blank" rel="noopener" class="bg-white/10 hover:bg-white/20 rounded-lg p-4 flex items-center space-x-3 transition-all duration-300 transform hover:translate-x-2 cursor-pointer">
+                      <div class="bg-green-500/20 p-2 rounded-full">
+                        <svg class="h-5 w-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 21h18M3 10h18M3 7l9-4 9 4M4 10v11m16-11v11M8 14v3m4-3v3m4-3v3"></path></svg>
+                      </div>
+                      <h3 class="text-xl text-white font-medium">ANTI DRUGS</h3>
+                    </a>
+                  </div>
+                  <div class="group">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSc5bsULXXnvfXgGnX9hJhNZrMJfeZfT8BLPGQ-Zz5rDc9q1pQ/viewform" target="_blank" rel="noopener" class="bg-white/10 hover:bg-white/20 rounded-lg p-4 flex items-center space-x-3 transition-all duration-300 transform hover:translate-x-2 cursor-pointer">
+                      <div class="bg-blue-500/20 p-2 rounded-full">
+                        <svg class="h-5 w-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                      </div>
+                      <h3 class="text-xl text-white font-medium">FEEDBACK FORM</h3>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -379,80 +355,55 @@
           <div class="mt-16 relative">
             <div class="program-scroll-container">
               <div class="program-scroll-wrapper">
-                <!-- Program Cards -->
+                <!-- UG Programs -->
                 <div class="program-card">
-                  <div class="program-icon bg-blue-500">
-                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
-                        d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                    </svg>
-                  </div>
-                  <h3 class="program-title">B.E. Computer Science Engineering</h3>
-                  <p class="program-description">
-                    Advanced computing, AI, and software engineering
-                  </p>
-                  <a href="departments/cse" class="program-link">Learn More →</a>
+                  <div class="program-icon bg-blue-500">💻</div>
+                  <h3 class="program-title">B.E. (COMPUTER SCIENCE AND ENGINEERING)</h3>
+                  <p class="program-description">Learn cutting-edge technologies and software development.</p>
+                  <a href="/departments/cse" class="program-link">Learn More →</a>
                 </div>
-
-                <!-- AI & Data Science -->
                 <div class="program-card">
-                  <div class="program-icon bg-purple-500">
-                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
-                        d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-                    </svg>
-                  </div>
-                  <h3 class="program-title">B.Tech Artificial Intelligence & Data Science</h3>
-                  <p class="program-description">
-                    Machine learning, data analytics, and artificial intelligence
-                  </p>
-                  <a href="departments/cse" class="program-link">Learn More →</a>
+                  <div class="program-icon bg-green-500">📡</div>
+                  <h3 class="program-title">B.E. (ELECTRONICS AND COMMUNICATION ENGINEERING)</h3>
+                  <p class="program-description">Explore communication, embedded systems, and VLSI.</p>
+                  <a href="/departments/ece" class="program-link">Learn More →</a>
                 </div>
-
-                <!-- Electrical -->
                 <div class="program-card">
-                  <div class="program-icon bg-yellow-500">
-                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
-                        d="M13 10V3L4 14h7v7l9-11h-7z" />
-                    </svg>
-                  </div>
-                  <h3 class="program-title">B.E. Electrical Engineering</h3>
-                  <p class="program-description">
-                    Power systems, control systems, and electrical machines
-                  </p>
-                  <a href="departments/eee" class="program-link">Learn More →</a>
+                  <div class="program-icon bg-yellow-500">⚡</div>
+                  <h3 class="program-title">B.E. (ELECTRICAL AND ELECTRONICS ENGINEERING)</h3>
+                  <p class="program-description">Power systems, control, and electrical machines.</p>
+                  <a href="/departments/eee" class="program-link">Learn More →</a>
                 </div>
-
-                <!-- ECE -->
                 <div class="program-card">
-                  <div class="program-icon bg-green-500">
-                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
-                        d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
-                    </svg>
-                  </div>
-                  <h3 class="program-title">B.E. Electronics & Communication</h3>
-                  <p class="program-description">
-                    Digital electronics, communication systems, and signal processing
-                  </p>
-                  <a href="departments/ece" class="program-link">Learn More →</a>
-                </div>  
-
-                <!-- Mechanical -->
+                  <div class="program-icon bg-red-500">🛠️</div>
+                  <h3 class="program-title">B.E. (MECHANICAL ENGINEERING)</h3>
+                  <p class="program-description">Study mechanics, thermodynamics, and manufacturing.</p>
+                  <a href="/departments/mech" class="program-link">Learn More →</a>
+                </div>
                 <div class="program-card">
-                  <div class="program-icon bg-red-500">
-                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
-                        d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                    </svg>
-                  </div>
-                  <h3 class="program-title">B.E. Mechanical Engineering</h3>
-                  <p class="program-description">
-                    Design, manufacturing, and thermal engineering
-                  </p>
-                  <a href="departments/mech" class="program-link">Learn More →</a>
+                  <div class="program-icon bg-purple-500">🤖</div>
+                  <h3 class="program-title">B.Tech. (ARTIFICIAL INTELLIGENCE AND DATA SCIENCE)</h3>
+                  <p class="program-description">Machine learning, data analytics, and AI.</p>
+                  <a href="/departments/cse" class="program-link">Learn More →</a>
+                </div>
+                <div class="program-card">
+                  <div class="program-icon bg-pink-500">🔲</div>
+                  <h3 class="program-title">B.E. Electronics Engineering (VLSI Design and Technology)</h3>
+                  <p class="program-description">Specialized in chip design, microelectronics, and hardware innovation.</p>
+                  <a href="/departments/ece" class="program-link">Learn More →</a>
+                </div>
+                <!-- PG Programs -->
+                <div class="program-card">
+                  <div class="program-icon bg-indigo-500">📈</div>
+                  <h3 class="program-title">MASTER OF BUSINESS ADMINISTRATION</h3>
+                  <p class="program-description">Master business administration and leadership.</p>
+                  <a href="/departments/mba" class="program-link">Learn More →</a>
+                </div>
+                <div class="program-card">
+                  <div class="program-icon bg-indigo-400">📊</div>
+                  <h3 class="program-title">MASTER OF BUSINESS ADMINISTRATION (BUSINESS ANALYTICS)</h3>
+                  <p class="program-description">Business intelligence, analytics, and data-driven management.</p>
+                  <a href="/departments/mba" class="program-link">Learn More →</a>
                 </div>
               </div>
             </div>
@@ -860,6 +811,17 @@
           </div>
         </div>
       </dialog>
+      <!-- Footer Section -->
+      <footer class="bg-gradient-to-r from-blue-900 to-indigo-900 text-white py-8 mt-16">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
+          <div class="mb-4 md:mb-0 text-center md:text-left">
+            <span class="font-semibold">© {{ new Date().getFullYear() }} Anna University Regional Campus, Coimbatore</span>
+          </div>
+          <div class="flex space-x-6">
+            <router-link to="/about" class="hover:underline text-blue-200">Website Development Team</router-link>
+          </div>
+        </div>
+      </footer>
     </main>
   </div>
 </template>

@@ -1,18 +1,26 @@
 <template>
   <main>
     <!-- Hero Section with Parallax Effect -->
-    <section class="relative h-[40vh] flex items-center justify-center overflow-hidden">
-      <!-- Background with Gradient Overlay -->
-      <div class="absolute inset-0 -z-10 bg-gradient-to-r from-blue-700 to-indigo-800"></div>
-      
-      <!-- Content -->
-      <div class="relative text-center px-4 max-w-4xl mx-auto z-20">
-        <h1 class="text-3xl md:text-5xl font-bold text-white mb-4 tracking-tight">
-          Website <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-200 to-indigo-200">Development Team</span>
+    <section class="relative h-[45vh] flex items-center justify-center overflow-hidden bg-[#f0f6ff]">
+      <!-- Animated Floating Dots Background -->
+      <div class="absolute inset-0 pointer-events-none z-0">
+        <svg width="100%" height="100%" class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+          <circle v-for="i in 18" :key="i" :cx="Math.random()*1200" :cy="Math.random()*300" :r="Math.random()*2+1" fill="#b3c6ff" opacity="0.5" />
+        </svg>
+      </div>
+      <!-- Dark, High-Contrast Tech Background Image -->
+      <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=1200&q=80" alt="Tech Hero" class="absolute inset-0 w-full h-full object-cover object-center -z-10" />
+      <!-- Dark Overlay for Readability -->
+      <div class="absolute inset-0 -z-10 bg-black opacity-70"></div>
+      <!-- Gradient Overlay for Depth -->
+      <div class="absolute inset-0 -z-10 bg-gradient-to-br from-blue-900/80 via-indigo-700/60 to-purple-800/70"></div>
+      <!-- Hero Content Directly on Background -->
+      <div class="relative z-20 px-4 w-full max-w-2xl mx-auto animate-fade-in text-center">
+        <h1 class="text-4xl md:text-6xl font-extrabold text-white mb-4 tracking-tight relative" style="text-shadow: 0 4px 16px #000, 0 1px 2px #000;">
+          Website <span style="color: #fff; text-shadow: 0 4px 16px #000, 0 1px 2px #000;">Development Team</span>
+          <span class="block h-1 w-24 bg-gradient-to-r from-yellow-400 to-pink-500 rounded-full mx-auto mt-3 animate-underline"></span>
         </h1>
-        <p class="text-lg md:text-xl text-blue-200">
-          Meet the creative minds behind our university website
-        </p>
+        <p class="text-lg md:text-2xl font-semibold mb-2" style="color: #fff; text-shadow: 0 2px 8px #000, 0 1px 2px #000;">Meet the creative minds behind our university website</p>
       </div>
     </section>
 
@@ -40,7 +48,7 @@
               <div class="absolute inset-0 h-1/2 bg-gradient-to-r from-blue-600 to-indigo-600"></div>
               <div class="relative">
                 <img
-                  :src="getImagePath(member.photo)"
+                  :src="'/' + member.photo"
                   alt="Profile"
                   class="w-32 h-32 object-cover rounded-full border-4 border-white shadow-md"
                 />
@@ -54,26 +62,16 @@
               </h3>
               <p class="text-gray-600">{{ member.department }}</p>
               
-              <!-- Social Media Icons -->
+              <!-- Social Media Icons: Only LinkedIn and GitHub if present -->
               <div class="flex justify-center space-x-3 mt-4">
-                <a href="#" class="text-gray-400 hover:text-blue-600 transition-colors duration-300">
-                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M22.5 12.063c0-5.799-4.702-10.5-10.5-10.5s-10.5 4.701-10.5 10.5c0 5.244 3.839 9.598 8.958 10.378v-7.342h-2.696v-3.036h2.696v-2.31c0-2.663 1.587-4.13 4.013-4.13 1.16 0 2.37.215 2.37.215v2.609h-1.335c-1.318 0-1.728.815-1.728 1.653v1.962h2.944l-.471 3.036h-2.473v7.343c5.119-.781 8.957-5.134 8.957-10.379"></path>
+                <a v-if="member.linkedin" :href="member.linkedin" target="_blank" rel="noopener" class="text-blue-600 hover:text-blue-800 transition-colors duration-300">
+                  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
                   </svg>
                 </a>
-                <a href="#" class="text-gray-400 hover:text-blue-500 transition-colors duration-300">
-                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
-                  </svg>
-                </a>
-                <a href="#" class="text-gray-400 hover:text-indigo-600 transition-colors duration-300">
-                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path>
-                  </svg>
-                </a>
-                <a href="#" class="text-gray-400 hover:text-pink-500 transition-colors duration-300">
-                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path>
+                <a v-if="member.github" :href="member.github" target="_blank" rel="noopener" class="text-gray-800 hover:text-black transition-colors duration-300">
+                  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 0C5.37 0 0 5.373 0 12c0 5.303 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.726-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.084-.729.084-.729 1.205.084 1.84 1.236 1.84 1.236 1.07 1.834 2.809 1.304 3.495.997.108-.775.418-1.305.762-1.605-2.665-.305-5.466-1.334-5.466-5.931 0-1.31.469-2.381 1.236-3.221-.124-.303-.535-1.523.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.984-.399 3.003-.404 1.018.005 2.046.138 3.006.404 2.291-1.553 3.297-1.23 3.297-1.23.653 1.653.242 2.873.119 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.803 5.624-5.475 5.921.43.372.823 1.102.823 2.222 0 1.606-.015 2.898-.015 3.293 0 .322.218.694.825.576C20.565 21.796 24 17.299 24 12c0-6.627-5.373-12-12-12z"/>
                   </svg>
                 </a>
               </div>
@@ -151,41 +149,34 @@
   </main>
 </template>
 
+<style scoped>
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in {
+  animation: fade-in 1.2s cubic-bezier(0.4,0,0.2,1) both;
+}
+@keyframes underline {
+  from { width: 0; }
+  to { width: 6rem; }
+}
+.animate-underline {
+  animation: underline 1.2s cubic-bezier(0.4,0,0.2,1) 0.5s both;
+}
+</style>
+
 <script>
 export default {
   data() {
     return {
       teamMembers: [
-        { name: "Janarthanan G", department: "Dept of AI & DS", photo: "janarthanan.webp" },
-        { name: "Subramaniyasiva S", department: "Dept of AI & DS", photo: "subramaniyasiva.webp" },
-        { name: "Abinandida R", department: "Dept of AI & DS", photo: "abinandida.webp" },
-        { name: "Ritik Naakendiran D", department: "Dept of AI & DS", photo: "ritik.webp" },
+        { name: "Janarthanan G", department: "Dept of AI & DS", photo: "janarthanan.webp", linkedin: "https://www.linkedin.com/in/janarthanangm/", github: "https://github.com/Janarthanan-Gnanamurthy" },
+        { name: "Subramaniyasiva S", department: "Dept of AI & DS", photo: "subramaniyasiva.webp", linkedin: "https://www.linkedin.com/in/subramaniyasiva-s-2202a6258/", github: "https://github.com/Subramaniyasiva002" },
+        { name: "Abinandida R", department: "Dept of AI & DS", photo: "abinandida.webp", linkedin: "https://www.linkedin.com/in/abinandida-r-377128258/", github: "https://github.com/camelia409" },
+        { name: "Ritik Naakendiran D", department: "Dept of AI & DS", photo: "ritik.webp", linkedin: "https://www.linkedin.com/in/ritik-naakendiran-d-b01198258/", github: "https://github.com/Ritik050105" },
       ],
     };
   },
-  methods: {
-    getImagePath(filename) {
-      return new URL(`../assets/${filename}`, import.meta.url).href;
-    },
-  },
 };
 </script>
-
-<style scoped>
-/* Animation for team cards */
-@keyframes float {
-  0% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-5px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
-}
-
-.animate-float {
-  animation: float 3s ease-in-out infinite;
-}
-</style>
