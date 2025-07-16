@@ -65,17 +65,14 @@
             >
               <div class="w-full flex justify-center pt-6">
                 <div class="w-28 h-28 md:w-32 md:h-32 rounded-full overflow-hidden border-4 border-blue-400 shadow-lg bg-white flex items-center justify-center">
-                  <template v-if="staff.image && staff.image.trim() !== '' && !imageErrorStates[staff.name]">
-                    <img
-                      :src="`/${staff.image}`"
-                      :alt="staff.name"
-                      class="w-full h-full object-cover"
-                      @error="handleImageError(staff.name)"
-                    />
-                  </template>
-                  <template v-else>
-                    <span class="text-5xl text-blue-300">👤</span>
-                  </template>
+                  <img
+                    v-if="staff.image && staff.image.trim() !== '' && !staff.showDefault"
+                    :src="`/${staff.image}`"
+                    :alt="staff.name"
+                    class="w-full h-full object-cover"
+                    @error="staff.showDefault = true"
+                  />
+                  <span v-else class="text-5xl text-blue-300">👤</span>
                 </div>
               </div>
               <div class="w-full bg-gradient-to-r from-blue-900 to-blue-500 py-3 px-2 flex flex-col items-center mt-6">
@@ -86,23 +83,12 @@
           </div>
         </div>
       </div>
-
-      <!-- Contact -->
-      <div :ref="'Contact'" class="bg-white/70 backdrop-blur-md rounded-2xl shadow-lg animate-fadeIn border border-gray-100 scroll-mt-28">
-        <div class="bg-gradient-to-r from-blue-900 to-blue-500 py-5 flex items-center justify-center gap-3 rounded-t-2xl">
-          <span class="text-2xl">📞</span>
-          <h2 class="text-2xl md:text-3xl font-bold text-white text-center">Contact Us</h2>
-        </div>
-        <div class="p-8 md:p-10">
-          <div class="text-gray-800 space-y-2 text-lg">
-            <p><strong>Office:</strong> {{ data.contact_details.office }}</p>
-            <p><strong>Address:</strong> {{ data.contact_details.address }}</p>
-            <p><strong>Phone:</strong> {{ data.contact_details.phone }}</p>
-            <p><strong>Email:</strong> {{ data.contact_details.email }}</p>
-          </div>
-        </div>
-      </div>
     </section>
+    <div class="flex justify-center mt-2 mb-8">
+      <a :href="`mailto:${data.contact_details?.email || 'affiliation@aurcc.ac.in'}`" class="apply-contact-btn bg-gradient-to-r from-blue-600 to-indigo-500 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:from-blue-700 hover:to-indigo-700 transition-all text-lg md:text-xl">
+        Apply Now / Contact Us
+      </a>
+    </div>
   </main>
 </template>
 
@@ -189,5 +175,11 @@ export default {
 @keyframes glowBar {
   0% { box-shadow: 0 0 16px 4px #60a5fa, 0 0 32px 8px #3b82f6; }
   100% { box-shadow: 0 0 32px 8px #3b82f6, 0 0 48px 12px #60a5fa; }
+}
+.apply-contact-btn {
+  display: inline-block;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 24px 0 rgba(59,130,246,0.12);
 }
 </style>

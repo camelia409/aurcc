@@ -21,12 +21,15 @@
                   class="admin-card bg-white/60 backdrop-blur-md rounded-2xl shadow-xl overflow-hidden flex flex-col items-center border border-blue-200 transition-all duration-300 w-full max-w-[350px]"
                 >
                   <div class="w-full flex justify-center pt-6">
-                    <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-blue-400 shadow-lg bg-white">
+                    <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-blue-400 shadow-lg bg-white flex items-center justify-center">
                       <img
+                        v-if="member.image && member.image.trim() !== '' && !member.showDefault"
                         :src="'/' + member.image"
                         :alt="member.name"
                         class="w-full h-full object-cover"
+                        @error="member.showDefault = true"
                       />
+                      <span v-else class="text-5xl text-blue-300">👤</span>
                     </div>
                   </div>
                   <div class="w-full bg-gradient-to-r from-blue-900 to-blue-500 py-3 px-2 flex flex-col items-center">
@@ -45,12 +48,15 @@
                   class="admin-card bg-white/60 backdrop-blur-md rounded-2xl shadow-xl overflow-hidden flex flex-col items-center border border-blue-200 transition-all duration-300"
                 >
                   <div class="w-full flex justify-center pt-6">
-                    <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-blue-400 shadow-lg bg-white">
+                    <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-blue-400 shadow-lg bg-white flex items-center justify-center">
                       <img
+                        v-if="member.image && member.image.trim() !== '' && !member.showDefault"
                         :src="'/' + member.image"
                         :alt="member.name"
                         class="w-full h-full object-cover"
+                        @error="member.showDefault = true"
                       />
+                      <span v-else class="text-5xl text-blue-300">👤</span>
                     </div>
                   </div>
                   <div class="w-full bg-gradient-to-r from-blue-900 to-blue-500 py-3 px-2 flex flex-col items-center">
