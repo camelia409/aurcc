@@ -1,56 +1,63 @@
 <template>
-  <main class="flex-grow">
+  <main class="flex-grow font-sans bg-blue-50">
     <!-- Hero section -->
-    <section 
-      class="bg-cover md:bg-center relative -z-10 w-full h-48 sm:h-64 md:h-94  animate-fadeIn" 
-      :style="{ 
-        backgroundImage: `url(/fac.webp)`, 
-        backgroundSize: 'cover',
-        backgroundPosition: 'top center' 
-      }">
-      <div class="absolute top-0 left-0 w-full h-full bg-black opacity-20"></div>
-      <div class="container mx-auto py-16 md:py-24 text-white px-6 md:px-28 relative z-10 font-serif">
-        <h1 class="md:text-4xl text-xl font-bold animate-slideIn">Fine Arts Club</h1>
+    <section class="relative w-full min-h-[40vh] md:min-h-[60vh] overflow-hidden flex items-center justify-center animate-fadeIn">
+      <img src="/fac.webp" alt="Fine Arts Club" class="absolute inset-0 w-full h-full object-cover object-center" />
+      <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-black/60 via-black/30 to-transparent"></div>
+      <div class="absolute inset-0 flex flex-col items-center justify-center z-10 px-2">
+        <div class="backdrop-blur-md bg-white/30 rounded-2xl shadow-lg px-4 py-4 sm:px-8 sm:py-6 md:px-12 md:py-10 flex flex-col items-center w-full max-w-2xl border border-white/30">
+          <h1 class="text-2xl sm:text-4xl md:text-5xl font-extrabold text-white drop-shadow-lg tracking-wide text-center mb-2 leading-tight animate-slideIn">Fine Arts Club</h1>
+          <p class="text-base sm:text-lg md:text-2xl text-white drop-shadow text-center font-medium">Celebrating Creativity and Talent</p>
+        </div>
       </div>
     </section>
-
     <!-- Main content -->
-    <div class="p-6 mx-auto space-y-8 bg-blue-200 font-serif animate-fadeInUp">
-      <!-- Description Section -->
-      <div class="bg-white shadow-lg rounded-lg animate-popIn">
-        <h1 class="text-2xl md:text-3xl font-bold mb-4 bg-blue-900 text-white p-4 text-center rounded-t-lg">LAYAM AAM RHYTHM OF ARTS MUSIC & DANCE</h1>
-        <p class="text-lg md:text-xl font-medium leading-relaxed p-4">{{ description }}</p>
-      </div>
-
-      <!-- Office Bearers Section -->
-      <div class="bg-white shadow-lg rounded-lg animate-fadeIn delay-1s">
-        <h2 class="text-2xl md:text-3xl font-bold mb-4 bg-blue-900 text-white p-4 text-center rounded-t-lg">Office Bearers</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4 font-medium">
-          <div v-for="bearer in officeBearers" :key="bearer['SL.NO']" class="bg-gray-100 rounded-lg p-4 shadow-md animate-fadeInUp delay-1s">
-            <p><strong>Name:</strong> {{ bearer.Name }}</p>
-            <p><strong>Designation:</strong> {{ bearer.Designation }}</p>
-            <p><strong>Department:</strong> {{ bearer.Department }}</p>
+    <section class="mx-auto py-14 px-2 md:px-9">
+      <div class="max-w-7xl mx-auto flex flex-col gap-12">
+        <!-- Description Section -->
+        <div class="bg-white/70 backdrop-blur-md rounded-2xl shadow-lg animate-fadeIn border border-gray-100">
+          <div class="bg-gradient-to-r from-blue-900 to-blue-500 py-5 flex items-center justify-center gap-3 rounded-t-2xl">
+            <span class="text-2xl">🎨</span>
+            <h2 class="text-2xl md:text-3xl font-bold text-white text-center">LAYAM AAM RHYTHM OF ARTS MUSIC & DANCE</h2>
+          </div>
+          <div class="p-8 md:p-10">
+            <p class="text-lg md:text-xl font-medium text-gray-800">{{ description }}</p>
+          </div>
+        </div>
+        <!-- Office Bearers Section -->
+        <div class="bg-white/70 backdrop-blur-md rounded-2xl shadow-lg animate-fadeIn border border-gray-100">
+          <div class="bg-gradient-to-r from-blue-900 to-blue-500 py-5 flex items-center justify-center gap-3 rounded-t-2xl">
+            <span class="text-2xl">👥</span>
+            <h2 class="text-2xl md:text-3xl font-bold text-white text-center">Office Bearers</h2>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 p-8 md:p-10">
+            <div v-for="bearer in officeBearers" :key="bearer['SL.NO']" class="bg-white/80 rounded-xl shadow p-6 border border-gray-100 flex flex-col gap-2 animate-fadeInUp">
+              <div class="font-bold text-lg text-indigo-700">{{ bearer.Name }}</div>
+              <div class="text-gray-700 font-medium">{{ bearer.Designation }}</div>
+              <div class="text-gray-600 text-sm">Department: <span class="font-normal">{{ bearer.Department }}</span></div>
+            </div>
+          </div>
+        </div>
+        <!-- Coordinator Section -->
+        <div class="bg-white/70 backdrop-blur-md rounded-2xl shadow-lg animate-fadeIn border border-gray-100">
+          <div class="bg-gradient-to-r from-blue-900 to-blue-500 py-5 flex items-center justify-center gap-3 rounded-t-2xl">
+            <span class="text-2xl">🎤</span>
+            <h2 class="text-2xl md:text-3xl font-bold text-white text-center">Coordinator</h2>
+          </div>
+          <div class="p-8 md:p-10">
+            <div class="bg-white/80 rounded-xl shadow p-6 border border-gray-100 flex flex-col gap-2 animate-fadeInUp">
+              <div class="font-bold text-lg text-indigo-700">{{ coordinator.Name }}</div>
+              <div class="text-gray-700 font-medium">{{ coordinator.Designation }}</div>
+              <div class="text-gray-600 text-sm">Department: <span class="font-normal">{{ coordinator.Department }}</span></div>
+              <div class="text-gray-600 text-sm">University: <span class="font-normal">{{ coordinator.University }}</span></div>
+              <div class="text-gray-600 text-sm">Address: <span class="font-normal">{{ coordinator.Address }}</span></div>
+              <div class="text-gray-600 text-sm">Mobile: <span class="font-normal">{{ coordinator.Mobile }}</span></div>
+              <div class="text-gray-600 text-sm">Email: <a :href="`mailto:${coordinator.Email}`" class="text-blue-500 underline">{{ coordinator.Email }}</a></div>
+            </div>
           </div>
         </div>
       </div>
-
-      <!-- Coordinator Section -->
-      <div class="bg-white shadow-lg rounded-lg animate-fadeIn delay-2s">
-        <h2 class="text-2xl md:text-3xl font-bold mb-4 bg-blue-900 text-white p-4 text-center rounded-t-lg">Coordinator</h2>
-        <div class="p-6 rounded-lg shadow-md font-medium animate-popIn delay-2s">
-          <p class="text-lg"><strong>Name:</strong> {{ coordinator.Name }}</p>
-          <p class="text-lg"><strong>Designation:</strong> {{ coordinator.Designation }}</p>
-          <p class="text-lg"><strong>Department:</strong> {{ coordinator.Department }}</p>
-          <p class="text-lg"><strong>University:</strong> {{ coordinator.University }}</p>
-          <p class="text-lg"><strong>Address:</strong> {{ coordinator.Address }}</p>
-          <p class="text-lg"><strong>Mobile:</strong> {{ coordinator.Mobile }}</p>
-          <p class="text-lg">
-            <strong>Email:</strong> 
-            <a :href="`mailto:${coordinator.Email}`" class="text-blue-500 underline">{{ coordinator.Email }}</a>
-          </p>
-        </div>
-      </div>
-    </div>
+    </section>
   </main>
 </template>
 

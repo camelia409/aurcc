@@ -1,15 +1,14 @@
 <template>
-  <main class="flex-grow">
+  <main class="bg-gradient-to-br from-indigo-100 via-blue-50 to-white min-h-screen font-sans text-gray-800">
     <!-- Hero Section -->
-    <section
-      class="bg-cover bg-center relative w-full h-40 sm:h-80 md:h-94 animate-fadeIn"
-      :style="{ backgroundImage: `url(${backgroundImage})` }"
-    >
-      <div class="absolute inset-0 bg-black opacity-20"></div>
-      <div class="flex items-center justify-center h-full relative z-10 px-4">
-        <h1 class="md:text-4xl text-xl font-extrabold text-white drop-shadow-lg font-serif text-center animate-slideIn">
-          PACE CELL
-        </h1>
+    <section class="relative w-full min-h-[40vh] md:min-h-[60vh] overflow-hidden flex items-center justify-center animate-fadeIn">
+      <img :src="backgroundImage" alt="PACE Cell" class="absolute inset-0 w-full h-full object-cover object-center" />
+      <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-black/60 via-black/30 to-transparent"></div>
+      <div class="absolute inset-0 flex flex-col items-center justify-center z-10 px-2">
+        <div class="backdrop-blur-md bg-white/30 rounded-2xl shadow-lg px-4 py-4 sm:px-8 sm:py-6 md:px-12 md:py-10 flex flex-col items-center w-full max-w-2xl border border-white/30">
+          <h1 class="text-2xl sm:text-4xl md:text-5xl font-extrabold text-white drop-shadow-lg tracking-wide text-center mb-2 leading-tight">PACE CELL</h1>
+          <p class="text-base sm:text-lg md:text-2xl text-white drop-shadow text-center font-medium">Empowering students for competitive excellence</p>
+        </div>
       </div>
     </section>
 
@@ -36,76 +35,74 @@
     </div>
 
     <!-- Content -->
-    <section
-      class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-12"
-      ref="contentWrapper"
-    >
+    <section class="max-w-7xl mx-auto py-14 px-2 md:px-9 flex flex-col gap-12" ref="contentWrapper">
       <!-- Description Section -->
-      <div
-        id="description"
-        class="bg-white rounded-2xl shadow p-6 md:p-10 scroll-mt-28"
-      >
-        <h2 class="text-3xl font-bold mb-4 text-indigo-700">About the PACE Cell</h2>
-        <p class="text-lg leading-relaxed text-gray-800">
-          {{ paceData.description }}
-        </p>
+      <div id="description" class="bg-white/70 backdrop-blur-md rounded-2xl shadow-lg animate-fadeIn border border-gray-100 scroll-mt-28">
+        <div class="bg-gradient-to-r from-blue-900 to-blue-500 py-5 flex items-center justify-center gap-3 rounded-t-2xl">
+          <span class="text-2xl">🧭</span>
+          <h2 class="text-2xl md:text-3xl font-bold text-white text-center">About the PACE Cell</h2>
+        </div>
+        <div class="p-8 md:p-10">
+          <p class="text-lg leading-relaxed text-gray-800">{{ paceData.description }}</p>
+        </div>
       </div>
 
       <!-- Staff Section -->
-      <div
-        ref="staff"
-        id="staff"
-        class="bg-white px-4 sm:px-6 lg:px-8 py-12 rounded-2xl shadow scroll-mt-28"
-      >
-        <h2 class="text-3xl md:text-4xl font-bold text-center mb-10 text-gray-800">
-          PACE Cell Staff
-        </h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div
-            v-for="staff in paceData.staff"
-            :key="staff.name"
-            class="bg-white rounded-xl shadow-sm overflow-hidden flex flex-col border border-gray-100"
-          >
-            <div class="bg-gradient-to-r from-blue-400 to-blue-300 h-2"></div>
-            <div class="p-6 flex justify-center">
-              <div class="w-28 h-28 rounded-full overflow-hidden border-2 border-amber-100 shadow">
-                <img
-                  :src="getImageUrl(staff.image)"
-                  :alt="staff.name"
-                  class="w-full h-full object-cover"
-                />
+      <div ref="staff" id="staff" class="bg-white/70 backdrop-blur-md rounded-2xl shadow-lg animate-fadeIn border border-gray-100 scroll-mt-28">
+        <div class="bg-gradient-to-r from-blue-900 to-blue-500 py-5 flex items-center justify-center gap-3 rounded-t-2xl">
+          <span class="text-2xl">👥</span>
+          <h2 class="text-2xl md:text-3xl font-bold text-white text-center">PACE Cell Staff</h2>
+        </div>
+        <div class="p-8 md:p-10">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div
+              v-for="staff in paceData.staff"
+              :key="staff.name"
+              class="pace-staff-card bg-white/60 backdrop-blur-md rounded-2xl shadow-xl overflow-hidden flex flex-col items-center border border-blue-200 transition-all duration-300 text-center"
+            >
+              <div class="w-full flex justify-center pt-6">
+                <div class="w-28 h-28 md:w-32 md:h-32 rounded-full overflow-hidden border-4 border-blue-400 shadow-lg bg-white flex items-center justify-center">
+                  <img
+                    v-if="staff.image"
+                    :src="getImageUrl(staff.image)"
+                    :alt="staff.name"
+                    class="w-full h-full object-cover"
+                  />
+                  <span v-else class="text-5xl text-blue-300">👤</span>
+                </div>
               </div>
-            </div>
-            <div class="flex-grow flex flex-col p-5 text-center">
-              <h2 class="text-xl font-bold text-gray-800 mb-1">{{ staff.name }}</h2>
-              <p class="text-blue-600 font-medium mb-2">{{ staff.position }}</p>
+              <div class="w-full bg-gradient-to-r from-blue-900 to-blue-500 py-3 px-2 flex flex-col items-center mt-6">
+                <h2 class="text-base md:text-xl font-bold text-white font-sans tracking-wide">{{ staff.name }}</h2>
+                <p class="text-xs md:text-base text-blue-100 font-sans">{{ staff.position }}</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
       <!-- Contact Section -->
-      <div
-        ref="contact"
-        id="contact"
-        class="bg-white rounded-2xl shadow p-6 md:p-10 scroll-mt-28"
-      >
-        <h2 class="text-3xl font-bold mb-4">Contact Us</h2>
-        <ul class="text-lg space-y-2 text-gray-800">
-          <li>
-            <span class="font-semibold">Email:</span>
-            <a :href="`mailto:${paceData.contact.email}`" class="text-blue-600 underline">
-              {{ paceData.contact.email }}
-            </a>
-          </li>
-          <li><span class="font-semibold">Phone:</span> {{ paceData.contact.phone }}</li>
-          <li>
-            <span class="font-semibold">Website:</span>
-            <a :href="paceData.contact.website" class="text-blue-600 underline" target="_blank" rel="noopener">
-              Visit Link
-            </a>
-          </li>
-        </ul>
+      <div ref="contact" id="contact" class="bg-white/70 backdrop-blur-md rounded-2xl shadow-lg animate-fadeIn border border-gray-100 scroll-mt-28">
+        <div class="bg-gradient-to-r from-blue-900 to-blue-500 py-5 flex items-center justify-center gap-3 rounded-t-2xl">
+          <span class="text-2xl">📞</span>
+          <h2 class="text-2xl md:text-3xl font-bold text-white text-center">Contact Us</h2>
+        </div>
+        <div class="p-8 md:p-10">
+          <ul class="text-lg space-y-2 text-gray-800">
+            <li>
+              <span class="font-semibold">Email:</span>
+              <a :href="`mailto:${paceData.contact.email}`" class="text-blue-600 underline">
+                {{ paceData.contact.email }}
+              </a>
+            </li>
+            <li><span class="font-semibold">Phone:</span> {{ paceData.contact.phone }}</li>
+            <li>
+              <span class="font-semibold">Website:</span>
+              <a :href="paceData.contact.website" class="text-blue-600 underline" target="_blank" rel="noopener">
+                Visit Link
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
   </main>
@@ -176,5 +173,21 @@ export default {
 .no-scrollbar {
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+.pace-staff-card {
+  transition: transform 0.18s cubic-bezier(.4,2,.6,1), box-shadow 0.18s cubic-bezier(.4,2,.6,1);
+}
+.pace-staff-card:hover {
+  transform: translateY(-8px) scale(1.025);
+  box-shadow: 0 8px 32px 0 rgba(59,130,246,0.18), 0 2px 8px 0 rgba(59,130,246,0.10);
+  border-color: #2563eb;
+}
+.animate-glow-bar {
+  box-shadow: 0 0 16px 4px #60a5fa, 0 0 32px 8px #3b82f6;
+  animation: glowBar 2.5s ease-in-out infinite alternate;
+}
+@keyframes glowBar {
+  0% { box-shadow: 0 0 16px 4px #60a5fa, 0 0 32px 8px #3b82f6; }
+  100% { box-shadow: 0 0 32px 8px #3b82f6, 0 0 48px 12px #60a5fa; }
 }
 </style>

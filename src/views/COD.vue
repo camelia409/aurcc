@@ -1,24 +1,21 @@
 <template>
-  <div
-    class="p-9 bg-cover bg-center"
-    :style="backgroundStyle"
-  >
+  <div class="p-9 bg-gradient-to-br from-indigo-100 via-blue-50 to-white min-h-screen">
     <div class="text-center py-5">
-      <h1 class="text-xl md:text-3xl font-semibold text-white drop-shadow-lg font-serif">
-        Cell Coordinators
-      </h1>
+      <h1 class="text-2xl md:text-4xl font-bold text-blue-900 tracking-wide font-serif">Cell Coordinators</h1>
+      <div class="flex justify-center mt-2 mb-4">
+        <span class="block w-32 h-1 rounded-full bg-gradient-to-r from-blue-400 via-blue-600 to-indigo-400 animate-glow-bar"></span>
+      </div>
     </div>
-    <div class="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 font-serif">
+    <div class="max-w-7xl mx-auto grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 font-sans">
       <div
         v-for="director in directors"
         :key="director.name"
-        class="bg-white rounded-lg shadow-lg flex flex-col items-center md:p-6 p-4 hover:shadow-xl transition duration-300"
+        class="cod-card bg-white/60 backdrop-blur-md rounded-2xl shadow-xl flex flex-col items-center border border-blue-200 transition-all duration-300 py-8 px-4"
       >
         <div class="text-center">
-          <h2 class="text-sm md:text-xl font-semibold text-blue-600">
-            {{ director.name }}
-          </h2>
-          <p class="text-sm md:text-lg text-gray-800">
+          <h2 class="text-base md:text-xl font-bold text-blue-900 font-sans mb-2">{{ director.name }}</h2>
+          <p class="text-xs md:text-base text-blue-700 font-sans flex items-center gap-2 justify-center">
+            <span v-html="getCentreIcon(director.centre)"></span>
             {{ director.centre }}
           </p>
         </div>
@@ -30,6 +27,26 @@
 <script>
 import directorsData from '@/assets/COD.json';
 
+// Centre icon mapping
+const centreIcons = {
+  'Zonal Office': '🗺️', // map for zone/region
+  'Academics': '📚', // books for academics
+  'DGATE': '🔑', // key for gateway
+  'PACE Cell': '🧭', // compass for guidance
+  'AICTE': '🏛️', // classical building for council
+  'Alumni': '🎓', // graduation cap for alumni
+  'Fine Arts Club': '🎭', // performing arts mask
+  'Research': '🔬', // microscope for research
+  'Tamil Mandram': '📜', // scroll for language/literature
+  'Admission cell': '📝', // memo for admission
+  'Naan Mudhalvan': '🌟', // star for achiever
+  'Office of Affiliation': '🔗', // link for affiliation
+  'Distant Education': '🖥️', // desktop computer for online learning
+  'NSS': '🌱', // seedling for service/growth
+  'Placement Cell': '💼', // briefcase for placement
+  'Exam Cell': '🗂️', // card index for exam organization
+};
+
 export default {
   name: 'Directors',
   data() {
@@ -37,18 +54,29 @@ export default {
       directors: directorsData.centres,
     };
   },
-  computed: {
-    backgroundStyle() {
-      return {
-        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/bg.webp)`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-      };
-    },
+  methods: {
+    getCentreIcon(centre) {
+      return centreIcons[centre] || '🎓';
+    }
   },
 };
 </script>
 
 <style scoped>
-/* Scoped styles are not needed as Tailwind CSS handles all styling */
+.cod-card {
+  transition: transform 0.18s cubic-bezier(.4,2,.6,1), box-shadow 0.18s cubic-bezier(.4,2,.6,1);
+}
+.cod-card:hover {
+  transform: translateY(-8px) scale(1.025);
+  box-shadow: 0 8px 32px 0 rgba(59,130,246,0.18), 0 2px 8px 0 rgba(59,130,246,0.10);
+  border-color: #2563eb;
+}
+.animate-glow-bar {
+  box-shadow: 0 0 16px 4px #60a5fa, 0 0 32px 8px #3b82f6;
+  animation: glowBar 2.5s ease-in-out infinite alternate;
+}
+@keyframes glowBar {
+  0% { box-shadow: 0 0 16px 4px #60a5fa, 0 0 32px 8px #3b82f6; }
+  100% { box-shadow: 0 0 32px 8px #3b82f6, 0 0 48px 12px #60a5fa; }
+}
 </style>

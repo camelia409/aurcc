@@ -130,7 +130,7 @@
         </div>
 
         <!-- Facilities Cards with Alternating Layout -->
-        <div class="space-y-16">
+        <div class="space-y-16 mx-10">
           <div 
             v-for="(facility, index) in department.facility" 
             :key="facility.name" 
@@ -163,7 +163,7 @@
     </section>
 
     <!-- Faculty Section with Modern Cards -->
-    <section id="faculty" ref="faculty" class="scroll-section py-16 bg-gray-50">
+    <section id="faculty" ref="faculty" class="scroll-section py-16 bg-gray-50 mx-28">
       <div class="container mx-auto px-4">
         <!-- Section Title with Animated Underline -->
         <div class="text-center mb-12">
@@ -184,13 +184,13 @@
               @click="showDetails(staff)"
             >
               <!-- Photo with Gradient Background -->
-              <div class="relative pt-8 pb-4 flex justify-center">
+              <div class="relative pt-2 flex justify-center">
                 <div class="absolute inset-0 h-1/2 bg-gradient-to-r from-blue-600 to-indigo-600"></div>
                 <div class="relative">
                   <img 
                     :src="'/' + staff.image" 
                     :alt="staff.name" 
-                    class="w-48 h-48 object-cover rounded-full border-4 border-white shadow-lg"
+                    class="w-48 h-58 object-cover rounded-full border-4 border-white shadow-lg"
                   >
                 </div>
               </div>
@@ -213,7 +213,7 @@
         <!-- Assistant Professors -->
         <div>
           <h3 class="text-2xl font-bold text-center mb-8 text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-indigo-700">Assistant Professors</h3>
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-28">
             <div 
               v-for="staff in department.faculty.assistant_professors" 
               :key="staff.email" 
@@ -221,13 +221,13 @@
               @click="showDetails(staff)"
             >
               <!-- Photo with Gradient Background -->
-              <div class="relative pt-8 pb-4 flex justify-center">
+              <div class="relative pt-2 flex justify-center">
                 <div class="absolute inset-0 h-1/2 bg-gradient-to-r from-blue-600 to-indigo-600"></div>
                 <div class="relative">
                   <img 
                     :src="'/' + staff.image" 
                     :alt="staff.name" 
-                    class="w-40 h-40 object-cover rounded-full border-4 border-white shadow-lg"
+                    class="w-48 h-58 object-cover rounded-full border-4 border-white shadow-lg"
                   >
                 </div>
               </div>
@@ -282,7 +282,7 @@
               <div class="flex flex-col md:flex-row gap-8">
                 <!-- Profile Image and Name -->
                 <div class="md:w-1/3 flex flex-col items-center">
-                  <div class="w-48 h-48 rounded-full overflow-hidden border-4 border-indigo-100 shadow-md mb-4">
+                  <div class="w-48 h-58 rounded-full overflow-hidden border-4 border-indigo-100 shadow-md mb-4">
                     <img :src="'/' + selectedStaff.image" :alt="selectedStaff.name" class="w-full h-full object-cover">
                   </div>
                   <h2 class="text-xl font-bold text-center text-gray-800 mt-2">{{ selectedStaff.name }}</h2>

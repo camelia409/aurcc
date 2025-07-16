@@ -1,14 +1,13 @@
 <template>
   <main class="flex-grow">
     <!-- Hero section -->
-    <section
-      class="bg-cover md:bg-center relative -z-10 w-full h-48 sm:h-64 md:h-94 animate-fadeIn"
-      :style="{ backgroundImage: `url(/temple5.webp)` }"
-    >
-
+    <section class="relative w-full min-h-[40vh] md:min-h-[60vh] overflow-hidden flex items-center justify-center animate-fadeIn">
+      <img src="/temple5.webp" alt="Tamil Mandram" class="absolute inset-0 w-full h-full object-cover object-center" />
       <div class="absolute top-0 left-0 w-full h-full bg-black opacity-20"></div>
-      <div class="flex items-start justify-center md:py-19 text-white p-9 relative z-10">
-        <h1 class="md:text-4xl text-xl font-bold mb-20 animate-slideIn">{{ data.name }}</h1>
+      <div class="absolute inset-0 flex items-center justify-center z-10 px-2">
+        <div class="backdrop-blur-md bg-white/30 rounded-2xl shadow-lg px-4 py-4 sm:px-8 sm:py-6 md:px-12 md:py-10 flex flex-col items-center w-full max-w-xl border border-white/30">
+          <h1 class="text-xl sm:text-3xl md:text-5xl font-extrabold text-white drop-shadow-lg tracking-wide text-center mb-2 leading-tight animate-slideIn">{{ data.name }}</h1>
+        </div>
       </div>
     </section>
 

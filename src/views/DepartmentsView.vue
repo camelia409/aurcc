@@ -253,7 +253,7 @@
             <!-- HOD Desk -->
             <div class="mb-16">
               <h3 class="text-2xl font-bold text-center mb-8 text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-indigo-700">Head of Department</h3>
-              <div class="flex justify-center">
+              <div class="flex justify-center ">
                 <div 
                   v-for="staff in department.faculty.hod_desk" 
                   :key="staff.email" 
@@ -261,13 +261,13 @@
                   @click="showDetails(staff)"
                 >
                   <!-- Photo with Gradient Background -->
-                  <div class="relative pt-8 pb-4 flex justify-center">
+                  <div class="relative pt-2 flex justify-center px-12">
                     <div class="absolute inset-0 h-1/2 bg-gradient-to-r from-blue-600 to-indigo-600"></div>
                     <div class="relative">
                       <img 
                         :src="'/' + staff.image" 
                         :alt="staff.name" 
-                        class="w-48 h-48 object-cover rounded-full border-4 border-white shadow-lg"
+                        class="w-48 h-58 object-cover rounded-full border-4 border-white shadow-lg"
                       >
                     </div>
                   </div>
@@ -290,7 +290,7 @@
             <!-- Assistant Professors -->
             <div>
               <h3 class="text-2xl font-bold text-center mb-8 text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-indigo-700">Assistant Professors</h3>
-              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-28">
                 <div 
                   v-for="staff in department.faculty.assistant_professors" 
                   :key="staff.email" 
@@ -298,13 +298,13 @@
                   @click="showDetails(staff)"
                 >
                   <!-- Photo with Gradient Background -->
-                  <div class="relative pt-8 pb-4 flex justify-center">
+                  <div class="relative pt-2 flex justify-center">
                     <div class="absolute inset-0 h-1/2 bg-gradient-to-r from-blue-600 to-indigo-600"></div>
                     <div class="relative">
                       <img 
                         :src="'/' + staff.image" 
                         :alt="staff.name" 
-                        class="w-40 h-40 object-cover rounded-full border-4 border-white shadow-lg"
+                        class="w-48 h-58 object-cover rounded-full border-4 border-white shadow-lg"
                       >
                     </div>
                   </div>
@@ -341,9 +341,9 @@
                   <div class="flex flex-col md:flex-row gap-8">
                     <!-- Profile Image and Name -->
                     <div class="md:w-1/3 flex flex-col items-center">
-                      <div class="w-48 h-48 rounded-full overflow-hidden border-4 border-indigo-100 shadow-md mb-4">
-                        <img :src="'http://localhost:5173/src/assets/' + selectedStaff.image" alt="Profile Picture" class="w-full h-full object-cover">
-                      </div>
+                      <div class="w-48 h-68 rounded-full overflow-hidden border-4 border-indigo-100 shadow-md mb-4">
+                        <img :src="'/' + selectedStaff.image" alt="Profile Picture" class="w-full h-full object-cover">
+                      </div>   
                       <h2 class="text-xl font-bold text-center text-gray-800 mt-2">{{ selectedStaff.name }}</h2>
                       <p class="text-indigo-600 font-medium text-center">{{ selectedStaff.position }}</p>
                     </div>
@@ -468,7 +468,7 @@
               <span class=" bg-clip-text">Administrative Staff</span>
             </h2>
             
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20">
               <div
                 v-for="staff in department.admin_staff"
                 :key="staff.email"
@@ -476,7 +476,7 @@
               >
                 <div class="bg-gradient-to-r from-blue-400 to-blue-300 h-2"></div>
                 <div class="p-6 flex justify-center">
-                  <div class="w-28 h-28 rounded-full overflow-hidden border-2 border-amber-100 shadow">
+                  <div class="w-28 h-58 rounded-full overflow-hidden border-2 border-amber-100 shadow">
                     <img :src="'/' + staff.image" :alt="staff.name" class="w-full h-full object-cover" />
                   </div>
                 </div>
