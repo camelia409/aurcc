@@ -76,6 +76,20 @@
               "SCA": 1,
               "ST": 1
             }
+          },
+          {
+            "S.No": 6,
+            "Courses Offered": "B.E. Electronics Engineering(VLSI Design and Technology)",
+            "Intake": 60,
+            "Seats": {
+              "OC": 16,
+              "BC": 14,
+              "BCM": 2,
+              "MBC": 11,
+              "SC": 9,
+              "SCA": 2,
+              "ST": 1
+            }
           }
         ],
         "PG programmes": [
@@ -83,15 +97,30 @@
             "S.No": 1,
             "Department": "MBA",
             "Courses Offered": "MASTER OF BUSINESS ADMINISTRATION",
-            "Intake": 120,
+            "Intake": 60,
             "Seats": {
-              "OC": 32,
-              "BC": 30,
-              "BCM": 4,
-              "MBC": 25,
-              "SC": 20,
-              "SCA": 5,
-              "ST": 4
+              "OC": 16,
+              "BC": 14,
+              "BCM": 2,
+              "MBC": 11,
+              "SC": 9,
+              "SCA": 2,
+              "ST": 1
+            }
+          },
+          {
+            "S.No": 2,
+            "Department": "MBA",
+            "Courses Offered": "MASTER OF BUSINESS ADMINISTRATION(BUSINESS ANALYTICS)",
+            "Intake": 60,
+            "Seats": {
+              "OC": 16,
+              "BC": 14,
+              "BCM": 2,
+              "MBC": 11,
+              "SC": 9,
+              "SCA": 2,
+              "ST": 1
             }
           }
         ]

@@ -101,11 +101,13 @@
   "faculty": [
     {
       "name": "Dr. JAYARAMAN",
-      "designation": "University Assistant Librarian"
+      "designation": "University Assistant Librarian",
+      "img": "jayaram.webp"
     },
     {
       "name": "Dr. P. BASKARAN",
-      "designation": "Assistant Librarian"
+      "designation": "Assistant Librarian",
+      "img": "baskaran.webp"
     }
   ]
 }

@@ -1,31 +1,32 @@
 <template>
-  <div
-    class="mx-auto bg-cover bg-center"
-    :style="backgroundStyle"
-  >
+  <div class="mx-auto bg-gradient-to-br from-indigo-100 via-blue-50 to-white min-h-screen">
     <div class="text-center mb-8 py-3 md:py-6 bg-opacity-90 font-serif">
-      <h1 class="text-xl md:text-3xl font-semibold text-black">Head of the Departments</h1>
+      <h1 class="text-2xl md:text-4xl font-bold text-blue-900 tracking-wide font-serif">Head of the Departments</h1>
+      <div class="flex justify-center mt-2 mb-4">
+        <span class="block w-32 h-1 rounded-full bg-gradient-to-r from-blue-400 via-blue-600 to-indigo-400 animate-glow-bar"></span>
+      </div>
     </div>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-4 md:gap-10 font-serif">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 font-sans">
       <div
         v-for="hod in hods"
         :key="hod.name"
-        class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col m-20 sm:m-6 md:m-20 items-center border-4 border-black"
+        class="hod-card bg-white/60 backdrop-blur-md rounded-2xl shadow-xl overflow-hidden flex flex-col items-center border border-blue-200 transition-all duration-300"
       >
-        <div class="w-full flex justify-center pt-2 md:pt-4">
-          <div class="md:w-60 md:h-60 w-40 h-40 sm:w-48 sm:h-48 overflow-hidden">
+        <div class="w-full flex justify-center pt-6">
+          <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-blue-400 shadow-lg bg-white">
             <img
-              :src="'/'+hod.photo"
+              :src="'/' + hod.photo"
               :alt="hod.name"
-              class="w-full h-full object-contain"
+              class="w-full h-full object-cover"
             />
           </div>
         </div>
-        <div
-          class="flex-grow flex flex-col justify-center p-2 sm:p-4 md:p-6 bg-gray-200 text-center w-full"
-        >
-          <h2 class="text-sm sm:text-lg md:text-2xl font-semibold text-blue-600">{{ hod.name }}</h2>
-          <p class="text-xs sm:text-sm md:text-lg text-gray-800">{{ hod.department }}</p>
+        <div class="w-full bg-gradient-to-r from-blue-900 to-blue-500 py-3 px-2 flex flex-col items-center">
+          <h2 class="text-base md:text-xl font-bold text-white font-sans tracking-wide">{{ hod.name }}</h2>
+          <p class="text-xs md:text-base text-blue-100 font-sans flex items-center gap-2 justify-center">
+            <span v-html="getDeptIcon(hod.department)"></span>
+            {{ hod.department }}
+          </p>
         </div>
       </div>
     </div>
@@ -35,6 +36,16 @@
 <script>
 import hodsData from '@/assets/HOD.json';
 
+// Department icon mapping
+const deptIcons = {
+  'CSE': '💻',
+  'EEE': '⚡',
+  'ECE': '📡',
+  'MECH': '🛠️',
+  'MBA': '📈',
+  'Science and Humanities': '🔬'
+};
+
 export default {
   name: 'HODs',
   data() {
@@ -42,14 +53,10 @@ export default {
       hods: hodsData.departments,
     };
   },
-  computed: {
-    backgroundStyle() {
-      return {
-        backgroundImage: `url(/lt.webp)`,
-      };
-    },
-  },
   methods: {
+    getDeptIcon(dept) {
+      return deptIcons[dept] || '🎓';
+    }
   },
 };
 </script>
@@ -59,7 +66,20 @@ export default {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
-.hod-member {
-  @apply m-5 p-3 border border-gray-200 flex flex-col items-center;
+.hod-card {
+  transition: transform 0.18s cubic-bezier(.4,2,.6,1), box-shadow 0.18s cubic-bezier(.4,2,.6,1);
+}
+.hod-card:hover {
+  transform: translateY(-8px) scale(1.025);
+  box-shadow: 0 8px 32px 0 rgba(59,130,246,0.18), 0 2px 8px 0 rgba(59,130,246,0.10);
+  border-color: #2563eb;
+}
+.animate-glow-bar {
+  box-shadow: 0 0 16px 4px #60a5fa, 0 0 32px 8px #3b82f6;
+  animation: glowBar 2.5s ease-in-out infinite alternate;
+}
+@keyframes glowBar {
+  0% { box-shadow: 0 0 16px 4px #60a5fa, 0 0 32px 8px #3b82f6; }
+  100% { box-shadow: 0 0 32px 8px #3b82f6, 0 0 48px 12px #60a5fa; }
 }
 </style>
