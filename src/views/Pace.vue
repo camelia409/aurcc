@@ -43,7 +43,17 @@
           <h2 class="text-2xl md:text-3xl font-bold text-white text-center">About the PACE Cell</h2>
         </div>
         <div class="p-8 md:p-10">
-          <p class="text-lg leading-relaxed text-gray-800">{{ paceData.description }}</p>
+          <p class="text-lg leading-relaxed text-gray-800 mb-4">
+            <span class="font-semibold text-blue-900">PACE (Placement and Competitive Exam) Cell</span> at Anna University Regional Campus Coimbatore is your dedicated partner for success in government and competitive exams. We empower students with:
+          </p>
+          <ul class="list-disc pl-6 space-y-2 text-base text-gray-800 mb-4">
+            <li><span class="font-semibold">Expert Guidance:</span> Access to experienced mentors and subject matter experts for personalized support.</li>
+            <li><span class="font-semibold">Comprehensive Resources:</span> Books, study materials, and online tools for TNPSC, UPSC, Banking, SSC, Railway, and more.</li>
+            <li><span class="font-semibold">Workshops & Mock Tests:</span> Regular training programs, workshops, and practice exams to boost your confidence and skills.</li>
+            <li><span class="font-semibold">Peer & Volunteer Support:</span> Join a vibrant community of coordinators, volunteers, and fellow aspirants for motivation and teamwork.</li>
+            <li><span class="font-semibold">Inclusive Environment:</span> Support for students from all departments, ensuring everyone has the opportunity to excel.</li>
+          </ul>
+          <p class="text-base text-gray-700">Whether you’re aiming for a government job or seeking to improve your competitive exam performance, the PACE Cell is here to guide you every step of the way.</p>
         </div>
       </div>
 
@@ -80,29 +90,10 @@
         </div>
       </div>
 
-      <!-- Contact Section -->
-      <div ref="contact" id="contact" class="bg-white/70 backdrop-blur-md rounded-2xl shadow-lg animate-fadeIn border border-gray-100 scroll-mt-28">
-        <div class="bg-gradient-to-r from-blue-900 to-blue-500 py-5 flex items-center justify-center gap-3 rounded-t-2xl">
-          <span class="text-2xl">📞</span>
-          <h2 class="text-2xl md:text-3xl font-bold text-white text-center">Contact Us</h2>
-        </div>
-        <div class="p-8 md:p-10">
-          <ul class="text-lg space-y-2 text-gray-800">
-            <li>
-              <span class="font-semibold">Email:</span>
-              <a :href="`mailto:${paceData.contact.email}`" class="text-blue-600 underline">
-                {{ paceData.contact.email }}
-              </a>
-            </li>
-            <li><span class="font-semibold">Phone:</span> {{ paceData.contact.phone }}</li>
-            <li>
-              <span class="font-semibold">Website:</span>
-              <a :href="paceData.contact.website" class="text-blue-600 underline" target="_blank" rel="noopener">
-                Visit Link
-              </a>
-            </li>
-          </ul>
-        </div>
+      <div class="flex justify-center mt-2 mb-8">
+        <a :href="`mailto:${paceData.contact?.email || 'pacecell@aurcc.ac.in'}`" class="apply-contact-btn bg-gradient-to-r from-blue-600 to-indigo-500 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:from-blue-700 hover:to-indigo-700 transition-all text-lg md:text-xl">
+          Apply Now / Contact Us
+        </a>
       </div>
     </section>
   </main>
@@ -189,5 +180,11 @@ export default {
 @keyframes glowBar {
   0% { box-shadow: 0 0 16px 4px #60a5fa, 0 0 32px 8px #3b82f6; }
   100% { box-shadow: 0 0 32px 8px #3b82f6, 0 0 48px 12px #60a5fa; }
+}
+.apply-contact-btn {
+  display: inline-block;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 24px 0 rgba(59,130,246,0.12);
 }
 </style>

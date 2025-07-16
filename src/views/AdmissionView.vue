@@ -126,6 +126,11 @@
         </div>
       </div>
     </section>
+    <div class="flex justify-center mt-2 mb-8">
+      <a :href="`mailto:admissions@aurcc.ac.in`" class="apply-contact-btn bg-gradient-to-r from-blue-600 to-indigo-500 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:from-blue-700 hover:to-indigo-700 transition-all text-lg md:text-xl">
+        Apply Now / Contact Us
+      </a>
+    </div>
   </main>
 </template>
 
@@ -215,5 +220,11 @@ export default {
 @keyframes glowBar {
   0% { box-shadow: 0 0 16px 4px #60a5fa, 0 0 32px 8px #3b82f6; }
   100% { box-shadow: 0 0 32px 8px #3b82f6, 0 0 48px 12px #60a5fa; }
+}
+.apply-contact-btn {
+  display: inline-block;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 24px 0 rgba(59,130,246,0.12);
 }
 </style>
