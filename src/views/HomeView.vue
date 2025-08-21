@@ -32,23 +32,23 @@
          </div>
  
          <!-- Ensure Text is Visible -->
-         <div class="relative text-center px-4 max-w-5xl mx-auto z-20">
-           <h1 class="text-4xl md:text-7xl font-bold text-white mb-6 tracking-tight">
+         <div class="relative text-center px-4 sm:px-6 max-w-5xl mx-auto z-20">
+           <h1 class="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-4 sm:mb-6 tracking-tight">
              <span class="block">Welcome to</span>
              <span class="block text-transparent bg-clip-text bg-gradient-to-r from-blue-200 to-indigo-200 mt-2">
                Anna University
              </span>
            </h1>
-           <p class="text-xl md:text-2xl text-blue-200">
+           <p class="text-lg sm:text-xl md:text-2xl text-blue-200 px-2">
              Shaping Tomorrow's Leaders Today
            </p>
-           <div class="mt-10 flex justify-center gap-4">
-             <a href="#programs" class="inline-block px-8 py-4 bg-white text-blue-900 rounded-full font-semibold 
-               transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
+           <div class="mt-8 sm:mt-10 flex flex-col sm:flex-row justify-center gap-3 sm:gap-4 px-4">
+             <a href="#programs" class="inline-block px-6 sm:px-8 py-3 sm:py-4 bg-white text-blue-900 rounded-full font-semibold 
+               transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl text-sm sm:text-base">
                Explore Programs
              </a>
-             <a href="#about" class="inline-block px-8 py-4 bg-blue-600 text-white rounded-full font-semibold 
-               transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
+             <a href="#about" class="inline-block px-6 sm:px-8 py-3 sm:py-4 bg-blue-600 text-white rounded-full font-semibold 
+               transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl text-sm sm:text-base">
                Campus Tour
              </a>
            </div>
@@ -57,9 +57,9 @@
 
 
       <!-- Floating Stats Cards with 3D Effect -->
-      <section class="container mx-auto px-14 relative -mt-32 z-30 px-4 mb-20">
+      <section class="container mx-auto px-4 sm:px-8 lg:px-14 relative -mt-20 sm:-mt-24 md:-mt-32 z-30 mb-16 sm:mb-20">
         <div class="container mx-auto">
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
             <div class="group perspective">
               <div class="stat-card-3d transform transition-transform duration-500 preserve-3d group-hover:rotate-y-12">
                 <div class="stat-front">
