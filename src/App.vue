@@ -149,7 +149,7 @@
 
           <!-- Mobile Menu Button with Animation -->
           <button @click="isMobileMenuOpen = !isMobileMenuOpen" 
-                  class="lg:hidden p-2 sm:p-3 rounded-md hover:bg-blue-50 transition-colors duration-300 touch-manipulation">
+                  class="mobile-menu-btn p-2 sm:p-3 rounded-md hover:bg-blue-50 transition-colors duration-300 touch-manipulation">
             <svg class="w-5 h-5 sm:w-6 sm:h-6 text-blue-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
                     d="M4 6h16M4 12h16M4 18h16"/>
@@ -169,7 +169,7 @@
       leave-to-class="opacity-0"
     >
       <div v-if="isMobileMenuOpen" 
-           class="lg:hidden fixed inset-0 z-50 bg-gray-900/70 backdrop-blur-sm"
+           class="fixed inset-0 z-50 bg-gray-900/70 backdrop-blur-sm"
            @click.self="isMobileMenuOpen = false">
         <Transition
           enter-active-class="transition-all duration-300 ease-out"
@@ -501,4 +501,16 @@ export default {
 .animate-subtle-zoom {
   animation: subtle-zoom 15s infinite alternate ease-in-out;
 }
+
+
+/* In your style block (scoped or global) */
+.mobile-menu-btn {
+    display: block; /* Default: show on mobile/tablet */
+}
+@media (min-width: 1024px) {
+    .mobile-menu-btn {
+        display: none; /* Hide on desktop (≥1024px) */
+    }
+}
+
 </style>
