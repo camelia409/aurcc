@@ -2,28 +2,28 @@
   <div class="min-h-screen flex flex-col bg-gray-50">
     <!-- Modern Top Bar with Subtle Gradient -->
     <div class="bg-gradient-to-r from-blue-700 to-indigo-800 text-white">
-      <div class="container mx-auto px-4">
-        <div class="flex items-center justify-between py-2 text-sm">
-          <span class="font-medium">Counselling Code: <span class="text-yellow-300 font-semibold">2025</span></span>
-          <div class="hidden md:flex items-center space-x-8">
+      <div class="container mx-auto px-3 sm:px-4">
+        <div class="flex items-center justify-between py-2 text-xs sm:text-sm">
+          <span class="font-medium truncate">Counselling Code: <span class="text-yellow-300 font-semibold">2025</span></span>
+          <div class="hidden md:flex items-center space-x-4 lg:space-x-8">
             <RouterLink to="/library" class="hover:text-yellow-300 transition-colors duration-300 flex items-center space-x-1">
-              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <svg class="w-3 h-3 sm:w-4 sm:h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"></path>
               </svg>
-              <span>Library</span>
+              <span class="hidden lg:inline">Library</span>
             </RouterLink>
             <RouterLink to="/hostel" class="hover:text-yellow-300 transition-colors duration-300 flex items-center space-x-1">
-              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <svg class="w-3 h-3 sm:w-4 sm:h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
                 <polyline points="9 22 9 12 15 12 15 22"></polyline>
               </svg>
-              <span>Hostel</span>
+              <span class="hidden lg:inline">Hostel</span>
             </RouterLink>
             <RouterLink to="/contact" class="hover:text-yellow-300 transition-colors duration-300 flex items-center space-x-1">
-              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <svg class="w-3 h-3 sm:w-4 sm:h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
               </svg>
-              <span>Contact</span>
+              <span class="hidden lg:inline">Contact</span>
             </RouterLink>
           </div>
         </div>
@@ -32,14 +32,14 @@
 
     <!-- Enhanced Main Header with Modern Design -->
     <header class="sticky top-0 z-40 bg-white shadow-lg">
-      <div class="container mx-auto px-4">
-        <nav class="flex items-center justify-between py-3">
+      <div class="container mx-auto px-3 sm:px-4">
+        <nav class="flex items-center justify-between py-2 sm:py-3">
           <!-- Logo and University Name with Enhanced Styling -->
-          <div class="flex items-center space-x-4 cursor-pointer transform hover:scale-105 transition-transform duration-300" @click="$router.push('/')">
-            <img src="/logo.svg" alt="Logo" class="h-16 w-auto"/>
-            <div class="flex flex-col">
-              <span class="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-700 to-indigo-800">ANNA UNIVERSITY</span>
-              <span class="text-md text-gray-500">Regional Campus Coimbatore</span>
+          <div class="flex items-center space-x-2 sm:space-x-4 cursor-pointer transform hover:scale-105 transition-transform duration-300" @click="$router.push('/')">
+            <img src="/logo.svg" alt="Logo" class="h-10 w-auto sm:h-12 md:h-16"/>
+            <div class="flex flex-col min-w-0">
+              <span class="text-lg sm:text-xl md:text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-700 to-indigo-800 truncate">ANNA UNIVERSITY</span>
+              <span class="text-xs sm:text-sm md:text-md text-gray-500 truncate">Regional Campus Coimbatore</span>
             </div>
           </div>
 
@@ -47,10 +47,10 @@
           <div class="hidden lg:flex items-center space-x-1">
             <!-- Life@aurcc Dropdown -->
             <div class="relative group">
-              <button class="px-4 py-2 rounded-md text-gray-700 hover:text-blue-600 hover:bg-blue-50 group-hover:text-blue-600 group-hover:bg-blue-50 transition-all duration-300">
+              <button class="px-3 sm:px-4 py-2 rounded-md text-gray-700 hover:text-blue-600 hover:bg-blue-50 group-hover:text-blue-600 group-hover:bg-blue-50 transition-all duration-300 text-sm lg:text-base">
                 Life@aurcc
                 <span class="inline-block ml-1 transform group-hover:rotate-180 transition-transform duration-300">
-                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg class="w-3 h-3 sm:w-4 sm:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
                   </svg>
                 </span>
@@ -149,8 +149,8 @@
 
           <!-- Mobile Menu Button with Animation -->
           <button @click="isMobileMenuOpen = !isMobileMenuOpen" 
-                  class="lg:hidden p-2 rounded-md hover:bg-blue-50 transition-colors duration-300">
-            <svg class="w-6 h-6 text-blue-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  class="lg:hidden p-2 sm:p-3 rounded-md hover:bg-blue-50 transition-colors duration-300 touch-manipulation">
+            <svg class="w-5 h-5 sm:w-6 sm:h-6 text-blue-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
                     d="M4 6h16M4 12h16M4 18h16"/>
             </svg>
@@ -184,7 +184,7 @@
             <div class="flex items-center justify-between p-4 border-b">
               <span class="font-semibold text-lg bg-clip-text text-transparent bg-gradient-to-r from-blue-700 to-indigo-800">Menu</span>
               <button @click="isMobileMenuOpen = false" 
-                      class="p-2 rounded-full hover:bg-blue-50 transition-colors duration-300">
+                      class="p-2 rounded-full hover:bg-blue-50 transition-colors duration-300 touch-manipulation">
                 <svg class="w-6 h-6 text-blue-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
                 </svg>
@@ -196,9 +196,9 @@
               <div class="p-4 space-y-2">
                 <div v-for="(section, index) in mobileSections" :key="section.name" class="border-b border-gray-100 last:border-0 pb-2">
                   <button @click="section.isOpen = !section.isOpen"
-                          class="w-full flex items-center justify-between py-3 text-gray-700 hover:text-blue-600 transition-colors duration-300">
-                    <span class="font-medium">{{ section.name }}</span>
-                    <svg class="w-5 h-5 transform transition-transform duration-300"
+                          class="w-full flex items-center justify-between py-3 px-2 text-gray-700 hover:text-blue-600 transition-colors duration-300 touch-manipulation">
+                    <span class="font-medium text-left">{{ section.name }}</span>
+                    <svg class="w-5 h-5 transform transition-transform duration-300 flex-shrink-0"
                          :class="{ 'rotate-180': section.isOpen }"
                          fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
@@ -218,7 +218,7 @@
                               :key="link.route"
                               :to="link.route"
                               @click="isMobileMenuOpen = false"
-                              class="block pl-4 py-2 text-gray-600 hover:bg-blue-50 hover:text-blue-700 rounded-lg transition-colors duration-200">
+                              class="block pl-6 py-3 text-gray-600 hover:bg-blue-50 hover:text-blue-700 rounded-lg transition-colors duration-200 touch-manipulation">
                         {{ link.name }}
                       </RouterLink>
                     </div>
@@ -237,9 +237,9 @@
     </div>
 
     <!-- Modern Footer with Improved Design -->
-    <footer class="bg-gradient-to-br from-blue-900 to-indigo-900 text-white py-16">
-      <div class="container mx-auto px-4">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+    <footer class="bg-gradient-to-br from-blue-900 to-indigo-900 text-white py-12 sm:py-16">
+      <div class="container mx-auto px-4 sm:px-6">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
           <div>
             <h2 class="text-xl font-semibold mb-4">Campus <span class="text-yellow-300">Location</span></h2>
             <p class="text-blue-200 mb-4">Maruthamalai Road,<br />Navavoor, Coimbatore - 641046</p>

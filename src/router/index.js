@@ -223,6 +223,12 @@ const router = createRouter({
       path: '/posh',
       name: 'posh',
       component: () => import('../views/POSH.vue')
+    },
+    // Catch-all route for 404
+    {
+      path: '/:pathMatch(.*)*',
+      name: 'not-found',
+      component: () => import('../views/NotFound.vue')
     }
   ]
 })

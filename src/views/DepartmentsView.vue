@@ -47,234 +47,260 @@
       <!-- Content sections -->
       <section class="mx-auto" @scroll="handleScroll">
         <div id="content-sections" class="w-full">
-          <div class="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto py-12 bg-gradient-to-b from-gray-50 to-white">
-            <div id="about-department" class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
-              <div class="flex flex-col h-full">
-                <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden h-full transition-all duration-300 hover:shadow-md">
-                  <div class="bg-gradient-to-r from-indigo-600 to-blue-500 py-6">
-                    <h2 class="text-2xl md:text-3xl text-white font-bold text-center">About Department</h2>
-                  </div>
-                  <div class="p-6 md:p-8">
-                    <p class="text-lg text-gray-700 leading-relaxed">{{ department.description }}</p>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="grid grid-cols-1 gap-8 h-full">
-                <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden transition-all duration-300 hover:shadow-md">
-                  <div class="bg-gradient-to-r from-blue-500 to-cyan-400 py-6">
-                    <h3 class="text-2xl md:text-3xl text-white font-bold text-center">Vision</h3>
-                  </div>
-                  <div class="p-6 md:p-8">
-                    <p class="text-lg text-gray-700 leading-relaxed">{{ department.vision }}</p>
-                  </div>
-                </div>
-                
-                <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden transition-all duration-300 hover:shadow-md">
-                  <div class="bg-gradient-to-r from-cyan-400 to-teal-400 py-6">
-                    <h3 class="text-2xl md:text-3xl text-white font-bold text-center">Mission</h3>
-                  </div>
-                  <div class="p-6 md:p-8">
-                    <ul class="text-lg list-disc pl-5 text-gray-700 space-y-3">
-                      <li v-for="mission in department.mission" :key="mission" class="pl-2">{{ mission }}</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+                     <div class="section-container bg-gradient-to-b from-gray-50 to-white">
+             <div id="about-department" class="max-w-6xl mx-auto">
+               <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+                 <div class="flex flex-col h-full">
+                   <div class="section-card h-full">
+                     <div class="bg-gradient-to-r from-indigo-600 to-blue-500 py-6">
+                       <h2 class="text-2xl md:text-3xl text-white font-bold text-center">About Department</h2>
+                     </div>
+                     <div class="section-content">
+                       <p class="text-lg text-gray-700 leading-relaxed">{{ department.description }}</p>
+                     </div>
+                   </div>
+                 </div>
+                 
+                 <div class="grid grid-cols-1 gap-8 h-full">
+                   <div class="section-card">
+                     <div class="bg-gradient-to-r from-blue-500 to-cyan-400 py-6">
+                       <h3 class="text-2xl md:text-3xl text-white font-bold text-center">Vision</h3>
+                     </div>
+                     <div class="section-content">
+                       <p class="text-lg text-gray-700 leading-relaxed">{{ department.vision }}</p>
+                     </div>
+                   </div>
+                   
+                   <div class="section-card">
+                     <div class="bg-gradient-to-r from-cyan-400 to-teal-400 py-6">
+                       <h3 class="text-2xl md:text-3xl text-white font-bold text-center">Mission</h3>
+                     </div>
+                     <div class="section-content">
+                       <ul class="text-lg list-disc pl-5 text-gray-700 space-y-3">
+                         <li v-for="mission in department.mission" :key="mission" class="pl-2">{{ mission }}</li>
+                       </ul>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
 
           <!-- Courses Offered Section -->
-          <div class="bg-white rounded-2xl mx-52 mb-6 shadow-sm border border-gray-100 overflow-hidden h-full transition-all duration-300 hover:shadow-md mt-8">
-            <div class="bg-gradient-to-r from-indigo-600 to-blue-500 py-6">
-              <h2 class="text-2xl md:text-3xl text-white font-bold text-center">Courses Offered</h2>
-            </div>
-            <div class="p-6 md:p-8">
-              <ul class="list-disc list-inside space-y-2 text-gray-700 text-base md:text-lg">
-                <li v-for="(course, index) in department.courses_offered" :key="index">
-                  {{ course }}
-                </li>
-              </ul>
+          <div id="courses-offered" class="section-container bg-white">
+            <h2 class="section-title">
+              <span class="bg-gradient-to-r from-indigo-600 to-blue-500 bg-clip-text text-transparent">Courses Offered</span>
+            </h2>
+            <div class="max-w-6xl mx-auto">
+              <div class="section-card">
+                <div class="bg-gradient-to-r from-indigo-600 to-blue-500 py-8">
+                  <h3 class="text-2xl md:text-3xl text-white font-bold text-center">Programs Available</h3>
+                </div>
+                <div class="section-content">
+                  <div :class="{
+                    'grid grid-cols-1 md:grid-cols-2 gap-6': department.courses_offered.length > 1,
+                    'flex justify-center': department.courses_offered.length === 1
+                  }">
+                    <div v-for="(course, index) in department.courses_offered" :key="index" 
+                         :class="{
+                           'bg-gradient-to-r from-blue-50 to-indigo-50 p-6 rounded-xl border border-blue-200 hover:border-blue-300 transition-all duration-300 hover:shadow-md': true,
+                           'max-w-md': department.courses_offered.length === 1
+                         }">
+                      <div class="flex items-start space-x-3">
+                        <div class="flex-shrink-0 w-8 h-8 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full flex items-center justify-center">
+                          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        </div>
+                        <div class="flex-1">
+                          <h4 class="text-lg font-semibold text-gray-800 mb-2">{{ course }}</h4>
+                          <p class="text-gray-600 text-sm">Full-time program with comprehensive curriculum</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
           
-          <div id="events" class="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto py-12 bg-white">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-10 text-gray-800">
-              <span class="bg-gradient-to-r from-indigo-600 to-blue-500 bg-clip-text text-transparent">Upcoming Events</span>
-            </h2>
-            
-            <div v-if="currentEvent" class="max-w-4xl mx-auto">
-              <div class="relative overflow-hidden rounded-2xl shadow-lg bg-white border border-gray-100">
-                <div class="absolute top-0 left-0 w-2 h-full bg-gradient-to-b from-indigo-500 to-blue-500"></div>
-                
-                <div class="p-6 md:p-8">
-                  <div class="flex flex-col md:flex-row md:items-center justify-between">
-                    <div class="flex-grow mb-4 md:mb-0 md:mr-8">
-                      <h3 class="text-xl md:text-2xl font-bold mb-2 text-gray-800">{{ currentEvent.name }}</h3>
-                      <p class="text-base md:text-lg text-gray-600 mb-4">{{ currentEvent.description }}</p>
-                      <div class="flex items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-indigo-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                        </svg>
-                        <span class="text-indigo-600 font-medium">{{ currentEvent.date }}</span>
-                      </div>
-                    </div>
-                    
-                    <div class="flex justify-center space-x-3">
-                      <button @click="showPreviousEvent" 
-                              class="p-2 rounded-full bg-gray-100 hover:bg-indigo-100 text-gray-600 hover:text-indigo-600 focus:outline-none transition-colors duration-300">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-                        </svg>
-                      </button>
-                      <button @click="showNextEvent" 
-                              class="p-2 rounded-full bg-gray-100 hover:bg-indigo-100 text-gray-600 hover:text-indigo-600 focus:outline-none transition-colors duration-300">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                        </svg>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="flex justify-center mt-6">
-                <div class="flex space-x-2">
-                  <div v-for="(_, index) in events" :key="index" 
-                       @click="currentIndex = index"
-                       :class="index === currentIndex ? 'bg-indigo-600' : 'bg-gray-300 hover:bg-gray-400'"
-                       class="w-2 h-2 rounded-full cursor-pointer transition-colors duration-300">
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div v-else class="text-center py-12 text-gray-500">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto text-gray-300 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-              </svg>
-              <p class="text-lg">No upcoming events to display.</p>
-            </div>
-          </div>
-          <div id="achievements" class="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto py-12 bg-gray-50">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-10 text-gray-800">
-              <span class="bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text text-transparent">Department Achievements</span>
-            </h2>
-            
-            <div class="relative max-w-5xl mx-auto">
-              <div class="absolute top-0 bottom-0 left-0 right-0 -m-4 bg-gradient-to-r from-purple-50 to-indigo-50 rounded-3xl transform -rotate-1"></div>
-              
-              <div class="relative bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
-                <div class="h-96 overflow-auto px-6 py-6 scrollbar-thin scrollbar-thumb-indigo-200 scrollbar-track-gray-100">
-                  <div class="space-y-4">
-                    <div v-for="achievement in department.achievements" :key="achievement.name" 
-                         class="bg-white p-4 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1">
-                      <div class="flex flex-col md:flex-row md:items-center justify-between">
-                        <div>
-                          <div class="flex items-center mb-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-indigo-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                            </svg>
-                            <h3 class="text-lg md:text-xl font-semibold text-gray-800">{{ achievement.event }}</h3>
-                          </div>
-                          <p class="text-gray-600 mb-1">{{ achievement.organized_by }}</p>
-                          <p class="font-medium text-gray-800">{{ achievement.name }}</p>
-                        </div>
-                        
-                        <div class="mt-3 md:mt-0 flex items-center">
-                          <div class="bg-indigo-50 text-indigo-700 px-3 py-1 rounded-full text-sm font-medium">
-                            {{ achievement.date }}
-                          </div>
-                        </div>
-                      </div>
-                      
-                      <div class="mt-3">
-                        <div class="inline-flex items-center bg-purple-50 text-purple-700 px-3 py-1 rounded-full text-sm font-medium">
-                          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
-                          </svg>
-                          {{ achievement.awards }}
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div id="facility" class="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto py-12 bg-white">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">
-              <span class="bg-gradient-to-r from-emerald-600 to-teal-500 bg-clip-text text-transparent">World-Class Facilities</span>
-            </h2>
-            
-            <div class="space-y-16">
-              <div 
-                v-for="(facility, index) in department.facility" 
-                :key="facility.name" 
-                :class="index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'"
-                class="flex flex-col lg:flex-row items-center gap-8 md:gap-12"
-              >
-                <div class="lg:w-1/2">
-                  <div class="relative">
-                    <div class="absolute inset-0 bg-gradient-to-r from-emerald-200 to-teal-100 transform rotate-3 rounded-2xl"></div>
-                    <img 
-                      :src="'/' + facility.image" 
-                      :alt="facility.name" 
-                      class="relative z-10 w-full h-auto object-cover rounded-2xl shadow-lg"
-                    >
-                  </div>
-                </div>
-                
-                <div class="lg:w-1/2">
-                  <h3 class="text-2xl md:text-3xl font-bold mb-6 text-gray-800">{{ facility.name }}</h3>
-                  <ul class="space-y-3">
-                    <li v-for="item in facility.description" :key="item" class="flex items-start">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-emerald-500 mr-2 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                      </svg>
-                      <span class="text-lg text-gray-700">{{ item }}</span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
+                     <div id="events" class="section-container bg-white">
+             <h2 class="section-title">
+               <span class="bg-gradient-to-r from-indigo-600 to-blue-500 bg-clip-text text-transparent">Upcoming Events</span>
+             </h2>
+             
+             <div v-if="currentEvent" class="max-w-6xl mx-auto">
+               <div class="section-card">
+                 <div class="section-content">
+                   <div class="flex flex-col md:flex-row md:items-center justify-between">
+                     <div class="flex-grow mb-4 md:mb-0 md:mr-8">
+                       <h3 class="text-xl md:text-2xl font-bold mb-2 text-gray-800">{{ currentEvent.name }}</h3>
+                       <p class="text-base md:text-lg text-gray-600 mb-4">{{ currentEvent.description }}</p>
+                       <div class="flex items-center">
+                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-indigo-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                         </svg>
+                         <span class="text-indigo-600 font-medium">{{ currentEvent.date }}</span>
+                       </div>
+                     </div>
+                     
+                     <div class="flex justify-center space-x-3">
+                       <button @click="showPreviousEvent" 
+                               class="p-2 rounded-full bg-gray-100 hover:bg-indigo-100 text-gray-600 hover:text-indigo-600 focus:outline-none transition-colors duration-300">
+                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                         </svg>
+                       </button>
+                       <button @click="showNextEvent" 
+                               class="p-2 rounded-full bg-gray-100 hover:bg-indigo-100 text-gray-600 hover:text-indigo-600 focus:outline-none transition-colors duration-300">
+                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                         </svg>
+                       </button>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+               
+               <div class="flex justify-center mt-6">
+                 <div class="flex space-x-2">
+                   <div v-for="(_, index) in events" :key="index" 
+                        @click="currentIndex = index"
+                        :class="index === currentIndex ? 'bg-indigo-600' : 'bg-gray-300 hover:bg-gray-400'"
+                        class="w-2 h-2 rounded-full cursor-pointer transition-colors duration-300">
+                   </div>
+                 </div>
+               </div>
+             </div>
+             
+             <div v-else class="text-center py-12 text-gray-500">
+               <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto text-gray-300 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+               </svg>
+               <p class="text-lg">No upcoming events to display.</p>
+             </div>
+           </div>
+                     <div id="achievements" class="section-container bg-gray-50">
+             <h2 class="section-title">
+               <span class="bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text text-transparent">Department Achievements</span>
+             </h2>
+             
+             <div class="max-w-6xl mx-auto">
+               <div class="relative">
+                 <div class="absolute top-0 bottom-0 left-0 right-0 -m-4 bg-gradient-to-r from-purple-50 to-indigo-50 rounded-3xl transform -rotate-1"></div>
+                 
+                 <div class="relative section-card">
+                   <div class="h-96 overflow-auto px-6 py-6 scrollbar-thin scrollbar-thumb-indigo-200 scrollbar-track-gray-100">
+                     <div class="space-y-4">
+                       <div v-for="achievement in department.achievements" :key="achievement.name" 
+                            class="bg-white p-4 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1">
+                         <div class="flex flex-col md:flex-row md:items-center justify-between">
+                           <div>
+                             <div class="flex items-center mb-2">
+                               <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-indigo-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                               </svg>
+                               <h3 class="text-lg md:text-xl font-semibold text-gray-800">{{ achievement.event }}</h3>
+                             </div>
+                             <p class="text-gray-600 mb-1">{{ achievement.organized_by }}</p>
+                             <p class="font-medium text-gray-800">{{ achievement.name }}</p>
+                           </div>
+                           
+                           <div class="mt-3 md:mt-0 flex items-center">
+                             <div class="bg-indigo-50 text-indigo-700 px-3 py-1 rounded-full text-sm font-medium">
+                               {{ achievement.date }}
+                             </div>
+                           </div>
+                         </div>
+                         
+                         <div class="mt-3">
+                           <div class="inline-flex items-center bg-purple-50 text-purple-700 px-3 py-1 rounded-full text-sm font-medium">
+                             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+                             </svg>
+                             {{ achievement.awards }}
+                           </div>
+                         </div>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+                     <div id="facility" class="section-container bg-white">
+             <h2 class="section-title">
+               <span class="bg-gradient-to-r from-emerald-600 to-teal-500 bg-clip-text text-transparent">World-Class Facilities</span>
+             </h2>
+             
+             <div class="max-w-6xl mx-auto space-y-16">
+               <div 
+                 v-for="(facility, index) in department.facility" 
+                 :key="facility.name" 
+                 :class="index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'"
+                 class="flex flex-col lg:flex-row items-center gap-8 md:gap-12"
+               >
+                 <div class="lg:w-1/2">
+                   <div class="relative">
+                     <div class="absolute inset-0 bg-gradient-to-r from-emerald-200 to-teal-100 transform rotate-3 rounded-2xl"></div>
+                     <img 
+                       :src="'/' + facility.image" 
+                       :alt="facility.name" 
+                       class="relative z-10 w-full h-auto object-cover rounded-2xl shadow-lg"
+                     >
+                   </div>
+                 </div>
+                 
+                 <div class="lg:w-1/2">
+                   <h3 class="text-2xl md:text-3xl font-bold mb-6 text-gray-800">{{ facility.name }}</h3>
+                   <ul class="space-y-3">
+                     <li v-for="item in facility.description" :key="item" class="flex items-start">
+                       <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-emerald-500 mr-2 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                       </svg>
+                       <span class="text-lg text-gray-700">{{ item }}</span>
+                     </li>
+                   </ul>
+                 </div>
+               </div>
+             </div>
+           </div>
 
-          <div id="faculty" class="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto py-12 bg-gray-50">
-            <!-- Section Title with Animated Underline -->
-            <div class="text-center mb-12">
-              <h2 class="text-3xl md:text-4xl font-bold text-gray-800 relative inline-block group">
-                OUR FACULTY
-                <span class="absolute -bottom-3 left-0 h-1 w-full bg-gradient-to-r from-blue-600 to-indigo-600 transform origin-left transition-transform duration-300 group-hover:scale-x-110"></span>
-              </h2>
-            </div>
+                     <div id="faculty" class="section-container bg-gray-50">
+             <!-- Section Title with Animated Underline -->
+             <div class="text-center mb-12">
+               <h2 class="text-3xl md:text-4xl font-bold text-gray-800 relative inline-block group">
+                 OUR FACULTY
+                 <span class="absolute -bottom-3 left-0 h-1 w-full bg-gradient-to-r from-blue-600 to-indigo-600 transform origin-left transition-transform duration-300 group-hover:scale-x-110"></span>
+               </h2>
+             </div>
             
             <!-- HOD Desk -->
             <div class="mb-16">
               <h3 class="text-2xl font-bold text-center mb-8 text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-indigo-700">Head of Department</h3>
-              <div class="flex justify-center ">
+              <div class="flex justify-center">
                 <div 
                   v-for="staff in department.faculty.hod_desk" 
                   :key="staff.email" 
-                  class="faculty-card"
+                  class="faculty-card hod-card"
                   @click="showDetails(staff)"
                 >
-                  <!-- Photo with Gradient Background -->
-                  <div class="relative pt-2 flex justify-center px-12">
+                  <!-- Photo with Gradient Background - Same size as Assistant Professors -->
+                  <div class="relative pt-2 flex justify-center">
                     <div class="absolute inset-0 h-1/2 bg-gradient-to-r from-blue-600 to-indigo-600"></div>
                     <div class="relative">
                       <img 
                         :src="'/' + staff.image" 
                         :alt="staff.name" 
-                        class="w-48 h-58 object-cover rounded-full border-4 border-white shadow-lg"
+                        class="w-36 h-44 object-cover rounded-full border-4 border-white shadow-lg"
                       >
                     </div>
                   </div>
                   
                   <!-- Faculty Info -->
                   <div class="p-6 text-center">
-                    <h4 class="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 mb-2">{{ staff.name }}</h4>
+                    <h4 class="text-lg font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 mb-2">{{ staff.name }}</h4>
                     <p class="text-gray-700 font-medium">{{ staff.position }}</p>
                     <p class="text-gray-500 text-sm">{{ staff.email }}</p>
                     
@@ -290,28 +316,28 @@
             <!-- Assistant Professors -->
             <div>
               <h3 class="text-2xl font-bold text-center mb-8 text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-indigo-700">Assistant Professors</h3>
-              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-28">
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
                 <div 
                   v-for="staff in department.faculty.assistant_professors" 
                   :key="staff.email" 
-                  class="faculty-card"
+                  class="faculty-card hod-card"
                   @click="showDetails(staff)"
                 >
-                  <!-- Photo with Gradient Background -->
+                  <!-- Photo with Gradient Background - Same size as HOD -->
                   <div class="relative pt-2 flex justify-center">
                     <div class="absolute inset-0 h-1/2 bg-gradient-to-r from-blue-600 to-indigo-600"></div>
                     <div class="relative">
                       <img 
                         :src="'/' + staff.image" 
                         :alt="staff.name" 
-                        class="w-48 h-58 object-cover rounded-full border-4 border-white shadow-lg"
+                        class="w-36 h-44 object-cover rounded-full border-4 border-white shadow-lg"
                       >
                     </div>
                   </div>
                   
                   <!-- Faculty Info -->
                   <div class="p-6 text-center">
-                    <h4 class="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 mb-2">{{ staff.name }}</h4>
+                    <h4 class="text-lg font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 mb-2">{{ staff.name }}</h4>
                     <p class="text-gray-700 font-medium">{{ staff.position }}</p>
                     <p class="text-gray-500 text-sm">{{ staff.email }}</p>
                     
@@ -463,74 +489,78 @@
               </div>
             </div>
           </div>
-          <div id="administration-and-technical-staff" class="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto py-12 bg-white">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-10 text-gray-800">
-              <span class=" bg-clip-text">Administrative Staff</span>
-            </h2>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20">
-              <div
-                v-for="staff in department.admin_staff"
-                :key="staff.email"
-                class="bg-white rounded-xl shadow-sm overflow-hidden flex flex-col border border-gray-100 transform transition-all duration-300"
-              >
-                <div class="bg-gradient-to-r from-blue-400 to-blue-300 h-2"></div>
-                <div class="p-6 flex justify-center">
-                  <div class="w-28 h-58 rounded-full overflow-hidden border-2 border-amber-100 shadow">
-                    <img :src="'/' + staff.image" :alt="staff.name" class="w-full h-full object-cover" />
-                  </div>
-                </div>
-                
-                <div class="flex-grow flex flex-col p-5 text-center">
-                  <h2 class="text-xl font-bold text-gray-800 mb-1">{{ staff.name }}</h2>
-                  <p class="text-blue-600 font-medium mb-2">{{ staff.position }}</p>
-                  <div class="flex items-center justify-center mt-1 text-sm">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-500 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                    </svg>
-                    <span class="text-gray-600 truncate">{{ staff.email }}</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+                     <div id="administrative-and-technical-staff" class="section-container bg-white">
+             <h2 class="section-title">
+               <span class="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">Administrative and Technical Staff</span>
+             </h2>
+             
+             <div class="max-w-6xl mx-auto">
+               <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                 <div
+                   v-for="staff in department.admin_staff"
+                   :key="staff.email"
+                   class="admin-staff-card"
+                 >
+                   <!-- Photo with Gradient Background - Smaller for Admin Staff -->
+                   <div class="relative pt-2 flex justify-center">
+                     <div class="absolute inset-0 h-1/2 bg-gradient-to-r from-blue-600 to-indigo-600"></div>
+                     <div class="relative">
+                       <img 
+                         :src="'/' + staff.image" 
+                         :alt="staff.name" 
+                         class="w-32 h-40 object-cover rounded-full border-4 border-white shadow-lg"
+                       >
+                     </div>
+                   </div>
+                   
+                   <!-- Staff Info - Simplified -->
+                   <div class="p-4 text-center">
+                     <h4 class="text-base font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 mb-1">{{ staff.name }}</h4>
+                     <p class="text-sm text-gray-700 font-medium">{{ staff.position }}</p>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
 
-          <div id="research-and-publications" class="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto py-12 bg-gray-50">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-10 text-gray-800">
-              <span class="bg-gradient-to-r from-purple-600 to-violet-600 bg-clip-text text-transparent">Research & Publications</span>
-            </h2>
-            
-            <div class="max-w-5xl mx-auto bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
-              <div class="h-96 overflow-auto p-6 scrollbar-thin scrollbar-thumb-purple-200 scrollbar-track-gray-100">
-                <div class="space-y-6">
-                  <div 
-                    v-for="research in department.research_and_publications" 
-                    :key="research.title" 
-                    class="p-4 border-b border-gray-100 hover:bg-purple-50 transition-colors duration-200 rounded-lg"
-                  >
-                    <h3 class="text-lg md:text-xl font-semibold text-gray-800 mb-2">{{ research.title }}</h3>
-                    
-                    <div class="flex flex-wrap items-center gap-2 mb-3">
-                      <div class="bg-purple-50 text-purple-700 px-3 py-1 rounded-full text-sm font-medium">
-                        {{ research.year }}
-                      </div>
-                      
-                      <div class="text-gray-500 text-sm">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 inline mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                        </svg>
-                        {{ research.authors }}
-                      </div>
-                    </div>
-                    
-                    <div class="text-sm text-gray-700 italic">
-                      Published in: <span class="font-medium">{{ research.journal }}</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+                     <div id="research-and-publications" class="section-container bg-gray-50">
+             <h2 class="section-title">
+               <span class="bg-gradient-to-r from-purple-600 to-violet-600 bg-clip-text text-transparent">Research & Publications</span>
+             </h2>
+             
+             <div class="max-w-6xl mx-auto">
+               <div class="section-card">
+                 <div class="h-96 overflow-auto p-6 scrollbar-thin scrollbar-thumb-purple-200 scrollbar-track-gray-100">
+                   <div class="space-y-6">
+                     <div 
+                       v-for="research in department.research_and_publications" 
+                       :key="research.title" 
+                       class="p-4 border-b border-gray-100 hover:bg-purple-50 transition-colors duration-200 rounded-lg"
+                     >
+                       <h3 class="text-lg md:text-xl font-semibold text-gray-800 mb-2">{{ research.title }}</h3>
+                       
+                       <div class="flex flex-wrap items-center gap-2 mb-3">
+                         <div class="bg-purple-50 text-purple-700 px-3 py-1 rounded-full text-sm font-medium">
+                           {{ research.year }}
+                         </div>
+                         
+                         <div class="text-gray-500 text-sm">
+                           <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 inline mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                           </svg>
+                           {{ research.authors }}
+                         </div>
+                       </div>
+                       
+                       <div class="text-sm text-gray-700 italic">
+                         Published in: <span class="font-medium">{{ research.journal }}</span>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
         </div>
       </section>
     </main>
@@ -538,7 +568,7 @@
 </template>
 
 <script>
-import departmentData from '/src/assets/departments.json';
+import departmentData from '../assets/departments.json';
 
 export default {
   data() {
@@ -550,7 +580,7 @@ export default {
         'Achievements',
         'Facility',
         'Faculty',
-        'Administration and Technical Staff',
+        'Administrative and Technical Staff',
         'Research and Publications',
       ],
       events: null,
@@ -576,10 +606,24 @@ export default {
   methods: {
     loadDepartment() {
       try {
+        console.log('Loading department for:', this.$route.params.departmentName);
+        console.log('Available departments:', departmentData.map(d => d.address));
+        
         this.department = departmentData.find(dept => dept.address === this.$route.params.departmentName);
-        this.events = this.department.events.reverse();
+        
+        if (!this.department) {
+          console.error('Department not found:', this.$route.params.departmentName);
+          // Redirect to a fallback or show error
+          this.$router.push('/programs_offered');
+          return;
+        }
+        
+        console.log('Loaded department:', this.department);
+        this.events = this.department.events ? this.department.events.reverse() : [];
       } catch (error) {
         console.error('Error loading department:', error);
+        // Redirect to a fallback or show error
+        this.$router.push('/programs_offered');
       }
     },
     scrollToSection(section) {
@@ -672,10 +716,112 @@ export default {
   /* Faculty card styling */
   .faculty-card {
     @apply bg-white rounded-xl shadow-lg overflow-hidden border border-blue-100 transform transition-all duration-300 cursor-pointer;
+    min-height: 380px;
+    max-width: 320px; /* Fixed width for consistency */
+    width: 320px; /* Force exact width */
+    flex-shrink: 0; /* Prevent shrinking */
+    flex-grow: 0; /* Prevent growing */
+  }
+  
+  .faculty-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(59, 130, 246, 0.15);
+    border-color: #2563eb;
+  }
+  
+  /* HOD card styling - Fixed size to match Assistant Professors */
+  .hod-card {
+    min-height: 380px; /* Same as faculty-card */
+    max-width: 320px; /* Fixed width for consistency */
+    width: 320px; /* Force exact width */
+    flex-shrink: 0; /* Prevent shrinking */
+    flex-grow: 0; /* Prevent growing */
+  }
+  
+  .hod-card:hover {
+    transform: translateY(-12px) scale(1.03);
+    box-shadow: 0 25px 50px rgba(59, 130, 246, 0.2);
+  }
+  
+  /* Admin staff card styling - Smaller and compact */
+  .admin-staff-card {
+    @apply bg-white rounded-xl shadow-md overflow-hidden border border-blue-100 transform transition-all duration-300;
+    min-height: 260px;
+    max-width: 260px;
+  }
+  
+  .admin-staff-card:hover {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 15px 30px rgba(59, 130, 246, 0.12);
+    border-color: #2563eb;
+  }
+  
+  /* Ensure consistent image sizing for different card types */
+  .hod-card img {
+    width: 144px; /* w-36 = 9rem = 144px - Same as faculty cards */
+    height: 176px; /* h-44 = 11rem = 176px - Same as faculty cards */
+    object-fit: cover;
+    border-radius: 9999px;
+    border: 4px solid white;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  }
+  
+  .faculty-card img {
+    width: 144px; /* w-36 = 9rem = 144px */
+    height: 176px; /* h-44 = 11rem = 176px */
+    object-fit: cover;
+    border-radius: 9999px;
+    border: 4px solid white;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  }
+  
+  .admin-staff-card img {
+    width: 128px; /* w-32 = 8rem = 128px */
+    height: 160px; /* h-40 = 10rem = 160px */
+    object-fit: cover;
+    border-radius: 9999px;
+    border: 4px solid white;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
   }
   
   /* General transitions for hover effects */
   .transition-all {
     transition: all 0.3s ease;
+  }
+  
+  /* Consistent section styling for professional appearance */
+  .section-container {
+    @apply px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto py-12;
+    width: 100%;
+  }
+  
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold text-center mb-10 text-gray-800;
+  }
+  
+  .section-card {
+    @apply bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden transition-all duration-300 hover:shadow-xl;
+  }
+  
+  .section-header {
+    @apply py-8;
+  }
+  
+  .section-content {
+    @apply p-8 md:p-10;
+  }
+  
+  /* Ensure consistent spacing between sections */
+  .section-container + .section-container {
+    @apply mt-0;
+  }
+  
+  /* Consistent background alternation */
+  .section-container:nth-child(even) {
+    @apply bg-gray-50;
+  }
+  
+  .section-container:nth-child(odd) {
+    @apply bg-white;
   }
 </style>
