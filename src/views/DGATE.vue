@@ -13,7 +13,7 @@
         title="Overview"
         icon="ℹ️"
       >
-        <p class="text-lg leading-relaxed text-gray-800">{{ data.description.DGATE }}</p>
+        <p class="mobile-text-base lg:mobile-text-lg xl:mobile-text-xl leading-relaxed text-gray-800">{{ data.description.DGATE }}</p>
       </OfficeContentSection>
 
       <!-- Activities -->
@@ -23,10 +23,10 @@
         icon="🎯"
       >
         <!-- Scrolling Notice Board Only, taller and more readable -->
-        <div class="relative h-24 overflow-hidden mb-2 rounded-xl bg-gradient-to-r from-blue-100 via-indigo-50 to-white shadow-inner border border-blue-200 group">
+        <div class="relative h-20 sm:h-22 md:h-24 overflow-hidden mb-2 rounded-xl bg-gradient-to-r from-blue-100 via-indigo-50 to-white shadow-inner border border-blue-200 group">
           <ul class="notice-ticker absolute w-full animate-vertical-scroll group-hover:paused">
-            <li v-for="(item, idx) in activityHighlights" :key="'highlight-' + idx" class="flex items-center gap-3 px-8 py-4 text-blue-900 font-semibold text-lg md:text-xl min-h-[3rem]">
-              <span class="inline-block w-3 h-3 rounded-full bg-blue-500 animate-pulse"></span>
+            <li v-for="(item, idx) in activityHighlights" :key="'highlight-' + idx" class="flex items-center gap-2 sm:gap-3 px-4 sm:px-6 md:px-8 py-3 sm:py-4 text-blue-900 font-semibold mobile-text-sm lg:mobile-text-base xl:mobile-text-xl min-h-[2.5rem] sm:min-h-[3rem]">
+              <span class="inline-block w-2 h-2 sm:w-3 sm:h-3 rounded-full bg-blue-500 animate-pulse"></span>
               <span>{{ item }}</span>
             </li>
           </ul>
@@ -41,15 +41,15 @@
       >
         <!-- Project Carousel Only -->
         <div class="overflow-x-auto scrollbar-hide">
-          <div class="flex space-x-6 min-w-max py-2">
-            <div v-for="(project, idx) in projectCards" :key="'proj-card-' + idx" class="project-card bg-gradient-to-br from-blue-100 via-white to-indigo-50 rounded-xl shadow-lg p-6 min-w-[260px] max-w-xs flex flex-col items-start hover:-translate-y-2 transition-transform duration-300 cursor-pointer relative group">
-              <div class="text-3xl mb-3">
+          <div class="flex space-x-4 sm:space-x-6 min-w-max py-2">
+            <div v-for="(project, idx) in projectCards" :key="'proj-card-' + idx" class="project-card bg-gradient-to-br from-blue-100 via-white to-indigo-50 rounded-xl shadow-lg p-4 sm:p-6 min-w-[240px] sm:min-w-[260px] max-w-xs flex flex-col items-start hover:-translate-y-2 transition-transform duration-300 cursor-pointer relative group">
+              <div class="mobile-text-xl sm:mobile-text-2xl lg:mobile-text-3xl mb-2 sm:mb-3">
                 <span v-if="project.icon">{{ project.icon }}</span>
                 <span v-else>💡</span>
               </div>
-              <div class="font-bold text-lg text-blue-800 mb-1">{{ project.name }}</div>
-              <div class="text-gray-600 text-sm line-clamp-3">{{ project.description }}</div>
-              <div v-if="project.status" class="absolute top-3 right-3 text-xs px-2 py-1 rounded-full bg-blue-200 text-blue-800 font-semibold group-hover:bg-blue-400 group-hover:text-white transition">{{ project.status }}</div>
+              <div class="font-bold mobile-text-base lg:mobile-text-lg text-blue-800 mb-1">{{ project.name }}</div>
+              <div class="mobile-text-xs lg:mobile-text-sm text-gray-600 line-clamp-3">{{ project.description }}</div>
+              <div v-if="project.status" class="absolute top-2 sm:top-3 right-2 sm:right-3 mobile-text-xs px-2 py-1 rounded-full bg-blue-200 text-blue-800 font-semibold group-hover:bg-blue-400 group-hover:text-white transition">{{ project.status }}</div>
             </div>
           </div>
         </div>
@@ -61,14 +61,14 @@
         title="Hackathon Participation"
         icon="🏆"
       >
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="mobile-grid gap-4 sm:gap-6">
           <div
             v-for="participation in data.description.participation_in_hackathon"
             :key="participation.project"
-            class="bg-indigo-50 p-4 rounded-xl shadow"
+            class="mobile-card bg-indigo-50 p-3 sm:p-4 rounded-xl shadow"
           >
-            <h4 class="text-lg font-semibold">{{ participation.project }}</h4>
-            <p>{{ participation.achievement }}</p>
+            <h4 class="mobile-text-base lg:mobile-text-lg font-semibold">{{ participation.project }}</h4>
+            <p class="mobile-text-sm lg:mobile-text-base">{{ participation.achievement }}</p>
           </div>
         </div>
       </OfficeContentSection>
@@ -79,7 +79,7 @@
         title="Staff"
         icon="👥"
       >
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="mobile-grid gap-6 sm:gap-8">
           <StaffCard
             v-for="staff in data.staff_members"
             :key="staff.email_id"

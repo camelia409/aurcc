@@ -57,9 +57,9 @@
 
 
       <!-- Floating Stats Cards with 3D Effect -->
-      <section class="container mx-auto px-4 sm:px-8 lg:px-14 relative -mt-20 sm:-mt-24 md:-mt-32 z-30 mb-16 sm:mb-20">
-        <div class="container mx-auto">
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+      <section class="mobile-container relative -mt-16 sm:-mt-20 md:-mt-24 lg:-mt-32 z-30 mb-12 sm:mb-16 lg:mb-20">
+        <div class="mobile-container">
+          <div class="mobile-grid">
             <div class="group perspective">
               <div class="stat-card-3d transform transition-transform duration-500 preserve-3d group-hover:rotate-y-12">
                 <div class="stat-front">
@@ -141,7 +141,7 @@
       </section>
 
       <!-- About Section with Modern Design -->
-      <section id="about" class="container mx-auto px-14 relative py-20 overflow-hidden">
+      <section id="about" class="container mx-auto px-4 sm:px-8 lg:px-14 relative py-12 sm:py-16 lg:py-20 overflow-hidden">
         <!-- Background sketch pattern -->
         <div class="absolute inset-0 overflow-hidden pointer-events-none opacity-10">
           <div class="absolute inset-0">
@@ -158,34 +158,34 @@
           </div>
         </div>
         
-        <div class="container mx-auto px-4">
-          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+        <div class="mobile-container">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8">
             <!-- Main Content Area - Takes 8 of 12 columns on large screens -->
             <div class="lg:col-span-8 space-y-10">
               <!-- Section Title with Animated Underline -->
-              <h2 class="text-4xl md:text-5xl font-bold text-blue-900 relative inline-block group">
+              <h2 class="mobile-text-2xl lg:mobile-text-3xl font-bold text-blue-900 relative inline-block group">
                   ABOUT OUR CAMPUS
-                  <span class="absolute -bottom-3 left-0 h-1 w-52 bg-yellow-500"></span>
+                  <span class="absolute -bottom-2 sm:-bottom-3 left-0 h-1 w-32 sm:w-40 lg:w-52 bg-yellow-500"></span>
               </h2>
               <!-- About Text Card with Subtle Animation -->
-              <div class="bg-white/80 backdrop-blur-sm rounded-xl shadow-xl p-8 border border-blue-200">
-                <p class="text-lg text-gray-700 leading-relaxed">
+              <div class="mobile-card bg-white/80 backdrop-blur-sm shadow-xl border border-blue-200">
+                <p class="mobile-text-base text-gray-700 leading-relaxed">
                   The Regional Campus Coimbatore of Anna University, established in 2012, offers world-class education in Engineering and Technology. Nestled in a serene environment away from the city's hustle, our campus boasts state-of-the-art infrastructure and a team of highly qualified faculty members dedicated to academic excellence.
                 </p>
-                <p class="text-lg text-gray-700 leading-relaxed mt-4">
+                <p class="mobile-text-base text-gray-700 leading-relaxed mt-4">
                   Our university is committed to holistic education with a focus on innovation, research, and industry collaboration. We provide an engaging learning environment where students can develop their technical skills, critical thinking abilities, and leadership qualities needed to excel in their chosen fields.
                 </p>
-                <p class="text-lg text-gray-700 leading-relaxed mt-4">
+                <p class="mobile-text-base text-gray-700 leading-relaxed mt-4">
                   The campus features modern laboratories, spacious classrooms, well-stocked libraries, and recreational facilities that enhance the overall student experience. Our commitment to excellence has earned us recognition as one of the top engineering institutions in the region.
                 </p>
               </div>
               
               <!-- News and Events Cards with Modern Design -->
-              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div class="mobile-grid">
                 <!-- News/Admissions Card -->
-                <div class="bg-white/80 backdrop-blur-sm rounded-xl shadow-lg overflow-hidden border border-blue-200">
-                  <div class="bg-gradient-to-r from-blue-600 to-indigo-600 py-4 px-6 flex items-center justify-between">
-                    <h3 class="text-xl font-semibold text-white">News & Admissions</h3>
+                <div class="mobile-card bg-white/80 backdrop-blur-sm shadow-lg overflow-hidden border border-blue-200">
+                  <div class="bg-gradient-to-r from-blue-600 to-indigo-600 py-3 sm:py-4 px-4 sm:px-6 flex items-center justify-between">
+                    <h3 class="mobile-text-lg font-semibold text-white">News & Admissions</h3>
                     <div class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center">
                       <svg class="w-5 h-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"></path>
@@ -213,9 +213,9 @@
                 </div>
 
                 <!-- Events/Scholarships Card -->
-                <div class="bg-white/80 backdrop-blur-sm rounded-xl shadow-lg overflow-hidden border border-blue-200">
-                  <div class="bg-gradient-to-r from-indigo-600 to-blue-600 py-4 px-6 flex items-center justify-between">
-                    <h3 class="text-xl font-semibold text-white">Events & Scholarships</h3>
+                <div class="mobile-card bg-white/80 backdrop-blur-sm shadow-lg overflow-hidden border border-blue-200">
+                  <div class="bg-gradient-to-r from-indigo-600 to-blue-600 py-3 sm:py-4 px-4 sm:px-6 flex items-center justify-between">
+                    <h3 class="mobile-text-lg font-semibold text-white">Events & Scholarships</h3>
                     <div class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center">
                       <svg class="w-5 h-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
@@ -247,59 +247,59 @@
             <!-- Quick Links Section - Takes 4 of 12 columns on large screens -->
             <div class="lg:col-span-4">
               <div class="bg-gradient-to-br from-blue-900 to-indigo-900 backdrop-blur-md rounded-xl shadow-xl p-6 sticky">
-                <h3 class="text-4xl font-bold text-white mb-6 pb-3 border-b border-white/20 flex items-center">
-                  <svg class="w-6 h-6 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <h3 class="mobile-text-2xl lg:mobile-text-3xl font-bold text-white mb-4 sm:mb-6 pb-2 sm:pb-3 border-b border-white/20 flex items-center">
+                  <svg class="w-5 h-5 sm:w-6 sm:h-6 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M13 5l7 7-7 7M5 5l7 7-7 7"></path>
                   </svg>
                   Quick Links
                 </h3>
                 <div class="space-y-3">
                   <div class="group">
-                    <router-link to="/aicte&moe" class="bg-white/10 hover:bg-white/20 rounded-lg p-4 flex items-center space-x-3 transition-all duration-300 transform hover:translate-x-2 cursor-pointer">
-                      <div class="bg-blue-500/20 p-2 rounded-full">
-                        <svg class="h-5 w-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+                    <router-link to="/aicte&moe" class="bg-white/10 hover:bg-white/20 rounded-lg p-3 sm:p-4 flex items-center space-x-2 sm:space-x-3 transition-all duration-300 transform hover:translate-x-2 cursor-pointer">
+                      <div class="bg-blue-500/20 p-1.5 sm:p-2 rounded-full">
+                        <svg class="h-4 w-4 sm:h-5 sm:w-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
                       </div>
-                      <h3 class="text-xl text-white font-medium">AICTE & MOE CELL</h3>
+                      <h3 class="mobile-text-base lg:mobile-text-lg text-white font-medium">AICTE & MOE CELL</h3>
                     </router-link>
                   </div>
                   <div class="group">
-                    <a href="https://drive.google.com/file/d/1z8ioKdQN0-fvahtIfneCPJI6i7j-YaFz/view" target="_blank" rel="noopener" class="bg-white/10 hover:bg-white/20 rounded-lg p-4 flex items-center space-x-3 transition-all duration-300 transform hover:translate-x-2 cursor-pointer">
-                      <div class="bg-indigo-500/20 p-2 rounded-full">
-                        <svg class="h-5 w-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                    <a href="https://drive.google.com/file/d/1z8ioKdQN0-fvahtIfneCPJI6i7j-YaFz/view" target="_blank" rel="noopener" class="bg-white/10 hover:bg-white/20 rounded-lg p-3 sm:p-4 flex items-center space-x-2 sm:space-x-3 transition-all duration-300 transform hover:translate-x-2 cursor-pointer">
+                      <div class="bg-indigo-500/20 p-1.5 sm:p-2 rounded-full">
+                        <svg class="h-4 w-4 sm:h-5 sm:w-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
                       </div>
-                      <h3 class="text-xl text-white font-medium">MANDATORY DISCLOSURE</h3>
+                      <h3 class="mobile-text-base lg:mobile-text-lg text-white font-medium">MANDATORY DISCLOSURE</h3>
                     </a>
                   </div>
                   <div class="group">
-                    <router-link to="/downloads" class="bg-white/10 hover:bg-white/20 rounded-lg p-4 flex items-center space-x-3 transition-all duration-300 transform hover:translate-x-2 cursor-pointer">
-                      <div class="bg-green-500/20 p-2 rounded-full">
-                        <svg class="h-5 w-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 20h9"></path><path d="M12 4v16m0 0l-4-4m4 4l4-4"></path></svg>
+                    <router-link to="/downloads" class="bg-white/10 hover:bg-white/20 rounded-lg p-3 sm:p-4 flex items-center space-x-2 sm:space-x-3 transition-all duration-300 transform hover:translate-x-2 cursor-pointer">
+                      <div class="bg-green-500/20 p-1.5 sm:p-2 rounded-full">
+                        <svg class="h-4 w-4 sm:h-5 sm:w-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 20h9"></path><path d="M12 4v16m0 0l-4-4m4 4l4-4"></path></svg>
                       </div>
-                      <h3 class="text-xl text-white font-medium">DOWNLOADS</h3>
+                      <h3 class="mobile-text-base lg:mobile-text-lg text-white font-medium">DOWNLOADS</h3>
                     </router-link>
                   </div>
                   <div class="group">
-                    <router-link to="/antiragging" class="bg-white/10 hover:bg-white/20 rounded-lg p-4 flex items-center space-x-3 transition-all duration-300 transform hover:translate-x-2 cursor-pointer">
-                      <div class="bg-red-500/20 p-2 rounded-full">
+                    <router-link to="/antiragging" class="bg-white/10 hover:bg-white/20 rounded-lg p-3 sm:p-4 flex items-center space-x-2 sm:space-x-3 transition-all duration-300 transform hover:translate-x-2 cursor-pointer">
+                      <div class="bg-red-500/20 p-1.5 sm:p-2 rounded-full">
                         <svg class="h-5 w-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
                       </div>
-                      <h3 class="text-xl text-white font-medium">ANTIRAGGING CELL</h3>
+                      <h3 class="mobile-text-base lg:mobile-text-lg text-white font-medium">ANTIRAGGING CELL</h3>
                     </router-link>
                   </div>
                   <div class="group">
-                    <router-link to="/posh" class="bg-white/10 hover:bg-white/20 rounded-lg p-4 flex items-center space-x-3 transition-all duration-300 transform hover:translate-x-2 cursor-pointer">
-                      <div class="bg-pink-500/20 p-2 rounded-full">
-                        <svg class="h-5 w-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="M8 15s1.5-2 4-2 4 2 4 2"></path><path d="M9 9h.01"></path><path d="M15 9h.01"></path></svg>
+                    <router-link to="/posh" class="bg-white/10 hover:bg-white/20 rounded-lg p-3 sm:p-4 flex items-center space-x-2 sm:space-x-3 transition-all duration-300 transform hover:translate-x-2 cursor-pointer">
+                      <div class="bg-pink-500/20 p-1.5 sm:p-2 rounded-full">
+                        <svg class="h-4 w-4 sm:h-5 sm:w-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="M8 15s1.5-2 4-2 4 2 4 2"></path><path d="M9 9h.01"></path><path d="M15 9h.01"></path></svg>
                       </div>
-                      <h3 class="text-xl text-white font-medium">POSH CELL</h3>
+                      <h3 class="mobile-text-base lg:mobile-text-lg text-white font-medium">POSH CELL</h3>
                     </router-link>
                   </div>
                   <div class="group">
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSct1Nzh8zasrBf1pL8TQeDVLpNTckhwPYJw8L_JAL4-e-VRrA/viewform" target="_blank" rel="noopener" class="bg-white/10 hover:bg-white/20 rounded-lg p-4 flex items-center space-x-3 transition-all duration-300 transform hover:translate-x-2 cursor-pointer">
-                      <div class="bg-yellow-500/20 p-2 rounded-full">
-                        <svg class="h-5 w-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"></path></svg>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSct1Nzh8zasrBf1pL8TQeDVLpNTckhwPYJw8L_JAL4-e-VRrA/viewform" target="_blank" rel="noopener" class="bg-white/10 hover:bg-white/20 rounded-lg p-3 sm:p-4 flex items-center space-x-2 sm:space-x-3 transition-all duration-300 transform hover:translate-x-2 cursor-pointer">
+                      <div class="bg-yellow-500/20 p-1.5 sm:p-2 rounded-full">
+                        <svg class="h-4 w-4 sm:h-5 sm:w-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"></path></svg>
                       </div>
-                      <h3 class="text-xl text-white font-medium">PREVENTION OF CASTE</h3>
+                      <h3 class="mobile-text-base lg:mobile-text-lg text-white font-medium">PREVENTION OF CASTE</h3>
                     </a>
                   </div>
                   <div class="group">
@@ -311,19 +311,19 @@
                     </a>
                   </div>
                   <div class="group">
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSenLuIhWEHNtty-CA7a2hMufyxj1sFLd-ET4geM3VvwN3KoHg/viewform" target="_blank" rel="noopener" class="bg-white/10 hover:bg-white/20 rounded-lg p-4 flex items-center space-x-3 transition-all duration-300 transform hover:translate-x-2 cursor-pointer">
-                      <div class="bg-green-500/20 p-2 rounded-full">
-                        <svg class="h-5 w-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 21h18M3 10h18M3 7l9-4 9 4M4 10v11m16-11v11M8 14v3m4-3v3m4-3v3"></path></svg>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSenLuIhWEHNtty-CA7a2hMufyxj1sFLd-ET4geM3VvwN3KoHg/viewform" target="_blank" rel="noopener" class="bg-white/10 hover:bg-white/20 rounded-lg p-3 sm:p-4 flex items-center space-x-2 sm:space-x-3 transition-all duration-300 transform hover:translate-x-2 cursor-pointer">
+                      <div class="bg-green-500/20 p-1.5 sm:p-2 rounded-full">
+                        <svg class="h-4 w-4 sm:h-5 sm:w-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 21h18M3 10h18M3 7l9-4 9 4M4 10v11m16-11v11M8 14v3m4-3v3m4-3v3"></path></svg>
                       </div>
-                      <h3 class="text-xl text-white font-medium">ANTI DRUGS</h3>
+                      <h3 class="mobile-text-base lg:mobile-text-lg text-white font-medium">ANTI DRUGS</h3>
                     </a>
                   </div>
                   <div class="group">
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSc5bsULXXnvfXgGnX9hJhNZrMJfeZfT8BLPGQ-Zz5rDc9q1pQ/viewform" target="_blank" rel="noopener" class="bg-white/10 hover:bg-white/20 rounded-lg p-4 flex items-center space-x-3 transition-all duration-300 transform hover:translate-x-2 cursor-pointer">
-                      <div class="bg-blue-500/20 p-2 rounded-full">
-                        <svg class="h-5 w-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSc5bsULXXnvfXgGnX9hJhNZrMJfeZfT8BLPGQ-Zz5rDc9q1pQ/viewform" target="_blank" rel="noopener" class="bg-white/10 hover:bg-white/20 rounded-lg p-3 sm:p-4 flex items-center space-x-2 sm:space-x-3 transition-all duration-300 transform hover:translate-x-2 cursor-pointer">
+                      <div class="bg-blue-500/20 p-1.5 sm:p-2 rounded-full">
+                        <svg class="h-4 w-4 sm:h-5 sm:w-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
                       </div>
-                      <h3 class="text-xl text-white font-medium">FEEDBACK FORM</h3>
+                      <h3 class="mobile-text-base lg:mobile-text-lg text-white font-medium">FEEDBACK FORM</h3>
                     </a>
                   </div>
                 </div>
@@ -334,7 +334,7 @@
       </section>
 
       <!-- Programs Showcase with Horizontal Scroll -->
-      <section id="programs" class="py-20 bg-gradient-to-b from-white to-blue-50/50 relative">
+      <section id="programs" class="py-12 sm:py-16 lg:py-20 bg-gradient-to-b from-white to-blue-50/50 relative">
         <!-- Background sketch pattern -->
         <div class="absolute inset-0 overflow-hidden pointer-events-none opacity-10">
           <div class="absolute inset-0">
@@ -347,10 +347,10 @@
           </div>
         </div>
         
-        <div class="container mx-auto px-6 md:px-20 relative z-10">
-          <h2 class="text-4xl font-bold text-center mb-16 text-[#21209c] relative inline-block mx-auto">
+        <div class="mobile-container relative z-10">
+          <h2 class="mobile-text-2xl lg:mobile-text-3xl font-bold text-center mb-12 sm:mb-16 text-[#21209c] relative inline-block mx-auto">
             PROGRAMS OFFERED
-            <span class="absolute -bottom-3 left-1/2 transform -translate-x-1/2 h-1 w-24 bg-yellow-500"></span>
+            <span class="absolute -bottom-2 sm:-bottom-3 left-1/2 transform -translate-x-1/2 h-1 w-16 sm:w-20 lg:w-24 bg-yellow-500"></span>
           </h2>
           <div class="mt-16 relative">
             <div class="program-scroll-container">
@@ -412,7 +412,7 @@
       </section>
 
             <!-- Dean's Message Section - Modern Glass Design -->
-            <section id="deans-message" class="py-24 bg-gradient-to-br from-blue-900 to-indigo-900 text-white relative">
+            <section id="deans-message" class="py-12 sm:py-16 lg:py-24 bg-gradient-to-br from-blue-900 to-indigo-900 text-white relative">
         <!-- Background sketch pattern -->
         <div class="absolute inset-0 overflow-hidden pointer-events-none opacity-10">
           <div class="absolute inset-0">
@@ -425,22 +425,22 @@
           </div>
         </div>
         
-        <div class="container mx-auto px-6 relative z-10">
-          <h2 class="text-4xl font-bold text-center mb-12">From the Dean's Desk</h2>
+        <div class="mobile-container relative z-10">
+          <h2 class="mobile-text-2xl lg:mobile-text-3xl font-bold text-center mb-8 sm:mb-12">From the Dean's Desk</h2>
           <div class="flex flex-col md:flex-row items-center bg-white bg-opacity-10 rounded-lg shadow-xl overflow-hidden backdrop-filter backdrop-blur-lg">
             <div class="md:w-1/3">
               <img src="/Dean.webp" alt="Dean's Photo" class="w-full h-full object-cover" />
             </div>
-            <div class="md:w-2/3 p-8">
-              <h3 class="text-3xl font-semibold mb-4">Dr. Saravanan Kumar</h3>
-              <p class="text-indigo-200 mb-6 italic">"Empowering the next generation of innovators and leaders."</p>
-              <p class="mb-4">
+            <div class="md:w-2/3 p-4 sm:p-6 md:p-8">
+              <h3 class="mobile-text-xl lg:mobile-text-2xl font-semibold mb-3 sm:mb-4">Dr. Saravanan Kumar</h3>
+              <p class="mobile-text-base text-indigo-200 mb-4 sm:mb-6 italic">"Empowering the next generation of innovators and leaders."</p>
+              <p class="mobile-text-base mb-3 sm:mb-4">
                 Welcome to Anna University! Our institution stands at the forefront of technological education and research. We are committed to nurturing not just skilled professionals, but visionary leaders who will shape the future of our society.
               </p>
-              <p class="mb-4">
+              <p class="mobile-text-base mb-3 sm:mb-4">
                 Our world-class faculty, cutting-edge facilities, and industry partnerships provide an unparalleled learning environment. We encourage our students to push boundaries, think critically, and innovate fearlessly.
               </p>
-              <p>
+              <p class="mobile-text-base">
                 Join us in this exciting journey of discovery and growth. Together, let's build a brighter, more sustainable future through the power of education and technology.
               </p>
             </div>
@@ -449,7 +449,7 @@
       </section>
 
       <!-- Campus Life Section -->
-      <section id="campus-life" class="py-24 bg-white relative">
+      <section id="campus-life" class="py-12 sm:py-16 lg:py-24 bg-white relative">
         <!-- Background sketch pattern -->
         <div class="absolute inset-0 overflow-hidden pointer-events-none opacity-10">
           <div class="absolute inset-0">
@@ -462,16 +462,16 @@
           </div>
         </div>
         
-        <div class="container mx-auto px-6 md:px-20 relative z-10">
-          <div class="text-center max-w-3xl mx-auto mb-16">
-            <h2 class="text-4xl font-bold text-[#21209c] relative inline-block">
+        <div class="mobile-container relative z-10">
+          <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
+            <h2 class="mobile-text-2xl lg:mobile-text-3xl font-bold text-[#21209c] relative inline-block">
               CAMPUS LIFE
-              <span class="absolute -bottom-3 left-1/2 transform -translate-x-1/2 h-1 w-24 bg-yellow-500"></span>
+              <span class="absolute -bottom-2 sm:-bottom-3 left-1/2 transform -translate-x-1/2 h-1 w-16 sm:w-20 lg:w-24 bg-yellow-500"></span>
             </h2>
-            <p class="mt-8 text-xl text-gray-700">
+            <p class="mt-6 sm:mt-8 mobile-text-lg text-gray-700">
               LIVELY AND HAPPY CAMPUS!
             </p>
-            <p class="mt-4 text-gray-600">
+            <p class="mt-3 sm:mt-4 mobile-text-base text-gray-600">
               Buzzing with lively and vibrant activities, our campus is always a fun-filled and happy place. 
               After a rigorous day of learning, our students have a host of activities to indulge in and engage themselves.
               Be it their love of music and dance, sweating it out in the sports field, or getting together with peers through club activities, 
@@ -479,63 +479,63 @@
             </p>
           </div>
           
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="mobile-grid">
             <!-- Campus Life Card 1 -->
-            <div class="rounded-xl overflow-hidden shadow-lg group">
-              <div class="relative h-64 overflow-hidden">
+            <div class="mobile-card rounded-xl overflow-hidden shadow-lg group">
+              <div class="relative h-48 sm:h-56 md:h-64 overflow-hidden">
                 <img 
                   src="/cse-girls-closeup.webp" 
                   alt="State-of-the-art Labs" 
                   class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 >
                 <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-80"></div>
-                <div class="absolute bottom-0 left-0 p-6">
-                  <h3 class="text-xl font-bold text-white">Advanced Labs</h3>
-                  <p class="text-blue-200">Cutting-edge technology for hands-on learning</p>
+                <div class="absolute bottom-0 left-0 p-4 sm:p-6">
+                  <h3 class="mobile-text-lg font-bold text-white">Advanced Labs</h3>
+                  <p class="mobile-text-sm text-blue-200">Cutting-edge technology for hands-on learning</p>
                 </div>
               </div>
             </div>
             
             <!-- Campus Life Card 2 -->
-            <div class="rounded-xl overflow-hidden shadow-lg group">
-              <div class="relative h-64 overflow-hidden">
+            <div class="mobile-card rounded-xl overflow-hidden shadow-lg group">
+              <div class="relative h-48 sm:h-56 md:h-64 overflow-hidden">
                 <img 
                   src="/annual_day_dance.webp" 
                   alt="Cultural Events" 
                   class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 >
                 <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-80"></div>
-                <div class="absolute bottom-0 left-0 p-6">
-                  <h3 class="text-xl font-bold text-white">Cultural Events</h3>
-                  <p class="text-blue-200">Celebrating talent and creativity</p>
+                <div class="absolute bottom-0 left-0 p-4 sm:p-6">
+                  <h3 class="mobile-text-lg font-bold text-white">Cultural Events</h3>
+                  <p class="mobile-text-sm text-blue-200">Celebrating talent and creativity</p>
                 </div>
               </div>
             </div>
             
             <!-- Campus Life Card 3 -->
-            <div class="rounded-xl overflow-hidden shadow-lg group">
-              <div class="relative h-64 overflow-hidden">
+            <div class="mobile-card rounded-xl overflow-hidden shadow-lg group">
+              <div class="relative h-48 sm:h-56 md:h-64 overflow-hidden">
                 <img 
                   src="/sports_day_parade.jpg" 
                   alt="Sports Activities" 
                   class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 >
                 <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-80"></div>
-                <div class="absolute bottom-0 left-0 p-6">
-                  <h3 class="text-xl font-bold text-white">Sports Excellence</h3>
-                  <p class="text-blue-200">Promoting physical fitness and team spirit</p>
+                <div class="absolute bottom-0 left-0 p-4 sm:p-6">
+                  <h3 class="mobile-text-lg font-bold text-white">Sports Excellence</h3>
+                  <p class="mobile-text-sm text-blue-200">Promoting physical fitness and team spirit</p>
                 </div>
               </div>
             </div>
           </div>
           
-          <div class="flex justify-center mt-12 gap-4">
-            <a href="#campus-tour" class="inline-block px-8 py-4 bg-white border-2 border-blue-600 text-blue-600 rounded-full font-semibold 
-               transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
+          <div class="flex flex-col sm:flex-row justify-center mt-8 sm:mt-12 gap-3 sm:gap-4">
+            <a href="#campus-tour" class="mobile-btn inline-block bg-white border-2 border-blue-600 text-blue-600 rounded-full font-semibold 
+               transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl text-center">
               CAMPUS TOUR
             </a>
-            <a href="/admissions" class="inline-block px-8 py-4 bg-blue-600 text-white rounded-full font-semibold 
-               transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
+            <a href="/admissions" class="mobile-btn inline-block bg-blue-600 text-white rounded-full font-semibold 
+               transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl text-center">
               ADMISSIONS
             </a>
           </div>
@@ -543,7 +543,7 @@
       </section>
 
       <!-- Hostel Section -->
-      <section id="hostel" class="py-24 bg-gradient-to-br from-blue-900 to-indigo-900 text-white relative">
+      <section id="hostel" class="py-12 sm:py-16 lg:py-24 bg-gradient-to-br from-blue-900 to-indigo-900 text-white relative">
         <!-- Background sketch pattern -->
         <div class="absolute inset-0 overflow-hidden pointer-events-none opacity-10">
           <div class="absolute inset-0">
@@ -558,40 +558,40 @@
           </div>
         </div>
         
-        <div class="container mx-auto px-6 md:px-20 relative z-10">
-          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div class="mobile-container relative z-10">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center">
             <div>
-              <h2 class="text-4xl font-bold mb-6">HOSTEL</h2>
-              <h3 class="text-2xl font-semibold mb-4 text-blue-200">CREATING MEMORIES FOR LIFETIME!</h3>
-              <h4 class="text-xl font-semibold mb-6 text-blue-100">COZY ROOMS. COMFORTABLE STAY.</h4>
-              <p class="text-lg mb-6">
+              <h2 class="mobile-text-2xl lg:mobile-text-3xl font-bold mb-4 sm:mb-6">HOSTEL</h2>
+              <h3 class="mobile-text-lg lg:mobile-text-xl font-semibold mb-3 sm:mb-4 text-blue-200">CREATING MEMORIES FOR LIFETIME!</h3>
+              <h4 class="mobile-text-base lg:mobile-text-lg font-semibold mb-4 sm:mb-6 text-blue-100">COZY ROOMS. COMFORTABLE STAY.</h4>
+              <p class="mobile-text-base mb-4 sm:mb-6">
                 Well designed airy rooms, clean and fully equipped kitchens, dining space with multi cuisine food options, 
                 facilities like laundry, salon & supermarket, lots of greenery, unique seating spaces for friends to get together 
                 and have casual conversations, extended lab facilities for students to work after college hours – forms a part of 
                 our hostel experience.
               </p>
-              <p class="text-lg mb-8">
+              <p class="mobile-text-base mb-6 sm:mb-8">
                 Extended learning is a big part of hostel life. Our hostel at night, with beautiful lighting and the young 
                 energetic vibe of students, is a must-see for all! In a nutshell, our hostel will provide the ambience to relax, 
                 enjoy a variety of tasty food, and also to collaborate and grow in the company of peers.
               </p>
-              <a href="#hostel-details" class="inline-block px-8 py-4 bg-white text-blue-900 rounded-full font-semibold 
-                transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
+              <a href="#hostel-details" class="mobile-btn inline-block bg-white text-blue-900 rounded-full font-semibold 
+                transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl text-center">
                 KNOW MORE
               </a>
             </div>
-            <div class="grid grid-cols-2 gap-4">
+            <div class="grid grid-cols-2 gap-3 sm:gap-4">
               <div class="rounded-xl overflow-hidden shadow-lg">
-                <img src="/cse-girls-closeup.webp" alt="Hostel Room" class="w-full h-full object-cover">
+                <img src="/cse-girls-closeup.webp" alt="Hostel Room" class="w-full h-24 sm:h-32 md:h-40 object-cover">
               </div>
               <div class="rounded-xl overflow-hidden shadow-lg">
-                <img src="/computer-lab.webp" alt="Hostel Dining" class="w-full h-full object-cover">
+                <img src="/computer-lab.webp" alt="Hostel Dining" class="w-full h-24 sm:h-32 md:h-40 object-cover">
               </div>
               <div class="rounded-xl overflow-hidden shadow-lg">
-                <img src="/1.webp" alt="Hostel Common Area" class="w-full h-full object-cover">
+                <img src="/1.webp" alt="Hostel Common Area" class="w-full h-24 sm:h-32 md:h-40 object-cover">
               </div>
               <div class="rounded-xl overflow-hidden shadow-lg">
-                <img src="/4.webp" alt="Hostel Night View" class="w-full h-full object-cover">
+                <img src="/4.webp" alt="Hostel Night View" class="w-full h-24 sm:h-32 md:h-40 object-cover">
               </div>
             </div>
           </div>
@@ -599,7 +599,7 @@
       </section>
 
       <!-- Gallery Section -->
-      <section id="gallery" class="py-20 bg-white overflow-hidden w-full relative">
+      <section id="gallery" class="py-12 sm:py-16 lg:py-20 bg-white overflow-hidden w-full relative">
         <!-- Background sketch pattern -->
         <div class="absolute inset-0 overflow-hidden pointer-events-none opacity-10">
           <div class="absolute inset-0">
@@ -613,10 +613,10 @@
           </div>
         </div>
         
-        <div class="container mx-auto px-6 md:px-20 relative z-10">
-          <h2 class="text-4xl font-bold text-center mb-16 text-[#21209c] relative inline-block mx-auto">
+        <div class="mobile-container relative z-10">
+          <h2 class="mobile-text-2xl lg:mobile-text-3xl font-bold text-center mb-12 sm:mb-16 text-[#21209c] relative inline-block mx-auto">
             Gallery of Memories
-            <span class="absolute -bottom-3 left-1/2 transform -translate-x-1/2 h-1 w-24 bg-yellow-500"></span>
+            <span class="absolute -bottom-2 sm:-bottom-3 left-1/2 transform -translate-x-1/2 h-1 w-16 sm:w-20 lg:w-24 bg-yellow-500"></span>
           </h2>
           
           <div class="relative flex items-center justify-center">
@@ -664,7 +664,7 @@
       </section>
 
       <!-- Alumni Testimonials Section -->
-      <section id="alumni" class="py-24 bg-gray-50 relative">
+      <section id="alumni" class="py-12 sm:py-16 lg:py-24 bg-gray-50 relative">
         <!-- Background sketch pattern -->
         <div class="absolute inset-0 overflow-hidden pointer-events-none opacity-10">
           <div class="absolute inset-0">
@@ -678,12 +678,12 @@
           </div>
         </div>
         
-        <div class="container mx-auto px-6 md:px-20 relative z-10">
-          <h2 class="text-4xl font-bold text-center mb-16 text-[#21209c] relative inline-block mx-auto">
+        <div class="mobile-container relative z-10">
+          <h2 class="mobile-text-2xl lg:mobile-text-3xl font-bold text-center mb-12 sm:mb-16 text-[#21209c] relative inline-block mx-auto">
             ALUMNI SPEAK
-            <span class="absolute -bottom-3 left-1/2 transform -translate-x-1/2 h-1 w-24 bg-yellow-500"></span>
+            <span class="absolute -bottom-2 sm:-bottom-3 left-1/2 transform -translate-x-1/2 h-1 w-16 sm:w-20 lg:w-24 bg-yellow-500"></span>
           </h2>
-          <p class="text-center text-xl mb-16">Here's what our successful Alumni have to say about Anna University!</p>
+          <p class="text-center mobile-text-lg mb-12 sm:mb-16">Here's what our successful Alumni have to say about Anna University!</p>
 
           <!-- Testimonial Slider -->
           <div class="relative">
@@ -692,23 +692,23 @@
                 <div v-for="(testimonial, index) in testimonials" :key="index" class="flex-shrink-0 w-full">
                   <div class="bg-white rounded-xl shadow-xl overflow-hidden max-w-4xl mx-auto">
                     <div class="grid grid-cols-1 md:grid-cols-3">
-                      <div class="md:col-span-1 bg-gradient-to-br from-blue-600 to-indigo-900 p-8 flex flex-col justify-center">
+                      <div class="md:col-span-1 bg-gradient-to-br from-blue-600 to-indigo-900 p-4 sm:p-6 md:p-8 flex flex-col justify-center">
                         <img 
                           :src="testimonial.image" 
                           :alt="testimonial.name" 
-                          class="w-32 h-32 rounded-full object-cover border-4 border-white mx-auto mb-4"
+                          class="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 rounded-full object-cover border-4 border-white mx-auto mb-3 sm:mb-4"
                         >
-                        <h3 class="text-xl font-bold text-white text-center">{{ testimonial.name }}</h3>
-                        <p class="text-blue-200 text-center">{{ testimonial.branch }}</p>
-                        <p class="text-blue-200 text-center">{{ testimonial.batch }}</p>
-                        <p class="text-white font-semibold text-center mt-2">Placed in <span class="text-yellow-300">{{ testimonial.company }}</span></p>
+                        <h3 class="mobile-text-lg font-bold text-white text-center">{{ testimonial.name }}</h3>
+                        <p class="mobile-text-sm text-blue-200 text-center">{{ testimonial.branch }}</p>
+                        <p class="mobile-text-sm text-blue-200 text-center">{{ testimonial.batch }}</p>
+                        <p class="mobile-text-sm text-white font-semibold text-center mt-2">Placed in <span class="text-yellow-300">{{ testimonial.company }}</span></p>
                       </div>
-                      <div class="md:col-span-2 p-8 flex items-center">
+                      <div class="md:col-span-2 p-4 sm:p-6 md:p-8 flex items-center">
                         <div>
                           <svg class="w-12 h-12 text-blue-200 mb-4" fill="currentColor" viewBox="0 0 24 24">
                             <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
                           </svg>
-                          <p class="text-gray-700 text-lg mb-6 leading-relaxed">{{ testimonial.message }}</p>
+                          <p class="text-gray-700 mobile-text-base mb-4 sm:mb-6 leading-relaxed">{{ testimonial.message }}</p>
                           <div class="flex space-x-1">
                             <svg v-for="star in 5" :key="star" class="w-5 h-5 text-yellow-500" fill="currentColor" viewBox="0 0 20 20">
                               <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118l-2.8-2.034c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
@@ -723,13 +723,13 @@
             </div>
             
             <!-- Navigation Buttons -->
-            <button @click="prevSlide" class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-[#21209c]/80 text-white p-3 rounded-full cursor-pointer hover:bg-[#21209c] transition-colors z-30 focus:outline-none shadow-lg">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <button @click="prevSlide" class="absolute left-2 sm:left-4 top-1/2 transform -translate-y-1/2 bg-[#21209c]/80 text-white p-2 sm:p-3 rounded-full cursor-pointer hover:bg-[#21209c] transition-colors z-30 focus:outline-none shadow-lg">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 sm:h-6 sm:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
               </svg>
             </button>
-            <button @click="nextSlide" class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-[#21209c]/80 text-white p-3 rounded-full cursor-pointer hover:bg-[#21209c] transition-colors z-30 focus:outline-none shadow-lg">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <button @click="nextSlide" class="absolute right-2 sm:right-4 top-1/2 transform -translate-y-1/2 bg-[#21209c]/80 text-white p-2 sm:p-3 rounded-full cursor-pointer hover:bg-[#21209c] transition-colors z-30 focus:outline-none shadow-lg">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 sm:h-6 sm:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
               </svg>
             </button>
@@ -812,13 +812,13 @@
         </div>
       </dialog>
       <!-- Footer Section -->
-      <footer class="bg-gradient-to-r from-blue-900 to-indigo-900 text-white py-8 mt-16">
-        <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
+      <footer class="bg-gradient-to-r from-blue-900 to-indigo-900 text-white py-6 sm:py-8 mt-12 sm:mt-16">
+        <div class="mobile-container flex flex-col md:flex-row justify-between items-center">
           <div class="mb-4 md:mb-0 text-center md:text-left">
-            <span class="font-semibold">© {{ new Date().getFullYear() }} Anna University Regional Campus, Coimbatore</span>
+            <span class="mobile-text-sm font-semibold">© {{ new Date().getFullYear() }} Anna University Regional Campus, Coimbatore</span>
           </div>
-          <div class="flex space-x-6">
-            <router-link to="/about" class="hover:underline text-blue-200">Website Development Team</router-link>
+          <div class="flex space-x-4 sm:space-x-6">
+            <router-link to="/about" class="mobile-text-sm hover:underline text-blue-200">Website Development Team</router-link>
           </div>
         </div>
       </footer>

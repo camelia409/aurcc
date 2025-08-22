@@ -13,7 +13,7 @@
         title="About the Research Cell"
         icon="ℹ️"
       >
-        <ul class="list-disc pl-6 text-gray-800 text-lg space-y-2 leading-relaxed break-words">
+        <ul class="list-disc pl-4 sm:pl-6 text-gray-800 mobile-text-sm lg:mobile-text-base xl:mobile-text-lg space-y-2 leading-relaxed break-words">
           <li
             v-for="(desc, index) in researchData.description"
             :key="index"
@@ -34,14 +34,14 @@
           <table class="table-auto w-full border border-gray-300 text-left mb-4 rounded-xl overflow-hidden">
             <thead class="bg-gray-200">
               <tr>
-                <th class="border px-4 py-2">Department</th>
-                <th class="border px-4 py-2">PhD Completed (FT)</th>
-                <th class="border px-4 py-2">PhD Completed (PT)</th>
-                <th class="border px-4 py-2">PhD Registered (FT)</th>
-                <th class="border px-4 py-2">PhD Registered (PT)</th>
-                <th class="border px-4 py-2">Completed FT+PT</th>
-                <th class="border px-4 py-2">Registered FT+PT</th>
-                <th class="border px-4 py-2">Overall FT+PT</th>
+                <th class="border px-2 sm:px-3 md:px-4 py-2 mobile-text-xs lg:mobile-text-sm">Department</th>
+                <th class="border px-2 sm:px-3 md:px-4 py-2 mobile-text-xs lg:mobile-text-sm">PhD Completed (FT)</th>
+                <th class="border px-2 sm:px-3 md:px-4 py-2 mobile-text-xs lg:mobile-text-sm">PhD Completed (PT)</th>
+                <th class="border px-2 sm:px-3 md:px-4 py-2 mobile-text-xs lg:mobile-text-sm">PhD Registered (FT)</th>
+                <th class="border px-2 sm:px-3 md:px-4 py-2 mobile-text-xs lg:mobile-text-sm">PhD Registered (PT)</th>
+                <th class="border px-2 sm:px-3 md:px-4 py-2 mobile-text-xs lg:mobile-text-sm">Completed FT+PT</th>
+                <th class="border px-2 sm:px-3 md:px-4 py-2 mobile-text-xs lg:mobile-text-sm">Registered FT+PT</th>
+                <th class="border px-2 sm:px-3 md:px-4 py-2 mobile-text-xs lg:mobile-text-sm">Overall FT+PT</th>
               </tr>
             </thead>
             <tbody>
@@ -50,14 +50,14 @@
                 :key="index"
                 class="hover:bg-gray-50"
               >
-                <td class="border px-4 py-2">{{ dept.department }}</td>
-                <td class="border px-4 py-2 text-center">{{ dept.phdCompletedFullTime }}</td>
-                <td class="border px-4 py-2 text-center">{{ dept.phdCompletedPartTime }}</td>
-                <td class="border px-4 py-2 text-center">{{ dept.phdRegisteredFullTime }}</td>
-                <td class="border px-4 py-2 text-center">{{ dept.phdRegisteredPartTime }}</td>
-                <td class="border px-4 py-2 text-center">{{ dept.completedFTPT }}</td>
-                <td class="border px-4 py-2 text-center">{{ dept.registeredFTPT }}</td>
-                <td class="border px-4 py-2 text-center">{{ dept.completedFTPT + dept.registeredFTPT }}</td>
+                <td class="border px-2 sm:px-3 md:px-4 py-2 mobile-text-xs lg:mobile-text-sm">{{ dept.department }}</td>
+                <td class="border px-2 sm:px-3 md:px-4 py-2 text-center mobile-text-xs lg:mobile-text-sm">{{ dept.phdCompletedFullTime }}</td>
+                <td class="border px-2 sm:px-3 md:px-4 py-2 text-center mobile-text-xs lg:mobile-text-sm">{{ dept.phdCompletedPartTime }}</td>
+                <td class="border px-2 sm:px-3 md:px-4 py-2 text-center mobile-text-xs lg:mobile-text-sm">{{ dept.phdRegisteredFullTime }}</td>
+                <td class="border px-2 sm:px-3 md:px-4 py-2 text-center mobile-text-xs lg:mobile-text-sm">{{ dept.phdRegisteredPartTime }}</td>
+                <td class="border px-2 sm:px-3 md:px-4 py-2 text-center mobile-text-xs lg:mobile-text-sm">{{ dept.completedFTPT }}</td>
+                <td class="border px-2 sm:px-3 md:px-4 py-2 text-center mobile-text-xs lg:mobile-text-sm">{{ dept.registeredFTPT }}</td>
+                <td class="border px-2 sm:px-3 md:px-4 py-2 text-center mobile-text-xs lg:mobile-text-sm">{{ dept.completedFTPT + dept.registeredFTPT }}</td>
               </tr>
             </tbody>
           </table>

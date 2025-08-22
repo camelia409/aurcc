@@ -13,7 +13,7 @@
         title="About the Estate Office"
         icon="ℹ️"
       >
-        <p class="text-lg md:text-xl font-medium text-gray-800">{{ data.description }}</p>
+        <p class="mobile-text-base lg:mobile-text-lg xl:mobile-text-xl font-medium text-gray-800">{{ data.description }}</p>
       </OfficeContentSection>
 
       <!-- Services -->
@@ -22,15 +22,15 @@
         title="Services"
         icon="🛠️"
       >
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7">
+        <div class="mobile-grid gap-6 sm:gap-7">
           <div
             v-for="service in serviceCards"
             :key="service.title"
-            class="service-card bg-white/70 backdrop-blur rounded-xl shadow border border-blue-100 flex flex-col items-center text-center p-6 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:border-blue-400"
+            class="service-card mobile-card bg-white/70 backdrop-blur rounded-xl shadow border border-blue-100 flex flex-col items-center text-center p-4 sm:p-6 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:border-blue-400"
           >
-            <div class="text-4xl mb-3">{{ service.icon }}</div>
-            <h3 class="font-bold text-lg md:text-xl text-blue-900 mb-2">{{ service.title }}</h3>
-            <p class="text-gray-700 text-sm md:text-base">{{ service.desc }}</p>
+            <div class="mobile-text-2xl sm:mobile-text-3xl lg:mobile-text-4xl mb-2 sm:mb-3">{{ service.icon }}</div>
+            <h3 class="font-bold mobile-text-base lg:mobile-text-lg xl:mobile-text-xl text-blue-900 mb-2">{{ service.title }}</h3>
+            <p class="mobile-text-xs lg:mobile-text-sm xl:mobile-text-base text-gray-700">{{ service.desc }}</p>
           </div>
         </div>
       </OfficeContentSection>
@@ -41,7 +41,7 @@
         title="Staff"
         icon="👥"
       >
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="mobile-grid gap-6 sm:gap-8">
           <StaffCard
             v-for="staff in data.office_bearers"
             :key="staff.email_id || staff.name"

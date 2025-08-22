@@ -3,19 +3,19 @@
     <main>
       <!-- Hero section -->
       <section
-        class="bg-cover bg-center relative h-80 md:h-96"
+        class="bg-cover bg-center relative h-64 sm:h-72 md:h-80 lg:h-96"
         :style="'background-image: url(/' + department.image + ')'"
       >
         <div class="absolute inset-0 bg-gradient-to-r from-blue-900/70 to-indigo-900/60"></div>
-        <div class="container mx-auto h-full flex items-center relative z-10 px-6 md:px-9">
+        <div class="container mx-auto h-full flex items-center relative z-10 px-3 sm:px-4 md:px-6 lg:px-9">
           <div class="max-w-2xl">
-            <h1 class="text-2xl md:text-5xl font-bold mb-4 text-white">
+            <h1 class="mobile-text-xl sm:mobile-text-2xl lg:mobile-text-3xl xl:mobile-text-4xl font-bold mb-3 sm:mb-4 text-white">
               <span class="bg-gradient-to-r from-blue-400 to-indigo-300 bg-clip-text text-transparent">
                 {{ department.name }}
               </span>
             </h1>
-            <p class="text-sm md:text-xl mb-8 text-gray-100 leading-relaxed">Explore our cutting-edge programs and stay ahead in the field.</p>
-            <button class="bg-indigo-600 hover:bg-indigo-700 text-white py-2 px-6 rounded-full transition duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+            <p class="mobile-text-sm lg:mobile-text-base xl:mobile-text-xl mb-6 sm:mb-8 text-gray-100 leading-relaxed">Explore our cutting-edge programs and stay ahead in the field.</p>
+            <button class="mobile-btn bg-indigo-600 hover:bg-indigo-700 text-white py-2 px-4 sm:px-6 rounded-full transition duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
               Learn More
             </button>
           </div>
@@ -24,8 +24,8 @@
       
       <!-- Navigation Tabs - Modern floating design -->
       <div class="sticky top-0 z-20">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="bg-white/95 backdrop-blur-sm shadow-lg rounded-full -mt-6 py-1 px-2 flex justify-center overflow-x-auto no-scrollbar">
+        <div class="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8">
+          <div class="bg-white/95 backdrop-blur-sm shadow-lg rounded-full -mt-4 sm:-mt-6 py-1 px-2 flex justify-center overflow-x-auto no-scrollbar">
             <nav role="tablist" class="tabs flex space-x-1 md:space-x-2">
               <button role="tab"
                 v-for="(section, index) in sections"
@@ -35,7 +35,7 @@
                   'bg-indigo-600 text-white': currentSection === section,
                   'text-gray-700 hover:bg-gray-100': currentSection !== section
                 }"
-                class="font-medium px-4 md:px-5 py-2 md:py-3 rounded-full text-sm md:text-base transition duration-300 whitespace-nowrap"
+                class="font-medium px-3 sm:px-4 md:px-5 py-2 md:py-3 rounded-full mobile-text-xs sm:mobile-text-sm lg:mobile-text-base transition duration-300 whitespace-nowrap"
               >
                 {{ section }}
               </button>
@@ -49,34 +49,34 @@
         <div id="content-sections" class="w-full">
                      <div id="about-department" class="section-container bg-gradient-to-b from-gray-50 to-white">
              <div class="max-w-6xl mx-auto">
-               <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+               <div class="mobile-grid gap-6 sm:gap-8 items-start">
                  <div class="flex flex-col h-full">
                    <div class="section-card h-full">
-                     <div class="bg-gradient-to-r from-indigo-600 to-blue-500 py-6">
-                       <h2 class="text-2xl md:text-3xl text-white font-bold text-center">About Department</h2>
+                     <div class="bg-gradient-to-r from-indigo-600 to-blue-500 py-4 sm:py-6">
+                       <h2 class="mobile-text-lg sm:mobile-text-xl lg:mobile-text-2xl xl:mobile-text-3xl text-white font-bold text-center">About Department</h2>
                      </div>
                      <div class="section-content">
-                       <p class="text-lg text-gray-700 leading-relaxed">{{ department.description }}</p>
+                       <p class="mobile-text-base lg:mobile-text-lg xl:mobile-text-xl text-gray-700 leading-relaxed">{{ department.description }}</p>
                      </div>
                    </div>
                  </div>
                  
-                 <div class="grid grid-cols-1 gap-8 h-full">
+                 <div class="mobile-grid gap-6 sm:gap-8 h-full">
                    <div class="section-card">
-                     <div class="bg-gradient-to-r from-blue-500 to-cyan-400 py-6">
-                       <h3 class="text-2xl md:text-3xl text-white font-bold text-center">Vision</h3>
+                     <div class="bg-gradient-to-r from-blue-500 to-cyan-400 py-4 sm:py-6">
+                       <h3 class="mobile-text-lg sm:mobile-text-xl lg:mobile-text-2xl xl:mobile-text-3xl text-white font-bold text-center">Vision</h3>
                      </div>
                      <div class="section-content">
-                       <p class="text-lg text-gray-700 leading-relaxed">{{ department.vision }}</p>
+                       <p class="mobile-text-base lg:mobile-text-lg xl:mobile-text-xl text-gray-700 leading-relaxed">{{ department.vision }}</p>
                      </div>
                    </div>
                    
                    <div class="section-card">
-                     <div class="bg-gradient-to-r from-cyan-400 to-teal-400 py-6">
-                       <h3 class="text-2xl md:text-3xl text-white font-bold text-center">Mission</h3>
+                     <div class="bg-gradient-to-r from-cyan-400 to-teal-400 py-4 sm:py-6">
+                       <h3 class="mobile-text-lg sm:mobile-text-xl lg:mobile-text-2xl xl:mobile-text-3xl text-white font-bold text-center">Mission</h3>
                      </div>
                      <div class="section-content">
-                       <ul class="text-lg list-disc pl-5 text-gray-700 space-y-3">
+                       <ul class="mobile-text-base lg:mobile-text-lg xl:mobile-text-xl list-disc pl-4 sm:pl-5 text-gray-700 space-y-2 sm:space-y-3">
                          <li v-for="mission in department.mission" :key="mission" class="pl-2">{{ mission }}</li>
                        </ul>
                      </div>
@@ -88,13 +88,13 @@
 
           <!-- Courses Offered Section -->
           <div id="courses-offered" class="section-container bg-white">
-            <h2 class="section-title">
+            <h2 class="mobile-text-xl sm:mobile-text-2xl lg:mobile-text-3xl xl:mobile-text-4xl font-bold text-center mb-8 sm:mb-10">
               <span class="bg-gradient-to-r from-indigo-600 to-blue-500 bg-clip-text text-transparent">Courses Offered</span>
             </h2>
             <div class="max-w-6xl mx-auto">
               <div class="section-card">
-                <div class="bg-gradient-to-r from-indigo-600 to-blue-500 py-8">
-                  <h3 class="text-2xl md:text-3xl text-white font-bold text-center">Programs Available</h3>
+                <div class="bg-gradient-to-r from-indigo-600 to-blue-500 py-6 sm:py-8">
+                  <h3 class="mobile-text-lg sm:mobile-text-xl lg:mobile-text-2xl xl:mobile-text-3xl text-white font-bold text-center">Programs Available</h3>
                 </div>
                 <div class="section-content">
                   <div :class="{
@@ -103,20 +103,20 @@
                   }">
                     <div v-for="(course, index) in department.courses_offered" :key="index" 
                          :class="{
-                           'bg-gradient-to-r from-blue-50 to-indigo-50 p-6 rounded-xl border border-blue-200 hover:border-blue-300 transition-all duration-300 hover:shadow-md': true,
+                           'bg-gradient-to-r from-blue-50 to-indigo-50 p-4 sm:p-6 rounded-xl border border-blue-200 hover:border-blue-300 transition-all duration-300 hover:shadow-md': true,
                            'max-w-md': department.courses_offered.length === 1
                          }">
-                      <div class="flex items-start space-x-3">
-                        <div class="flex-shrink-0 w-8 h-8 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full flex items-center justify-center">
-                          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 0z" />
-                          </svg>
-                        </div>
-                        <div class="flex-1">
-                          <h4 class="text-lg font-semibold text-gray-800 mb-2">{{ course }}</h4>
-                          <p class="text-gray-600 text-sm">Full-time program with comprehensive curriculum</p>
-                        </div>
-                      </div>
+                       <div class="flex items-start space-x-2 sm:space-x-3">
+                         <div class="flex-shrink-0 w-6 h-6 sm:w-8 sm:h-8 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full flex items-center justify-center">
+                           <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 sm:h-5 sm:w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 0z" />
+                           </svg>
+                         </div>
+                         <div class="flex-1">
+                           <h4 class="mobile-text-base lg:mobile-text-lg font-semibold text-gray-800 mb-1 sm:mb-2">{{ course }}</h4>
+                           <p class="mobile-text-xs lg:mobile-text-sm text-gray-600">Full-time program with comprehensive curriculum</p>
+                         </div>
+                       </div>
                     </div>
                   </div>
                 </div>
@@ -125,16 +125,16 @@
           </div>
 
                      <div id="facility" class="section-container bg-white">
-             <h2 class="section-title">
-               <span class="bg-gradient-to-r from-emerald-600 to-teal-500 bg-clip-text text-transparent">World-Class Facilities</span>
-             </h2>
+             <h2 class="mobile-text-xl sm:mobile-text-2xl lg:mobile-text-3xl xl:mobile-text-4xl font-bold text-center mb-8 sm:mb-10">
+              <span class="bg-gradient-to-r from-emerald-600 to-teal-500 bg-clip-text text-transparent">World-Class Facilities</span>
+            </h2>
              
-             <div class="max-w-6xl mx-auto space-y-16">
+             <div class="max-w-6xl mx-auto space-y-12 sm:space-y-16">
                <div 
                  v-for="(facility, index) in department.facility" 
                  :key="facility.name" 
                  :class="index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'"
-                 class="flex flex-col lg:flex-row items-center gap-8 md:gap-12"
+                 class="flex flex-col lg:flex-row items-center gap-6 sm:gap-8 md:gap-12"
                >
                  <div class="lg:w-1/2">
                    <div class="relative">
@@ -148,13 +148,13 @@
                  </div>
                  
                  <div class="lg:w-1/2">
-                   <h3 class="text-2xl md:text-3xl font-bold mb-6 text-gray-800">{{ facility.name }}</h3>
-                   <ul class="space-y-3">
+                   <h3 class="mobile-text-lg sm:mobile-text-xl lg:mobile-text-2xl xl:mobile-text-3xl font-bold mb-4 sm:mb-6 text-gray-800">{{ facility.name }}</h3>
+                   <ul class="space-y-2 sm:space-y-3">
                      <li v-for="item in facility.description" :key="item" class="flex items-start">
-                       <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-emerald-500 mr-2 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                       <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 sm:h-6 sm:w-6 text-emerald-500 mr-2 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                        </svg>
-                       <span class="text-lg text-gray-700">{{ item }}</span>
+                       <span class="mobile-text-sm lg:mobile-text-base xl:mobile-text-lg text-gray-700">{{ item }}</span>
                      </li>
                    </ul>
                  </div>
@@ -164,16 +164,16 @@
 
                      <div id="faculty" class="section-container bg-gray-50">
              <!-- Section Title with Animated Underline -->
-             <div class="text-center mb-12">
-               <h2 class="text-3xl md:text-4xl font-bold text-gray-800 relative inline-block group">
-                 OUR FACULTY
-                 <span class="absolute -bottom-3 left-0 h-1 w-full bg-gradient-to-r from-blue-600 to-indigo-600 transform origin-left transition-transform duration-300 group-hover:scale-x-110"></span>
-               </h2>
-             </div>
-            
+            <div class="text-center mb-8 sm:mb-12">
+              <h2 class="mobile-text-xl sm:mobile-text-2xl lg:mobile-text-3xl xl:mobile-text-4xl font-bold text-gray-800 relative inline-block group">
+                OUR FACULTY
+                <span class="absolute -bottom-2 sm:-bottom-3 left-0 h-1 w-full bg-gradient-to-r from-blue-600 to-indigo-600 transform origin-left transition-transform duration-300 group-hover:scale-x-110"></span>
+              </h2>
+            </div>
+           
             <!-- HOD Desk -->
-            <div class="mb-16">
-              <h3 class="text-2xl font-bold text-center mb-8 text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-indigo-700">Head of Department</h3>
+            <div class="mb-12 sm:mb-16">
+              <h3 class="mobile-text-lg sm:mobile-text-xl lg:mobile-text-2xl font-bold text-center mb-6 sm:mb-8 text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-indigo-700">Head of Department</h3>
               <div class="flex justify-center">
                 <div 
                   v-for="staff in department.faculty.hod_desk" 
@@ -181,26 +181,26 @@
                   class="faculty-card hod-card"
                   @click="showDetails(staff)"
                 >
-                  <!-- Photo with Gradient Background - Same size as Assistant Professors -->
+                  <!-- Photo with Gradient Background - Responsive sizing -->
                   <div class="relative pt-2 flex justify-center">
                     <div class="absolute inset-0 h-1/2 bg-gradient-to-r from-blue-600 to-indigo-600"></div>
                     <div class="relative">
                       <img 
                         :src="'/' + staff.image" 
                         :alt="staff.name" 
-                        class="w-36 h-44 object-cover rounded-full border-4 border-white shadow-lg"
+                        class="w-28 h-36 sm:w-32 sm:h-40 lg:w-36 lg:h-44 object-cover rounded-full border-4 border-white shadow-lg"
                       >
                     </div>
                   </div>
                   
                   <!-- Faculty Info -->
-                  <div class="p-6 text-center">
-                    <h4 class="text-lg font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 mb-2">{{ staff.name }}</h4>
-                    <p class="text-gray-700 font-medium">{{ staff.position }}</p>
-                    <p class="text-gray-500 text-sm">{{ staff.email }}</p>
+                  <div class="p-4 sm:p-6 text-center">
+                    <h4 class="mobile-text-base lg:mobile-text-lg font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 mb-2">{{ staff.name }}</h4>
+                    <p class="mobile-text-sm lg:mobile-text-base text-gray-700 font-medium">{{ staff.position }}</p>
+                    <p class="mobile-text-xs lg:mobile-text-sm text-gray-500">{{ staff.email }}</p>
                     
                     <!-- View Profile Button -->
-                    <button class="mt-4 px-4 py-2 bg-gradient-to-r from-blue-600 to-indigo-600 text-white text-sm rounded-lg hover:from-blue-700 hover:to-indigo-700 transition-all duration-300 transform hover:scale-105">
+                    <button class="mt-3 sm:mt-4 px-3 sm:px-4 py-2 bg-gradient-to-r from-blue-600 to-indigo-600 text-white mobile-text-xs lg:mobile-text-sm rounded-lg hover:from-blue-700 hover:to-indigo-700 transition-all duration-300 transform hover:scale-105">
                       View Profile
                     </button>
                   </div>
@@ -210,34 +210,34 @@
 
             <!-- Assistant Professors -->
             <div>
-              <h3 class="text-2xl font-bold text-center mb-8 text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-indigo-700">Assistant Professors</h3>
-              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
+              <h3 class="mobile-text-lg sm:mobile-text-xl lg:mobile-text-2xl font-bold text-center mb-6 sm:mb-8 text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-indigo-700">Assistant Professors</h3>
+              <div class="mobile-grid gap-6 sm:gap-8 justify-items-center">
                 <div 
                   v-for="staff in department.faculty.assistant_professors" 
                   :key="staff.email" 
                   class="faculty-card hod-card"
                   @click="showDetails(staff)"
                 >
-                  <!-- Photo with Gradient Background - Same size as HOD -->
+                  <!-- Photo with Gradient Background - Responsive sizing -->
                   <div class="relative pt-2 flex justify-center">
                     <div class="absolute inset-0 h-1/2 bg-gradient-to-r from-blue-600 to-indigo-600"></div>
                     <div class="relative">
                       <img 
                         :src="'/' + staff.image" 
                         :alt="staff.name" 
-                        class="w-36 h-44 object-cover rounded-full border-4 border-white shadow-lg"
+                        class="w-28 h-36 sm:w-32 sm:h-40 lg:w-36 lg:h-44 object-cover rounded-full border-4 border-white shadow-lg"
                       >
                     </div>
                   </div>
                   
                   <!-- Faculty Info -->
-                  <div class="p-6 text-center">
-                    <h4 class="text-lg font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 mb-2">{{ staff.name }}</h4>
-                    <p class="text-gray-700 font-medium">{{ staff.position }}</p>
-                    <p class="text-gray-500 text-sm">{{ staff.email }}</p>
+                  <div class="p-4 sm:p-6 text-center">
+                    <h4 class="mobile-text-base lg:mobile-text-lg font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 mb-2">{{ staff.name }}</h4>
+                    <p class="mobile-text-sm lg:mobile-text-base text-gray-700 font-medium">{{ staff.position }}</p>
+                    <p class="mobile-text-xs lg:mobile-text-sm text-gray-500">{{ staff.email }}</p>
                     
                     <!-- View Profile Button -->
-                    <button class="mt-4 px-4 py-2 bg-gradient-to-r from-blue-600 to-indigo-600 text-white text-sm rounded-lg hover:from-blue-700 hover:to-indigo-700 transition-all duration-300 transform hover:scale-105">
+                    <button class="mt-3 sm:mt-4 px-3 sm:px-4 py-2 bg-gradient-to-r from-blue-600 to-indigo-600 text-white mobile-text-xs lg:mobile-text-sm rounded-lg hover:from-blue-700 hover:to-indigo-700 transition-all duration-300 transform hover:scale-105">
                       View Profile
                     </button>
                   </div>
@@ -512,9 +512,9 @@ export default {
   /* Faculty card styling */
   .faculty-card {
     @apply bg-white rounded-xl shadow-lg overflow-hidden border border-blue-100 transform transition-all duration-300 cursor-pointer;
-    min-height: 380px;
-    max-width: 320px; /* Fixed width for consistency */
-    width: 320px; /* Force exact width */
+    min-height: 320px; /* Reduced for mobile */
+    max-width: 280px; /* Reduced for mobile */
+    width: 280px; /* Force exact width */
     flex-shrink: 0; /* Prevent shrinking */
     flex-grow: 0; /* Prevent growing */
   }
@@ -527,9 +527,9 @@ export default {
   
   /* HOD card styling - Fixed size to match Assistant Professors */
   .hod-card {
-    min-height: 380px; /* Same as faculty-card */
-    max-width: 320px; /* Fixed width for consistency */
-    width: 320px; /* Force exact width */
+    min-height: 320px; /* Same as faculty-card */
+    max-width: 280px; /* Fixed width for consistency */
+    width: 280px; /* Force exact width */
     flex-shrink: 0; /* Prevent shrinking */
     flex-grow: 0; /* Prevent growing */
   }
@@ -541,8 +541,8 @@ export default {
   
   /* Ensure consistent image sizing for different card types */
   .hod-card img {
-    width: 144px; /* w-36 = 9rem = 144px - Same as faculty cards */
-    height: 176px; /* h-44 = 11rem = 176px - Same as faculty cards */
+    width: 112px; /* w-28 = 7rem = 112px - Mobile optimized */
+    height: 144px; /* h-36 = 9rem = 144px - Mobile optimized */
     object-fit: cover;
     border-radius: 9999px;
     border: 4px solid white;
@@ -550,12 +550,37 @@ export default {
   }
   
   .faculty-card img {
-    width: 144px; /* w-36 = 9rem = 144px */
-    height: 176px; /* h-44 = 11rem = 176px */
+    width: 112px; /* w-28 = 7rem = 112px */
+    height: 144px; /* h-36 = 9rem = 144px */
     object-fit: cover;
     border-radius: 9999px;
     border: 4px solid white;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Mobile responsive adjustments */
+  @media (min-width: 640px) {
+    .hod-card img {
+      width: 128px; /* w-32 = 8rem = 128px */
+      height: 160px; /* h-40 = 10rem = 160px */
+    }
+    
+    .faculty-card img {
+      width: 128px; /* w-32 = 8rem = 128px */
+      height: 160px; /* h-40 = 10rem = 160px */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .hod-card img {
+      width: 144px; /* w-36 = 9rem = 144px */
+      height: 176px; /* h-44 = 11rem = 176px */
+    }
+    
+    .faculty-card img {
+      width: 144px; /* w-36 = 9rem = 144px */
+      height: 176px; /* h-44 = 11rem = 176px */
+    }
   }
   
   /* General transitions for hover effects */
@@ -565,7 +590,7 @@ export default {
   
   /* Consistent section styling for professional appearance */
   .section-container {
-    @apply px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto py-12;
+    @apply px-3 sm:px-4 md:px-6 lg:px-8 max-w-7xl mx-auto py-8 sm:py-10 lg:py-12;
     width: 100%;
   }
   
@@ -582,7 +607,7 @@ export default {
   }
   
   .section-content {
-    @apply p-8 md:p-10;
+    @apply p-4 sm:p-6 md:p-8 lg:p-10;
   }
   
   /* Ensure consistent spacing between sections */

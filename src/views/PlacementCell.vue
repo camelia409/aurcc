@@ -13,17 +13,17 @@
         title="About the Placement Cell"
         icon="🎯"
       >
-        <p class="text-lg leading-relaxed text-gray-800 mb-4">
+        <p class="mobile-text-base lg:mobile-text-lg leading-relaxed text-gray-800 mb-3 sm:mb-4">
           <span class="font-semibold text-blue-900">The Placement Cell</span> at our Regional Campus is dedicated to empowering students for career success. We provide:
         </p>
-        <ul class="list-disc pl-6 space-y-2 text-base text-gray-800 mb-4">
+        <ul class="list-disc pl-4 sm:pl-6 space-y-2 mobile-text-sm lg:mobile-text-base text-gray-800 mb-3 sm:mb-4">
           <li><span class="font-semibold">Comprehensive Placement Support:</span> Guidance and training for every stage of the campus recruitment process.</li>
           <li><span class="font-semibold">Expert Team:</span> Coordinators, assistants, and volunteers from every department to ensure personalized attention.</li>
           <li><span class="font-semibold">Skill Development:</span> Pre-placement training, mock interviews, group discussions, and workshops to boost your confidence.</li>
           <li><span class="font-semibold">Industry Connections:</span> Strong ties with top recruiters and regular campus drives.</li>
           <li><span class="font-semibold">Career Awareness:</span> Information on value-added courses and opportunities in both private and government sectors.</li>
         </ul>
-        <p class="text-base text-gray-700">Our mission: To help every student achieve their dream job and build a successful career.</p>
+        <p class="mobile-text-sm lg:mobile-text-base text-gray-700">Our mission: To help every student achieve their dream job and build a successful career.</p>
       </OfficeContentSection>
 
       <!-- Placement Statistics -->
@@ -33,7 +33,7 @@
         icon="📊"
       >
         <div class="flex flex-col items-center">
-          <div class="text-lg text-gray-700 mb-6 text-center max-w-2xl">
+          <div class="mobile-text-base lg:mobile-text-lg text-gray-700 mb-4 sm:mb-6 text-center max-w-2xl">
             <span class="font-semibold text-blue-900">Our Results Speak for Themselves:</span> Each year, our students receive numerous placement offers from leading companies. Explore our latest placement statistics below.
           </div>
           <img src="/placement%20statistics.webp" alt="Placement Statistics" class="w-full max-w-4xl mx-auto h-auto rounded-md shadow-lg" />
@@ -46,16 +46,16 @@
         title="CUIC: Your Gateway to Top Recruiters"
         icon="🤝"
       >
-        <p class="text-lg leading-relaxed text-gray-800 mb-4">
+        <p class="mobile-text-base lg:mobile-text-lg leading-relaxed text-gray-800 mb-3 sm:mb-4">
           <span class="font-semibold text-blue-900">The Centre for University-Industry Collaboration (CUIC)</span> bridges the gap between students and leading employers. Through CUIC, you benefit from:
         </p>
-        <ul class="list-disc pl-6 space-y-2 text-base text-gray-800 mb-4">
+        <ul class="list-disc pl-4 sm:pl-6 space-y-2 mobile-text-sm lg:mobile-text-base text-gray-800 mb-3 sm:mb-4">
           <li><span class="font-semibold">Industry Partnerships:</span> Direct connections with top companies for internships and placements.</li>
           <li><span class="font-semibold">Skill-Building Initiatives:</span> Workshops, seminars, and training programs to enhance your employability.</li>
           <li><span class="font-semibold">Placement Drives:</span> Regular campus recruitment events with a wide range of recruiters.</li>
           <li><span class="font-semibold">Career Guidance:</span> Expert advice and support to help you make informed career choices.</li>
         </ul>
-        <p class="text-base text-gray-700">CUIC is committed to opening doors for your future and helping you launch a successful career.</p>
+        <p class="mobile-text-sm lg:mobile-text-base text-gray-700">CUIC is committed to opening doors for your future and helping you launch a successful career.</p>
       </OfficeContentSection>
 
       <!-- Our Recruiters -->
@@ -86,7 +86,7 @@
         title="Staff"
         icon="👥"
       >
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="mobile-grid gap-6 sm:gap-8">
           <StaffCard
             v-for="staff in data.staff_members"
             :key="staff.name"

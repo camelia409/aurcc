@@ -2,26 +2,26 @@
   <div class="flex-grow bg-gradient-to-b from-gray-100 to-blue-100 min-h-screen">
     <!-- Hero Section -->
     <section 
-      class="bg-cover bg-center relative w-full h-60 sm:h-80 md:h-94 animate-fadeIn" 
+      class="bg-cover bg-center relative w-full h-48 sm:h-60 md:h-80 lg:h-94 animate-fadeIn" 
       :style="{ backgroundImage: `url(/programsoffered.webp)` }">
       <div class="absolute inset-0 bg-black opacity-80"></div>
-      <div class="mx-auto py-24 text-white relative z-10 flex flex-col items-center text-center">
-        <h1 class="md:text-4xl text-xl font-extrabold mb-4 animate-slideIn font-serif tracking-tight">
+      <div class="mx-auto py-16 sm:py-20 md:py-24 text-white relative z-10 flex flex-col items-center text-center">
+        <h1 class="mobile-text-xl sm:mobile-text-2xl lg:mobile-text-3xl xl:mobile-text-4xl font-extrabold mb-3 sm:mb-4 animate-slideIn font-serif tracking-tight">
           Programs Offered
         </h1>
-        <p class="md:text-2xl text-sm mb-8 animate-fadeIn delay-1s font-serif max-w-2xl">
+        <p class="mobile-text-sm sm:mobile-text-base lg:mobile-text-lg xl:mobile-text-xl mb-6 sm:mb-8 animate-fadeIn delay-1s font-serif max-w-2xl">
           Explore the programs we offer for undergraduate and postgraduate studies.
         </p>
       </div>
     </section>
 
     <!-- UG Programs -->
-    <section class="container mx-auto px-4 md:px-10 py-16">
-      <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-10 relative inline-block group">
+    <section class="mobile-container py-12 sm:py-14 lg:py-16">
+      <h2 class="mobile-text-2xl sm:mobile-text-3xl lg:mobile-text-4xl font-bold text-blue-900 mb-8 sm:mb-10 relative inline-block group">
         UG Programmes
-        <span class="absolute -bottom-2 left-0 h-1 w-24 bg-yellow-500 animate-underline"></span>
+        <span class="absolute -bottom-2 left-0 h-1 w-20 sm:w-24 bg-yellow-500 animate-underline"></span>
       </h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+      <div class="mobile-grid gap-8 sm:gap-10">
         <ProgramCard
           v-for="(programme, idx) in data['UG programmes']"
           :key="'ug-' + idx"
@@ -35,12 +35,12 @@
     </section>
 
     <!-- PG Programs -->
-    <section class="container mx-auto px-4 md:px-10 py-16">
-      <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-10 relative inline-block group">
+    <section class="mobile-container py-12 sm:py-14 lg:py-16">
+      <h2 class="mobile-text-2xl sm:mobile-text-3xl lg:mobile-text-4xl font-bold text-blue-900 mb-8 sm:mb-10 relative inline-block group">
         PG Programmes
-        <span class="absolute -bottom-2 left-0 h-1 w-24 bg-yellow-500 animate-underline"></span>
+        <span class="absolute -bottom-2 left-0 h-1 w-20 sm:w-24 bg-yellow-500 animate-underline"></span>
       </h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+      <div class="mobile-grid gap-8 sm:gap-10">
         <ProgramCard
           v-for="(programme, idx) in data['PG programmes']"
           :key="'pg-' + idx"
