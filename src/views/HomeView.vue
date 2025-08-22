@@ -183,7 +183,7 @@
               <!-- News and Events Cards with Modern Design -->
               <div class="mobile-grid">
                 <!-- News/Admissions Card -->
-                <div class="mobile-card bg-white/80 backdrop-blur-sm shadow-lg overflow-hidden border border-blue-200">
+                <div class="rounded-lg bg-white/80 backdrop-blur-sm shadow-lg overflow-hidden border border-blue-200">
                   <div class="bg-gradient-to-r from-blue-600 to-indigo-600 py-3 sm:py-4 px-4 sm:px-6 flex items-center justify-between">
                     <h3 class="mobile-text-lg font-semibold text-white">News & Admissions</h3>
                     <div class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center">
@@ -192,7 +192,7 @@
                       </svg>
                     </div>
                   </div>
-                  <div class="max-h-[300px] overflow-hidden">
+                  <div class="p-8 max-h-[300px] overflow-hidden">
                     <ul class="events-scroll w-full divide-y divide-gray-100">
                       <li v-for="(item, index) in news" :key="index" class="flex font-bold items-center py-3 px-6 hover:bg-blue-50 transition-colors duration-200 group cursor-pointer">
                         <div class="mr-3 flex-shrink-0 w-2 h-2 bg-blue-500 rounded-full group-hover:scale-150 transition-transform duration-300"></div>
@@ -213,7 +213,7 @@
                 </div>
 
                 <!-- Events/Scholarships Card -->
-                <div class="mobile-card bg-white/80 backdrop-blur-sm shadow-lg overflow-hidden border border-blue-200">
+                <div class="rounded-lg bg-white/80 backdrop-blur-sm shadow-lg overflow-hidden border border-blue-200">
                   <div class="bg-gradient-to-r from-indigo-600 to-blue-600 py-3 sm:py-4 px-4 sm:px-6 flex items-center justify-between">
                     <h3 class="mobile-text-lg font-semibold text-white">Events & Scholarships</h3>
                     <div class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center">
@@ -222,7 +222,7 @@
                       </svg>
                     </div>
                   </div>
-                  <div class="max-h-[300px] overflow-hidden">
+                  <div class="p-8 max-h-[300px] overflow-hidden">
                     <ul class="events-scroll w-full divide-y divide-gray-100">
                       <li v-for="(item, index) in events" :key="index" class="flex font-bold items-center py-3 px-6 hover:bg-blue-50 transition-colors duration-200 group cursor-pointer">
                         <div class="mr-3 flex-shrink-0 w-2 h-2 bg-indigo-500 rounded-full group-hover:scale-150 transition-transform duration-300"></div>
