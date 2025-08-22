@@ -57,85 +57,50 @@
 
 
       <!-- Floating Stats Cards with 3D Effect -->
-      <section class="mobile-container relative -mt-16 sm:-mt-20 md:-mt-24 lg:-mt-32 z-30 mb-12 sm:mb-16 lg:mb-20">
-        <div class="mobile-container">
-          <div class="mobile-grid">
-            <div class="group perspective">
-              <div class="stat-card-3d transform transition-transform duration-500 preserve-3d group-hover:rotate-y-12">
-                <div class="stat-front">
-                  <div class="stat-icon-wrapper">
-                    <div class="stat-icon-circle">
-                      <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
-                      <svg class=" mb-2 w-16 h-16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
-                        <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
-                      </svg>
-                      </svg>
-                    </div>
-                  </div>
-                  <h3 class="stat-value">5,000+</h3>
-                  <p class="stat-label">Global Alumni</p>
-                </div>
-              </div>
+      <section class="container mx-auto px-4 sm:px-6 lg:px-8 relative mt-16 sm:mt-20 md:mt-24 lg:mt-32 z-30 mb-12 sm:mb-16 lg:mb-20">
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+          <!-- Global Alumni Card -->
+          <div class="stats-card">
+            <div class="stats-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 sm:h-10 sm:w-10 lg:h-12 lg:w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+              </svg>
             </div>
-            <div class="group perspective">
-              <div class="stat-card-3d transform transition-transform duration-500 preserve-3d group-hover:rotate-y-12">
-                <div class="stat-front">
-                  <div class="stat-icon-wrapper">
-                    <div class="stat-icon-circle">
-                      <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
-                        <svg class=" mb-2 w-16 h-16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                          <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path>
-                          <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path>
-                          <path d="M4 22h16"></path>
-                          <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path>
-                          <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path>
-                          <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path>
-                        </svg>
-                      </svg>
-                    </div>
-                  </div>
-                  <h3 class="stat-value">7th</h3>
-                  <p class="stat-label">Rank in TNEA</p>
-                </div>
-              </div>
+            <div class="stats-number">5,000+</div>
+            <div class="stats-label">Global Alumni</div>
+          </div>
+
+          <!-- TNEA Rank Card -->
+          <div class="stats-card">
+            <div class="stats-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 sm:h-10 sm:w-10 lg:h-12 lg:w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+              </svg>
             </div>
-            <div class="group perspective">
-              <div class="stat-card-3d transform transition-transform duration-500 preserve-3d group-hover:rotate-y-12">
-                <div class="stat-front">
-                  <div class="stat-icon-wrapper">
-                    <div class="stat-icon-circle">
-                      <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
-                        <svg class=" mb-2 w-16 h-16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                          <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
-                          <polyline points="17 6 23 6 23 12"></polyline>
-                        </svg>
-                      </svg>
-                    </div>
-                  </div>
-                  <h3 class="stat-value">20+ Years</h3>
-                  <p class="stat-label">Of Excellence</p>
-                </div>
-              </div>
+            <div class="stats-number">7th</div>
+            <div class="stats-label">Rank in TNEA</div>
+          </div>
+
+          <!-- Years of Excellence Card -->
+          <div class="stats-card">
+            <div class="stats-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 sm:h-10 sm:w-10 lg:h-12 lg:w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+              </svg>
             </div>
-            <div class="group perspective">
-              <div class="stat-card-3d transform transition-transform duration-500 preserve-3d group-hover:rotate-y-12">
-                <div class="stat-front">
-                  <div class="stat-icon-wrapper">
-                    <div class="stat-icon-circle">
-                      <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
-                        <svg class=" mb-2 w-16 h-16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                          <circle cx="12" cy="8" r="7"></circle>
-                          <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
-                        </svg>
-                      </svg>
-                    </div>
-                  </div>
-                  <h3 class="stat-value">100%</h3>
-                  <p class="stat-label">Placement Record</p>
-                </div>
-              </div>
+            <div class="stats-number">20+ Years</div>
+            <div class="stats-label">Of Excellence</div>
+          </div>
+
+          <!-- Placement Record Card -->
+          <div class="stats-card">
+            <div class="stats-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 sm:h-10 sm:w-10 lg:h-12 lg:w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
             </div>
+            <div class="stats-number">100%</div>
+            <div class="stats-label">Placement Record</div>
           </div>
         </div>
       </section>
@@ -158,24 +123,24 @@
           </div>
         </div>
         
-        <div class="mobile-container">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
           <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8">
             <!-- Main Content Area - Takes 8 of 12 columns on large screens -->
             <div class="lg:col-span-8 space-y-10">
               <!-- Section Title with Animated Underline -->
-              <h2 class="mobile-text-2xl lg:mobile-text-3xl font-bold text-blue-900 relative inline-block group">
+              <h2 class="text-2xl sm:text-3xl font-bold text-blue-900 relative inline-block group">
                   ABOUT OUR CAMPUS
                   <span class="absolute -bottom-2 sm:-bottom-3 left-0 h-1 w-32 sm:w-40 lg:w-52 bg-yellow-500"></span>
               </h2>
               <!-- About Text Card with Subtle Animation -->
-              <div class="mobile-card bg-white/80 backdrop-blur-sm shadow-xl border border-blue-200">
-                <p class="mobile-text-base text-gray-700 leading-relaxed">
+              <div class="bg-white/80 backdrop-blur-sm shadow-xl border border-blue-200 p-6 sm:p-8">
+                <p class="text-base text-gray-700 leading-relaxed">
                   The Regional Campus Coimbatore of Anna University, established in 2012, offers world-class education in Engineering and Technology. Nestled in a serene environment away from the city's hustle, our campus boasts state-of-the-art infrastructure and a team of highly qualified faculty members dedicated to academic excellence.
                 </p>
-                <p class="mobile-text-base text-gray-700 leading-relaxed mt-4">
+                <p class="text-base text-gray-700 leading-relaxed mt-4">
                   Our university is committed to holistic education with a focus on innovation, research, and industry collaboration. We provide an engaging learning environment where students can develop their technical skills, critical thinking abilities, and leadership qualities needed to excel in their chosen fields.
                 </p>
-                <p class="mobile-text-base text-gray-700 leading-relaxed mt-4">
+                <p class="text-base text-gray-700 leading-relaxed mt-4">
                   The campus features modern laboratories, spacious classrooms, well-stocked libraries, and recreational facilities that enhance the overall student experience. Our commitment to excellence has earned us recognition as one of the top engineering institutions in the region.
                 </p>
               </div>
@@ -185,7 +150,7 @@
                 <!-- News/Admissions Card -->
                 <div class="rounded-lg bg-white/80 backdrop-blur-sm shadow-lg overflow-hidden border border-blue-200">
                   <div class="bg-gradient-to-r from-blue-600 to-indigo-600 py-3 sm:py-4 px-4 sm:px-6 flex items-center justify-between">
-                    <h3 class="mobile-text-lg font-semibold text-white">News & Admissions</h3>
+                    <h3 class="text-lg font-semibold text-white">News & Admissions</h3>
                     <div class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center">
                       <svg class="w-5 h-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"></path>
@@ -215,7 +180,7 @@
                 <!-- Events/Scholarships Card -->
                 <div class="rounded-lg bg-white/80 backdrop-blur-sm shadow-lg overflow-hidden border border-blue-200">
                   <div class="bg-gradient-to-r from-indigo-600 to-blue-600 py-3 sm:py-4 px-4 sm:px-6 flex items-center justify-between">
-                    <h3 class="mobile-text-lg font-semibold text-white">Events & Scholarships</h3>
+                    <h3 class="text-lg font-semibold text-white">Events & Scholarships</h3>
                     <div class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center">
                       <svg class="w-5 h-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
@@ -247,7 +212,7 @@
             <!-- Quick Links Section - Takes 4 of 12 columns on large screens -->
             <div class="lg:col-span-4">
               <div class="bg-gradient-to-br from-blue-900 to-indigo-900 backdrop-blur-md rounded-xl shadow-xl p-6 sticky">
-                <h3 class="mobile-text-2xl lg:mobile-text-3xl font-bold text-white mb-4 sm:mb-6 pb-2 sm:pb-3 border-b border-white/20 flex items-center">
+                <h3 class="text-2xl lg:text-3xl font-bold text-white mb-4 sm:mb-6 pb-2 sm:pb-3 border-b border-white/20 flex items-center">
                   <svg class="w-5 h-5 sm:w-6 sm:h-6 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M13 5l7 7-7 7M5 5l7 7-7 7"></path>
                   </svg>
@@ -259,7 +224,7 @@
                       <div class="bg-blue-500/20 p-1.5 sm:p-2 rounded-full">
                         <svg class="h-4 w-4 sm:h-5 sm:w-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
                       </div>
-                      <h3 class="mobile-text-base lg:mobile-text-lg text-white font-medium">AICTE & MOE CELL</h3>
+                      <h3 class="text-base lg:text-lg text-white font-medium">AICTE & MOE CELL</h3>
                     </router-link>
                   </div>
                   <div class="group">
@@ -267,7 +232,7 @@
                       <div class="bg-indigo-500/20 p-1.5 sm:p-2 rounded-full">
                         <svg class="h-4 w-4 sm:h-5 sm:w-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
                       </div>
-                      <h3 class="mobile-text-base lg:mobile-text-lg text-white font-medium">MANDATORY DISCLOSURE</h3>
+                      <h3 class="text-base lg:text-lg text-white font-medium">MANDATORY DISCLOSURE</h3>
                     </a>
                   </div>
                   <div class="group">
@@ -275,7 +240,7 @@
                       <div class="bg-green-500/20 p-1.5 sm:p-2 rounded-full">
                         <svg class="h-4 w-4 sm:h-5 sm:w-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 20h9"></path><path d="M12 4v16m0 0l-4-4m4 4l4-4"></path></svg>
                       </div>
-                      <h3 class="mobile-text-base lg:mobile-text-lg text-white font-medium">DOWNLOADS</h3>
+                      <h3 class="text-base lg:text-lg text-white font-medium">DOWNLOADS</h3>
                     </router-link>
                   </div>
                   <div class="group">
@@ -283,7 +248,7 @@
                       <div class="bg-red-500/20 p-1.5 sm:p-2 rounded-full">
                         <svg class="h-5 w-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
                       </div>
-                      <h3 class="mobile-text-base lg:mobile-text-lg text-white font-medium">ANTIRAGGING CELL</h3>
+                      <h3 class="text-base lg:text-lg text-white font-medium">ANTIRAGGING CELL</h3>
                     </router-link>
                   </div>
                   <div class="group">
@@ -291,7 +256,7 @@
                       <div class="bg-pink-500/20 p-1.5 sm:p-2 rounded-full">
                         <svg class="h-4 w-4 sm:h-5 sm:w-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="M8 15s1.5-2 4-2 4 2 4 2"></path><path d="M9 9h.01"></path><path d="M15 9h.01"></path></svg>
                       </div>
-                      <h3 class="mobile-text-base lg:mobile-text-lg text-white font-medium">POSH CELL</h3>
+                      <h3 class="text-base lg:text-lg text-white font-medium">POSH CELL</h3>
                     </router-link>
                   </div>
                   <div class="group">
@@ -299,7 +264,7 @@
                       <div class="bg-yellow-500/20 p-1.5 sm:p-2 rounded-full">
                         <svg class="h-4 w-4 sm:h-5 sm:w-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"></path></svg>
                       </div>
-                      <h3 class="mobile-text-base lg:mobile-text-lg text-white font-medium">PREVENTION OF CASTE</h3>
+                      <h3 class="text-base lg:text-lg text-white font-medium">PREVENTION OF CASTE</h3>
                     </a>
                   </div>
                   <div class="group">
@@ -315,7 +280,7 @@
                       <div class="bg-green-500/20 p-1.5 sm:p-2 rounded-full">
                         <svg class="h-4 w-4 sm:h-5 sm:w-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 21h18M3 10h18M3 7l9-4 9 4M4 10v11m16-11v11M8 14v3m4-3v3m4-3v3"></path></svg>
                       </div>
-                      <h3 class="mobile-text-base lg:mobile-text-lg text-white font-medium">ANTI DRUGS</h3>
+                      <h3 class="text-base lg:text-lg text-white font-medium">ANTI DRUGS</h3>
                     </a>
                   </div>
                   <div class="group">
@@ -323,7 +288,7 @@
                       <div class="bg-blue-500/20 p-1.5 sm:p-2 rounded-full">
                         <svg class="h-4 w-4 sm:h-5 sm:w-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
                       </div>
-                      <h3 class="mobile-text-base lg:mobile-text-lg text-white font-medium">FEEDBACK FORM</h3>
+                      <h3 class="text-base lg:text-lg text-white font-medium">FEEDBACK FORM</h3>
                     </a>
                   </div>
                 </div>
@@ -347,8 +312,8 @@
           </div>
         </div>
         
-        <div class="mobile-container relative z-10">
-          <h2 class="mobile-text-2xl lg:mobile-text-3xl font-bold text-center mb-12 sm:mb-16 text-[#21209c] relative inline-block mx-auto">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-center mb-12 sm:mb-16 text-[#21209c] relative inline-block mx-auto">
             PROGRAMS OFFERED
             <span class="absolute -bottom-2 sm:-bottom-3 left-1/2 transform -translate-x-1/2 h-1 w-16 sm:w-20 lg:w-24 bg-yellow-500"></span>
           </h2>
@@ -425,22 +390,22 @@
           </div>
         </div>
         
-        <div class="mobile-container relative z-10">
-          <h2 class="mobile-text-2xl lg:mobile-text-3xl font-bold text-center mb-8 sm:mb-12">From the Dean's Desk</h2>
-          <div class="flex flex-col md:flex-row items-center bg-white bg-opacity-10 rounded-lg shadow-xl overflow-hidden backdrop-filter backdrop-blur-lg">
-            <div class="md:w-1/3">
-              <img src="/Dean.webp" alt="Dean's Photo" class="w-full h-full object-cover" />
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-center mb-8 sm:mb-12">From the Dean's Desk</h2>
+          <div class="flex flex-col md:flex-row items-center bg-white bg-opacity-10 rounded-lg shadow-xl overflow-hidden backdrop-filter backdrop-blur-lg max-w-6xl mx-auto">
+            <div class="md:w-1/3 p-4 sm:p-6 md:p-8">
+              <img src="/Dean.webp" alt="Dean's Photo" class="w-full h-auto object-cover rounded-lg" />
             </div>
             <div class="md:w-2/3 p-4 sm:p-6 md:p-8">
-              <h3 class="mobile-text-xl lg:mobile-text-2xl font-semibold mb-3 sm:mb-4">Dr. Saravanan Kumar</h3>
-              <p class="mobile-text-base text-indigo-200 mb-4 sm:mb-6 italic">"Empowering the next generation of innovators and leaders."</p>
-              <p class="mobile-text-base mb-3 sm:mb-4">
+              <h3 class="text-xl lg:text-2xl font-semibold mb-3 sm:mb-4">Dr. Saravanan Kumar</h3>
+              <p class="text-base text-indigo-200 mb-4 sm:mb-6 italic">"Empowering the next generation of innovators and leaders."</p>
+              <p class="text-base mb-3 sm:mb-4">
                 Welcome to Anna University! Our institution stands at the forefront of technological education and research. We are committed to nurturing not just skilled professionals, but visionary leaders who will shape the future of our society.
               </p>
-              <p class="mobile-text-base mb-3 sm:mb-4">
+              <p class="text-base mb-3 sm:mb-4">
                 Our world-class faculty, cutting-edge facilities, and industry partnerships provide an unparalleled learning environment. We encourage our students to push boundaries, think critically, and innovate fearlessly.
               </p>
-              <p class="mobile-text-base">
+              <p class="text-base">
                 Join us in this exciting journey of discovery and growth. Together, let's build a brighter, more sustainable future through the power of education and technology.
               </p>
             </div>
@@ -462,16 +427,16 @@
           </div>
         </div>
         
-        <div class="mobile-container relative z-10">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
-            <h2 class="mobile-text-2xl lg:mobile-text-3xl font-bold text-[#21209c] relative inline-block">
+            <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#21209c] relative inline-block">
               CAMPUS LIFE
               <span class="absolute -bottom-2 sm:-bottom-3 left-1/2 transform -translate-x-1/2 h-1 w-16 sm:w-20 lg:w-24 bg-yellow-500"></span>
             </h2>
-            <p class="mt-6 sm:mt-8 mobile-text-lg text-gray-700">
+            <p class="mt-6 sm:mt-8 text-lg text-gray-700">
               LIVELY AND HAPPY CAMPUS!
             </p>
-            <p class="mt-3 sm:mt-4 mobile-text-base text-gray-600">
+            <p class="mt-3 sm:mt-4 text-base text-gray-600">
               Buzzing with lively and vibrant activities, our campus is always a fun-filled and happy place. 
               After a rigorous day of learning, our students have a host of activities to indulge in and engage themselves.
               Be it their love of music and dance, sweating it out in the sports field, or getting together with peers through club activities, 
@@ -479,9 +444,9 @@
             </p>
           </div>
           
-          <div class="mobile-grid">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 max-w-6xl mx-auto">
             <!-- Campus Life Card 1 -->
-            <div class="mobile-card rounded-xl overflow-hidden shadow-lg group">
+            <div class="bg-white rounded-xl overflow-hidden shadow-lg group">
               <div class="relative h-48 sm:h-56 md:h-64 overflow-hidden">
                 <img 
                   src="/cse-girls-closeup.webp" 
@@ -490,14 +455,14 @@
                 >
                 <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-80"></div>
                 <div class="absolute bottom-0 left-0 p-4 sm:p-6">
-                  <h3 class="mobile-text-lg font-bold text-white">Advanced Labs</h3>
-                  <p class="mobile-text-sm text-blue-200">Cutting-edge technology for hands-on learning</p>
+                  <h3 class="text-lg font-bold text-white">Advanced Labs</h3>
+                  <p class="text-sm text-blue-200">Cutting-edge technology for hands-on learning</p>
                 </div>
               </div>
             </div>
             
             <!-- Campus Life Card 2 -->
-            <div class="mobile-card rounded-xl overflow-hidden shadow-lg group">
+            <div class="bg-white rounded-xl overflow-hidden shadow-lg group">
               <div class="relative h-48 sm:h-56 md:h-64 overflow-hidden">
                 <img 
                   src="/annual_day_dance.webp" 
@@ -506,14 +471,14 @@
                 >
                 <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-80"></div>
                 <div class="absolute bottom-0 left-0 p-4 sm:p-6">
-                  <h3 class="mobile-text-lg font-bold text-white">Cultural Events</h3>
-                  <p class="mobile-text-sm text-blue-200">Celebrating talent and creativity</p>
+                  <h3 class="text-lg font-bold text-white">Cultural Events</h3>
+                  <p class="text-sm text-blue-200">Celebrating talent and creativity</p>
                 </div>
               </div>
             </div>
             
             <!-- Campus Life Card 3 -->
-            <div class="mobile-card rounded-xl overflow-hidden shadow-lg group">
+            <div class="bg-white rounded-xl overflow-hidden shadow-lg group md:col-span-2 lg:col-span-1">
               <div class="relative h-48 sm:h-56 md:h-64 overflow-hidden">
                 <img 
                   src="/sports_day_parade.jpg" 
@@ -522,22 +487,22 @@
                 >
                 <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-80"></div>
                 <div class="absolute bottom-0 left-0 p-4 sm:p-6">
-                  <h3 class="mobile-text-lg font-bold text-white">Sports Excellence</h3>
-                  <p class="mobile-text-sm text-blue-200">Promoting physical fitness and team spirit</p>
+                  <h3 class="text-lg font-bold text-white">Sports Excellence</h3>
+                  <p class="text-sm text-blue-200">Promoting physical fitness and team spirit</p>
                 </div>
               </div>
             </div>
           </div>
           
           <div class="flex flex-col sm:flex-row justify-center mt-8 sm:mt-12 gap-3 sm:gap-4">
-            <a href="#campus-tour" class="mobile-btn inline-block bg-white border-2 border-blue-600 text-blue-600 rounded-full font-semibold 
-               transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl text-center">
-              CAMPUS TOUR
-            </a>
-            <a href="/admissions" class="mobile-btn inline-block bg-blue-600 text-white rounded-full font-semibold 
-               transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl text-center">
-              ADMISSIONS
-            </a>
+            <a href="#campus-tour" class="inline-block bg-white border-2 border-blue-600 text-blue-600 rounded-full font-semibold 
+               transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl text-center px-6 sm:px-8 py-3 sm:py-4">
+               CAMPUS TOUR
+             </a>
+            <a href="/admissions" class="inline-block bg-blue-600 text-white rounded-full font-semibold 
+               transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl text-center px-6 sm:px-8 py-3 sm:py-4">
+               ADMISSIONS
+             </a>
           </div>
         </div>
       </section>
@@ -558,25 +523,25 @@
           </div>
         </div>
         
-        <div class="mobile-container relative z-10">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center">
             <div>
-              <h2 class="mobile-text-2xl lg:mobile-text-3xl font-bold mb-4 sm:mb-6">HOSTEL</h2>
-              <h3 class="mobile-text-lg lg:mobile-text-xl font-semibold mb-3 sm:mb-4 text-blue-200">CREATING MEMORIES FOR LIFETIME!</h3>
-              <h4 class="mobile-text-base lg:mobile-text-lg font-semibold mb-4 sm:mb-6 text-blue-100">COZY ROOMS. COMFORTABLE STAY.</h4>
-              <p class="mobile-text-base mb-4 sm:mb-6">
+              <h2 class="text-2xl lg:text-3xl font-bold mb-4 sm:mb-6">HOSTEL</h2>
+              <h3 class="text-lg lg:text-xl font-semibold mb-3 sm:mb-4 text-blue-200">CREATING MEMORIES FOR LIFETIME!</h3>
+              <h4 class="text-base lg:text-lg font-semibold mb-4 sm:mb-6 text-blue-100">COZY ROOMS. COMFORTABLE STAY.</h4>
+              <p class="text-base mb-4 sm:mb-6">
                 Well designed airy rooms, clean and fully equipped kitchens, dining space with multi cuisine food options, 
                 facilities like laundry, salon & supermarket, lots of greenery, unique seating spaces for friends to get together 
                 and have casual conversations, extended lab facilities for students to work after college hours – forms a part of 
                 our hostel experience.
               </p>
-              <p class="mobile-text-base mb-6 sm:mb-8">
+              <p class="text-base mb-6 sm:mb-8">
                 Extended learning is a big part of hostel life. Our hostel at night, with beautiful lighting and the young 
                 energetic vibe of students, is a must-see for all! In a nutshell, our hostel will provide the ambience to relax, 
                 enjoy a variety of tasty food, and also to collaborate and grow in the company of peers.
               </p>
-              <a href="#hostel-details" class="mobile-btn inline-block bg-white text-blue-900 rounded-full font-semibold 
-                transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl text-center">
+              <a href="#hostel-details" class="inline-block bg-white text-blue-900 rounded-full font-semibold 
+                transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl text-center px-6 sm:px-8 py-3 sm:py-4">
                 KNOW MORE
               </a>
             </div>
@@ -613,8 +578,8 @@
           </div>
         </div>
         
-        <div class="mobile-container relative z-10">
-          <h2 class="mobile-text-2xl lg:mobile-text-3xl font-bold text-center mb-12 sm:mb-16 text-[#21209c] relative inline-block mx-auto">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-center mb-12 sm:mb-16 text-[#21209c] relative inline-block mx-auto">
             Gallery of Memories
             <span class="absolute -bottom-2 sm:-bottom-3 left-1/2 transform -translate-x-1/2 h-1 w-16 sm:w-20 lg:w-24 bg-yellow-500"></span>
           </h2>
@@ -678,12 +643,12 @@
           </div>
         </div>
         
-        <div class="mobile-container relative z-10">
-          <h2 class="mobile-text-2xl lg:mobile-text-3xl font-bold text-center mb-12 sm:mb-16 text-[#21209c] relative inline-block mx-auto">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-center mb-12 sm:mb-16 text-[#21209c] relative inline-block mx-auto">
             ALUMNI SPEAK
             <span class="absolute -bottom-2 sm:-bottom-3 left-1/2 transform -translate-x-1/2 h-1 w-16 sm:w-20 lg:w-24 bg-yellow-500"></span>
           </h2>
-          <p class="text-center mobile-text-lg mb-12 sm:mb-16">Here's what our successful Alumni have to say about Anna University!</p>
+          <p class="text-center text-lg mb-12 sm:mb-16">Here's what our successful Alumni have to say about Anna University!</p>
 
           <!-- Testimonial Slider -->
           <div class="relative">
@@ -698,20 +663,20 @@
                           :alt="testimonial.name" 
                           class="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 rounded-full object-cover border-4 border-white mx-auto mb-3 sm:mb-4"
                         >
-                        <h3 class="mobile-text-lg font-bold text-white text-center">{{ testimonial.name }}</h3>
-                        <p class="mobile-text-sm text-blue-200 text-center">{{ testimonial.branch }}</p>
-                        <p class="mobile-text-sm text-blue-200 text-center">{{ testimonial.batch }}</p>
-                        <p class="mobile-text-sm text-white font-semibold text-center mt-2">Placed in <span class="text-yellow-300">{{ testimonial.company }}</span></p>
+                        <h3 class="text-lg font-bold text-white text-center">{{ testimonial.name }}</h3>
+                        <p class="text-sm text-blue-200 text-center">{{ testimonial.branch }}</p>
+                        <p class="text-sm text-blue-200 text-center">{{ testimonial.batch }}</p>
+                        <p class="text-sm text-white font-semibold text-center mt-2">Placed in <span class="text-yellow-300">{{ testimonial.company }}</span></p>
                       </div>
                       <div class="md:col-span-2 p-4 sm:p-6 md:p-8 flex items-center">
                         <div>
                           <svg class="w-12 h-12 text-blue-200 mb-4" fill="currentColor" viewBox="0 0 24 24">
                             <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
                           </svg>
-                          <p class="text-gray-700 mobile-text-base mb-4 sm:mb-6 leading-relaxed">{{ testimonial.message }}</p>
+                          <p class="text-gray-700 text-base mb-4 sm:mb-6 leading-relaxed">{{ testimonial.message }}</p>
                           <div class="flex space-x-1">
                             <svg v-for="star in 5" :key="star" class="w-5 h-5 text-yellow-500" fill="currentColor" viewBox="0 0 20 20">
-                              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118l-2.8-2.034c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07-3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
                             </svg>
                           </div>
                         </div>
@@ -813,12 +778,12 @@
       </dialog>
       <!-- Footer Section -->
       <footer class="bg-gradient-to-r from-blue-900 to-indigo-900 text-white py-6 sm:py-8 mt-12 sm:mt-16">
-        <div class="mobile-container flex flex-col md:flex-row justify-between items-center">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
           <div class="mb-4 md:mb-0 text-center md:text-left">
-            <span class="mobile-text-sm font-semibold">© {{ new Date().getFullYear() }} Anna University Regional Campus, Coimbatore</span>
+            <span class="text-sm font-semibold">© {{ new Date().getFullYear() }} Anna University Regional Campus, Coimbatore</span>
           </div>
           <div class="flex space-x-4 sm:space-x-6">
-            <router-link to="/about" class="mobile-text-sm hover:underline text-blue-200">Website Development Team</router-link>
+            <router-link to="/about" class="text-sm hover:underline text-blue-200">Website Development Team</router-link>
           </div>
         </div>
       </footer>
@@ -1265,5 +1230,49 @@ details[open] > *:not(summary) {
 details > summary {
   list-style: none;
   transition: all 0.3s;
+}
+
+.mobile-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Stats Cards Styling */
+.stats-card {
+  @apply bg-white/90 backdrop-blur-sm rounded-2xl shadow-xl border border-white/20 p-6 sm:p-8 text-center transform transition-all duration-300 hover:scale-105 hover:shadow-2xl;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.stats-icon {
+  @apply text-blue-600 mb-4 sm:mb-6;
+}
+
+.stats-number {
+  @apply text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-800 mb-2 sm:mb-3;
+}
+
+.stats-label {
+  @apply text-sm sm:text-base lg:text-lg text-gray-600 font-medium;
+}
+
+/* Responsive grid adjustments */
+@media (max-width: 1023px) {
+  .stats-card {
+    min-height: 180px;
+    padding: 1rem;
+  }
+  
+  .stats-number {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .stats-label {
+    font-size: 0.875rem;
+  }
 }
 </style>

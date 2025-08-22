@@ -16,8 +16,8 @@
       <div class="absolute inset-0 -z-10 bg-gradient-to-br from-blue-900/80 via-indigo-700/60 to-purple-800/70"></div>
       <!-- Hero Content Directly on Background -->
       <div class="relative z-20 px-4 w-full max-w-2xl mx-auto animate-fade-in text-center">
-        <h1 class="mobile-text-2xl lg:mobile-text-4xl xl:mobile-text-5xl font-extrabold text-white mb-3 sm:mb-4 tracking-tight relative" style="text-shadow: 0 4px 16px #000, 0 1px 2px #000;">
-          Website <span style="color: #fff; text-shadow: 0 4px 16px #000, 0 1px 2px #000;">Development Team</span>
+        <h1 class="text-2xl lg:text-4xl xl:text-5xl font-extrabold text-white mb-3 sm:mb-4 tracking-tight relative" style="text-shadow: 0 4px 16px #000, 0 1px 2px #000;">
+          Website <span style="color: #fff; text-shadow: 0 4px 16px #000;">Development Team</span>
           <span class="block h-1 w-16 sm:w-20 lg:w-24 bg-gradient-to-r from-yellow-400 to-pink-500 rounded-full mx-auto mt-2 sm:mt-3 animate-underline"></span>
         </h1>
         <p class="mobile-text-base lg:mobile-text-lg xl:mobile-text-xl font-semibold mb-2" style="color: #fff; text-shadow: 0 2px 8px #000, 0 1px 2px #000;">Meet the creative minds behind our university website</p>
@@ -26,22 +26,22 @@
 
     <!-- Team Section with Modern Cards -->
     <section class="py-8 sm:py-12 lg:py-16 px-4 bg-gray-50">
-      <div class="mobile-container max-w-6xl">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
         <!-- Section Title with Animated Underline -->
         <div class="text-center mb-8 sm:mb-12">
-          <h2 class="mobile-text-2xl lg:mobile-text-3xl xl:mobile-text-4xl font-bold text-blue-900 relative inline-block group">
+          <h2 class="text-2xl lg:text-3xl xl:text-4xl font-bold text-blue-900 relative inline-block group">
             OUR TEAM
             <span class="absolute -bottom-2 sm:-bottom-3 left-0 h-1 w-full bg-yellow-500 transform origin-left transition-transform duration-300 group-hover:scale-x-110"></span>
           </h2>
         </div>
 
         <!-- Team Grid with Modern Cards -->
-        <div class="mobile-grid gap-6 sm:gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 max-w-6xl mx-auto">
           <!-- Team Member Card with Enhanced Styling -->
           <div
             v-for="member in teamMembers"
             :key="member.name"
-            class="mobile-card bg-white rounded-xl shadow-lg overflow-hidden border border-blue-100 transform hover:translate-y-[-5px] hover:shadow-xl transition-all duration-300"
+            class="bg-white rounded-xl shadow-lg overflow-hidden border border-blue-100 transform hover:translate-y-[-5px] hover:shadow-xl transition-all duration-300 flex flex-col h-full"
           >
             <!-- Member Photo with Circular Crop and Gradient Border -->
             <div class="relative pt-6 sm:pt-8 pb-3 sm:pb-4 flex justify-center">
@@ -56,11 +56,13 @@
             </div>
             
             <!-- Member Info with Enhanced Typography -->
-            <div class="p-4 sm:p-6 text-center">
-              <h3 class="mobile-text-lg lg:mobile-text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 mb-2">
-                {{ member.name }}
-              </h3>
-              <p class="mobile-text-sm lg:mobile-text-base text-gray-600">{{ member.department }}</p>
+            <div class="p-4 sm:p-6 text-center flex-1 flex flex-col justify-between">
+              <div>
+                <h3 class="text-lg lg:text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 mb-2">
+                  {{ member.name }}
+                </h3>
+                <p class="text-sm lg:text-base text-gray-600">{{ member.department }}</p>
+              </div>
               
               <!-- Social Media Icons: Only LinkedIn and GitHub if present -->
               <div class="flex justify-center space-x-2 sm:space-x-3 mt-3 sm:mt-4">
@@ -83,9 +85,9 @@
 
     <!-- Development Process Section -->
     <section class="py-8 sm:py-12 lg:py-16 px-4 bg-white">
-      <div class="mobile-container max-w-6xl">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
         <div class="text-center mb-8 sm:mb-12">
-          <h2 class="mobile-text-2xl lg:mobile-text-3xl xl:mobile-text-4xl font-bold text-blue-900 relative inline-block group">
+          <h2 class="text-2xl lg:text-3xl xl:text-4xl font-bold text-blue-900 relative inline-block group">
             DEVELOPMENT PROCESS
             <span class="absolute -bottom-2 sm:-bottom-3 left-0 h-1 w-full bg-yellow-500 transform origin-left transition-transform duration-300 group-hover:scale-x-110"></span>
           </h2>

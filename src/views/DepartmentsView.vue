@@ -275,7 +275,7 @@
                  <span class="absolute -bottom-2 sm:-bottom-3 left-0 h-1 w-full bg-gradient-to-r from-blue-600 to-indigo-600 transform origin-left transition-transform duration-300 group-hover:scale-x-110"></span>
                </h2>
              </div>
-            
+           
             <!-- HOD Desk -->
             <div class="mb-12 sm:mb-14 lg:mb-16">
               <h3 class="mobile-text-lg sm:mobile-text-xl lg:mobile-text-2xl font-bold text-center mb-6 sm:mb-8 text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-indigo-700">Head of Department</h3>
@@ -495,7 +495,7 @@
              </h2>
              
              <div class="max-w-6xl mx-auto">
-               <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+               <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 justify-items-center">
                  <div
                    v-for="staff in department.admin_staff"
                    :key="staff.email"
@@ -508,12 +508,12 @@
                        <img 
                          :src="'/' + staff.image" 
                          :alt="staff.name" 
-                         class="w-32 h-40 object-cover rounded-full border-4 border-white shadow-lg"
+                         class="w-28 h-36 object-cover rounded-full border-4 border-white shadow-lg"
                        >
                      </div>
                    </div>
                    
-                   <!-- Staff Info - Simplified -->
+                   <!-- Staff Info - Compact structure -->
                    <div class="p-4 text-center">
                      <h4 class="text-base font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 mb-1">{{ staff.name }}</h4>
                      <p class="text-sm text-gray-700 font-medium">{{ staff.position }}</p>
@@ -743,19 +743,6 @@ export default {
     box-shadow: 0 25px 50px rgba(59, 130, 246, 0.2);
   }
   
-  /* Admin staff card styling - Smaller and compact */
-  .admin-staff-card {
-    @apply bg-white rounded-xl shadow-md overflow-hidden border border-blue-100 transform transition-all duration-300;
-    min-height: 260px;
-    max-width: 260px;
-  }
-  
-  .admin-staff-card:hover {
-    transform: translateY(-4px) scale(1.02);
-    box-shadow: 0 15px 30px rgba(59, 130, 246, 0.12);
-    border-color: #2563eb;
-  }
-  
   /* Ensure consistent image sizing for different card types */
   .hod-card img {
     width: 144px; /* w-36 = 9rem = 144px - Same as faculty cards */
@@ -773,15 +760,6 @@ export default {
     border-radius: 9999px;
     border: 4px solid white;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-  }
-  
-  .admin-staff-card img {
-    width: 128px; /* w-32 = 8rem = 128px */
-    height: 160px; /* h-40 = 10rem = 160px */
-    object-fit: cover;
-    border-radius: 9999px;
-    border: 4px solid white;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
   }
   
   /* General transitions for hover effects */
@@ -823,5 +801,30 @@ export default {
   
   .section-container:nth-child(odd) {
     @apply bg-white;
+  }
+
+  /* New styles for admin staff card */
+  .admin-staff-card {
+    @apply bg-white rounded-xl shadow-lg overflow-hidden border border-blue-100 transform transition-all duration-300 cursor-pointer;
+    min-height: 280px; /* Reduced height for admin staff */
+    max-width: 280px; /* Fixed width for consistency */
+    width: 280px; /* Force exact width */
+    flex-shrink: 0; /* Prevent shrinking */
+    flex-grow: 0; /* Prevent growing */
+  }
+
+  .admin-staff-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(59, 130, 246, 0.15);
+    border-color: #2563eb;
+  }
+
+  .admin-staff-card img {
+    width: 112px; /* w-28 = 7rem = 112px */
+    height: 144px; /* h-36 = 9rem = 144px */
+    object-fit: cover;
+    border-radius: 9999px;
+    border: 4px solid white;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
   }
 </style>
