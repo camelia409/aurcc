@@ -16,61 +16,61 @@
       <div class="absolute inset-0 -z-10 bg-gradient-to-br from-blue-900/80 via-indigo-700/60 to-purple-800/70"></div>
       <!-- Hero Content Directly on Background -->
       <div class="relative z-20 px-4 w-full max-w-2xl mx-auto animate-fade-in text-center">
-        <h1 class="text-4xl md:text-6xl font-extrabold text-white mb-4 tracking-tight relative" style="text-shadow: 0 4px 16px #000, 0 1px 2px #000;">
+        <h1 class="mobile-text-2xl lg:mobile-text-4xl xl:mobile-text-5xl font-extrabold text-white mb-3 sm:mb-4 tracking-tight relative" style="text-shadow: 0 4px 16px #000, 0 1px 2px #000;">
           Website <span style="color: #fff; text-shadow: 0 4px 16px #000, 0 1px 2px #000;">Development Team</span>
-          <span class="block h-1 w-24 bg-gradient-to-r from-yellow-400 to-pink-500 rounded-full mx-auto mt-3 animate-underline"></span>
+          <span class="block h-1 w-16 sm:w-20 lg:w-24 bg-gradient-to-r from-yellow-400 to-pink-500 rounded-full mx-auto mt-2 sm:mt-3 animate-underline"></span>
         </h1>
-        <p class="text-lg md:text-2xl font-semibold mb-2" style="color: #fff; text-shadow: 0 2px 8px #000, 0 1px 2px #000;">Meet the creative minds behind our university website</p>
+        <p class="mobile-text-base lg:mobile-text-lg xl:mobile-text-xl font-semibold mb-2" style="color: #fff; text-shadow: 0 2px 8px #000, 0 1px 2px #000;">Meet the creative minds behind our university website</p>
       </div>
     </section>
 
     <!-- Team Section with Modern Cards -->
-    <section class="py-16 px-4 bg-gray-50">
-      <div class="container mx-auto max-w-6xl">
+    <section class="py-8 sm:py-12 lg:py-16 px-4 bg-gray-50">
+      <div class="mobile-container max-w-6xl">
         <!-- Section Title with Animated Underline -->
-        <div class="text-center mb-12">
-          <h2 class="text-3xl md:text-4xl font-bold text-blue-900 relative inline-block group">
+        <div class="text-center mb-8 sm:mb-12">
+          <h2 class="mobile-text-2xl lg:mobile-text-3xl xl:mobile-text-4xl font-bold text-blue-900 relative inline-block group">
             OUR TEAM
-            <span class="absolute -bottom-3 left-0 h-1 w-full bg-yellow-500 transform origin-left transition-transform duration-300 group-hover:scale-x-110"></span>
+            <span class="absolute -bottom-2 sm:-bottom-3 left-0 h-1 w-full bg-yellow-500 transform origin-left transition-transform duration-300 group-hover:scale-x-110"></span>
           </h2>
         </div>
 
         <!-- Team Grid with Modern Cards -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="mobile-grid gap-6 sm:gap-8">
           <!-- Team Member Card with Enhanced Styling -->
           <div
             v-for="member in teamMembers"
             :key="member.name"
-            class="bg-white rounded-xl shadow-lg overflow-hidden border border-blue-100 transform hover:translate-y-[-5px] hover:shadow-xl transition-all duration-300"
+            class="mobile-card bg-white rounded-xl shadow-lg overflow-hidden border border-blue-100 transform hover:translate-y-[-5px] hover:shadow-xl transition-all duration-300"
           >
             <!-- Member Photo with Circular Crop and Gradient Border -->
-            <div class="relative pt-8 pb-4 flex justify-center">
+            <div class="relative pt-6 sm:pt-8 pb-3 sm:pb-4 flex justify-center">
               <div class="absolute inset-0 h-1/2 bg-gradient-to-r from-blue-600 to-indigo-600"></div>
               <div class="relative">
                 <img
                   :src="'/' + member.photo"
                   alt="Profile"
-                  class="w-32 h-32 object-cover rounded-full border-4 border-white shadow-md"
+                  class="w-24 h-24 sm:w-28 sm:h-28 lg:w-32 lg:h-32 object-cover rounded-full border-4 border-white shadow-md"
                 />
               </div>
             </div>
             
             <!-- Member Info with Enhanced Typography -->
-            <div class="p-6 text-center">
-              <h3 class="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 mb-2">
+            <div class="p-4 sm:p-6 text-center">
+              <h3 class="mobile-text-lg lg:mobile-text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 mb-2">
                 {{ member.name }}
               </h3>
-              <p class="text-gray-600">{{ member.department }}</p>
+              <p class="mobile-text-sm lg:mobile-text-base text-gray-600">{{ member.department }}</p>
               
               <!-- Social Media Icons: Only LinkedIn and GitHub if present -->
-              <div class="flex justify-center space-x-3 mt-4">
+              <div class="flex justify-center space-x-2 sm:space-x-3 mt-3 sm:mt-4">
                 <a v-if="member.linkedin" :href="member.linkedin" target="_blank" rel="noopener" class="text-blue-600 hover:text-blue-800 transition-colors duration-300">
-                  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                  <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
                   </svg>
                 </a>
                 <a v-if="member.github" :href="member.github" target="_blank" rel="noopener" class="text-gray-800 hover:text-black transition-colors duration-300">
-                  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                  <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M12 0C5.37 0 0 5.373 0 12c0 5.303 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.726-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.084-.729.084-.729 1.205.084 1.84 1.236 1.84 1.236 1.07 1.834 2.809 1.304 3.495.997.108-.775.418-1.305.762-1.605-2.665-.305-5.466-1.334-5.466-5.931 0-1.31.469-2.381 1.236-3.221-.124-.303-.535-1.523.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.984-.399 3.003-.404 1.018.005 2.046.138 3.006.404 2.291-1.553 3.297-1.23 3.297-1.23.653 1.653.242 2.873.119 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.803 5.624-5.475 5.921.43.372.823 1.102.823 2.222 0 1.606-.015 2.898-.015 3.293 0 .322.218.694.825.576C20.565 21.796 24 17.299 24 12c0-6.627-5.373-12-12-12z"/>
                   </svg>
                 </a>
@@ -82,12 +82,12 @@
     </section>
 
     <!-- Development Process Section -->
-    <section class="py-16 px-4 bg-white">
-      <div class="container mx-auto max-w-6xl">
-        <div class="text-center mb-12">
-          <h2 class="text-3xl md:text-4xl font-bold text-blue-900 relative inline-block group">
+    <section class="py-8 sm:py-12 lg:py-16 px-4 bg-white">
+      <div class="mobile-container max-w-6xl">
+        <div class="text-center mb-8 sm:mb-12">
+          <h2 class="mobile-text-2xl lg:mobile-text-3xl xl:mobile-text-4xl font-bold text-blue-900 relative inline-block group">
             DEVELOPMENT PROCESS
-            <span class="absolute -bottom-3 left-0 h-1 w-full bg-yellow-500 transform origin-left transition-transform duration-300 group-hover:scale-x-110"></span>
+            <span class="absolute -bottom-2 sm:-bottom-3 left-0 h-1 w-full bg-yellow-500 transform origin-left transition-transform duration-300 group-hover:scale-x-110"></span>
           </h2>
         </div>
 

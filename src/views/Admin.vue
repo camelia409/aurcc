@@ -1,27 +1,27 @@
 <template>
   <div class="bg-gradient-to-br from-indigo-100 via-blue-50 to-white min-h-screen">
     <div class="text-center md:py-6 py-3 bg-blue-700 bg-opacity-90">
-      <h1 class="text-xl md:text-3xl font-semibold font-serif text-white tracking-wide">ADMINISTRATIVE STAFF</h1>
+      <h1 class="mobile-text-lg sm:mobile-text-xl lg:mobile-text-2xl xl:mobile-text-3xl font-semibold font-serif text-white tracking-wide">ADMINISTRATIVE STAFF</h1>
     </div>
-    <div class="mx-auto py-14 px-2 md:px-9 font-serif">
-      <div class="max-w-7xl mx-auto flex flex-col gap-16">
-        <div v-for="(section, sectionName) in administrator" :key="sectionName" class="mb-12">
-          <h2 class="text-2xl md:text-4xl font-bold mb-4 text-center font-serif tracking-wide">{{ sectionName }}</h2>
-          <div class="flex justify-center mb-8">
-            <span class="block w-32 h-1 rounded-full bg-gradient-to-r from-blue-400 via-blue-600 to-indigo-400 animate-glow-bar"></span>
+    <div class="mx-auto py-8 sm:py-12 lg:py-14 px-2 md:px-9 font-serif">
+      <div class="max-w-7xl mx-auto flex flex-col gap-12 sm:gap-16">
+        <div v-for="(section, sectionName) in administrator" :key="sectionName" class="mb-8 sm:mb-12">
+          <h2 class="mobile-text-lg sm:mobile-text-xl lg:mobile-text-2xl xl:mobile-text-4xl font-bold mb-3 sm:mb-4 text-center font-serif tracking-wide">{{ sectionName }}</h2>
+          <div class="flex justify-center mb-6 sm:mb-8">
+            <span class="block w-24 sm:w-32 h-1 rounded-full bg-gradient-to-r from-blue-400 via-blue-600 to-indigo-400 animate-glow-bar"></span>
           </div>
-          <div v-for="(subsection, subsectionName) in section" :key="subsectionName" class="mb-8">
-            <h3 class="text-lg md:text-2xl font-semibold mb-4 text-center font-serif tracking-wide uppercase">{{ subsectionName.replace('_', ' ') }}</h3>
-            <div v-if="subsection.DEPUTY_MANAGER" class="mb-8">
-              <h4 class="text-lg md:text-2xl font-semibold mb-2 text-center font-serif tracking-wide">Deputy Manager</h4>
+          <div v-for="(subsection, subsectionName) in section" :key="subsectionName" class="mb-6 sm:mb-8">
+            <h3 class="mobile-text-base lg:mobile-text-lg xl:mobile-text-2xl font-semibold mb-3 sm:mb-4 text-center font-serif tracking-wide uppercase">{{ subsectionName.replace('_', ' ') }}</h3>
+            <div v-if="subsection.DEPUTY_MANAGER" class="mb-6 sm:mb-8">
+              <h4 class="mobile-text-base lg:mobile-text-lg xl:mobile-text-2xl font-semibold mb-2 text-center font-serif tracking-wide">Deputy Manager</h4>
               <div class="flex justify-center">
                 <div
                   v-for="member in subsection.DEPUTY_MANAGER"
                   :key="member.name"
-                  class="admin-card bg-white/60 backdrop-blur-md rounded-2xl shadow-xl overflow-hidden flex flex-col items-center border border-blue-200 transition-all duration-300 w-full max-w-[350px]"
+                  class="admin-card mobile-card bg-white/60 backdrop-blur-md rounded-2xl shadow-xl overflow-hidden flex flex-col items-center border border-blue-200 transition-all duration-300 w-full max-w-[350px]"
                 >
-                  <div class="w-full flex justify-center pt-6">
-                    <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-blue-400 shadow-lg bg-white flex items-center justify-center">
+                  <div class="w-full flex justify-center pt-4 sm:pt-6">
+                    <div class="w-28 h-28 sm:w-32 sm:h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-blue-400 shadow-lg bg-white flex items-center justify-center">
                       <img
                         v-if="member.image && member.image.trim() !== '' && !member.showDefault"
                         :src="'/' + member.image"
@@ -29,26 +29,26 @@
                         class="w-full h-full object-cover"
                         @error="member.showDefault = true"
                       />
-                      <span v-else class="text-5xl text-blue-300">👤</span>
+                      <span v-else class="mobile-text-3xl sm:mobile-text-4xl lg:mobile-text-5xl text-blue-300">👤</span>
                     </div>
                   </div>
-                  <div class="w-full bg-gradient-to-r from-blue-900 to-blue-500 py-3 px-2 flex flex-col items-center">
-                    <h2 class="text-base md:text-xl font-bold text-white font-sans tracking-wide">{{ member.name }}</h2>
-                    <p class="text-xs md:text-base text-blue-100 font-sans">{{ member.position || 'Position not available' }}</p>
+                  <div class="w-full bg-gradient-to-r from-blue-900 to-blue-500 py-2 sm:py-3 px-2 flex flex-col items-center">
+                    <h2 class="mobile-text-sm lg:mobile-text-base xl:mobile-text-xl font-bold text-white font-sans tracking-wide">{{ member.name }}</h2>
+                    <p class="mobile-text-xs lg:mobile-text-sm xl:mobile-text-base text-blue-100 font-sans">{{ member.position || 'Position not available' }}</p>
                   </div>
                 </div>
               </div>
             </div>
-            <div v-if="subsection.STAFFS" class="mb-8">
-              <h4 class="text-lg md:text-2xl font-semibold mb-2 text-center font-serif tracking-wide">Staff Members</h4>
-              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div v-if="subsection.STAFFS" class="mb-6 sm:mb-8">
+              <h4 class="mobile-text-base lg:mobile-text-lg xl:mobile-text-2xl font-semibold mb-2 text-center font-serif tracking-wide">Staff Members</h4>
+              <div class="mobile-grid gap-6 sm:gap-8">
                 <div
                   v-for="member in subsection.STAFFS"
                   :key="member.name"
-                  class="admin-card bg-white/60 backdrop-blur-md rounded-2xl shadow-xl overflow-hidden flex flex-col items-center border border-blue-200 transition-all duration-300"
+                  class="admin-card mobile-card bg-white/60 backdrop-blur-md rounded-2xl shadow-xl overflow-hidden flex flex-col items-center border border-blue-200 transition-all duration-300"
                 >
-                  <div class="w-full flex justify-center pt-6">
-                    <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-blue-400 shadow-lg bg-white flex items-center justify-center">
+                  <div class="w-full flex justify-center pt-4 sm:pt-6">
+                    <div class="w-28 h-28 sm:w-32 sm:h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-blue-400 shadow-lg bg-white flex items-center justify-center">
                       <img
                         v-if="member.image && member.image.trim() !== '' && !member.showDefault"
                         :src="'/' + member.image"
@@ -56,12 +56,12 @@
                         class="w-full h-full object-cover"
                         @error="member.showDefault = true"
                       />
-                      <span v-else class="text-5xl text-blue-300">👤</span>
+                      <span v-else class="mobile-text-3xl sm:mobile-text-4xl lg:mobile-text-5xl text-blue-300">👤</span>
                     </div>
                   </div>
-                  <div class="w-full bg-gradient-to-r from-blue-900 to-blue-500 py-3 px-2 flex flex-col items-center">
-                    <h2 class="text-base md:text-xl font-bold text-white font-sans tracking-wide">{{ member.name }}</h2>
-                    <p class="text-xs md:text-base text-blue-100 font-sans">{{ member.position || 'Position not available' }}</p>
+                  <div class="w-full bg-gradient-to-r from-blue-900 to-blue-500 py-2 sm:py-3 px-2 flex flex-col items-center">
+                    <h2 class="mobile-text-sm lg:mobile-text-base xl:mobile-text-xl font-bold text-white font-sans tracking-wide">{{ member.name }}</h2>
+                    <p class="mobile-text-xs lg:mobile-text-sm xl:mobile-text-base text-blue-100 font-sans">{{ member.position || 'Position not available' }}</p>
                   </div>
                 </div>
               </div>

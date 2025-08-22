@@ -1,20 +1,20 @@
 <template>
-  <div class="p-9 bg-gradient-to-br from-indigo-100 via-blue-50 to-white min-h-screen">
-    <div class="text-center py-5">
-      <h1 class="text-2xl md:text-4xl font-bold text-blue-900 tracking-wide font-serif">Cell Coordinators</h1>
-      <div class="flex justify-center mt-2 mb-4">
-        <span class="block w-32 h-1 rounded-full bg-gradient-to-r from-blue-400 via-blue-600 to-indigo-400 animate-glow-bar"></span>
+  <div class="p-4 sm:p-6 md:p-9 bg-gradient-to-br from-indigo-100 via-blue-50 to-white min-h-screen">
+    <div class="text-center py-4 sm:py-5">
+      <h1 class="mobile-text-xl sm:mobile-text-2xl lg:mobile-text-3xl xl:mobile-text-4xl font-bold text-blue-900 tracking-wide font-serif">Cell Coordinators</h1>
+      <div class="flex justify-center mt-2 mb-3 sm:mb-4">
+        <span class="block w-24 sm:w-32 h-1 rounded-full bg-gradient-to-r from-blue-400 via-blue-600 to-indigo-400 animate-glow-bar"></span>
       </div>
     </div>
-    <div class="max-w-7xl mx-auto grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 font-sans">
+    <div class="mobile-container grid gap-6 sm:gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 font-sans">
       <div
         v-for="director in directors"
         :key="director.name"
-        class="cod-card bg-white/60 backdrop-blur-md rounded-2xl shadow-xl flex flex-col items-center border border-blue-200 transition-all duration-300 py-8 px-4"
+        class="cod-card mobile-card bg-white/60 backdrop-blur-md rounded-2xl shadow-xl flex flex-col items-center border border-blue-200 transition-all duration-300 py-6 sm:py-8 px-3 sm:px-4"
       >
         <div class="text-center">
-          <h2 class="text-base md:text-xl font-bold text-blue-900 font-sans mb-2">{{ director.name }}</h2>
-          <p class="text-xs md:text-base text-blue-700 font-sans flex items-center gap-2 justify-center">
+          <h2 class="mobile-text-sm lg:mobile-text-base xl:mobile-text-xl font-bold text-blue-900 font-sans mb-2">{{ director.name }}</h2>
+          <p class="mobile-text-xs lg:mobile-text-sm xl:mobile-text-base text-blue-700 font-sans flex items-center gap-2 justify-center">
             <span v-html="getCentreIcon(director.centre)"></span>
             {{ director.centre }}
           </p>

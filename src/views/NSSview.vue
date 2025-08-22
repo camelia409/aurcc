@@ -1,40 +1,40 @@
   <template>
   <main class="flex-grow font-sans bg-gray-50">
     <!-- Hero section -->
-    <section class="relative w-full min-h-[40vh] md:min-h-[60vh] overflow-hidden flex items-center justify-center">
+    <section class="relative w-full min-h-[35vh] sm:min-h-[40vh] md:min-h-[50vh] lg:min-h-[60vh] overflow-hidden flex items-center justify-center">
       <img src="/NSS.webp" alt="NSS" class="absolute inset-0 w-full h-full object-cover object-center" />
       <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-black/60 via-black/30 to-transparent"></div>
       <div class="absolute inset-0 flex items-center justify-center z-10 px-2">
-        <div class="backdrop-blur-md bg-white/30 rounded-2xl shadow-lg px-4 py-4 sm:px-8 sm:py-6 md:px-12 md:py-10 flex flex-col items-center w-full max-w-xl border border-white/30">
-          <h1 class="text-xl sm:text-3xl md:text-5xl font-extrabold text-white drop-shadow-lg tracking-wide text-center mb-2 leading-tight">{{ data.name }}</h1>
-          <p class="text-xs sm:text-base md:text-xl text-white drop-shadow text-center font-medium">Community Service. Personality Development.</p>
+        <div class="backdrop-blur-md bg-white/30 rounded-2xl shadow-lg px-3 sm:px-4 md:px-6 lg:px-8 xl:px-12 py-3 sm:py-4 md:py-6 lg:py-8 xl:py-10 flex flex-col items-center w-full max-w-xl border border-white/30">
+          <h1 class="mobile-text-lg sm:mobile-text-xl lg:mobile-text-3xl xl:mobile-text-4xl font-extrabold text-white drop-shadow-lg tracking-wide text-center mb-2 leading-tight">{{ data.name }}</h1>
+          <p class="mobile-text-xs sm:mobile-text-sm lg:mobile-text-base xl:mobile-text-lg text-white drop-shadow text-center font-medium">Community Service. Personality Development.</p>
         </div>
       </div>
     </section>
     <!-- Content sections -->
-    <section class="mx-auto py-14 px-2 md:px-9">
-      <div class="max-w-7xl mx-auto flex flex-col gap-12">
+    <section class="mobile-container py-8 sm:py-12 lg:py-14">
+      <div class="max-w-7xl mx-auto flex flex-col gap-8 sm:gap-10 lg:gap-12">
         <!-- About Card -->
-        <div class="bg-white/70 backdrop-blur-md rounded-2xl shadow-lg animate-fadeIn border border-gray-100">
-          <div class="bg-gradient-to-r from-blue-900 to-blue-500 py-4 sm:py-5 flex items-center justify-center gap-3 rounded-t-2xl">
-            <span class="text-xl sm:text-2xl">ℹ️</span>
-            <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-white text-center">About</h2>
+        <div class="mobile-card bg-white/70 backdrop-blur-md rounded-2xl shadow-lg animate-fadeIn border border-gray-100">
+          <div class="bg-gradient-to-r from-blue-900 to-blue-500 py-3 sm:py-4 md:py-5 flex items-center justify-center gap-2 sm:gap-3 rounded-t-2xl">
+            <span class="mobile-text-lg sm:mobile-text-xl lg:mobile-text-2xl">ℹ️</span>
+            <h2 class="mobile-text-lg sm:mobile-text-xl lg:mobile-text-2xl xl:mobile-text-3xl font-bold text-white text-center">About</h2>
           </div>
-          <div class="p-4 sm:p-8 md:p-10">
-            <p class="text-base sm:text-lg md:text-xl font-medium text-gray-800 whitespace-pre-line">{{ data.description }}</p>
+          <div class="p-3 sm:p-4 md:p-6 lg:p-8 xl:p-10">
+            <p class="mobile-text-sm sm:mobile-text-base lg:mobile-text-lg xl:mobile-text-xl font-medium text-gray-800 whitespace-pre-line">{{ data.description }}</p>
           </div>
         </div>
         <!-- Activities Card with Sliding Notice Board -->
-        <div class="bg-white/70 backdrop-blur-md rounded-2xl shadow-lg animate-fadeIn border border-gray-100">
-          <div class="bg-gradient-to-r from-blue-900 to-blue-500 py-4 sm:py-5 flex items-center justify-center gap-3 rounded-t-2xl">
-            <span class="text-xl sm:text-2xl">🏅</span>
-            <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-white text-center">Activities</h2>
+        <div class="mobile-card bg-white/70 backdrop-blur-md rounded-2xl shadow-lg animate-fadeIn border border-gray-100">
+          <div class="bg-gradient-to-r from-blue-900 to-blue-500 py-3 sm:py-4 md:py-5 flex items-center justify-center gap-2 sm:gap-3 rounded-t-2xl">
+            <span class="mobile-text-lg sm:mobile-text-xl lg:mobile-text-2xl">🏅</span>
+            <h2 class="mobile-text-lg sm:mobile-text-xl lg:mobile-text-2xl xl:mobile-text-3xl font-bold text-white text-center">Activities</h2>
           </div>
-          <div class="p-4 sm:p-8 md:p-10 flex flex-col items-center">
+          <div class="p-3 sm:p-4 md:p-6 lg:p-8 xl:p-10 flex flex-col items-center">
             <div class="relative w-full max-w-xl mx-auto">
-              <div class="overflow-hidden h-16 sm:h-20 md:h-24 rounded-lg bg-blue-50 border border-blue-100 shadow flex items-center justify-center">
+              <div class="overflow-hidden h-14 sm:h-16 md:h-20 lg:h-24 rounded-lg bg-blue-50 border border-blue-100 shadow flex items-center justify-center">
                 <transition-group name="slide-activity" tag="div">
-                  <div v-if="data.activities.length" :key="currentActivityIndex" class="w-full flex items-center justify-center px-4 text-center text-base sm:text-lg md:text-xl font-medium text-blue-900 min-h-[2.5rem]">
+                  <div v-if="data.activities.length" :key="currentActivityIndex" class="w-full flex items-center justify-center px-3 sm:px-4 text-center mobile-text-sm sm:mobile-text-base lg:mobile-text-lg xl:mobile-text-xl font-medium text-blue-900 min-h-[2.5rem]">
                     <span class="inline-block w-full">{{ data.activities[currentActivityIndex] }}</span>
                   </div>
                 </transition-group>
@@ -46,22 +46,22 @@
           </div>
         </div>
         <!-- NSS Coordinators Card -->
-        <div class="bg-white/70 backdrop-blur-md rounded-2xl shadow-lg animate-fadeIn border border-gray-100">
-          <div class="bg-gradient-to-r from-blue-900 to-blue-500 py-4 sm:py-5 flex items-center justify-center gap-3 rounded-t-2xl">
-            <span class="text-xl sm:text-2xl">👥</span>
-            <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-white text-center">NSS Coordinators</h2>
+        <div class="mobile-card bg-white/70 backdrop-blur-md rounded-2xl shadow-lg animate-fadeIn border border-gray-100">
+          <div class="bg-gradient-to-r from-blue-900 to-blue-500 py-3 sm:py-4 md:py-5 flex items-center justify-center gap-2 sm:gap-3 rounded-t-2xl">
+            <span class="mobile-text-lg sm:mobile-text-xl lg:mobile-text-2xl">👥</span>
+            <h2 class="mobile-text-lg sm:mobile-text-xl lg:mobile-text-2xl xl:mobile-text-3xl font-bold text-white text-center">NSS Coordinators</h2>
           </div>
-          <div class="p-4 sm:p-8 md:p-10">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+          <div class="p-3 sm:p-4 md:p-6 lg:p-8 xl:p-10">
+            <div class="mobile-grid gap-4 sm:gap-6 md:gap-8">
               <div
                 v-for="coordinator in data.nss_coordinator['Office Bearers']"
                 :key="coordinator.Name"
-                class="bg-white/80 rounded-xl shadow p-4 sm:p-6 border border-gray-100 flex flex-col gap-2 animate-fadeInUp"
+                class="mobile-card bg-white/80 rounded-xl shadow p-3 sm:p-4 md:p-6 border border-gray-100 flex flex-col gap-2 animate-fadeInUp"
               >
-                <h3 class="text-base sm:text-lg md:text-xl font-bold text-indigo-700">{{ coordinator.Name }}</h3>
-                <div class="text-gray-700 font-medium">{{ coordinator.Designation }}</div>
-                <div class="text-gray-600 text-sm">Phone: <span class="font-normal">{{ coordinator['Phone No'] !== '-' ? coordinator['Phone No'] : 'N/A' }}</span></div>
-                <div class="text-gray-600 text-sm">Email: <a :href="'mailto:' + coordinator['Email id']" class="text-blue-500 underline">{{ coordinator['Email id'] }}</a></div>
+                <h3 class="mobile-text-sm sm:mobile-text-base lg:mobile-text-lg xl:mobile-text-xl font-bold text-indigo-700">{{ coordinator.Name }}</h3>
+                <div class="mobile-text-sm lg:mobile-text-base text-gray-700 font-medium">{{ coordinator.Designation }}</div>
+                <div class="mobile-text-xs lg:mobile-text-sm text-gray-600">Phone: <span class="font-normal">{{ coordinator['Phone No'] !== '-' ? coordinator['Phone No'] : 'N/A' }}</span></div>
+                <div class="mobile-text-xs lg:mobile-text-sm text-gray-600">Email: <a :href="'mailto:' + coordinator['Email id']" class="text-blue-500 underline">{{ coordinator['Email id'] }}</a></div>
               </div>
             </div>
           </div>

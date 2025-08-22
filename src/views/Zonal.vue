@@ -13,7 +13,7 @@
         title="Description"
         icon="ℹ️"
       >
-        <ul class="list-disc pl-6 text-gray-800 text-lg space-y-2">
+        <ul class="list-disc pl-4 sm:pl-6 text-gray-800 mobile-text-sm lg:mobile-text-base xl:mobile-text-lg space-y-2">
           <li v-for="(desc, index) in zonalData.description" :key="index">
             {{ desc }}
           </li>
@@ -28,7 +28,7 @@
       >
         <iframe
           :src="zonalListPDF"
-          class="w-full h-[500px] sm:h-[700px] rounded-lg border border-gray-300"
+          class="w-full h-[400px] sm:h-[500px] md:h-[600px] lg:h-[700px] rounded-lg border border-gray-300"
           frameborder="0"
         ></iframe>
       </OfficeContentSection>
@@ -39,7 +39,7 @@
         title="Staff"
         icon="👥"
       >
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="mobile-grid gap-6 sm:gap-8">
           <StaffCard
             v-for="staff in zonalData.staff"
             :key="staff.name"

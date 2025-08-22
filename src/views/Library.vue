@@ -1,14 +1,14 @@
 <template>
   <main class="flex-grow">
     <!-- Hero Section -->
-    <section class="relative w-full h-60 sm:h-80 md:h-94 overflow-hidden bg-gradient-to-r from-indigo-700 to-blue-500">
+    <section class="relative w-full h-48 sm:h-60 md:h-80 lg:h-94 overflow-hidden bg-gradient-to-r from-indigo-700 to-blue-500">
       <img src="/library.webp" alt="Library" class="absolute inset-0 w-full h-full object-cover object-center" style="z-index:0;" />
       <div class="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div>
-      <div class="container py-8 md:py-24 text-center relative z-10 px-4 flex flex-col items-center justify-center h-full">
-        <h1 class="text-2xl sm:text-3xl md:text-4xl font-extrabold mb-4 drop-shadow-lg font-serif text-white animate-fadeInUp">
+      <div class="container py-6 sm:py-8 md:py-16 lg:py-24 text-center relative z-10 px-3 sm:px-4 flex flex-col items-center justify-center h-full">
+        <h1 class="mobile-text-xl sm:mobile-text-2xl lg:mobile-text-3xl xl:mobile-text-4xl font-extrabold mb-3 sm:mb-4 drop-shadow-lg font-serif text-white animate-fadeInUp">
           Library
         </h1>
-        <p class="text-sm sm:text-base md:text-lg max-w-full sm:max-w-3xl mx-auto mb-4 md:mb-8 leading-relaxed drop-shadow-lg font-sans text-white animate-fadeInUp">
+        <p class="mobile-text-sm sm:mobile-text-base lg:mobile-text-lg max-w-full sm:max-w-3xl mx-auto mb-3 sm:mb-4 md:mb-6 lg:mb-8 leading-relaxed drop-shadow-lg font-sans text-white animate-fadeInUp">
           Explore our extensive library resources and services, including books, e-journals, and more.
         </p>
       </div>
@@ -16,15 +16,15 @@
 
     <!-- Sticky Horizontal Tab Bar -->
     <div class="sticky top-0 z-20">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="bg-white/95 backdrop-blur-sm shadow-lg rounded-full -mt-6 py-1 px-2 flex justify-center overflow-x-auto no-scrollbar">
+      <div class="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8">
+        <div class="bg-white/95 backdrop-blur-sm shadow-lg rounded-full -mt-4 sm:-mt-6 py-1 px-2 flex justify-center overflow-x-auto no-scrollbar">
           <nav role="tablist" class="tabs flex space-x-1 md:space-x-2">
             <button
               v-for="section in sections"
               :key="section"
               @click="scrollToSection(section)"
               :class="[
-                'font-medium px-4 md:px-5 py-2 md:py-3 rounded-full text-sm md:text-base transition duration-300 whitespace-nowrap',
+                'font-medium px-3 sm:px-4 md:px-5 py-2 md:py-3 rounded-full mobile-text-xs sm:mobile-text-sm lg:mobile-text-base transition duration-300 whitespace-nowrap',
                 activeSection === section
                   ? 'bg-indigo-600 text-white'
                   : 'text-gray-700 hover:bg-gray-100'
@@ -44,34 +44,34 @@
           v-for="section in sections"
           :key="section"
           :id="section.replace(/ /g, '')"
-          class="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto py-12 bg-gradient-to-b from-gray-50 to-white"
+          class="px-3 sm:px-4 md:px-6 lg:px-8 max-w-7xl mx-auto py-8 sm:py-10 lg:py-12 bg-gradient-to-b from-gray-50 to-white"
         >
           <!-- About Library -->
           <div v-if="section === 'About Library'" class="grid grid-cols-1">
-            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden transition-all duration-300 hover:shadow-md">
-              <div class="bg-gradient-to-r from-indigo-600 to-blue-500 py-6">
-                <h2 class="text-2xl md:text-3xl text-white font-bold text-center">About Library</h2>
+            <div class="mobile-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden transition-all duration-300 hover:shadow-md">
+              <div class="bg-gradient-to-r from-indigo-600 to-blue-500 py-4 sm:py-5 md:py-6">
+                <h2 class="mobile-text-lg sm:mobile-text-xl lg:mobile-text-2xl xl:mobile-text-3xl text-white font-bold text-center">About Library</h2>
               </div>
-              <div class="p-6 md:p-8">
-                <p class="text-base text-lg md:text-xl rounded-b-lg">{{ libraryData.description }}</p>
+              <div class="p-4 sm:p-6 md:p-8">
+                <p class="mobile-text-base lg:mobile-text-lg xl:mobile-text-xl rounded-b-lg">{{ libraryData.description }}</p>
               </div>
             </div>
           </div>
           <!-- E-journals -->
           <div v-else-if="section === 'E-journals'" class="grid grid-cols-1">
-            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden transition-all duration-300 hover:shadow-md">
-              <div class="bg-gradient-to-r from-indigo-600 to-blue-500 py-6">
-                <h2 class="text-2xl md:text-3xl text-white font-bold text-center">E-journals</h2>
+            <div class="mobile-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden transition-all duration-300 hover:shadow-md">
+              <div class="bg-gradient-to-r from-indigo-600 to-blue-500 py-4 sm:py-5 md:py-6">
+                <h2 class="mobile-text-lg sm:mobile-text-xl lg:mobile-text-2xl xl:mobile-text-3xl text-white font-bold text-center">E-journals</h2>
               </div>
-              <div class="p-6 md:p-8">
-                <p class="text-base text-lg md:text-xl mb-4 rounded-b-lg">{{ libraryData.e_journals.description }}</p>
-                <ul class="list-disc pl-5 text-sm md:text-xl text-gray-900 mb-4">
+              <div class="p-4 sm:p-6 md:p-8">
+                <p class="mobile-text-base lg:mobile-text-lg xl:mobile-text-xl mb-3 sm:mb-4 rounded-b-lg">{{ libraryData.e_journals.description }}</p>
+                <ul class="list-disc pl-4 sm:pl-5 mobile-text-sm lg:mobile-text-base xl:mobile-text-xl text-gray-900 mb-3 sm:mb-4">
                   <li v-for="feature in libraryData.e_journals.library_salient_features" :key="feature" class="mb-2">
                     {{ feature }}
                   </li>
                 </ul>
-                <p class="text-lg md:text-xl font-semibold mb-2">Library Services:</p>
-                <ul class="list-disc pl-5 text-sm md:text-xl text-gray-900">
+                <p class="mobile-text-base lg:mobile-text-lg xl:mobile-text-xl font-semibold mb-2">Library Services:</p>
+                <ul class="list-disc pl-4 sm:pl-5 mobile-text-sm lg:mobile-text-base xl:mobile-text-xl text-gray-900">
                   <li v-for="service in libraryData.e_journals.library_services" :key="service" class="mb-2">
                     {{ service }}
                   </li>
@@ -81,22 +81,22 @@
           </div>
           <!-- Library Resources -->
           <div v-else-if="section === 'Library Resources'" class="grid grid-cols-1">
-            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden transition-all duration-300 hover:shadow-md">
-              <div class="bg-gradient-to-r from-indigo-600 to-blue-500 py-6">
-                <h2 class="text-2xl md:text-3xl text-white font-bold text-center">Library Resources</h2>
+            <div class="mobile-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden transition-all duration-300 hover:shadow-md">
+              <div class="bg-gradient-to-r from-indigo-600 to-blue-500 py-4 sm:py-5 md:py-6">
+                <h2 class="mobile-text-lg sm:mobile-text-xl lg:mobile-text-2xl xl:mobile-text-3xl text-white font-bold text-center">Library Resources</h2>
               </div>
-              <div class="p-6 md:p-8">
-                <p class="text-base md:text-xl mb-4 rounded-b-lg">{{ libraryData.library_resources.description }}</p>
+              <div class="p-4 sm:p-6 md:p-8">
+                <p class="mobile-text-base lg:mobile-text-lg xl:mobile-text-xl mb-3 sm:mb-4 rounded-b-lg">{{ libraryData.library_resources.description }}</p>
                 <!-- Mobile View: Cards -->
-                <div class="md:hidden space-y-4">
+                <div class="md:hidden space-y-3 sm:space-y-4">
                   <div v-for="(value, key) in libraryData.library_resources.collection" :key="key" 
-                    class="bg-gray-50 p-4 rounded-lg">
-                    <h4 class="font-semibold text-gray-700 mb-2">{{ formatTitle(key) }}</h4>
-                    <p class="text-gray-900">{{ value }}</p>
+                    class="bg-gray-50 p-3 sm:p-4 rounded-lg">
+                    <h4 class="font-semibold mobile-text-sm lg:mobile-text-base text-gray-700 mb-2">{{ formatTitle(key) }}</h4>
+                    <p class="mobile-text-sm lg:mobile-text-base text-gray-900">{{ value }}</p>
                   </div>
-                  <div class="bg-gray-50 p-4 rounded-lg">
-                    <h4 class="font-semibold text-gray-700 mb-2">Journal Binding Volumes</h4>
-                    <p class="text-gray-900">{{ libraryData.library_resources.journal_binding.volumes }}</p>
+                  <div class="bg-gray-50 p-3 sm:p-4 rounded-lg">
+                    <h4 class="font-semibold mobile-text-sm lg:mobile-text-base text-gray-700 mb-2">Journal Binding Volumes</h4>
+                    <p class="mobile-text-sm lg:mobile-text-base text-gray-900">{{ libraryData.library_resources.journal_binding.volumes }}</p>
                   </div>
                 </div>
                 <!-- Desktop View: Table -->

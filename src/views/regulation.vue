@@ -2,20 +2,20 @@
   <div class="flex-grow bg-gradient-to-b from-indigo-100 to-blue-50 min-h-screen">
     <!-- Hero section -->
     <section 
-      class="hero-section bg-cover relative w-full h-60 sm:h-80 md:h-94 animate-fadeIn" 
+      class="hero-section bg-cover relative w-full h-48 sm:h-60 md:h-80 lg:h-94 animate-fadeIn" 
       :style="{ backgroundImage: `url(/regulation.webp)`, backgroundSize: 'cover', backgroundPosition: 'top center' }">
       <div class="absolute inset-0 bg-black opacity-70"></div>
-      <div class="mx-10 md:py-28 py-20 text-white relative z-10 flex flex-col">
-        <h1 class="md:text-4xl text-3xl font-extrabold text-center px-16 mb-4 animate-slideIn font-serif">Regulations</h1>
+      <div class="mx-4 sm:mx-6 md:mx-10 py-16 sm:py-20 md:py-28 text-white relative z-10 flex flex-col">
+        <h1 class="mobile-text-2xl sm:mobile-text-3xl lg:mobile-text-4xl font-extrabold text-center px-4 sm:px-8 md:px-16 mb-3 sm:mb-4 animate-slideIn font-serif">Regulations</h1>
       </div>
     </section>
 
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-      <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-10 relative inline-block group">
+    <div class="mobile-container py-12 sm:py-14 lg:py-16">
+      <h2 class="mobile-text-2xl sm:mobile-text-3xl lg:mobile-text-4xl font-bold text-blue-900 mb-8 sm:mb-10 relative inline-block group">
         Regulation Documents
-        <span class="absolute -bottom-2 left-0 h-1 w-24 bg-yellow-500 animate-underline"></span>
+        <span class="absolute -bottom-2 left-0 h-1 w-20 sm:w-24 bg-yellow-500 animate-underline"></span>
       </h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+      <div class="mobile-grid gap-8 sm:gap-10">
         <RegulationCard
           v-for="reg in regulations"
           :key="reg['Regulation']"

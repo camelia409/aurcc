@@ -2,28 +2,28 @@
   <div class="min-h-screen flex flex-col bg-gray-50">
     <!-- Modern Top Bar with Subtle Gradient -->
     <div class="bg-gradient-to-r from-blue-700 to-indigo-800 text-white">
-      <div class="container mx-auto px-3 sm:px-4">
+      <div class="container mx-auto px-3 sm:px-4 lg:px-6">
         <div class="flex items-center justify-between py-2 text-xs sm:text-sm">
           <span class="font-medium truncate">Counselling Code: <span class="text-yellow-300 font-semibold">2025</span></span>
-          <div class="hidden md:flex items-center space-x-4 lg:space-x-8">
+          <div class="flex items-center space-x-2 sm:space-x-4 lg:space-x-8">
             <RouterLink to="/library" class="hover:text-yellow-300 transition-colors duration-300 flex items-center space-x-1">
               <svg class="w-3 h-3 sm:w-4 sm:h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"></path>
               </svg>
-              <span class="hidden lg:inline">Library</span>
+              <span class="hidden sm:inline">Library</span>
             </RouterLink>
             <RouterLink to="/hostel" class="hover:text-yellow-300 transition-colors duration-300 flex items-center space-x-1">
               <svg class="w-3 h-3 sm:w-4 sm:h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
                 <polyline points="9 22 9 12 15 12 15 22"></polyline>
               </svg>
-              <span class="hidden lg:inline">Hostel</span>
+              <span class="hidden sm:inline">Hostel</span>
             </RouterLink>
             <RouterLink to="/contact" class="hover:text-yellow-300 transition-colors duration-300 flex items-center space-x-1">
               <svg class="w-3 h-3 sm:w-4 sm:h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
               </svg>
-              <span class="hidden lg:inline">Contact</span>
+              <span class="hidden sm:inline">Contact</span>
             </RouterLink>
           </div>
         </div>
@@ -32,7 +32,7 @@
 
     <!-- Enhanced Main Header with Modern Design -->
     <header class="sticky top-0 z-40 bg-white shadow-lg">
-      <div class="container mx-auto px-3 sm:px-4">
+      <div class="container mx-auto px-3 sm:px-4 lg:px-6">
         <nav class="flex items-center justify-between py-2 sm:py-3">
           <!-- Logo and University Name with Enhanced Styling -->
           <div class="flex items-center space-x-2 sm:space-x-4 cursor-pointer transform hover:scale-105 transition-transform duration-300" @click="$router.push('/')">
@@ -372,6 +372,15 @@ export default {
             { name: "Research Cell", route: "/research-cell" },
             { name: "Exam Cell", route: "/exam-cell" },
             { name: "Estate Office", route: "/EstateOff" },
+          ],
+        },
+        {
+          name: "Quick Access",
+          isOpen: false,
+          links: [
+            { name: "Library", route: "/library" },
+            { name: "Hostel", route: "/hostel" },
+            { name: "Contact", route: "/contact" },
           ],
         },
       ],

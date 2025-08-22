@@ -13,9 +13,9 @@
         title="About the Exam Cell"
         icon="ℹ️"
       >
-        <div class="text-xl md:text-2xl font-semibold text-blue-900 mb-4">Our Mission: Ensuring fairness, transparency, and efficiency in all university examinations.</div>
-        <div class="w-20 h-1 bg-gradient-to-r from-blue-400 to-indigo-400 rounded-full mb-6"></div>
-        <p class="text-lg md:text-xl font-medium text-gray-800 leading-relaxed">{{ data.description }}</p>
+        <div class="mobile-text-lg sm:mobile-text-xl lg:mobile-text-2xl font-semibold text-blue-900 mb-3 sm:mb-4">Our Mission: Ensuring fairness, transparency, and efficiency in all university examinations.</div>
+        <div class="w-16 sm:w-20 h-1 bg-gradient-to-r from-blue-400 to-indigo-400 rounded-full mb-4 sm:mb-6"></div>
+        <p class="mobile-text-base lg:mobile-text-lg xl:mobile-text-xl font-medium text-gray-800 leading-relaxed">{{ data.description }}</p>
       </OfficeContentSection>
 
       <!-- Services -->
@@ -24,11 +24,11 @@
         title="Services"
         icon="🛠️"
       >
-        <div class="mb-6 text-lg text-gray-700">We provide comprehensive support for all examination-related processes, ensuring a smooth experience for students and staff.</div>
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-          <div v-for="service in data.services" :key="service" class="bg-white/80 rounded-xl shadow p-6 flex items-start gap-4">
-            <span class="text-2xl text-blue-600">✔️</span>
-            <span class="font-medium text-gray-800">{{ service }}</span>
+        <div class="mb-4 sm:mb-6 mobile-text-base lg:mobile-text-lg text-gray-700">We provide comprehensive support for all examination-related processes, ensuring a smooth experience for students and staff.</div>
+        <div class="mobile-grid gap-4 sm:gap-6">
+          <div v-for="service in data.services" :key="service" class="mobile-card bg-white/80 rounded-xl shadow p-4 sm:p-6 flex items-start gap-3 sm:gap-4">
+            <span class="mobile-text-lg sm:mobile-text-xl lg:mobile-text-2xl text-blue-600">✔️</span>
+            <span class="font-medium mobile-text-sm lg:mobile-text-base text-gray-800">{{ service }}</span>
           </div>
         </div>
       </OfficeContentSection>
@@ -39,7 +39,7 @@
         title="Staff"
         icon="👥"
       >
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="mobile-grid gap-6 sm:gap-8">
           <StaffCard
             v-for="bearer in data.office_bearers"
             :key="bearer.email_id"

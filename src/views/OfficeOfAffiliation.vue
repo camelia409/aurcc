@@ -13,7 +13,7 @@
         title="About the Office"
         icon="ℹ️"
       >
-        <p class="text-lg leading-relaxed text-gray-800">{{ data.description['About Office of Affiliation and its activities'] }}</p>
+        <p class="mobile-text-base lg:mobile-text-lg xl:mobile-text-xl leading-relaxed text-gray-800">{{ data.description['About Office of Affiliation and its activities'] }}</p>
       </OfficeContentSection>
 
       <!-- Staff -->
@@ -22,7 +22,7 @@
         title="Staff"
         icon="👥"
       >
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="mobile-grid gap-6 sm:gap-8">
           <StaffCard
             v-for="staff in data.staff"
             :key="staff.name"

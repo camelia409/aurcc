@@ -13,7 +13,7 @@
         title="Description"
         icon="ℹ️"
       >
-        <p class="text-lg md:text-xl font-medium text-gray-800">
+        <p class="mobile-text-base lg:mobile-text-lg xl:mobile-text-xl font-medium text-gray-800">
           Entrepreneurship is the person who plays a certain price for a product to resell it at an uncertain price, hereby making decisions about obtaining and using the resources while consequently admitting the risk of enterprise.
         </p>
       </OfficeContentSection>
@@ -24,7 +24,7 @@
         title="Objectives"
         icon="🎯"
       >
-        <ul class="list-disc pl-6 space-y-2 text-lg text-gray-800">
+        <ul class="list-disc pl-4 sm:pl-6 space-y-2 mobile-text-base lg:mobile-text-lg xl:mobile-text-xl text-gray-800">
           <li v-for="objective in data.description.objectives" :key="objective">{{ objective }}</li>
         </ul>
       </OfficeContentSection>
@@ -35,15 +35,15 @@
         title="Key Activities"
         icon="🗝️"
       >
-        <div class="space-y-6">
+        <div class="space-y-4 sm:space-y-6">
           <div
             v-for="activity in data.description.key_activities"
             :key="activity.name"
-            class="bg-indigo-50 rounded-xl p-5 shadow"
+            class="mobile-card bg-indigo-50 rounded-xl p-4 sm:p-5 shadow"
           >
-            <h4 class="text-xl font-semibold mb-2">{{ activity.name }}</h4>
-            <p class="text-gray-700 mb-1"><strong>Location:</strong> {{ activity.location }}</p>
-            <p class="text-gray-700"><strong>Details:</strong> {{ activity.details }}</p>
+            <h4 class="mobile-text-lg lg:mobile-text-xl xl:mobile-text-2xl font-semibold mb-2">{{ activity.name }}</h4>
+            <p class="mobile-text-sm lg:mobile-text-base text-gray-700 mb-1"><strong>Location:</strong> {{ activity.location }}</p>
+            <p class="mobile-text-sm lg:mobile-text-base text-gray-700"><strong>Details:</strong> {{ activity.details }}</p>
           </div>
         </div>
       </OfficeContentSection>
@@ -54,7 +54,7 @@
         title="MOUs"
         icon="🤝"
       >
-        <ul class="list-disc pl-6 space-y-2 text-lg text-gray-800">
+        <ul class="list-disc pl-4 sm:pl-6 space-y-2 mobile-text-base lg:mobile-text-lg xl:mobile-text-xl text-gray-800">
           <li v-for="mou in data.MOU" :key="mou">{{ mou }}</li>
         </ul>
       </OfficeContentSection>
@@ -65,7 +65,7 @@
         title="Useful Links"
         icon="🔗"
       >
-        <ul class="list-disc pl-6 space-y-2 text-lg text-blue-700">
+        <ul class="list-disc pl-4 sm:pl-6 space-y-2 mobile-text-base lg:mobile-text-lg xl:mobile-text-xl text-blue-700">
           <li v-for="link in data.links" :key="link">
             <a :href="'http://' + link" target="_blank" class="hover:underline">{{ link }}</a>
           </li>
@@ -78,7 +78,7 @@
         title="Staff"
         icon="👥"
       >
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="mobile-grid gap-6 sm:gap-8">
           <StaffCard
             v-for="member in data.office_bearers"
             :key="member.email"

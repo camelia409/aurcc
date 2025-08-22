@@ -1,58 +1,58 @@
 <template>
   <main class="flex-grow font-sans bg-blue-50">
     <!-- Hero section -->
-    <section class="relative w-full min-h-[40vh] md:min-h-[60vh] overflow-hidden flex items-center justify-center animate-fadeIn">
+    <section class="relative w-full min-h-[35vh] sm:min-h-[40vh] md:min-h-[50vh] lg:min-h-[60vh] overflow-hidden flex items-center justify-center animate-fadeIn">
       <img src="/fac.webp" alt="Fine Arts Club" class="absolute inset-0 w-full h-full object-cover object-center" />
       <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-black/60 via-black/30 to-transparent"></div>
       <div class="absolute inset-0 flex flex-col items-center justify-center z-10 px-2">
-        <div class="backdrop-blur-md bg-white/30 rounded-2xl shadow-lg px-4 py-4 sm:px-8 sm:py-6 md:px-12 md:py-10 flex flex-col items-center w-full max-w-2xl border border-white/30">
-          <h1 class="text-2xl sm:text-4xl md:text-5xl font-extrabold text-white drop-shadow-lg tracking-wide text-center mb-2 leading-tight animate-slideIn">Fine Arts Club</h1>
-          <p class="text-base sm:text-lg md:text-2xl text-white drop-shadow text-center font-medium">Celebrating Creativity and Talent</p>
+        <div class="backdrop-blur-md bg-white/30 rounded-2xl shadow-lg px-3 sm:px-4 md:px-6 lg:px-8 xl:px-12 py-3 sm:py-4 md:py-6 lg:py-8 xl:py-10 flex flex-col items-center w-full max-w-2xl border border-white/30">
+          <h1 class="mobile-text-xl sm:mobile-text-2xl lg:mobile-text-3xl xl:mobile-text-4xl font-extrabold text-white drop-shadow-lg tracking-wide text-center mb-2 leading-tight animate-slideIn">Fine Arts Club</h1>
+          <p class="mobile-text-sm sm:mobile-text-base lg:mobile-text-lg xl:mobile-text-xl text-white drop-shadow text-center font-medium">Celebrating Creativity and Talent</p>
         </div>
       </div>
     </section>
     <!-- Main content -->
-    <section class="mx-auto py-14 px-2 md:px-9">
-      <div class="max-w-7xl mx-auto flex flex-col gap-12">
+    <section class="mobile-container py-8 sm:py-12 lg:py-14">
+      <div class="max-w-7xl mx-auto flex flex-col gap-8 sm:gap-10 lg:gap-12">
         <!-- Description Section -->
-        <div class="bg-white/70 backdrop-blur-md rounded-2xl shadow-lg animate-fadeIn border border-gray-100">
-          <div class="bg-gradient-to-r from-blue-900 to-blue-500 py-5 flex items-center justify-center gap-3 rounded-t-2xl">
-            <span class="text-2xl">🎨</span>
-            <h2 class="text-2xl md:text-3xl font-bold text-white text-center">LAYAM AAM RHYTHM OF ARTS MUSIC & DANCE</h2>
+        <div class="mobile-card bg-white/70 backdrop-blur-md rounded-2xl shadow-lg animate-fadeIn border border-gray-100">
+          <div class="bg-gradient-to-r from-blue-900 to-blue-500 py-4 sm:py-5 flex items-center justify-center gap-2 sm:gap-3 rounded-t-2xl">
+            <span class="mobile-text-lg lg:mobile-text-xl">🎨</span>
+            <h2 class="mobile-text-lg sm:mobile-text-xl lg:mobile-text-2xl xl:mobile-text-3xl font-bold text-white text-center">LAYAM AAM RHYTHM OF ARTS MUSIC & DANCE</h2>
           </div>
-          <div class="p-8 md:p-10">
-            <p class="text-lg md:text-xl font-medium text-gray-800">{{ description }}</p>
+          <div class="p-4 sm:p-6 md:p-8 lg:p-10">
+            <p class="mobile-text-base lg:mobile-text-lg xl:mobile-text-xl font-medium text-gray-800">{{ description }}</p>
           </div>
         </div>
         <!-- Office Bearers Section -->
-        <div class="bg-white/70 backdrop-blur-md rounded-2xl shadow-lg animate-fadeIn border border-gray-100">
-          <div class="bg-gradient-to-r from-blue-900 to-blue-500 py-5 flex items-center justify-center gap-3 rounded-t-2xl">
-            <span class="text-2xl">👥</span>
-            <h2 class="text-2xl md:text-3xl font-bold text-white text-center">Office Bearers</h2>
+        <div class="mobile-card bg-white/70 backdrop-blur-md rounded-2xl shadow-lg animate-fadeIn border border-gray-100">
+          <div class="bg-gradient-to-r from-blue-900 to-blue-500 py-4 sm:py-5 flex items-center justify-center gap-2 sm:gap-3 rounded-t-2xl">
+            <span class="mobile-text-lg lg:mobile-text-xl">👥</span>
+            <h2 class="mobile-text-lg sm:mobile-text-xl lg:mobile-text-2xl xl:mobile-text-3xl font-bold text-white text-center">Office Bearers</h2>
           </div>
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 p-8 md:p-10">
-            <div v-for="bearer in officeBearers" :key="bearer['SL.NO']" class="bg-white/80 rounded-xl shadow p-6 border border-gray-100 flex flex-col gap-2 animate-fadeInUp">
-              <div class="font-bold text-lg text-indigo-700">{{ bearer.Name }}</div>
-              <div class="text-gray-700 font-medium">{{ bearer.Designation }}</div>
-              <div class="text-gray-600 text-sm">Department: <span class="font-normal">{{ bearer.Department }}</span></div>
+          <div class="mobile-grid gap-4 sm:gap-6 md:gap-8 p-4 sm:p-6 md:p-8 lg:p-10">
+            <div v-for="bearer in officeBearers" :key="bearer['SL.NO']" class="mobile-card bg-white/80 rounded-xl shadow p-4 sm:p-6 border border-gray-100 flex flex-col gap-2 animate-fadeInUp">
+              <div class="font-bold mobile-text-base lg:mobile-text-lg text-indigo-700">{{ bearer.Name }}</div>
+              <div class="mobile-text-sm lg:mobile-text-base text-gray-700 font-medium">{{ bearer.Designation }}</div>
+              <div class="mobile-text-xs lg:mobile-text-sm text-gray-600">Department: <span class="font-normal">{{ bearer.Department }}</span></div>
             </div>
           </div>
         </div>
         <!-- Coordinator Section -->
-        <div class="bg-white/70 backdrop-blur-md rounded-2xl shadow-lg animate-fadeIn border border-gray-100">
-          <div class="bg-gradient-to-r from-blue-900 to-blue-500 py-5 flex items-center justify-center gap-3 rounded-t-2xl">
-            <span class="text-2xl">🎤</span>
-            <h2 class="text-2xl md:text-3xl font-bold text-white text-center">Coordinator</h2>
+        <div class="mobile-card bg-white/70 backdrop-blur-md rounded-2xl shadow-lg animate-fadeIn border border-gray-100">
+          <div class="bg-gradient-to-r from-blue-900 to-blue-500 py-4 sm:py-5 flex items-center justify-center gap-2 sm:gap-3 rounded-t-2xl">
+            <span class="mobile-text-lg lg:mobile-text-xl">🎤</span>
+            <h2 class="mobile-text-lg sm:mobile-text-xl lg:mobile-text-2xl xl:mobile-text-3xl font-bold text-white text-center">Coordinator</h2>
           </div>
-          <div class="p-8 md:p-10">
-            <div class="bg-white/80 rounded-xl shadow p-6 border border-gray-100 flex flex-col gap-2 animate-fadeInUp">
-              <div class="font-bold text-lg text-indigo-700">{{ coordinator.Name }}</div>
-              <div class="text-gray-700 font-medium">{{ coordinator.Designation }}</div>
-              <div class="text-gray-600 text-sm">Department: <span class="font-normal">{{ coordinator.Department }}</span></div>
-              <div class="text-gray-600 text-sm">University: <span class="font-normal">{{ coordinator.University }}</span></div>
-              <div class="text-gray-600 text-sm">Address: <span class="font-normal">{{ coordinator.Address }}</span></div>
-              <div class="text-gray-600 text-sm">Mobile: <span class="font-normal">{{ coordinator.Mobile }}</span></div>
-              <div class="text-gray-600 text-sm">Email: <a :href="`mailto:${coordinator.Email}`" class="text-blue-500 underline">{{ coordinator.Email }}</a></div>
+          <div class="p-4 sm:p-6 md:p-8 lg:p-10">
+            <div class="mobile-card bg-white/80 rounded-xl shadow p-4 sm:p-6 border border-gray-100 flex flex-col gap-2 animate-fadeInUp">
+              <div class="font-bold mobile-text-base lg:mobile-text-lg text-indigo-700">{{ coordinator.Name }}</div>
+              <div class="mobile-text-sm lg:mobile-text-base text-gray-700 font-medium">{{ coordinator.Designation }}</div>
+              <div class="mobile-text-xs lg:mobile-text-sm text-gray-600">Department: <span class="font-normal">{{ coordinator.Department }}</span></div>
+              <div class="mobile-text-xs lg:mobile-text-sm text-gray-600">University: <span class="font-normal">{{ coordinator.University }}</span></div>
+              <div class="mobile-text-xs lg:mobile-text-sm text-gray-600">Address: <span class="font-normal">{{ coordinator.Address }}</span></div>
+              <div class="mobile-text-xs lg:mobile-text-sm text-gray-600">Mobile: <span class="font-normal">{{ coordinator.Mobile }}</span></div>
+              <div class="mobile-text-xs lg:mobile-text-sm text-gray-600">Email: <a :href="`mailto:${coordinator.Email}`" class="text-blue-500 underline">{{ coordinator.Email }}</a></div>
             </div>
           </div>
         </div>

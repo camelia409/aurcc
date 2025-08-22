@@ -13,17 +13,17 @@
         title="About the PACE Cell"
         icon="🧭"
       >
-        <p class="text-lg leading-relaxed text-gray-800 mb-4">
+        <p class="mobile-text-base lg:mobile-text-lg xl:mobile-text-xl leading-relaxed text-gray-800 mb-3 sm:mb-4">
           <span class="font-semibold text-blue-900">PACE (Placement and Competitive Exam) Cell</span> at Anna University Regional Campus Coimbatore is your dedicated partner for success in government and competitive exams. We empower students with:
         </p>
-        <ul class="list-disc pl-6 space-y-2 text-base text-gray-800 mb-4">
+        <ul class="list-disc pl-4 sm:pl-6 space-y-2 mobile-text-sm lg:mobile-text-base text-gray-800 mb-3 sm:mb-4">
           <li><span class="font-semibold">Expert Guidance:</span> Access to experienced mentors and subject matter experts for personalized support.</li>
           <li><span class="font-semibold">Comprehensive Resources:</span> Books, study materials, and online tools for TNPSC, UPSC, Banking, SSC, Railway, and more.</li>
           <li><span class="font-semibold">Workshops & Mock Tests:</span> Regular training programs, workshops, and practice exams to boost your confidence and skills.</li>
           <li><span class="font-semibold">Peer & Volunteer Support:</span> Join a vibrant community of coordinators, volunteers, and fellow aspirants for motivation and teamwork.</li>
           <li><span class="font-semibold">Inclusive Environment:</span> Support for students from all departments, ensuring everyone has the opportunity to excel.</li>
         </ul>
-        <p class="text-base text-gray-700">Whether you're aiming for a government job or seeking to improve your competitive exam performance, the PACE Cell is here to guide you every step of the way.</p>
+        <p class="mobile-text-sm lg:mobile-text-base text-gray-700">Whether you're aiming for a government job or seeking to improve your competitive exam performance, the PACE Cell is here to guide you every step of the way.</p>
       </OfficeContentSection>
 
       <!-- Staff Section -->
@@ -32,7 +32,7 @@
         title="Staff"
         icon="👥"
       >
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="mobile-grid gap-6 sm:gap-8">
           <StaffCard
             v-for="staff in paceData.staff"
             :key="staff.name"

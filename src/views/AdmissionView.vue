@@ -13,8 +13,8 @@
         title="Overview"
         icon="ℹ️"
       >
-        <p class="text-lg md:text-xl font-medium text-gray-800 mb-6">{{ data.description.Overview }}</p>
-        <p class="text-lg md:text-xl font-medium text-gray-800 mb-8">{{ data.description['Admissions at our Regional Campus'] }}</p>
+        <p class="mobile-text-base lg:mobile-text-lg xl:mobile-text-xl font-medium text-gray-800 mb-4 sm:mb-6">{{ data.description.Overview }}</p>
+        <p class="mobile-text-base lg:mobile-text-lg xl:mobile-text-xl font-medium text-gray-800 mb-6 sm:mb-8">{{ data.description['Admissions at our Regional Campus'] }}</p>
         <div class="flex justify-center">
           <img :src="flowchartImage" alt="Admission Flowchart" class="w-full md:w-3/4 lg:w-1/2 rounded shadow" />
         </div>
@@ -26,22 +26,22 @@
         title="Courses Offered"
         icon="📚"
       >
-        <div v-for="(programs, category) in data.courses_offered" :key="category" class="mb-8">
-          <h3 class="text-2xl font-semibold text-indigo-700 mb-3">{{ category }}</h3>
+        <div v-for="(programs, category) in data.courses_offered" :key="category" class="mb-6 sm:mb-8">
+          <h3 class="mobile-text-lg lg:mobile-text-xl xl:mobile-text-2xl font-semibold text-indigo-700 mb-3">{{ category }}</h3>
           <div class="overflow-x-auto">
             <table class="table-auto w-full border border-gray-300 text-left mb-4 rounded-xl overflow-hidden">
               <thead class="bg-gray-200">
                 <tr>
-                  <th class="border px-4 py-2">S.No</th>
-                  <th class="border px-4 py-2">Courses Offered</th>
-                  <th class="border px-4 py-2">Intake</th>
+                  <th class="border px-3 sm:px-4 py-2 mobile-text-xs lg:mobile-text-sm">S.No</th>
+                  <th class="border px-3 sm:px-4 py-2 mobile-text-xs lg:mobile-text-sm">Courses Offered</th>
+                  <th class="border px-3 sm:px-4 py-2 mobile-text-xs lg:mobile-text-sm">Intake</th>
                 </tr>
               </thead>
               <tbody>
                 <tr v-for="course in programs" :key="course['S.No']">
-                  <td class="border px-4 py-2 text-center">{{ course['S.No'] }}</td>
-                  <td class="border px-4 py-2">{{ course['Courses Offered'] }}</td>
-                  <td class="border px-4 py-2 text-center">{{ course.Intake }}</td>
+                  <td class="border px-3 sm:px-4 py-2 text-center mobile-text-xs lg:mobile-text-sm">{{ course['S.No'] }}</td>
+                  <td class="border px-3 sm:px-4 py-2 mobile-text-xs lg:mobile-text-sm">{{ course['Courses Offered'] }}</td>
+                  <td class="border px-3 sm:px-4 py-2 text-center mobile-text-xs lg:mobile-text-sm">{{ course.Intake }}</td>
                 </tr>
               </tbody>
             </table>
@@ -55,9 +55,9 @@
         title="Eligibility Criteria"
         icon="✅"
       >
-        <div v-for="(text, program) in data.eligibility_criteria" :key="program" class="mb-4">
-          <h3 class="text-xl font-semibold text-indigo-700 mb-2">{{ program }}</h3>
-          <p class="text-gray-800">{{ text }}</p>
+        <div v-for="(text, program) in data.eligibility_criteria" :key="program" class="mb-3 sm:mb-4">
+          <h3 class="mobile-text-base lg:mobile-text-lg xl:mobile-text-xl font-semibold text-indigo-700 mb-2">{{ program }}</h3>
+          <p class="mobile-text-sm lg:mobile-text-base text-gray-800">{{ text }}</p>
         </div>
       </OfficeContentSection>
 
@@ -67,7 +67,7 @@
         title="Staff"
         icon="👥"
       >
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="mobile-grid gap-6 sm:gap-8">
           <StaffCard
             v-for="staff in data.staff"
             :key="staff.name"

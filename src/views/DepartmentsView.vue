@@ -3,19 +3,19 @@
     <main>
       <!-- Hero section -->
       <section
-        class="bg-cover bg-center relative h-80 md:h-96"
+        class="bg-cover bg-center relative h-64 sm:h-72 md:h-80 lg:h-96"
         :style="'background-image: url(/' + department.image + ')'"
       >
         <div class="absolute inset-0 bg-gradient-to-r from-blue-900/70 to-indigo-900/60"></div>
-        <div class="container mx-auto h-full flex items-center relative z-10 px-6 md:px-9">
+        <div class="container mx-auto h-full flex items-center relative z-10 px-3 sm:px-4 md:px-6 lg:px-9">
           <div class="max-w-2xl">
-            <h1 class="text-2xl md:text-5xl font-bold mb-4 text-white">
+            <h1 class="mobile-text-xl sm:mobile-text-2xl lg:mobile-text-3xl xl:mobile-text-4xl font-bold mb-3 sm:mb-4 text-white">
               <span class="bg-gradient-to-r from-blue-400 to-indigo-300 bg-clip-text text-transparent">
                 {{ department.name }}
               </span>
             </h1>
-            <p class="text-sm md:text-xl mb-8 text-gray-100 leading-relaxed">Explore our cutting-edge programs and stay ahead in the field.</p>
-            <button class="bg-indigo-600 hover:bg-indigo-700 text-white py-2 px-6 rounded-full transition duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+            <p class="mobile-text-sm sm:mobile-text-base lg:mobile-text-lg xl:mobile-text-xl mb-6 sm:mb-8 text-gray-100 leading-relaxed">Explore our cutting-edge programs and stay ahead in the field.</p>
+            <button class="mobile-btn bg-indigo-600 hover:bg-indigo-700 text-white py-2 px-4 sm:px-6 rounded-full transition duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
               Learn More
             </button>
           </div>
@@ -24,8 +24,8 @@
       
       <!-- Navigation Tabs - Modern floating design -->
       <div class="sticky top-0 z-20">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="bg-white/95 backdrop-blur-sm shadow-lg rounded-full -mt-6 py-1 px-2 flex justify-center overflow-x-auto no-scrollbar">
+        <div class="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8">
+          <div class="bg-white/95 backdrop-blur-sm shadow-lg rounded-full -mt-4 sm:-mt-6 py-1 px-2 flex justify-center overflow-x-auto no-scrollbar">
             <nav role="tablist" class="tabs flex space-x-1 md:space-x-2">
               <button role="tab"
                 v-for="(section, index) in sections"
@@ -35,7 +35,7 @@
                   'bg-indigo-600 text-white': currentSection === section,
                   'text-gray-700 hover:bg-gray-100': currentSection !== section
                 }"
-                class="font-medium px-4 md:px-5 py-2 md:py-3 rounded-full text-sm md:text-base transition duration-300 whitespace-nowrap"
+                class="font-medium px-3 sm:px-4 md:px-5 py-2 md:py-3 rounded-full mobile-text-xs sm:mobile-text-sm lg:mobile-text-base transition duration-300 whitespace-nowrap"
               >
                 {{ section }}
               </button>
@@ -49,34 +49,34 @@
         <div id="content-sections" class="w-full">
                      <div class="section-container bg-gradient-to-b from-gray-50 to-white">
              <div id="about-department" class="max-w-6xl mx-auto">
-               <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+               <div class="mobile-grid gap-6 sm:gap-8 items-start">
                  <div class="flex flex-col h-full">
                    <div class="section-card h-full">
-                     <div class="bg-gradient-to-r from-indigo-600 to-blue-500 py-6">
-                       <h2 class="text-2xl md:text-3xl text-white font-bold text-center">About Department</h2>
+                     <div class="bg-gradient-to-r from-indigo-600 to-blue-500 py-4 sm:py-5 md:py-6">
+                       <h2 class="mobile-text-lg sm:mobile-text-xl lg:mobile-text-2xl xl:mobile-text-3xl text-white font-bold text-center">About Department</h2>
                      </div>
                      <div class="section-content">
-                       <p class="text-lg text-gray-700 leading-relaxed">{{ department.description }}</p>
+                       <p class="mobile-text-base lg:mobile-text-lg text-gray-700 leading-relaxed">{{ department.description }}</p>
                      </div>
                    </div>
                  </div>
                  
-                 <div class="grid grid-cols-1 gap-8 h-full">
+                 <div class="mobile-grid gap-6 sm:gap-8 h-full">
                    <div class="section-card">
-                     <div class="bg-gradient-to-r from-blue-500 to-cyan-400 py-6">
-                       <h3 class="text-2xl md:text-3xl text-white font-bold text-center">Vision</h3>
+                     <div class="bg-gradient-to-r from-blue-500 to-cyan-400 py-4 sm:py-5 md:py-6">
+                       <h3 class="mobile-text-lg sm:mobile-text-xl lg:mobile-text-2xl xl:mobile-text-3xl text-white font-bold text-center">Vision</h3>
                      </div>
                      <div class="section-content">
-                       <p class="text-lg text-gray-700 leading-relaxed">{{ department.vision }}</p>
+                       <p class="mobile-text-base lg:mobile-text-lg text-gray-700 leading-relaxed">{{ department.vision }}</p>
                      </div>
                    </div>
                    
                    <div class="section-card">
-                     <div class="bg-gradient-to-r from-cyan-400 to-teal-400 py-6">
-                       <h3 class="text-2xl md:text-3xl text-white font-bold text-center">Mission</h3>
+                     <div class="bg-gradient-to-r from-cyan-400 to-teal-400 py-4 sm:py-5 md:py-6">
+                       <h3 class="mobile-text-lg sm:mobile-text-xl lg:mobile-text-2xl xl:mobile-text-3xl text-white font-bold text-center">Mission</h3>
                      </div>
                      <div class="section-content">
-                       <ul class="text-lg list-disc pl-5 text-gray-700 space-y-3">
+                       <ul class="mobile-text-base lg:mobile-text-lg list-disc pl-4 sm:pl-5 text-gray-700 space-y-2 sm:space-y-3">
                          <li v-for="mission in department.mission" :key="mission" class="pl-2">{{ mission }}</li>
                        </ul>
                      </div>
@@ -93,28 +93,28 @@
             </h2>
             <div class="max-w-6xl mx-auto">
               <div class="section-card">
-                <div class="bg-gradient-to-r from-indigo-600 to-blue-500 py-8">
-                  <h3 class="text-2xl md:text-3xl text-white font-bold text-center">Programs Available</h3>
+                <div class="bg-gradient-to-r from-indigo-600 to-blue-500 py-6 sm:py-7 md:py-8">
+                  <h3 class="mobile-text-lg sm:mobile-text-xl lg:mobile-text-2xl xl:mobile-text-3xl text-white font-bold text-center">Programs Available</h3>
                 </div>
                 <div class="section-content">
                   <div :class="{
-                    'grid grid-cols-1 md:grid-cols-2 gap-6': department.courses_offered.length > 1,
+                    'mobile-grid gap-4 sm:gap-6': department.courses_offered.length > 1,
                     'flex justify-center': department.courses_offered.length === 1
                   }">
                     <div v-for="(course, index) in department.courses_offered" :key="index" 
                          :class="{
-                           'bg-gradient-to-r from-blue-50 to-indigo-50 p-6 rounded-xl border border-blue-200 hover:border-blue-300 transition-all duration-300 hover:shadow-md': true,
+                           'bg-gradient-to-r from-blue-50 to-indigo-50 p-4 sm:p-5 md:p-6 rounded-xl border border-blue-200 hover:border-blue-300 transition-all duration-300 hover:shadow-md': true,
                            'max-w-md': department.courses_offered.length === 1
                          }">
-                      <div class="flex items-start space-x-3">
-                        <div class="flex-shrink-0 w-8 h-8 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full flex items-center justify-center">
-                          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <div class="flex items-start space-x-2 sm:space-x-3">
+                        <div class="flex-shrink-0 w-6 h-6 sm:w-8 sm:h-8 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full flex items-center justify-center">
+                          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 sm:h-5 sm:w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                           </svg>
                         </div>
                         <div class="flex-1">
-                          <h4 class="text-lg font-semibold text-gray-800 mb-2">{{ course }}</h4>
-                          <p class="text-gray-600 text-sm">Full-time program with comprehensive curriculum</p>
+                          <h4 class="mobile-text-base lg:mobile-text-lg font-semibold text-gray-800 mb-2">{{ course }}</h4>
+                          <p class="mobile-text-xs lg:mobile-text-sm text-gray-600">Full-time program with comprehensive curriculum</p>
                         </div>
                       </div>
                     </div>
@@ -135,26 +135,26 @@
                  <div class="section-content">
                    <div class="flex flex-col md:flex-row md:items-center justify-between">
                      <div class="flex-grow mb-4 md:mb-0 md:mr-8">
-                       <h3 class="text-xl md:text-2xl font-bold mb-2 text-gray-800">{{ currentEvent.name }}</h3>
-                       <p class="text-base md:text-lg text-gray-600 mb-4">{{ currentEvent.description }}</p>
+                       <h3 class="mobile-text-lg lg:mobile-text-xl xl:mobile-text-2xl font-bold mb-2 text-gray-800">{{ currentEvent.name }}</h3>
+                       <p class="mobile-text-sm lg:mobile-text-base xl:mobile-text-lg text-gray-600 mb-4">{{ currentEvent.description }}</p>
                        <div class="flex items-center">
-                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-indigo-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 sm:h-5 sm:w-5 text-indigo-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                          </svg>
-                         <span class="text-indigo-600 font-medium">{{ currentEvent.date }}</span>
+                         <span class="mobile-text-sm lg:mobile-text-base text-indigo-600 font-medium">{{ currentEvent.date }}</span>
                        </div>
                      </div>
                      
-                     <div class="flex justify-center space-x-3">
+                     <div class="flex justify-center space-x-2 sm:space-x-3">
                        <button @click="showPreviousEvent" 
                                class="p-2 rounded-full bg-gray-100 hover:bg-indigo-100 text-gray-600 hover:text-indigo-600 focus:outline-none transition-colors duration-300">
-                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 sm:h-6 sm:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
                          </svg>
                        </button>
                        <button @click="showNextEvent" 
                                class="p-2 rounded-full bg-gray-100 hover:bg-indigo-100 text-gray-600 hover:text-indigo-600 focus:outline-none transition-colors duration-300">
-                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 sm:h-6 sm:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                          </svg>
                        </button>
@@ -163,7 +163,7 @@
                  </div>
                </div>
                
-               <div class="flex justify-center mt-6">
+               <div class="flex justify-center mt-4 sm:mt-6">
                  <div class="flex space-x-2">
                    <div v-for="(_, index) in events" :key="index" 
                         @click="currentIndex = index"
@@ -174,11 +174,11 @@
                </div>
              </div>
              
-             <div v-else class="text-center py-12 text-gray-500">
-               <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto text-gray-300 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+             <div v-else class="text-center py-8 sm:py-12 text-gray-500">
+               <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 sm:h-16 sm:w-16 mx-auto text-gray-300 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                </svg>
-               <p class="text-lg">No upcoming events to display.</p>
+               <p class="mobile-text-base lg:mobile-text-lg">No upcoming events to display.</p>
              </div>
            </div>
                      <div id="achievements" class="section-container bg-gray-50">
@@ -188,35 +188,35 @@
              
              <div class="max-w-6xl mx-auto">
                <div class="relative">
-                 <div class="absolute top-0 bottom-0 left-0 right-0 -m-4 bg-gradient-to-r from-purple-50 to-indigo-50 rounded-3xl transform -rotate-1"></div>
+                 <div class="absolute top-0 bottom-0 left-0 right-0 -m-2 sm:-m-4 bg-gradient-to-r from-purple-50 to-indigo-50 rounded-3xl transform -rotate-1"></div>
                  
                  <div class="relative section-card">
-                   <div class="h-96 overflow-auto px-6 py-6 scrollbar-thin scrollbar-thumb-indigo-200 scrollbar-track-gray-100">
-                     <div class="space-y-4">
+                   <div class="h-80 sm:h-96 overflow-auto px-4 sm:px-6 py-4 sm:py-6 scrollbar-thin scrollbar-thumb-indigo-200 scrollbar-track-gray-100">
+                     <div class="space-y-3 sm:space-y-4">
                        <div v-for="achievement in department.achievements" :key="achievement.name" 
-                            class="bg-white p-4 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1">
+                            class="bg-white p-3 sm:p-4 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1">
                          <div class="flex flex-col md:flex-row md:items-center justify-between">
                            <div>
                              <div class="flex items-center mb-2">
-                               <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-indigo-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                               <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 sm:h-5 sm:w-5 text-indigo-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                                </svg>
-                               <h3 class="text-lg md:text-xl font-semibold text-gray-800">{{ achievement.event }}</h3>
+                               <h3 class="mobile-text-base lg:mobile-text-lg xl:mobile-text-xl font-semibold text-gray-800">{{ achievement.event }}</h3>
                              </div>
-                             <p class="text-gray-600 mb-1">{{ achievement.organized_by }}</p>
-                             <p class="font-medium text-gray-800">{{ achievement.name }}</p>
+                             <p class="mobile-text-sm lg:mobile-text-base text-gray-600 mb-1">{{ achievement.organized_by }}</p>
+                             <p class="mobile-text-sm lg:mobile-text-base font-medium text-gray-800">{{ achievement.name }}</p>
                            </div>
                            
                            <div class="mt-3 md:mt-0 flex items-center">
-                             <div class="bg-indigo-50 text-indigo-700 px-3 py-1 rounded-full text-sm font-medium">
+                             <div class="bg-indigo-50 text-indigo-700 px-2 sm:px-3 py-1 rounded-full mobile-text-xs lg:mobile-text-sm font-medium">
                                {{ achievement.date }}
                              </div>
                            </div>
                          </div>
                          
                          <div class="mt-3">
-                           <div class="inline-flex items-center bg-purple-50 text-purple-700 px-3 py-1 rounded-full text-sm font-medium">
-                             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                           <div class="inline-flex items-center bg-purple-50 text-purple-700 px-2 sm:px-3 py-1 rounded-full mobile-text-xs lg:mobile-text-sm font-medium">
+                             <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 sm:h-4 sm:w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
                              </svg>
                              {{ achievement.awards }}
@@ -234,12 +234,12 @@
                <span class="bg-gradient-to-r from-emerald-600 to-teal-500 bg-clip-text text-transparent">World-Class Facilities</span>
              </h2>
              
-             <div class="max-w-6xl mx-auto space-y-16">
+             <div class="max-w-6xl mx-auto space-y-12 sm:space-y-16">
                <div 
                  v-for="(facility, index) in department.facility" 
                  :key="facility.name" 
                  :class="index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'"
-                 class="flex flex-col lg:flex-row items-center gap-8 md:gap-12"
+                 class="flex flex-col lg:flex-row items-center gap-6 sm:gap-8 md:gap-12"
                >
                  <div class="lg:w-1/2">
                    <div class="relative">
@@ -253,13 +253,13 @@
                  </div>
                  
                  <div class="lg:w-1/2">
-                   <h3 class="text-2xl md:text-3xl font-bold mb-6 text-gray-800">{{ facility.name }}</h3>
-                   <ul class="space-y-3">
+                   <h3 class="mobile-text-lg sm:mobile-text-xl lg:mobile-text-2xl xl:mobile-text-3xl font-bold mb-4 sm:mb-6 text-gray-800">{{ facility.name }}</h3>
+                   <ul class="space-y-2 sm:space-y-3">
                      <li v-for="item in facility.description" :key="item" class="flex items-start">
-                       <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-emerald-500 mr-2 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                       <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 sm:h-6 sm:w-6 text-emerald-500 mr-2 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                        </svg>
-                       <span class="text-lg text-gray-700">{{ item }}</span>
+                       <span class="mobile-text-base lg:mobile-text-lg text-gray-700">{{ item }}</span>
                      </li>
                    </ul>
                  </div>
@@ -269,16 +269,16 @@
 
                      <div id="faculty" class="section-container bg-gray-50">
              <!-- Section Title with Animated Underline -->
-             <div class="text-center mb-12">
-               <h2 class="text-3xl md:text-4xl font-bold text-gray-800 relative inline-block group">
+             <div class="text-center mb-8 sm:mb-10 lg:mb-12">
+               <h2 class="mobile-text-2xl sm:mobile-text-3xl lg:mobile-text-4xl font-bold text-gray-800 relative inline-block group">
                  OUR FACULTY
-                 <span class="absolute -bottom-3 left-0 h-1 w-full bg-gradient-to-r from-blue-600 to-indigo-600 transform origin-left transition-transform duration-300 group-hover:scale-x-110"></span>
+                 <span class="absolute -bottom-2 sm:-bottom-3 left-0 h-1 w-full bg-gradient-to-r from-blue-600 to-indigo-600 transform origin-left transition-transform duration-300 group-hover:scale-x-110"></span>
                </h2>
              </div>
             
             <!-- HOD Desk -->
-            <div class="mb-16">
-              <h3 class="text-2xl font-bold text-center mb-8 text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-indigo-700">Head of Department</h3>
+            <div class="mb-12 sm:mb-14 lg:mb-16">
+              <h3 class="mobile-text-lg sm:mobile-text-xl lg:mobile-text-2xl font-bold text-center mb-6 sm:mb-8 text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-indigo-700">Head of Department</h3>
               <div class="flex justify-center">
                 <div 
                   v-for="staff in department.faculty.hod_desk" 
@@ -293,7 +293,7 @@
                       <img 
                         :src="'/' + staff.image" 
                         :alt="staff.name" 
-                        class="w-36 h-44 object-cover rounded-full border-4 border-white shadow-lg"
+                        class="w-28 h-36 sm:w-32 sm:h-40 lg:w-36 lg:h-44 object-cover rounded-full border-4 border-white shadow-lg"
                       >
                     </div>
                   </div>

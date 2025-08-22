@@ -1,9 +1,9 @@
 <template>
   <div class="news-view">
-    <h1 class="text-4xl font-bold mb-8">News</h1>
+    <h1 class="mobile-text-xl sm:mobile-text-2xl lg:mobile-text-3xl xl:mobile-text-4xl font-bold mb-6 sm:mb-8">News</h1>
     <ul class="divide-y divide-gray-200">
-      <li v-for="(item, index) in news" :key="index" class="py-4">
-        <a :href="item.url" class="text-blue-600 hover:underline">{{ item.name }}</a>
+      <li v-for="(item, index) in news" :key="index" class="py-3 sm:py-4">
+        <a :href="item.url" class="mobile-text-sm lg:mobile-text-base text-blue-600 hover:underline">{{ item.name }}</a>
       </li>
     </ul>
   </div>

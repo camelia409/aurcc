@@ -1,56 +1,56 @@
 <template>
-    <div class="max-w-4xl mx-auto p-6 bg-white rounded-lg shadow-lg">
-      <h1 class="text-3xl font-bold text-center mb-6 text-blue-600">Online Grievance Form</h1>
+    <div class="max-w-4xl mx-auto p-3 sm:p-4 md:p-6 bg-white rounded-lg shadow-lg">
+      <h1 class="mobile-text-xl sm:mobile-text-2xl lg:mobile-text-3xl font-bold text-center mb-4 sm:mb-6 text-blue-600">Online Grievance Form</h1>
       
       <!-- Grievance Form -->
-      <form @submit.prevent="submitForm" class="space-y-6">
+      <form @submit.prevent="submitForm" class="space-y-4 sm:space-y-6">
         <!-- Name -->
         <div>
-          <label for="name" class="block text-gray-700 font-medium mb-2">Name:</label>
+          <label for="name" class="block text-gray-700 font-medium mb-2 mobile-text-sm lg:mobile-text-base">Name:</label>
           <input
             v-model="form.name"
             type="text"
             id="name"
             required
-            class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            class="w-full p-2 sm:p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 mobile-text-sm lg:mobile-text-base"
             placeholder="Enter your name"
           />
         </div>
   
         <!-- Email -->
         <div>
-          <label for="email" class="block text-gray-700 font-medium mb-2">Email ID:</label>
+          <label for="email" class="block text-gray-700 font-medium mb-2 mobile-text-sm lg:mobile-text-base">Email ID:</label>
           <input
             v-model="form.email"
             type="email"
             id="email"
             required
-            class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            class="w-full p-2 sm:p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 mobile-text-sm lg:mobile-text-base"
             placeholder="Enter your email ID"
           />
         </div>
   
         <!-- Phone Number -->
         <div>
-          <label for="phone" class="block text-gray-700 font-medium mb-2">Phone Number:</label>
+          <label for="phone" class="block text-gray-700 font-medium mb-2 mobile-text-sm lg:mobile-text-base">Phone Number:</label>
           <input
             v-model="form.phone"
             type="tel"
             id="phone"
             required
-            class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            class="w-full p-2 sm:p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 mobile-text-sm lg:mobile-text-base"
             placeholder="Enter your phone number"
           />
         </div>
   
         <!-- Type of Grievance -->
         <div>
-          <label for="grievanceType" class="block text-gray-700 font-medium mb-2">Type of Grievance:</label>
+          <label for="grievanceType" class="block text-gray-700 font-medium mb-2 mobile-text-sm lg:mobile-text-base">Type of Grievance:</label>
           <select
             v-model="form.grievanceType"
             id="grievanceType"
             required
-            class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            class="w-full p-2 sm:p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 mobile-text-sm lg:mobile-text-base"
           >
             <option value="" disabled>Select grievance type</option>
             <option value="Service">Service</option>
@@ -62,21 +62,21 @@
   
         <!-- Description of Grievance -->
         <div>
-          <label for="description" class="block text-gray-700 font-medium mb-2">Description of Grievance:</label>
+          <label for="description" class="block text-gray-700 font-medium mb-2 mobile-text-sm lg:mobile-text-base">Description of Grievance:</label>
           <textarea
             v-model="form.description"
             id="description"
             required
             rows="4"
-            class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            class="w-full p-2 sm:p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 mobile-text-sm lg:mobile-text-base"
             placeholder="Describe your grievance"
           ></textarea>
         </div>
   
         <!-- CAPTCHA -->
         <div>
-          <label for="captcha" class="block text-gray-700 font-medium mb-2">Solve the CAPTCHA:</label>
-          <div class="text-lg font-medium mb-2">
+          <label for="captcha" class="block text-gray-700 font-medium mb-2 mobile-text-sm lg:mobile-text-base">Solve the CAPTCHA:</label>
+          <div class="mobile-text-base lg:mobile-text-lg font-medium mb-2">
             <span>{{ captcha.num1 }} + {{ captcha.num2 }} = ?</span>
           </div>
           <input
@@ -84,7 +84,7 @@
             type="number"
             id="captcha"
             required
-            class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            class="w-full p-2 sm:p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 mobile-text-sm lg:mobile-text-base"
             placeholder="Enter the CAPTCHA result"
           />
         </div>
@@ -94,7 +94,7 @@
           <button
             type="submit"
             :disabled="isSubmitting || !isCaptchaValid"
-            class="w-full p-4 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-300 disabled:bg-gray-400 disabled:cursor-not-allowed"
+            class="w-full p-3 sm:p-4 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-300 disabled:bg-gray-400 disabled:cursor-not-allowed mobile-text-sm lg:mobile-text-base"
           >
             Submit
           </button>
