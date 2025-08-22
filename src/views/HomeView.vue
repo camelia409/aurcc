@@ -427,9 +427,9 @@
         
         <div class="mobile-container relative z-10">
           <h2 class="mobile-text-2xl lg:mobile-text-3xl font-bold text-center mb-8 sm:mb-12">From the Dean's Desk</h2>
-          <div class="flex flex-col md:flex-row items-center bg-white bg-opacity-10 rounded-lg shadow-xl overflow-hidden backdrop-filter backdrop-blur-lg">
-            <div class="md:w-1/3">
-              <img src="/Dean.webp" alt="Dean's Photo" class="w-full h-full object-cover" />
+          <div class="flex flex-col md:flex-row items-center bg-white bg-opacity-10 rounded-lg shadow-xl overflow-hidden backdrop-filter backdrop-blur-lg max-w-6xl mx-auto">
+            <div class="md:w-1/3 p-4 sm:p-6 md:p-8">
+              <img src="/Dean.webp" alt="Dean's Photo" class="w-full h-auto object-cover rounded-lg" />
             </div>
             <div class="md:w-2/3 p-4 sm:p-6 md:p-8">
               <h3 class="mobile-text-xl lg:mobile-text-2xl font-semibold mb-3 sm:mb-4">Dr. Saravanan Kumar</h3>
@@ -479,7 +479,7 @@
             </p>
           </div>
           
-          <div class="mobile-grid">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 max-w-6xl mx-auto">
             <!-- Campus Life Card 1 -->
             <div class="mobile-card rounded-xl overflow-hidden shadow-lg group">
               <div class="relative h-48 sm:h-56 md:h-64 overflow-hidden">
@@ -513,7 +513,7 @@
             </div>
             
             <!-- Campus Life Card 3 -->
-            <div class="mobile-card rounded-xl overflow-hidden shadow-lg group">
+            <div class="mobile-card rounded-xl overflow-hidden shadow-lg group md:col-span-2 lg:col-span-1">
               <div class="relative h-48 sm:h-56 md:h-64 overflow-hidden">
                 <img 
                   src="/sports_day_parade.jpg" 

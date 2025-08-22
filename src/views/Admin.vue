@@ -41,7 +41,7 @@
             </div>
             <div v-if="subsection.STAFFS" class="mb-6 sm:mb-8">
               <h4 class="mobile-text-base lg:mobile-text-lg xl:mobile-text-2xl font-semibold mb-2 text-center font-serif tracking-wide">Staff Members</h4>
-              <div class="mobile-grid gap-6 sm:gap-8">
+              <div class="mobile-grid gap-6 sm:gap-8 justify-items-center">
                 <div
                   v-for="member in subsection.STAFFS"
                   :key="member.name"
