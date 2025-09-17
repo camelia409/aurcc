@@ -9,25 +9,25 @@
     "staff_members":[
               {
                   "si.no": 1,
-                  "name": "Dr. Preethi AP/CSE",
+                  "name": "Dr. Preethi",
                   "designation": "Placement Coordinator",
                    "image": "preethi.webp"
                 },
                 {
                   "si.no": 2,
-                  "name": "Dr. T. Suganthalakshmi AP/MBA",
+                  "name": "Dr. T. Suganthalakshmi",
                   "designation": "Placement Coordinator",
                   "image":"suganthalakshmi.webp"
                 },
                
                 {
                   "si.no": 3,
-                  "name": "Mrs.M.A.Kavitha.",
+                  "name": "Ms. M. A. Kavitha",
                   "designation": "Executive Asst. (Admin)"
                 },
                 {
                   "si.no": 4,
-                  "name": "Mrs.T.Mohanapriya",
+                  "name": "Ms. T. Mohanapriya",
                   "designation": "Professional Assistant-II"
                 }
                     ]

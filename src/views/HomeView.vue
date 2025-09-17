@@ -353,7 +353,7 @@
                 </div>
                 <div class="program-card">
                   <div class="program-icon bg-pink-500">🔲</div>
-                  <h3 class="program-title">B.E. Electronics Engineering (VLSI Design and Technology)</h3>
+                  <h3 class="program-title">B.E. ELECTRONICS ENGINEERING (VLSI DESIGN AND TECHNOLOGY)</h3>
                   <p class="program-description">Specialized in chip design, microelectronics, and hardware innovation.</p>
                   <a href="/departments/ece" class="program-link">Learn More →</a>
                 </div>

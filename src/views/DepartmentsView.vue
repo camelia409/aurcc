@@ -286,7 +286,7 @@
                   class="faculty-card hod-card"
                   @click="showDetails(staff)"
                 >
-                  <!-- Photo with Gradient Background - Same size as Assistant Professors -->
+                  <!-- Photo with Gradient Background - Same size as Professors -->
                   <div class="relative pt-2 flex justify-center">
                     <div class="absolute inset-0 h-1/2 bg-gradient-to-r from-blue-600 to-indigo-600"></div>
                     <div class="relative">
@@ -313,9 +313,9 @@
               </div>
             </div>
 
-            <!-- Assistant Professors -->
+            <!-- Professors -->
             <div>
-              <h3 class="text-2xl font-bold text-center mb-8 text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-indigo-700">Assistant Professors</h3>
+              <h3 class="text-2xl font-bold text-center mb-8 text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-indigo-700">Professors</h3>
               <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
                 <div 
                   v-for="staff in department.faculty.assistant_professors" 
@@ -729,7 +729,7 @@ export default {
     border-color: #2563eb;
   }
   
-  /* HOD card styling - Fixed size to match Assistant Professors */
+  /* HOD card styling - Fixed size to match Professors */
   .hod-card {
     min-height: 380px; /* Same as faculty-card */
     max-width: 320px; /* Fixed width for consistency */

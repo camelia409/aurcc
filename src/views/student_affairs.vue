@@ -58,9 +58,9 @@
                 <h2 class="mobile-text-lg sm:mobile-text-xl lg:mobile-text-2xl xl:mobile-text-3xl text-white font-bold text-center">Description</h2>
               </div>
               <div class="p-4 sm:p-6 md:p-8">
-                <ul class="list-disc ml-4 sm:ml-5 space-y-2 mobile-text-sm lg:mobile-text-base text-gray-700">
-                  <li v-for="(item, index) in content.description" :key="index">{{ item }}</li>
-                </ul>
+                <div class="space-y-2 mobile-text-sm lg:mobile-text-base text-gray-700">
+                  <p v-for="(item, index) in content.description" :key="index">{{ item }}</p>
+                </div>
               </div>
             </div>
           </div>

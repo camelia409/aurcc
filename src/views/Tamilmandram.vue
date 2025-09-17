@@ -69,16 +69,13 @@
           <h2 class="mobile-text-lg sm:mobile-text-xl lg:mobile-text-2xl xl:mobile-text-3xl text-[#fdb827] font-bold text-center bg-[#23120b] p-3 sm:p-4 rounded-t-lg animate-fadeInUp">
             பொறுப்பாளர்
           </h2>
-          <div class="p-4 sm:p-6 mobile-grid gap-4">
-            <div class="mobile-card bg-gray-200 rounded-lg p-4 sm:p-6 shadow-sm animate-fadeIn delay-2s">
-              <h3 class="mobile-text-base lg:mobile-text-lg xl:mobile-text-xl font-semibold">அவைத்தலைவர்</h3>
-              <p class="mobile-text-sm lg:mobile-text-base xl:mobile-text-lg text-gray-700">பெயர்: {{ data.பொறுப்பாளர்.அவைத்தலைவர்.பெயர் }}</p>
-              <p class="mobile-text-sm lg:mobile-text-base xl:mobile-text-lg text-gray-700">மின்னஞ்சல்: {{ data.பொறுப்பாளர்.அவைத்தலைவர்['அவர்களின் மின்னஞ்சல்'] }}</p>
-            </div>
-            <div class="mobile-card bg-gray-200 rounded-lg p-4 sm:p-6 shadow-sm animate-fadeIn delay-2s">
-              <h3 class="mobile-text-base lg:mobile-text-lg xl:mobile-text-xl font-semibold">ஒருங்கிணைப்பாளர்</h3>
-              <p class="mobile-text-sm lg:mobile-text-base xl:mobile-text-lg text-gray-700">பெயர்: {{ data.பொறுப்பாளர்.ஒருங்கிணைப்பாளர்.பெயர் }}</p>
-              <p class="mobile-text-sm lg:mobile-text-base xl:mobile-text-lg text-gray-700">மின்னஞ்சல்: {{ data.பொறுப்பாளர்.ஒருங்கிணைப்பாளர்['அவர்களின் மின்னஞ்சல்'] }}</p>
+          <div class="p-4 sm:p-6 flex justify-center">
+            <div class="bg-gray-200 rounded-lg p-4 sm:p-6 shadow-sm animate-fadeIn delay-2s max-w-md w-full">
+              <h3 class="mobile-text-base lg:mobile-text-lg xl:mobile-text-xl font-semibold text-center mb-3">அவைத்தலைவர்</h3>
+              <div class="space-y-2">
+                <p class="mobile-text-sm lg:mobile-text-base xl:mobile-text-lg text-gray-700"><span class="font-medium">பெயர்:</span> {{ data.பொறுப்பாளர்.அவைத்தலைவர்.பெயர் }}</p>
+                <p class="mobile-text-sm lg:mobile-text-base xl:mobile-text-lg text-gray-700"><span class="font-medium">மின்னஞ்சல்:</span> {{ data.பொறுப்பாளர்.அவைத்தலைவர்['அவர்களின் மின்னஞ்சல்'] }}</p>
+              </div>
             </div>
           </div>
         </div>

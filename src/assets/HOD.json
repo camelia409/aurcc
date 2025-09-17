@@ -1,12 +1,17 @@
 {
     "departments": [
       {
-        "name": "Dr. Manisekaran S V",
+        "name": "Dr. M. Saravanakumar",
+        "department": "MBA",
+        "photo": "Dean.webp"
+      },
+      {
+        "name": "Dr. S. V. Manisekaran",
         "department": "CSE",
         "photo": "mani.webp"
       },
       {
-        "name": "Dr. Saravanakumar S",
+        "name": "Dr. S. Saravanakumar",
         "department": "EEE",
         "photo": "Saravanakumar-S.webp"
       },
@@ -20,11 +25,7 @@
         "department": "MECH",
         "photo": "sooryaprakash.webp"
       },
-      {
-        "name": "Dr. Subha M V",
-        "department": "MBA",
-        "photo": "subha.webp"
-      },
+      
       {
         "name": "Dr. S. Mahalakshmi",
         "department": "Science and Humanities",

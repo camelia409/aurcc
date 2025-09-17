@@ -3,7 +3,7 @@
 
   "staff": [
     {
-      "name": "Dr. Jayaraman I.",
+      "name": "Dr. I. Jayaraman",
       "position": "Assistant Librarian",
       "image": "jayaram.webp"
     },
@@ -13,7 +13,7 @@
       "image": "bapitha.webp"
     },
     {
-      "name": "Mrs. P. Shobana",
+      "name": "Ms. P. Shobana",
       "position": "Support Staff",
       "image": ""
     },
@@ -23,7 +23,7 @@
       "image": ""
     },
     {
-      "name": "Mrs. S. Pandiarkkarasi",
+      "name": "Ms. S. Pandiarkkarasi",
       "position": "Support Staff",
       "image": ""
     }

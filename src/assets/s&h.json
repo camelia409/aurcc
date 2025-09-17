@@ -12,22 +12,10 @@
     ],
   
      "courses_offered":["Ph.D.,(FULL TIME and PART TIME) in English and Mathematics and need based Mathematics course to various UG , PG Programmes in the regional campus ,Coimbatore"], 
-    "facility": [
-      {
-        "name": "physics lab",
-        "description": ["State-of-the-art laboratories equipped with modern technology for practical learning."],
-        "image": "lab_facility.jpg"
-      },
-      {
-        "name": "chemistry lab",
-        "description": ["A vast collection of books, journals, and digital resources to support learning and research."],
-        "image": "library_facility.jpg"
-      }
-    ],
     "faculty": {
       "hod_desk": [
         {
-          "name": "Dr. S.N. Mahalakshmi",
+          "name": "Dr. S. N. Mahalakshmi",
           "position": "Assistant Professor and Head(i/c)",
           "department": "Department of Science and Humanities (English)",
           "email": "mahalakshmi@aurcc.ac.in",
@@ -63,7 +51,7 @@
       ],
       "assistant_professors": [
         {
-          "name": "Dr. Marshal Anthoni S",
+          "name": "Dr. S. Marshal Anthoni",
           "position": "Associate Professor",
           "department": "Department of Science & Humanities (Mathematics)",
           "email": "marshal@aurcc.ac.in",
@@ -212,7 +200,7 @@
           "image": "Renuka.webp"
         },
         {
-          "name": "Dr. Leelamani A",
+          "name": "Dr. A. Leelamani",
           "position": "Assistant Professor",
           "department": "Department of Mathematics",
           "email": "leelamani@aurcc.ac.in",
@@ -244,7 +232,7 @@
           "image": "leela.webp"
       },
       {
-          "name": "Dr. Lakshmi J",
+          "name": "Dr. J. Lakshmi",
           "position": "Assistant Professor",
           "department": "Department of Science and Humanities",
           "email": "lakshmi.ucet@gmail.com",
@@ -286,7 +274,7 @@
           "image": "lakshmi.webp"
         },
       {
-          "name": "Dr. Revathi P",
+          "name": "Dr. P. Revathi",
           "position": "Teaching Fellow",
           "department": "Department of Science and Humanities (Mathematics)",
           "email": "revmaths@gmail.com",
@@ -310,7 +298,7 @@
           "image": "revathi.webp"
       },
       {
-          "name": "Dr. Sardhar Basha S J",
+          "name": "Dr. S. J. Sardhar Basha",
           "position": "Assistant Professor",
           "department": "Department of Science and Humanities (Chemistry)",
           "email": "jsardhar@aurcc.ac.in",
@@ -349,7 +337,7 @@
           "image": "baasha.webp"
       },
       {
-          "name": "Dr. Vernold Vivin J",
+          "name": "Dr. J. Vernold Vivin",
           "position": "Assistant Professor",
           "department": "Department of Science & Humanities (Mathematics)",
           "email": "jvvivin@gmail.com",
@@ -378,7 +366,7 @@
           "image": "vivin.webp"
       },
       {
-          "name": "Dr. Bapitha L",
+          "name": "Dr. L. Bapitha",
           "position": "Assistant Professor",
           "department": "Department of Science and Humanities",
           "email": "bapithaenglish@gmail.com",
@@ -397,7 +385,7 @@
           "image": "bapitha.webp"
         },
         {
-          "name": "Mrs. Kalaivani S",
+          "name": "Ms. S. Kalaivani",
           "position": "Teaching Fellow",
           "department": "Department of Science and Humanities (Tamil)",
           "email": "mabedkalaivani@gmail.com",
@@ -431,7 +419,7 @@
           "image": "kalaivani.webp"
       },
       {
-          "name": "Ms. Kiruba B",
+          "name": "Ms. B. Kiruba",
           "position": "Teaching Fellow",
           "department": "Department of Science and Humanities (Chemistry)",
           "email": "kirunila4@gmail.com",
@@ -460,7 +448,7 @@
           "image": "kiruba.webp"
       },
       {
-          "name": "Mrs. Meena S",
+          "name": "Ms. S. Meena",
           "position": "Executive Assistant",
           "department": "Department of Science and Humanities",
           "email": "meena171976@gmail.com",

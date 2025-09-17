@@ -147,7 +147,7 @@
                 </svg>
               </div>
               <h3 class="mobile-text-lg lg:mobile-text-xl font-semibold text-gray-800 mb-2">Phone</h3>
-              <p class="mobile-text-sm lg:mobile-text-base text-gray-600">0422-2691123</p>
+              <p class="mobile-text-sm lg:mobile-text-base text-gray-600">0422-2984007</p>
               <p class="mobile-text-sm lg:mobile-text-base text-gray-600">0422-2691124</p>
             </div>
           </div>
@@ -178,7 +178,7 @@ export default {
     return {
       backgroundImage: new URL(`../assets/contact.webp`, import.meta.url).href,
       contacts: [
-        { office: "Dean's Office", number: "0422-2691123" },
+        { office: "Dean's Office", number: "0422-2984007" },
         { office: "Administrative Office", number: "0422-2691124" },
         { office: "Department of CSE", number: "0422-2691125" },
         { office: "Department of ECE", number: "0422-2691126" },
