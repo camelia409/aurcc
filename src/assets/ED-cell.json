@@ -51,30 +51,16 @@
     ],
     "office_bearers": [
   {
-    "position": "Director of CED",
-    "email": "dir_ced@annauniv.edu",
-    "name": "Dr.G.Ravikumar",
-    "organization": "Anna University",
-    "image": "ravikumar.webp"
-  },
-  {
     "position": "Coordinator",
     "email": "kanthavelkk@gmail.com",
-    "name": "Dr.K.Kanthavel",
+    "name": "Dr. K. Kanthavel",
     "organization": "ED-Cell, AURCC",
     "image": "Kanthavel.webp"
   },
   {
-    "position": "Executive Assistant (Admin)",
-    "email": "edpark.aurcc@gmail.com",
-    "name": "Mrs.S.Premalatha",
-    "organization": "ED-Cell, AURC",
-    "image": "prema.webp"
-  },
-  {
     "position": "Field Co-ordinator",
     "email": "",
-    "name": "Mr.S.Sam Jaikumar",
+    "name": "Mr. S. Sam Jaikumar",
     "organization": "Ed cell, AURCC",
     "image": "/images/edcell/jaikumar.jpg"
   }

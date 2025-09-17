@@ -52,16 +52,14 @@
             <h2 class="mobile-text-lg sm:mobile-text-xl lg:mobile-text-2xl xl:mobile-text-3xl font-bold text-white text-center">NSS Coordinators</h2>
           </div>
           <div class="p-3 sm:p-4 md:p-6 lg:p-8 xl:p-10">
-            <div class="mobile-grid gap-4 sm:gap-6 md:gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
               <div
                 v-for="coordinator in data.nss_coordinator['Office Bearers']"
                 :key="coordinator.Name"
-                class="mobile-card bg-white/80 rounded-xl shadow p-3 sm:p-4 md:p-6 border border-gray-100 flex flex-col gap-2 animate-fadeInUp"
+                class="bg-white/80 rounded-xl shadow p-4 sm:p-5 md:p-6 border border-gray-100 flex flex-col justify-center items-center text-center animate-fadeInUp min-h-[120px]"
               >
-                <h3 class="mobile-text-sm sm:mobile-text-base lg:mobile-text-lg xl:mobile-text-xl font-bold text-indigo-700">{{ coordinator.Name }}</h3>
+                <h3 class="mobile-text-sm sm:mobile-text-base lg:mobile-text-lg xl:mobile-text-xl font-bold text-indigo-700 mb-2">{{ coordinator.Name }}</h3>
                 <div class="mobile-text-sm lg:mobile-text-base text-gray-700 font-medium">{{ coordinator.Designation }}</div>
-                <div class="mobile-text-xs lg:mobile-text-sm text-gray-600">Phone: <span class="font-normal">{{ coordinator['Phone No'] !== '-' ? coordinator['Phone No'] : 'N/A' }}</span></div>
-                <div class="mobile-text-xs lg:mobile-text-sm text-gray-600">Email: <a :href="'mailto:' + coordinator['Email id']" class="text-blue-500 underline">{{ coordinator['Email id'] }}</a></div>
               </div>
             </div>
           </div>

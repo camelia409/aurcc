@@ -24,35 +24,16 @@
             <p class="mobile-text-base lg:mobile-text-lg xl:mobile-text-xl font-medium text-gray-800">{{ description }}</p>
           </div>
         </div>
-        <!-- Office Bearers Section -->
-        <div class="mobile-card bg-white/70 backdrop-blur-md rounded-2xl shadow-lg animate-fadeIn border border-gray-100">
-          <div class="bg-gradient-to-r from-blue-900 to-blue-500 py-4 sm:py-5 flex items-center justify-center gap-2 sm:gap-3 rounded-t-2xl">
-            <span class="mobile-text-lg lg:mobile-text-xl">👥</span>
-            <h2 class="mobile-text-lg sm:mobile-text-xl lg:mobile-text-2xl xl:mobile-text-3xl font-bold text-white text-center">Office Bearers</h2>
-          </div>
-          <div class="mobile-grid gap-4 sm:gap-6 md:gap-8 p-4 sm:p-6 md:p-8 lg:p-10">
-            <div v-for="bearer in officeBearers" :key="bearer['SL.NO']" class="mobile-card bg-white/80 rounded-xl shadow p-4 sm:p-6 border border-gray-100 flex flex-col gap-2 animate-fadeInUp">
-              <div class="font-bold mobile-text-base lg:mobile-text-lg text-indigo-700">{{ bearer.Name }}</div>
-              <div class="mobile-text-sm lg:mobile-text-base text-gray-700 font-medium">{{ bearer.Designation }}</div>
-              <div class="mobile-text-xs lg:mobile-text-sm text-gray-600">Department: <span class="font-normal">{{ bearer.Department }}</span></div>
-            </div>
-          </div>
-        </div>
         <!-- Coordinator Section -->
         <div class="mobile-card bg-white/70 backdrop-blur-md rounded-2xl shadow-lg animate-fadeIn border border-gray-100">
           <div class="bg-gradient-to-r from-blue-900 to-blue-500 py-4 sm:py-5 flex items-center justify-center gap-2 sm:gap-3 rounded-t-2xl">
             <span class="mobile-text-lg lg:mobile-text-xl">🎤</span>
             <h2 class="mobile-text-lg sm:mobile-text-xl lg:mobile-text-2xl xl:mobile-text-3xl font-bold text-white text-center">Coordinator</h2>
           </div>
-          <div class="p-4 sm:p-6 md:p-8 lg:p-10">
-            <div class="mobile-card bg-white/80 rounded-xl shadow p-4 sm:p-6 border border-gray-100 flex flex-col gap-2 animate-fadeInUp">
+          <div class="p-4 sm:p-6 md:p-8 lg:p-10 flex justify-center">
+            <div class="bg-white/80 rounded-xl shadow p-4 sm:p-6 border border-gray-100 flex flex-col gap-2 animate-fadeInUp max-w-md w-full text-center">
               <div class="font-bold mobile-text-base lg:mobile-text-lg text-indigo-700">{{ coordinator.Name }}</div>
               <div class="mobile-text-sm lg:mobile-text-base text-gray-700 font-medium">{{ coordinator.Designation }}</div>
-              <div class="mobile-text-xs lg:mobile-text-sm text-gray-600">Department: <span class="font-normal">{{ coordinator.Department }}</span></div>
-              <div class="mobile-text-xs lg:mobile-text-sm text-gray-600">University: <span class="font-normal">{{ coordinator.University }}</span></div>
-              <div class="mobile-text-xs lg:mobile-text-sm text-gray-600">Address: <span class="font-normal">{{ coordinator.Address }}</span></div>
-              <div class="mobile-text-xs lg:mobile-text-sm text-gray-600">Mobile: <span class="font-normal">{{ coordinator.Mobile }}</span></div>
-              <div class="mobile-text-xs lg:mobile-text-sm text-gray-600">Email: <a :href="`mailto:${coordinator.Email}`" class="text-blue-500 underline">{{ coordinator.Email }}</a></div>
             </div>
           </div>
         </div>
@@ -67,7 +48,6 @@ export default {
   data() {
     return {
       description: data.description,
-      officeBearers: data.office_bearers,
       coordinator: data.Coordinator
     };
   }

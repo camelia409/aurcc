@@ -2,7 +2,7 @@
   <div class="bg-indigo-100 mx-auto py-8 sm:py-12 lg:py-14 px-3 sm:px-4 md:px-6 lg:px-9">
     <h1 class="mobile-text-lg sm:mobile-text-xl lg:mobile-text-2xl xl:mobile-text-3xl font-serif font-semibold mb-3 sm:mb-4 md:mb-6 lg:mb-8 text-center">University Administration</h1>
     <div class="max-w-7xl mx-auto flex flex-col gap-8 sm:gap-10 lg:gap-12">
-      <div class="mobile-grid gap-6 sm:gap-8 font-serif">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 font-serif">
         <div 
           v-for="member in administrator" 
           :key="member.name" 

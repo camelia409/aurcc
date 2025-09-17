@@ -78,7 +78,7 @@
         title="Staff"
         icon="👥"
       >
-        <div class="mobile-grid gap-6 sm:gap-8">
+        <div class="staff-grid">
           <StaffCard
             v-for="member in data.office_bearers"
             :key="member.email"

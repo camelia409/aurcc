@@ -87,7 +87,7 @@
         icon="👥"
       >
         <div class="mb-6 sm:mb-8 mobile-text-base lg:mobile-text-lg text-gray-700 text-center">Meet our dedicated faculty, committed to supporting your distance learning journey.</div>
-        <div class="mobile-grid gap-6 sm:gap-8 lg:gap-10">
+        <div class="staff-grid">
           <StaffCard
             v-for="staff in data.staff"
             :key="staff.name"

@@ -79,7 +79,7 @@
           },
           {
             "S.No": 6,
-            "Courses Offered": "B.E. Electronics Engineering(VLSI Design and Technology)",
+            "Courses Offered": "B.E. ELECTRONICS ENGINEERING (VLSI DESIGN AND TECHNOLOGY)",
             "Intake": 60,
             "Seats": {
               "OC": 16,
@@ -132,14 +132,9 @@
       },
       "staff": [
         {
-          "name": "Dr. Suganthalakshmi T",
+          "name": "Dr. T. Suganthalakshmi",
           "position": "TFC-62 Coordinator",
           "image": "suganthalakshmi.webp"
-        },
-        {
-          "name": "Dr. M. Rathinasamy",
-          "position": "Deputy Manager (Finance)",
-          "image": "rathinasamy.webp"
         }
       ],
       "contact_us": {

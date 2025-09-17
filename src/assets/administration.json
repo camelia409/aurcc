@@ -3,35 +3,35 @@
     "ESTABLISHMENT_SECTION": {
       "DEPUTY_MANAGER": [
         {
-          "name": "A.Sundararajan",
+          "name": "Mr. A. Sundararajan",
           "position": "Deputy Manager(Finance)",
           "image": "sundararajan.webp"
         }
       ],
       "STAFFS": [
         {
-          "name": "C.Ramasamy",
+          "name": "Mr. C. Ramasamy",
           "position": "Executive Assistant(Finance)",
           "image": "C.Ramasamy.webp"
         },
         {
-          "name": "R.Bharathi",
+          "name": "Ms. R. Bharathi",
           "position": "Executive Assistant(Admin)",
           "image": "bharathiragupathi.webp"
         },
         {
-          "name": "M.S.Murugesan",
+          "name": "Mr. M. S. Murugesan",
           "position": "Executive Assistant(Admin)",
           "image": "murugesanmurugesan.webp"
         },
        
         {
-          "name": "A.Marimuthu",
+          "name": "Mr. A. Marimuthu",
           "position": "Professional Assistant-II",
           "image": "muthumari.webp"
         },
         {
-          "name": "Ganga",
+          "name": "Ms. Ganga",
           "position": "Professional Assistant",
           "image": ""
         }
@@ -39,43 +39,43 @@
     }
   },
   "GENERAL ADMINISTRATION-II": {
-    "PURCHASE_SECTION": {
+    "Purchase and Finance Section": {
       "DEPUTY_MANAGER": [
         {
-          "name": "G.Punniyamoorthy",
+          "name": "Mr. G. Punniyamoorthy",
           "position": "Deputy Manager(Finance)",
           "image": "gurupunniyamoorthy.webp"
         }
       ],
       "STAFFS": [
         {
-          "name": "S.Murugavel",
+          "name": "Mr. S. Murugavel",
           "position": "Executive Assistant(Admin)",
           "image": "murugavelsoundararajan.webp"
         },
         {
-          "name": "S.Bhuvaneswari",
+          "name": "Ms. S. Bhuvaneswari",
           "position": "Executive Assistant(Admin)",
           "image": "S.Bhuvana.webp"
         },
         {
-          "name": "R.Deepa",
+          "name": "Ms. R. Deepa",
           "position": "Executive Assistant",
           "image": ""
         },
         {
-          "name": "Premalatha",
+          "name": "Ms. Premalatha",
           "position": "Executive Assistant",
           "image": ""
         },
        
         {
-          "name": "K.Yokanayaki",
+          "name": "Ms. K. Yokanayaki",
           "position": "",
           "image": "yoganayaki.webp"
         },
         {
-          "name": "G.Chinnaraj",
+          "name": "Mr. G. Chinnaraj",
           "position": "",
           "image": "chinna.webp"
         }
@@ -86,7 +86,7 @@
     "STUDENT_SECTION": {
       "DEPUTY_MANAGER": [
         {
-          "name": "Dr.M.Rathinasamy",
+          "name": "Dr. M. Rathinasamy",
           "position": "Deputy Manager(Finance)",
           "email": "win.rrv@gmail.com",
           "image": "rathinasamy.webp"
@@ -94,33 +94,33 @@
       ],
       "STAFFS": [
         {
-          "name": "N.Sathyabama",
+          "name": "Ms. N. Sathyabama",
           "position": "Executive Assistant(Admin)",
           "image": "SATHYABAMA.webp"
         },
         {
-          "name": "S.Usha",
+          "name": "Ms. S. Usha",
           "position": "Executive Assistant(Finance)",
           "image": "ushaaAbi.webp"
         },
         {
-          "name": "V.Sureshkumar",
+          "name": "Mr. V. Sureshkumar",
           "position": "Executive Assistant",
           "image": "V.Sureshkumar.webp"
         },
         {
-          "name": "Dr.C.Neelaveni",
+          "name": "Dr. C. Neelaveni",
           "position": "Assistant",
           "image": "neelavenichinnaswamy.webp"
         },
        
         {
-          "name": "P.Dhanasekaran",
+          "name": "Mr. P. Dhanasekaran",
           "position": "Professional Assistant-II",
           "image": "dhanasekarpalaniswamy.webp"
         },
         {
-          "name": "V.Shanthi",
+          "name": "Ms. V. Shanthi",
           "position": "Clerical Assistant",
           "image": "saidharssini.webp"
         }

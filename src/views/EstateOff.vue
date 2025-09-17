@@ -41,7 +41,7 @@
         title="Staff"
         icon="👥"
       >
-        <div class="mobile-grid gap-6 sm:gap-8">
+        <div class="staff-grid">
           <StaffCard
             v-for="staff in data.office_bearers"
             :key="staff.email_id || staff.name"

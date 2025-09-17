@@ -11,14 +11,14 @@
             <span class="block w-24 sm:w-32 h-1 rounded-full bg-gradient-to-r from-blue-400 via-blue-600 to-indigo-400 animate-glow-bar"></span>
           </div>
           <div v-for="(subsection, subsectionName) in section" :key="subsectionName" class="mb-6 sm:mb-8">
-            <h3 class="mobile-text-base lg:mobile-text-lg xl:mobile-text-2xl font-semibold mb-3 sm:mb-4 text-center font-serif tracking-wide uppercase">{{ subsectionName.replace('_', ' ') }}</h3>
-            <div v-if="subsection.DEPUTY_MANAGER" class="mb-6 sm:mb-8">
-              <h4 class="mobile-text-base lg:mobile-text-lg xl:mobile-text-2xl font-semibold mb-2 text-center font-serif tracking-wide">Deputy Manager</h4>
-              <div class="flex justify-center">
+            <h3 class="mobile-text-base lg:mobile-text-lg xl:mobile-text-2xl font-semibold mb-3 sm:mb-4 text-center font-serif tracking-wide" :class="subsectionName === 'Purchase and Finance Section' ? '' : 'uppercase'">{{ subsectionName.replace('_', ' ') }}</h3>
+            <div v-if="subsection.DEPUTY_MANAGER" class="mb-8 sm:mb-12">
+              <h4 class="mobile-text-base lg:mobile-text-lg xl:mobile-text-2xl font-semibold mb-2 text-center font-serif tracking-wide">Deputy Manager (Finance)</h4>
+              <div class="flex justify-center gap-8 sm:gap-12 md:gap-16">
                 <div
                   v-for="member in subsection.DEPUTY_MANAGER"
                   :key="member.name"
-                  class="admin-card mobile-card bg-white/60 backdrop-blur-md rounded-2xl shadow-xl overflow-hidden flex flex-col items-center border border-blue-200 transition-all duration-300 w-full max-w-[350px]"
+                  class="admin-card mobile-card bg-white/60 backdrop-blur-md rounded-2xl shadow-xl overflow-hidden flex flex-col items-center border border-blue-200 transition-all duration-300 w-80 h-96"
                 >
                   <div class="w-full flex justify-center pt-4 sm:pt-6">
                     <div class="w-28 h-28 sm:w-32 sm:h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-blue-400 shadow-lg bg-white flex items-center justify-center">
@@ -32,20 +32,20 @@
                       <span v-else class="mobile-text-3xl sm:mobile-text-4xl lg:mobile-text-5xl text-blue-300">👤</span>
                     </div>
                   </div>
-                  <div class="w-full bg-gradient-to-r from-blue-900 to-blue-500 py-2 sm:py-3 px-2 flex flex-col items-center">
-                    <h2 class="mobile-text-sm lg:mobile-text-base xl:mobile-text-xl font-bold text-white font-sans tracking-wide">{{ member.name }}</h2>
-                    <p class="mobile-text-xs lg:mobile-text-sm xl:mobile-text-base text-blue-100 font-sans">{{ member.position || 'Position not available' }}</p>
+                  <div class="w-full bg-gradient-to-r from-blue-900 to-blue-500 py-3 sm:py-4 px-3 flex flex-col items-center justify-center flex-grow">
+                    <h2 class="mobile-text-sm lg:mobile-text-base xl:mobile-text-xl font-bold text-white font-sans tracking-wide text-center mb-1">{{ member.name }}</h2>
+                    <p class="mobile-text-xs lg:mobile-text-sm xl:mobile-text-base text-blue-100 font-sans text-center leading-tight">{{ member.position || 'Position not available' }}</p>
                   </div>
                 </div>
               </div>
             </div>
-            <div v-if="subsection.STAFFS" class="mb-6 sm:mb-8">
+            <div v-if="subsection.STAFFS" class="mb-8 sm:mb-12">
               <h4 class="mobile-text-base lg:mobile-text-lg xl:mobile-text-2xl font-semibold mb-2 text-center font-serif tracking-wide">Staff Members</h4>
-              <div class="mobile-grid gap-6 sm:gap-8 justify-items-center">
+              <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-12 md:gap-16 justify-items-center">
                 <div
                   v-for="member in subsection.STAFFS"
                   :key="member.name"
-                  class="admin-card mobile-card bg-white/60 backdrop-blur-md rounded-2xl shadow-xl overflow-hidden flex flex-col items-center border border-blue-200 transition-all duration-300"
+                  class="admin-card mobile-card bg-white/60 backdrop-blur-md rounded-2xl shadow-xl overflow-hidden flex flex-col items-center border border-blue-200 transition-all duration-300 w-80 h-96"
                 >
                   <div class="w-full flex justify-center pt-4 sm:pt-6">
                     <div class="w-28 h-28 sm:w-32 sm:h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-blue-400 shadow-lg bg-white flex items-center justify-center">
@@ -59,9 +59,9 @@
                       <span v-else class="mobile-text-3xl sm:mobile-text-4xl lg:mobile-text-5xl text-blue-300">👤</span>
                     </div>
                   </div>
-                  <div class="w-full bg-gradient-to-r from-blue-900 to-blue-500 py-2 sm:py-3 px-2 flex flex-col items-center">
-                    <h2 class="mobile-text-sm lg:mobile-text-base xl:mobile-text-xl font-bold text-white font-sans tracking-wide">{{ member.name }}</h2>
-                    <p class="mobile-text-xs lg:mobile-text-sm xl:mobile-text-base text-blue-100 font-sans">{{ member.position || 'Position not available' }}</p>
+                  <div class="w-full bg-gradient-to-r from-blue-900 to-blue-500 py-3 sm:py-4 px-3 flex flex-col items-center justify-center flex-grow">
+                    <h2 class="mobile-text-sm lg:mobile-text-base xl:mobile-text-xl font-bold text-white font-sans tracking-wide text-center mb-1">{{ member.name }}</h2>
+                    <p class="mobile-text-xs lg:mobile-text-sm xl:mobile-text-base text-blue-100 font-sans text-center leading-tight">{{ member.position || 'Position not available' }}</p>
                   </div>
                 </div>
               </div>

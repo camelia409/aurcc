@@ -18,7 +18,6 @@
         <div class="w-full bg-gradient-to-r from-blue-900 to-blue-500 py-2 sm:py-3 px-2 flex flex-col items-center mt-4 sm:mt-6">
           <h2 class="mobile-text-sm lg:mobile-text-base xl:mobile-text-xl font-bold text-white font-sans tracking-wide">{{ staffMember.name }}</h2>
           <p class="mobile-text-xs lg:mobile-text-sm xl:mobile-text-base text-blue-100 font-sans">{{ staffMember.position || 'Position not available' }}</p>
-          <p class="mobile-text-xs lg:mobile-text-sm xl:mobile-text-base text-blue-100 font-sans">{{ staffMember.email || 'Email not available' }}</p>
         </div>
       </div>
     </div>

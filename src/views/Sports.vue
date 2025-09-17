@@ -51,16 +51,6 @@
             </div>
           </div>
         </div>
-        <!-- Contact Us Card -->
-        <div class="mobile-card bg-white/70 backdrop-blur-md rounded-2xl shadow-lg animate-fadeIn border border-gray-100">
-          <div class="bg-gradient-to-r from-blue-900 to-blue-500 py-4 sm:py-5 flex items-center justify-center gap-2 sm:gap-3 rounded-t-2xl">
-            <span class="mobile-text-lg lg:mobile-text-xl">📞</span>
-            <h2 class="mobile-text-lg lg:mobile-text-xl xl:mobile-text-2xl font-bold text-white text-center">Contact Us</h2>
-          </div>
-          <div class="p-4 sm:p-6 md:p-8 lg:p-10">
-            <p class="mobile-text-base lg:mobile-text-lg xl:mobile-text-xl font-medium text-gray-800 whitespace-pre-line">{{ data.contact_us.Address }}</p>
-          </div>
-        </div>
       </div>
     </section>
   </main>

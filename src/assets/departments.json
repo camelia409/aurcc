@@ -685,7 +685,7 @@
 		"faculty": {
 			"hod_desk": [
 			  {
-				"name": "Dr. Manisekaran S V",
+				"name": "Dr. S. V. Manisekaran",
 				"image": "mani.webp",
 				"position": "Assistant Professor and Head(i/c)",
 				"email": "manisekaran@aurcc.ac.in",
@@ -748,7 +748,7 @@
 			],
 			"assistant_professors": [
 			  {
-				"name": "Dr. Preethi J",
+				"name": "Dr. J. Preethi",
 				"image": "preethi.webp",
 				"position": "Assistant Professor (Senior Grade)",
 				"departments": ["Department of Computer Science and Engineering", "Placement Cell", "DGATE Cell"],
@@ -823,7 +823,7 @@
 				"clg-email": "marikkannu@aurcc.ac.in"
 			  },
 			  {
-				"name": "Mr. Prabhu D",
+				"name": "Mr. D. Prabhu",
 				"image": "prabhu.webp",
 				"position": "Assistant Professor (Senior Grade)",
 				"email": "prabhu2kraj@gmail.com",
@@ -912,7 +912,7 @@
                 }
             },
             {
-                "name": "Dr. Fareena N",
+                "name": "Dr. N. Fareena",
 				"image": "fareena2.webp",
                 "position": "Assistant Professor",
                 "email": "fareena.aurcc@gmail.com",
@@ -955,7 +955,7 @@
 		  },		 
 		"admin_staff":[
 				{
-                "name": "Dr.Thirunavukkarasu E S",
+                "name": "Dr. E. S. Thirunavukkarasu",
                 "position": "Executive Assistant ",
                 "email": "arasuannauniversity@gmail.com",
 				"image":"thiru.webp",
@@ -968,7 +968,7 @@
 						]
             },
 			{
-                "name": "Mrs.Usha L",
+                "name": "Ms. L. Usha",
                 "position": "Executive Assistant ",
                 "email": "cseaurcc@gmail.com",
 				"image":"usha.webp",
@@ -981,7 +981,7 @@
 						]
             },
 			{
-                "name": "Mr Babu Magendra K S",
+                "name": "Mr. K. S. Babu Magendra",
                 "position": "System Administrator",
                 "email": "babu@aurcc.ac.in",
 				"image":"babhu.webp",
@@ -994,7 +994,7 @@
 						]
             },
 			{
-                "name": "Mr Sasikumar T",
+                "name": "Mr. T. Sasikumar",
                 "position": " Professional Assistant III",
                 "email": "thirusasi12@gmail.com",
 				"image":"sasi.webp",
@@ -1007,7 +1007,7 @@
 						]
             },
 			{
-                "name": "Mrs Subashini P ",
+                "name": "Ms. P. Subashini",
                 "position": " Professional Assistant II",
                 "email": "subashini.p02@gmail.com",
 				"image":"suba.webp",
@@ -1020,7 +1020,7 @@
 						]
             },
 			{
-                "name": "Mr Benedict S",
+                "name": "Mr. S. Benedict",
                 "position": " Professional Assistant I",
                 "email": "benedict308.dce@gmail.com",
 				"image":"BENEDICT.webp",
@@ -1033,7 +1033,7 @@
 						]
             },
 			{
-                "name": "Mr Ramkumar A",
+                "name": "Mr. A. Ramkumar",
                 "position": " Peon",
                 "email": "ramdanvanth@gmail.com",
 				"image":"ram.webp",
@@ -1059,7 +1059,7 @@
 		"Provide service to society through contribution of ideas for projects and carrying out research for the benefit and development of the community.",
 		"Foster freedom of opinion for sharing knowledge and information."
 		],
-		"courses_offered":["B.E.Mechanical Engineering (FULL TIME)","M.E.Engineering Design(FULL TIME"],
+		"courses_offered":["B.E.Mechanical Engineering (FULL TIME)"],
 		"events": [
 			{
 			"name": "Design for Manufacturing and Assembly (DFMA)",
@@ -1143,7 +1143,7 @@
 			],
 			"assistant_professors": [
 				{
-				  "name": "Dr. Sakthivel M",
+				  "name": "Dr. M. Sakthivel",
 				  "email": "sakthi_vel_m@yahoo.com",
 				  "position": "Assistant Professor",
 				  "image" : "sakthivel.m.webp",
@@ -1169,7 +1169,7 @@
 				  }
 				},
 				{
-					"name": "Dr. Sathiyamoorthy R",
+					"name": "Dr. R. Sathiyamoorthy",
 					"email": "rsathiyamoorthy@ymail.com",
 					"position": "Assistant Professor",
 					"image" : "sathiyamoorthy.webp",
@@ -1210,7 +1210,7 @@
 					}
 				  },
 				  {
-					"name": "Dr. Bhagavathi Pushpa T",
+					"name": "Dr. T. Bhagavathi Pushpa",
 					"email": "tbhagavathi@aurcc.ac.in",
 					"position": "Assistant Professor",
 					"image" : "bhagavathi.webp",
@@ -1273,7 +1273,7 @@
 					}
 				},
 				{
-				  "name": "Dr. Kanthavel K",
+				  "name": "Dr. K. Kanthavel",
 				  "email": "kandavelkk@gmail.com",
 				  "position": "Assistant Professor",
 				  "image" : "Kanthavel.webp",
@@ -1300,7 +1300,7 @@
 				},
 				
 				{
-				  "name": "Dr. Balasubramanian M",
+				  "name": "Dr. M. Balasubramanian",
 				  "email": "annaunivbala76@gmail.com",
 				  "position": "Assistant Professor",
 				  "image" : "balasubramanian m.webp",
@@ -1327,7 +1327,7 @@
 				},
 				
 				{
-					"name": "Dr. Raja K",
+					"name": "Dr. K. Raja",
 					"email": "rajagce@gmail.com",
 					"position": "Assistant Professor",
 					"image" : "raja.webp",
@@ -1530,7 +1530,7 @@
 					"name": "Dr. M. Saravanakumar",
 					"image": "Dean.webp",
 					"email": "saravanakumar.1968@gmail.com",
-					"position": "Associate Professor & Dean (i/c)",
+					"position": "Associate Professor and Dean (i/c)",
 					"education": [
 					{
 					  "degree": "MBA",
@@ -1596,7 +1596,7 @@
 				  },
 				  
 			  {
-				"name": "Dr. Subha M V",
+				"name": "Dr. M. V. Subha",
 				"image": "subha.webp",
 				"email": "subhamv@aurcc.ac.in",
 				"position": "Associate Professor",
@@ -1635,51 +1635,6 @@
 				  "additional_info": "https://drive.google.com/open?id=1G0HK15KlSlt-rhKJ7MlhSoFxWoTFCHzX"
 				}
 			  },
-				  {
-					"name": "Dr. C. Muthuvelayutham",
-					"image": "muthuvelay.webp",
-					"email": "drmuthu2009@gmail.com",
-					"position": "Associate Professor",
-					"education": [
-					{
-					  "degree": "MBA",
-					  "year": 1996,
-					  "institution": ""
-					},{
-					  "degree": "M.L.M.",
-					  "year": 1996,
-					  "institution": ""
-					},
-					{
-						"degree": "M.Phil.",
-						"year": 1996,
-						"institution": ""
-					  },
-					{
-					  "degree": "Ph.D.",
-					  "year": 1996,
-					  "institution": ""
-					},
-					{
-						"degree": "FTP.",
-						"year": 1996,
-						"institution": ""
-					  },
-					  {
-						"degree": "IIM(A)",
-						"year": 1996,
-						"institution": ""
-					  }],
-					"department": "Department of Management Studies",
-					"experience": "",
-					"research_interests": [
-					  "HR and Marketing"
-					],
-					"current_position": "Associate Professor",
-					"links": {
-					  "scholar_profile": ""
-					}
-				  },
 				
 				  {
 					"name": "Dr. J. Venkatesh",
@@ -1823,7 +1778,7 @@
 				  },
 
 				  {
-					"name": "Dr. PREMAPRIYA M.S",
+					"name": "Dr. M. S. Premapriya",
 					"image": "prema.webp",
 					"email": "premapriya@aurcc.ac.in",
 					"position": "Assistant Professor",
@@ -1859,7 +1814,7 @@
 				 
 				   
 				{
-					"name": "Dr. Srividhya S",
+					"name": "Dr. S. Srividhya",
 					"image": "srividhya.webp",
 					"email": "srividhya@aurcc.ac.in",
 					"position": "Assistant Professor",
@@ -1960,7 +1915,7 @@
 				  },
 				 
 				{
-				  "name": "Dr. Suganthalakshmi T",
+				  "name": "Dr. T. Suganthalakshmi",
 				  "image": "suganthalakshmi.webp",
 				  "email": "sugi1971@rediffmail.com",
 				  "position": "Assistant Professor",
@@ -1987,7 +1942,7 @@
 				  "department": "Department of Management Studies",
 				  "experience": "25 years",
 				  "research_interests": ["Enterprise Resourse Planning","Information System"],
-				  "current_position": "Assistant Professor, Anna University Regional campus Coimbatore (2008 to present)",
+				  "current_position": "Assistant Professor, Anna University Regional Campus Coimbatore (2008 to present)",
 				  "previous_positions": [
 					"Lecturer in MCA at RVS College of Arts and Science (1999 to 2004)",
 					"Lecturer in MBA at RVSIMSR (2004 to 2008)"
@@ -2003,7 +1958,7 @@
 			},
 			"admin_staff":[
 				{
-                "name": "Dr Gobalakrishnan V",
+                "name": "Dr. V. Gobalakrishnan",
                 "position": "Executive Assistant ",
                 "email": "gobalakrishnanannauniversity@gmail.com",
                 "education": [
@@ -2780,7 +2735,7 @@
           "faculty": {
 			"hod_desk": [
 				{
-					"name": "Dr Saravanakumar S",
+					"name": "Dr. S. Saravanakumar",
 					"image": "Saravanakumar-S.webp",
 					"position": "Head of the Department",
 					"email": "ssk@aurcc.ac.in",
@@ -2841,7 +2796,7 @@
 			],
 			"assistant_professors": [	
 				{
-					"name": "Dr T Aruldoss Albert Victoire",
+					"name": "Dr. T. Aruldoss Albert Victoire",
 					"image":"Aruldoss-Albert.webp",
 					"position": "Associate Professor",
 					"email": "albert@aurcc.ac.in",
@@ -2932,7 +2887,7 @@
 					"drive_link": ""
 				},		
 				{
-					"name": "Dr R Suresh Kumar",
+					"name": "Dr. R. Suresh Kumar",
 					"image":"SureshkumarEEE.webp",
 					"position": "Assistant Professor",
 					"email": "sureshkumarauc@gmail.com",
@@ -2968,7 +2923,7 @@
 					"drive_link": ""
 				},		
 				{
-					"name": "Dr M Yuvaraju",
+					"name": "Dr. M. Yuvaraju",
 					"image":"Yuvaraju.webp",
 					"position": "Assistant Professor",
 					"email": "rajaucbe@gmail.com",
@@ -3014,7 +2969,7 @@
 					"drive_link": ""
 				},	
 				{
-					"name": "Dr R Vijayabhasker",
+					"name": "Dr. R. Vijayabhasker",
 					"image":"VB.webp",
 					"position": "Assistant Professor",
 					"email": "kaviji04@gmail.com",
@@ -3055,7 +3010,7 @@
 					"drive_link": ""
 				},	
 				{
-					"name": "Dr M Newlin Rajkumar",
+					"name": "Dr. M. Newlin Rajkumar",
 					"image":"newlin.webp",
 					"position": "Assistant Professor",
 					"email": "newlin_rajkumar@yahoo.co.in",
@@ -3096,7 +3051,7 @@
 					"drive_link": ""
 				},	
 				{
-					"name": "Dr KIRUBADEVI S",
+					"name": "Dr. S. Kirubadevi",
 					"image":"Kiruba-Devi.webp",
 					"position": "Assistant Professor (Senior Grade)",
 					"email": "kirubadevi@aurcc.ac.in",
@@ -3152,7 +3107,7 @@
 					}
 				},
 				{
-					"name": "Dr Sumathi S",
+					"name": "Dr. S. Sumathi",
 					"image":"SUMATHI-S.webp",
 					"position": "Assistant Professor",
 					"email": "sumathi@aurcc.ac.in",
@@ -3200,7 +3155,7 @@
 					}
 				},
 				{
-					"name": "Dr L.Sheela",
+					"name": "Dr. L. Sheela",
 					"image":"sheela.webp",
 					"position": "Assistant Professor",
 					"email": "sheelal@aurcc.ac.in",
@@ -3351,7 +3306,7 @@
 			"To impart quality education and technical skills to enable the students to satisfy the industrial requirements.",
 			"To achieve cent percent placement."
 		  ],
-		"courses_offered":["B.E.Electronics and Communication Engineering (FULL TIME)","B.E.Electronics Engineering(VLSI Design and Technology)(Full Time)"],
+		"courses_offered":["B.E.Electronics and Communication Engineering (FULL TIME)","B.E. ELECTRONICS ENGINEERING (VLSI DESIGN AND TECHNOLOGY)"],
 		"events": [
 
 		  {
@@ -4366,7 +4321,7 @@
 				  
 				},
 				{
-				  "name": "Dr. Gomathi R",
+					"name": "Dr. R. Gomathi",
 				  "image": "R.Gomathi.webp",
 				  "position": "Assistant Professor (Senior Grade)",
 				  "email": "gomathiucedgl@gmail.com",
@@ -4431,7 +4386,7 @@
 				  }
 				},
 				{
-					"name": "Dr. Jeevagan Navukarasu Lenin G",
+					"name": "Dr. G. Jeevagan Navukarasu Lenin",
 					"image": "Jeevagan-Navukarasu.webp",
 					"position": "Assistant Professor (Senior Grade)",
 					"email": "gjeevagan@aurcc.ac.in",
@@ -4481,7 +4436,7 @@
 					}
 				},
 				{
-				  "name": "Dr. Kandasamy K",
+				  "name": "Dr. K. Kandasamy",
 				  "image": "kandasamy-Samy.webp",
 				  "position": "Teaching Fellow",
 				  "email": "kkandasamy.03@gmail.com",
@@ -4540,7 +4495,7 @@
 			},
 			"admin_staff":[
 				{
-								"name": "Mrs. L. Thamaraiselvi L",
+								"name": "Ms. L. Thamaraiselvi",
 								"position": "Executive Assistant ",
 								"email": "athams.money@gmail.com",
 								"image":"thamarai.webp",
@@ -4555,7 +4510,7 @@
 				
 							},
 				{
-								"name": "Mr. Elavarasan L",
+								"name": "Mr. L. Elavarasan",
 								"position": "Lab Technician ",
 								"email": "kmelavarasan@gmail.com",
 								"image":"elavarasan.webp",
@@ -4589,7 +4544,7 @@
 								]
 							},
 				{
-								"name": "Mr. Ravikumar S ",
+								"name": "Mr. S. Ravikumar",
 								"position": " Office Assistant",
 								"email": "",
 								"image":"ravikumar.webp",

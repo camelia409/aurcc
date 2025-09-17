@@ -86,45 +86,8 @@
              </div>
            </div>
 
-          <!-- Courses Offered Section -->
-          <div id="courses-offered" class="section-container bg-white">
-            <h2 class="mobile-text-xl sm:mobile-text-2xl lg:mobile-text-3xl xl:mobile-text-4xl font-bold text-center mb-8 sm:mb-10">
-              <span class="bg-gradient-to-r from-indigo-600 to-blue-500 bg-clip-text text-transparent">Courses Offered</span>
-            </h2>
-            <div class="max-w-6xl mx-auto">
-              <div class="section-card">
-                <div class="bg-gradient-to-r from-indigo-600 to-blue-500 py-6 sm:py-8">
-                  <h3 class="mobile-text-lg sm:mobile-text-xl lg:mobile-text-2xl xl:mobile-text-3xl text-white font-bold text-center">Programs Available</h3>
-                </div>
-                <div class="section-content">
-                  <div :class="{
-                    'grid grid-cols-1 md:grid-cols-2 gap-6': department.courses_offered.length > 1,
-                    'flex justify-center': department.courses_offered.length === 1
-                  }">
-                    <div v-for="(course, index) in department.courses_offered" :key="index" 
-                         :class="{
-                           'bg-gradient-to-r from-blue-50 to-indigo-50 p-4 sm:p-6 rounded-xl border border-blue-200 hover:border-blue-300 transition-all duration-300 hover:shadow-md': true,
-                           'max-w-md': department.courses_offered.length === 1
-                         }">
-                       <div class="flex items-start space-x-2 sm:space-x-3">
-                         <div class="flex-shrink-0 w-6 h-6 sm:w-8 sm:h-8 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full flex items-center justify-center">
-                           <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 sm:h-5 sm:w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 0z" />
-                           </svg>
-                         </div>
-                         <div class="flex-1">
-                           <h4 class="mobile-text-base lg:mobile-text-lg font-semibold text-gray-800 mb-1 sm:mb-2">{{ course }}</h4>
-                           <p class="mobile-text-xs lg:mobile-text-sm text-gray-600">Full-time program with comprehensive curriculum</p>
-                         </div>
-                       </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
 
-                     <div id="facility" class="section-container bg-white">
+                     <!-- <div id="facility" class="section-container bg-white">
              <h2 class="mobile-text-xl sm:mobile-text-2xl lg:mobile-text-3xl xl:mobile-text-4xl font-bold text-center mb-8 sm:mb-10">
               <span class="bg-gradient-to-r from-emerald-600 to-teal-500 bg-clip-text text-transparent">World-Class Facilities</span>
             </h2>
@@ -160,7 +123,7 @@
                  </div>
                </div>
              </div>
-           </div>
+           </div> -->
 
                      <div id="faculty" class="section-container bg-gray-50">
              <!-- Section Title with Animated Underline -->
